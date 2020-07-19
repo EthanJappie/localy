@@ -16,6 +16,7 @@ abstract class MenuItem implements _$MenuItem {
     @required double price,
     @required int sequenceOfAppearance,
     @required ValueString menuID,
+    ValueString imageUrl,
     bool hidden,
   }) = _MenuItem;
 
@@ -26,6 +27,7 @@ abstract class MenuItem implements _$MenuItem {
         price: 0.0,
         sequenceOfAppearance: 0,
         menuID: ValueString(),
+        imageUrl: ValueString(),
         hidden: true,
       );
 

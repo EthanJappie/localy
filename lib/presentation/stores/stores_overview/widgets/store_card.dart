@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:localy/domain/store/store.dart';
-import 'package:localy/presentation/core/routes/route.gr.dart';
+import 'package:localy/presentation/core/routes/manager_router.gr.dart';
 
 class StoreCard extends StatelessWidget {
   final Store store;
@@ -15,7 +15,7 @@ class StoreCard extends StatelessWidget {
     return InkWell(
       onTap: () {
         ExtendedNavigator.of(context).pushNamed(
-          Routes.administrationPage,
+          ManagerRoute.administrationPage,
           arguments: AdministrationPageArguments(store: store),
         );
       },
@@ -45,7 +45,7 @@ class StoreCard extends StatelessWidget {
                       icon: Icon(Icons.remove_red_eye, color: Colors.white),
                       onPressed: () {
                         ExtendedNavigator.of(context).pushNamed(
-                          Routes.storeFormPage,
+                          ManagerRoute.storeFormPage,
                           arguments: StoreFormPageArguments(editedStore: store),
                         );
                       },

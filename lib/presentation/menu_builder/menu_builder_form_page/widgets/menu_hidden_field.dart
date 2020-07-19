@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:localy/application/menu/menu_form/menu_form_bloc.dart';
-import 'package:localy/application/stores/store_form/store_form_bloc.dart';
 import 'package:localy/presentation/core/widgets/localy_switch.dart';
 
 class MenuHiddenField extends StatelessWidget {

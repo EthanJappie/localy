@@ -3,7 +3,7 @@ import 'package:flushbar/flushbar_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:localy/application/menu/menu_actor/menu_actor_bloc.dart';
-import 'package:localy/presentation/core/routes/route.gr.dart';
+import 'package:localy/presentation/core/routes/manager_router.gr.dart';
 import 'package:localy/presentation/menu_builder/menu_builder_overview/widgets/menu_builder_overview_body_widget.dart';
 
 class MenuBuilderOverviewPage extends StatelessWidget {
@@ -16,6 +16,7 @@ class MenuBuilderOverviewPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return BlocListener<MenuActorBloc, MenuActorState>(
       listener: (BuildContext context, state) {
         state.maybeMap(
@@ -39,7 +40,7 @@ class MenuBuilderOverviewPage extends StatelessWidget {
         floatingActionButton: FloatingActionButton(
           onPressed: () {
             ExtendedNavigator.of(context).pushNamed(
-              Routes.menuBuilderFormPage,
+              ManagerRoute.menuBuilderFormPage,
               arguments: MenuBuilderFormPageArguments(
                 editedMenu: null,
                 storeID: storeID,

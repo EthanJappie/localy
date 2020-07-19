@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:localy/application/auth/auth_bloc.dart';
-import 'package:localy/presentation/core/routes/route.gr.dart';
+import 'package:localy/presentation/core/routes/manager_router.gr.dart';
 
 import '../../injection.dart';
 
@@ -21,9 +21,9 @@ class AppWidget extends StatelessWidget {
         )
       ],
       child: MaterialApp(
-        title: 'Notes',
+        title: 'Localy',
         debugShowCheckedModeBanner: false,
-        builder: ExtendedNavigator(router: Router()),
+        builder: ExtendedNavigator(router: ManagerRouter()),
         theme: ThemeData.light().copyWith(
           primaryColor: const Color(appColor),
           textTheme: GoogleFonts.montserratTextTheme(),

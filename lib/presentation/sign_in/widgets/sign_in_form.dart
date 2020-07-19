@@ -6,7 +6,9 @@ import 'package:flutter_svg/svg.dart';
 import 'package:localy/application/auth/auth_bloc.dart';
 import 'package:localy/application/sign_in_form/sign_in_form_bloc.dart';
 import 'package:clippy_flutter/diagonal.dart';
-import 'package:localy/presentation/core/routes/route.gr.dart';
+import 'package:localy/environment_config.dart';
+import 'package:localy/presentation/core/routes/customer_router.gr.dart';
+import 'package:localy/presentation/core/routes/manager_router.gr.dart';
 import 'package:localy/presentation/core/widgets/localy_button.dart';
 import 'package:localy/presentation/core/widgets/localy_entry_field.dart';
 
@@ -30,8 +32,13 @@ class SignInForm extends StatelessWidget {
               ).show(context);
             },
             (_) {
-              ExtendedNavigator.of(context)
-                  .pushReplacementNamed(Routes.homePage);
+              if (EnvironmentConfig.APP_NAME == "LocalyManager") {
+                ExtendedNavigator.of(context)
+                    .pushReplacementNamed(ManagerRoute.homePage);
+              } else {
+                ExtendedNavigator.of(context)
+                    .pushReplacementNamed(CustomerRoute.customerHomePage);
+              }
               context
                   .bloc<AuthBloc>()
                   .add(const AuthEvent.authCheckRequested());
@@ -145,7 +152,7 @@ class SignInForm extends StatelessWidget {
                           InkWell(
                             onTap: () {
                               ExtendedNavigator.of(context)
-                                  .pushNamed(Routes.forgetPasswordPage);
+                                  .pushNamed(ManagerRoute.forgetPasswordPage);
                             },
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.end,
@@ -216,7 +223,7 @@ class SignInForm extends StatelessWidget {
                               InkWell(
                                 onTap: () {
                                   ExtendedNavigator.of(context)
-                                      .pushNamed(Routes.registerPage);
+                                      .pushNamed(ManagerRoute.registerPage);
                                 },
                                 child: RichText(
                                   text: TextSpan(

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:localy/application/stores/store_actor/store_actor_bloc.dart';
-import 'package:localy/presentation/core/routes/route.gr.dart';
+import 'package:localy/presentation/core/routes/manager_router.gr.dart';
 import 'package:localy/presentation/stores/stores_overview/widgets/stores_overview_body_widget.dart';
 
 class StoresOverviewPage extends HookWidget {
@@ -36,7 +36,7 @@ class StoresOverviewPage extends HookWidget {
           floatingActionButton: FloatingActionButton(
             onPressed: () {
               ExtendedNavigator.of(context).pushNamed(
-                Routes.storeFormPage,
+                ManagerRoute.storeFormPage,
                 arguments: StoreFormPageArguments(editedStore: null),
               );
             },

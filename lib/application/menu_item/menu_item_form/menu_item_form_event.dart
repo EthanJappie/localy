@@ -19,4 +19,6 @@ abstract class MenuItemFormEvent with _$MenuItemFormEvent {
       double price) = _PriceChanged;
 
   const factory MenuItemFormEvent.hiddenChanged({bool hidden}) = _Hidden;
+
+  const factory MenuItemFormEvent.imageUrlChanged(String imageUrl) = _ImageUrl;
 }

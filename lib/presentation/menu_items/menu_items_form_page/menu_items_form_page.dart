@@ -3,33 +3,35 @@ import 'package:dartz/dartz.dart';
 import 'package:flushbar/flushbar_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:localy/application/menu/menu_form/menu_form_bloc.dart';
-import 'package:localy/domain/menu/menu.dart';
+import 'package:localy/application/menu_item/menu_item_form/menu_item_form_bloc.dart';
+import 'package:localy/domain/menu_item/menu_item.dart';
 import 'package:localy/injection.dart';
 import 'package:localy/presentation/core/routes/manager_router.gr.dart';
 import 'package:localy/presentation/core/widgets/localy_button.dart';
 import 'package:localy/presentation/forget_password/widgets/saving_in_progress_overlaay.dart';
-import 'package:localy/presentation/menu_builder/menu_builder_form_page/widgets/menu_hidden_field.dart';
-import 'package:localy/presentation/menu_builder/menu_builder_form_page/widgets/menu_name_field.dart';
-import 'package:localy/presentation/menu_builder/menu_builder_form_page/widgets/menu_notes_field.dart';
-import 'package:localy/presentation/menu_builder/menu_builder_form_page/widgets/menu_sequence_field.dart';
+import 'package:localy/presentation/menu_items/menu_items_form_page/widgets/menu_item_description_field.dart';
+import 'package:localy/presentation/menu_items/menu_items_form_page/widgets/menu_item_hidden_field.dart';
+import 'package:localy/presentation/menu_items/menu_items_form_page/widgets/menu_item_image_field.dart';
+import 'package:localy/presentation/menu_items/menu_items_form_page/widgets/menu_item_name_field.dart';
+import 'package:localy/presentation/menu_items/menu_items_form_page/widgets/menu_item_price_field.dart';
+import 'package:localy/presentation/menu_items/menu_items_form_page/widgets/menu_item_sequence_field.dart';
 
-class MenuBuilderFormPage extends StatelessWidget {
-  final Menu editedMenu;
-  final String storeID;
+class MenuItemsFormPage extends StatelessWidget {
+  final MenuItem editedMenuItem;
+  final String menuID;
 
-  const MenuBuilderFormPage({
+  const MenuItemsFormPage({
     Key key,
-    this.editedMenu,
-    @required this.storeID,
+    this.editedMenuItem,
+    @required this.menuID,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => getIt<MenuFormBloc>()
-        ..add(MenuFormEvent.initialized(optionOf(editedMenu))),
-      child: BlocConsumer<MenuFormBloc, MenuFormState>(
+      create: (context) => getIt<MenuItemFormBloc>()
+        ..add(MenuItemFormEvent.initialized(optionOf(editedMenuItem))),
+      child: BlocConsumer<MenuItemFormBloc, MenuItemFormState>(
         listenWhen: (p, c) =>
             p.saveFailureOrSuccessOption != c.saveFailureOrSuccessOption,
         listener: (context, state) {
@@ -53,8 +55,10 @@ class MenuBuilderFormPage extends StatelessWidget {
                 (_) {
                   // Can't be just a simple pop. If another route (like a Flushbar) is on top of stack, we'll need to pop even that to get to
                   // the overview page.
-                  ExtendedNavigator.of(context).popUntil((route) =>
-                      route.settings.name == ManagerRoute.administrationPage);
+                  ExtendedNavigator.of(context).popUntil(
+                    (route) =>
+                        route.settings.name == ManagerRoute.menuItemsOverviewPage,
+                  );
                 },
               );
             },
@@ -64,10 +68,12 @@ class MenuBuilderFormPage extends StatelessWidget {
         builder: (context, state) {
           return Stack(
             children: <Widget>[
-              MenuBuilderFormPageScaffold(
-                storeID: storeID,
+              MenuItemFormPageScaffold(
+                menuID: menuID,
               ),
-              SavingInProgressOverlay(isSaving: state.isSaving)
+              SavingInProgressOverlay(
+                isSaving: state.isSaving,
+              ),
             ],
           );
         },
@@ -76,11 +82,13 @@ class MenuBuilderFormPage extends StatelessWidget {
   }
 }
 
-class MenuBuilderFormPageScaffold extends StatelessWidget {
-  final String storeID;
+class MenuItemFormPageScaffold extends StatelessWidget {
+  final String menuID;
 
-  const MenuBuilderFormPageScaffold({Key key, @required this.storeID})
-      : super(key: key);
+  const MenuItemFormPageScaffold({
+    Key key,
+    @required this.menuID,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -90,33 +98,41 @@ class MenuBuilderFormPageScaffold extends StatelessWidget {
   Widget _returnBody(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: BlocBuilder<MenuFormBloc, MenuFormState>(
+        title: BlocBuilder<MenuItemFormBloc, MenuItemFormState>(
           buildWhen: (p, c) => p.isEditing != c.isEditing,
           builder: (context, state) {
-            return Text(state.isEditing ? "Edit Menu" : "Add Menu");
+            return Text(state.isEditing ? "Edit Menu Item" : "Add Menu Item");
           },
         ),
       ),
       body: Container(
         margin: const EdgeInsets.symmetric(horizontal: 16),
-        child: BlocBuilder<MenuFormBloc, MenuFormState>(
+        child: BlocBuilder<MenuItemFormBloc, MenuItemFormState>(
           buildWhen: (p, c) => p.showErrorMessages != c.showErrorMessages,
           builder: (context, state) {
             return Form(
               autovalidate: state.showErrorMessages,
               child: CustomScrollView(
                 slivers: <Widget>[
-                  const SliverToBoxAdapter(child: MenuNameField()),
-                  const SliverToBoxAdapter(child: MenuNotesField()),
-                  const SliverToBoxAdapter(child: MenuSequenceField()),
-                  const SliverToBoxAdapter(child: MenuHiddenField()),
+                  const SliverToBoxAdapter(
+                    child: SizedBox(height: 16),
+                  ),
+                  const SliverToBoxAdapter(child: MenuItemImageField()),
+                  const SliverToBoxAdapter(child: MenuItemNameField()),
+                  const SliverToBoxAdapter(child: MenuItemDescriptionField()),
+                  const SliverToBoxAdapter(child: MenuItemPriceField()),
+                  const SliverToBoxAdapter(child: MenuItemSequenceField()),
+                  const SliverToBoxAdapter(child: MenuItemHiddenField()),
+                  const SliverToBoxAdapter(
+                    child: SizedBox(height: 16),
+                  ),
                   SliverToBoxAdapter(
                     child: LocalyButton(
                       title: "Save",
                       onPressed: () {
                         context
-                            .bloc<MenuFormBloc>()
-                            .add(MenuFormEvent.saved(storeID));
+                            .bloc<MenuItemFormBloc>()
+                            .add(MenuItemFormEvent.saved(menuID));
                       },
                     ),
                   ),

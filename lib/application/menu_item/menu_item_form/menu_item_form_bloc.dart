@@ -11,24 +11,27 @@ import 'package:localy/domain/menu_item/menu_item_failure.dart';
 import 'package:meta/meta.dart';
 
 part 'menu_item_form_event.dart';
+
 part 'menu_item_form_state.dart';
+
 part 'menu_item_form_bloc.freezed.dart';
 
 @injectable
 class MenuItemFormBloc extends Bloc<MenuItemFormEvent, MenuItemFormState> {
   final IMenuItemRepository _menuItemRepository;
 
-  MenuItemFormBloc(this._menuItemRepository) : super(MenuItemFormState.initial());
+  MenuItemFormBloc(this._menuItemRepository)
+      : super(MenuItemFormState.initial());
 
   @override
   Stream<MenuItemFormState> mapEventToState(
-      MenuItemFormEvent event,
-      ) async* {
+    MenuItemFormEvent event,
+  ) async* {
     yield* event.map(
       initialized: (e) async* {
         yield e.initialMenuItemOption.fold(
-              () => state,
-              (initialMenuItem) => state.copyWith(
+          () => state,
+          (initialMenuItem) => state.copyWith(
             menuItem: initialMenuItem,
             isEditing: true,
           ),
@@ -56,9 +59,8 @@ class MenuItemFormBloc extends Bloc<MenuItemFormEvent, MenuItemFormState> {
       },
       menuItemNameChanged: (e) async* {
         yield state.copyWith(
-          menuItem: state.menuItem.copyWith(
-            name: ValueString.fromString(e.name)
-          ),
+          menuItem:
+              state.menuItem.copyWith(name: ValueString.fromString(e.name)),
         );
       },
       menuItemDescriptionChanged: (e) async* {
@@ -81,13 +83,21 @@ class MenuItemFormBloc extends Bloc<MenuItemFormEvent, MenuItemFormState> {
             hidden: e.hidden,
           ),
         );
-      }, priceChanged: (e) async* {
-      yield state.copyWith(
-        menuItem: state.menuItem.copyWith(
-          price: e.price,
-        ),
-      );
-    },
+      },
+      priceChanged: (e) async* {
+        yield state.copyWith(
+          menuItem: state.menuItem.copyWith(
+            price: e.price,
+          ),
+        );
+      },
+      imageUrlChanged: (e) async* {
+        yield state.copyWith(
+          menuItem: state.menuItem.copyWith(
+            imageUrl: ValueString.fromString(e.imageUrl),
+          ),
+        );
+      },
     );
   }
 }

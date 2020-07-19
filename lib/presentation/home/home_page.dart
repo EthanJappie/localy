@@ -2,11 +2,10 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:localy/application/auth/auth_bloc.dart';
-import 'package:localy/application/menu/menu_actor/menu_actor_bloc.dart';
 import 'package:localy/application/stores/store_actor/store_actor_bloc.dart';
 import 'package:localy/application/stores/store_watcher/store_watcher_bloc.dart';
 import 'package:localy/injection.dart';
-import 'package:localy/presentation/core/routes/route.gr.dart';
+import 'package:localy/presentation/core/routes/manager_router.gr.dart';
 import 'package:localy/presentation/profile/profile_page.dart';
 import 'package:localy/presentation/staff_access/staff_access_page.dart';
 import 'package:localy/presentation/stores/stores_overview/stores_over_view_page.dart';
@@ -53,7 +52,7 @@ class _HomePageState extends State<HomePage> {
       listener: (context, state) {
         state.maybeMap(
           unauthenticated: (_) => ExtendedNavigator.of(context)
-              .pushReplacementNamed(Routes.signInPage),
+              .pushReplacementNamed(ManagerRoute.signInPage),
           orElse: () {},
         );
       },

@@ -22,7 +22,6 @@ extension FirestoreX on Firestore {
 
   CollectionReference get menuItemsCollection =>
       Firestore.instance.collection('menuItems');
-
 }
 
 extension DocumentReferenceX on DocumentReference {}
@@ -30,4 +29,7 @@ extension DocumentReferenceX on DocumentReference {}
 extension FirebaseStorageX on FirebaseStorage {
   StorageReference get storeStorageReference =>
       FirebaseStorage.instance.ref().child("stores").child(Uuid().v1());
+
+  StorageReference get menuItemsStorageReference =>
+      FirebaseStorage.instance.ref().child("menuItems").child(Uuid().v1());
 }

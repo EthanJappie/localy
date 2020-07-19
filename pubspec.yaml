@@ -55,6 +55,7 @@ dependencies:
   flutter_image_compress: ^0.7.0
   firebase_storage: ^3.0.0
   image_cropper: ^1.2.3
+  package_info: ^0.4.1
 
 dev_dependencies:
   test:

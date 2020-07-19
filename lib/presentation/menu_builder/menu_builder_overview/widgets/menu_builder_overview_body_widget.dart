@@ -2,7 +2,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:localy/application/menu/menu_watcher/menu_watcher_bloc.dart';
-import 'package:localy/presentation/core/routes/route.gr.dart';
+import 'package:localy/presentation/core/routes/manager_router.gr.dart';
 
 class MenuBuilderOverviewBodyWidget extends StatelessWidget {
   final String storeID;
@@ -27,6 +27,7 @@ class MenuBuilderOverviewBodyWidget extends StatelessWidget {
                   margin: const EdgeInsets.all(16),
                   child: const Text(
                     "You have no menus. Press the '+' button to add one.",
+                    textAlign: TextAlign.center,
                   ),
                 ),
               );
@@ -35,26 +36,30 @@ class MenuBuilderOverviewBodyWidget extends StatelessWidget {
                 itemCount: state.menus.size,
                 itemBuilder: (builder, index) {
                   final menu = menus[index];
-                  return InkWell(
-                    onTap: () {},
-                    child: ListTile(
-                      leading: Icon(
-                        menu.hidden ? Icons.visibility_off : Icons.visibility,
-                      ),
-                      title: Text(menus[index].name.getOrCrash()),
-                      subtitle: Text(menus[index].notes.getOrCrash()),
-                      trailing: IconButton(
-                        icon: Icon(Icons.arrow_forward_ios),
-                        onPressed: () {
-                          ExtendedNavigator.of(context).pushNamed(
-                            Routes.menuBuilderFormPage,
-                            arguments: MenuBuilderFormPageArguments(
-                              editedMenu: menus[index],
-                              storeID: storeID,
-                            ),
-                          );
-                        },
-                      ),
+                  return ListTile(
+                    onTap: () {
+                      ExtendedNavigator.of(context).pushNamed(
+                        ManagerRoute.menuItemsOverviewPage,
+                        arguments: MenuItemsOverviewPageArguments(
+                            menuID: menu.id.getOrCrash()),
+                      );
+                    },
+                    leading: Icon(
+                      menu.hidden ? Icons.visibility_off : Icons.visibility,
+                    ),
+                    title: Text(menus[index].name.getOrCrash()),
+                    subtitle: Text(menus[index].notes.getOrCrash()),
+                    trailing: IconButton(
+                      icon: Icon(Icons.arrow_forward_ios),
+                      onPressed: () {
+                        ExtendedNavigator.of(context).pushNamed(
+                          ManagerRoute.menuBuilderFormPage,
+                          arguments: MenuBuilderFormPageArguments(
+                            editedMenu: menus[index],
+                            storeID: storeID,
+                          ),
+                        );
+                      },
                     ),
                   );
                 },

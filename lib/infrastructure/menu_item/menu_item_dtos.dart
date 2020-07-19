@@ -18,18 +18,21 @@ abstract class MenuItemDTO implements _$MenuItemDTO {
     @required int sequenceOfAppearance,
     @required String menuID,
     bool hidden,
+    String imageUrl,
     @JsonKey(ignore: true) String id,
   }) = _MenuItemDTO;
 
   factory MenuItemDTO.fromDomain(MenuItem menuItem) {
     return MenuItemDTO(
-        id: menuItem.id.getOrCrash(),
-        menuID: menuItem.menuID.getOrCrash(),
-        name: menuItem.name.getOrCrash(),
-        description: menuItem.description.getOrCrash(),
-        price: menuItem.price,
-        sequenceOfAppearance: menuItem.sequenceOfAppearance,
-        hidden: menuItem.hidden);
+      id: menuItem.id.getOrCrash(),
+      menuID: menuItem.menuID.getOrCrash(),
+      name: menuItem.name.getOrCrash(),
+      description: menuItem.description.getOrCrash(),
+      price: menuItem.price,
+      sequenceOfAppearance: menuItem.sequenceOfAppearance,
+      hidden: menuItem.hidden,
+      imageUrl: menuItem.imageUrl.value.fold((l) => "", (r) => r),
+    );
   }
 
   MenuItem toDomain() {
@@ -41,6 +44,7 @@ abstract class MenuItemDTO implements _$MenuItemDTO {
       price: price,
       sequenceOfAppearance: sequenceOfAppearance,
       hidden: hidden,
+      imageUrl: ValueString.fromString(imageUrl ?? ""),
     );
   }
 

@@ -1,5 +1,8 @@
+import 'dart:io';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dartz/dartz.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/services.dart';
 import 'package:injectable/injectable.dart';
 import 'package:kt_dart/kt.dart';
@@ -8,12 +11,14 @@ import 'package:localy/domain/menu_item/menu_item.dart';
 import 'package:localy/domain/menu_item/menu_item_failure.dart';
 import 'package:localy/infrastructure/menu_item/menu_item_dtos.dart';
 import 'package:localy/infrastructure/core/firestore_helpers.dart';
+import 'package:localy/presentation/core/helpers/camera_helper.dart';
 
 @LazySingleton(as: IMenuItemRepository)
 class MenuItemRepository implements IMenuItemRepository {
   final Firestore _firestore;
+  final FirebaseStorage _firebaseStorage;
 
-  MenuItemRepository(this._firestore);
+  MenuItemRepository(this._firestore, this._firebaseStorage);
 
   @override
   Future<Either<MenuItemFailure, Unit>> create(
@@ -23,6 +28,13 @@ class MenuItemRepository implements IMenuItemRepository {
     try {
       var menuItemDTO = MenuItemDTO.fromDomain(menuItem);
       menuItemDTO = menuItemDTO.copyWith(menuID: menuID);
+
+      menuItemDTO = await _uploadImages(
+          menuItem.imageUrl.value.fold(
+            (l) => "",
+            (r) => r,
+          ),
+          menuItemDTO);
 
       await _firestore.menuItemsCollection
           .document(menuItemDTO.id)
@@ -60,7 +72,14 @@ class MenuItemRepository implements IMenuItemRepository {
   @override
   Future<Either<MenuItemFailure, Unit>> update(MenuItem menuItem) async {
     try {
-      final menuItemDTO = MenuItemDTO.fromDomain(menuItem);
+      var menuItemDTO = MenuItemDTO.fromDomain(menuItem);
+
+      menuItemDTO = await _uploadImages(
+          menuItem.imageUrl.value.fold(
+            (l) => "",
+            (r) => r,
+          ),
+          menuItemDTO);
 
       await _firestore.menuItemsCollection
           .document(menuItemDTO.id)
@@ -92,5 +111,28 @@ class MenuItemRepository implements IMenuItemRepository {
                 .toImmutableList(),
           ),
         );
+  }
+
+  Future<MenuItemDTO> _uploadImages(
+    String itemImageUrl,
+    MenuItemDTO menuItemDTO,
+  ) async {
+    var menuItem = menuItemDTO;
+
+    if ((itemImageUrl != null || itemImageUrl.isNotEmpty) &&
+        !itemImageUrl.contains("http")) {
+      final thumbnailFile = await getThumbnailFile(File(itemImageUrl));
+
+      final uploadTask =
+          _firebaseStorage.menuItemsStorageReference.putFile(thumbnailFile);
+
+      final StorageTaskSnapshot downloadUrl = await uploadTask.onComplete;
+
+      final String imageUrl = await downloadUrl.ref.getDownloadURL() as String;
+
+      menuItem = menuItem.copyWith(imageUrl: imageUrl);
+    }
+
+    return menuItem;
   }
 }
