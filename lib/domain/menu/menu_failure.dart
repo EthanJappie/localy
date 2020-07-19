@@ -4,10 +4,10 @@ part 'menu_failure.freezed.dart';
 
 @freezed
 abstract class MenuFailure with _$MenuFailure {
-  const factory MenuFailure.unexpected() = UnexpectetStore;
+  const factory MenuFailure.unexpected() = UnexpectetMenu;
 
   const factory MenuFailure.insufficientPermission() =
   InsufficientStorePermission;
 
-  const factory MenuFailure.unableToUpdate() = UnableToUpdateStore;
+  const factory MenuFailure.unableToUpdate() = UnableToUpdateMenu;
 }

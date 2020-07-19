@@ -2,6 +2,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:localy/application/auth/auth_bloc.dart';
+import 'package:localy/application/menu/menu_actor/menu_actor_bloc.dart';
 import 'package:localy/application/stores/store_actor/store_actor_bloc.dart';
 import 'package:localy/application/stores/store_watcher/store_watcher_bloc.dart';
 import 'package:localy/injection.dart';
@@ -24,7 +25,7 @@ class HomePage extends StatefulWidget implements AutoRouteWrapper {
         ),
         BlocProvider<StoreActorBloc>(
           create: (context) => getIt<StoreActorBloc>(),
-        )
+        ),
       ],
       child: this,
     );

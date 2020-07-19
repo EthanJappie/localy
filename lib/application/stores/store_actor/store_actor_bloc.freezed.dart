@@ -199,7 +199,7 @@ class _$StoreActorStateTearOff {
   const _$StoreActorStateTearOff();
 
 // ignore: unused_element
-  _Initial intial() {
+  _Initial initial() {
     return const _Initial();
   }
 
@@ -227,14 +227,14 @@ const $StoreActorState = _$StoreActorStateTearOff();
 mixin _$StoreActorState {
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intial(),
+    @required Result initial(),
     @required Result loading(),
     @required Result deleteFailure(StoreFailure storeFailure),
     @required Result deleteSuccess(),
   });
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intial(),
+    Result initial(),
     Result loading(),
     Result deleteFailure(StoreFailure storeFailure),
     Result deleteSuccess(),
@@ -242,14 +242,14 @@ mixin _$StoreActorState {
   });
   @optionalTypeArgs
   Result map<Result extends Object>({
-    @required Result intial(_Initial value),
+    @required Result initial(_Initial value),
     @required Result loading(_Loading value),
     @required Result deleteFailure(_DeleteFailure value),
     @required Result deleteSuccess(_DeleteSuccess value),
   });
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
-    Result intial(_Initial value),
+    Result initial(_Initial value),
     Result loading(_Loading value),
     Result deleteFailure(_DeleteFailure value),
     Result deleteSuccess(_DeleteSuccess value),
@@ -291,7 +291,7 @@ class _$_Initial implements _Initial {
 
   @override
   String toString() {
-    return 'StoreActorState.intial()';
+    return 'StoreActorState.initial()';
   }
 
   @override
@@ -305,30 +305,30 @@ class _$_Initial implements _Initial {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intial(),
+    @required Result initial(),
     @required Result loading(),
     @required Result deleteFailure(StoreFailure storeFailure),
     @required Result deleteSuccess(),
   }) {
-    assert(intial != null);
+    assert(initial != null);
     assert(loading != null);
     assert(deleteFailure != null);
     assert(deleteSuccess != null);
-    return intial();
+    return initial();
   }
 
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intial(),
+    Result initial(),
     Result loading(),
     Result deleteFailure(StoreFailure storeFailure),
     Result deleteSuccess(),
     @required Result orElse(),
   }) {
     assert(orElse != null);
-    if (intial != null) {
-      return intial();
+    if (initial != null) {
+      return initial();
     }
     return orElse();
   }
@@ -336,30 +336,30 @@ class _$_Initial implements _Initial {
   @override
   @optionalTypeArgs
   Result map<Result extends Object>({
-    @required Result intial(_Initial value),
+    @required Result initial(_Initial value),
     @required Result loading(_Loading value),
     @required Result deleteFailure(_DeleteFailure value),
     @required Result deleteSuccess(_DeleteSuccess value),
   }) {
-    assert(intial != null);
+    assert(initial != null);
     assert(loading != null);
     assert(deleteFailure != null);
     assert(deleteSuccess != null);
-    return intial(this);
+    return initial(this);
   }
 
   @override
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
-    Result intial(_Initial value),
+    Result initial(_Initial value),
     Result loading(_Loading value),
     Result deleteFailure(_DeleteFailure value),
     Result deleteSuccess(_DeleteSuccess value),
     @required Result orElse(),
   }) {
     assert(orElse != null);
-    if (intial != null) {
-      return intial(this);
+    if (initial != null) {
+      return initial(this);
     }
     return orElse();
   }
@@ -402,12 +402,12 @@ class _$_Loading implements _Loading {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intial(),
+    @required Result initial(),
     @required Result loading(),
     @required Result deleteFailure(StoreFailure storeFailure),
     @required Result deleteSuccess(),
   }) {
-    assert(intial != null);
+    assert(initial != null);
     assert(loading != null);
     assert(deleteFailure != null);
     assert(deleteSuccess != null);
@@ -417,7 +417,7 @@ class _$_Loading implements _Loading {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intial(),
+    Result initial(),
     Result loading(),
     Result deleteFailure(StoreFailure storeFailure),
     Result deleteSuccess(),
@@ -433,12 +433,12 @@ class _$_Loading implements _Loading {
   @override
   @optionalTypeArgs
   Result map<Result extends Object>({
-    @required Result intial(_Initial value),
+    @required Result initial(_Initial value),
     @required Result loading(_Loading value),
     @required Result deleteFailure(_DeleteFailure value),
     @required Result deleteSuccess(_DeleteSuccess value),
   }) {
-    assert(intial != null);
+    assert(initial != null);
     assert(loading != null);
     assert(deleteFailure != null);
     assert(deleteSuccess != null);
@@ -448,7 +448,7 @@ class _$_Loading implements _Loading {
   @override
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
-    Result intial(_Initial value),
+    Result initial(_Initial value),
     Result loading(_Loading value),
     Result deleteFailure(_DeleteFailure value),
     Result deleteSuccess(_DeleteSuccess value),
@@ -538,12 +538,12 @@ class _$_DeleteFailure implements _DeleteFailure {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intial(),
+    @required Result initial(),
     @required Result loading(),
     @required Result deleteFailure(StoreFailure storeFailure),
     @required Result deleteSuccess(),
   }) {
-    assert(intial != null);
+    assert(initial != null);
     assert(loading != null);
     assert(deleteFailure != null);
     assert(deleteSuccess != null);
@@ -553,7 +553,7 @@ class _$_DeleteFailure implements _DeleteFailure {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intial(),
+    Result initial(),
     Result loading(),
     Result deleteFailure(StoreFailure storeFailure),
     Result deleteSuccess(),
@@ -569,12 +569,12 @@ class _$_DeleteFailure implements _DeleteFailure {
   @override
   @optionalTypeArgs
   Result map<Result extends Object>({
-    @required Result intial(_Initial value),
+    @required Result initial(_Initial value),
     @required Result loading(_Loading value),
     @required Result deleteFailure(_DeleteFailure value),
     @required Result deleteSuccess(_DeleteSuccess value),
   }) {
-    assert(intial != null);
+    assert(initial != null);
     assert(loading != null);
     assert(deleteFailure != null);
     assert(deleteSuccess != null);
@@ -584,7 +584,7 @@ class _$_DeleteFailure implements _DeleteFailure {
   @override
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
-    Result intial(_Initial value),
+    Result initial(_Initial value),
     Result loading(_Loading value),
     Result deleteFailure(_DeleteFailure value),
     Result deleteSuccess(_DeleteSuccess value),
@@ -641,12 +641,12 @@ class _$_DeleteSuccess implements _DeleteSuccess {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intial(),
+    @required Result initial(),
     @required Result loading(),
     @required Result deleteFailure(StoreFailure storeFailure),
     @required Result deleteSuccess(),
   }) {
-    assert(intial != null);
+    assert(initial != null);
     assert(loading != null);
     assert(deleteFailure != null);
     assert(deleteSuccess != null);
@@ -656,7 +656,7 @@ class _$_DeleteSuccess implements _DeleteSuccess {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intial(),
+    Result initial(),
     Result loading(),
     Result deleteFailure(StoreFailure storeFailure),
     Result deleteSuccess(),
@@ -672,12 +672,12 @@ class _$_DeleteSuccess implements _DeleteSuccess {
   @override
   @optionalTypeArgs
   Result map<Result extends Object>({
-    @required Result intial(_Initial value),
+    @required Result initial(_Initial value),
     @required Result loading(_Loading value),
     @required Result deleteFailure(_DeleteFailure value),
     @required Result deleteSuccess(_DeleteSuccess value),
   }) {
-    assert(intial != null);
+    assert(initial != null);
     assert(loading != null);
     assert(deleteFailure != null);
     assert(deleteSuccess != null);
@@ -687,7 +687,7 @@ class _$_DeleteSuccess implements _DeleteSuccess {
   @override
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
-    Result intial(_Initial value),
+    Result initial(_Initial value),
     Result loading(_Loading value),
     Result deleteFailure(_DeleteFailure value),
     Result deleteSuccess(_DeleteSuccess value),

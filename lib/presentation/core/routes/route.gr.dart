@@ -23,6 +23,7 @@ import 'package:localy/presentation/menu_browser/menu_browser_page.dart';
 import 'package:localy/presentation/active_orders/active_orders_page.dart';
 import 'package:localy/presentation/inactive_orders/inactive_orders_page.dart';
 import 'package:localy/presentation/menu_builder/menu_builder_form_page/menu_builder_form_page.dart';
+import 'package:localy/domain/menu/menu.dart';
 import 'package:localy/presentation/stores/stores_form/store_form_page.dart';
 
 class Routes {
@@ -135,8 +136,7 @@ class Router extends RouterBase {
       );
     },
     AdministrationPage: (RouteData data) {
-      var args = data.getArgs<AdministrationPageArguments>(
-          orElse: () => AdministrationPageArguments());
+      var args = data.getArgs<AdministrationPageArguments>(nullOk: false);
       return MaterialPageRoute<dynamic>(
         builder: (context) =>
             AdministrationPage(key: args.key, store: args.store),
@@ -144,8 +144,10 @@ class Router extends RouterBase {
       );
     },
     MenuBuilderOverviewPage: (RouteData data) {
+      var args = data.getArgs<MenuBuilderOverviewPageArguments>(nullOk: false);
       return MaterialPageRoute<dynamic>(
-        builder: (context) => MenuBuilderOverviewPage(),
+        builder: (context) =>
+            MenuBuilderOverviewPage(key: args.key, storeID: args.storeID),
         settings: data,
       );
     },
@@ -174,8 +176,13 @@ class Router extends RouterBase {
       );
     },
     MenuBuilderFormPage: (RouteData data) {
+      var args = data.getArgs<MenuBuilderFormPageArguments>(nullOk: false);
       return MaterialPageRoute<dynamic>(
-        builder: (context) => MenuBuilderFormPage(),
+        builder: (context) => MenuBuilderFormPage(
+          key: args.key,
+          editedMenu: args.editedMenu,
+          storeID: args.storeID,
+        ),
         settings: data,
         fullscreenDialog: true,
       );
@@ -218,15 +225,21 @@ extension RouterNavigationHelperMethods on ExtendedNavigatorState {
 
   Future<dynamic> pushAdministrationPage({
     Key key,
-    Store store,
+    @required Store store,
   }) =>
       pushNamed<dynamic>(
         Routes.administrationPage,
         arguments: AdministrationPageArguments(key: key, store: store),
       );
 
-  Future<dynamic> pushMenuBuilderOverviewPage() =>
-      pushNamed<dynamic>(Routes.menuBuilderOverviewPage);
+  Future<dynamic> pushMenuBuilderOverviewPage({
+    Key key,
+    @required String storeID,
+  }) =>
+      pushNamed<dynamic>(
+        Routes.menuBuilderOverviewPage,
+        arguments: MenuBuilderOverviewPageArguments(key: key, storeID: storeID),
+      );
 
   Future<dynamic> pushOptionsBuilderPage() =>
       pushNamed<dynamic>(Routes.optionsBuilderPage);
@@ -240,8 +253,16 @@ extension RouterNavigationHelperMethods on ExtendedNavigatorState {
   Future<dynamic> pushInactiveOrdersPage() =>
       pushNamed<dynamic>(Routes.inactiveOrdersPage);
 
-  Future<dynamic> pushMenuBuilderFormPage() =>
-      pushNamed<dynamic>(Routes.menuBuilderFormPage);
+  Future<dynamic> pushMenuBuilderFormPage({
+    Key key,
+    Menu editedMenu,
+    @required String storeID,
+  }) =>
+      pushNamed<dynamic>(
+        Routes.menuBuilderFormPage,
+        arguments: MenuBuilderFormPageArguments(
+            key: key, editedMenu: editedMenu, storeID: storeID),
+      );
 
   Future<dynamic> pushStoreFormPage({
     Key key,
@@ -261,7 +282,23 @@ extension RouterNavigationHelperMethods on ExtendedNavigatorState {
 class AdministrationPageArguments {
   final Key key;
   final Store store;
-  AdministrationPageArguments({this.key, this.store});
+  AdministrationPageArguments({this.key, @required this.store});
+}
+
+//MenuBuilderOverviewPage arguments holder class
+class MenuBuilderOverviewPageArguments {
+  final Key key;
+  final String storeID;
+  MenuBuilderOverviewPageArguments({this.key, @required this.storeID});
+}
+
+//MenuBuilderFormPage arguments holder class
+class MenuBuilderFormPageArguments {
+  final Key key;
+  final Menu editedMenu;
+  final String storeID;
+  MenuBuilderFormPageArguments(
+      {this.key, this.editedMenu, @required this.storeID});
 }
 
 //StoreFormPage arguments holder class

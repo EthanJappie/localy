@@ -12,6 +12,7 @@ _$_MenuDTO _$_$_MenuDTOFromJson(Map<String, dynamic> json) {
     name: json['name'] as String,
     notes: json['notes'] as String,
     sequenceOfAppearance: json['sequenceOfAppearance'] as int,
+    hidden: json['hidden'] as bool,
   );
 }
 
@@ -21,4 +22,5 @@ Map<String, dynamic> _$_$_MenuDTOToJson(_$_MenuDTO instance) =>
       'name': instance.name,
       'notes': instance.notes,
       'sequenceOfAppearance': instance.sequenceOfAppearance,
+      'hidden': instance.hidden,
     };

@@ -16,16 +16,19 @@ abstract class MenuDTO implements _$MenuDTO {
     @required String name,
     String notes,
     int sequenceOfAppearance,
+    bool hidden,
     @JsonKey(ignore: true) String id,
   }) = _MenuDTO;
 
   factory MenuDTO.fromDomain(Menu menu) {
     return MenuDTO(
-        id: menu.id.getOrCrash(),
-        storeID: menu.storeID.getOrCrash(),
-        name: menu.name.getOrCrash(),
-        notes: menu.notes.value.fold((l) => "", (r) => r),
-        sequenceOfAppearance: menu.sequenceOfAppearance);
+      id: menu.id.getOrCrash(),
+      storeID: menu.storeID.getOrCrash(),
+      name: menu.name.getOrCrash(),
+      notes: menu.notes.value.fold((l) => "", (r) => r),
+      sequenceOfAppearance: menu.sequenceOfAppearance,
+      hidden: menu.hidden,
+    );
   }
 
   Menu toDomain() {
@@ -35,6 +38,7 @@ abstract class MenuDTO implements _$MenuDTO {
       name: ValueString.fromString(name),
       notes: ValueString.fromString(notes),
       sequenceOfAppearance: sequenceOfAppearance,
+      hidden: hidden,
     );
   }
 
@@ -44,4 +48,5 @@ abstract class MenuDTO implements _$MenuDTO {
   factory MenuDTO.fromFirestore(DocumentSnapshot doc) {
     return MenuDTO.fromJson(doc.data).copyWith(id: doc.documentID);
   }
+
 }

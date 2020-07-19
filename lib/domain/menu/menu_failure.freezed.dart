@@ -13,8 +13,8 @@ class _$MenuFailureTearOff {
   const _$MenuFailureTearOff();
 
 // ignore: unused_element
-  UnexpectetStore unexpected() {
-    return const UnexpectetStore();
+  UnexpectetMenu unexpected() {
+    return const UnexpectetMenu();
   }
 
 // ignore: unused_element
@@ -23,8 +23,8 @@ class _$MenuFailureTearOff {
   }
 
 // ignore: unused_element
-  UnableToUpdateStore unableToUpdate() {
-    return const UnableToUpdateStore();
+  UnableToUpdateMenu unableToUpdate() {
+    return const UnableToUpdateMenu();
   }
 }
 
@@ -47,15 +47,15 @@ mixin _$MenuFailure {
   });
   @optionalTypeArgs
   Result map<Result extends Object>({
-    @required Result unexpected(UnexpectetStore value),
+    @required Result unexpected(UnexpectetMenu value),
     @required Result insufficientPermission(InsufficientStorePermission value),
-    @required Result unableToUpdate(UnableToUpdateStore value),
+    @required Result unableToUpdate(UnableToUpdateMenu value),
   });
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
-    Result unexpected(UnexpectetStore value),
+    Result unexpected(UnexpectetMenu value),
     Result insufficientPermission(InsufficientStorePermission value),
-    Result unableToUpdate(UnableToUpdateStore value),
+    Result unableToUpdate(UnableToUpdateMenu value),
     @required Result orElse(),
   });
 }
@@ -74,25 +74,24 @@ class _$MenuFailureCopyWithImpl<$Res> implements $MenuFailureCopyWith<$Res> {
   final $Res Function(MenuFailure) _then;
 }
 
-abstract class $UnexpectetStoreCopyWith<$Res> {
-  factory $UnexpectetStoreCopyWith(
-          UnexpectetStore value, $Res Function(UnexpectetStore) then) =
-      _$UnexpectetStoreCopyWithImpl<$Res>;
+abstract class $UnexpectetMenuCopyWith<$Res> {
+  factory $UnexpectetMenuCopyWith(
+          UnexpectetMenu value, $Res Function(UnexpectetMenu) then) =
+      _$UnexpectetMenuCopyWithImpl<$Res>;
 }
 
-class _$UnexpectetStoreCopyWithImpl<$Res>
-    extends _$MenuFailureCopyWithImpl<$Res>
-    implements $UnexpectetStoreCopyWith<$Res> {
-  _$UnexpectetStoreCopyWithImpl(
-      UnexpectetStore _value, $Res Function(UnexpectetStore) _then)
-      : super(_value, (v) => _then(v as UnexpectetStore));
+class _$UnexpectetMenuCopyWithImpl<$Res> extends _$MenuFailureCopyWithImpl<$Res>
+    implements $UnexpectetMenuCopyWith<$Res> {
+  _$UnexpectetMenuCopyWithImpl(
+      UnexpectetMenu _value, $Res Function(UnexpectetMenu) _then)
+      : super(_value, (v) => _then(v as UnexpectetMenu));
 
   @override
-  UnexpectetStore get _value => super._value as UnexpectetStore;
+  UnexpectetMenu get _value => super._value as UnexpectetMenu;
 }
 
-class _$UnexpectetStore implements UnexpectetStore {
-  const _$UnexpectetStore();
+class _$UnexpectetMenu implements UnexpectetMenu {
+  const _$UnexpectetMenu();
 
   @override
   String toString() {
@@ -101,7 +100,7 @@ class _$UnexpectetStore implements UnexpectetStore {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is UnexpectetStore);
+    return identical(this, other) || (other is UnexpectetMenu);
   }
 
   @override
@@ -138,9 +137,9 @@ class _$UnexpectetStore implements UnexpectetStore {
   @override
   @optionalTypeArgs
   Result map<Result extends Object>({
-    @required Result unexpected(UnexpectetStore value),
+    @required Result unexpected(UnexpectetMenu value),
     @required Result insufficientPermission(InsufficientStorePermission value),
-    @required Result unableToUpdate(UnableToUpdateStore value),
+    @required Result unableToUpdate(UnableToUpdateMenu value),
   }) {
     assert(unexpected != null);
     assert(insufficientPermission != null);
@@ -151,9 +150,9 @@ class _$UnexpectetStore implements UnexpectetStore {
   @override
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
-    Result unexpected(UnexpectetStore value),
+    Result unexpected(UnexpectetMenu value),
     Result insufficientPermission(InsufficientStorePermission value),
-    Result unableToUpdate(UnableToUpdateStore value),
+    Result unableToUpdate(UnableToUpdateMenu value),
     @required Result orElse(),
   }) {
     assert(orElse != null);
@@ -164,8 +163,8 @@ class _$UnexpectetStore implements UnexpectetStore {
   }
 }
 
-abstract class UnexpectetStore implements MenuFailure {
-  const factory UnexpectetStore() = _$UnexpectetStore;
+abstract class UnexpectetMenu implements MenuFailure {
+  const factory UnexpectetMenu() = _$UnexpectetMenu;
 }
 
 abstract class $InsufficientStorePermissionCopyWith<$Res> {
@@ -234,9 +233,9 @@ class _$InsufficientStorePermission implements InsufficientStorePermission {
   @override
   @optionalTypeArgs
   Result map<Result extends Object>({
-    @required Result unexpected(UnexpectetStore value),
+    @required Result unexpected(UnexpectetMenu value),
     @required Result insufficientPermission(InsufficientStorePermission value),
-    @required Result unableToUpdate(UnableToUpdateStore value),
+    @required Result unableToUpdate(UnableToUpdateMenu value),
   }) {
     assert(unexpected != null);
     assert(insufficientPermission != null);
@@ -247,9 +246,9 @@ class _$InsufficientStorePermission implements InsufficientStorePermission {
   @override
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
-    Result unexpected(UnexpectetStore value),
+    Result unexpected(UnexpectetMenu value),
     Result insufficientPermission(InsufficientStorePermission value),
-    Result unableToUpdate(UnableToUpdateStore value),
+    Result unableToUpdate(UnableToUpdateMenu value),
     @required Result orElse(),
   }) {
     assert(orElse != null);
@@ -264,25 +263,25 @@ abstract class InsufficientStorePermission implements MenuFailure {
   const factory InsufficientStorePermission() = _$InsufficientStorePermission;
 }
 
-abstract class $UnableToUpdateStoreCopyWith<$Res> {
-  factory $UnableToUpdateStoreCopyWith(
-          UnableToUpdateStore value, $Res Function(UnableToUpdateStore) then) =
-      _$UnableToUpdateStoreCopyWithImpl<$Res>;
+abstract class $UnableToUpdateMenuCopyWith<$Res> {
+  factory $UnableToUpdateMenuCopyWith(
+          UnableToUpdateMenu value, $Res Function(UnableToUpdateMenu) then) =
+      _$UnableToUpdateMenuCopyWithImpl<$Res>;
 }
 
-class _$UnableToUpdateStoreCopyWithImpl<$Res>
+class _$UnableToUpdateMenuCopyWithImpl<$Res>
     extends _$MenuFailureCopyWithImpl<$Res>
-    implements $UnableToUpdateStoreCopyWith<$Res> {
-  _$UnableToUpdateStoreCopyWithImpl(
-      UnableToUpdateStore _value, $Res Function(UnableToUpdateStore) _then)
-      : super(_value, (v) => _then(v as UnableToUpdateStore));
+    implements $UnableToUpdateMenuCopyWith<$Res> {
+  _$UnableToUpdateMenuCopyWithImpl(
+      UnableToUpdateMenu _value, $Res Function(UnableToUpdateMenu) _then)
+      : super(_value, (v) => _then(v as UnableToUpdateMenu));
 
   @override
-  UnableToUpdateStore get _value => super._value as UnableToUpdateStore;
+  UnableToUpdateMenu get _value => super._value as UnableToUpdateMenu;
 }
 
-class _$UnableToUpdateStore implements UnableToUpdateStore {
-  const _$UnableToUpdateStore();
+class _$UnableToUpdateMenu implements UnableToUpdateMenu {
+  const _$UnableToUpdateMenu();
 
   @override
   String toString() {
@@ -291,7 +290,7 @@ class _$UnableToUpdateStore implements UnableToUpdateStore {
 
   @override
   bool operator ==(dynamic other) {
-    return identical(this, other) || (other is UnableToUpdateStore);
+    return identical(this, other) || (other is UnableToUpdateMenu);
   }
 
   @override
@@ -328,9 +327,9 @@ class _$UnableToUpdateStore implements UnableToUpdateStore {
   @override
   @optionalTypeArgs
   Result map<Result extends Object>({
-    @required Result unexpected(UnexpectetStore value),
+    @required Result unexpected(UnexpectetMenu value),
     @required Result insufficientPermission(InsufficientStorePermission value),
-    @required Result unableToUpdate(UnableToUpdateStore value),
+    @required Result unableToUpdate(UnableToUpdateMenu value),
   }) {
     assert(unexpected != null);
     assert(insufficientPermission != null);
@@ -341,9 +340,9 @@ class _$UnableToUpdateStore implements UnableToUpdateStore {
   @override
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
-    Result unexpected(UnexpectetStore value),
+    Result unexpected(UnexpectetMenu value),
     Result insufficientPermission(InsufficientStorePermission value),
-    Result unableToUpdate(UnableToUpdateStore value),
+    Result unableToUpdate(UnableToUpdateMenu value),
     @required Result orElse(),
   }) {
     assert(orElse != null);
@@ -354,6 +353,6 @@ class _$UnableToUpdateStore implements UnableToUpdateStore {
   }
 }
 
-abstract class UnableToUpdateStore implements MenuFailure {
-  const factory UnableToUpdateStore() = _$UnableToUpdateStore;
+abstract class UnableToUpdateMenu implements MenuFailure {
+  const factory UnableToUpdateMenu() = _$UnableToUpdateMenu;
 }

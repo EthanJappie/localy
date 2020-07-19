@@ -1,6 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dartz/dartz.dart';
-import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/services.dart';
 import 'package:injectable/injectable.dart';
 import 'package:kt_dart/kt.dart';
@@ -13,14 +12,14 @@ import 'package:localy/infrastructure/core/firestore_helpers.dart';
 @LazySingleton(as: IMenuRepository)
 class MenuRepository implements IMenuRepository {
   final Firestore _firestore;
-  final FirebaseStorage _firebaseStorage;
 
-  MenuRepository(this._firestore, this._firebaseStorage);
+  MenuRepository(this._firestore);
 
   @override
-  Future<Either<MenuFailure, Unit>> create(Menu menu) async {
+  Future<Either<MenuFailure, Unit>> create(Menu menu, String storeID) async {
     try {
-      final menuDTO = MenuDTO.fromDomain(menu);
+      var menuDTO = MenuDTO.fromDomain(menu);
+      menuDTO = menuDTO.copyWith(storeID: storeID);
 
       await _firestore.menuCollection
           .document(menuDTO.id)

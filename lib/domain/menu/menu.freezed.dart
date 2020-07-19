@@ -18,13 +18,15 @@ class _$MenuTearOff {
       @required ValueString storeID,
       @required ValueString name,
       ValueString notes,
-      int sequenceOfAppearance}) {
+      int sequenceOfAppearance,
+      bool hidden}) {
     return _Menu(
       id: id,
       storeID: storeID,
       name: name,
       notes: notes,
       sequenceOfAppearance: sequenceOfAppearance,
+      hidden: hidden,
     );
   }
 }
@@ -38,6 +40,7 @@ mixin _$Menu {
   ValueString get name;
   ValueString get notes;
   int get sequenceOfAppearance;
+  bool get hidden;
 
   $MenuCopyWith<Menu> get copyWith;
 }
@@ -50,7 +53,8 @@ abstract class $MenuCopyWith<$Res> {
       ValueString storeID,
       ValueString name,
       ValueString notes,
-      int sequenceOfAppearance});
+      int sequenceOfAppearance,
+      bool hidden});
 }
 
 class _$MenuCopyWithImpl<$Res> implements $MenuCopyWith<$Res> {
@@ -67,6 +71,7 @@ class _$MenuCopyWithImpl<$Res> implements $MenuCopyWith<$Res> {
     Object name = freezed,
     Object notes = freezed,
     Object sequenceOfAppearance = freezed,
+    Object hidden = freezed,
   }) {
     return _then(_value.copyWith(
       id: id == freezed ? _value.id : id as UniqueId,
@@ -76,6 +81,7 @@ class _$MenuCopyWithImpl<$Res> implements $MenuCopyWith<$Res> {
       sequenceOfAppearance: sequenceOfAppearance == freezed
           ? _value.sequenceOfAppearance
           : sequenceOfAppearance as int,
+      hidden: hidden == freezed ? _value.hidden : hidden as bool,
     ));
   }
 }
@@ -89,7 +95,8 @@ abstract class _$MenuCopyWith<$Res> implements $MenuCopyWith<$Res> {
       ValueString storeID,
       ValueString name,
       ValueString notes,
-      int sequenceOfAppearance});
+      int sequenceOfAppearance,
+      bool hidden});
 }
 
 class __$MenuCopyWithImpl<$Res> extends _$MenuCopyWithImpl<$Res>
@@ -107,6 +114,7 @@ class __$MenuCopyWithImpl<$Res> extends _$MenuCopyWithImpl<$Res>
     Object name = freezed,
     Object notes = freezed,
     Object sequenceOfAppearance = freezed,
+    Object hidden = freezed,
   }) {
     return _then(_Menu(
       id: id == freezed ? _value.id : id as UniqueId,
@@ -116,6 +124,7 @@ class __$MenuCopyWithImpl<$Res> extends _$MenuCopyWithImpl<$Res>
       sequenceOfAppearance: sequenceOfAppearance == freezed
           ? _value.sequenceOfAppearance
           : sequenceOfAppearance as int,
+      hidden: hidden == freezed ? _value.hidden : hidden as bool,
     ));
   }
 }
@@ -126,7 +135,8 @@ class _$_Menu extends _Menu {
       @required this.storeID,
       @required this.name,
       this.notes,
-      this.sequenceOfAppearance})
+      this.sequenceOfAppearance,
+      this.hidden})
       : assert(id != null),
         assert(storeID != null),
         assert(name != null),
@@ -142,10 +152,12 @@ class _$_Menu extends _Menu {
   final ValueString notes;
   @override
   final int sequenceOfAppearance;
+  @override
+  final bool hidden;
 
   @override
   String toString() {
-    return 'Menu(id: $id, storeID: $storeID, name: $name, notes: $notes, sequenceOfAppearance: $sequenceOfAppearance)';
+    return 'Menu(id: $id, storeID: $storeID, name: $name, notes: $notes, sequenceOfAppearance: $sequenceOfAppearance, hidden: $hidden)';
   }
 
   @override
@@ -162,8 +174,10 @@ class _$_Menu extends _Menu {
             (identical(other.notes, notes) ||
                 const DeepCollectionEquality().equals(other.notes, notes)) &&
             (identical(other.sequenceOfAppearance, sequenceOfAppearance) ||
-                const DeepCollectionEquality()
-                    .equals(other.sequenceOfAppearance, sequenceOfAppearance)));
+                const DeepCollectionEquality().equals(
+                    other.sequenceOfAppearance, sequenceOfAppearance)) &&
+            (identical(other.hidden, hidden) ||
+                const DeepCollectionEquality().equals(other.hidden, hidden)));
   }
 
   @override
@@ -173,7 +187,8 @@ class _$_Menu extends _Menu {
       const DeepCollectionEquality().hash(storeID) ^
       const DeepCollectionEquality().hash(name) ^
       const DeepCollectionEquality().hash(notes) ^
-      const DeepCollectionEquality().hash(sequenceOfAppearance);
+      const DeepCollectionEquality().hash(sequenceOfAppearance) ^
+      const DeepCollectionEquality().hash(hidden);
 
   @override
   _$MenuCopyWith<_Menu> get copyWith =>
@@ -187,7 +202,8 @@ abstract class _Menu extends Menu {
       @required ValueString storeID,
       @required ValueString name,
       ValueString notes,
-      int sequenceOfAppearance}) = _$_Menu;
+      int sequenceOfAppearance,
+      bool hidden}) = _$_Menu;
 
   @override
   UniqueId get id;
@@ -199,6 +215,8 @@ abstract class _Menu extends Menu {
   ValueString get notes;
   @override
   int get sequenceOfAppearance;
+  @override
+  bool get hidden;
   @override
   _$MenuCopyWith<_Menu> get copyWith;
 }

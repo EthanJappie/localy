@@ -15,14 +15,16 @@ abstract class Menu implements _$Menu {
     @required ValueString name,
     ValueString notes,
     int sequenceOfAppearance,
+    bool hidden,
   }) = _Menu;
 
   factory Menu.empty() => Menu(
         id: UniqueId(),
-        storeID: ValueString.fromString(""),
+        storeID: ValueString(),
         name: ValueString.fromString(""),
         notes: ValueString(),
         sequenceOfAppearance: 0,
+        hidden: true,
       );
 
   Option<ValueFailure<dynamic>> get failureOption {

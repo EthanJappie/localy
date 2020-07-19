@@ -17,7 +17,7 @@ part 'store_actor_bloc.freezed.dart';
 class StoreActorBloc extends Bloc<StoreActorEvent, StoreActorState> {
   final IStoreRepository _storeRepository;
 
-  StoreActorBloc(this._storeRepository) : super(const StoreActorState.intial());
+  StoreActorBloc(this._storeRepository) : super(const StoreActorState.initial());
 
   @override
   Stream<StoreActorState> mapEventToState(

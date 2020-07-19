@@ -21,12 +21,14 @@ class _$MenuDTOTearOff {
       @required String name,
       String notes,
       int sequenceOfAppearance,
+      bool hidden,
       @JsonKey(ignore: true) String id}) {
     return _MenuDTO(
       storeID: storeID,
       name: name,
       notes: notes,
       sequenceOfAppearance: sequenceOfAppearance,
+      hidden: hidden,
       id: id,
     );
   }
@@ -40,6 +42,7 @@ mixin _$MenuDTO {
   String get name;
   String get notes;
   int get sequenceOfAppearance;
+  bool get hidden;
   @JsonKey(ignore: true)
   String get id;
 
@@ -55,6 +58,7 @@ abstract class $MenuDTOCopyWith<$Res> {
       String name,
       String notes,
       int sequenceOfAppearance,
+      bool hidden,
       @JsonKey(ignore: true) String id});
 }
 
@@ -71,6 +75,7 @@ class _$MenuDTOCopyWithImpl<$Res> implements $MenuDTOCopyWith<$Res> {
     Object name = freezed,
     Object notes = freezed,
     Object sequenceOfAppearance = freezed,
+    Object hidden = freezed,
     Object id = freezed,
   }) {
     return _then(_value.copyWith(
@@ -80,6 +85,7 @@ class _$MenuDTOCopyWithImpl<$Res> implements $MenuDTOCopyWith<$Res> {
       sequenceOfAppearance: sequenceOfAppearance == freezed
           ? _value.sequenceOfAppearance
           : sequenceOfAppearance as int,
+      hidden: hidden == freezed ? _value.hidden : hidden as bool,
       id: id == freezed ? _value.id : id as String,
     ));
   }
@@ -94,6 +100,7 @@ abstract class _$MenuDTOCopyWith<$Res> implements $MenuDTOCopyWith<$Res> {
       String name,
       String notes,
       int sequenceOfAppearance,
+      bool hidden,
       @JsonKey(ignore: true) String id});
 }
 
@@ -111,6 +118,7 @@ class __$MenuDTOCopyWithImpl<$Res> extends _$MenuDTOCopyWithImpl<$Res>
     Object name = freezed,
     Object notes = freezed,
     Object sequenceOfAppearance = freezed,
+    Object hidden = freezed,
     Object id = freezed,
   }) {
     return _then(_MenuDTO(
@@ -120,6 +128,7 @@ class __$MenuDTOCopyWithImpl<$Res> extends _$MenuDTOCopyWithImpl<$Res>
       sequenceOfAppearance: sequenceOfAppearance == freezed
           ? _value.sequenceOfAppearance
           : sequenceOfAppearance as int,
+      hidden: hidden == freezed ? _value.hidden : hidden as bool,
       id: id == freezed ? _value.id : id as String,
     ));
   }
@@ -132,6 +141,7 @@ class _$_MenuDTO extends _MenuDTO {
       @required this.name,
       this.notes,
       this.sequenceOfAppearance,
+      this.hidden,
       @JsonKey(ignore: true) this.id})
       : assert(storeID != null),
         assert(name != null),
@@ -149,12 +159,14 @@ class _$_MenuDTO extends _MenuDTO {
   @override
   final int sequenceOfAppearance;
   @override
+  final bool hidden;
+  @override
   @JsonKey(ignore: true)
   final String id;
 
   @override
   String toString() {
-    return 'MenuDTO(storeID: $storeID, name: $name, notes: $notes, sequenceOfAppearance: $sequenceOfAppearance, id: $id)';
+    return 'MenuDTO(storeID: $storeID, name: $name, notes: $notes, sequenceOfAppearance: $sequenceOfAppearance, hidden: $hidden, id: $id)';
   }
 
   @override
@@ -171,6 +183,8 @@ class _$_MenuDTO extends _MenuDTO {
             (identical(other.sequenceOfAppearance, sequenceOfAppearance) ||
                 const DeepCollectionEquality().equals(
                     other.sequenceOfAppearance, sequenceOfAppearance)) &&
+            (identical(other.hidden, hidden) ||
+                const DeepCollectionEquality().equals(other.hidden, hidden)) &&
             (identical(other.id, id) ||
                 const DeepCollectionEquality().equals(other.id, id)));
   }
@@ -182,6 +196,7 @@ class _$_MenuDTO extends _MenuDTO {
       const DeepCollectionEquality().hash(name) ^
       const DeepCollectionEquality().hash(notes) ^
       const DeepCollectionEquality().hash(sequenceOfAppearance) ^
+      const DeepCollectionEquality().hash(hidden) ^
       const DeepCollectionEquality().hash(id);
 
   @override
@@ -201,6 +216,7 @@ abstract class _MenuDTO extends MenuDTO {
       @required String name,
       String notes,
       int sequenceOfAppearance,
+      bool hidden,
       @JsonKey(ignore: true) String id}) = _$_MenuDTO;
 
   factory _MenuDTO.fromJson(Map<String, dynamic> json) = _$_MenuDTO.fromJson;
@@ -213,6 +229,8 @@ abstract class _MenuDTO extends MenuDTO {
   String get notes;
   @override
   int get sequenceOfAppearance;
+  @override
+  bool get hidden;
   @override
   @JsonKey(ignore: true)
   String get id;

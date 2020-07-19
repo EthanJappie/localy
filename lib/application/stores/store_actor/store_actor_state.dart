@@ -2,7 +2,7 @@ part of 'store_actor_bloc.dart';
 
 @freezed
 abstract class StoreActorState with _$StoreActorState {
-  const factory StoreActorState.intial() = _Initial;
+  const factory StoreActorState.initial() = _Initial;
 
   const factory StoreActorState.loading() = _Loading;
 
