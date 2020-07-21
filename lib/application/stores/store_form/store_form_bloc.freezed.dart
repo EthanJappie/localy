@@ -34,7 +34,7 @@ class _$StoreFormEventTearOff {
   }
 
 // ignore: unused_element
-  _CoordinatesChanged coordinatesChanged(GeoPoint coordinates) {
+  _CoordinatesChanged coordinatesChanged(GeoFirePoint coordinates) {
     return _CoordinatesChanged(
       coordinates,
     );
@@ -154,7 +154,7 @@ mixin _$StoreFormEvent {
     @required Result intialized(Option<Store> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
-    @required Result coordinatesChanged(GeoPoint coordinates),
+    @required Result coordinatesChanged(GeoFirePoint coordinates),
     @required Result workHoursFromChanged(Timestamp workHours),
     @required Result workHoursToChanged(Timestamp workHours),
     @required Result telephoneChanged(String telephone),
@@ -176,7 +176,7 @@ mixin _$StoreFormEvent {
     Result intialized(Option<Store> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
-    Result coordinatesChanged(GeoPoint coordinates),
+    Result coordinatesChanged(GeoFirePoint coordinates),
     Result workHoursFromChanged(Timestamp workHours),
     Result workHoursToChanged(Timestamp workHours),
     Result telephoneChanged(String telephone),
@@ -323,7 +323,7 @@ class _$_Initialized implements _Initialized {
     @required Result intialized(Option<Store> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
-    @required Result coordinatesChanged(GeoPoint coordinates),
+    @required Result coordinatesChanged(GeoFirePoint coordinates),
     @required Result workHoursFromChanged(Timestamp workHours),
     @required Result workHoursToChanged(Timestamp workHours),
     @required Result telephoneChanged(String telephone),
@@ -368,7 +368,7 @@ class _$_Initialized implements _Initialized {
     Result intialized(Option<Store> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
-    Result coordinatesChanged(GeoPoint coordinates),
+    Result coordinatesChanged(GeoFirePoint coordinates),
     Result workHoursFromChanged(Timestamp workHours),
     Result workHoursToChanged(Timestamp workHours),
     Result telephoneChanged(String telephone),
@@ -540,7 +540,7 @@ class _$_StoreNameChanged implements _StoreNameChanged {
     @required Result intialized(Option<Store> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
-    @required Result coordinatesChanged(GeoPoint coordinates),
+    @required Result coordinatesChanged(GeoFirePoint coordinates),
     @required Result workHoursFromChanged(Timestamp workHours),
     @required Result workHoursToChanged(Timestamp workHours),
     @required Result telephoneChanged(String telephone),
@@ -585,7 +585,7 @@ class _$_StoreNameChanged implements _StoreNameChanged {
     Result intialized(Option<Store> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
-    Result coordinatesChanged(GeoPoint coordinates),
+    Result coordinatesChanged(GeoFirePoint coordinates),
     Result workHoursFromChanged(Timestamp workHours),
     Result workHoursToChanged(Timestamp workHours),
     Result telephoneChanged(String telephone),
@@ -756,7 +756,7 @@ class _$_AddressChanged implements _AddressChanged {
     @required Result intialized(Option<Store> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
-    @required Result coordinatesChanged(GeoPoint coordinates),
+    @required Result coordinatesChanged(GeoFirePoint coordinates),
     @required Result workHoursFromChanged(Timestamp workHours),
     @required Result workHoursToChanged(Timestamp workHours),
     @required Result telephoneChanged(String telephone),
@@ -801,7 +801,7 @@ class _$_AddressChanged implements _AddressChanged {
     Result intialized(Option<Store> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
-    Result coordinatesChanged(GeoPoint coordinates),
+    Result coordinatesChanged(GeoFirePoint coordinates),
     Result workHoursFromChanged(Timestamp workHours),
     Result workHoursToChanged(Timestamp workHours),
     Result telephoneChanged(String telephone),
@@ -916,7 +916,7 @@ abstract class _$CoordinatesChangedCopyWith<$Res> {
   factory _$CoordinatesChangedCopyWith(
           _CoordinatesChanged value, $Res Function(_CoordinatesChanged) then) =
       __$CoordinatesChangedCopyWithImpl<$Res>;
-  $Res call({GeoPoint coordinates});
+  $Res call({GeoFirePoint coordinates});
 }
 
 class __$CoordinatesChangedCopyWithImpl<$Res>
@@ -934,7 +934,7 @@ class __$CoordinatesChangedCopyWithImpl<$Res>
     Object coordinates = freezed,
   }) {
     return _then(_CoordinatesChanged(
-      coordinates == freezed ? _value.coordinates : coordinates as GeoPoint,
+      coordinates == freezed ? _value.coordinates : coordinates as GeoFirePoint,
     ));
   }
 }
@@ -943,7 +943,7 @@ class _$_CoordinatesChanged implements _CoordinatesChanged {
   const _$_CoordinatesChanged(this.coordinates) : assert(coordinates != null);
 
   @override
-  final GeoPoint coordinates;
+  final GeoFirePoint coordinates;
 
   @override
   String toString() {
@@ -973,7 +973,7 @@ class _$_CoordinatesChanged implements _CoordinatesChanged {
     @required Result intialized(Option<Store> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
-    @required Result coordinatesChanged(GeoPoint coordinates),
+    @required Result coordinatesChanged(GeoFirePoint coordinates),
     @required Result workHoursFromChanged(Timestamp workHours),
     @required Result workHoursToChanged(Timestamp workHours),
     @required Result telephoneChanged(String telephone),
@@ -1018,7 +1018,7 @@ class _$_CoordinatesChanged implements _CoordinatesChanged {
     Result intialized(Option<Store> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
-    Result coordinatesChanged(GeoPoint coordinates),
+    Result coordinatesChanged(GeoFirePoint coordinates),
     Result workHoursFromChanged(Timestamp workHours),
     Result workHoursToChanged(Timestamp workHours),
     Result telephoneChanged(String telephone),
@@ -1123,10 +1123,10 @@ class _$_CoordinatesChanged implements _CoordinatesChanged {
 }
 
 abstract class _CoordinatesChanged implements StoreFormEvent {
-  const factory _CoordinatesChanged(GeoPoint coordinates) =
+  const factory _CoordinatesChanged(GeoFirePoint coordinates) =
       _$_CoordinatesChanged;
 
-  GeoPoint get coordinates;
+  GeoFirePoint get coordinates;
   _$CoordinatesChangedCopyWith<_CoordinatesChanged> get copyWith;
 }
 
@@ -1192,7 +1192,7 @@ class _$_WorkHoursFromChanged implements _WorkHoursFromChanged {
     @required Result intialized(Option<Store> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
-    @required Result coordinatesChanged(GeoPoint coordinates),
+    @required Result coordinatesChanged(GeoFirePoint coordinates),
     @required Result workHoursFromChanged(Timestamp workHours),
     @required Result workHoursToChanged(Timestamp workHours),
     @required Result telephoneChanged(String telephone),
@@ -1237,7 +1237,7 @@ class _$_WorkHoursFromChanged implements _WorkHoursFromChanged {
     Result intialized(Option<Store> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
-    Result coordinatesChanged(GeoPoint coordinates),
+    Result coordinatesChanged(GeoFirePoint coordinates),
     Result workHoursFromChanged(Timestamp workHours),
     Result workHoursToChanged(Timestamp workHours),
     Result telephoneChanged(String telephone),
@@ -1410,7 +1410,7 @@ class _$_WorkHoursToChanged implements _WorkHoursToChanged {
     @required Result intialized(Option<Store> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
-    @required Result coordinatesChanged(GeoPoint coordinates),
+    @required Result coordinatesChanged(GeoFirePoint coordinates),
     @required Result workHoursFromChanged(Timestamp workHours),
     @required Result workHoursToChanged(Timestamp workHours),
     @required Result telephoneChanged(String telephone),
@@ -1455,7 +1455,7 @@ class _$_WorkHoursToChanged implements _WorkHoursToChanged {
     Result intialized(Option<Store> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
-    Result coordinatesChanged(GeoPoint coordinates),
+    Result coordinatesChanged(GeoFirePoint coordinates),
     Result workHoursFromChanged(Timestamp workHours),
     Result workHoursToChanged(Timestamp workHours),
     Result telephoneChanged(String telephone),
@@ -1628,7 +1628,7 @@ class _$_TelephoneChanged implements _TelephoneChanged {
     @required Result intialized(Option<Store> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
-    @required Result coordinatesChanged(GeoPoint coordinates),
+    @required Result coordinatesChanged(GeoFirePoint coordinates),
     @required Result workHoursFromChanged(Timestamp workHours),
     @required Result workHoursToChanged(Timestamp workHours),
     @required Result telephoneChanged(String telephone),
@@ -1673,7 +1673,7 @@ class _$_TelephoneChanged implements _TelephoneChanged {
     Result intialized(Option<Store> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
-    Result coordinatesChanged(GeoPoint coordinates),
+    Result coordinatesChanged(GeoFirePoint coordinates),
     Result workHoursFromChanged(Timestamp workHours),
     Result workHoursToChanged(Timestamp workHours),
     Result telephoneChanged(String telephone),
@@ -1844,7 +1844,7 @@ class _$_NotesChanged implements _NotesChanged {
     @required Result intialized(Option<Store> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
-    @required Result coordinatesChanged(GeoPoint coordinates),
+    @required Result coordinatesChanged(GeoFirePoint coordinates),
     @required Result workHoursFromChanged(Timestamp workHours),
     @required Result workHoursToChanged(Timestamp workHours),
     @required Result telephoneChanged(String telephone),
@@ -1889,7 +1889,7 @@ class _$_NotesChanged implements _NotesChanged {
     Result intialized(Option<Store> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
-    Result coordinatesChanged(GeoPoint coordinates),
+    Result coordinatesChanged(GeoFirePoint coordinates),
     Result workHoursFromChanged(Timestamp workHours),
     Result workHoursToChanged(Timestamp workHours),
     Result telephoneChanged(String telephone),
@@ -2060,7 +2060,7 @@ class _$_ActiveChanged implements _ActiveChanged {
     @required Result intialized(Option<Store> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
-    @required Result coordinatesChanged(GeoPoint coordinates),
+    @required Result coordinatesChanged(GeoFirePoint coordinates),
     @required Result workHoursFromChanged(Timestamp workHours),
     @required Result workHoursToChanged(Timestamp workHours),
     @required Result telephoneChanged(String telephone),
@@ -2105,7 +2105,7 @@ class _$_ActiveChanged implements _ActiveChanged {
     Result intialized(Option<Store> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
-    Result coordinatesChanged(GeoPoint coordinates),
+    Result coordinatesChanged(GeoFirePoint coordinates),
     Result workHoursFromChanged(Timestamp workHours),
     Result workHoursToChanged(Timestamp workHours),
     Result telephoneChanged(String telephone),
@@ -2276,7 +2276,7 @@ class _$_OpenChanged implements _OpenChanged {
     @required Result intialized(Option<Store> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
-    @required Result coordinatesChanged(GeoPoint coordinates),
+    @required Result coordinatesChanged(GeoFirePoint coordinates),
     @required Result workHoursFromChanged(Timestamp workHours),
     @required Result workHoursToChanged(Timestamp workHours),
     @required Result telephoneChanged(String telephone),
@@ -2321,7 +2321,7 @@ class _$_OpenChanged implements _OpenChanged {
     Result intialized(Option<Store> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
-    Result coordinatesChanged(GeoPoint coordinates),
+    Result coordinatesChanged(GeoFirePoint coordinates),
     Result workHoursFromChanged(Timestamp workHours),
     Result workHoursToChanged(Timestamp workHours),
     Result telephoneChanged(String telephone),
@@ -2501,7 +2501,7 @@ class _$_AcceptingStaffRequestsChanged
     @required Result intialized(Option<Store> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
-    @required Result coordinatesChanged(GeoPoint coordinates),
+    @required Result coordinatesChanged(GeoFirePoint coordinates),
     @required Result workHoursFromChanged(Timestamp workHours),
     @required Result workHoursToChanged(Timestamp workHours),
     @required Result telephoneChanged(String telephone),
@@ -2546,7 +2546,7 @@ class _$_AcceptingStaffRequestsChanged
     Result intialized(Option<Store> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
-    Result coordinatesChanged(GeoPoint coordinates),
+    Result coordinatesChanged(GeoFirePoint coordinates),
     Result workHoursFromChanged(Timestamp workHours),
     Result workHoursToChanged(Timestamp workHours),
     Result telephoneChanged(String telephone),
@@ -2721,7 +2721,7 @@ class _$_AcceptCashChanged implements _AcceptCashChanged {
     @required Result intialized(Option<Store> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
-    @required Result coordinatesChanged(GeoPoint coordinates),
+    @required Result coordinatesChanged(GeoFirePoint coordinates),
     @required Result workHoursFromChanged(Timestamp workHours),
     @required Result workHoursToChanged(Timestamp workHours),
     @required Result telephoneChanged(String telephone),
@@ -2766,7 +2766,7 @@ class _$_AcceptCashChanged implements _AcceptCashChanged {
     Result intialized(Option<Store> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
-    Result coordinatesChanged(GeoPoint coordinates),
+    Result coordinatesChanged(GeoFirePoint coordinates),
     Result workHoursFromChanged(Timestamp workHours),
     Result workHoursToChanged(Timestamp workHours),
     Result telephoneChanged(String telephone),
@@ -2939,7 +2939,7 @@ class _$_AcceptCardChanged implements _AcceptCardChanged {
     @required Result intialized(Option<Store> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
-    @required Result coordinatesChanged(GeoPoint coordinates),
+    @required Result coordinatesChanged(GeoFirePoint coordinates),
     @required Result workHoursFromChanged(Timestamp workHours),
     @required Result workHoursToChanged(Timestamp workHours),
     @required Result telephoneChanged(String telephone),
@@ -2984,7 +2984,7 @@ class _$_AcceptCardChanged implements _AcceptCardChanged {
     Result intialized(Option<Store> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
-    Result coordinatesChanged(GeoPoint coordinates),
+    Result coordinatesChanged(GeoFirePoint coordinates),
     Result workHoursFromChanged(Timestamp workHours),
     Result workHoursToChanged(Timestamp workHours),
     Result telephoneChanged(String telephone),
@@ -3157,7 +3157,7 @@ class _$_AcceptOtherChanged implements _AcceptOtherChanged {
     @required Result intialized(Option<Store> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
-    @required Result coordinatesChanged(GeoPoint coordinates),
+    @required Result coordinatesChanged(GeoFirePoint coordinates),
     @required Result workHoursFromChanged(Timestamp workHours),
     @required Result workHoursToChanged(Timestamp workHours),
     @required Result telephoneChanged(String telephone),
@@ -3202,7 +3202,7 @@ class _$_AcceptOtherChanged implements _AcceptOtherChanged {
     Result intialized(Option<Store> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
-    Result coordinatesChanged(GeoPoint coordinates),
+    Result coordinatesChanged(GeoFirePoint coordinates),
     Result workHoursFromChanged(Timestamp workHours),
     Result workHoursToChanged(Timestamp workHours),
     Result telephoneChanged(String telephone),
@@ -3378,7 +3378,7 @@ class _$_FoodDeliveriesChanged implements _FoodDeliveriesChanged {
     @required Result intialized(Option<Store> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
-    @required Result coordinatesChanged(GeoPoint coordinates),
+    @required Result coordinatesChanged(GeoFirePoint coordinates),
     @required Result workHoursFromChanged(Timestamp workHours),
     @required Result workHoursToChanged(Timestamp workHours),
     @required Result telephoneChanged(String telephone),
@@ -3423,7 +3423,7 @@ class _$_FoodDeliveriesChanged implements _FoodDeliveriesChanged {
     Result intialized(Option<Store> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
-    Result coordinatesChanged(GeoPoint coordinates),
+    Result coordinatesChanged(GeoFirePoint coordinates),
     Result workHoursFromChanged(Timestamp workHours),
     Result workHoursToChanged(Timestamp workHours),
     Result telephoneChanged(String telephone),
@@ -3600,7 +3600,7 @@ class _$_FoodCollectionChanged implements _FoodCollectionChanged {
     @required Result intialized(Option<Store> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
-    @required Result coordinatesChanged(GeoPoint coordinates),
+    @required Result coordinatesChanged(GeoFirePoint coordinates),
     @required Result workHoursFromChanged(Timestamp workHours),
     @required Result workHoursToChanged(Timestamp workHours),
     @required Result telephoneChanged(String telephone),
@@ -3645,7 +3645,7 @@ class _$_FoodCollectionChanged implements _FoodCollectionChanged {
     Result intialized(Option<Store> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
-    Result coordinatesChanged(GeoPoint coordinates),
+    Result coordinatesChanged(GeoFirePoint coordinates),
     Result workHoursFromChanged(Timestamp workHours),
     Result workHoursToChanged(Timestamp workHours),
     Result telephoneChanged(String telephone),
@@ -3793,7 +3793,7 @@ class _$_Saved implements _Saved {
     @required Result intialized(Option<Store> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
-    @required Result coordinatesChanged(GeoPoint coordinates),
+    @required Result coordinatesChanged(GeoFirePoint coordinates),
     @required Result workHoursFromChanged(Timestamp workHours),
     @required Result workHoursToChanged(Timestamp workHours),
     @required Result telephoneChanged(String telephone),
@@ -3838,7 +3838,7 @@ class _$_Saved implements _Saved {
     Result intialized(Option<Store> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
-    Result coordinatesChanged(GeoPoint coordinates),
+    Result coordinatesChanged(GeoFirePoint coordinates),
     Result workHoursFromChanged(Timestamp workHours),
     Result workHoursToChanged(Timestamp workHours),
     Result telephoneChanged(String telephone),
@@ -4007,7 +4007,7 @@ class _$_CoverImageChanged implements _CoverImageChanged {
     @required Result intialized(Option<Store> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
-    @required Result coordinatesChanged(GeoPoint coordinates),
+    @required Result coordinatesChanged(GeoFirePoint coordinates),
     @required Result workHoursFromChanged(Timestamp workHours),
     @required Result workHoursToChanged(Timestamp workHours),
     @required Result telephoneChanged(String telephone),
@@ -4052,7 +4052,7 @@ class _$_CoverImageChanged implements _CoverImageChanged {
     Result intialized(Option<Store> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
-    Result coordinatesChanged(GeoPoint coordinates),
+    Result coordinatesChanged(GeoFirePoint coordinates),
     Result workHoursFromChanged(Timestamp workHours),
     Result workHoursToChanged(Timestamp workHours),
     Result telephoneChanged(String telephone),
@@ -4224,7 +4224,7 @@ class _$_LogoImageChanged implements _LogoImageChanged {
     @required Result intialized(Option<Store> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
-    @required Result coordinatesChanged(GeoPoint coordinates),
+    @required Result coordinatesChanged(GeoFirePoint coordinates),
     @required Result workHoursFromChanged(Timestamp workHours),
     @required Result workHoursToChanged(Timestamp workHours),
     @required Result telephoneChanged(String telephone),
@@ -4269,7 +4269,7 @@ class _$_LogoImageChanged implements _LogoImageChanged {
     Result intialized(Option<Store> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
-    Result coordinatesChanged(GeoPoint coordinates),
+    Result coordinatesChanged(GeoFirePoint coordinates),
     Result workHoursFromChanged(Timestamp workHours),
     Result workHoursToChanged(Timestamp workHours),
     Result telephoneChanged(String telephone),

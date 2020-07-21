@@ -18,7 +18,7 @@ class _$StoreTearOff {
       @required ValueString ownerID,
       @required ValueString storeName,
       @required ValueString address,
-      @required Coordinates coordinates,
+      @required FireCoordinates coordinates,
       @required WorkingHours workingHoursFrom,
       @required WorkingHours workingHoursTo,
       @required ValueString telephoneNumber,
@@ -65,7 +65,7 @@ mixin _$Store {
   ValueString get ownerID;
   ValueString get storeName;
   ValueString get address;
-  Coordinates get coordinates;
+  FireCoordinates get coordinates;
   WorkingHours get workingHoursFrom;
   WorkingHours get workingHoursTo;
   ValueString get telephoneNumber;
@@ -92,7 +92,7 @@ abstract class $StoreCopyWith<$Res> {
       ValueString ownerID,
       ValueString storeName,
       ValueString address,
-      Coordinates coordinates,
+      FireCoordinates coordinates,
       WorkingHours workingHoursFrom,
       WorkingHours workingHoursTo,
       ValueString telephoneNumber,
@@ -146,7 +146,7 @@ class _$StoreCopyWithImpl<$Res> implements $StoreCopyWith<$Res> {
       address: address == freezed ? _value.address : address as ValueString,
       coordinates: coordinates == freezed
           ? _value.coordinates
-          : coordinates as Coordinates,
+          : coordinates as FireCoordinates,
       workingHoursFrom: workingHoursFrom == freezed
           ? _value.workingHoursFrom
           : workingHoursFrom as WorkingHours,
@@ -193,7 +193,7 @@ abstract class _$StoreCopyWith<$Res> implements $StoreCopyWith<$Res> {
       ValueString ownerID,
       ValueString storeName,
       ValueString address,
-      Coordinates coordinates,
+      FireCoordinates coordinates,
       WorkingHours workingHoursFrom,
       WorkingHours workingHoursTo,
       ValueString telephoneNumber,
@@ -248,7 +248,7 @@ class __$StoreCopyWithImpl<$Res> extends _$StoreCopyWithImpl<$Res>
       address: address == freezed ? _value.address : address as ValueString,
       coordinates: coordinates == freezed
           ? _value.coordinates
-          : coordinates as Coordinates,
+          : coordinates as FireCoordinates,
       workingHoursFrom: workingHoursFrom == freezed
           ? _value.workingHoursFrom
           : workingHoursFrom as WorkingHours,
@@ -335,7 +335,7 @@ class _$_Store extends _Store {
   @override
   final ValueString address;
   @override
-  final Coordinates coordinates;
+  final FireCoordinates coordinates;
   @override
   final WorkingHours workingHoursFrom;
   @override
@@ -464,7 +464,7 @@ abstract class _Store extends Store {
       @required ValueString ownerID,
       @required ValueString storeName,
       @required ValueString address,
-      @required Coordinates coordinates,
+      @required FireCoordinates coordinates,
       @required WorkingHours workingHoursFrom,
       @required WorkingHours workingHoursTo,
       @required ValueString telephoneNumber,
@@ -489,7 +489,7 @@ abstract class _Store extends Store {
   @override
   ValueString get address;
   @override
-  Coordinates get coordinates;
+  FireCoordinates get coordinates;
   @override
   WorkingHours get workingHoursFrom;
   @override

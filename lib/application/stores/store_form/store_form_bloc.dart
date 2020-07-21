@@ -4,6 +4,7 @@ import 'package:bloc/bloc.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dartz/dartz.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:geoflutterfire/geoflutterfire.dart';
 import 'package:injectable/injectable.dart';
 import 'package:localy/domain/core/value_objects.dart';
 import 'package:localy/domain/store/i_store_repository.dart';
@@ -78,7 +79,7 @@ class StoreFormBloc extends Bloc<StoreFormEvent, StoreFormState> {
       },
       coordinatesChanged: (e) async* {
         yield state.copyWith(
-          store: state.store.copyWith(coordinates: Coordinates(e.coordinates)),
+          store: state.store.copyWith(coordinates: FireCoordinates(e.coordinates)),
           saveFailureOrSuccessOption: none(),
         );
       },

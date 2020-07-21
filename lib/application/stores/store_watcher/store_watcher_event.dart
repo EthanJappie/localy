@@ -4,6 +4,9 @@ part of 'store_watcher_bloc.dart';
 abstract class StoreWatcherEvent with _$StoreWatcherEvent {
   const factory StoreWatcherEvent.watchAllStarted() = _WatchAllStoresStarted;
 
+  const factory StoreWatcherEvent.watchAllInRadiusStarted() =
+      _WatchAllInRadiusStarted;
+
   const factory StoreWatcherEvent.storesReceived(
     Either<StoreFailure, KtList<Store>> failureOrStore,
   ) = _StoresReceived;

@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:geoflutterfire/geoflutterfire.dart';
 import 'package:localy/domain/core/value_objects.dart';
 import 'package:localy/domain/store/store.dart';
 import 'package:localy/domain/store/value_objects.dart';
@@ -20,7 +21,7 @@ abstract class StoreDTO implements _$StoreDTO {
     @required String ownerID,
     @required String storeName,
     @required String address,
-    @required @GeoPointConverters() GeoPoint coordinates,
+    @required @GeoPointConverters() GeoFirePoint coordinates,
     @required @TimestampConverter() Timestamp workingHoursFrom,
     @required @TimestampConverter() Timestamp workingHoursTo,
     @required String telephoneNumber,
@@ -71,7 +72,7 @@ abstract class StoreDTO implements _$StoreDTO {
       address: ValueString.fromString(address),
       coverImageUrl: coverImageUrl,
       logoImageUrl: logoImageUrl,
-      coordinates: Coordinates(coordinates),
+      coordinates: FireCoordinates(coordinates),
       workingHoursFrom: WorkingHours(workingHoursFrom),
       workingHoursTo: WorkingHours(workingHoursTo),
       telephoneNumber: ValueString.fromString(telephoneNumber),

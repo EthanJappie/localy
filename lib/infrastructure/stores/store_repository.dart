@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dartz/dartz.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/services.dart';
+import 'package:geoflutterfire/geoflutterfire.dart';
 import 'package:injectable/injectable.dart';
 import 'package:kt_dart/kt.dart';
 import 'package:localy/domain/store/i_store_repository.dart';
@@ -12,6 +13,7 @@ import 'package:localy/domain/store/store_failure.dart';
 import 'package:localy/infrastructure/core/firestore_helpers.dart';
 import 'package:localy/infrastructure/stores/store_dtos.dart';
 import 'package:localy/presentation/core/helpers/camera_helper.dart';
+import 'package:location/location.dart';
 
 @LazySingleton(as: IStoreRepository)
 class StoreRepository implements IStoreRepository {
@@ -109,36 +111,63 @@ class StoreRepository implements IStoreRepository {
         );
   }
 
+  @override
+  Stream<Either<StoreFailure, KtList<Store>>> watchAllInRadius() async* {
+    final location = await Location().getLocation();
+
+    final center = GeoFirePoint(location.latitude, location.longitude)
+        .hash
+        .substring(0, 5);
+
+    yield* _firestore.storeCollection
+        .where("coordinates.geohash", isGreaterThanOrEqualTo: center)
+        .where("coordinates.geohash", isLessThanOrEqualTo: "$center\uf8ff")
+        .snapshots()
+        .map(
+          (snapshots) => right<StoreFailure, KtList<Store>>(
+            snapshots.documents
+                .map((doc) => StoreDTO.fromFirestore(doc).toDomain())
+                .toImmutableList(),
+          ),
+        );
+  }
+
   Future<StoreDTO> _uploadImages(
       String coverImageUrl, String logoImageUrl, StoreDTO storeDTO) async {
     var store = storeDTO;
 
-    if ((coverImageUrl != null || coverImageUrl.isNotEmpty) &&
+    if ((coverImageUrl != null && coverImageUrl.isNotEmpty) &&
         !coverImageUrl.contains("http")) {
       final thumbnailFile = await getThumbnailFile(File(coverImageUrl));
 
-      final uploadTask =
-          _firebaseStorage.storeStorageReference.putFile(thumbnailFile);
+      if (thumbnailFile != null) {
+        final uploadTask =
+            _firebaseStorage.storeStorageReference.putFile(thumbnailFile);
 
-      final StorageTaskSnapshot downloadUrl = await uploadTask.onComplete;
+        final StorageTaskSnapshot downloadUrl = await uploadTask.onComplete;
 
-      final String imageUrl = await downloadUrl.ref.getDownloadURL() as String;
+        final String imageUrl =
+            await downloadUrl.ref.getDownloadURL() as String;
 
-      store = store.copyWith(coverImageUrl: imageUrl);
+        store = store.copyWith(coverImageUrl: imageUrl);
+      }
     }
 
-    if ((logoImageUrl != null || logoImageUrl.isNotEmpty) &&
+    if ((logoImageUrl != null && logoImageUrl.isNotEmpty) &&
         !logoImageUrl.contains("http")) {
       final thumbnailFile = await getThumbnailFile(File(logoImageUrl));
 
-      final uploadTask =
-          _firebaseStorage.storeStorageReference.putFile(thumbnailFile);
+      if (thumbnailFile != null) {
+        final uploadTask =
+            _firebaseStorage.storeStorageReference.putFile(thumbnailFile);
 
-      final StorageTaskSnapshot downloadUrl = await uploadTask.onComplete;
+        final StorageTaskSnapshot downloadUrl = await uploadTask.onComplete;
 
-      final String imageUrl = await downloadUrl.ref.getDownloadURL() as String;
+        final String imageUrl =
+            await downloadUrl.ref.getDownloadURL() as String;
 
-      store = store.copyWith(logoImageUrl: imageUrl);
+        store = store.copyWith(logoImageUrl: imageUrl);
+      }
     }
 
     return store;

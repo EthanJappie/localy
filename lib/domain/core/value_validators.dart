@@ -1,5 +1,5 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dartz/dartz.dart';
+import 'package:geoflutterfire/geoflutterfire.dart';
 import 'package:localy/domain/core/failures.dart';
 
 Either<ValueFailure<String>, String> validateMaxStringLength(
@@ -49,7 +49,7 @@ Either<ValueFailure<String>, String> validatePassword(String input) {
   }
 }
 
-Either<ValueFailure<GeoPoint>, GeoPoint> validateGeoPoint(GeoPoint input) {
+Either<ValueFailure<GeoFirePoint>, GeoFirePoint> validateGeoPoint(GeoFirePoint input) {
   if (input.longitude != 0.0 && input.latitude != 0) {
     return right(input);
   } else {

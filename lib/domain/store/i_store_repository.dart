@@ -6,6 +6,8 @@ import 'package:localy/domain/store/store_failure.dart';
 abstract class IStoreRepository {
   Stream<Either<StoreFailure, KtList<Store>>> watchAll();
 
+  Stream<Either<StoreFailure, KtList<Store>>> watchAllInRadius();
+
   Future<Either<StoreFailure, Unit>> create(Store store);
 
   Future<Either<StoreFailure, Unit>> update(Store store);

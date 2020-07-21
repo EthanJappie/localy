@@ -20,7 +20,7 @@ class _$StoreDTOTearOff {
       {@required String ownerID,
       @required String storeName,
       @required String address,
-      @required @GeoPointConverters() GeoPoint coordinates,
+      @required @GeoPointConverters() GeoFirePoint coordinates,
       @required @TimestampConverter() Timestamp workingHoursFrom,
       @required @TimestampConverter() Timestamp workingHoursTo,
       @required String telephoneNumber,
@@ -70,7 +70,7 @@ mixin _$StoreDTO {
   String get storeName;
   String get address;
   @GeoPointConverters()
-  GeoPoint get coordinates;
+  GeoFirePoint get coordinates;
   @TimestampConverter()
   Timestamp get workingHoursFrom;
   @TimestampConverter()
@@ -103,7 +103,7 @@ abstract class $StoreDTOCopyWith<$Res> {
       {String ownerID,
       String storeName,
       String address,
-      @GeoPointConverters() GeoPoint coordinates,
+      @GeoPointConverters() GeoFirePoint coordinates,
       @TimestampConverter() Timestamp workingHoursFrom,
       @TimestampConverter() Timestamp workingHoursTo,
       String telephoneNumber,
@@ -156,8 +156,9 @@ class _$StoreDTOCopyWithImpl<$Res> implements $StoreDTOCopyWith<$Res> {
       ownerID: ownerID == freezed ? _value.ownerID : ownerID as String,
       storeName: storeName == freezed ? _value.storeName : storeName as String,
       address: address == freezed ? _value.address : address as String,
-      coordinates:
-          coordinates == freezed ? _value.coordinates : coordinates as GeoPoint,
+      coordinates: coordinates == freezed
+          ? _value.coordinates
+          : coordinates as GeoFirePoint,
       workingHoursFrom: workingHoursFrom == freezed
           ? _value.workingHoursFrom
           : workingHoursFrom as Timestamp,
@@ -207,7 +208,7 @@ abstract class _$StoreDTOCopyWith<$Res> implements $StoreDTOCopyWith<$Res> {
       {String ownerID,
       String storeName,
       String address,
-      @GeoPointConverters() GeoPoint coordinates,
+      @GeoPointConverters() GeoFirePoint coordinates,
       @TimestampConverter() Timestamp workingHoursFrom,
       @TimestampConverter() Timestamp workingHoursTo,
       String telephoneNumber,
@@ -261,8 +262,9 @@ class __$StoreDTOCopyWithImpl<$Res> extends _$StoreDTOCopyWithImpl<$Res>
       ownerID: ownerID == freezed ? _value.ownerID : ownerID as String,
       storeName: storeName == freezed ? _value.storeName : storeName as String,
       address: address == freezed ? _value.address : address as String,
-      coordinates:
-          coordinates == freezed ? _value.coordinates : coordinates as GeoPoint,
+      coordinates: coordinates == freezed
+          ? _value.coordinates
+          : coordinates as GeoFirePoint,
       workingHoursFrom: workingHoursFrom == freezed
           ? _value.workingHoursFrom
           : workingHoursFrom as Timestamp,
@@ -356,7 +358,7 @@ class _$_StoreDTO extends _StoreDTO {
   final String address;
   @override
   @GeoPointConverters()
-  final GeoPoint coordinates;
+  final GeoFirePoint coordinates;
   @override
   @TimestampConverter()
   final Timestamp workingHoursFrom;
@@ -501,7 +503,7 @@ abstract class _StoreDTO extends StoreDTO {
       {@required String ownerID,
       @required String storeName,
       @required String address,
-      @required @GeoPointConverters() GeoPoint coordinates,
+      @required @GeoPointConverters() GeoFirePoint coordinates,
       @required @TimestampConverter() Timestamp workingHoursFrom,
       @required @TimestampConverter() Timestamp workingHoursTo,
       @required String telephoneNumber,
@@ -529,7 +531,7 @@ abstract class _StoreDTO extends StoreDTO {
   String get address;
   @override
   @GeoPointConverters()
-  GeoPoint get coordinates;
+  GeoFirePoint get coordinates;
   @override
   @TimestampConverter()
   Timestamp get workingHoursFrom;

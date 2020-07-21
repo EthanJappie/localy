@@ -1,12 +1,12 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:geoflutterfire/geoflutterfire.dart';
 import 'package:google_map_location_picker/google_map_location_picker.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class LocalyLocationPicker extends FormField<String> {
   final String title;
   final String address;
-  final ValueChanged<GeoPoint> onLocationChanged;
+  final ValueChanged<GeoFirePoint> onLocationChanged;
   final ValueChanged<String> onAddressChanged;
   final FormFieldSetter<String> onSaved;
   final FormFieldValidator<String> validator;
@@ -59,7 +59,7 @@ class LocalyLocationPicker extends FormField<String> {
                   final locationResult = map[keys[0]];
                   state.didChange(locationResult.address);
                   onAddressChanged(locationResult.address);
-                  onLocationChanged(GeoPoint(locationResult.latLng.latitude,
+                  onLocationChanged(GeoFirePoint(locationResult.latLng.latitude,
                       locationResult.latLng.longitude));
 
                 },

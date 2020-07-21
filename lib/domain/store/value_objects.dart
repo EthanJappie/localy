@@ -1,25 +1,26 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dartz/dartz.dart';
+import 'package:geoflutterfire/geoflutterfire.dart';
 import 'package:localy/domain/core/failures.dart';
 import 'package:localy/domain/core/value_objects.dart';
 import 'package:localy/domain/core/value_validators.dart';
 
-class Coordinates extends ValueObject<GeoPoint> {
+class FireCoordinates extends ValueObject<GeoFirePoint> {
   @override
-  final Either<ValueFailure<GeoPoint>, GeoPoint> value;
+  final Either<ValueFailure<GeoFirePoint>, GeoFirePoint> value;
 
-  factory Coordinates.zero() {
-    return Coordinates._(right(const GeoPoint(0, 0)));
+  factory FireCoordinates.zero() {
+    return FireCoordinates._(right( GeoFirePoint(0, 0)));
   }
 
-  factory Coordinates(GeoPoint input) {
+  factory FireCoordinates(GeoFirePoint input) {
     assert(input != null);
-    return Coordinates._(
+    return FireCoordinates._(
       validateGeoPoint(input),
     );
   }
 
-  const Coordinates._(this.value);
+  const FireCoordinates._(this.value);
 }
 
 class WorkingHours extends ValueObject<Timestamp> {

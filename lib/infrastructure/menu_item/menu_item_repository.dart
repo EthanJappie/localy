@@ -119,7 +119,7 @@ class MenuItemRepository implements IMenuItemRepository {
   ) async {
     var menuItem = menuItemDTO;
 
-    if ((itemImageUrl != null || itemImageUrl.isNotEmpty) &&
+    if ((itemImageUrl != null && itemImageUrl.isNotEmpty) &&
         !itemImageUrl.contains("http")) {
       final thumbnailFile = await getThumbnailFile(File(itemImageUrl));
 

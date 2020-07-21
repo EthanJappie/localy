@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_cropper/image_cropper.dart';
@@ -57,7 +58,7 @@ class MenuItemImageField extends StatelessWidget {
   }
 
   Widget _renderImage(MenuItem menuItem) {
-    if(menuItem.imageUrl == null){
+    if (menuItem.imageUrl == null) {
       return Icon(
         Icons.camera_alt,
         color: Colors.white,
@@ -73,9 +74,19 @@ class MenuItemImageField extends StatelessWidget {
         size: 60,
       );
     } else if (urlOrPath.contains("http")) {
-      return Image.network(
-        urlOrPath,
+      return CachedNetworkImage(
+        imageUrl: urlOrPath,
         fit: BoxFit.fill,
+        placeholder: (context, url) => Icon(
+          Icons.camera_alt,
+          color: Colors.white,
+          size: 60,
+        ),
+        errorWidget: (context, url, error) => Icon(
+          Icons.error,
+          color: Colors.white,
+          size: 60,
+        ),
       );
     } else {
       return Image.file(

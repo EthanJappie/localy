@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:localy/application/auth/auth_bloc.dart';
+import 'package:localy/environment_config.dart';
 import 'package:localy/presentation/core/routes/manager_router.gr.dart';
+import 'package:localy/presentation/core/routes/customer_router.gr.dart';
 
 import '../../injection.dart';
 
@@ -23,7 +25,7 @@ class AppWidget extends StatelessWidget {
       child: MaterialApp(
         title: 'Localy',
         debugShowCheckedModeBanner: false,
-        builder: ExtendedNavigator(router: ManagerRouter()),
+        builder: ExtendedNavigator(router: _getRouter()),
         theme: ThemeData.light().copyWith(
           primaryColor: const Color(appColor),
           textTheme: GoogleFonts.montserratTextTheme(),
@@ -35,5 +37,13 @@ class AppWidget extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  RouterBase _getRouter() {
+    if (EnvironmentConfig.APP_NAME == "LocalyManager") {
+      return ManagerRouter();
+    } else {
+      return CustomerRouter();
+    }
   }
 }

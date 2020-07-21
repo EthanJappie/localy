@@ -10,7 +10,7 @@ abstract class StoreFormEvent with _$StoreFormEvent {
 
   const factory StoreFormEvent.addressChanged(String address) = _AddressChanged;
 
-  const factory StoreFormEvent.coordinatesChanged(GeoPoint coordinates) =
+  const factory StoreFormEvent.coordinatesChanged(GeoFirePoint coordinates) =
   _CoordinatesChanged;
 
   const factory StoreFormEvent.workHoursFromChanged(Timestamp workHours) =

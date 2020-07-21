@@ -18,6 +18,11 @@ class _$StoreWatcherEventTearOff {
   }
 
 // ignore: unused_element
+  _WatchAllInRadiusStarted watchAllInRadiusStarted() {
+    return const _WatchAllInRadiusStarted();
+  }
+
+// ignore: unused_element
   _StoresReceived storesReceived(
       Either<StoreFailure, KtList<Store>> failureOrStore) {
     return _StoresReceived(
@@ -33,6 +38,7 @@ mixin _$StoreWatcherEvent {
   @optionalTypeArgs
   Result when<Result extends Object>({
     @required Result watchAllStarted(),
+    @required Result watchAllInRadiusStarted(),
     @required
         Result storesReceived(
             Either<StoreFailure, KtList<Store>> failureOrStore),
@@ -40,17 +46,20 @@ mixin _$StoreWatcherEvent {
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result watchAllStarted(),
+    Result watchAllInRadiusStarted(),
     Result storesReceived(Either<StoreFailure, KtList<Store>> failureOrStore),
     @required Result orElse(),
   });
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result watchAllStarted(_WatchAllStoresStarted value),
+    @required Result watchAllInRadiusStarted(_WatchAllInRadiusStarted value),
     @required Result storesReceived(_StoresReceived value),
   });
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result watchAllStarted(_WatchAllStoresStarted value),
+    Result watchAllInRadiusStarted(_WatchAllInRadiusStarted value),
     Result storesReceived(_StoresReceived value),
     @required Result orElse(),
   });
@@ -108,11 +117,13 @@ class _$_WatchAllStoresStarted implements _WatchAllStoresStarted {
   @optionalTypeArgs
   Result when<Result extends Object>({
     @required Result watchAllStarted(),
+    @required Result watchAllInRadiusStarted(),
     @required
         Result storesReceived(
             Either<StoreFailure, KtList<Store>> failureOrStore),
   }) {
     assert(watchAllStarted != null);
+    assert(watchAllInRadiusStarted != null);
     assert(storesReceived != null);
     return watchAllStarted();
   }
@@ -121,6 +132,7 @@ class _$_WatchAllStoresStarted implements _WatchAllStoresStarted {
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result watchAllStarted(),
+    Result watchAllInRadiusStarted(),
     Result storesReceived(Either<StoreFailure, KtList<Store>> failureOrStore),
     @required Result orElse(),
   }) {
@@ -135,9 +147,11 @@ class _$_WatchAllStoresStarted implements _WatchAllStoresStarted {
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result watchAllStarted(_WatchAllStoresStarted value),
+    @required Result watchAllInRadiusStarted(_WatchAllInRadiusStarted value),
     @required Result storesReceived(_StoresReceived value),
   }) {
     assert(watchAllStarted != null);
+    assert(watchAllInRadiusStarted != null);
     assert(storesReceived != null);
     return watchAllStarted(this);
   }
@@ -146,6 +160,7 @@ class _$_WatchAllStoresStarted implements _WatchAllStoresStarted {
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result watchAllStarted(_WatchAllStoresStarted value),
+    Result watchAllInRadiusStarted(_WatchAllInRadiusStarted value),
     Result storesReceived(_StoresReceived value),
     @required Result orElse(),
   }) {
@@ -159,6 +174,103 @@ class _$_WatchAllStoresStarted implements _WatchAllStoresStarted {
 
 abstract class _WatchAllStoresStarted implements StoreWatcherEvent {
   const factory _WatchAllStoresStarted() = _$_WatchAllStoresStarted;
+}
+
+abstract class _$WatchAllInRadiusStartedCopyWith<$Res> {
+  factory _$WatchAllInRadiusStartedCopyWith(_WatchAllInRadiusStarted value,
+          $Res Function(_WatchAllInRadiusStarted) then) =
+      __$WatchAllInRadiusStartedCopyWithImpl<$Res>;
+}
+
+class __$WatchAllInRadiusStartedCopyWithImpl<$Res>
+    extends _$StoreWatcherEventCopyWithImpl<$Res>
+    implements _$WatchAllInRadiusStartedCopyWith<$Res> {
+  __$WatchAllInRadiusStartedCopyWithImpl(_WatchAllInRadiusStarted _value,
+      $Res Function(_WatchAllInRadiusStarted) _then)
+      : super(_value, (v) => _then(v as _WatchAllInRadiusStarted));
+
+  @override
+  _WatchAllInRadiusStarted get _value =>
+      super._value as _WatchAllInRadiusStarted;
+}
+
+class _$_WatchAllInRadiusStarted implements _WatchAllInRadiusStarted {
+  const _$_WatchAllInRadiusStarted();
+
+  @override
+  String toString() {
+    return 'StoreWatcherEvent.watchAllInRadiusStarted()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) || (other is _WatchAllInRadiusStarted);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result watchAllStarted(),
+    @required Result watchAllInRadiusStarted(),
+    @required
+        Result storesReceived(
+            Either<StoreFailure, KtList<Store>> failureOrStore),
+  }) {
+    assert(watchAllStarted != null);
+    assert(watchAllInRadiusStarted != null);
+    assert(storesReceived != null);
+    return watchAllInRadiusStarted();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result watchAllStarted(),
+    Result watchAllInRadiusStarted(),
+    Result storesReceived(Either<StoreFailure, KtList<Store>> failureOrStore),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (watchAllInRadiusStarted != null) {
+      return watchAllInRadiusStarted();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result watchAllStarted(_WatchAllStoresStarted value),
+    @required Result watchAllInRadiusStarted(_WatchAllInRadiusStarted value),
+    @required Result storesReceived(_StoresReceived value),
+  }) {
+    assert(watchAllStarted != null);
+    assert(watchAllInRadiusStarted != null);
+    assert(storesReceived != null);
+    return watchAllInRadiusStarted(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result watchAllStarted(_WatchAllStoresStarted value),
+    Result watchAllInRadiusStarted(_WatchAllInRadiusStarted value),
+    Result storesReceived(_StoresReceived value),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (watchAllInRadiusStarted != null) {
+      return watchAllInRadiusStarted(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _WatchAllInRadiusStarted implements StoreWatcherEvent {
+  const factory _WatchAllInRadiusStarted() = _$_WatchAllInRadiusStarted;
 }
 
 abstract class _$StoresReceivedCopyWith<$Res> {
@@ -223,11 +335,13 @@ class _$_StoresReceived implements _StoresReceived {
   @optionalTypeArgs
   Result when<Result extends Object>({
     @required Result watchAllStarted(),
+    @required Result watchAllInRadiusStarted(),
     @required
         Result storesReceived(
             Either<StoreFailure, KtList<Store>> failureOrStore),
   }) {
     assert(watchAllStarted != null);
+    assert(watchAllInRadiusStarted != null);
     assert(storesReceived != null);
     return storesReceived(failureOrStore);
   }
@@ -236,6 +350,7 @@ class _$_StoresReceived implements _StoresReceived {
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result watchAllStarted(),
+    Result watchAllInRadiusStarted(),
     Result storesReceived(Either<StoreFailure, KtList<Store>> failureOrStore),
     @required Result orElse(),
   }) {
@@ -250,9 +365,11 @@ class _$_StoresReceived implements _StoresReceived {
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result watchAllStarted(_WatchAllStoresStarted value),
+    @required Result watchAllInRadiusStarted(_WatchAllInRadiusStarted value),
     @required Result storesReceived(_StoresReceived value),
   }) {
     assert(watchAllStarted != null);
+    assert(watchAllInRadiusStarted != null);
     assert(storesReceived != null);
     return storesReceived(this);
   }
@@ -261,6 +378,7 @@ class _$_StoresReceived implements _StoresReceived {
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result watchAllStarted(_WatchAllStoresStarted value),
+    Result watchAllInRadiusStarted(_WatchAllInRadiusStarted value),
     Result storesReceived(_StoresReceived value),
     @required Result orElse(),
   }) {

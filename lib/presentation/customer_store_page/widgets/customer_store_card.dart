@@ -1,24 +1,23 @@
 import 'dart:io';
 
 import 'package:auto_route/auto_route.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:geoflutterfire/geoflutterfire.dart';
 import 'package:localy/domain/store/store.dart';
 import 'package:localy/presentation/core/routes/manager_router.gr.dart';
 
-class StoreCard extends StatelessWidget {
+class CustomerStoreCard extends StatelessWidget {
   final Store store;
+  final GeoFirePoint currentPosition;
 
-  const StoreCard({Key key, this.store}) : super(key: key);
+  const CustomerStoreCard({Key key, this.store, this.currentPosition})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        ExtendedNavigator.of(context).pushNamed(
-          ManagerRoute.administrationPage,
-          arguments: AdministrationPageArguments(store: store),
-        );
+
       },
       child: Card(
         margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
@@ -38,21 +37,6 @@ class StoreCard extends StatelessWidget {
                     ),
                   ),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: <Widget>[
-                    IconButton(
-                      padding: const EdgeInsets.all(24),
-                      icon: Icon(Icons.remove_red_eye, color: Colors.white),
-                      onPressed: () {
-                        ExtendedNavigator.of(context).pushNamed(
-                          ManagerRoute.storeFormPage,
-                          arguments: StoreFormPageArguments(editedStore: store),
-                        );
-                      },
-                    ),
-                  ],
-                )
               ],
             ),
             Container(
@@ -91,15 +75,7 @@ class StoreCard extends StatelessWidget {
                           ),
                         ],
                       ),
-                      Column(
-                        children: <Widget>[
-                          Text(
-                            "orders",
-                            style: _ordersTextStyle(),
-                          ),
-                          const Text("12")
-                        ],
-                      )
+                      Text("${_getDistance().toStringAsFixed(2)}km away", style: _subtitleTextStyle(),)
                     ],
                   ),
                 ],
@@ -111,6 +87,15 @@ class StoreCard extends StatelessWidget {
     );
   }
 
+  double _getDistance() {
+    if (currentPosition == null) return 0;
+    return currentPosition.distance(
+      lat: store.coordinates.getOrCrash().latitude,
+      lng: store.coordinates.getOrCrash().longitude,
+    );
+  }
+
+
   Widget _renderImage(String urlOrPath, double size, {double iconSize = 60}) {
     if (urlOrPath == null || urlOrPath.isEmpty) {
       return Icon(
@@ -119,20 +104,10 @@ class StoreCard extends StatelessWidget {
         size: iconSize,
       );
     } else if (urlOrPath.contains("http")) {
-      return CachedNetworkImage(
-        imageUrl: urlOrPath,
-        height: size,
+      return Image.network(
+        urlOrPath,
         fit: BoxFit.fill,
-        placeholder: (context, url) => Icon(
-          Icons.camera_alt,
-          color: Colors.white,
-          size: iconSize,
-        ),
-        errorWidget: (context, url, error) => Icon(
-          Icons.error,
-          color: Colors.white,
-          size: iconSize,
-        ),
+        height: size,
       );
     } else {
       return Image.file(
