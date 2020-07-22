@@ -8,7 +8,7 @@ import 'package:geoflutterfire/geoflutterfire.dart';
 import 'package:injectable/injectable.dart';
 import 'package:localy/domain/core/value_objects.dart';
 import 'package:localy/domain/store/i_store_repository.dart';
-import 'package:localy/domain/store/store.dart';
+import 'package:localy/domain/store/restaurant.dart';
 import 'package:localy/domain/store/store_failure.dart';
 import 'package:localy/domain/store/value_objects.dart';
 import 'package:meta/meta.dart';

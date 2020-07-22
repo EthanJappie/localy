@@ -44,6 +44,16 @@ class MenuWatcherBloc extends Bloc<MenuWatcherEvent, MenuWatcherState> {
           (menus) => MenuWatcherState.loadSuccess(menus),
         );
       },
+      watchAllNotHidden: (e) async* {
+        yield const MenuWatcherState.loading();
+        await _menuStreamSubscription?.cancel();
+        _menuStreamSubscription =
+            _menuRepository.watchAllUnhidden(e.storeID).listen(
+                  (failureOrMenus) => add(
+                    MenuWatcherEvent.menusReceived(failureOrMenus),
+                  ),
+                );
+      },
     );
   }
 }

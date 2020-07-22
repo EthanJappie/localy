@@ -13,7 +13,7 @@ class _$StoreActorEventTearOff {
   const _$StoreActorEventTearOff();
 
 // ignore: unused_element
-  _Deleted deleted(Store store) {
+  _Deleted deleted(Restaurant store) {
     return _Deleted(
       store,
     );
@@ -24,15 +24,15 @@ class _$StoreActorEventTearOff {
 const $StoreActorEvent = _$StoreActorEventTearOff();
 
 mixin _$StoreActorEvent {
-  Store get store;
+  Restaurant get store;
 
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result deleted(Store store),
+    @required Result deleted(Restaurant store),
   });
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result deleted(Store store),
+    Result deleted(Restaurant store),
     @required Result orElse(),
   });
   @optionalTypeArgs
@@ -52,9 +52,9 @@ abstract class $StoreActorEventCopyWith<$Res> {
   factory $StoreActorEventCopyWith(
           StoreActorEvent value, $Res Function(StoreActorEvent) then) =
       _$StoreActorEventCopyWithImpl<$Res>;
-  $Res call({Store store});
+  $Res call({Restaurant store});
 
-  $StoreCopyWith<$Res> get store;
+  $RestaurantCopyWith<$Res> get store;
 }
 
 class _$StoreActorEventCopyWithImpl<$Res>
@@ -70,16 +70,16 @@ class _$StoreActorEventCopyWithImpl<$Res>
     Object store = freezed,
   }) {
     return _then(_value.copyWith(
-      store: store == freezed ? _value.store : store as Store,
+      store: store == freezed ? _value.store : store as Restaurant,
     ));
   }
 
   @override
-  $StoreCopyWith<$Res> get store {
+  $RestaurantCopyWith<$Res> get store {
     if (_value.store == null) {
       return null;
     }
-    return $StoreCopyWith<$Res>(_value.store, (value) {
+    return $RestaurantCopyWith<$Res>(_value.store, (value) {
       return _then(_value.copyWith(store: value));
     });
   }
@@ -90,10 +90,10 @@ abstract class _$DeletedCopyWith<$Res>
   factory _$DeletedCopyWith(_Deleted value, $Res Function(_Deleted) then) =
       __$DeletedCopyWithImpl<$Res>;
   @override
-  $Res call({Store store});
+  $Res call({Restaurant store});
 
   @override
-  $StoreCopyWith<$Res> get store;
+  $RestaurantCopyWith<$Res> get store;
 }
 
 class __$DeletedCopyWithImpl<$Res> extends _$StoreActorEventCopyWithImpl<$Res>
@@ -109,7 +109,7 @@ class __$DeletedCopyWithImpl<$Res> extends _$StoreActorEventCopyWithImpl<$Res>
     Object store = freezed,
   }) {
     return _then(_Deleted(
-      store == freezed ? _value.store : store as Store,
+      store == freezed ? _value.store : store as Restaurant,
     ));
   }
 }
@@ -118,7 +118,7 @@ class _$_Deleted implements _Deleted {
   const _$_Deleted(this.store) : assert(store != null);
 
   @override
-  final Store store;
+  final Restaurant store;
 
   @override
   String toString() {
@@ -144,7 +144,7 @@ class _$_Deleted implements _Deleted {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result deleted(Store store),
+    @required Result deleted(Restaurant store),
   }) {
     assert(deleted != null);
     return deleted(store);
@@ -153,7 +153,7 @@ class _$_Deleted implements _Deleted {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result deleted(Store store),
+    Result deleted(Restaurant store),
     @required Result orElse(),
   }) {
     assert(orElse != null);
@@ -187,10 +187,10 @@ class _$_Deleted implements _Deleted {
 }
 
 abstract class _Deleted implements StoreActorEvent {
-  const factory _Deleted(Store store) = _$_Deleted;
+  const factory _Deleted(Restaurant store) = _$_Deleted;
 
   @override
-  Store get store;
+  Restaurant get store;
   @override
   _$DeletedCopyWith<_Deleted> get copyWith;
 }

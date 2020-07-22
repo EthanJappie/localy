@@ -25,20 +25,20 @@ dependencies:
     sdk: flutter
   dartz: ^0.9.1
   freezed_annotation: ^0.11.0
-  flutter_bloc: ^5.0.1
+  flutter_bloc: ^6.0.0
   firebase_core: ^0.4.5
   firebase_auth: ^0.16.1
   cloud_firestore: ^0.13.6
   google_sign_in: ^4.5.1
   get_it: ^4.0.2
-  injectable: ^0.4.0+1
+  injectable: ^1.0.2
   flushbar: ^1.10.4
   uuid: ^2.0.4
-  auto_route: ^0.6.1
+  auto_route: ^0.6.6
   kt_dart: ^0.7.0+1
   json_annotation: ^3.0.1
   google_fonts: ^1.1.0
-  flutter_svg: ^0.17.0
+  flutter_svg: ^0.17.4
   flutter_hooks: ^0.12.0
   google_map_location_picker: ^3.2.1
   location: ^3.0.2
@@ -62,16 +62,17 @@ dev_dependencies:
   flutter_driver:
     sdk: flutter
   mockito: 4.1.1
-  bloc_test: 6.0.1
+  bloc_test: 7.0.0
   build_runner:
   freezed: ^0.11.4
   lint: ^1.2.0
-  injectable_generator: ^0.4.0
-  auto_route_generator: ^0.6.0
+  injectable_generator: ^1.0.2
+  auto_route_generator: ^0.6.6
   json_serializable: ^3.3.0
   clippy_flutter: ^1.1.1
   remove_from_coverage: any
   lcov: 6.0.0
+  bdd_widget_test: ^0.1.4
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

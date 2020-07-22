@@ -8,6 +8,6 @@ abstract class StoreWatcherEvent with _$StoreWatcherEvent {
       _WatchAllInRadiusStarted;
 
   const factory StoreWatcherEvent.storesReceived(
-    Either<StoreFailure, KtList<Store>> failureOrStore,
+    Either<StoreFailure, KtList<Restaurant>> failureOrStore,
   ) = _StoresReceived;
 }

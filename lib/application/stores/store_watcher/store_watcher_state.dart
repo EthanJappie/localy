@@ -6,7 +6,7 @@ abstract class StoreWatcherState with _$StoreWatcherState {
 
   const factory StoreWatcherState.loading() = _LoadingStoreWatcher;
 
-  const factory StoreWatcherState.loadSuccess(KtList<Store> stores) =
+  const factory StoreWatcherState.loadSuccess(KtList<Restaurant> stores) =
       _LoadSuccessStoreWatcher;
 
   const factory StoreWatcherState.loadFailure(StoreFailure storeFailure) =

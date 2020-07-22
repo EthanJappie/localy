@@ -11,7 +11,6 @@ import 'package:localy/domain/menu_item/menu_item.dart';
 import 'package:localy/domain/menu_item/menu_item_failure.dart';
 import 'package:localy/infrastructure/menu_item/menu_item_dtos.dart';
 import 'package:localy/infrastructure/core/firestore_helpers.dart';
-import 'package:localy/presentation/core/helpers/camera_helper.dart';
 
 @LazySingleton(as: IMenuItemRepository)
 class MenuItemRepository implements IMenuItemRepository {
@@ -121,10 +120,8 @@ class MenuItemRepository implements IMenuItemRepository {
 
     if ((itemImageUrl != null && itemImageUrl.isNotEmpty) &&
         !itemImageUrl.contains("http")) {
-      final thumbnailFile = await getThumbnailFile(File(itemImageUrl));
-
-      final uploadTask =
-          _firebaseStorage.menuItemsStorageReference.putFile(thumbnailFile);
+      final uploadTask = _firebaseStorage.menuItemsStorageReference
+          .putFile(File(itemImageUrl));
 
       final StorageTaskSnapshot downloadUrl = await uploadTask.onComplete;
 
@@ -134,5 +131,22 @@ class MenuItemRepository implements IMenuItemRepository {
     }
 
     return menuItem;
+  }
+
+  @override
+  Stream<Either<MenuItemFailure, KtList<MenuItem>>> watchAllUnhidden(
+      String menuID) async* {
+    yield* _firestore.menuItemsCollection
+        .where("menuID", isEqualTo: menuID)
+        .where("hidden", isEqualTo: false)
+        .orderBy("sequenceOfAppearance", descending: false)
+        .snapshots()
+        .map(
+          (snapshots) => right<MenuItemFailure, KtList<MenuItem>>(
+            snapshots.documents
+                .map((doc) => MenuItemDTO.fromFirestore(doc).toDomain())
+                .toImmutableList(),
+          ),
+        );
   }
 }

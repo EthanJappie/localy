@@ -89,4 +89,21 @@ class MenuRepository implements IMenuRepository {
           ),
         );
   }
+
+  @override
+  Stream<Either<MenuFailure, KtList<Menu>>> watchAllUnhidden(
+      String storeID) async* {
+    yield* _firestore.menuCollection
+        .where("storeID", isEqualTo: storeID)
+        .where("hidden", isEqualTo: false)
+        .orderBy("sequenceOfAppearance", descending: false)
+        .snapshots()
+        .map(
+          (snapshots) => right<MenuFailure, KtList<Menu>>(
+            snapshots.documents
+                .map((doc) => MenuDTO.fromFirestore(doc).toDomain())
+                .toImmutableList(),
+          ),
+        );
+  }
 }

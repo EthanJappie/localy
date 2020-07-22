@@ -13,7 +13,7 @@ class _$StoreFormEventTearOff {
   const _$StoreFormEventTearOff();
 
 // ignore: unused_element
-  _Initialized intialized(Option<Store> initialStoreOption) {
+  _Initialized intialized(Option<Restaurant> initialStoreOption) {
     return _Initialized(
       initialStoreOption,
     );
@@ -151,7 +151,7 @@ const $StoreFormEvent = _$StoreFormEventTearOff();
 mixin _$StoreFormEvent {
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Store> initialStoreOption),
+    @required Result intialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -173,7 +173,7 @@ mixin _$StoreFormEvent {
   });
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Store> initialStoreOption),
+    Result intialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -262,7 +262,7 @@ abstract class _$InitializedCopyWith<$Res> {
   factory _$InitializedCopyWith(
           _Initialized value, $Res Function(_Initialized) then) =
       __$InitializedCopyWithImpl<$Res>;
-  $Res call({Option<Store> initialStoreOption});
+  $Res call({Option<Restaurant> initialStoreOption});
 }
 
 class __$InitializedCopyWithImpl<$Res>
@@ -282,7 +282,7 @@ class __$InitializedCopyWithImpl<$Res>
     return _then(_Initialized(
       initialStoreOption == freezed
           ? _value.initialStoreOption
-          : initialStoreOption as Option<Store>,
+          : initialStoreOption as Option<Restaurant>,
     ));
   }
 }
@@ -292,7 +292,7 @@ class _$_Initialized implements _Initialized {
       : assert(initialStoreOption != null);
 
   @override
-  final Option<Store> initialStoreOption;
+  final Option<Restaurant> initialStoreOption;
 
   @override
   String toString() {
@@ -320,7 +320,7 @@ class _$_Initialized implements _Initialized {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Store> initialStoreOption),
+    @required Result intialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -365,7 +365,7 @@ class _$_Initialized implements _Initialized {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Store> initialStoreOption),
+    Result intialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -473,9 +473,10 @@ class _$_Initialized implements _Initialized {
 }
 
 abstract class _Initialized implements StoreFormEvent {
-  const factory _Initialized(Option<Store> initialStoreOption) = _$_Initialized;
+  const factory _Initialized(Option<Restaurant> initialStoreOption) =
+      _$_Initialized;
 
-  Option<Store> get initialStoreOption;
+  Option<Restaurant> get initialStoreOption;
   _$InitializedCopyWith<_Initialized> get copyWith;
 }
 
@@ -537,7 +538,7 @@ class _$_StoreNameChanged implements _StoreNameChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Store> initialStoreOption),
+    @required Result intialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -582,7 +583,7 @@ class _$_StoreNameChanged implements _StoreNameChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Store> initialStoreOption),
+    Result intialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -753,7 +754,7 @@ class _$_AddressChanged implements _AddressChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Store> initialStoreOption),
+    @required Result intialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -798,7 +799,7 @@ class _$_AddressChanged implements _AddressChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Store> initialStoreOption),
+    Result intialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -970,7 +971,7 @@ class _$_CoordinatesChanged implements _CoordinatesChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Store> initialStoreOption),
+    @required Result intialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -1015,7 +1016,7 @@ class _$_CoordinatesChanged implements _CoordinatesChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Store> initialStoreOption),
+    Result intialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -1189,7 +1190,7 @@ class _$_WorkHoursFromChanged implements _WorkHoursFromChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Store> initialStoreOption),
+    @required Result intialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -1234,7 +1235,7 @@ class _$_WorkHoursFromChanged implements _WorkHoursFromChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Store> initialStoreOption),
+    Result intialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -1407,7 +1408,7 @@ class _$_WorkHoursToChanged implements _WorkHoursToChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Store> initialStoreOption),
+    @required Result intialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -1452,7 +1453,7 @@ class _$_WorkHoursToChanged implements _WorkHoursToChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Store> initialStoreOption),
+    Result intialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -1625,7 +1626,7 @@ class _$_TelephoneChanged implements _TelephoneChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Store> initialStoreOption),
+    @required Result intialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -1670,7 +1671,7 @@ class _$_TelephoneChanged implements _TelephoneChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Store> initialStoreOption),
+    Result intialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -1841,7 +1842,7 @@ class _$_NotesChanged implements _NotesChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Store> initialStoreOption),
+    @required Result intialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -1886,7 +1887,7 @@ class _$_NotesChanged implements _NotesChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Store> initialStoreOption),
+    Result intialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -2057,7 +2058,7 @@ class _$_ActiveChanged implements _ActiveChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Store> initialStoreOption),
+    @required Result intialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -2102,7 +2103,7 @@ class _$_ActiveChanged implements _ActiveChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Store> initialStoreOption),
+    Result intialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -2273,7 +2274,7 @@ class _$_OpenChanged implements _OpenChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Store> initialStoreOption),
+    @required Result intialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -2318,7 +2319,7 @@ class _$_OpenChanged implements _OpenChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Store> initialStoreOption),
+    Result intialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -2498,7 +2499,7 @@ class _$_AcceptingStaffRequestsChanged
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Store> initialStoreOption),
+    @required Result intialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -2543,7 +2544,7 @@ class _$_AcceptingStaffRequestsChanged
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Store> initialStoreOption),
+    Result intialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -2718,7 +2719,7 @@ class _$_AcceptCashChanged implements _AcceptCashChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Store> initialStoreOption),
+    @required Result intialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -2763,7 +2764,7 @@ class _$_AcceptCashChanged implements _AcceptCashChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Store> initialStoreOption),
+    Result intialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -2936,7 +2937,7 @@ class _$_AcceptCardChanged implements _AcceptCardChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Store> initialStoreOption),
+    @required Result intialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -2981,7 +2982,7 @@ class _$_AcceptCardChanged implements _AcceptCardChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Store> initialStoreOption),
+    Result intialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -3154,7 +3155,7 @@ class _$_AcceptOtherChanged implements _AcceptOtherChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Store> initialStoreOption),
+    @required Result intialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -3199,7 +3200,7 @@ class _$_AcceptOtherChanged implements _AcceptOtherChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Store> initialStoreOption),
+    Result intialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -3375,7 +3376,7 @@ class _$_FoodDeliveriesChanged implements _FoodDeliveriesChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Store> initialStoreOption),
+    @required Result intialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -3420,7 +3421,7 @@ class _$_FoodDeliveriesChanged implements _FoodDeliveriesChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Store> initialStoreOption),
+    Result intialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -3597,7 +3598,7 @@ class _$_FoodCollectionChanged implements _FoodCollectionChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Store> initialStoreOption),
+    @required Result intialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -3642,7 +3643,7 @@ class _$_FoodCollectionChanged implements _FoodCollectionChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Store> initialStoreOption),
+    Result intialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -3790,7 +3791,7 @@ class _$_Saved implements _Saved {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Store> initialStoreOption),
+    @required Result intialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -3835,7 +3836,7 @@ class _$_Saved implements _Saved {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Store> initialStoreOption),
+    Result intialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -4004,7 +4005,7 @@ class _$_CoverImageChanged implements _CoverImageChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Store> initialStoreOption),
+    @required Result intialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -4049,7 +4050,7 @@ class _$_CoverImageChanged implements _CoverImageChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Store> initialStoreOption),
+    Result intialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -4221,7 +4222,7 @@ class _$_LogoImageChanged implements _LogoImageChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Store> initialStoreOption),
+    @required Result intialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -4266,7 +4267,7 @@ class _$_LogoImageChanged implements _LogoImageChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Store> initialStoreOption),
+    Result intialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -4386,7 +4387,7 @@ class _$StoreFormStateTearOff {
 // ignore: unused_element
   _StoreFormState call(
       {@required
-          Store store,
+          Restaurant store,
       @required
           bool showErrorMessages,
       @required
@@ -4409,7 +4410,7 @@ class _$StoreFormStateTearOff {
 const $StoreFormState = _$StoreFormStateTearOff();
 
 mixin _$StoreFormState {
-  Store get store;
+  Restaurant get store;
   bool get showErrorMessages;
   bool get isEditing;
   bool get isSaving;
@@ -4423,13 +4424,13 @@ abstract class $StoreFormStateCopyWith<$Res> {
           StoreFormState value, $Res Function(StoreFormState) then) =
       _$StoreFormStateCopyWithImpl<$Res>;
   $Res call(
-      {Store store,
+      {Restaurant store,
       bool showErrorMessages,
       bool isEditing,
       bool isSaving,
       Option<Either<StoreFailure, Unit>> saveFailureOrSuccessOption});
 
-  $StoreCopyWith<$Res> get store;
+  $RestaurantCopyWith<$Res> get store;
 }
 
 class _$StoreFormStateCopyWithImpl<$Res>
@@ -4449,7 +4450,7 @@ class _$StoreFormStateCopyWithImpl<$Res>
     Object saveFailureOrSuccessOption = freezed,
   }) {
     return _then(_value.copyWith(
-      store: store == freezed ? _value.store : store as Store,
+      store: store == freezed ? _value.store : store as Restaurant,
       showErrorMessages: showErrorMessages == freezed
           ? _value.showErrorMessages
           : showErrorMessages as bool,
@@ -4462,11 +4463,11 @@ class _$StoreFormStateCopyWithImpl<$Res>
   }
 
   @override
-  $StoreCopyWith<$Res> get store {
+  $RestaurantCopyWith<$Res> get store {
     if (_value.store == null) {
       return null;
     }
-    return $StoreCopyWith<$Res>(_value.store, (value) {
+    return $RestaurantCopyWith<$Res>(_value.store, (value) {
       return _then(_value.copyWith(store: value));
     });
   }
@@ -4479,14 +4480,14 @@ abstract class _$StoreFormStateCopyWith<$Res>
       __$StoreFormStateCopyWithImpl<$Res>;
   @override
   $Res call(
-      {Store store,
+      {Restaurant store,
       bool showErrorMessages,
       bool isEditing,
       bool isSaving,
       Option<Either<StoreFailure, Unit>> saveFailureOrSuccessOption});
 
   @override
-  $StoreCopyWith<$Res> get store;
+  $RestaurantCopyWith<$Res> get store;
 }
 
 class __$StoreFormStateCopyWithImpl<$Res>
@@ -4508,7 +4509,7 @@ class __$StoreFormStateCopyWithImpl<$Res>
     Object saveFailureOrSuccessOption = freezed,
   }) {
     return _then(_StoreFormState(
-      store: store == freezed ? _value.store : store as Store,
+      store: store == freezed ? _value.store : store as Restaurant,
       showErrorMessages: showErrorMessages == freezed
           ? _value.showErrorMessages
           : showErrorMessages as bool,
@@ -4535,7 +4536,7 @@ class _$_StoreFormState implements _StoreFormState {
         assert(saveFailureOrSuccessOption != null);
 
   @override
-  final Store store;
+  final Restaurant store;
   @override
   final bool showErrorMessages;
   @override
@@ -4589,7 +4590,7 @@ class _$_StoreFormState implements _StoreFormState {
 abstract class _StoreFormState implements StoreFormState {
   const factory _StoreFormState(
           {@required
-              Store store,
+              Restaurant store,
           @required
               bool showErrorMessages,
           @required
@@ -4601,7 +4602,7 @@ abstract class _StoreFormState implements StoreFormState {
       _$_StoreFormState;
 
   @override
-  Store get store;
+  Restaurant get store;
   @override
   bool get showErrorMessages;
   @override

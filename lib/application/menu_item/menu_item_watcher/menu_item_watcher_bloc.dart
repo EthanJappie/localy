@@ -17,9 +17,11 @@ part 'menu_item_watcher_state.dart';
 part 'menu_item_watcher_bloc.freezed.dart';
 
 @injectable
-class MenuItemWatcherBloc extends Bloc<MenuItemWatcherEvent, MenuItemWatcherState> {
+class MenuItemWatcherBloc
+    extends Bloc<MenuItemWatcherEvent, MenuItemWatcherState> {
   final IMenuItemRepository _menuItemRepository;
-  StreamSubscription<Either<MenuItemFailure, KtList<MenuItem>>> _menuStreamSubscription;
+  StreamSubscription<Either<MenuItemFailure, KtList<MenuItem>>>
+      _menuStreamSubscription;
 
   MenuItemWatcherBloc(this._menuItemRepository)
       : super(const MenuItemWatcherState.initial());
@@ -43,6 +45,16 @@ class MenuItemWatcherBloc extends Bloc<MenuItemWatcherEvent, MenuItemWatcherStat
           (f) => MenuItemWatcherState.loadFailure(f),
           (menus) => MenuItemWatcherState.loadSuccess(menus),
         );
+      },
+      watchAllUnhidden: (e) async* {
+        yield const MenuItemWatcherState.loading();
+        await _menuStreamSubscription?.cancel();
+        _menuStreamSubscription =
+            _menuItemRepository.watchAllUnhidden(e.menuID).listen(
+                  (failureOrMenuItems) => add(
+                    MenuItemWatcherEvent.menusReceived(failureOrMenuItems),
+                  ),
+                );
       },
     );
   }

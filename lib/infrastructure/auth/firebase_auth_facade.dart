@@ -10,6 +10,7 @@ import 'package:localy/domain/auth/user.dart';
 import 'package:localy/domain/auth/value_objects.dart';
 import './firebase_user_mapper.dart';
 
+@prod
 @LazySingleton(as: IAuthFacade)
 class FirebaseAuthFacade implements IAuthFacade {
   final FirebaseAuth _firebaseAuth;

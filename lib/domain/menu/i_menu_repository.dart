@@ -6,6 +6,8 @@ import 'package:localy/domain/menu/menu_failure.dart';
 abstract class IMenuRepository {
   Stream<Either<MenuFailure, KtList<Menu>>> watchAll(String storeID);
 
+  Stream<Either<MenuFailure, KtList<Menu>>> watchAllUnhidden(String storeID);
+
   Future<Either<MenuFailure, Unit>> create(Menu menu, String storeID);
 
   Future<Either<MenuFailure, Unit>> update(Menu menu);

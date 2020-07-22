@@ -24,7 +24,7 @@ class _$StoreWatcherEventTearOff {
 
 // ignore: unused_element
   _StoresReceived storesReceived(
-      Either<StoreFailure, KtList<Store>> failureOrStore) {
+      Either<StoreFailure, KtList<Restaurant>> failureOrStore) {
     return _StoresReceived(
       failureOrStore,
     );
@@ -41,13 +41,14 @@ mixin _$StoreWatcherEvent {
     @required Result watchAllInRadiusStarted(),
     @required
         Result storesReceived(
-            Either<StoreFailure, KtList<Store>> failureOrStore),
+            Either<StoreFailure, KtList<Restaurant>> failureOrStore),
   });
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result watchAllStarted(),
     Result watchAllInRadiusStarted(),
-    Result storesReceived(Either<StoreFailure, KtList<Store>> failureOrStore),
+    Result storesReceived(
+        Either<StoreFailure, KtList<Restaurant>> failureOrStore),
     @required Result orElse(),
   });
   @optionalTypeArgs
@@ -120,7 +121,7 @@ class _$_WatchAllStoresStarted implements _WatchAllStoresStarted {
     @required Result watchAllInRadiusStarted(),
     @required
         Result storesReceived(
-            Either<StoreFailure, KtList<Store>> failureOrStore),
+            Either<StoreFailure, KtList<Restaurant>> failureOrStore),
   }) {
     assert(watchAllStarted != null);
     assert(watchAllInRadiusStarted != null);
@@ -133,7 +134,8 @@ class _$_WatchAllStoresStarted implements _WatchAllStoresStarted {
   Result maybeWhen<Result extends Object>({
     Result watchAllStarted(),
     Result watchAllInRadiusStarted(),
-    Result storesReceived(Either<StoreFailure, KtList<Store>> failureOrStore),
+    Result storesReceived(
+        Either<StoreFailure, KtList<Restaurant>> failureOrStore),
     @required Result orElse(),
   }) {
     assert(orElse != null);
@@ -217,7 +219,7 @@ class _$_WatchAllInRadiusStarted implements _WatchAllInRadiusStarted {
     @required Result watchAllInRadiusStarted(),
     @required
         Result storesReceived(
-            Either<StoreFailure, KtList<Store>> failureOrStore),
+            Either<StoreFailure, KtList<Restaurant>> failureOrStore),
   }) {
     assert(watchAllStarted != null);
     assert(watchAllInRadiusStarted != null);
@@ -230,7 +232,8 @@ class _$_WatchAllInRadiusStarted implements _WatchAllInRadiusStarted {
   Result maybeWhen<Result extends Object>({
     Result watchAllStarted(),
     Result watchAllInRadiusStarted(),
-    Result storesReceived(Either<StoreFailure, KtList<Store>> failureOrStore),
+    Result storesReceived(
+        Either<StoreFailure, KtList<Restaurant>> failureOrStore),
     @required Result orElse(),
   }) {
     assert(orElse != null);
@@ -277,7 +280,7 @@ abstract class _$StoresReceivedCopyWith<$Res> {
   factory _$StoresReceivedCopyWith(
           _StoresReceived value, $Res Function(_StoresReceived) then) =
       __$StoresReceivedCopyWithImpl<$Res>;
-  $Res call({Either<StoreFailure, KtList<Store>> failureOrStore});
+  $Res call({Either<StoreFailure, KtList<Restaurant>> failureOrStore});
 }
 
 class __$StoresReceivedCopyWithImpl<$Res>
@@ -297,7 +300,7 @@ class __$StoresReceivedCopyWithImpl<$Res>
     return _then(_StoresReceived(
       failureOrStore == freezed
           ? _value.failureOrStore
-          : failureOrStore as Either<StoreFailure, KtList<Store>>,
+          : failureOrStore as Either<StoreFailure, KtList<Restaurant>>,
     ));
   }
 }
@@ -306,7 +309,7 @@ class _$_StoresReceived implements _StoresReceived {
   const _$_StoresReceived(this.failureOrStore) : assert(failureOrStore != null);
 
   @override
-  final Either<StoreFailure, KtList<Store>> failureOrStore;
+  final Either<StoreFailure, KtList<Restaurant>> failureOrStore;
 
   @override
   String toString() {
@@ -338,7 +341,7 @@ class _$_StoresReceived implements _StoresReceived {
     @required Result watchAllInRadiusStarted(),
     @required
         Result storesReceived(
-            Either<StoreFailure, KtList<Store>> failureOrStore),
+            Either<StoreFailure, KtList<Restaurant>> failureOrStore),
   }) {
     assert(watchAllStarted != null);
     assert(watchAllInRadiusStarted != null);
@@ -351,7 +354,8 @@ class _$_StoresReceived implements _StoresReceived {
   Result maybeWhen<Result extends Object>({
     Result watchAllStarted(),
     Result watchAllInRadiusStarted(),
-    Result storesReceived(Either<StoreFailure, KtList<Store>> failureOrStore),
+    Result storesReceived(
+        Either<StoreFailure, KtList<Restaurant>> failureOrStore),
     @required Result orElse(),
   }) {
     assert(orElse != null);
@@ -392,9 +396,10 @@ class _$_StoresReceived implements _StoresReceived {
 
 abstract class _StoresReceived implements StoreWatcherEvent {
   const factory _StoresReceived(
-      Either<StoreFailure, KtList<Store>> failureOrStore) = _$_StoresReceived;
+          Either<StoreFailure, KtList<Restaurant>> failureOrStore) =
+      _$_StoresReceived;
 
-  Either<StoreFailure, KtList<Store>> get failureOrStore;
+  Either<StoreFailure, KtList<Restaurant>> get failureOrStore;
   _$StoresReceivedCopyWith<_StoresReceived> get copyWith;
 }
 
@@ -412,7 +417,7 @@ class _$StoreWatcherStateTearOff {
   }
 
 // ignore: unused_element
-  _LoadSuccessStoreWatcher loadSuccess(KtList<Store> stores) {
+  _LoadSuccessStoreWatcher loadSuccess(KtList<Restaurant> stores) {
     return _LoadSuccessStoreWatcher(
       stores,
     );
@@ -434,14 +439,14 @@ mixin _$StoreWatcherState {
   Result when<Result extends Object>({
     @required Result initial(),
     @required Result loading(),
-    @required Result loadSuccess(KtList<Store> stores),
+    @required Result loadSuccess(KtList<Restaurant> stores),
     @required Result loadFailure(StoreFailure storeFailure),
   });
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result initial(),
     Result loading(),
-    Result loadSuccess(KtList<Store> stores),
+    Result loadSuccess(KtList<Restaurant> stores),
     Result loadFailure(StoreFailure storeFailure),
     @required Result orElse(),
   });
@@ -515,7 +520,7 @@ class _$_IntialStoreWatcher implements _IntialStoreWatcher {
   Result when<Result extends Object>({
     @required Result initial(),
     @required Result loading(),
-    @required Result loadSuccess(KtList<Store> stores),
+    @required Result loadSuccess(KtList<Restaurant> stores),
     @required Result loadFailure(StoreFailure storeFailure),
   }) {
     assert(initial != null);
@@ -530,7 +535,7 @@ class _$_IntialStoreWatcher implements _IntialStoreWatcher {
   Result maybeWhen<Result extends Object>({
     Result initial(),
     Result loading(),
-    Result loadSuccess(KtList<Store> stores),
+    Result loadSuccess(KtList<Restaurant> stores),
     Result loadFailure(StoreFailure storeFailure),
     @required Result orElse(),
   }) {
@@ -615,7 +620,7 @@ class _$_LoadingStoreWatcher implements _LoadingStoreWatcher {
   Result when<Result extends Object>({
     @required Result initial(),
     @required Result loading(),
-    @required Result loadSuccess(KtList<Store> stores),
+    @required Result loadSuccess(KtList<Restaurant> stores),
     @required Result loadFailure(StoreFailure storeFailure),
   }) {
     assert(initial != null);
@@ -630,7 +635,7 @@ class _$_LoadingStoreWatcher implements _LoadingStoreWatcher {
   Result maybeWhen<Result extends Object>({
     Result initial(),
     Result loading(),
-    Result loadSuccess(KtList<Store> stores),
+    Result loadSuccess(KtList<Restaurant> stores),
     Result loadFailure(StoreFailure storeFailure),
     @required Result orElse(),
   }) {
@@ -681,7 +686,7 @@ abstract class _$LoadSuccessStoreWatcherCopyWith<$Res> {
   factory _$LoadSuccessStoreWatcherCopyWith(_LoadSuccessStoreWatcher value,
           $Res Function(_LoadSuccessStoreWatcher) then) =
       __$LoadSuccessStoreWatcherCopyWithImpl<$Res>;
-  $Res call({KtList<Store> stores});
+  $Res call({KtList<Restaurant> stores});
 }
 
 class __$LoadSuccessStoreWatcherCopyWithImpl<$Res>
@@ -700,7 +705,7 @@ class __$LoadSuccessStoreWatcherCopyWithImpl<$Res>
     Object stores = freezed,
   }) {
     return _then(_LoadSuccessStoreWatcher(
-      stores == freezed ? _value.stores : stores as KtList<Store>,
+      stores == freezed ? _value.stores : stores as KtList<Restaurant>,
     ));
   }
 }
@@ -709,7 +714,7 @@ class _$_LoadSuccessStoreWatcher implements _LoadSuccessStoreWatcher {
   const _$_LoadSuccessStoreWatcher(this.stores) : assert(stores != null);
 
   @override
-  final KtList<Store> stores;
+  final KtList<Restaurant> stores;
 
   @override
   String toString() {
@@ -738,7 +743,7 @@ class _$_LoadSuccessStoreWatcher implements _LoadSuccessStoreWatcher {
   Result when<Result extends Object>({
     @required Result initial(),
     @required Result loading(),
-    @required Result loadSuccess(KtList<Store> stores),
+    @required Result loadSuccess(KtList<Restaurant> stores),
     @required Result loadFailure(StoreFailure storeFailure),
   }) {
     assert(initial != null);
@@ -753,7 +758,7 @@ class _$_LoadSuccessStoreWatcher implements _LoadSuccessStoreWatcher {
   Result maybeWhen<Result extends Object>({
     Result initial(),
     Result loading(),
-    Result loadSuccess(KtList<Store> stores),
+    Result loadSuccess(KtList<Restaurant> stores),
     Result loadFailure(StoreFailure storeFailure),
     @required Result orElse(),
   }) {
@@ -797,10 +802,10 @@ class _$_LoadSuccessStoreWatcher implements _LoadSuccessStoreWatcher {
 }
 
 abstract class _LoadSuccessStoreWatcher implements StoreWatcherState {
-  const factory _LoadSuccessStoreWatcher(KtList<Store> stores) =
+  const factory _LoadSuccessStoreWatcher(KtList<Restaurant> stores) =
       _$_LoadSuccessStoreWatcher;
 
-  KtList<Store> get stores;
+  KtList<Restaurant> get stores;
   _$LoadSuccessStoreWatcherCopyWith<_LoadSuccessStoreWatcher> get copyWith;
 }
 
@@ -878,7 +883,7 @@ class _$_LoadStoreFailure implements _LoadStoreFailure {
   Result when<Result extends Object>({
     @required Result initial(),
     @required Result loading(),
-    @required Result loadSuccess(KtList<Store> stores),
+    @required Result loadSuccess(KtList<Restaurant> stores),
     @required Result loadFailure(StoreFailure storeFailure),
   }) {
     assert(initial != null);
@@ -893,7 +898,7 @@ class _$_LoadStoreFailure implements _LoadStoreFailure {
   Result maybeWhen<Result extends Object>({
     Result initial(),
     Result loading(),
-    Result loadSuccess(KtList<Store> stores),
+    Result loadSuccess(KtList<Restaurant> stores),
     Result loadFailure(StoreFailure storeFailure),
     @required Result orElse(),
   }) {

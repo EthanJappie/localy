@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:geoflutterfire/geoflutterfire.dart';
 import 'package:localy/domain/core/value_objects.dart';
-import 'package:localy/domain/store/store.dart';
+import 'package:localy/domain/store/restaurant.dart';
 import 'package:localy/domain/store/value_objects.dart';
 import 'package:localy/infrastructure/core/converters/geopoint_converts.dart';
 import 'package:localy/infrastructure/core/converters/server_time_converters.dart';
@@ -40,7 +40,7 @@ abstract class StoreDTO implements _$StoreDTO {
     String notes,
   }) = _StoreDTO;
 
-  factory StoreDTO.fromDomain(Store store) {
+  factory StoreDTO.fromDomain(Restaurant store) {
     return StoreDTO(
       id: store.id.getOrCrash(),
       ownerID: store.ownerID.getOrCrash(),
@@ -65,8 +65,8 @@ abstract class StoreDTO implements _$StoreDTO {
     );
   }
 
-  Store toDomain() {
-    return Store(
+  Restaurant toDomain() {
+    return Restaurant(
       id: UniqueId.fromUniqueString(id),
       ownerID: ValueString.fromString(ownerID),
       address: ValueString.fromString(address),

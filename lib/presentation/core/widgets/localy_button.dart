@@ -28,7 +28,7 @@ class LocalyButton extends StatelessWidget {
             onPressed: onPressed,
             child: Text(
               title,
-              style: TextStyle(fontWeight: FontWeight.bold),
+              style: const TextStyle(fontWeight: FontWeight.bold),
             ),
           ),
         ),
