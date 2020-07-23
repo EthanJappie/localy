@@ -69,26 +69,18 @@ class _AdministrationPageState extends State<AdministrationPage> {
               _currentIndex = index;
             });
           },
-          items: <BottomNavigationBarItem>[
+          items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: Icon(Icons.menu),
-              title: const Text("Menu"),
-            ),
-//            BottomNavigationBarItem(
-//              icon: Icon(Icons.check_box),
-//              title: const Text("Options"),
-//            ),
-//            BottomNavigationBarItem(
-//              icon: Icon(Icons.local_library),
-//              title: const Text("Browser"),
-//            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.receipt),
-              title: const Text("Active"),
+              title:  Text("Menu"),
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.receipt),
-              title: const Text("Inactive"),
+              title:  Text("Active"),
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.receipt),
+              title:  Text("Inactive"),
             ),
           ],
         ),

@@ -61,7 +61,7 @@ class LogoImageField extends StatelessWidget {
 
   Widget _renderImage(String urlOrPath) {
     if (urlOrPath == null || urlOrPath.isEmpty) {
-      return Icon(
+      return const Icon(
         Icons.camera_alt,
         color: Colors.white,
         size: 60,

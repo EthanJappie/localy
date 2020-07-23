@@ -52,7 +52,6 @@ class LocalyEntryField extends StatelessWidget {
                     BorderSide(color: Theme
                         .of(context)
                         .primaryColor))),
-            maxLines: 1,
             validator: validator,
             onChanged: onChanged,
           )

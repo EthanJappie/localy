@@ -101,7 +101,7 @@ class MenuItemRepository implements IMenuItemRepository {
       String menuID) async* {
     yield* _firestore.menuItemsCollection
         .where("menuID", isEqualTo: menuID)
-        .orderBy("sequenceOfAppearance", descending: false)
+        .orderBy("sequenceOfAppearance")
         .snapshots()
         .map(
           (snapshots) => right<MenuItemFailure, KtList<MenuItem>>(
@@ -139,7 +139,7 @@ class MenuItemRepository implements IMenuItemRepository {
     yield* _firestore.menuItemsCollection
         .where("menuID", isEqualTo: menuID)
         .where("hidden", isEqualTo: false)
-        .orderBy("sequenceOfAppearance", descending: false)
+        .orderBy("sequenceOfAppearance")
         .snapshots()
         .map(
           (snapshots) => right<MenuItemFailure, KtList<MenuItem>>(

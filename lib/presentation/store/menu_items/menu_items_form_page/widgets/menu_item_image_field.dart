@@ -59,7 +59,7 @@ class MenuItemImageField extends StatelessWidget {
 
   Widget _renderImage(MenuItem menuItem) {
     if (menuItem.imageUrl == null) {
-      return Icon(
+      return const Icon(
         Icons.camera_alt,
         color: Colors.white,
         size: 60,
@@ -68,7 +68,7 @@ class MenuItemImageField extends StatelessWidget {
 
     final urlOrPath = menuItem.imageUrl.value.fold((l) => "", (r) => r);
     if (urlOrPath == null || urlOrPath.isEmpty) {
-      return Icon(
+      return const Icon(
         Icons.camera_alt,
         color: Colors.white,
         size: 60,
@@ -77,12 +77,12 @@ class MenuItemImageField extends StatelessWidget {
       return CachedNetworkImage(
         imageUrl: urlOrPath,
         fit: BoxFit.fill,
-        placeholder: (context, url) => Icon(
+        placeholder: (context, url) => const Icon(
           Icons.camera_alt,
           color: Colors.white,
           size: 60,
         ),
-        errorWidget: (context, url, error) => Icon(
+        errorWidget: (context, url, error) => const Icon(
           Icons.error,
           color: Colors.white,
           size: 60,

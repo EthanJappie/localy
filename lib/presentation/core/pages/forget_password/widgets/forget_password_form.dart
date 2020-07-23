@@ -94,7 +94,7 @@ class ForgetPasswordForm extends StatelessWidget {
                             onTap: () {
                               ExtendedNavigator.of(context).pop();
                             },
-                            child: Icon(Icons.arrow_back),
+                            child: const Icon(Icons.arrow_back),
                           ),
                           const SizedBox(height: 16),
                           const Text(

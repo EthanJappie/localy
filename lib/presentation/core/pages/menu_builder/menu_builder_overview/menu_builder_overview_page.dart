@@ -40,10 +40,9 @@ class MenuBuilderOverviewPage extends StatelessWidget {
           onPressed: () {
             ExtendedNavigator.of(context).pushMenuBuilderFormPage(
               storeID: storeID,
-              editedMenu: null,
             );
           },
-          child: Icon(Icons.add),
+          child: const Icon(Icons.add),
         ),
       ),
     );

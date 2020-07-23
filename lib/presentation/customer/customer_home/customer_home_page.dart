@@ -48,7 +48,7 @@ class _CustomerHomePageState extends State<CustomerHomePage> {
           title: Text(_titles[_currentIndex]),
           actions: <Widget>[
             IconButton(
-              icon: Icon(Icons.exit_to_app),
+              icon: const Icon(Icons.exit_to_app),
               onPressed: () {
                 context.bloc<AuthBloc>().add(const AuthEvent.signedOut());
               },
@@ -58,11 +58,11 @@ class _CustomerHomePageState extends State<CustomerHomePage> {
         body: CustomerStorePage(),
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _currentIndex,
-          items: [
+          items: const [
             BottomNavigationBarItem(
-                icon: Icon(Icons.store), title: const Text("Store")),
+                icon: Icon(Icons.store), title:  Text("Store")),
             BottomNavigationBarItem(
-                icon: Icon(Icons.person), title: const Text("Profile")),
+                icon: Icon(Icons.person), title:  Text("Profile")),
           ],
           onTap: (value) {
             setState(() {

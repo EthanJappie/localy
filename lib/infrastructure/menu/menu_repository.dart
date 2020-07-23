@@ -79,7 +79,7 @@ class MenuRepository implements IMenuRepository {
   Stream<Either<MenuFailure, KtList<Menu>>> watchAll(String storeID) async* {
     yield* _firestore.menuCollection
         .where("storeID", isEqualTo: storeID)
-        .orderBy("sequenceOfAppearance", descending: false)
+        .orderBy("sequenceOfAppearance")
         .snapshots()
         .map(
           (snapshots) => right<MenuFailure, KtList<Menu>>(
@@ -96,7 +96,7 @@ class MenuRepository implements IMenuRepository {
     yield* _firestore.menuCollection
         .where("storeID", isEqualTo: storeID)
         .where("hidden", isEqualTo: false)
-        .orderBy("sequenceOfAppearance", descending: false)
+        .orderBy("sequenceOfAppearance")
         .snapshots()
         .map(
           (snapshots) => right<MenuFailure, KtList<Menu>>(

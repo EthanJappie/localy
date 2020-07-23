@@ -5,9 +5,15 @@ class LocalyTimePicker extends FormField<Timestamp> {
   final String title;
   final Timestamp time;
   final ValueChanged<Timestamp> onTimeChanged;
+  @override
+  // ignore: overridden_fields
   final FormFieldSetter<Timestamp> onSaved;
+  @override
+  // ignore: overridden_fields
   final FormFieldValidator<Timestamp> validator;
   final BuildContext context;
+  @override
+  // ignore: overridden_fields
   final Timestamp initialValue;
   final bool autoValidate;
 

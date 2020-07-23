@@ -56,10 +56,9 @@ class MenuItemsOverviewPage extends StatelessWidget {
               onPressed: () {
                 ExtendedNavigator.of(context).pushMenuItemsFormPage(
                   menuID: menuID,
-                  editedMenuItem: null,
                 );
               },
-              child: Icon(Icons.add),
+              child: const Icon(Icons.add),
             ),
           )),
     );

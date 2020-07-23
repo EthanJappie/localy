@@ -57,7 +57,7 @@ class _HomePageState extends State<HomePage> {
           title: Text(_titles[_currentIndex]),
           actions: <Widget>[
             IconButton(
-              icon: Icon(Icons.exit_to_app),
+              icon: const Icon(Icons.exit_to_app),
               onPressed: () {
                 context.bloc<AuthBloc>().add(const AuthEvent.signedOut());
               },
@@ -67,13 +67,13 @@ class _HomePageState extends State<HomePage> {
         body: _pages[_currentIndex],
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _currentIndex,
-          items: [
+          items: const [
             BottomNavigationBarItem(
-                icon: Icon(Icons.store), title: const Text("Store")),
+                icon: Icon(Icons.store), title:  Text("Store")),
             BottomNavigationBarItem(
-                icon: Icon(Icons.group_add), title: const Text("Staff Access")),
+                icon: Icon(Icons.group_add), title:  Text("Staff Access")),
             BottomNavigationBarItem(
-                icon: Icon(Icons.person), title: const Text("Profile")),
+                icon: Icon(Icons.person), title:  Text("Profile")),
           ],
           onTap: (value) {
             setState(() {

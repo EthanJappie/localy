@@ -40,7 +40,7 @@ class StoreCard extends StatelessWidget {
                   children: <Widget>[
                     IconButton(
                       padding: const EdgeInsets.all(24),
-                      icon: Icon(Icons.remove_red_eye, color: Colors.white),
+                      icon: const Icon(Icons.remove_red_eye, color: Colors.white),
                       onPressed: () {
                         ExtendedNavigator.of(context)
                             .pushStoreFormPage(editedStore: store);

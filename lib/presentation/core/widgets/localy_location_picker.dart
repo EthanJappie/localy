@@ -8,8 +8,14 @@ class LocalyLocationPicker extends FormField<String> {
   final String address;
   final ValueChanged<GeoFirePoint> onLocationChanged;
   final ValueChanged<String> onAddressChanged;
+  @override
+  // ignore: overridden_fields
   final FormFieldSetter<String> onSaved;
+  @override
+  // ignore: overridden_fields
   final FormFieldValidator<String> validator;
+  @override
+  // ignore: overridden_fields
   final String initialValue;
   final bool autoValidate;
   final BuildContext context;
@@ -48,7 +54,6 @@ class LocalyLocationPicker extends FormField<String> {
                                     layersButtonEnabled: false,
                                     initialZoom: 15,
                                   ),
-                                  maintainState: true,
                                 ),
                               )) ??
                               {});
@@ -75,7 +80,6 @@ class LocalyLocationPicker extends FormField<String> {
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisSize: MainAxisSize.max,
                         children: <Widget>[
                           Text(
                             address == null || address.isEmpty ? title : address,
@@ -87,7 +91,7 @@ class LocalyLocationPicker extends FormField<String> {
                             ),
                           ),
                           if(!state.isValid && state.errorText != null)
-                            Text(state.errorText, style: TextStyle(
+                            Text(state.errorText, style: const TextStyle(
                               color: Colors.red,
                               fontSize: 10
                             ),)

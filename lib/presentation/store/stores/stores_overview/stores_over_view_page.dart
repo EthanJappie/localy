@@ -37,7 +37,7 @@ class StoresOverviewPage extends HookWidget {
           onPressed: () {
             ExtendedNavigator.of(context).pushStoreFormPage(editedStore: null);
           },
-          child: Icon(Icons.add),
+          child: const Icon(Icons.add),
         ),
       ),
     );

@@ -56,9 +56,6 @@ class StoreDetailPage extends StatelessWidget {
                       bottom: TabBar(
                         isScrollable: true,
                         indicatorColor: Colors.white,
-                        onTap: (value) {
-                          print("on index: $value");
-                        },
                         tabs: state.menus
                             .asList()
                             .map((e) => Tab(

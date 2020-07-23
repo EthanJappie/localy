@@ -46,7 +46,6 @@ class EntryField extends StatelessWidget {
                 border: InputBorder.none,
                 fillColor: const Color(0xfff3f3f4),
                 filled: true),
-            maxLines: 1,
             validator: validator,
             onChanged: onChanged,
           )

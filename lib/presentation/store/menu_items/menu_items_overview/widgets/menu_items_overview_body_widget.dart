@@ -2,7 +2,6 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:localy/application/menu_item/menu_item_watcher/menu_item_watcher_bloc.dart';
-import 'package:localy/injection.dart';
 import 'package:localy/presentation/core/routes/manager_router.gr.dart';
 
 class MenuItemsOverviewBodyWidget extends StatelessWidget {

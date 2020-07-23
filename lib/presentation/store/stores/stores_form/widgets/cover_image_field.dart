@@ -60,7 +60,7 @@ class CoverImageField extends StatelessWidget {
 
   Widget _renderImage(String urlOrPath) {
     if (urlOrPath == null || urlOrPath.isEmpty) {
-      return Icon(
+      return const Icon(
         Icons.camera_alt,
         color: Colors.white,
         size: 60,
@@ -70,12 +70,12 @@ class CoverImageField extends StatelessWidget {
         imageUrl: urlOrPath,
         height: 200,
         fit: BoxFit.fill,
-        placeholder: (context, url) => Icon(
+        placeholder: (context, url) => const Icon(
           Icons.camera_alt,
           color: Colors.white,
           size: 60,
         ),
-        errorWidget: (context, url, error) => Icon(
+        errorWidget: (context, url, error) => const Icon(
           Icons.error,
           color: Colors.white,
           size: 60,

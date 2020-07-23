@@ -48,7 +48,7 @@ class MenuBuilderOverviewBodyWidget extends StatelessWidget {
                     title: Text(menus[index].name.getOrCrash()),
                     subtitle: Text(menus[index].notes.getOrCrash()),
                     trailing: IconButton(
-                      icon: Icon(Icons.arrow_forward_ios),
+                      icon: const Icon(Icons.arrow_forward_ios),
                       onPressed: () {
                         ExtendedNavigator.of(context).pushMenuBuilderFormPage(
                           storeID: storeID,
