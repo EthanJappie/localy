@@ -30,7 +30,7 @@ class AppWidget extends StatelessWidget {
       child: MaterialApp(
         title: 'Localy',
         debugShowCheckedModeBanner: false,
-        navigatorObservers: <NavigatorObserver>[observer],
+//        navigatorObservers: <NavigatorObserver>[observer],
         builder: ExtendedNavigator(router: _getRouter()),
         theme: ThemeData.light().copyWith(
           primaryColor: const Color(appColor),

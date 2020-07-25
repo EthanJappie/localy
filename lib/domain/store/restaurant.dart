@@ -7,6 +7,7 @@ import 'package:localy/domain/store/value_objects.dart';
 
 part 'restaurant.freezed.dart';
 
+// had to change the name from Store -> Restaurant since Store is a dart keyword
 @freezed
 abstract class Restaurant implements _$Restaurant {
   const Restaurant._();

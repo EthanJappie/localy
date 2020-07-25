@@ -22,6 +22,9 @@ extension FirestoreX on Firestore {
 
   CollectionReference get menuItemsCollection =>
       Firestore.instance.collection('menuItems');
+
+  CollectionReference get orderCollection =>
+      Firestore.instance.collection('orders');
 }
 
 extension DocumentReferenceX on DocumentReference {}
