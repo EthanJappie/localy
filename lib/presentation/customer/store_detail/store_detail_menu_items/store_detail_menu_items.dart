@@ -41,6 +41,7 @@ class StoreDetailMenuItems extends StatelessWidget {
                 );
               } else {
                 return ListView.separated(
+
                   itemBuilder: (context, index) {
                     final menuItem = menuItems[index];
                     return ListTile(
@@ -59,7 +60,17 @@ class StoreDetailMenuItems extends StatelessWidget {
 //                    leading: Text("test"),
                       title: Text(menuItem.name.getOrCrash()),
                       subtitle: Text(menuItem.description.getOrCrash()),
-                      trailing: Text("R${menuItem.price}"),
+                      trailing: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text("R${menuItem.price}"),
+                          const Chip(
+                              label: Text(
+                            "Select",
+                            style: TextStyle(color: Colors.white),
+                          )),
+                        ],
+                      ),
                     );
                   },
                   separatorBuilder: (context, index) => const Divider(),

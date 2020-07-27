@@ -3,3 +3,5 @@ genw: flutter pub run build_runner watch --delete-conflicting-outputs
 test: flutter test test
 cov: ./coverage-test-report.sh
 cov-open: ./coverage-test-report.sh && open coverage/index.html
+beta: flutter channel beta && flutter upgrade
+stable: flutter channel stable && flutter upgrade

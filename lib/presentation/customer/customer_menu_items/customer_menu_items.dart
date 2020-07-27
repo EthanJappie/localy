@@ -5,7 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:localy/application/menu_item/menu_item_actor/menu_item_actor_bloc.dart';
 import 'package:localy/application/menu_item/menu_item_watcher/menu_item_watcher_bloc.dart';
 import 'package:localy/injection.dart';
-import 'package:localy/presentation/store/menu_items/menu_items_overview/widgets/menu_items_overview_body_widget.dart';
+import 'package:localy/presentation/customer/customer_menu_items/widgets/customer_menu_items_body_widget.dart';
 
 class CustomerMenuItems extends StatelessWidget {
   final String menuID;
@@ -50,7 +50,7 @@ class CustomerMenuItems extends StatelessWidget {
             appBar: AppBar(
               title: const Text("Menu Items"),
             ),
-            body: MenuItemsOverviewBodyWidget(menuID: menuID),
+            body: CustomerMenuItemsBodyWidget(menuID: menuID),
           )),
     );
   }
