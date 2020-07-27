@@ -63,6 +63,7 @@ dependencies:
   firebase_messaging: ^6.0.16
   firebase_crashlytics: ^0.1.4+1
   adobe_xd: ^1.0.0+1
+  dartfix: ^0.1.7
 
 dev_dependencies:
   test:
@@ -84,7 +85,7 @@ dev_dependencies:
   bdd_widget_test: ^0.1.4
 
 # For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
+# following page: ht tps://dart.dev/tools/pub/pubspec
 scripts: derry.yaml
 # The following section is specific to Flutter.
 flutter:
