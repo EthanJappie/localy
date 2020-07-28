@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:adobe_xd/pinned.dart';
 import 'dart:ui' as ui;
+
+import 'package:adobe_xd/pinned.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class Search1 extends StatelessWidget {
@@ -17,12 +18,12 @@ class Search1 extends StatelessWidget {
           Container(
             width: 375.0,
             height: 812.0,
-            decoration: BoxDecoration(
-              color: const Color(0xffffffff),
+            decoration: const BoxDecoration(
+              color: Color(0xffffffff),
             ),
           ),
           Transform.translate(
-            offset: Offset(0.0, 15.0),
+            offset: const Offset(0.0, 15.0),
             child:
                 // Adobe XD layer: 'iOS elements' (group)
                 SizedBox(
@@ -31,8 +32,8 @@ class Search1 extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(20.0, 0.0, 340.3, 16.0),
-                    size: Size(375.0, 797.0),
+                    bounds: const Rect.fromLTWH(20.0, 0.0, 340.3, 16.0),
+                    size: const Size(375.0, 797.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -40,8 +41,8 @@ class Search1 extends StatelessWidget {
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
-                          size: Size(340.3, 16.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
+                          size: const Size(340.3, 16.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -51,8 +52,8 @@ class Search1 extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(316.0, 2.3, 24.3, 11.3),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(316.0, 2.3, 24.3, 11.3),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 pinTop: true,
                                 pinBottom: true,
@@ -63,8 +64,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
+                                      size: const Size(24.3, 11.3),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -74,9 +75,9 @@ class Search1 extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 22.0, 11.3),
-                                            size: Size(22.0, 11.3),
+                                            size: const Size(22.0, 11.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -90,9 +91,9 @@ class Search1 extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 22.0, 11.3),
-                                            size: Size(22.0, 11.3),
+                                            size: const Size(22.0, 11.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -110,8 +111,8 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(23.0, 3.7, 1.3, 4.0),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(23.0, 3.7, 1.3, 4.0),
+                                      size: const Size(24.3, 11.3),
                                       pinRight: true,
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -120,9 +121,9 @@ class Search1 extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 11.3, 14.0),
-                                            size: Size(1.3, 4.0),
+                                            size: const Size(1.3, 4.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -136,9 +137,9 @@ class Search1 extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 1.3, 4.0),
-                                            size: Size(1.3, 4.0),
+                                            size: const Size(1.3, 4.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -156,8 +157,8 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(2.0, 2.0, 18.0, 7.3),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(2.0, 2.0, 18.0, 7.3),
+                                      size: const Size(24.3, 11.3),
                                       pinLeft: true,
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -166,9 +167,9 @@ class Search1 extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 28.0, 17.3),
-                                            size: Size(18.0, 7.3),
+                                            size: const Size(18.0, 7.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -182,9 +183,9 @@ class Search1 extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 18.0, 7.3),
-                                            size: Size(18.0, 7.3),
+                                            size: const Size(18.0, 7.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -204,8 +205,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(295.7, 2.3, 15.3, 11.0),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(295.7, 2.3, 15.3, 11.0),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 pinTop: true,
                                 fixedWidth: true,
@@ -216,8 +217,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 15.3, 11.0),
-                                      size: Size(15.3, 11.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 15.3, 11.0),
+                                      size: const Size(15.3, 11.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -227,9 +228,9 @@ class Search1 extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 25.3, 21.0),
-                                            size: Size(15.3, 11.0),
+                                            size: const Size(15.3, 11.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -243,9 +244,9 @@ class Search1 extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 15.3, 11.0),
-                                            size: Size(15.3, 11.0),
+                                            size: const Size(15.3, 11.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -265,8 +266,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(273.7, 2.7, 17.0, 10.7),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(273.7, 2.7, 17.0, 10.7),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 fixedWidth: true,
                                 fixedHeight: true,
@@ -276,8 +277,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 17.0, 10.7),
-                                      size: Size(17.0, 10.7),
+                                          const Rect.fromLTWH(0.0, 0.0, 17.0, 10.7),
+                                      size: const Size(17.0, 10.7),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -287,9 +288,9 @@ class Search1 extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 27.0, 20.7),
-                                            size: Size(17.0, 10.7),
+                                            size: const Size(17.0, 10.7),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -303,9 +304,9 @@ class Search1 extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 17.0, 10.7),
-                                            size: Size(17.0, 10.7),
+                                            size: const Size(17.0, 10.7),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -325,8 +326,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
+                                size: const Size(340.3, 16.0),
                                 pinLeft: true,
                                 pinTop: true,
                                 pinBottom: true,
@@ -337,8 +338,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
-                                      size: Size(54.0, 16.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
+                                      size: const Size(54.0, 16.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -353,8 +354,8 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(12.8, 4.9, 27.5, 10.3),
-                                      size: Size(54.0, 16.0),
+                                          const Rect.fromLTWH(12.8, 4.9, 27.5, 10.3),
+                                      size: const Size(54.0, 16.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinBottom: true,
@@ -377,8 +378,8 @@ class Search1 extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 506.0, 375.0, 291.0),
-                    size: Size(375.0, 797.0),
+                    bounds: const Rect.fromLTWH(0.0, 506.0, 375.0, 291.0),
+                    size: const Size(375.0, 797.0),
                     pinLeft: true,
                     pinRight: true,
                     pinBottom: true,
@@ -388,8 +389,8 @@ class Search1 extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 291.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 291.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -399,8 +400,8 @@ class Search1 extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 291.0),
-                                size: Size(375.0, 291.0),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 291.0),
+                                size: const Size(375.0, 291.0),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinTop: true,
@@ -412,8 +413,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 291.0),
-                                size: Size(375.0, 291.0),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 291.0),
+                                size: const Size(375.0, 291.0),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinTop: true,
@@ -434,8 +435,8 @@ class Search1 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(121.0, 277.0, 134.0, 5.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(121.0, 277.0, 134.0, 5.0),
+                          size: const Size(375.0, 291.0),
                           pinBottom: true,
                           fixedWidth: true,
                           fixedHeight: true,
@@ -444,8 +445,8 @@ class Search1 extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 134.0, 5.0),
-                                size: Size(134.0, 5.0),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 134.0, 5.0),
+                                size: const Size(134.0, 5.0),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinBottom: true,
@@ -463,8 +464,8 @@ class Search1 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(3.0, 8.0, 369.0, 259.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(3.0, 8.0, 369.0, 259.0),
+                          size: const Size(375.0, 291.0),
                           pinTop: true,
                           fixedWidth: true,
                           fixedHeight: true,
@@ -473,8 +474,8 @@ class Search1 extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(327.0, 233.0, 15.0, 25.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(327.0, 233.0, 15.0, 25.0),
+                                size: const Size(369.0, 259.0),
                                 pinRight: true,
                                 pinBottom: true,
                                 fixedWidth: true,
@@ -488,8 +489,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(22.0, 232.0, 27.0, 27.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(22.0, 232.0, 27.0, 27.0),
+                                size: const Size(369.0, 259.0),
                                 pinLeft: true,
                                 pinBottom: true,
                                 fixedWidth: true,
@@ -503,8 +504,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(281.0, 162.0, 88.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(281.0, 162.0, 88.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 pinRight: true,
                                 fixedWidth: true,
                                 fixedHeight: true,
@@ -514,8 +515,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 88.0, 42.0),
-                                      size: Size(88.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 88.0, 42.0),
+                                      size: const Size(88.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -528,8 +529,8 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 88.0, 42.0),
-                                      size: Size(88.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 88.0, 42.0),
+                                      size: const Size(88.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -541,11 +542,11 @@ class Search1 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(4.6),
                                           color: const Color(0xffadb3bc),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
-                                              color: const Color(0xff898a8d),
+                                              color: Color(0xff898a8d),
                                               offset: Offset(0, 1),
-                                              blurRadius: 0,
+                                              
                                             ),
                                           ],
                                         ),
@@ -553,8 +554,8 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 88.0, 42.0),
-                                      size: Size(88.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 88.0, 42.0),
+                                      size: const Size(88.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -562,23 +563,23 @@ class Search1 extends StatelessWidget {
                                       child:
                                           // Adobe XD layer: '↳ Links to' (shape)
                                           Container(
-                                        decoration: BoxDecoration(),
+                                        decoration: const BoxDecoration(),
                                       ),
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 11.0, 88.0, 21.0),
-                                      size: Size(88.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 11.0, 88.0, 21.0),
+                                      size: const Size(88.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       child:
                                           // Adobe XD layer: '↳ Label' (text)
-                                          Text(
+                                          const Text(
                                         'Go',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 16,
-                                          color: const Color(0xff000000),
+                                          color: Color(0xff000000),
                                           letterSpacing: -0.005119999885559082,
                                           height: 1.3125,
                                         ),
@@ -589,8 +590,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(93.0, 162.0, 182.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(93.0, 162.0, 182.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 fixedWidth: true,
                                 fixedHeight: true,
                                 child:
@@ -599,8 +600,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 182.0, 33.9),
-                                      size: Size(182.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 182.0, 33.9),
+                                      size: const Size(182.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -613,8 +614,8 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 182.0, 42.0),
-                                      size: Size(182.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 182.0, 42.0),
+                                      size: const Size(182.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -626,11 +627,11 @@ class Search1 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(4.6),
                                           color: const Color(0xfffcfcfe),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
-                                              color: const Color(0xff898a8d),
+                                              color: Color(0xff898a8d),
                                               offset: Offset(0, 1),
-                                              blurRadius: 0,
+                                              
                                             ),
                                           ],
                                         ),
@@ -638,18 +639,18 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 10.7, 182.0, 21.3),
-                                      size: Size(182.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 10.7, 182.0, 21.3),
+                                      size: const Size(182.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       child:
                                           // Adobe XD layer: '↳ Label' (text)
-                                          Text(
+                                          const Text(
                                         'space',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 16,
-                                          color: const Color(0xff000000),
+                                          color: Color(0xff000000),
                                           letterSpacing: -0.005119999885559082,
                                           height: 1.3125,
                                         ),
@@ -660,8 +661,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 162.0, 87.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(0.0, 162.0, 87.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 pinLeft: true,
                                 fixedWidth: true,
                                 fixedHeight: true,
@@ -671,8 +672,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 87.0, 42.0),
-                                      size: Size(87.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 87.0, 42.0),
+                                      size: const Size(87.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -685,8 +686,8 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 87.0, 42.0),
-                                      size: Size(87.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 87.0, 42.0),
+                                      size: const Size(87.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -698,11 +699,11 @@ class Search1 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(4.6),
                                           color: const Color(0xffadb3bc),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
-                                              color: const Color(0xff898a8d),
+                                              color: Color(0xff898a8d),
                                               offset: Offset(0, 1),
-                                              blurRadius: 0,
+                                              
                                             ),
                                           ],
                                         ),
@@ -710,18 +711,18 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 12.0, 87.0, 21.0),
-                                      size: Size(87.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 12.0, 87.0, 21.0),
+                                      size: const Size(87.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       child:
                                           // Adobe XD layer: '↳ Label' (text)
-                                          Text(
+                                          const Text(
                                         '123',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 16,
-                                          color: const Color(0xff000000),
+                                          color: Color(0xff000000),
                                           letterSpacing: -0.32,
                                           height: 1.3125,
                                         ),
@@ -732,8 +733,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(327.0, 108.0, 42.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(327.0, 108.0, 42.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 pinRight: true,
                                 fixedWidth: true,
                                 fixedHeight: true,
@@ -743,8 +744,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 42.0, 42.0),
-                                      size: Size(42.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 42.0, 42.0),
+                                      size: const Size(42.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -754,9 +755,9 @@ class Search1 extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 42.0, 42.0),
-                                            size: Size(42.0, 42.0),
+                                            size: const Size(42.0, 42.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -768,9 +769,9 @@ class Search1 extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 42.0, 42.0),
-                                            size: Size(42.0, 42.0),
+                                            size: const Size(42.0, 42.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -782,31 +783,31 @@ class Search1 extends StatelessWidget {
                                                 borderRadius:
                                                     BorderRadius.circular(4.6),
                                                 color: const Color(0xffadb3bc),
-                                                boxShadow: [
+                                                boxShadow: const [
                                                   BoxShadow(
                                                     color:
-                                                        const Color(0xff898a8d),
+                                                        Color(0xff898a8d),
                                                     offset: Offset(0, 1),
-                                                    blurRadius: 0,
+                                                    
                                                   ),
                                                 ],
                                               ),
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 12.0, 42.0, 21.0),
-                                            size: Size(42.0, 42.0),
+                                            size: const Size(42.0, 42.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             child:
                                                 // Adobe XD layer: '↳ Label' (text)
-                                                Text(
+                                                const Text(
                                               ' ',
                                               style: TextStyle(
                                                 fontFamily: 'SF Pro Text',
                                                 fontSize: 16,
-                                                color: const Color(0xff000000),
+                                                color: Color(0xff000000),
                                                 letterSpacing: -0.32,
                                                 height: 1.3125,
                                               ),
@@ -818,8 +819,8 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(9.7, 12.7, 22.7, 17.0),
-                                      size: Size(42.0, 42.0),
+                                          const Rect.fromLTWH(9.7, 12.7, 22.7, 17.0),
+                                      size: const Size(42.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       fixedHeight: true,
@@ -835,8 +836,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 108.0, 42.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(0.0, 108.0, 42.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 pinLeft: true,
                                 fixedWidth: true,
                                 fixedHeight: true,
@@ -846,8 +847,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 42.0, 42.0),
-                                      size: Size(42.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 42.0, 42.0),
+                                      size: const Size(42.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -857,9 +858,9 @@ class Search1 extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 42.0, 42.0),
-                                            size: Size(42.0, 42.0),
+                                            size: const Size(42.0, 42.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -871,9 +872,9 @@ class Search1 extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 42.0, 42.0),
-                                            size: Size(42.0, 42.0),
+                                            size: const Size(42.0, 42.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -885,30 +886,30 @@ class Search1 extends StatelessWidget {
                                                 borderRadius:
                                                     BorderRadius.circular(4.6),
                                                 color: const Color(0xfffcfcfe),
-                                                boxShadow: [
-                                                  BoxShadow(
+                                                boxShadow: const[
+                                                   BoxShadow(
                                                     color:
-                                                        const Color(0xff898a8d),
+                                                        Color(0xff898a8d),
                                                     offset: Offset(0, 1),
-                                                    blurRadius: 0,
+                                                    
                                                   ),
                                                 ],
                                               ),
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 17.7, 12.0, 6.0, 22.0),
-                                            size: Size(42.0, 42.0),
+                                            size: const Size(42.0, 42.0),
                                             fixedHeight: true,
                                             child:
                                                 // Adobe XD layer: 'Symbol' (text)
-                                                Text(
+                                                const Text(
                                               ' ',
                                               style: TextStyle(
                                                 fontFamily: 'SF Pro Text',
                                                 fontSize: 22,
-                                                color: const Color(0xff000000),
+                                                color: Color(0xff000000),
                                                 letterSpacing:
                                                     -0.5423790893554687,
                                               ),
@@ -920,8 +921,8 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(11.7, 12.2, 18.9, 16.5),
-                                      size: Size(42.0, 42.0),
+                                          const Rect.fromLTWH(11.7, 12.2, 18.9, 16.5),
+                                      size: const Size(42.0, 42.0),
                                       fixedWidth: true,
                                       fixedHeight: true,
                                       child:
@@ -936,8 +937,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(282.0, 108.0, 32.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(282.0, 108.0, 32.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 pinRight: true,
                                 fixedWidth: true,
                                 fixedHeight: true,
@@ -947,8 +948,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
+                                      size: const Size(32.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -960,11 +961,11 @@ class Search1 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(4.6),
                                           color: const Color(0xfffcfcfe),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
-                                              color: const Color(0xff898a8d),
+                                              color: Color(0xff898a8d),
                                               offset: Offset(0, 1),
-                                              blurRadius: 0,
+                                              
                                             ),
                                           ],
                                         ),
@@ -972,17 +973,17 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(7.5, 12.0, 18.0, 22.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(7.5, 12.0, 18.0, 22.0),
+                                      size: const Size(32.0, 42.0),
                                       fixedHeight: true,
                                       child:
                                           // Adobe XD layer: 'Symbol' (text)
-                                          Text(
+                                          const Text(
                                         'M',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 22.5,
-                                          color: const Color(0xff000000),
+                                          color: Color(0xff000000),
                                           letterSpacing: -0.5547058868408203,
                                         ),
                                         textAlign: TextAlign.center,
@@ -992,8 +993,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(244.0, 108.0, 32.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(244.0, 108.0, 32.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 fixedWidth: true,
                                 fixedHeight: true,
                                 child:
@@ -1002,8 +1003,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
+                                      size: const Size(32.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -1015,11 +1016,11 @@ class Search1 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(4.6),
                                           color: const Color(0xfffcfcfe),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
-                                              color: const Color(0xff898a8d),
+                                              color: Color(0xff898a8d),
                                               offset: Offset(0, 1),
-                                              blurRadius: 0,
+                                              
                                             ),
                                           ],
                                         ),
@@ -1027,17 +1028,17 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
+                                      size: const Size(32.0, 42.0),
                                       fixedHeight: true,
                                       child:
                                           // Adobe XD layer: 'Symbol' (text)
-                                          Text(
+                                          const Text(
                                         'N',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 22.5,
-                                          color: const Color(0xff000000),
+                                          color: Color(0xff000000),
                                           letterSpacing: -0.5547058868408203,
                                         ),
                                         textAlign: TextAlign.center,
@@ -1047,8 +1048,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(206.0, 108.0, 32.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(206.0, 108.0, 32.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 fixedWidth: true,
                                 fixedHeight: true,
                                 child:
@@ -1057,8 +1058,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
+                                      size: const Size(32.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -1070,11 +1071,11 @@ class Search1 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(4.6),
                                           color: const Color(0xfffcfcfe),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
-                                              color: const Color(0xff898a8d),
+                                              color: Color(0xff898a8d),
                                               offset: Offset(0, 1),
-                                              blurRadius: 0,
+                                              
                                             ),
                                           ],
                                         ),
@@ -1082,17 +1083,17 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
+                                      size: const Size(32.0, 42.0),
                                       fixedHeight: true,
                                       child:
                                           // Adobe XD layer: 'Symbol' (text)
-                                          Text(
+                                          const Text(
                                         'B',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 22.5,
-                                          color: const Color(0xff000000),
+                                          color: Color(0xff000000),
                                           letterSpacing: -0.5547058868408203,
                                         ),
                                         textAlign: TextAlign.center,
@@ -1102,8 +1103,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(169.0, 108.0, 32.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(169.0, 108.0, 32.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 fixedWidth: true,
                                 fixedHeight: true,
                                 child:
@@ -1112,8 +1113,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
+                                      size: const Size(32.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -1125,11 +1126,11 @@ class Search1 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(4.6),
                                           color: const Color(0xfffcfcfe),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
-                                              color: const Color(0xff898a8d),
+                                              color: Color(0xff898a8d),
                                               offset: Offset(0, 1),
-                                              blurRadius: 0,
+                                              
                                             ),
                                           ],
                                         ),
@@ -1137,17 +1138,17 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
+                                      size: const Size(32.0, 42.0),
                                       fixedHeight: true,
                                       child:
                                           // Adobe XD layer: 'Symbol' (text)
-                                          Text(
+                                          const Text(
                                         'V',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 22.5,
-                                          color: const Color(0xff000000),
+                                          color: Color(0xff000000),
                                           letterSpacing: -0.5547058868408203,
                                         ),
                                         textAlign: TextAlign.center,
@@ -1157,8 +1158,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(131.0, 108.0, 32.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(131.0, 108.0, 32.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 fixedWidth: true,
                                 fixedHeight: true,
                                 child:
@@ -1167,8 +1168,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
+                                      size: const Size(32.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -1180,11 +1181,11 @@ class Search1 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(4.6),
                                           color: const Color(0xfffcfcfe),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
-                                              color: const Color(0xff898a8d),
+                                              color: Color(0xff898a8d),
                                               offset: Offset(0, 1),
-                                              blurRadius: 0,
+                                              
                                             ),
                                           ],
                                         ),
@@ -1192,17 +1193,17 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
+                                      size: const Size(32.0, 42.0),
                                       fixedHeight: true,
                                       child:
                                           // Adobe XD layer: 'Symbol' (text)
-                                          Text(
+                                          const Text(
                                         'C',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 22.5,
-                                          color: const Color(0xff000000),
+                                          color: Color(0xff000000),
                                           letterSpacing: -0.5547058868408203,
                                         ),
                                         textAlign: TextAlign.center,
@@ -1212,8 +1213,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(94.0, 108.0, 32.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(94.0, 108.0, 32.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 fixedWidth: true,
                                 fixedHeight: true,
                                 child:
@@ -1222,8 +1223,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
+                                      size: const Size(32.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -1235,11 +1236,11 @@ class Search1 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(4.6),
                                           color: const Color(0xfffcfcfe),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
-                                              color: const Color(0xff898a8d),
+                                              color: Color(0xff898a8d),
                                               offset: Offset(0, 1),
-                                              blurRadius: 0,
+                                              
                                             ),
                                           ],
                                         ),
@@ -1247,17 +1248,17 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
+                                      size: const Size(32.0, 42.0),
                                       fixedHeight: true,
                                       child:
                                           // Adobe XD layer: 'Symbol' (text)
-                                          Text(
+                                          const Text(
                                         'X',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 22.5,
-                                          color: const Color(0xff000000),
+                                          color: Color(0xff000000),
                                           letterSpacing: -0.5547058868408203,
                                         ),
                                         textAlign: TextAlign.center,
@@ -1267,8 +1268,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(56.0, 108.0, 32.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(56.0, 108.0, 32.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 fixedWidth: true,
                                 fixedHeight: true,
                                 child:
@@ -1277,8 +1278,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
+                                      size: const Size(32.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -1290,11 +1291,11 @@ class Search1 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(4.6),
                                           color: const Color(0xfffcfcfe),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
-                                              color: const Color(0xff898a8d),
+                                              color: Color(0xff898a8d),
                                               offset: Offset(0, 1),
-                                              blurRadius: 0,
+                                              
                                             ),
                                           ],
                                         ),
@@ -1302,17 +1303,17 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(9.5, 12.0, 14.0, 22.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(9.5, 12.0, 14.0, 22.0),
+                                      size: const Size(32.0, 42.0),
                                       fixedHeight: true,
                                       child:
                                           // Adobe XD layer: 'Symbol' (text)
-                                          Text(
+                                          const Text(
                                         'Z',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 22.5,
-                                          color: const Color(0xff000000),
+                                          color: Color(0xff000000),
                                           letterSpacing: -0.5547058868408203,
                                         ),
                                         textAlign: TextAlign.center,
@@ -1322,8 +1323,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(319.0, 54.0, 32.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(319.0, 54.0, 32.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 pinRight: true,
                                 fixedWidth: true,
                                 fixedHeight: true,
@@ -1333,8 +1334,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
+                                      size: const Size(32.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -1346,11 +1347,11 @@ class Search1 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(4.6),
                                           color: const Color(0xfffcfcfe),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
-                                              color: const Color(0xff898a8d),
+                                              color: Color(0xff898a8d),
                                               offset: Offset(0, 1),
-                                              blurRadius: 0,
+                                              
                                             ),
                                           ],
                                         ),
@@ -1358,17 +1359,17 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(10.5, 12.0, 12.0, 22.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(10.5, 12.0, 12.0, 22.0),
+                                      size: const Size(32.0, 42.0),
                                       fixedHeight: true,
                                       child:
                                           // Adobe XD layer: 'Symbol' (text)
-                                          Text(
+                                          const Text(
                                         'L',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 22.5,
-                                          color: const Color(0xff000000),
+                                          color: Color(0xff000000),
                                           letterSpacing: -0.5547058868408203,
                                         ),
                                         textAlign: TextAlign.center,
@@ -1378,8 +1379,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(281.0, 54.0, 32.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(281.0, 54.0, 32.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 fixedWidth: true,
                                 fixedHeight: true,
                                 child:
@@ -1388,8 +1389,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
+                                      size: const Size(32.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -1401,11 +1402,11 @@ class Search1 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(4.6),
                                           color: const Color(0xfffcfcfe),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
-                                              color: const Color(0xff898a8d),
+                                              color: Color(0xff898a8d),
                                               offset: Offset(0, 1),
-                                              blurRadius: 0,
+                                              
                                             ),
                                           ],
                                         ),
@@ -1413,17 +1414,17 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
+                                      size: const Size(32.0, 42.0),
                                       fixedHeight: true,
                                       child:
                                           // Adobe XD layer: 'Symbol' (text)
-                                          Text(
+                                          const Text(
                                         'K',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 22.5,
-                                          color: const Color(0xff000000),
+                                          color: Color(0xff000000),
                                           letterSpacing: -0.5547058868408203,
                                         ),
                                         textAlign: TextAlign.center,
@@ -1433,8 +1434,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(244.0, 54.0, 32.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(244.0, 54.0, 32.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 fixedWidth: true,
                                 fixedHeight: true,
                                 child:
@@ -1443,8 +1444,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
+                                      size: const Size(32.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -1456,11 +1457,11 @@ class Search1 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(4.6),
                                           color: const Color(0xfffcfcfe),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
-                                              color: const Color(0xff898a8d),
+                                              color: Color(0xff898a8d),
                                               offset: Offset(0, 1),
-                                              blurRadius: 0,
+                                              
                                             ),
                                           ],
                                         ),
@@ -1468,17 +1469,17 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(10.5, 12.0, 12.0, 22.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(10.5, 12.0, 12.0, 22.0),
+                                      size: const Size(32.0, 42.0),
                                       fixedHeight: true,
                                       child:
                                           // Adobe XD layer: 'Symbol' (text)
-                                          Text(
+                                          const Text(
                                         'J',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 22.5,
-                                          color: const Color(0xff000000),
+                                          color: Color(0xff000000),
                                           letterSpacing: -0.5547058868408203,
                                         ),
                                         textAlign: TextAlign.center,
@@ -1488,8 +1489,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(206.0, 54.0, 32.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(206.0, 54.0, 32.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 fixedWidth: true,
                                 fixedHeight: true,
                                 child:
@@ -1498,8 +1499,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
+                                      size: const Size(32.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -1511,11 +1512,11 @@ class Search1 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(4.6),
                                           color: const Color(0xfffcfcfe),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
-                                              color: const Color(0xff898a8d),
+                                              color: Color(0xff898a8d),
                                               offset: Offset(0, 1),
-                                              blurRadius: 0,
+                                              
                                             ),
                                           ],
                                         ),
@@ -1523,17 +1524,17 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
+                                      size: const Size(32.0, 42.0),
                                       fixedHeight: true,
                                       child:
                                           // Adobe XD layer: 'Symbol' (text)
-                                          Text(
+                                          const Text(
                                         'H',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 22.5,
-                                          color: const Color(0xff000000),
+                                          color: Color(0xff000000),
                                           letterSpacing: -0.5547058868408203,
                                         ),
                                         textAlign: TextAlign.center,
@@ -1543,8 +1544,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(169.0, 54.0, 32.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(169.0, 54.0, 32.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 fixedWidth: true,
                                 fixedHeight: true,
                                 child:
@@ -1553,8 +1554,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
+                                      size: const Size(32.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -1566,11 +1567,11 @@ class Search1 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(4.6),
                                           color: const Color(0xfffcfcfe),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
-                                              color: const Color(0xff898a8d),
+                                              color: Color(0xff898a8d),
                                               offset: Offset(0, 1),
-                                              blurRadius: 0,
+                                              
                                             ),
                                           ],
                                         ),
@@ -1578,17 +1579,17 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(7.5, 12.0, 18.0, 22.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(7.5, 12.0, 18.0, 22.0),
+                                      size: const Size(32.0, 42.0),
                                       fixedHeight: true,
                                       child:
                                           // Adobe XD layer: 'Symbol' (text)
-                                          Text(
+                                          const Text(
                                         'G',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 22.5,
-                                          color: const Color(0xff000000),
+                                          color: Color(0xff000000),
                                           letterSpacing: -0.5547058868408203,
                                         ),
                                         textAlign: TextAlign.center,
@@ -1598,8 +1599,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(131.0, 54.0, 32.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(131.0, 54.0, 32.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 fixedWidth: true,
                                 fixedHeight: true,
                                 child:
@@ -1608,8 +1609,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
+                                      size: const Size(32.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -1621,11 +1622,11 @@ class Search1 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(4.6),
                                           color: const Color(0xfffcfcfe),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
-                                              color: const Color(0xff898a8d),
+                                              color: Color(0xff898a8d),
                                               offset: Offset(0, 1),
-                                              blurRadius: 0,
+                                              
                                             ),
                                           ],
                                         ),
@@ -1633,17 +1634,17 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(9.5, 12.0, 14.0, 22.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(9.5, 12.0, 14.0, 22.0),
+                                      size: const Size(32.0, 42.0),
                                       fixedHeight: true,
                                       child:
                                           // Adobe XD layer: 'Symbol' (text)
-                                          Text(
+                                          const Text(
                                         'F',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 22.5,
-                                          color: const Color(0xff000000),
+                                          color: Color(0xff000000),
                                           letterSpacing: -0.5547058868408203,
                                         ),
                                         textAlign: TextAlign.center,
@@ -1653,8 +1654,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(94.0, 54.0, 32.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(94.0, 54.0, 32.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 fixedWidth: true,
                                 fixedHeight: true,
                                 child:
@@ -1663,8 +1664,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
+                                      size: const Size(32.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -1676,11 +1677,11 @@ class Search1 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(4.6),
                                           color: const Color(0xfffcfcfe),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
-                                              color: const Color(0xff898a8d),
+                                              color: Color(0xff898a8d),
                                               offset: Offset(0, 1),
-                                              blurRadius: 0,
+                                              
                                             ),
                                           ],
                                         ),
@@ -1688,17 +1689,17 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
+                                      size: const Size(32.0, 42.0),
                                       fixedHeight: true,
                                       child:
                                           // Adobe XD layer: 'Symbol' (text)
-                                          Text(
+                                          const Text(
                                         'D',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 22.5,
-                                          color: const Color(0xff000000),
+                                          color: Color(0xff000000),
                                           letterSpacing: -0.5547058868408203,
                                         ),
                                         textAlign: TextAlign.center,
@@ -1708,8 +1709,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(56.0, 54.0, 32.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(56.0, 54.0, 32.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 fixedWidth: true,
                                 fixedHeight: true,
                                 child:
@@ -1718,8 +1719,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
+                                      size: const Size(32.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -1731,11 +1732,11 @@ class Search1 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(4.6),
                                           color: const Color(0xfffcfcfe),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
-                                              color: const Color(0xff898a8d),
+                                              color: Color(0xff898a8d),
                                               offset: Offset(0, 1),
-                                              blurRadius: 0,
+                                              
                                             ),
                                           ],
                                         ),
@@ -1743,17 +1744,17 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
+                                      size: const Size(32.0, 42.0),
                                       fixedHeight: true,
                                       child:
                                           // Adobe XD layer: 'Symbol' (text)
-                                          Text(
+                                          const Text(
                                         'S',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 22.5,
-                                          color: const Color(0xff000000),
+                                          color: Color(0xff000000),
                                           letterSpacing: -0.5547058868408203,
                                         ),
                                         textAlign: TextAlign.center,
@@ -1763,8 +1764,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(19.0, 54.0, 32.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(19.0, 54.0, 32.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 pinLeft: true,
                                 fixedWidth: true,
                                 fixedHeight: true,
@@ -1774,8 +1775,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
+                                      size: const Size(32.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -1787,11 +1788,11 @@ class Search1 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(4.6),
                                           color: const Color(0xfffcfcfe),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
-                                              color: const Color(0xff898a8d),
+                                              color: Color(0xff898a8d),
                                               offset: Offset(0, 1),
-                                              blurRadius: 0,
+                                              
                                             ),
                                           ],
                                         ),
@@ -1799,17 +1800,17 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
+                                      size: const Size(32.0, 42.0),
                                       fixedHeight: true,
                                       child:
                                           // Adobe XD layer: 'Symbol' (text)
-                                          Text(
+                                          const Text(
                                         'A',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 22.5,
-                                          color: const Color(0xff000000),
+                                          color: Color(0xff000000),
                                           letterSpacing: -0.5547058868408203,
                                         ),
                                         textAlign: TextAlign.center,
@@ -1819,8 +1820,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(337.0, 0.0, 32.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(337.0, 0.0, 32.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 pinRight: true,
                                 pinTop: true,
                                 fixedWidth: true,
@@ -1831,8 +1832,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
+                                      size: const Size(32.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -1844,11 +1845,11 @@ class Search1 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(4.6),
                                           color: const Color(0xfffcfcfe),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
-                                              color: const Color(0xff898a8d),
+                                              color: Color(0xff898a8d),
                                               offset: Offset(0, 1),
-                                              blurRadius: 0,
+                                              
                                             ),
                                           ],
                                         ),
@@ -1856,17 +1857,17 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
+                                      size: const Size(32.0, 42.0),
                                       fixedHeight: true,
                                       child:
                                           // Adobe XD layer: 'Symbol' (text)
-                                          Text(
+                                          const Text(
                                         'P',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 22.5,
-                                          color: const Color(0xff000000),
+                                          color: Color(0xff000000),
                                           letterSpacing: -0.5547058868408203,
                                         ),
                                         textAlign: TextAlign.center,
@@ -1876,8 +1877,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(300.0, 0.0, 32.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(300.0, 0.0, 32.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 pinRight: true,
                                 pinTop: true,
                                 fixedWidth: true,
@@ -1888,8 +1889,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
+                                      size: const Size(32.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -1901,11 +1902,11 @@ class Search1 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(4.6),
                                           color: const Color(0xfffcfcfe),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
-                                              color: const Color(0xff898a8d),
+                                              color: Color(0xff898a8d),
                                               offset: Offset(0, 1),
-                                              blurRadius: 0,
+                                              
                                             ),
                                           ],
                                         ),
@@ -1913,17 +1914,17 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(7.5, 12.0, 18.0, 22.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(7.5, 12.0, 18.0, 22.0),
+                                      size: const Size(32.0, 42.0),
                                       fixedHeight: true,
                                       child:
                                           // Adobe XD layer: 'Symbol' (text)
-                                          Text(
+                                          const Text(
                                         'O',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 22.5,
-                                          color: const Color(0xff000000),
+                                          color: Color(0xff000000),
                                           letterSpacing: -0.5547058868408203,
                                         ),
                                         textAlign: TextAlign.center,
@@ -1933,8 +1934,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(262.0, 0.0, 32.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(262.0, 0.0, 32.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 pinTop: true,
                                 fixedWidth: true,
                                 fixedHeight: true,
@@ -1944,8 +1945,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
+                                      size: const Size(32.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -1957,11 +1958,11 @@ class Search1 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(4.6),
                                           color: const Color(0xfffcfcfe),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
-                                              color: const Color(0xff898a8d),
+                                              color: Color(0xff898a8d),
                                               offset: Offset(0, 1),
-                                              blurRadius: 0,
+                                              
                                             ),
                                           ],
                                         ),
@@ -1969,17 +1970,17 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(13.5, 12.0, 6.0, 22.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(13.5, 12.0, 6.0, 22.0),
+                                      size: const Size(32.0, 42.0),
                                       fixedHeight: true,
                                       child:
                                           // Adobe XD layer: 'Symbol' (text)
-                                          Text(
+                                          const Text(
                                         'I',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 22.5,
-                                          color: const Color(0xff000000),
+                                          color: Color(0xff000000),
                                           letterSpacing: -0.5547058868408203,
                                         ),
                                         textAlign: TextAlign.center,
@@ -1989,8 +1990,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(225.0, 0.0, 32.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(225.0, 0.0, 32.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 pinTop: true,
                                 fixedWidth: true,
                                 fixedHeight: true,
@@ -2000,8 +2001,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
+                                      size: const Size(32.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -2013,11 +2014,11 @@ class Search1 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(4.6),
                                           color: const Color(0xfffcfcfe),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
-                                              color: const Color(0xff898a8d),
+                                              color: Color(0xff898a8d),
                                               offset: Offset(0, 1),
-                                              blurRadius: 0,
+                                              
                                             ),
                                           ],
                                         ),
@@ -2025,17 +2026,17 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
+                                      size: const Size(32.0, 42.0),
                                       fixedHeight: true,
                                       child:
                                           // Adobe XD layer: 'Symbol' (text)
-                                          Text(
+                                          const Text(
                                         'U',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 22.5,
-                                          color: const Color(0xff000000),
+                                          color: Color(0xff000000),
                                           letterSpacing: -0.5547058868408203,
                                         ),
                                         textAlign: TextAlign.center,
@@ -2045,8 +2046,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(187.0, 0.0, 32.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(187.0, 0.0, 32.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 pinTop: true,
                                 fixedWidth: true,
                                 fixedHeight: true,
@@ -2056,8 +2057,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
+                                      size: const Size(32.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -2069,11 +2070,11 @@ class Search1 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(4.6),
                                           color: const Color(0xfffcfcfe),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
-                                              color: const Color(0xff898a8d),
+                                              color: Color(0xff898a8d),
                                               offset: Offset(0, 1),
-                                              blurRadius: 0,
+                                              
                                             ),
                                           ],
                                         ),
@@ -2081,17 +2082,17 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
+                                      size: const Size(32.0, 42.0),
                                       fixedHeight: true,
                                       child:
                                           // Adobe XD layer: 'Symbol' (text)
-                                          Text(
+                                          const Text(
                                         'Y',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 22.5,
-                                          color: const Color(0xff000000),
+                                          color: Color(0xff000000),
                                           letterSpacing: -0.5547058868408203,
                                         ),
                                         textAlign: TextAlign.center,
@@ -2101,8 +2102,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(150.0, 0.0, 32.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(150.0, 0.0, 32.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 pinTop: true,
                                 fixedWidth: true,
                                 fixedHeight: true,
@@ -2112,8 +2113,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
+                                      size: const Size(32.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -2125,11 +2126,11 @@ class Search1 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(4.6),
                                           color: const Color(0xfffcfcfe),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
-                                              color: const Color(0xff898a8d),
+                                              color: Color(0xff898a8d),
                                               offset: Offset(0, 1),
-                                              blurRadius: 0,
+                                              
                                             ),
                                           ],
                                         ),
@@ -2137,17 +2138,17 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(9.5, 12.0, 14.0, 22.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(9.5, 12.0, 14.0, 22.0),
+                                      size: const Size(32.0, 42.0),
                                       fixedHeight: true,
                                       child:
                                           // Adobe XD layer: 'Symbol' (text)
-                                          Text(
+                                          const Text(
                                         'T',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 22.5,
-                                          color: const Color(0xff000000),
+                                          color: Color(0xff000000),
                                           letterSpacing: -0.5547058868408203,
                                         ),
                                         textAlign: TextAlign.center,
@@ -2157,8 +2158,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(112.0, 0.0, 32.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(112.0, 0.0, 32.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 pinTop: true,
                                 fixedWidth: true,
                                 fixedHeight: true,
@@ -2168,8 +2169,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
+                                      size: const Size(32.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -2181,11 +2182,11 @@ class Search1 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(4.6),
                                           color: const Color(0xfffcfcfe),
-                                          boxShadow: [
-                                            BoxShadow(
-                                              color: const Color(0xff898a8d),
+                                          boxShadow: const[
+                                             BoxShadow(
+                                              color: Color(0xff898a8d),
                                               offset: Offset(0, 1),
-                                              blurRadius: 0,
+                                              
                                             ),
                                           ],
                                         ),
@@ -2193,17 +2194,17 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
+                                      size: const Size(32.0, 42.0),
                                       fixedHeight: true,
                                       child:
                                           // Adobe XD layer: 'Symbol' (text)
-                                          Text(
+                                          const Text(
                                         'R',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 22.5,
-                                          color: const Color(0xff000000),
+                                          color: Color(0xff000000),
                                           letterSpacing: -0.5547058868408203,
                                         ),
                                         textAlign: TextAlign.center,
@@ -2213,8 +2214,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(75.0, 0.0, 32.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(75.0, 0.0, 32.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 pinTop: true,
                                 fixedWidth: true,
                                 fixedHeight: true,
@@ -2224,8 +2225,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
+                                      size: const Size(32.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -2237,11 +2238,11 @@ class Search1 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(4.6),
                                           color: const Color(0xfffcfcfe),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
-                                              color: const Color(0xff898a8d),
+                                              color: Color(0xff898a8d),
                                               offset: Offset(0, 1),
-                                              blurRadius: 0,
+                                              
                                             ),
                                           ],
                                         ),
@@ -2249,17 +2250,17 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(8.5, 12.0, 16.0, 22.0),
+                                      size: const Size(32.0, 42.0),
                                       fixedHeight: true,
                                       child:
                                           // Adobe XD layer: 'Symbol' (text)
-                                          Text(
+                                          const Text(
                                         'E',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 22.5,
-                                          color: const Color(0xff000000),
+                                          color: Color(0xff000000),
                                           letterSpacing: -0.5547058868408203,
                                         ),
                                         textAlign: TextAlign.center,
@@ -2269,8 +2270,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(37.0, 0.0, 32.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(37.0, 0.0, 32.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 pinLeft: true,
                                 pinTop: true,
                                 fixedWidth: true,
@@ -2281,8 +2282,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
+                                      size: const Size(32.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -2294,11 +2295,11 @@ class Search1 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(4.6),
                                           color: const Color(0xfffcfcfe),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
-                                              color: const Color(0xff898a8d),
+                                              color: Color(0xff898a8d),
                                               offset: Offset(0, 1),
-                                              blurRadius: 0,
+                                              
                                             ),
                                           ],
                                         ),
@@ -2306,17 +2307,17 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(5.5, 12.0, 22.0, 22.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(5.5, 12.0, 22.0, 22.0),
+                                      size: const Size(32.0, 42.0),
                                       fixedHeight: true,
                                       child:
                                           // Adobe XD layer: 'Symbol' (text)
-                                          Text(
+                                          const Text(
                                         'W',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 22.5,
-                                          color: const Color(0xff000000),
+                                          color: Color(0xff000000),
                                           letterSpacing: -0.5547058868408203,
                                         ),
                                         textAlign: TextAlign.center,
@@ -2326,8 +2327,8 @@ class Search1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
-                                size: Size(369.0, 259.0),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
+                                size: const Size(369.0, 259.0),
                                 pinLeft: true,
                                 pinTop: true,
                                 fixedWidth: true,
@@ -2338,8 +2339,8 @@ class Search1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 32.0, 42.0),
+                                      size: const Size(32.0, 42.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -2351,11 +2352,11 @@ class Search1 extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(4.6),
                                           color: const Color(0xfffcfcfe),
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
-                                              color: const Color(0xff898a8d),
+                                              color: Color(0xff898a8d),
                                               offset: Offset(0, 1),
-                                              blurRadius: 0,
+                                              
                                             ),
                                           ],
                                         ),
@@ -2363,17 +2364,17 @@ class Search1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(7.5, 12.0, 18.0, 22.0),
-                                      size: Size(32.0, 42.0),
+                                          const Rect.fromLTWH(7.5, 12.0, 18.0, 22.0),
+                                      size: const Size(32.0, 42.0),
                                       fixedHeight: true,
                                       child:
                                           // Adobe XD layer: 'Symbol' (text)
-                                          Text(
+                                          const Text(
                                         'Q',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 22.5,
-                                          color: const Color(0xff000000),
+                                          color: Color(0xff000000),
                                           letterSpacing: -0.5547058868408203,
                                         ),
                                         textAlign: TextAlign.center,
@@ -2393,7 +2394,7 @@ class Search1 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(0.0, 401.0),
+            offset: const Offset(0.0, 401.0),
             child:
                 // Adobe XD layer: 'Suggestion 3' (group)
                 SizedBox(
@@ -2402,8 +2403,8 @@ class Search1 extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 68.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 68.0),
+                    size: const Size(375.0, 68.0),
                     child: SvgPicture.string(
                       _svg_839hc4,
                       allowDrawingOutsideViewBox: true,
@@ -2411,18 +2412,18 @@ class Search1 extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 40.0, 76.0, 12.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(30.0, 40.0, 76.0, 12.0),
+                    size: const Size(375.0, 68.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text(
+                          const Text(
                         'Top categories',
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 12,
-                          color: const Color(0x801a1824),
+                          color: Color(0x801a1824),
                           letterSpacing: -0.12,
                         ),
                         textAlign: TextAlign.left,
@@ -2430,18 +2431,18 @@ class Search1 extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 18.0, 34.0, 14.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(30.0, 18.0, 34.0, 14.0),
+                    size: const Size(375.0, 68.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text(
+                          const Text(
                         'Pizza',
                         style: TextStyle(
                           fontFamily: 'SF Pro Display',
                           fontSize: 14,
-                          color: const Color(0xff1a1824),
+                          color: Color(0xff1a1824),
                           height: 1.4285714285714286,
                         ),
                         textAlign: TextAlign.left,
@@ -2453,7 +2454,7 @@ class Search1 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(0.0, 333.0),
+            offset: const Offset(0.0, 333.0),
             child:
                 // Adobe XD layer: 'Suggestion 2' (group)
                 SizedBox(
@@ -2462,8 +2463,8 @@ class Search1 extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 68.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 68.0),
+                    size: const Size(375.0, 68.0),
                     child: SvgPicture.string(
                       _svg_df7o1s,
                       allowDrawingOutsideViewBox: true,
@@ -2471,18 +2472,18 @@ class Search1 extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 40.0, 76.0, 12.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(30.0, 40.0, 76.0, 12.0),
+                    size: const Size(375.0, 68.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text(
+                          const Text(
                         'Top categories',
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 12,
-                          color: const Color(0x801a1824),
+                          color: Color(0x801a1824),
                           letterSpacing: -0.12,
                         ),
                         textAlign: TextAlign.left,
@@ -2490,18 +2491,18 @@ class Search1 extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 18.0, 77.0, 14.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(30.0, 18.0, 77.0, 14.0),
+                    size: const Size(375.0, 68.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text(
+                          const Text(
                         'Hamburgers',
                         style: TextStyle(
                           fontFamily: 'SF Pro Display',
                           fontSize: 14,
-                          color: const Color(0xff1a1824),
+                          color: Color(0xff1a1824),
                           height: 1.4285714285714286,
                         ),
                         textAlign: TextAlign.left,
@@ -2513,7 +2514,7 @@ class Search1 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(0.0, 265.0),
+            offset: const Offset(0.0, 265.0),
             child:
                 // Adobe XD layer: 'Suggestion 1' (group)
                 SizedBox(
@@ -2522,8 +2523,8 @@ class Search1 extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 68.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 68.0),
+                    size: const Size(375.0, 68.0),
                     child: SvgPicture.string(
                       _svg_ir5urg,
                       allowDrawingOutsideViewBox: true,
@@ -2531,18 +2532,18 @@ class Search1 extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 40.0, 88.0, 12.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(30.0, 40.0, 88.0, 12.0),
+                    size: const Size(375.0, 68.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text(
+                          const Text(
                         'Recent searches',
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 12,
-                          color: const Color(0x801a1824),
+                          color: Color(0x801a1824),
                           letterSpacing: -0.12,
                         ),
                         textAlign: TextAlign.left,
@@ -2550,18 +2551,18 @@ class Search1 extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 18.0, 79.0, 14.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(30.0, 18.0, 79.0, 14.0),
+                    size: const Size(375.0, 68.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text(
+                          const Text(
                         'Healthy food',
                         style: TextStyle(
                           fontFamily: 'SF Pro Display',
                           fontSize: 14,
-                          color: const Color(0xff1a1824),
+                          color: Color(0xff1a1824),
                           height: 1.4285714285714286,
                         ),
                         textAlign: TextAlign.left,
@@ -2573,7 +2574,7 @@ class Search1 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(0.0, 195.0),
+            offset: const Offset(0.0, 195.0),
             child:
                 // Adobe XD layer: 'Search field' (group)
                 SizedBox(
@@ -2582,8 +2583,8 @@ class Search1 extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 60.0),
-                    size: Size(375.0, 60.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 60.0),
+                    size: const Size(375.0, 60.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -2591,15 +2592,15 @@ class Search1 extends StatelessWidget {
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 60.0),
-                          size: Size(375.0, 60.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 60.0),
+                          size: const Size(375.0, 60.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
                           pinBottom: true,
                           child: Container(
-                            decoration: BoxDecoration(
-                              color: const Color(0xffffffff),
+                            decoration: const BoxDecoration(
+                              color: Color(0xffffffff),
                             ),
                           ),
                         ),
@@ -2607,31 +2608,31 @@ class Search1 extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 59.0, 315.0, 1.0),
-                    size: Size(375.0, 60.0),
+                    bounds: const Rect.fromLTWH(30.0, 59.0, 315.0, 1.0),
+                    size: const Size(375.0, 60.0),
                     pinLeft: true,
                     pinRight: true,
                     pinBottom: true,
                     fixedHeight: true,
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xff1a1824),
+                      decoration: const BoxDecoration(
+                        color: Color(0xff1a1824),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(62.0, 31.0, 133.0, 15.0),
-                    size: Size(375.0, 60.0),
+                    bounds: const Rect.fromLTWH(62.0, 31.0, 133.0, 15.0),
+                    size: const Size(375.0, 60.0),
                     fixedWidth: true,
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: 'text' (text)
-                        Text(
+                        const Text(
                       'Search food you like',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 15,
-                        color: const Color(0x80242134),
+                        color: Color(0x80242134),
                         letterSpacing: -0.15,
                         height: 1.3333333333333333,
                       ),
@@ -2639,20 +2640,20 @@ class Search1 extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(62.0, 27.0, 2.0, 22.0),
-                    size: Size(375.0, 60.0),
+                    bounds: const Rect.fromLTWH(62.0, 27.0, 2.0, 22.0),
+                    size: const Size(375.0, 60.0),
                     pinLeft: true,
                     fixedWidth: true,
                     fixedHeight: true,
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xff34c47c),
+                      decoration: const BoxDecoration(
+                        color: Color(0xff34c47c),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 31.0, 14.0, 14.0),
-                    size: Size(375.0, 60.0),
+                    bounds: const Rect.fromLTWH(30.0, 31.0, 14.0, 14.0),
+                    size: const Size(375.0, 60.0),
                     pinLeft: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -2667,7 +2668,7 @@ class Search1 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(313.0, 208.0),
+            offset: const Offset(313.0, 208.0),
             child:
                 // Adobe XD layer: 'Filter button' (group)
                 SizedBox(
@@ -2676,21 +2677,21 @@ class Search1 extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
+                    size: const Size(46.0, 46.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
                     pinBottom: true,
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xffffffff),
+                      decoration: const BoxDecoration(
+                        color: Color(0xffffffff),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(15.3, 14.7, 16.0, 16.6),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(15.3, 14.7, 16.0, 16.6),
+                    size: const Size(46.0, 46.0),
                     child: Transform.rotate(
                       angle: -1.5708,
                       child:
@@ -2718,13 +2719,13 @@ class Search1 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 119.0),
-            child: Text(
+            offset: const Offset(30.0, 119.0),
+            child: const Text(
               'What would you\nlike to eat?',
               style: TextStyle(
                 fontFamily: 'SF Pro Text',
                 fontSize: 30,
-                color: const Color(0xff1a1824),
+                color: Color(0xff1a1824),
                 letterSpacing: -0.3,
                 fontWeight: FontWeight.w700,
                 height: 1.2,
@@ -2733,7 +2734,7 @@ class Search1 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(176.0, 58.0),
+            offset: const Offset(176.0, 58.0),
             child:
                 // Adobe XD layer: 'Logo' (group)
                 SizedBox(
@@ -2746,28 +2747,28 @@ class Search1 extends StatelessWidget {
                     child: Container(
                       width: 16.0,
                       height: 16.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(60.0),
                           bottomRight: Radius.circular(60.0),
                           bottomLeft: Radius.circular(60.0),
                         ),
-                        color: const Color(0x1a1a1824),
+                        color: Color(0x1a1a1824),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(8.0, 0.8),
+                    offset: const Offset(8.0, 0.8),
                     child: Container(
                       width: 16.0,
                       height: 16.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(60.0),
                           bottomRight: Radius.circular(60.0),
                           bottomLeft: Radius.circular(60.0),
                         ),
-                        color: const Color(0xff34c47c),
+                        color: Color(0xff34c47c),
                       ),
                     ),
                   ),
@@ -2776,7 +2777,7 @@ class Search1 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(316.0, 43.0),
+            offset: const Offset(316.0, 43.0),
             child:
                 // Adobe XD layer: 'Close button' (group)
                 SizedBox(
@@ -2785,28 +2786,28 @@ class Search1 extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
+                    size: const Size(46.0, 46.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
                     pinBottom: true,
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xffffffff),
+                      decoration: const BoxDecoration(
+                        color: Color(0xffffffff),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(17.0, 17.0, 12.0, 12.0),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(17.0, 17.0, 12.0, 12.0),
+                    size: const Size(46.0, 46.0),
                     fixedWidth: true,
                     fixedHeight: true,
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 12.0, 12.0),
-                          size: Size(12.0, 12.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 12.0, 12.0),
+                          size: const Size(12.0, 12.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,

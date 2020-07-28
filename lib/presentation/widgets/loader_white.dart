@@ -15,12 +15,12 @@ class Loaderwhite extends StatelessWidget {
           Container(
             width: 375.0,
             height: 812.0,
-            decoration: BoxDecoration(
-              color: const Color(0xffffffff),
+            decoration: const BoxDecoration(
+              color: Color(0xffffffff),
             ),
           ),
           Transform.translate(
-            offset: Offset(167.0, 386.0),
+            offset: const Offset(167.0, 386.0),
             child:
                 // Adobe XD layer: 'loading' (group)
                 SizedBox(

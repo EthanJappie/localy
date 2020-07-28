@@ -16,12 +16,12 @@ class Allownotifications extends StatelessWidget {
           Container(
             width: 375.0,
             height: 812.0,
-            decoration: BoxDecoration(
-              color: const Color(0xffffffff),
+            decoration: const BoxDecoration(
+              color: Color(0xffffffff),
             ),
           ),
           Transform.translate(
-            offset: Offset(20.0, 15.0),
+            offset: const Offset(20.0, 15.0),
             child:
                 // Adobe XD layer: 'iOS elements' (group)
                 SizedBox(
@@ -30,8 +30,8 @@ class Allownotifications extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
-                    size: Size(340.3, 788.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
+                    size: const Size(340.3, 788.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -39,8 +39,8 @@ class Allownotifications extends StatelessWidget {
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
-                          size: Size(340.3, 16.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
+                          size: const Size(340.3, 16.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -50,8 +50,8 @@ class Allownotifications extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(316.0, 2.3, 24.3, 11.3),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(316.0, 2.3, 24.3, 11.3),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 pinTop: true,
                                 pinBottom: true,
@@ -62,8 +62,8 @@ class Allownotifications extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
+                                      size: const Size(24.3, 11.3),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -73,9 +73,9 @@ class Allownotifications extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 22.0, 11.3),
-                                            size: Size(22.0, 11.3),
+                                            size: const Size(22.0, 11.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -89,9 +89,9 @@ class Allownotifications extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 22.0, 11.3),
-                                            size: Size(22.0, 11.3),
+                                            size: const Size(22.0, 11.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -109,8 +109,8 @@ class Allownotifications extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(23.0, 3.7, 1.3, 4.0),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(23.0, 3.7, 1.3, 4.0),
+                                      size: const Size(24.3, 11.3),
                                       pinRight: true,
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -119,9 +119,9 @@ class Allownotifications extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 11.3, 14.0),
-                                            size: Size(1.3, 4.0),
+                                            size: const Size(1.3, 4.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -135,9 +135,9 @@ class Allownotifications extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 1.3, 4.0),
-                                            size: Size(1.3, 4.0),
+                                            size: const Size(1.3, 4.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -155,8 +155,8 @@ class Allownotifications extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(2.0, 2.0, 18.0, 7.3),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(2.0, 2.0, 18.0, 7.3),
+                                      size: const Size(24.3, 11.3),
                                       pinLeft: true,
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -165,9 +165,9 @@ class Allownotifications extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 28.0, 17.3),
-                                            size: Size(18.0, 7.3),
+                                            size: const Size(18.0, 7.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -181,9 +181,9 @@ class Allownotifications extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 18.0, 7.3),
-                                            size: Size(18.0, 7.3),
+                                            size: const Size(18.0, 7.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -203,8 +203,8 @@ class Allownotifications extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(295.7, 2.3, 15.3, 11.0),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(295.7, 2.3, 15.3, 11.0),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 pinTop: true,
                                 fixedWidth: true,
@@ -215,8 +215,8 @@ class Allownotifications extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 15.3, 11.0),
-                                      size: Size(15.3, 11.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 15.3, 11.0),
+                                      size: const Size(15.3, 11.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -226,9 +226,9 @@ class Allownotifications extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 25.3, 21.0),
-                                            size: Size(15.3, 11.0),
+                                            size: const Size(15.3, 11.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -242,9 +242,9 @@ class Allownotifications extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 15.3, 11.0),
-                                            size: Size(15.3, 11.0),
+                                            size: const Size(15.3, 11.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -264,8 +264,8 @@ class Allownotifications extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(273.7, 2.7, 17.0, 10.7),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(273.7, 2.7, 17.0, 10.7),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 fixedWidth: true,
                                 fixedHeight: true,
@@ -275,8 +275,8 @@ class Allownotifications extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 17.0, 10.7),
-                                      size: Size(17.0, 10.7),
+                                          const Rect.fromLTWH(0.0, 0.0, 17.0, 10.7),
+                                      size: const Size(17.0, 10.7),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -286,9 +286,9 @@ class Allownotifications extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 27.0, 20.7),
-                                            size: Size(17.0, 10.7),
+                                            size: const Size(17.0, 10.7),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -302,9 +302,9 @@ class Allownotifications extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 17.0, 10.7),
-                                            size: Size(17.0, 10.7),
+                                            size: const Size(17.0, 10.7),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -324,8 +324,8 @@ class Allownotifications extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
+                                size: const Size(340.3, 16.0),
                                 pinLeft: true,
                                 pinTop: true,
                                 pinBottom: true,
@@ -336,8 +336,8 @@ class Allownotifications extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
-                                      size: Size(54.0, 16.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
+                                      size: const Size(54.0, 16.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -352,8 +352,8 @@ class Allownotifications extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(12.8, 4.9, 27.5, 10.3),
-                                      size: Size(54.0, 16.0),
+                                          const Rect.fromLTWH(12.8, 4.9, 27.5, 10.3),
+                                      size: const Size(54.0, 16.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinBottom: true,
@@ -376,8 +376,8 @@ class Allownotifications extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(101.0, 783.0, 134.0, 5.0),
-                    size: Size(340.3, 788.0),
+                    bounds: const Rect.fromLTWH(101.0, 783.0, 134.0, 5.0),
+                    size: const Size(340.3, 788.0),
                     pinBottom: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -393,7 +393,7 @@ class Allownotifications extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 710.0),
+            offset: const Offset(30.0, 710.0),
             child:
                 // Adobe XD layer: 'Secondary button' (group)
                 SizedBox(
@@ -402,8 +402,8 @@ class Allownotifications extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 315.0, 48.0),
-                    size: Size(315.0, 48.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 315.0, 48.0),
+                    size: const Size(315.0, 48.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -416,16 +416,16 @@ class Allownotifications extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(124.0, 18.0, 68.0, 14.0),
-                    size: Size(315.0, 48.0),
+                    bounds: const Rect.fromLTWH(124.0, 18.0, 68.0, 14.0),
+                    size: const Size(315.0, 48.0),
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'Don’t allow',
                       style: TextStyle(
                         fontFamily: 'SF Pro Display',
                         fontSize: 14,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         height: 1.4285714285714286,
                       ),
                       textAlign: TextAlign.center,
@@ -436,7 +436,7 @@ class Allownotifications extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 653.0),
+            offset: const Offset(30.0, 653.0),
             child:
                 // Adobe XD layer: 'Button' (group)
                 SizedBox(
@@ -445,8 +445,8 @@ class Allownotifications extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 315.0, 46.0),
-                    size: Size(315.0, 46.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 315.0, 46.0),
+                    size: const Size(315.0, 46.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -458,17 +458,17 @@ class Allownotifications extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(80.0, 17.0, 156.0, 16.0),
-                    size: Size(315.0, 46.0),
+                    bounds: const Rect.fromLTWH(80.0, 17.0, 156.0, 16.0),
+                    size: const Size(315.0, 46.0),
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: 'Filter' (text)
-                        Text(
+                        const Text(
                       'Yes, allow notifications',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 16,
-                        color: const Color(0xffffffff),
+                        color: Color(0xffffffff),
                         letterSpacing: -0.16,
                       ),
                       textAlign: TextAlign.center,
@@ -479,7 +479,7 @@ class Allownotifications extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(45.0, 376.6),
+            offset: const Offset(45.0, 376.6),
             child:
                 // Adobe XD layer: 'Title & subtitle' (group)
                 SizedBox(
@@ -488,18 +488,18 @@ class Allownotifications extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(11.5, 89.0, 262.0, 40.0),
-                    size: Size(286.0, 129.0),
+                    bounds: const Rect.fromLTWH(11.5, 89.0, 262.0, 40.0),
+                    size: const Size(286.0, 129.0),
                     pinLeft: true,
                     pinRight: true,
                     pinBottom: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'Allow push notifications to get real-time\nupdates on your order status.',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 16,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         letterSpacing: -0.4,
                         height: 1.5,
                       ),
@@ -507,18 +507,18 @@ class Allownotifications extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 286.0, 66.0),
-                    size: Size(286.0, 129.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 286.0, 66.0),
+                    size: const Size(286.0, 129.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'Get updates on your\norder status!',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 30,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         letterSpacing: -0.3,
                         fontWeight: FontWeight.w700,
                         height: 1.2,
@@ -531,7 +531,7 @@ class Allownotifications extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(107.0, 209.9),
+            offset: const Offset(107.0, 209.9),
             child:
                 // Adobe XD layer: 'image' (group)
                 SizedBox(
@@ -540,8 +540,8 @@ class Allownotifications extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 12.1, 161.8, 108.0),
-                    size: Size(161.8, 120.1),
+                    bounds: const Rect.fromLTWH(0.0, 12.1, 161.8, 108.0),
+                    size: const Size(161.8, 120.1),
                     child: SvgPicture.string(
                       _svg_vmobdk,
                       allowDrawingOutsideViewBox: true,
@@ -549,8 +549,8 @@ class Allownotifications extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(37.8, 0.0, 85.7, 97.9),
-                    size: Size(161.8, 120.1),
+                    bounds: const Rect.fromLTWH(37.8, 0.0, 85.7, 97.9),
+                    size: const Size(161.8, 120.1),
                     pinTop: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -559,8 +559,8 @@ class Allownotifications extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(32.1, 76.5, 21.4, 21.4),
-                          size: Size(85.7, 97.9),
+                          bounds: const Rect.fromLTWH(32.1, 76.5, 21.4, 21.4),
+                          size: const Size(85.7, 97.9),
                           pinBottom: true,
                           fixedWidth: true,
                           fixedHeight: true,
@@ -571,8 +571,8 @@ class Allownotifications extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(32.1, 76.5, 16.3, 21.4),
-                          size: Size(85.7, 97.9),
+                          bounds: const Rect.fromLTWH(32.1, 76.5, 16.3, 21.4),
+                          size: const Size(85.7, 97.9),
                           pinBottom: true,
                           fixedWidth: true,
                           fixedHeight: true,
@@ -583,8 +583,8 @@ class Allownotifications extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(35.2, 0.0, 15.3, 15.3),
-                          size: Size(85.7, 97.9),
+                          bounds: const Rect.fromLTWH(35.2, 0.0, 15.3, 15.3),
+                          size: const Size(85.7, 97.9),
                           pinTop: true,
                           fixedWidth: true,
                           fixedHeight: true,
@@ -595,8 +595,8 @@ class Allownotifications extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(4.6, 13.8, 76.5, 64.2),
-                          size: Size(85.7, 97.9),
+                          bounds: const Rect.fromLTWH(4.6, 13.8, 76.5, 64.2),
+                          size: const Size(85.7, 97.9),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -608,8 +608,8 @@ class Allownotifications extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(4.6, 13.8, 41.3, 64.2),
-                          size: Size(85.7, 97.9),
+                          bounds: const Rect.fromLTWH(4.6, 13.8, 41.3, 64.2),
+                          size: const Size(85.7, 97.9),
                           pinLeft: true,
                           pinTop: true,
                           fixedWidth: true,
@@ -621,8 +621,8 @@ class Allownotifications extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 73.4, 85.7, 13.8),
-                          size: Size(85.7, 97.9),
+                          bounds: const Rect.fromLTWH(0.0, 73.4, 85.7, 13.8),
+                          size: const Size(85.7, 97.9),
                           pinLeft: true,
                           pinRight: true,
                           pinBottom: true,
@@ -634,8 +634,8 @@ class Allownotifications extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 73.4, 12.2, 13.8),
-                          size: Size(85.7, 97.9),
+                          bounds: const Rect.fromLTWH(0.0, 73.4, 12.2, 13.8),
+                          size: const Size(85.7, 97.9),
                           pinLeft: true,
                           pinBottom: true,
                           fixedWidth: true,
@@ -647,8 +647,8 @@ class Allownotifications extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(50.5, 13.8, 27.5, 27.5),
-                          size: Size(85.7, 97.9),
+                          bounds: const Rect.fromLTWH(50.5, 13.8, 27.5, 27.5),
+                          size: const Size(85.7, 97.9),
                           pinRight: true,
                           pinTop: true,
                           fixedWidth: true,
@@ -660,8 +660,8 @@ class Allownotifications extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(50.5, 14.8, 23.5, 26.5),
-                          size: Size(85.7, 97.9),
+                          bounds: const Rect.fromLTWH(50.5, 14.8, 23.5, 26.5),
+                          size: const Size(85.7, 97.9),
                           pinRight: true,
                           fixedWidth: true,
                           fixedHeight: true,
@@ -672,8 +672,8 @@ class Allownotifications extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(59.6, 21.4, 6.1, 12.2),
-                          size: Size(85.7, 97.9),
+                          bounds: const Rect.fromLTWH(59.6, 21.4, 6.1, 12.2),
+                          size: const Size(85.7, 97.9),
                           fixedWidth: true,
                           fixedHeight: true,
                           child: SvgPicture.string(
@@ -690,7 +690,7 @@ class Allownotifications extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(316.0, 43.0),
+            offset: const Offset(316.0, 43.0),
             child:
                 // Adobe XD layer: 'Close button' (group)
                 SizedBox(
@@ -699,28 +699,28 @@ class Allownotifications extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
+                    size: const Size(46.0, 46.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
                     pinBottom: true,
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xffffffff),
+                      decoration: const BoxDecoration(
+                        color: Color(0xffffffff),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(17.0, 17.0, 12.0, 12.0),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(17.0, 17.0, 12.0, 12.0),
+                    size: const Size(46.0, 46.0),
                     fixedWidth: true,
                     fixedHeight: true,
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 12.0, 12.0),
-                          size: Size(12.0, 12.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 12.0, 12.0),
+                          size: const Size(12.0, 12.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -739,7 +739,7 @@ class Allownotifications extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(176.0, 58.0),
+            offset: const Offset(176.0, 58.0),
             child:
                 // Adobe XD layer: 'Logo' (group)
                 SizedBox(
@@ -752,28 +752,28 @@ class Allownotifications extends StatelessWidget {
                     child: Container(
                       width: 16.0,
                       height: 16.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(60.0),
                           bottomRight: Radius.circular(60.0),
                           bottomLeft: Radius.circular(60.0),
                         ),
-                        color: const Color(0x1a1a1824),
+                        color: Color(0x1a1a1824),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(8.0, 0.8),
+                    offset: const Offset(8.0, 0.8),
                     child: Container(
                       width: 16.0,
                       height: 16.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(60.0),
                           bottomRight: Radius.circular(60.0),
                           bottomLeft: Radius.circular(60.0),
                         ),
-                        color: const Color(0xff34c47c),
+                        color: Color(0xff34c47c),
                       ),
                     ),
                   ),

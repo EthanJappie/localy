@@ -16,12 +16,12 @@ class Product extends StatelessWidget {
           Container(
             width: 375.0,
             height: 2001.0,
-            decoration: BoxDecoration(
-              color: const Color(0xffffffff),
+            decoration: const BoxDecoration(
+              color: Color(0xffffffff),
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 1444.0),
+            offset: const Offset(30.0, 1444.0),
             child:
                 // Adobe XD layer: 'Your rating' (group)
                 SizedBox(
@@ -30,17 +30,17 @@ class Product extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 118.0, 269.0, 12.0),
-                    size: Size(315.0, 179.0),
+                    bounds: const Rect.fromLTWH(0.0, 118.0, 269.0, 12.0),
+                    size: const Size(315.0, 179.0),
                     pinLeft: true,
                     pinRight: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'We would love to hear more about your experience!',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 12,
-                        color: const Color(0xff919099),
+                        color: Color(0xff919099),
                         letterSpacing: -0.12,
                         height: 1.5,
                       ),
@@ -48,18 +48,18 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 124.0, 24.0),
-                    size: Size(315.0, 179.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 124.0, 24.0),
+                    size: const Size(315.0, 179.0),
                     pinLeft: true,
                     pinTop: true,
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'Your rating',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 24,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         letterSpacing: -0.24,
                         fontWeight: FontWeight.w700,
                         height: 1.5,
@@ -68,8 +68,8 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(259.0, 54.0, 56.0, 32.0),
-                    size: Size(315.0, 179.0),
+                    bounds: const Rect.fromLTWH(259.0, 54.0, 56.0, 32.0),
+                    size: const Size(315.0, 179.0),
                     pinRight: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -78,8 +78,8 @@ class Product extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 56.0, 32.0),
-                          size: Size(56.0, 32.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 56.0, 32.0),
+                          size: const Size(56.0, 32.0),
                           child:
                               // Adobe XD layer: 'base ' (shape)
                               Container(
@@ -90,17 +90,17 @@ class Product extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(16.0, 11.0, 7.0, 12.0),
-                          size: Size(56.0, 32.0),
+                          bounds: const Rect.fromLTWH(16.0, 11.0, 7.0, 12.0),
+                          size: const Size(56.0, 32.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Bakeries' (text)
-                              Text(
+                              const Text(
                             '5',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 12,
-                              color: const Color(0xff1a1824),
+                              color: Color(0xff1a1824),
                               letterSpacing: -0.2894117889404297,
                               height: 1.8333333333333333,
                             ),
@@ -108,8 +108,8 @@ class Product extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(26.0, 10.0, 13.0, 12.3),
-                          size: Size(56.0, 32.0),
+                          bounds: const Rect.fromLTWH(26.0, 10.0, 13.0, 12.3),
+                          size: const Size(56.0, 32.0),
                           child: Stack(
                             children: <Widget>[
                               SvgPicture.string(
@@ -123,8 +123,8 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(194.0, 54.0, 56.0, 32.0),
-                    size: Size(315.0, 179.0),
+                    bounds: const Rect.fromLTWH(194.0, 54.0, 56.0, 32.0),
+                    size: const Size(315.0, 179.0),
                     fixedWidth: true,
                     fixedHeight: true,
                     child:
@@ -132,8 +132,8 @@ class Product extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 56.0, 32.0),
-                          size: Size(56.0, 32.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 56.0, 32.0),
+                          size: const Size(56.0, 32.0),
                           child:
                               // Adobe XD layer: 'base ' (shape)
                               SvgPicture.string(
@@ -143,17 +143,17 @@ class Product extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(16.0, 11.0, 7.0, 12.0),
-                          size: Size(56.0, 32.0),
+                          bounds: const Rect.fromLTWH(16.0, 11.0, 7.0, 12.0),
+                          size: const Size(56.0, 32.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Bakeries' (text)
-                              Text(
+                              const Text(
                             '4',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 12,
-                              color: const Color(0xffffffff),
+                              color: Color(0xffffffff),
                               letterSpacing: -0.2894117889404297,
                               height: 1.8333333333333333,
                             ),
@@ -161,8 +161,8 @@ class Product extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(26.0, 10.0, 13.0, 12.3),
-                          size: Size(56.0, 32.0),
+                          bounds: const Rect.fromLTWH(26.0, 10.0, 13.0, 12.3),
+                          size: const Size(56.0, 32.0),
                           child: Stack(
                             children: <Widget>[
                               SvgPicture.string(
@@ -176,8 +176,8 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(130.0, 54.0, 56.0, 32.0),
-                    size: Size(315.0, 179.0),
+                    bounds: const Rect.fromLTWH(130.0, 54.0, 56.0, 32.0),
+                    size: const Size(315.0, 179.0),
                     fixedWidth: true,
                     fixedHeight: true,
                     child:
@@ -185,8 +185,8 @@ class Product extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 56.0, 32.0),
-                          size: Size(56.0, 32.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 56.0, 32.0),
+                          size: const Size(56.0, 32.0),
                           child:
                               // Adobe XD layer: 'base ' (shape)
                               Container(
@@ -197,17 +197,17 @@ class Product extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(16.0, 11.0, 7.0, 12.0),
-                          size: Size(56.0, 32.0),
+                          bounds: const Rect.fromLTWH(16.0, 11.0, 7.0, 12.0),
+                          size: const Size(56.0, 32.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Bakeries' (text)
-                              Text(
+                              const Text(
                             '3',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 12,
-                              color: const Color(0xff1a1824),
+                              color: Color(0xff1a1824),
                               letterSpacing: -0.2894117889404297,
                               height: 1.8333333333333333,
                             ),
@@ -215,8 +215,8 @@ class Product extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(26.0, 10.0, 13.0, 12.3),
-                          size: Size(56.0, 32.0),
+                          bounds: const Rect.fromLTWH(26.0, 10.0, 13.0, 12.3),
+                          size: const Size(56.0, 32.0),
                           child: Stack(
                             children: <Widget>[
                               SvgPicture.string(
@@ -230,8 +230,8 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(65.0, 54.0, 56.0, 32.0),
-                    size: Size(315.0, 179.0),
+                    bounds: const Rect.fromLTWH(65.0, 54.0, 56.0, 32.0),
+                    size: const Size(315.0, 179.0),
                     fixedWidth: true,
                     fixedHeight: true,
                     child:
@@ -239,8 +239,8 @@ class Product extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 56.0, 32.0),
-                          size: Size(56.0, 32.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 56.0, 32.0),
+                          size: const Size(56.0, 32.0),
                           child:
                               // Adobe XD layer: 'base ' (shape)
                               Container(
@@ -251,17 +251,17 @@ class Product extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(17.0, 11.0, 7.0, 12.0),
-                          size: Size(56.0, 32.0),
+                          bounds: const Rect.fromLTWH(17.0, 11.0, 7.0, 12.0),
+                          size: const Size(56.0, 32.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Bakeries' (text)
-                              Text(
+                              const Text(
                             '2',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 12,
-                              color: const Color(0xff1a1824),
+                              color: Color(0xff1a1824),
                               letterSpacing: -0.2894117889404297,
                               height: 1.8333333333333333,
                             ),
@@ -269,8 +269,8 @@ class Product extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(26.0, 10.0, 13.0, 12.3),
-                          size: Size(56.0, 32.0),
+                          bounds: const Rect.fromLTWH(26.0, 10.0, 13.0, 12.3),
+                          size: const Size(56.0, 32.0),
                           child: Stack(
                             children: <Widget>[
                               SvgPicture.string(
@@ -284,8 +284,8 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 54.0, 56.0, 32.0),
-                    size: Size(315.0, 179.0),
+                    bounds: const Rect.fromLTWH(0.0, 54.0, 56.0, 32.0),
+                    size: const Size(315.0, 179.0),
                     pinLeft: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -294,8 +294,8 @@ class Product extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 56.0, 32.0),
-                          size: Size(56.0, 32.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 56.0, 32.0),
+                          size: const Size(56.0, 32.0),
                           child:
                               // Adobe XD layer: 'base ' (shape)
                               Container(
@@ -306,17 +306,17 @@ class Product extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(17.0, 11.0, 7.0, 12.0),
-                          size: Size(56.0, 32.0),
+                          bounds: const Rect.fromLTWH(17.0, 11.0, 7.0, 12.0),
+                          size: const Size(56.0, 32.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Bakeries' (text)
-                              Text(
+                              const Text(
                             '1',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 12,
-                              color: const Color(0xff1a1824),
+                              color: Color(0xff1a1824),
                               letterSpacing: -0.2894117889404297,
                               height: 1.8333333333333333,
                             ),
@@ -324,8 +324,8 @@ class Product extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(25.0, 10.0, 13.0, 12.3),
-                          size: Size(56.0, 32.0),
+                          bounds: const Rect.fromLTWH(25.0, 10.0, 13.0, 12.3),
+                          size: const Size(56.0, 32.0),
                           child: Stack(
                             children: <Widget>[
                               SvgPicture.string(
@@ -339,18 +339,18 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 163.0, 133.0, 16.0),
-                    size: Size(315.0, 179.0),
+                    bounds: const Rect.fromLTWH(0.0, 163.0, 133.0, 16.0),
+                    size: const Size(315.0, 179.0),
                     pinLeft: true,
                     pinBottom: true,
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       '+ Add your review',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 16,
-                        color: const Color(0xff34c47c),
+                        color: Color(0xff34c47c),
                         letterSpacing: -0.32,
                         fontWeight: FontWeight.w700,
                         height: 1.5,
@@ -363,7 +363,7 @@ class Product extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 901.0),
+            offset: const Offset(30.0, 901.0),
             child:
                 // Adobe XD layer: 'Reviews' (group)
                 SizedBox(
@@ -372,18 +372,18 @@ class Product extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 95.0, 24.0),
-                    size: Size(315.0, 478.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 95.0, 24.0),
+                    size: const Size(315.0, 478.0),
                     pinLeft: true,
                     pinTop: true,
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'Reviews',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 24,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         letterSpacing: -0.24,
                         fontWeight: FontWeight.w700,
                         height: 1.5,
@@ -392,8 +392,8 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 364.0, 315.0, 114.0),
-                    size: Size(315.0, 478.0),
+                    bounds: const Rect.fromLTWH(0.0, 364.0, 315.0, 114.0),
+                    size: const Size(315.0, 478.0),
                     pinLeft: true,
                     pinRight: true,
                     pinBottom: true,
@@ -403,19 +403,19 @@ class Product extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 64.0, 315.0, 50.0),
-                          size: Size(315.0, 114.0),
+                          bounds: const Rect.fromLTWH(0.0, 64.0, 315.0, 50.0),
+                          size: const Size(315.0, 114.0),
                           pinLeft: true,
                           pinRight: true,
                           pinBottom: true,
                           fixedHeight: true,
-                          child: SingleChildScrollView(
+                          child: const SingleChildScrollView(
                               child: Text(
                             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 12,
-                              color: const Color(0xff919099),
+                              color: Color(0xff919099),
                               letterSpacing: -0.12,
                               height: 1.5,
                             ),
@@ -423,8 +423,8 @@ class Product extends StatelessWidget {
                           )),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(64.0, 5.0, 120.0, 38.0),
-                          size: Size(315.0, 114.0),
+                          bounds: const Rect.fromLTWH(64.0, 5.0, 120.0, 38.0),
+                          size: const Size(315.0, 114.0),
                           pinTop: true,
                           fixedWidth: true,
                           fixedHeight: true,
@@ -433,18 +433,18 @@ class Product extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 120.0, 16.0),
-                                size: Size(120.0, 38.0),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 120.0, 16.0),
+                                size: const Size(120.0, 38.0),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinTop: true,
                                 fixedHeight: true,
-                                child: Text(
+                                child: const Text(
                                   'Angela Williams',
                                   style: TextStyle(
                                     fontFamily: 'SF Pro Text',
                                     fontSize: 16,
-                                    color: const Color(0xff1a1a1a),
+                                    color: Color(0xff1a1a1a),
                                     letterSpacing: -0.16,
                                     fontWeight: FontWeight.w700,
                                     height: 1.5,
@@ -453,18 +453,18 @@ class Product extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 26.0, 108.0, 12.0),
-                                size: Size(120.0, 38.0),
+                                bounds: const Rect.fromLTWH(0.0, 26.0, 108.0, 12.0),
+                                size: const Size(120.0, 38.0),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinBottom: true,
                                 fixedHeight: true,
-                                child: Text(
+                                child: const Text(
                                   'France • 23 Reviews',
                                   style: TextStyle(
                                     fontFamily: 'SF Pro Text',
                                     fontSize: 12,
-                                    color: const Color(0xff919099),
+                                    color: Color(0xff919099),
                                     letterSpacing: -0.12,
                                     height: 1.5,
                                   ),
@@ -475,8 +475,8 @@ class Product extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(259.0, 6.0, 56.0, 32.0),
-                          size: Size(315.0, 114.0),
+                          bounds: const Rect.fromLTWH(259.0, 6.0, 56.0, 32.0),
+                          size: const Size(315.0, 114.0),
                           pinRight: true,
                           pinTop: true,
                           fixedWidth: true,
@@ -486,8 +486,8 @@ class Product extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 56.0, 32.0),
-                                size: Size(56.0, 32.0),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 56.0, 32.0),
+                                size: const Size(56.0, 32.0),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinTop: true,
@@ -496,8 +496,8 @@ class Product extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 56.0, 32.0),
-                                      size: Size(56.0, 32.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 56.0, 32.0),
+                                      size: const Size(56.0, 32.0),
                                       child:
                                           // Adobe XD layer: 'base ' (shape)
                                           Container(
@@ -510,17 +510,17 @@ class Product extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(16.0, 11.0, 7.0, 12.0),
-                                      size: Size(56.0, 32.0),
+                                          const Rect.fromLTWH(16.0, 11.0, 7.0, 12.0),
+                                      size: const Size(56.0, 32.0),
                                       fixedHeight: true,
                                       child:
                                           // Adobe XD layer: 'Bakeries' (text)
-                                          Text(
+                                          const Text(
                                         '5',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 12,
-                                          color: const Color(0xffffffff),
+                                          color: Color(0xffffffff),
                                           letterSpacing: -0.2894117889404297,
                                           height: 1.8333333333333333,
                                         ),
@@ -529,8 +529,8 @@ class Product extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(26.0, 10.0, 13.0, 12.3),
-                                      size: Size(56.0, 32.0),
+                                          const Rect.fromLTWH(26.0, 10.0, 13.0, 12.3),
+                                      size: const Size(56.0, 32.0),
                                       child: Stack(
                                         children: <Widget>[
                                           SvgPicture.string(
@@ -547,8 +547,8 @@ class Product extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 44.0, 44.0),
-                          size: Size(315.0, 114.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 44.0, 44.0),
+                          size: const Size(315.0, 114.0),
                           pinLeft: true,
                           pinTop: true,
                           fixedWidth: true,
@@ -565,8 +565,8 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 280.0, 315.0, 44.0),
-                    size: Size(315.0, 478.0),
+                    bounds: const Rect.fromLTWH(0.0, 280.0, 315.0, 44.0),
+                    size: const Size(315.0, 478.0),
                     pinLeft: true,
                     pinRight: true,
                     fixedHeight: true,
@@ -575,8 +575,8 @@ class Product extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(64.0, 5.0, 118.0, 38.0),
-                          size: Size(315.0, 44.0),
+                          bounds: const Rect.fromLTWH(64.0, 5.0, 118.0, 38.0),
+                          size: const Size(315.0, 44.0),
                           pinTop: true,
                           pinBottom: true,
                           fixedWidth: true,
@@ -585,18 +585,18 @@ class Product extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 118.0, 16.0),
-                                size: Size(118.0, 38.0),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 118.0, 16.0),
+                                size: const Size(118.0, 38.0),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinTop: true,
                                 fixedHeight: true,
-                                child: Text(
+                                child: const Text(
                                   'Toby Markshow',
                                   style: TextStyle(
                                     fontFamily: 'SF Pro Text',
                                     fontSize: 16,
-                                    color: const Color(0xff1a1a1a),
+                                    color: Color(0xff1a1a1a),
                                     letterSpacing: -0.16,
                                     fontWeight: FontWeight.w700,
                                     height: 1.5,
@@ -605,18 +605,18 @@ class Product extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 26.0, 108.0, 12.0),
-                                size: Size(118.0, 38.0),
+                                bounds: const Rect.fromLTWH(0.0, 26.0, 108.0, 12.0),
+                                size: const Size(118.0, 38.0),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinBottom: true,
                                 fixedHeight: true,
-                                child: Text(
+                                child: const Text(
                                   'France • 23 Reviews',
                                   style: TextStyle(
                                     fontFamily: 'SF Pro Text',
                                     fontSize: 12,
-                                    color: const Color(0xff919099),
+                                    color: Color(0xff919099),
                                     letterSpacing: -0.12,
                                     height: 1.5,
                                   ),
@@ -627,8 +627,8 @@ class Product extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(259.0, 6.0, 56.0, 32.0),
-                          size: Size(315.0, 44.0),
+                          bounds: const Rect.fromLTWH(259.0, 6.0, 56.0, 32.0),
+                          size: const Size(315.0, 44.0),
                           pinRight: true,
                           pinTop: true,
                           pinBottom: true,
@@ -638,8 +638,8 @@ class Product extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 56.0, 32.0),
-                                size: Size(56.0, 32.0),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 56.0, 32.0),
+                                size: const Size(56.0, 32.0),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinTop: true,
@@ -648,8 +648,8 @@ class Product extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 56.0, 32.0),
-                                      size: Size(56.0, 32.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 56.0, 32.0),
+                                      size: const Size(56.0, 32.0),
                                       child:
                                           // Adobe XD layer: 'base ' (shape)
                                           Container(
@@ -662,17 +662,17 @@ class Product extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(16.0, 11.0, 7.0, 12.0),
-                                      size: Size(56.0, 32.0),
+                                          const Rect.fromLTWH(16.0, 11.0, 7.0, 12.0),
+                                      size: const Size(56.0, 32.0),
                                       fixedHeight: true,
                                       child:
                                           // Adobe XD layer: 'Bakeries' (text)
-                                          Text(
+                                          const Text(
                                         '5',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 12,
-                                          color: const Color(0xffffffff),
+                                          color: Color(0xffffffff),
                                           letterSpacing: -0.2894117889404297,
                                           height: 1.8333333333333333,
                                         ),
@@ -681,8 +681,8 @@ class Product extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(26.0, 10.0, 13.0, 12.3),
-                                      size: Size(56.0, 32.0),
+                                          const Rect.fromLTWH(26.0, 10.0, 13.0, 12.3),
+                                      size: const Size(56.0, 32.0),
                                       child: Stack(
                                         children: <Widget>[
                                           SvgPicture.string(
@@ -699,8 +699,8 @@ class Product extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 44.0, 44.0),
-                          size: Size(315.0, 44.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 44.0, 44.0),
+                          size: const Size(315.0, 44.0),
                           pinLeft: true,
                           pinTop: true,
                           pinBottom: true,
@@ -717,8 +717,8 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 54.0, 315.0, 186.0),
-                    size: Size(315.0, 478.0),
+                    bounds: const Rect.fromLTWH(0.0, 54.0, 315.0, 186.0),
+                    size: const Size(315.0, 478.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -728,18 +728,18 @@ class Product extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 64.0, 315.0, 122.0),
-                          size: Size(315.0, 186.0),
+                          bounds: const Rect.fromLTWH(0.0, 64.0, 315.0, 122.0),
+                          size: const Size(315.0, 186.0),
                           pinLeft: true,
                           pinRight: true,
                           pinBottom: true,
                           fixedHeight: true,
-                          child: Text(
+                          child: const Text(
                             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 12,
-                              color: const Color(0xff919099),
+                              color: Color(0xff919099),
                               letterSpacing: -0.12,
                               height: 1.5,
                             ),
@@ -747,8 +747,8 @@ class Product extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(64.0, 5.0, 117.0, 38.0),
-                          size: Size(315.0, 186.0),
+                          bounds: const Rect.fromLTWH(64.0, 5.0, 117.0, 38.0),
+                          size: const Size(315.0, 186.0),
                           pinTop: true,
                           fixedWidth: true,
                           fixedHeight: true,
@@ -757,18 +757,18 @@ class Product extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 111.0, 16.0),
-                                size: Size(117.0, 38.0),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 111.0, 16.0),
+                                size: const Size(117.0, 38.0),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinTop: true,
                                 fixedHeight: true,
-                                child: Text(
+                                child: const Text(
                                   'Mike Smithson',
                                   style: TextStyle(
                                     fontFamily: 'SF Pro Text',
                                     fontSize: 16,
-                                    color: const Color(0xff1a1a1a),
+                                    color: Color(0xff1a1a1a),
                                     letterSpacing: -0.16,
                                     fontWeight: FontWeight.w700,
                                     height: 1.5,
@@ -777,18 +777,18 @@ class Product extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 26.0, 117.0, 12.0),
-                                size: Size(117.0, 38.0),
+                                bounds: const Rect.fromLTWH(0.0, 26.0, 117.0, 12.0),
+                                size: const Size(117.0, 38.0),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinBottom: true,
                                 fixedHeight: true,
-                                child: Text(
+                                child: const Text(
                                   'Australia • 45 Reviews',
                                   style: TextStyle(
                                     fontFamily: 'SF Pro Text',
                                     fontSize: 12,
-                                    color: const Color(0xff919099),
+                                    color: Color(0xff919099),
                                     letterSpacing: -0.12,
                                     height: 1.5,
                                   ),
@@ -799,8 +799,8 @@ class Product extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(259.0, 6.0, 56.0, 32.0),
-                          size: Size(315.0, 186.0),
+                          bounds: const Rect.fromLTWH(259.0, 6.0, 56.0, 32.0),
+                          size: const Size(315.0, 186.0),
                           pinRight: true,
                           pinTop: true,
                           fixedWidth: true,
@@ -810,8 +810,8 @@ class Product extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 56.0, 32.0),
-                                size: Size(56.0, 32.0),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 56.0, 32.0),
+                                size: const Size(56.0, 32.0),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinTop: true,
@@ -820,8 +820,8 @@ class Product extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 56.0, 32.0),
-                                      size: Size(56.0, 32.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 56.0, 32.0),
+                                      size: const Size(56.0, 32.0),
                                       child:
                                           // Adobe XD layer: 'base ' (shape)
                                           Container(
@@ -834,17 +834,17 @@ class Product extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(16.0, 11.0, 7.0, 12.0),
-                                      size: Size(56.0, 32.0),
+                                          const Rect.fromLTWH(16.0, 11.0, 7.0, 12.0),
+                                      size: const Size(56.0, 32.0),
                                       fixedHeight: true,
                                       child:
                                           // Adobe XD layer: 'Bakeries' (text)
-                                          Text(
+                                          const Text(
                                         '4',
                                         style: TextStyle(
                                           fontFamily: 'SF Pro Text',
                                           fontSize: 12,
-                                          color: const Color(0xffffffff),
+                                          color: Color(0xffffffff),
                                           letterSpacing: -0.2894117889404297,
                                           height: 1.8333333333333333,
                                         ),
@@ -853,8 +853,8 @@ class Product extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(26.0, 10.0, 13.0, 12.3),
-                                      size: Size(56.0, 32.0),
+                                          const Rect.fromLTWH(26.0, 10.0, 13.0, 12.3),
+                                      size: const Size(56.0, 32.0),
                                       child: Stack(
                                         children: <Widget>[
                                           SvgPicture.string(
@@ -871,8 +871,8 @@ class Product extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 44.0, 44.0),
-                          size: Size(315.0, 186.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 44.0, 44.0),
+                          size: const Size(315.0, 186.0),
                           pinLeft: true,
                           pinTop: true,
                           fixedWidth: true,
@@ -893,7 +893,7 @@ class Product extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(0.0, 798.0),
+            offset: const Offset(0.0, 798.0),
             child:
                 // Adobe XD layer: 'Criteria selection 4' (group)
                 SizedBox(
@@ -902,30 +902,30 @@ class Product extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 58.0),
-                    size: Size(375.0, 58.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 58.0),
+                    size: const Size(375.0, 58.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
                     pinBottom: true,
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xffffffff),
+                      decoration: const BoxDecoration(
+                        color: Color(0xffffffff),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 22.0, 114.0, 18.0),
-                    size: Size(375.0, 58.0),
+                    bounds: const Rect.fromLTWH(30.0, 22.0, 114.0, 18.0),
+                    size: const Size(375.0, 58.0),
                     pinLeft: true,
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'Extra topping',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 18,
-                        color: const Color(0xff1a1a1a),
+                        color: Color(0xff1a1a1a),
                         letterSpacing: -0.18,
                         fontWeight: FontWeight.w700,
                         height: 1.3333333333333333,
@@ -934,16 +934,16 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(335.0, 26.0, 10.0, 6.0),
-                    size: Size(375.0, 58.0),
+                    bounds: const Rect.fromLTWH(335.0, 26.0, 10.0, 6.0),
+                    size: const Size(375.0, 58.0),
                     pinRight: true,
                     fixedWidth: true,
                     fixedHeight: true,
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 10.0, 6.0),
-                          size: Size(10.0, 6.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 10.0, 6.0),
+                          size: const Size(10.0, 6.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -962,7 +962,7 @@ class Product extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(0.0, 740.0),
+            offset: const Offset(0.0, 740.0),
             child:
                 // Adobe XD layer: 'Criteria selection 3' (group)
                 SizedBox(
@@ -971,30 +971,30 @@ class Product extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 58.0),
-                    size: Size(375.0, 58.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 58.0),
+                    size: const Size(375.0, 58.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
                     pinBottom: true,
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xffffffff),
+                      decoration: const BoxDecoration(
+                        color: Color(0xffffffff),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 22.0, 52.0, 18.0),
-                    size: Size(375.0, 58.0),
+                    bounds: const Rect.fromLTWH(30.0, 22.0, 52.0, 18.0),
+                    size: const Size(375.0, 58.0),
                     pinLeft: true,
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'Sauce',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 18,
-                        color: const Color(0xff1a1a1a),
+                        color: Color(0xff1a1a1a),
                         letterSpacing: -0.18,
                         fontWeight: FontWeight.w700,
                         height: 1.3333333333333333,
@@ -1003,16 +1003,16 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(335.0, 26.0, 10.0, 6.0),
-                    size: Size(375.0, 58.0),
+                    bounds: const Rect.fromLTWH(335.0, 26.0, 10.0, 6.0),
+                    size: const Size(375.0, 58.0),
                     pinRight: true,
                     fixedWidth: true,
                     fixedHeight: true,
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 10.0, 6.0),
-                          size: Size(10.0, 6.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 10.0, 6.0),
+                          size: const Size(10.0, 6.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1031,7 +1031,7 @@ class Product extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(0.0, 682.0),
+            offset: const Offset(0.0, 682.0),
             child:
                 // Adobe XD layer: 'Criteria selection 2' (group)
                 SizedBox(
@@ -1040,30 +1040,30 @@ class Product extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 58.0),
-                    size: Size(375.0, 58.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 58.0),
+                    size: const Size(375.0, 58.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
                     pinBottom: true,
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xffffffff),
+                      decoration: const BoxDecoration(
+                        color: Color(0xffffffff),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 22.0, 56.0, 18.0),
-                    size: Size(375.0, 58.0),
+                    bounds: const Rect.fromLTWH(30.0, 22.0, 56.0, 18.0),
+                    size: const Size(375.0, 58.0),
                     pinLeft: true,
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'Dough',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 18,
-                        color: const Color(0xff1a1a1a),
+                        color: Color(0xff1a1a1a),
                         letterSpacing: -0.18,
                         fontWeight: FontWeight.w700,
                         height: 1.3333333333333333,
@@ -1072,16 +1072,16 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(335.0, 26.0, 10.0, 6.0),
-                    size: Size(375.0, 58.0),
+                    bounds: const Rect.fromLTWH(335.0, 26.0, 10.0, 6.0),
+                    size: const Size(375.0, 58.0),
                     pinRight: true,
                     fixedWidth: true,
                     fixedHeight: true,
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 10.0, 6.0),
-                          size: Size(10.0, 6.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 10.0, 6.0),
+                          size: const Size(10.0, 6.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1100,7 +1100,7 @@ class Product extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(0.0, 450.0),
+            offset: const Offset(0.0, 450.0),
             child:
                 // Adobe XD layer: 'Criteria selection 1' (group)
                 SizedBox(
@@ -1109,45 +1109,45 @@ class Product extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 58.0, 375.0, 58.0),
-                    size: Size(375.0, 232.0),
+                    bounds: const Rect.fromLTWH(0.0, 58.0, 375.0, 58.0),
+                    size: const Size(375.0, 232.0),
                     pinLeft: true,
                     pinRight: true,
                     fixedHeight: true,
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xffffffff),
+                      decoration: const BoxDecoration(
+                        color: Color(0xffffffff),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(76.0, 82.0, 106.0, 14.0),
-                    size: Size(375.0, 232.0),
+                    bounds: const Rect.fromLTWH(76.0, 82.0, 106.0, 14.0),
+                    size: const Size(375.0, 232.0),
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       '24 cm (1 person)',
                       style: TextStyle(
                         fontFamily: 'SF Pro Display',
                         fontSize: 14,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         height: 1.4285714285714286,
                       ),
                       textAlign: TextAlign.left,
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(306.0, 81.0, 39.0, 16.0),
-                    size: Size(375.0, 232.0),
+                    bounds: const Rect.fromLTWH(306.0, 81.0, 39.0, 16.0),
+                    size: const Size(375.0, 232.0),
                     pinRight: true,
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       '\$4.50',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 16,
-                        color: const Color(0xff34c47c),
+                        color: Color(0xff34c47c),
                         letterSpacing: -0.16,
                         fontWeight: FontWeight.w700,
                         height: 1.5,
@@ -1156,16 +1156,16 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 74.0, 26.0, 26.0),
-                    size: Size(375.0, 232.0),
+                    bounds: const Rect.fromLTWH(30.0, 74.0, 26.0, 26.0),
+                    size: const Size(375.0, 232.0),
                     pinLeft: true,
                     fixedWidth: true,
                     fixedHeight: true,
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 26.0, 26.0),
-                          size: Size(26.0, 26.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 26.0, 26.0),
+                          size: const Size(26.0, 26.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1180,8 +1180,8 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 116.0, 375.0, 58.0),
-                    size: Size(375.0, 232.0),
+                    bounds: const Rect.fromLTWH(0.0, 116.0, 375.0, 58.0),
+                    size: const Size(375.0, 232.0),
                     pinLeft: true,
                     pinRight: true,
                     fixedHeight: true,
@@ -1192,33 +1192,33 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(76.0, 140.0, 125.0, 14.0),
-                    size: Size(375.0, 232.0),
+                    bounds: const Rect.fromLTWH(76.0, 140.0, 125.0, 14.0),
+                    size: const Size(375.0, 232.0),
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       '32 cm (2-3 persons)',
                       style: TextStyle(
                         fontFamily: 'SF Pro Display',
                         fontSize: 14,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         height: 1.4285714285714286,
                       ),
                       textAlign: TextAlign.left,
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(306.0, 139.0, 39.0, 16.0),
-                    size: Size(375.0, 232.0),
+                    bounds: const Rect.fromLTWH(306.0, 139.0, 39.0, 16.0),
+                    size: const Size(375.0, 232.0),
                     pinRight: true,
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       '\$6.50',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 16,
-                        color: const Color(0xff34c47c),
+                        color: Color(0xff34c47c),
                         letterSpacing: -0.16,
                         fontWeight: FontWeight.w700,
                         height: 1.5,
@@ -1227,16 +1227,16 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 132.0, 26.0, 26.0),
-                    size: Size(375.0, 232.0),
+                    bounds: const Rect.fromLTWH(30.0, 132.0, 26.0, 26.0),
+                    size: const Size(375.0, 232.0),
                     pinLeft: true,
                     fixedWidth: true,
                     fixedHeight: true,
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 26.0, 26.0),
-                          size: Size(26.0, 26.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 26.0, 26.0),
+                          size: const Size(26.0, 26.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1251,48 +1251,48 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 174.0, 375.0, 58.0),
-                    size: Size(375.0, 232.0),
+                    bounds: const Rect.fromLTWH(0.0, 174.0, 375.0, 58.0),
+                    size: const Size(375.0, 232.0),
                     pinLeft: true,
                     pinRight: true,
                     pinBottom: true,
                     fixedHeight: true,
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xffffffff),
+                      decoration: const BoxDecoration(
+                        color: Color(0xffffffff),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(76.0, 198.0, 125.0, 14.0),
-                    size: Size(375.0, 232.0),
+                    bounds: const Rect.fromLTWH(76.0, 198.0, 125.0, 14.0),
+                    size: const Size(375.0, 232.0),
                     pinBottom: true,
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       '40 cm (3-4 persons)',
                       style: TextStyle(
                         fontFamily: 'SF Pro Display',
                         fontSize: 14,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         height: 1.4285714285714286,
                       ),
                       textAlign: TextAlign.left,
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(306.0, 197.0, 39.0, 16.0),
-                    size: Size(375.0, 232.0),
+                    bounds: const Rect.fromLTWH(306.0, 197.0, 39.0, 16.0),
+                    size: const Size(375.0, 232.0),
                     pinRight: true,
                     pinBottom: true,
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       '\$6.50',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 16,
-                        color: const Color(0xff34c47c),
+                        color: Color(0xff34c47c),
                         letterSpacing: -0.16,
                         fontWeight: FontWeight.w700,
                         height: 1.5,
@@ -1301,8 +1301,8 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 190.0, 26.0, 26.0),
-                    size: Size(375.0, 232.0),
+                    bounds: const Rect.fromLTWH(30.0, 190.0, 26.0, 26.0),
+                    size: const Size(375.0, 232.0),
                     child: Stack(
                       children: <Widget>[
                         SvgPicture.string(
@@ -1313,8 +1313,8 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(37.0, 198.0, 12.0, 9.7),
-                    size: Size(375.0, 232.0),
+                    bounds: const Rect.fromLTWH(37.0, 198.0, 12.0, 9.7),
+                    size: const Size(375.0, 232.0),
                     child:
                         // Adobe XD layer: 'tick-sign' (shape)
                         SvgPicture.string(
@@ -1324,31 +1324,31 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 58.0),
-                    size: Size(375.0, 232.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 58.0),
+                    size: const Size(375.0, 232.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
                     fixedHeight: true,
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xffffffff),
+                      decoration: const BoxDecoration(
+                        color: Color(0xffffffff),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 22.0, 35.0, 18.0),
-                    size: Size(375.0, 232.0),
+                    bounds: const Rect.fromLTWH(30.0, 22.0, 35.0, 18.0),
+                    size: const Size(375.0, 232.0),
                     pinLeft: true,
                     pinTop: true,
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'Size',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 18,
-                        color: const Color(0xff1a1a1a),
+                        color: Color(0xff1a1a1a),
                         letterSpacing: -0.18,
                         fontWeight: FontWeight.w700,
                         height: 1.3333333333333333,
@@ -1357,8 +1357,8 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(315.0, 4.0, 50.0, 50.0),
-                    size: Size(375.0, 232.0),
+                    bounds: const Rect.fromLTWH(315.0, 4.0, 50.0, 50.0),
+                    size: const Size(375.0, 232.0),
                     pinRight: true,
                     pinTop: true,
                     fixedWidth: true,
@@ -1366,21 +1366,21 @@ class Product extends StatelessWidget {
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 50.0, 50.0),
-                          size: Size(50.0, 50.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 50.0, 50.0),
+                          size: const Size(50.0, 50.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
                           pinBottom: true,
                           child: Container(
-                            decoration: BoxDecoration(
-                              color: const Color(0xffffffff),
+                            decoration: const BoxDecoration(
+                              color: Color(0xffffffff),
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(20.0, 22.0, 10.0, 6.0),
-                          size: Size(50.0, 50.0),
+                          bounds: const Rect.fromLTWH(20.0, 22.0, 10.0, 6.0),
+                          size: const Size(50.0, 50.0),
                           fixedWidth: true,
                           fixedHeight: true,
                           child: Transform.rotate(
@@ -1388,8 +1388,8 @@ class Product extends StatelessWidget {
                             child: Stack(
                               children: <Widget>[
                                 Pinned.fromSize(
-                                  bounds: Rect.fromLTWH(0.0, 0.0, 10.0, 6.0),
-                                  size: Size(10.0, 6.0),
+                                  bounds: const Rect.fromLTWH(0.0, 0.0, 10.0, 6.0),
+                                  size: const Size(10.0, 6.0),
                                   pinLeft: true,
                                   pinRight: true,
                                   pinTop: true,
@@ -1408,17 +1408,17 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(81.0, 22.0, 125.0, 16.0),
-                    size: Size(375.0, 232.0),
+                    bounds: const Rect.fromLTWH(81.0, 22.0, 125.0, 16.0),
+                    size: const Size(375.0, 232.0),
                     pinTop: true,
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       '40 cm (3-4 persons)',
                       style: TextStyle(
                         fontFamily: 'Helvetica Neue',
                         fontSize: 14,
-                        color: const Color(0xff34c47c),
+                        color: Color(0xff34c47c),
                       ),
                       textAlign: TextAlign.left,
                     ),
@@ -1428,7 +1428,7 @@ class Product extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 317.0),
+            offset: const Offset(30.0, 317.0),
             child:
                 // Adobe XD layer: 'Product information' (group)
                 SizedBox(
@@ -1437,37 +1437,37 @@ class Product extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 50.0, 315.0, 43.0),
-                    size: Size(315.0, 93.0),
+                    bounds: const Rect.fromLTWH(0.0, 50.0, 315.0, 43.0),
+                    size: const Size(315.0, 93.0),
                     pinLeft: true,
                     pinRight: true,
                     pinBottom: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'Tomato sauce, mozzarella, parmigiano, romano, olive oil and fresh basil (300g).',
                       style: TextStyle(
                         fontFamily: 'SF Pro Display',
                         fontSize: 16,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         height: 1.5,
                       ),
                       textAlign: TextAlign.left,
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 232.0, 30.0),
-                    size: Size(315.0, 93.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 232.0, 30.0),
+                    size: const Size(315.0, 93.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
                     child:
                         // Adobe XD layer: 'Large Title' (text)
-                        Text(
+                        const Text(
                       'Pizza Capriciosa',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 30,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         letterSpacing: -0.3,
                         fontWeight: FontWeight.w700,
                         height: 1.2,
@@ -1486,21 +1486,21 @@ class Product extends StatelessWidget {
             child: Stack(
               children: <Widget>[
                 Pinned.fromSize(
-                  bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 271.0),
-                  size: Size(375.0, 271.0),
+                  bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 271.0),
+                  size: const Size(375.0, 271.0),
                   pinLeft: true,
                   pinRight: true,
                   pinTop: true,
                   pinBottom: true,
                   child: Container(
-                    decoration: BoxDecoration(
-                      color: const Color(0xffeaeaeb),
+                    decoration: const BoxDecoration(
+                      color: Color(0xffeaeaeb),
                     ),
                   ),
                 ),
                 Pinned.fromSize(
-                  bounds: Rect.fromLTWH(158.0, 132.0, 60.0, 47.6),
-                  size: Size(375.0, 271.0),
+                  bounds: const Rect.fromLTWH(158.0, 132.0, 60.0, 47.6),
+                  size: const Size(375.0, 271.0),
                   child:
                       // Adobe XD layer: 'image' (group)
                       Stack(
@@ -1516,7 +1516,7 @@ class Product extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(312.0, 43.0),
+            offset: const Offset(312.0, 43.0),
             child:
                 // Adobe XD layer: 'Shopping bag button' (group)
                 SizedBox(
@@ -1525,8 +1525,8 @@ class Product extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
+                    size: const Size(46.0, 46.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -1539,8 +1539,8 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(15.0, 14.0, 17.3, 18.0),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(15.0, 14.0, 17.3, 18.0),
+                    size: const Size(46.0, 46.0),
                     fixedWidth: true,
                     fixedHeight: true,
                     child: SvgPicture.string(
@@ -1550,15 +1550,15 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(29.0, 28.0, 5.0, 5.0),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(29.0, 28.0, 5.0, 5.0),
+                    size: const Size(46.0, 46.0),
                     fixedWidth: true,
                     fixedHeight: true,
                     child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xff34c47c),
+                        color: Color(0xff34c47c),
                       ),
                     ),
                   ),
@@ -1567,7 +1567,7 @@ class Product extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(256.0, 43.0),
+            offset: const Offset(256.0, 43.0),
             child:
                 // Adobe XD layer: 'Add to favorite but…' (group)
                 SizedBox(
@@ -1576,8 +1576,8 @@ class Product extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
+                    size: const Size(46.0, 46.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -1590,8 +1590,8 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(14.5, 15.5, 17.8, 15.9),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(14.5, 15.5, 17.8, 15.9),
+                    size: const Size(46.0, 46.0),
                     child:
                         // Adobe XD layer: 'heart' (shape)
                         SvgPicture.string(
@@ -1605,7 +1605,7 @@ class Product extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(200.0, 43.0),
+            offset: const Offset(200.0, 43.0),
             child:
                 // Adobe XD layer: 'Share button' (group)
                 SizedBox(
@@ -1614,8 +1614,8 @@ class Product extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
+                    size: const Size(46.0, 46.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -1627,8 +1627,8 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(15.0, 15.0, 16.0, 15.9),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(15.0, 15.0, 16.0, 15.9),
+                    size: const Size(46.0, 46.0),
                     child: Transform.rotate(
                       angle: -1.5708,
                       child:
@@ -1656,7 +1656,7 @@ class Product extends StatelessWidget {
                             ),
                           ),
                           Transform.translate(
-                            offset: Offset(5.3, 3.3),
+                            offset: const Offset(5.3, 3.3),
                             child: SizedBox(
                               width: 11.0,
                               height: 9.0,
@@ -1687,7 +1687,7 @@ class Product extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(19.0, 43.0),
+            offset: const Offset(19.0, 43.0),
             child:
                 // Adobe XD layer: 'Back button' (group)
                 SizedBox(
@@ -1696,8 +1696,8 @@ class Product extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
+                    size: const Size(46.0, 46.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -1709,8 +1709,8 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(11.0, 18.0, 24.0, 9.3),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(11.0, 18.0, 24.0, 9.3),
+                    size: const Size(46.0, 46.0),
                     child: Transform.rotate(
                       angle: 3.1416,
                       child:
@@ -1746,7 +1746,7 @@ class Product extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(18.0, 14.3),
+            offset: const Offset(18.0, 14.3),
             child:
                 // Adobe XD layer: 'iOS elements' (group)
                 SizedBox(
@@ -1755,8 +1755,8 @@ class Product extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(315.0, 3.0, 24.3, 11.3),
-                    size: Size(339.3, 18.0),
+                    bounds: const Rect.fromLTWH(315.0, 3.0, 24.3, 11.3),
+                    size: const Size(339.3, 18.0),
                     pinRight: true,
                     pinTop: true,
                     fixedWidth: true,
@@ -1766,8 +1766,8 @@ class Product extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
-                          size: Size(24.3, 11.3),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
+                          size: const Size(24.3, 11.3),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1775,16 +1775,15 @@ class Product extends StatelessWidget {
                           child:
                               // Adobe XD layer: 'Border' (shape)
                               Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(2.67),
-                              border: Border.all(
-                                  width: 1.0, color: const Color(0x59000000)),
+                            decoration:  BoxDecoration(
+                              borderRadius: BorderRadius.circular(1.33),
+                              color: const Color(0x59000000),
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(23.0, 3.7, 1.3, 4.0),
-                          size: Size(24.3, 11.3),
+                          bounds: const Rect.fromLTWH(23.0, 3.7, 1.3, 4.0),
+                          size: const Size(24.3, 11.3),
                           pinRight: true,
                           fixedWidth: true,
                           fixedHeight: true,
@@ -1797,8 +1796,8 @@ class Product extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(2.0, 2.0, 18.0, 7.3),
-                          size: Size(24.3, 11.3),
+                          bounds: const Rect.fromLTWH(2.0, 2.0, 18.0, 7.3),
+                          size: const Size(24.3, 11.3),
                           pinLeft: true,
                           pinTop: true,
                           pinBottom: true,
@@ -1816,8 +1815,8 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(294.7, 3.0, 15.3, 11.0),
-                    size: Size(339.3, 18.0),
+                    bounds: const Rect.fromLTWH(294.7, 3.0, 15.3, 11.0),
+                    size: const Size(339.3, 18.0),
                     pinRight: true,
                     pinTop: true,
                     fixedWidth: true,
@@ -1831,8 +1830,8 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(272.7, 3.3, 17.0, 10.7),
-                    size: Size(339.3, 18.0),
+                    bounds: const Rect.fromLTWH(272.7, 3.3, 17.0, 10.7),
+                    size: const Size(339.3, 18.0),
                     pinRight: true,
                     pinTop: true,
                     fixedWidth: true,
@@ -1846,19 +1845,19 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 54.0, 18.0),
-                    size: Size(339.3, 18.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 54.0, 18.0),
+                    size: const Size(339.3, 18.0),
                     pinLeft: true,
                     pinRight: true,
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: '↳ Time' (text)
-                        Text(
+                        const Text(
                       '9:41',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 15,
-                        color: const Color(0xff000000),
+                        color: Color(0xff000000),
                         letterSpacing: -0.004500000178813935,
                         fontWeight: FontWeight.w600,
                       ),
@@ -1870,7 +1869,7 @@ class Product extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(0.0, 1715.0),
+            offset: const Offset(0.0, 1715.0),
             child:
                 // Adobe XD layer: 'Modal' (group)
                 SizedBox(
@@ -1879,8 +1878,8 @@ class Product extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 286.0),
-                    size: Size(375.0, 286.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 286.0),
+                    size: const Size(375.0, 286.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -1888,15 +1887,15 @@ class Product extends StatelessWidget {
                     child:
                         // Adobe XD layer: 'Bg modal' (shape)
                         Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(20.0),
                           topRight: Radius.circular(20.0),
                         ),
-                        color: const Color(0xffffffff),
+                        color: Color(0xffffffff),
                         boxShadow: [
                           BoxShadow(
-                            color: const Color(0x80d6dce4),
+                            color: Color(0x80d6dce4),
                             offset: Offset(0, -10),
                             blurRadius: 20,
                           ),
@@ -1905,8 +1904,8 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(121.0, 272.0, 134.0, 5.0),
-                    size: Size(375.0, 286.0),
+                    bounds: const Rect.fromLTWH(121.0, 272.0, 134.0, 5.0),
+                    size: const Size(375.0, 286.0),
                     pinBottom: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -1920,8 +1919,8 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(305.0, 118.0, 40.0, 40.0),
-                    size: Size(375.0, 286.0),
+                    bounds: const Rect.fromLTWH(305.0, 118.0, 40.0, 40.0),
+                    size: const Size(375.0, 286.0),
                     pinRight: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -1930,23 +1929,23 @@ class Product extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 40.0, 40.0),
-                          size: Size(40.0, 40.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 40.0, 40.0),
+                          size: const Size(40.0, 40.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
                           pinBottom: true,
                           child: Container(
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               borderRadius: BorderRadius.all(
                                   Radius.elliptical(9999.0, 9999.0)),
-                              color: const Color(0xff34c47c),
+                              color: Color(0xff34c47c),
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(12.0, 12.0, 16.0, 16.0),
-                          size: Size(40.0, 40.0),
+                          bounds: const Rect.fromLTWH(12.0, 12.0, 16.0, 16.0),
+                          size: const Size(40.0, 40.0),
                           fixedWidth: true,
                           fixedHeight: true,
                           child: SvgPicture.string(
@@ -1959,8 +1958,8 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(255.0, 118.0, 40.0, 40.0),
-                    size: Size(375.0, 286.0),
+                    bounds: const Rect.fromLTWH(255.0, 118.0, 40.0, 40.0),
+                    size: const Size(375.0, 286.0),
                     fixedWidth: true,
                     fixedHeight: true,
                     child:
@@ -1968,8 +1967,8 @@ class Product extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 40.0, 40.0),
-                          size: Size(40.0, 40.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 40.0, 40.0),
+                          size: const Size(40.0, 40.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1981,15 +1980,15 @@ class Product extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(19.0, 12.0, 2.0, 16.0),
-                          size: Size(40.0, 40.0),
+                          bounds: const Rect.fromLTWH(19.0, 12.0, 2.0, 16.0),
+                          size: const Size(40.0, 40.0),
                           fixedWidth: true,
                           fixedHeight: true,
                           child: Transform.rotate(
                             angle: 1.5708,
                             child: Container(
-                              decoration: BoxDecoration(
-                                color: const Color(0xffffffff),
+                              decoration: const BoxDecoration(
+                                color: Color(0xffffffff),
                               ),
                             ),
                           ),
@@ -1998,8 +1997,8 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 186.0, 315.0, 46.0),
-                    size: Size(375.0, 286.0),
+                    bounds: const Rect.fromLTWH(30.0, 186.0, 315.0, 46.0),
+                    size: const Size(375.0, 286.0),
                     pinLeft: true,
                     pinRight: true,
                     fixedHeight: true,
@@ -2008,8 +2007,8 @@ class Product extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 315.0, 46.0),
-                          size: Size(315.0, 46.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 315.0, 46.0),
+                          size: const Size(315.0, 46.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -2021,17 +2020,17 @@ class Product extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(93.0, 17.0, 130.0, 16.0),
-                          size: Size(315.0, 46.0),
+                          bounds: const Rect.fromLTWH(93.0, 17.0, 130.0, 16.0),
+                          size: const Size(315.0, 46.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Filter' (text)
-                              Text(
+                              const Text(
                             'Add to order \$6.50',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 16,
-                              color: const Color(0xffffffff),
+                              color: Color(0xffffffff),
                               letterSpacing: -0.16,
                             ),
                             textAlign: TextAlign.center,
@@ -2041,8 +2040,8 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 119.0, 130.0, 41.0),
-                    size: Size(375.0, 286.0),
+                    bounds: const Rect.fromLTWH(30.0, 119.0, 130.0, 41.0),
+                    size: const Size(375.0, 286.0),
                     pinLeft: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -2051,18 +2050,18 @@ class Product extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
-                          size: Size(130.0, 41.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
+                          size: const Size(130.0, 41.0),
                           pinLeft: true,
                           pinTop: true,
                           fixedWidth: true,
                           fixedHeight: true,
-                          child: Text(
+                          child: const Text(
                             '1 x item',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 16,
-                              color: const Color(0xff1a1a1a),
+                              color: Color(0xff1a1a1a),
                               letterSpacing: -0.32,
                               height: 1.5,
                             ),
@@ -2070,18 +2069,18 @@ class Product extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 25.0, 130.0, 16.0),
-                          size: Size(130.0, 41.0),
+                          bounds: const Rect.fromLTWH(0.0, 25.0, 130.0, 16.0),
+                          size: const Size(130.0, 41.0),
                           pinLeft: true,
                           pinRight: true,
                           pinBottom: true,
                           fixedHeight: true,
-                          child: Text(
+                          child: const Text(
                             'Pizza Capricciosa',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 16,
-                              color: const Color(0xff1a1a1a),
+                              color: Color(0xff1a1a1a),
                               letterSpacing: -0.32,
                               fontWeight: FontWeight.w700,
                               height: 1.5,
@@ -2093,19 +2092,19 @@ class Product extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 56.0, 195.0, 30.0),
-                    size: Size(375.0, 286.0),
+                    bounds: const Rect.fromLTWH(30.0, 56.0, 195.0, 30.0),
+                    size: const Size(375.0, 286.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
                     child:
                         // Adobe XD layer: 'Large Title' (text)
-                        Text(
+                        const Text(
                       'Add to basket',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 30,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         letterSpacing: -0.3,
                         fontWeight: FontWeight.w700,
                         height: 1.2,

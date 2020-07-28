@@ -16,12 +16,12 @@ class Onboarding1 extends StatelessWidget {
           Container(
             width: 375.0,
             height: 812.0,
-            decoration: BoxDecoration(
-              color: const Color(0xffffffff),
+            decoration: const BoxDecoration(
+              color: Color(0xffffffff),
             ),
           ),
           Transform.translate(
-            offset: Offset(20.0, 15.0),
+            offset: const Offset(20.0, 15.0),
             child:
                 // Adobe XD layer: 'iOS elements' (group)
                 SizedBox(
@@ -30,8 +30,8 @@ class Onboarding1 extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
-                    size: Size(340.3, 788.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
+                    size: const Size(340.3, 788.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -39,8 +39,8 @@ class Onboarding1 extends StatelessWidget {
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
-                          size: Size(340.3, 16.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
+                          size: const Size(340.3, 16.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -50,8 +50,8 @@ class Onboarding1 extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(316.0, 2.3, 24.3, 11.3),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(316.0, 2.3, 24.3, 11.3),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 pinTop: true,
                                 pinBottom: true,
@@ -62,8 +62,8 @@ class Onboarding1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
+                                      size: const Size(24.3, 11.3),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -73,9 +73,9 @@ class Onboarding1 extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 22.0, 11.3),
-                                            size: Size(22.0, 11.3),
+                                            size: const Size(22.0, 11.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -89,9 +89,9 @@ class Onboarding1 extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 22.0, 11.3),
-                                            size: Size(22.0, 11.3),
+                                            size: const Size(22.0, 11.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -109,8 +109,8 @@ class Onboarding1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(23.0, 3.7, 1.3, 4.0),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(23.0, 3.7, 1.3, 4.0),
+                                      size: const Size(24.3, 11.3),
                                       pinRight: true,
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -119,9 +119,9 @@ class Onboarding1 extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 11.3, 14.0),
-                                            size: Size(1.3, 4.0),
+                                            size: const Size(1.3, 4.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -135,9 +135,9 @@ class Onboarding1 extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 1.3, 4.0),
-                                            size: Size(1.3, 4.0),
+                                            size: const Size(1.3, 4.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -155,8 +155,8 @@ class Onboarding1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(2.0, 2.0, 18.0, 7.3),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(2.0, 2.0, 18.0, 7.3),
+                                      size: const Size(24.3, 11.3),
                                       pinLeft: true,
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -165,9 +165,9 @@ class Onboarding1 extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 28.0, 17.3),
-                                            size: Size(18.0, 7.3),
+                                            size: const Size(18.0, 7.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -181,9 +181,9 @@ class Onboarding1 extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 18.0, 7.3),
-                                            size: Size(18.0, 7.3),
+                                            size: const Size(18.0, 7.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -203,8 +203,8 @@ class Onboarding1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(295.7, 2.3, 15.3, 11.0),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(295.7, 2.3, 15.3, 11.0),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 pinTop: true,
                                 fixedWidth: true,
@@ -215,8 +215,8 @@ class Onboarding1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 15.3, 11.0),
-                                      size: Size(15.3, 11.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 15.3, 11.0),
+                                      size: const Size(15.3, 11.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -226,9 +226,9 @@ class Onboarding1 extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 25.3, 21.0),
-                                            size: Size(15.3, 11.0),
+                                            size: const Size(15.3, 11.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -242,9 +242,9 @@ class Onboarding1 extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 15.3, 11.0),
-                                            size: Size(15.3, 11.0),
+                                            size: const Size(15.3, 11.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -264,8 +264,8 @@ class Onboarding1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(273.7, 2.7, 17.0, 10.7),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(273.7, 2.7, 17.0, 10.7),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 fixedWidth: true,
                                 fixedHeight: true,
@@ -275,8 +275,8 @@ class Onboarding1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 17.0, 10.7),
-                                      size: Size(17.0, 10.7),
+                                          const Rect.fromLTWH(0.0, 0.0, 17.0, 10.7),
+                                      size: const Size(17.0, 10.7),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -286,9 +286,9 @@ class Onboarding1 extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 27.0, 20.7),
-                                            size: Size(17.0, 10.7),
+                                            size: const Size(17.0, 10.7),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -302,9 +302,9 @@ class Onboarding1 extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 17.0, 10.7),
-                                            size: Size(17.0, 10.7),
+                                            size: const Size(17.0, 10.7),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -324,8 +324,8 @@ class Onboarding1 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
+                                size: const Size(340.3, 16.0),
                                 pinLeft: true,
                                 pinTop: true,
                                 pinBottom: true,
@@ -336,8 +336,8 @@ class Onboarding1 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
-                                      size: Size(54.0, 16.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
+                                      size: const Size(54.0, 16.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -352,8 +352,8 @@ class Onboarding1 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(12.8, 4.9, 27.5, 10.3),
-                                      size: Size(54.0, 16.0),
+                                          const Rect.fromLTWH(12.8, 4.9, 27.5, 10.3),
+                                      size: const Size(54.0, 16.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinBottom: true,
@@ -376,8 +376,8 @@ class Onboarding1 extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(101.0, 783.0, 134.0, 5.0),
-                    size: Size(340.3, 788.0),
+                    bounds: const Rect.fromLTWH(101.0, 783.0, 134.0, 5.0),
+                    size: const Size(340.3, 788.0),
                     pinBottom: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -393,7 +393,7 @@ class Onboarding1 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 710.0),
+            offset: const Offset(30.0, 710.0),
             child:
                 // Adobe XD layer: 'Secondary button' (group)
                 SizedBox(
@@ -402,8 +402,8 @@ class Onboarding1 extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 315.0, 48.0),
-                    size: Size(315.0, 48.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 315.0, 48.0),
+                    size: const Size(315.0, 48.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -416,16 +416,16 @@ class Onboarding1 extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(144.0, 19.0, 28.0, 14.0),
-                    size: Size(315.0, 48.0),
+                    bounds: const Rect.fromLTWH(144.0, 19.0, 28.0, 14.0),
+                    size: const Size(315.0, 48.0),
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'Skip',
                       style: TextStyle(
                         fontFamily: 'SF Pro Display',
                         fontSize: 14,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         height: 1.4285714285714286,
                       ),
                       textAlign: TextAlign.center,
@@ -436,7 +436,7 @@ class Onboarding1 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 653.0),
+            offset: const Offset(30.0, 653.0),
             child:
                 // Adobe XD layer: 'Primary Button' (group)
                 SizedBox(
@@ -445,8 +445,8 @@ class Onboarding1 extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 315.0, 46.0),
-                    size: Size(315.0, 46.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 315.0, 46.0),
+                    size: const Size(315.0, 46.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -459,17 +459,17 @@ class Onboarding1 extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(142.0, 17.0, 32.0, 16.0),
-                    size: Size(315.0, 46.0),
+                    bounds: const Rect.fromLTWH(142.0, 17.0, 32.0, 16.0),
+                    size: const Size(315.0, 46.0),
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: 'Filter' (text)
-                        Text(
+                        const Text(
                       'Next',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 16,
-                        color: const Color(0xffffffff),
+                        color: Color(0xffffffff),
                         letterSpacing: -0.16,
                       ),
                       textAlign: TextAlign.center,
@@ -480,7 +480,7 @@ class Onboarding1 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(168.0, 565.0),
+            offset: const Offset(168.0, 565.0),
             child:
                 // Adobe XD layer: 'Slider dots' (group)
                 SizedBox(
@@ -489,8 +489,8 @@ class Onboarding1 extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(16.0, 0.0, 8.0, 8.0),
-                    size: Size(40.0, 8.0),
+                    bounds: const Rect.fromLTWH(16.0, 0.0, 8.0, 8.0),
+                    size: const Size(40.0, 8.0),
                     pinTop: true,
                     pinBottom: true,
                     fixedWidth: true,
@@ -504,8 +504,8 @@ class Onboarding1 extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(32.0, 0.0, 8.0, 8.0),
-                    size: Size(40.0, 8.0),
+                    bounds: const Rect.fromLTWH(32.0, 0.0, 8.0, 8.0),
+                    size: const Size(40.0, 8.0),
                     pinRight: true,
                     pinTop: true,
                     pinBottom: true,
@@ -520,8 +520,8 @@ class Onboarding1 extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 8.0, 8.0),
-                    size: Size(40.0, 8.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 8.0, 8.0),
+                    size: const Size(40.0, 8.0),
                     pinLeft: true,
                     pinTop: true,
                     pinBottom: true,
@@ -540,7 +540,7 @@ class Onboarding1 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(33.0, 431.0),
+            offset: const Offset(33.0, 431.0),
             child:
                 // Adobe XD layer: 'Title & subtitle' (group)
                 SizedBox(
@@ -549,16 +549,16 @@ class Onboarding1 extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(24.0, 0.0, 262.0, 30.0),
-                    size: Size(309.0, 94.0),
+                    bounds: const Rect.fromLTWH(24.0, 0.0, 262.0, 30.0),
+                    size: const Size(309.0, 94.0),
                     child: Transform.rotate(
                       angle: 0.0,
-                      child: Text(
+                      child: const Text(
                         'Find food you love',
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 30,
-                          color: const Color(0xff1a1824),
+                          color: Color(0xff1a1824),
                           letterSpacing: -0.3,
                           fontWeight: FontWeight.w700,
                           height: 1.2,
@@ -568,18 +568,18 @@ class Onboarding1 extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 50.0, 309.0, 44.0),
-                    size: Size(309.0, 94.0),
+                    bounds: const Rect.fromLTWH(0.0, 50.0, 309.0, 44.0),
+                    size: const Size(309.0, 94.0),
                     pinLeft: true,
                     pinRight: true,
                     pinBottom: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'Discover the best menus from over 100 cuisines and over 1000 restaurants.',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 16,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         letterSpacing: -0.384,
                         height: 1.5,
                       ),
@@ -591,7 +591,7 @@ class Onboarding1 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(53.0, 150.0),
+            offset: const Offset(53.0, 150.0),
             child:
                 // Adobe XD layer: 'Image' (group)
                 SizedBox(
@@ -600,14 +600,14 @@ class Onboarding1 extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Transform.translate(
-                    offset: Offset(15.3, 210.7),
+                    offset: const Offset(15.3, 210.7),
                     child: Container(
                       width: 185.5,
                       height: 6.6,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a34c47c),
+                        color: Color(0x1a34c47c),
                       ),
                     ),
                   ),
@@ -616,1168 +616,1168 @@ class Onboarding1 extends StatelessWidget {
                     allowDrawingOutsideViewBox: true,
                   ),
                   Transform.translate(
-                    offset: Offset(11.5, 224.5),
+                    offset: const Offset(11.5, 224.5),
                     child: Container(
                       width: 49.6,
                       height: 10.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a34c47c),
+                        color: Color(0x1a34c47c),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(220.4, 214.3),
+                    offset: const Offset(220.4, 214.3),
                     child: Container(
                       width: 49.6,
                       height: 4.4,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a34c47c),
+                        color: Color(0x1a34c47c),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(73.5, 45.8),
+                    offset: const Offset(73.5, 45.8),
                     child: Container(
                       width: 73.5,
                       height: 16.2,
-                      decoration: BoxDecoration(
-                        color: const Color(0xff464a5f),
+                      decoration: const BoxDecoration(
+                        color: Color(0xff464a5f),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(73.5, 45.8),
+                    offset: const Offset(73.5, 45.8),
                     child: Container(
                       width: 73.5,
                       height: 0.4,
-                      decoration: BoxDecoration(
-                        color: const Color(0x1a000000),
+                      decoration: const BoxDecoration(
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(69.9, 9.9),
+                    offset: const Offset(69.9, 9.9),
                     child: Container(
                       width: 81.0,
                       height: 36.0,
-                      decoration: BoxDecoration(
-                        color: const Color(0xff65617d),
+                      decoration: const BoxDecoration(
+                        color: Color(0xff65617d),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(34.2, 9.9),
+                    offset: const Offset(34.2, 9.9),
                     child: SvgPicture.string(
                       _svg_nbbvc7,
                       allowDrawingOutsideViewBox: true,
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(39.8, 14.7),
+                    offset: const Offset(39.8, 14.7),
                     child: Container(
                       width: 26.7,
                       height: 67.3,
-                      decoration: BoxDecoration(
-                        color: const Color(0x1a000000),
+                      decoration: const BoxDecoration(
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(39.4, 14.3),
+                    offset: const Offset(39.4, 14.3),
                     child: Container(
                       width: 26.7,
                       height: 67.3,
-                      decoration: BoxDecoration(
-                        color: const Color(0xffd1d9ec),
+                      decoration: const BoxDecoration(
+                        color: Color(0xffd1d9ec),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(63.3, 75.4),
+                    offset: const Offset(63.3, 75.4),
                     child: Container(
                       width: 5.4,
                       height: 5.4,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a000000),
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(63.3, 75.0),
+                    offset: const Offset(63.3, 75.0),
                     child: Container(
                       width: 5.4,
                       height: 5.4,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xff464a5f),
+                        color: Color(0xff464a5f),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(148.9, 9.9),
+                    offset: const Offset(148.9, 9.9),
                     child: SvgPicture.string(
                       _svg_xqkqw9,
                       allowDrawingOutsideViewBox: true,
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(154.4, 14.7),
+                    offset: const Offset(154.4, 14.7),
                     child: Container(
                       width: 26.7,
                       height: 67.3,
-                      decoration: BoxDecoration(
-                        color: const Color(0x1a000000),
+                      decoration: const BoxDecoration(
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(154.0, 14.3),
+                    offset: const Offset(154.0, 14.3),
                     child: Container(
                       width: 26.7,
                       height: 67.3,
-                      decoration: BoxDecoration(
-                        color: const Color(0xffd1d9ec),
+                      decoration: const BoxDecoration(
+                        color: Color(0xffd1d9ec),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(177.9, 75.4),
+                    offset: const Offset(177.9, 75.4),
                     child: Container(
                       width: 5.4,
                       height: 5.4,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a000000),
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(177.9, 75.0),
+                    offset: const Offset(177.9, 75.0),
                     child: Container(
                       width: 5.4,
                       height: 5.4,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xff464a5f),
+                        color: Color(0xff464a5f),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(76.4, 14.7),
+                    offset: const Offset(76.4, 14.7),
                     child: Container(
                       width: 28.8,
                       height: 28.8,
-                      decoration: BoxDecoration(
-                        color: const Color(0x1a000000),
+                      decoration: const BoxDecoration(
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(76.0, 14.3),
+                    offset: const Offset(76.0, 14.3),
                     child: Container(
                       width: 28.8,
                       height: 28.8,
-                      decoration: BoxDecoration(
-                        color: const Color(0xffd1d9ec),
+                      decoration: const BoxDecoration(
+                        color: Color(0xffd1d9ec),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(103.1, 41.8),
+                    offset: const Offset(103.1, 41.8),
                     child: Container(
                       width: 3.5,
                       height: 3.5,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a000000),
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(103.1, 41.3),
+                    offset: const Offset(103.1, 41.3),
                     child: Container(
                       width: 3.5,
                       height: 3.5,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xff464a5f),
+                        color: Color(0xff464a5f),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(114.2, 14.7),
+                    offset: const Offset(114.2, 14.7),
                     child: Transform.rotate(
                       angle: 3.1416,
                       child: Container(
                         width: 28.8,
                         height: 28.8,
-                        decoration: BoxDecoration(
-                          color: const Color(0x1a000000),
+                        decoration: const BoxDecoration(
+                          color: Color(0x1a000000),
                         ),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(114.7, 14.3),
+                    offset: const Offset(114.7, 14.3),
                     child: Transform.rotate(
                       angle: 3.1416,
                       child: Container(
                         width: 28.8,
                         height: 28.8,
-                        decoration: BoxDecoration(
-                          color: const Color(0xffd1d9ec),
+                        decoration: const BoxDecoration(
+                          color: Color(0xffd1d9ec),
                         ),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(112.9, 41.8),
+                    offset: const Offset(112.9, 41.8),
                     child: Container(
                       width: 3.5,
                       height: 3.5,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a000000),
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(112.9, 41.3),
+                    offset: const Offset(112.9, 41.3),
                     child: Container(
                       width: 3.5,
                       height: 3.5,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xff464a5f),
+                        color: Color(0xff464a5f),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(109.2, 9.9),
+                    offset: const Offset(109.2, 9.9),
                     child: Container(
                       width: 1.2,
                       height: 36.0,
-                      decoration: BoxDecoration(
-                        color: const Color(0x1a000000),
+                      decoration: const BoxDecoration(
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(76.0, 59.6),
+                    offset: const Offset(76.0, 59.6),
                     child: Container(
                       width: 4.9,
                       height: 1.5,
-                      decoration: BoxDecoration(
-                        color: const Color(0x1a000000),
+                      decoration: const BoxDecoration(
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(76.0, 59.1),
+                    offset: const Offset(76.0, 59.1),
                     child: Container(
                       width: 4.9,
                       height: 1.5,
-                      decoration: BoxDecoration(
-                        color: const Color(0xff53526b),
+                      decoration: const BoxDecoration(
+                        color: Color(0xff53526b),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(111.6, 57.8),
+                    offset: const Offset(111.6, 57.8),
                     child: Container(
                       width: 25.4,
                       height: 3.3,
-                      decoration: BoxDecoration(
-                        color: const Color(0x1a000000),
+                      decoration: const BoxDecoration(
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(111.6, 57.3),
+                    offset: const Offset(111.6, 57.3),
                     child: Container(
                       width: 25.4,
                       height: 3.3,
-                      decoration: BoxDecoration(
-                        color: const Color(0xff53526b),
+                      decoration: const BoxDecoration(
+                        color: Color(0xff53526b),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(125.5, 58.8),
+                    offset: const Offset(125.5, 58.8),
                     child: Container(
                       width: 1.3,
                       height: 1.3,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a000000),
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(125.5, 58.3),
+                    offset: const Offset(125.5, 58.3),
                     child: Container(
                       width: 1.3,
                       height: 1.3,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xffb65256),
+                        color: Color(0xffb65256),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(129.1, 58.8),
+                    offset: const Offset(129.1, 58.8),
                     child: Container(
                       width: 1.3,
                       height: 1.3,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a000000),
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(129.1, 58.3),
+                    offset: const Offset(129.1, 58.3),
                     child: Container(
                       width: 1.3,
                       height: 1.3,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xffffd77c),
+                        color: Color(0xffffd77c),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(25.9, 134.6),
+                    offset: const Offset(25.9, 134.6),
                     child: Container(
                       width: 168.3,
                       height: 71.7,
-                      decoration: BoxDecoration(
-                        color: const Color(0xff65617d),
+                      decoration: const BoxDecoration(
+                        color: Color(0xff65617d),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(25.9, 134.6),
+                    offset: const Offset(25.9, 134.6),
                     child: Container(
                       width: 168.3,
                       height: 1.5,
-                      decoration: BoxDecoration(
-                        color: const Color(0x1a000000),
+                      decoration: const BoxDecoration(
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(23.7, 131.9),
+                    offset: const Offset(23.7, 131.9),
                     child: Container(
                       width: 172.7,
                       height: 3.8,
-                      decoration: BoxDecoration(
-                        color: const Color(0xff65617d),
+                      decoration: const BoxDecoration(
+                        color: Color(0xff65617d),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(23.7, 131.9),
+                    offset: const Offset(23.7, 131.9),
                     child: Container(
                       width: 172.7,
                       height: 0.6,
-                      decoration: BoxDecoration(
-                        color: const Color(0x1a000000),
+                      decoration: const BoxDecoration(
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(20.5, 130.8),
+                    offset: const Offset(20.5, 130.8),
                     child: Container(
                       width: 179.1,
                       height: 1.3,
-                      decoration: BoxDecoration(
-                        color: const Color(0xff65617d),
+                      decoration: const BoxDecoration(
+                        color: Color(0xff65617d),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(31.2, 137.1),
+                    offset: const Offset(31.2, 137.1),
                     child: Container(
                       width: 36.9,
                       height: 11.4,
-                      decoration: BoxDecoration(
-                        color: const Color(0x1a000000),
+                      decoration: const BoxDecoration(
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(31.7, 136.7),
+                    offset: const Offset(31.7, 136.7),
                     child: Container(
                       width: 36.9,
                       height: 11.4,
-                      decoration: BoxDecoration(
-                        color: const Color(0xffd1d9ec),
+                      decoration: const BoxDecoration(
+                        color: Color(0xffd1d9ec),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(31.2, 153.7),
+                    offset: const Offset(31.2, 153.7),
                     child: Container(
                       width: 36.9,
                       height: 23.1,
-                      decoration: BoxDecoration(
-                        color: const Color(0x1a000000),
+                      decoration: const BoxDecoration(
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(31.7, 153.3),
+                    offset: const Offset(31.7, 153.3),
                     child: Container(
                       width: 36.9,
                       height: 23.1,
-                      decoration: BoxDecoration(
-                        color: const Color(0xffd1d9ec),
+                      decoration: const BoxDecoration(
+                        color: Color(0xffd1d9ec),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(31.2, 180.3),
+                    offset: const Offset(31.2, 180.3),
                     child: Container(
                       width: 36.9,
                       height: 23.1,
-                      decoration: BoxDecoration(
-                        color: const Color(0x1a000000),
+                      decoration: const BoxDecoration(
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(31.7, 179.8),
+                    offset: const Offset(31.7, 179.8),
                     child: Container(
                       width: 36.9,
                       height: 23.1,
-                      decoration: BoxDecoration(
-                        color: const Color(0xffd1d9ec),
+                      decoration: const BoxDecoration(
+                        color: Color(0xffd1d9ec),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(44.4, 141.8),
+                    offset: const Offset(44.4, 141.8),
                     child: Container(
                       width: 10.5,
                       height: 2.1,
-                      decoration: BoxDecoration(
-                        color: const Color(0x1a000000),
+                      decoration: const BoxDecoration(
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(44.4, 141.4),
+                    offset: const Offset(44.4, 141.4),
                     child: Container(
                       width: 10.5,
                       height: 2.1,
-                      decoration: BoxDecoration(
-                        color: const Color(0xff464a5f),
+                      decoration: const BoxDecoration(
+                        color: Color(0xff464a5f),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(155.4, 137.1),
+                    offset: const Offset(155.4, 137.1),
                     child: Container(
                       width: 36.9,
                       height: 11.4,
-                      decoration: BoxDecoration(
-                        color: const Color(0x1a000000),
+                      decoration: const BoxDecoration(
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(155.9, 136.7),
+                    offset: const Offset(155.9, 136.7),
                     child: Container(
                       width: 36.9,
                       height: 11.4,
-                      decoration: BoxDecoration(
-                        color: const Color(0xffd1d9ec),
+                      decoration: const BoxDecoration(
+                        color: Color(0xffd1d9ec),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(155.9, 151.9),
+                    offset: const Offset(155.9, 151.9),
                     child: Container(
                       width: 36.9,
                       height: 49.6,
-                      decoration: BoxDecoration(
-                        color: const Color(0xffd1d9ec),
+                      decoration: const BoxDecoration(
+                        color: Color(0xffd1d9ec),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(168.6, 141.4),
+                    offset: const Offset(168.6, 141.4),
                     child: Container(
                       width: 10.5,
                       height: 2.1,
-                      decoration: BoxDecoration(
-                        color: const Color(0xff464a5f),
+                      decoration: const BoxDecoration(
+                        color: Color(0xff464a5f),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(44.4, 164.7),
+                    offset: const Offset(44.4, 164.7),
                     child: Container(
                       width: 10.5,
                       height: 2.1,
-                      decoration: BoxDecoration(
-                        color: const Color(0x1a000000),
+                      decoration: const BoxDecoration(
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(44.4, 164.2),
+                    offset: const Offset(44.4, 164.2),
                     child: Container(
                       width: 10.5,
                       height: 2.1,
-                      decoration: BoxDecoration(
-                        color: const Color(0xff464a5f),
+                      decoration: const BoxDecoration(
+                        color: Color(0xff464a5f),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(44.4, 189.1),
+                    offset: const Offset(44.4, 189.1),
                     child: Container(
                       width: 10.5,
                       height: 2.1,
-                      decoration: BoxDecoration(
-                        color: const Color(0x1a000000),
+                      decoration: const BoxDecoration(
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(44.4, 188.7),
+                    offset: const Offset(44.4, 188.7),
                     child: Container(
                       width: 10.5,
                       height: 2.1,
-                      decoration: BoxDecoration(
-                        color: const Color(0xff464a5f),
+                      decoration: const BoxDecoration(
+                        color: Color(0xff464a5f),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(161.3, 157.1),
+                    offset: const Offset(161.3, 157.1),
                     child: Container(
                       width: 26.9,
                       height: 40.0,
-                      decoration: BoxDecoration(
-                        color: const Color(0x1a000000),
+                      decoration: const BoxDecoration(
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(160.9, 156.7),
+                    offset: const Offset(160.9, 156.7),
                     child: Container(
                       width: 26.9,
                       height: 40.0,
-                      decoration: BoxDecoration(
-                        color: const Color(0x4d34c47c),
+                      decoration: const BoxDecoration(
+                        color: Color(0x4d34c47c),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(23.7, 205.6),
+                    offset: const Offset(23.7, 205.6),
                     child: Container(
                       width: 172.7,
                       height: 7.2,
-                      decoration: BoxDecoration(
-                        color: const Color(0x1a000000),
+                      decoration: const BoxDecoration(
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(23.7, 205.9),
+                    offset: const Offset(23.7, 205.9),
                     child: Container(
                       width: 172.7,
                       height: 7.2,
-                      decoration: BoxDecoration(
-                        color: const Color(0xff65617d),
+                      decoration: const BoxDecoration(
+                        color: Color(0xff65617d),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(71.7, 140.4),
+                    offset: const Offset(71.7, 140.4),
                     child: Container(
                       width: 81.0,
                       height: 52.2,
-                      decoration: BoxDecoration(
-                        color: const Color(0xff464a5f),
+                      decoration: const BoxDecoration(
+                        color: Color(0xff464a5f),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(72.7, 144.2),
+                    offset: const Offset(72.7, 144.2),
                     child: SvgPicture.string(
                       _svg_m3dfsa,
                       allowDrawingOutsideViewBox: true,
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(80.8, 154.2),
+                    offset: const Offset(80.8, 154.2),
                     child: Container(
                       width: 62.7,
                       height: 29.8,
-                      decoration: BoxDecoration(
-                        color: const Color(0x4d34c47c),
+                      decoration: const BoxDecoration(
+                        color: Color(0x4d34c47c),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(71.7, 140.4),
+                    offset: const Offset(71.7, 140.4),
                     child: Container(
                       width: 81.0,
                       height: 1.6,
-                      decoration: BoxDecoration(
-                        color: const Color(0x1a000000),
+                      decoration: const BoxDecoration(
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(70.5, 129.6),
+                    offset: const Offset(70.5, 129.6),
                     child: Container(
                       width: 83.5,
                       height: 12.0,
-                      decoration: BoxDecoration(
-                        color: const Color(0xff464a5f),
+                      decoration: const BoxDecoration(
+                        color: Color(0xff464a5f),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(74.3, 132.0),
+                    offset: const Offset(74.3, 132.0),
                     child: Container(
                       width: 6.1,
                       height: 6.1,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a000000),
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(74.3, 131.6),
+                    offset: const Offset(74.3, 131.6),
                     child: Container(
                       width: 6.1,
                       height: 6.1,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xffd1d9ec),
+                        color: Color(0xffd1d9ec),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(81.7, 132.0),
+                    offset: const Offset(81.7, 132.0),
                     child: Container(
                       width: 6.1,
                       height: 6.1,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a000000),
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(81.7, 131.6),
+                    offset: const Offset(81.7, 131.6),
                     child: Container(
                       width: 6.1,
                       height: 6.1,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xffd1d9ec),
+                        color: Color(0xffd1d9ec),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(136.8, 132.0),
+                    offset: const Offset(136.8, 132.0),
                     child: Container(
                       width: 6.1,
                       height: 6.1,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a000000),
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(136.8, 131.6),
+                    offset: const Offset(136.8, 131.6),
                     child: Container(
                       width: 6.1,
                       height: 6.1,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xffd1d9ec),
+                        color: Color(0xffd1d9ec),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(144.3, 132.0),
+                    offset: const Offset(144.3, 132.0),
                     child: Container(
                       width: 6.1,
                       height: 6.1,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a000000),
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(144.3, 131.6),
+                    offset: const Offset(144.3, 131.6),
                     child: Container(
                       width: 6.1,
                       height: 6.1,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xffd1d9ec),
+                        color: Color(0xffd1d9ec),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(100.2, 131.7),
+                    offset: const Offset(100.2, 131.7),
                     child: Container(
                       width: 23.3,
                       height: 7.3,
-                      decoration: BoxDecoration(
-                        color: const Color(0x1a000000),
+                      decoration: const BoxDecoration(
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(100.6, 131.2),
+                    offset: const Offset(100.6, 131.2),
                     child: Container(
                       width: 22.6,
                       height: 7.3,
-                      decoration: BoxDecoration(
-                        color: const Color(0xff53526b),
+                      decoration: const BoxDecoration(
+                        color: Color(0xff53526b),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(77.3, 130.9),
+                    offset: const Offset(77.3, 130.9),
                     child: Container(
                       width: 0.8,
                       height: 7.4,
-                      decoration: BoxDecoration(
-                        color: const Color(0x1a000000),
+                      decoration: const BoxDecoration(
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(76.9, 130.9),
+                    offset: const Offset(76.9, 130.9),
                     child: Container(
                       width: 0.8,
                       height: 7.4,
-                      decoration: BoxDecoration(
-                        color: const Color(0xff53526b),
+                      decoration: const BoxDecoration(
+                        color: Color(0xff53526b),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(147.3, 130.9),
+                    offset: const Offset(147.3, 130.9),
                     child: Container(
                       width: 0.8,
                       height: 7.4,
-                      decoration: BoxDecoration(
-                        color: const Color(0x1a000000),
+                      decoration: const BoxDecoration(
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(146.9, 130.9),
+                    offset: const Offset(146.9, 130.9),
                     child: Container(
                       width: 0.8,
                       height: 7.4,
-                      decoration: BoxDecoration(
-                        color: const Color(0xff53526b),
+                      decoration: const BoxDecoration(
+                        color: Color(0xff53526b),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(139.4, 131.3),
+                    offset: const Offset(139.4, 131.3),
                     child: Transform.rotate(
                       angle: 0.7854,
                       child: Container(
                         width: 0.8,
                         height: 7.4,
-                        decoration: BoxDecoration(
-                          color: const Color(0x1a000000),
+                        decoration: const BoxDecoration(
+                          color: Color(0x1a000000),
                         ),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(139.4, 130.9),
+                    offset: const Offset(139.4, 130.9),
                     child: Transform.rotate(
                       angle: 0.7854,
                       child: Container(
                         width: 0.8,
                         height: 7.4,
-                        decoration: BoxDecoration(
-                          color: const Color(0xff53526b),
+                        decoration: const BoxDecoration(
+                          color: Color(0xff53526b),
                         ),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(84.4, 131.3),
+                    offset: const Offset(84.4, 131.3),
                     child: Transform.rotate(
                       angle: 1.5708,
                       child: Container(
                         width: 0.8,
                         height: 7.4,
-                        decoration: BoxDecoration(
-                          color: const Color(0x1a000000),
+                        decoration: const BoxDecoration(
+                          color: Color(0x1a000000),
                         ),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(84.4, 130.9),
+                    offset: const Offset(84.4, 130.9),
                     child: Transform.rotate(
                       angle: 1.5708,
                       child: Container(
                         width: 0.8,
                         height: 7.4,
-                        decoration: BoxDecoration(
-                          color: const Color(0xff53526b),
+                        decoration: const BoxDecoration(
+                          color: Color(0xff53526b),
                         ),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(71.7, 191.4),
+                    offset: const Offset(71.7, 191.4),
                     child: Container(
                       width: 81.0,
                       height: 1.2,
-                      decoration: BoxDecoration(
-                        color: const Color(0x1a000000),
+                      decoration: const BoxDecoration(
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(70.5, 191.8),
+                    offset: const Offset(70.5, 191.8),
                     child: Container(
                       width: 83.5,
                       height: 21.5,
-                      decoration: BoxDecoration(
-                        color: const Color(0xff464a5f),
+                      decoration: const BoxDecoration(
+                        color: Color(0xff464a5f),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(9.9, 51.1),
+                    offset: const Offset(9.9, 51.1),
                     child: SvgPicture.string(
                       _svg_8x942e,
                       allowDrawingOutsideViewBox: true,
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(28.3, 66.1),
+                    offset: const Offset(28.3, 66.1),
                     child: Container(
                       width: 17.2,
                       height: 17.2,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xfffdc2cc),
+                        color: Color(0xfffdc2cc),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(14.4, 84.0),
+                    offset: const Offset(14.4, 84.0),
                     child: SvgPicture.string(
                       _svg_zdtwy,
                       allowDrawingOutsideViewBox: true,
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(50.7, 104.0),
+                    offset: const Offset(50.7, 104.0),
                     child: Transform.rotate(
                       angle: 3.6961,
                       child: Container(
                         width: 1.6,
                         height: 14.7,
-                        decoration: BoxDecoration(
-                          color: const Color(0xffdfe6f5),
+                        decoration: const BoxDecoration(
+                          color: Color(0xffdfe6f5),
                         ),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(52.5, 98.8),
+                    offset: const Offset(52.5, 98.8),
                     child: Transform.rotate(
                       angle: -1.0163,
                       child: Container(
                         width: 9.4,
                         height: 6.6,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           borderRadius: BorderRadius.all(
                               Radius.elliptical(9999.0, 9999.0)),
-                          color: const Color(0xffdfe6f5),
+                          color: Color(0xffdfe6f5),
                         ),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(53.8, 99.8),
+                    offset: const Offset(53.8, 99.8),
                     child: Transform.rotate(
                       angle: -1.0163,
                       child: Container(
                         width: 6.7,
                         height: 4.7,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           borderRadius: BorderRadius.all(
                               Radius.elliptical(9999.0, 9999.0)),
-                          color: const Color(0x1a000000),
+                          color: Color(0x1a000000),
                         ),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(45.3, 115.5),
+                    offset: const Offset(45.3, 115.5),
                     child: Transform.rotate(
                       angle: 3.6961,
                       child: Container(
                         width: 1.6,
                         height: 9.1,
-                        decoration: BoxDecoration(
-                          color: const Color(0xff53526b),
+                        decoration: const BoxDecoration(
+                          color: Color(0xff53526b),
                         ),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(32.3, 115.3),
+                    offset: const Offset(32.3, 115.3),
                     child: SvgPicture.string(
                       _svg_q8dhjo,
                       allowDrawingOutsideViewBox: true,
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(31.7, 93.7),
+                    offset: const Offset(31.7, 93.7),
                     child: Container(
                       width: 1.3,
                       height: 1.3,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a000000),
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(43.1, 93.3),
+                    offset: const Offset(43.1, 93.3),
                     child: Container(
                       width: 1.3,
                       height: 1.3,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a000000),
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(31.7, 93.5),
+                    offset: const Offset(31.7, 93.5),
                     child: Container(
                       width: 1.3,
                       height: 1.3,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xffffffff),
+                        color: Color(0xffffffff),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(32.6, 102.9),
+                    offset: const Offset(32.6, 102.9),
                     child: Container(
                       width: 1.3,
                       height: 1.3,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a000000),
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(43.4, 102.3),
+                    offset: const Offset(43.4, 102.3),
                     child: Container(
                       width: 1.3,
                       height: 1.3,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a000000),
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(32.6, 102.7),
+                    offset: const Offset(32.6, 102.7),
                     child: Container(
                       width: 1.3,
                       height: 1.3,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xffffffff),
+                        color: Color(0xffffffff),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(43.2, 134.4),
+                    offset: const Offset(43.2, 134.4),
                     child: Container(
                       width: 1.3,
                       height: 1.3,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a000000),
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(34.4, 134.4),
+                    offset: const Offset(34.4, 134.4),
                     child: Container(
                       width: 1.3,
                       height: 1.3,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a000000),
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(43.2, 134.2),
+                    offset: const Offset(43.2, 134.2),
                     child: Container(
                       width: 1.3,
                       height: 1.3,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xffffffff),
+                        color: Color(0xffffffff),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(35.1, 145.6),
+                    offset: const Offset(35.1, 145.6),
                     child: Container(
                       width: 1.3,
                       height: 1.3,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a000000),
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(43.4, 144.9),
+                    offset: const Offset(43.4, 144.9),
                     child: Container(
                       width: 1.3,
                       height: 1.3,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a000000),
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(35.1, 145.4),
+                    offset: const Offset(35.1, 145.4),
                     child: Container(
                       width: 1.3,
                       height: 1.3,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xffffffff),
+                        color: Color(0xffffffff),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(34.4, 134.2),
+                    offset: const Offset(34.4, 134.2),
                     child: Container(
                       width: 1.3,
                       height: 1.3,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xffffffff),
+                        color: Color(0xffffffff),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(43.4, 144.7),
+                    offset: const Offset(43.4, 144.7),
                     child: Container(
                       width: 1.3,
                       height: 1.3,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xffffffff),
+                        color: Color(0xffffffff),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(43.1, 93.1),
+                    offset: const Offset(43.1, 93.1),
                     child: Container(
                       width: 1.3,
                       height: 1.3,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xffffffff),
+                        color: Color(0xffffffff),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(43.4, 102.0),
+                    offset: const Offset(43.4, 102.0),
                     child: Container(
                       width: 1.3,
                       height: 1.3,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xffffffff),
+                        color: Color(0xffffffff),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(10.9, 64.8),
+                    offset: const Offset(10.9, 64.8),
                     child: SvgPicture.string(
                       _svg_mzackp,
                       allowDrawingOutsideViewBox: true,
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(28.3, 68.4),
+                    offset: const Offset(28.3, 68.4),
                     child: SizedBox(
                       width: 17.0,
                       height: 7.0,
@@ -1792,24 +1792,24 @@ class Onboarding1 extends StatelessWidget {
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(11.6, 51.9),
+                    offset: const Offset(11.6, 51.9),
                     child: SvgPicture.string(
                       _svg_tdisdl,
                       allowDrawingOutsideViewBox: true,
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(245.6, 146.3),
+                    offset: const Offset(245.6, 146.3),
                     child: Container(
                       width: 1.5,
                       height: 33.3,
-                      decoration: BoxDecoration(
-                        color: const Color(0xff535461),
+                      decoration: const BoxDecoration(
+                        color: Color(0xff535461),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(215.1, 142.6),
+                    offset: const Offset(215.1, 142.6),
                     child: SvgPicture.string(
                       _svg_rtkvsc,
                       allowDrawingOutsideViewBox: true,
@@ -1820,7 +1820,7 @@ class Onboarding1 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(176.0, 58.0),
+            offset: const Offset(176.0, 58.0),
             child:
                 // Adobe XD layer: 'Logo icon' (group)
                 SizedBox(
@@ -1833,28 +1833,28 @@ class Onboarding1 extends StatelessWidget {
                     child: Container(
                       width: 16.0,
                       height: 16.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(60.0),
                           bottomRight: Radius.circular(60.0),
                           bottomLeft: Radius.circular(60.0),
                         ),
-                        color: const Color(0x1a1a1824),
+                        color: Color(0x1a1a1824),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(8.0, 0.8),
+                    offset: const Offset(8.0, 0.8),
                     child: Container(
                       width: 16.0,
                       height: 16.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(60.0),
                           bottomRight: Radius.circular(60.0),
                           bottomLeft: Radius.circular(60.0),
                         ),
-                        color: const Color(0xff34c47c),
+                        color: Color(0xff34c47c),
                       ),
                     ),
                   ),

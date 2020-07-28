@@ -16,12 +16,12 @@ class Splash extends StatelessWidget {
           Container(
             width: 375.0,
             height: 812.0,
-            decoration: BoxDecoration(
-              color: const Color(0xffffffff),
+            decoration: const BoxDecoration(
+              color: Color(0xffffffff),
             ),
           ),
           Transform.translate(
-            offset: Offset(20.0, 15.0),
+            offset: const Offset(20.0, 15.0),
             child:
                 // Adobe XD layer: 'iOS elements' (group)
                 SizedBox(
@@ -30,8 +30,8 @@ class Splash extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
-                    size: Size(340.3, 788.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
+                    size: const Size(340.3, 788.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -39,8 +39,8 @@ class Splash extends StatelessWidget {
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
-                          size: Size(340.3, 16.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
+                          size: const Size(340.3, 16.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -50,8 +50,8 @@ class Splash extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(316.0, 2.3, 24.3, 11.3),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(316.0, 2.3, 24.3, 11.3),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 pinTop: true,
                                 pinBottom: true,
@@ -62,8 +62,8 @@ class Splash extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
+                                      size: const Size(24.3, 11.3),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -73,9 +73,9 @@ class Splash extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 22.0, 11.3),
-                                            size: Size(22.0, 11.3),
+                                            size: const Size(22.0, 11.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -89,9 +89,9 @@ class Splash extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 22.0, 11.3),
-                                            size: Size(22.0, 11.3),
+                                            size: const Size(22.0, 11.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -109,8 +109,8 @@ class Splash extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(23.0, 3.7, 1.3, 4.0),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(23.0, 3.7, 1.3, 4.0),
+                                      size: const Size(24.3, 11.3),
                                       pinRight: true,
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -119,9 +119,9 @@ class Splash extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 11.3, 14.0),
-                                            size: Size(1.3, 4.0),
+                                            size: const Size(1.3, 4.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -135,9 +135,9 @@ class Splash extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 1.3, 4.0),
-                                            size: Size(1.3, 4.0),
+                                            size: const Size(1.3, 4.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -155,8 +155,8 @@ class Splash extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(2.0, 2.0, 18.0, 7.3),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(2.0, 2.0, 18.0, 7.3),
+                                      size: const Size(24.3, 11.3),
                                       pinLeft: true,
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -165,9 +165,9 @@ class Splash extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 28.0, 17.3),
-                                            size: Size(18.0, 7.3),
+                                            size: const Size(18.0, 7.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -181,9 +181,9 @@ class Splash extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 18.0, 7.3),
-                                            size: Size(18.0, 7.3),
+                                            size: const Size(18.0, 7.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -203,8 +203,8 @@ class Splash extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(295.7, 2.3, 15.3, 11.0),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(295.7, 2.3, 15.3, 11.0),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 pinTop: true,
                                 fixedWidth: true,
@@ -215,8 +215,8 @@ class Splash extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 15.3, 11.0),
-                                      size: Size(15.3, 11.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 15.3, 11.0),
+                                      size: const Size(15.3, 11.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -226,9 +226,9 @@ class Splash extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 25.3, 21.0),
-                                            size: Size(15.3, 11.0),
+                                            size: const Size(15.3, 11.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -242,9 +242,9 @@ class Splash extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 15.3, 11.0),
-                                            size: Size(15.3, 11.0),
+                                            size: const Size(15.3, 11.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -264,8 +264,8 @@ class Splash extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(273.7, 2.7, 17.0, 10.7),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(273.7, 2.7, 17.0, 10.7),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 fixedWidth: true,
                                 fixedHeight: true,
@@ -275,8 +275,8 @@ class Splash extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 17.0, 10.7),
-                                      size: Size(17.0, 10.7),
+                                          const Rect.fromLTWH(0.0, 0.0, 17.0, 10.7),
+                                      size: const Size(17.0, 10.7),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -286,9 +286,9 @@ class Splash extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 27.0, 20.7),
-                                            size: Size(17.0, 10.7),
+                                            size: const Size(17.0, 10.7),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -302,9 +302,9 @@ class Splash extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 17.0, 10.7),
-                                            size: Size(17.0, 10.7),
+                                            size: const Size(17.0, 10.7),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -324,8 +324,8 @@ class Splash extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
+                                size: const Size(340.3, 16.0),
                                 pinLeft: true,
                                 pinTop: true,
                                 pinBottom: true,
@@ -336,8 +336,8 @@ class Splash extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
-                                      size: Size(54.0, 16.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
+                                      size: const Size(54.0, 16.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -352,8 +352,8 @@ class Splash extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(12.8, 4.9, 27.5, 10.3),
-                                      size: Size(54.0, 16.0),
+                                          const Rect.fromLTWH(12.8, 4.9, 27.5, 10.3),
+                                      size: const Size(54.0, 16.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinBottom: true,
@@ -376,8 +376,8 @@ class Splash extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(101.0, 783.0, 134.0, 5.0),
-                    size: Size(340.3, 788.0),
+                    bounds: const Rect.fromLTWH(101.0, 783.0, 134.0, 5.0),
+                    size: const Size(340.3, 788.0),
                     pinBottom: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -393,7 +393,7 @@ class Splash extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 710.0),
+            offset: const Offset(30.0, 710.0),
             child:
                 // Adobe XD layer: 'Secondary button' (group)
                 SizedBox(
@@ -402,8 +402,8 @@ class Splash extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 315.0, 48.0),
-                    size: Size(315.0, 48.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 315.0, 48.0),
+                    size: const Size(315.0, 48.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -416,16 +416,16 @@ class Splash extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(134.0, 19.0, 48.0, 14.0),
-                    size: Size(315.0, 48.0),
+                    bounds: const Rect.fromLTWH(134.0, 19.0, 48.0, 14.0),
+                    size: const Size(315.0, 48.0),
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'Sign up',
                       style: TextStyle(
                         fontFamily: 'SF Pro Display',
                         fontSize: 14,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         height: 1.4285714285714286,
                       ),
                       textAlign: TextAlign.center,
@@ -436,7 +436,7 @@ class Splash extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 653.0),
+            offset: const Offset(30.0, 653.0),
             child:
                 // Adobe XD layer: 'Primary Button' (group)
                 SizedBox(
@@ -445,8 +445,8 @@ class Splash extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 315.0, 46.0),
-                    size: Size(315.0, 46.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 315.0, 46.0),
+                    size: const Size(315.0, 46.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -459,17 +459,17 @@ class Splash extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(134.0, 17.0, 48.0, 16.0),
-                    size: Size(315.0, 46.0),
+                    bounds: const Rect.fromLTWH(134.0, 17.0, 48.0, 16.0),
+                    size: const Size(315.0, 46.0),
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: 'Filter' (text)
-                        Text(
+                        const Text(
                       'Sign in',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 16,
-                        color: const Color(0xffffffff),
+                        color: Color(0xffffffff),
                         letterSpacing: -0.16,
                       ),
                       textAlign: TextAlign.center,
@@ -480,7 +480,7 @@ class Splash extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(33.0, 458.0),
+            offset: const Offset(33.0, 458.0),
             child:
                 // Adobe XD layer: 'Title & Subtitle' (group)
                 SizedBox(
@@ -489,34 +489,34 @@ class Splash extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 50.0, 309.0, 44.0),
-                    size: Size(309.0, 94.0),
+                    bounds: const Rect.fromLTWH(0.0, 50.0, 309.0, 44.0),
+                    size: const Size(309.0, 94.0),
                     pinLeft: true,
                     pinRight: true,
                     pinBottom: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'Craving for your favourite food? Takeaway will deliver it, wherever you are!',
                       style: TextStyle(
                         fontFamily: 'SF Pro Display',
                         fontSize: 16,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         height: 1.5,
                       ),
                       textAlign: TextAlign.center,
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(18.0, 0.0, 255.0, 30.0),
-                    size: Size(309.0, 94.0),
+                    bounds: const Rect.fromLTWH(18.0, 0.0, 255.0, 30.0),
+                    size: const Size(309.0, 94.0),
                     child: Transform.rotate(
                       angle: 0.0,
-                      child: Text(
+                      child: const Text(
                         'Welcome to hngry',
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 30,
-                          color: const Color(0xff1a1824),
+                          color: Color(0xff1a1824),
                           letterSpacing: -0.3,
                           fontWeight: FontWeight.w700,
                           height: 1.2,
@@ -530,7 +530,7 @@ class Splash extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(48.0, 179.0),
+            offset: const Offset(48.0, 179.0),
             child:
                 // Adobe XD layer: 'Image' (group)
                 SizedBox(
@@ -543,19 +543,19 @@ class Splash extends StatelessWidget {
                     allowDrawingOutsideViewBox: true,
                   ),
                   Transform.translate(
-                    offset: Offset(49.8, 205.1),
+                    offset: const Offset(49.8, 205.1),
                     child: Container(
                       width: 168.6,
                       height: 22.8,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a34c47c),
+                        color: Color(0x1a34c47c),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(178.3, 80.3),
+                    offset: const Offset(178.3, 80.3),
                     child: Container(
                       width: 2.5,
                       height: 20.2,
@@ -566,7 +566,7 @@ class Splash extends StatelessWidget {
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(96.6, 64.5),
+                    offset: const Offset(96.6, 64.5),
                     child: Container(
                       width: 1.4,
                       height: 6.7,
@@ -577,7 +577,7 @@ class Splash extends StatelessWidget {
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(96.6, 76.7),
+                    offset: const Offset(96.6, 76.7),
                     child: Container(
                       width: 1.6,
                       height: 11.6,
@@ -588,7 +588,7 @@ class Splash extends StatelessWidget {
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(96.6, 92.3),
+                    offset: const Offset(96.6, 92.3),
                     child: Container(
                       width: 1.5,
                       height: 11.7,
@@ -599,7 +599,7 @@ class Splash extends StatelessWidget {
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(97.4, 42.5),
+                    offset: const Offset(97.4, 42.5),
                     child: Container(
                       width: 82.2,
                       height: 167.0,
@@ -610,14 +610,14 @@ class Splash extends StatelessWidget {
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(102.5, 46.8),
+                    offset: const Offset(102.5, 46.8),
                     child: SvgPicture.string(
                       _svg_n84o96,
                       allowDrawingOutsideViewBox: true,
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(130.6, 47.4),
+                    offset: const Offset(130.6, 47.4),
                     child: Container(
                       width: 11.5,
                       height: 2.3,
@@ -628,115 +628,115 @@ class Splash extends StatelessWidget {
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(143.8, 47.3),
+                    offset: const Offset(143.8, 47.3),
                     child: Container(
                       width: 2.6,
                       height: 2.6,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xffe6e8ec),
+                        color: Color(0xffe6e8ec),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(174.7, 27.8),
+                    offset: const Offset(174.7, 27.8),
                     child: SvgPicture.string(
                       _svg_fk6isu,
                       allowDrawingOutsideViewBox: true,
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(232.2, 213.1),
+                    offset: const Offset(232.2, 213.1),
                     child: Container(
                       width: 14.9,
                       height: 2.5,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a34c47c),
+                        color: Color(0x1a34c47c),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(17.8, 223.5),
+                    offset: const Offset(17.8, 223.5),
                     child: Container(
                       width: 14.9,
                       height: 2.5,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a34c47c),
+                        color: Color(0x1a34c47c),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(46.7, 230.2),
+                    offset: const Offset(46.7, 230.2),
                     child: Container(
                       width: 14.9,
                       height: 2.5,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a34c47c),
+                        color: Color(0x1a34c47c),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(32.7, 51.6),
+                    offset: const Offset(32.7, 51.6),
                     child: SvgPicture.string(
                       _svg_fwsf6x,
                       allowDrawingOutsideViewBox: true,
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(72.3, 62.3),
+                    offset: const Offset(72.3, 62.3),
                     child: Container(
                       width: 24.8,
                       height: 29.4,
-                      decoration: BoxDecoration(
-                        color: const Color(0xff474463),
+                      decoration: const BoxDecoration(
+                        color: Color(0xff474463),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(72.3, 62.4),
+                    offset: const Offset(72.3, 62.4),
                     child: Container(
                       width: 24.8,
                       height: 29.4,
-                      decoration: BoxDecoration(
-                        color: const Color(0x1a000000),
+                      decoration: const BoxDecoration(
+                        color: Color(0x1a000000),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(33.9, 60.9),
+                    offset: const Offset(33.9, 60.9),
                     child: SvgPicture.string(
                       _svg_c1jypm,
                       allowDrawingOutsideViewBox: true,
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(76.4, 62.4),
+                    offset: const Offset(76.4, 62.4),
                     child: Container(
                       width: 15.4,
                       height: 15.4,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xffffbdc6),
+                        color: Color(0xffffbdc6),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(67.2, 52.5),
+                    offset: const Offset(67.2, 52.5),
                     child: SvgPicture.string(
                       _svg_mszw4f,
                       allowDrawingOutsideViewBox: true,
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(38.4, 60.8),
+                    offset: const Offset(38.4, 60.8),
                     child: SizedBox(
                       width: 66.0,
                       height: 61.0,
@@ -751,26 +751,26 @@ class Splash extends StatelessWidget {
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(67.2, 52.2),
+                    offset: const Offset(67.2, 52.2),
                     child: SvgPicture.string(
                       _svg_lzn1xl,
                       allowDrawingOutsideViewBox: true,
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(123.5, 112.5),
+                    offset: const Offset(123.5, 112.5),
                     child: Container(
                       width: 31.1,
                       height: 31.1,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xffffffff),
+                        color: Color(0xffffffff),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(117.9, 105.2),
+                    offset: const Offset(117.9, 105.2),
                     child: SvgPicture.string(
                       _svg_xud4kc,
                       allowDrawingOutsideViewBox: true,
@@ -781,7 +781,7 @@ class Splash extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(176.0, 58.0),
+            offset: const Offset(176.0, 58.0),
             child:
                 // Adobe XD layer: 'Logo icon' (group)
                 SizedBox(
@@ -794,28 +794,28 @@ class Splash extends StatelessWidget {
                     child: Container(
                       width: 16.0,
                       height: 16.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(60.0),
                           bottomRight: Radius.circular(60.0),
                           bottomLeft: Radius.circular(60.0),
                         ),
-                        color: const Color(0x1a1a1824),
+                        color: Color(0x1a1a1824),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(8.0, 0.8),
+                    offset: const Offset(8.0, 0.8),
                     child: Container(
                       width: 16.0,
                       height: 16.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(60.0),
                           bottomRight: Radius.circular(60.0),
                           bottomLeft: Radius.circular(60.0),
                         ),
-                        color: const Color(0xff34c47c),
+                        color: Color(0xff34c47c),
                       ),
                     ),
                   ),

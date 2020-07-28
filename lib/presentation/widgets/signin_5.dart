@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:adobe_xd/pinned.dart';
 import 'dart:ui' as ui;
+
+import 'package:adobe_xd/pinned.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class Signin5 extends StatelessWidget {
@@ -17,12 +18,12 @@ class Signin5 extends StatelessWidget {
           Container(
             width: 375.0,
             height: 812.0,
-            decoration: BoxDecoration(
-              color: const Color(0xffffffff),
+            decoration: const BoxDecoration(
+              color: Color(0xffffffff),
             ),
           ),
           Transform.translate(
-            offset: Offset(0.0, 15.0),
+            offset: const Offset(0.0, 15.0),
             child:
                 // Adobe XD layer: 'iOS elements' (group)
                 SizedBox(
@@ -31,8 +32,8 @@ class Signin5 extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(20.0, 0.0, 340.3, 16.0),
-                    size: Size(375.0, 797.0),
+                    bounds: const Rect.fromLTWH(20.0, 0.0, 340.3, 16.0),
+                    size: const Size(375.0, 797.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -40,8 +41,8 @@ class Signin5 extends StatelessWidget {
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
-                          size: Size(340.3, 16.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
+                          size: const Size(340.3, 16.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -51,8 +52,8 @@ class Signin5 extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(316.0, 2.3, 24.3, 11.3),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(316.0, 2.3, 24.3, 11.3),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 pinTop: true,
                                 pinBottom: true,
@@ -63,8 +64,8 @@ class Signin5 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
+                                      size: const Size(24.3, 11.3),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -74,9 +75,9 @@ class Signin5 extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 22.0, 11.3),
-                                            size: Size(22.0, 11.3),
+                                            size: const Size(22.0, 11.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -90,9 +91,9 @@ class Signin5 extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 22.0, 11.3),
-                                            size: Size(22.0, 11.3),
+                                            size: const Size(22.0, 11.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -110,8 +111,8 @@ class Signin5 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(23.0, 3.7, 1.3, 4.0),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(23.0, 3.7, 1.3, 4.0),
+                                      size: const Size(24.3, 11.3),
                                       pinRight: true,
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -120,9 +121,9 @@ class Signin5 extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 11.3, 14.0),
-                                            size: Size(1.3, 4.0),
+                                            size: const Size(1.3, 4.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -136,9 +137,9 @@ class Signin5 extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 1.3, 4.0),
-                                            size: Size(1.3, 4.0),
+                                            size: const Size(1.3, 4.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -156,8 +157,8 @@ class Signin5 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(2.0, 2.0, 18.0, 7.3),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(2.0, 2.0, 18.0, 7.3),
+                                      size: const Size(24.3, 11.3),
                                       pinLeft: true,
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -166,9 +167,9 @@ class Signin5 extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 28.0, 17.3),
-                                            size: Size(18.0, 7.3),
+                                            size: const Size(18.0, 7.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -182,9 +183,9 @@ class Signin5 extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 18.0, 7.3),
-                                            size: Size(18.0, 7.3),
+                                            size: const Size(18.0, 7.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -204,8 +205,8 @@ class Signin5 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(295.7, 2.3, 15.3, 11.0),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(295.7, 2.3, 15.3, 11.0),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 pinTop: true,
                                 fixedWidth: true,
@@ -216,8 +217,8 @@ class Signin5 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 15.3, 11.0),
-                                      size: Size(15.3, 11.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 15.3, 11.0),
+                                      size: const Size(15.3, 11.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -227,9 +228,9 @@ class Signin5 extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 25.3, 21.0),
-                                            size: Size(15.3, 11.0),
+                                            size: const Size(15.3, 11.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -243,9 +244,9 @@ class Signin5 extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 15.3, 11.0),
-                                            size: Size(15.3, 11.0),
+                                            size: const Size(15.3, 11.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -265,8 +266,8 @@ class Signin5 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(273.7, 2.7, 17.0, 10.7),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(273.7, 2.7, 17.0, 10.7),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 fixedWidth: true,
                                 fixedHeight: true,
@@ -276,8 +277,8 @@ class Signin5 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 17.0, 10.7),
-                                      size: Size(17.0, 10.7),
+                                          const Rect.fromLTWH(0.0, 0.0, 17.0, 10.7),
+                                      size: const Size(17.0, 10.7),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -287,9 +288,9 @@ class Signin5 extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 27.0, 20.7),
-                                            size: Size(17.0, 10.7),
+                                            size: const Size(17.0, 10.7),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -303,9 +304,9 @@ class Signin5 extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 17.0, 10.7),
-                                            size: Size(17.0, 10.7),
+                                            size: const Size(17.0, 10.7),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -325,8 +326,8 @@ class Signin5 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
+                                size: const Size(340.3, 16.0),
                                 pinLeft: true,
                                 pinTop: true,
                                 pinBottom: true,
@@ -337,8 +338,8 @@ class Signin5 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
-                                      size: Size(54.0, 16.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
+                                      size: const Size(54.0, 16.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -353,8 +354,8 @@ class Signin5 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(12.8, 4.9, 27.5, 10.3),
-                                      size: Size(54.0, 16.0),
+                                          const Rect.fromLTWH(12.8, 4.9, 27.5, 10.3),
+                                      size: const Size(54.0, 16.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinBottom: true,
@@ -377,8 +378,8 @@ class Signin5 extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 506.0, 375.0, 291.0),
-                    size: Size(375.0, 797.0),
+                    bounds: const Rect.fromLTWH(0.0, 506.0, 375.0, 291.0),
+                    size: const Size(375.0, 797.0),
                     pinLeft: true,
                     pinRight: true,
                     pinBottom: true,
@@ -388,8 +389,8 @@ class Signin5 extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(121.0, 277.0, 134.0, 5.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(121.0, 277.0, 134.0, 5.0),
+                          size: const Size(375.0, 291.0),
                           pinBottom: true,
                           fixedWidth: true,
                           fixedHeight: true,
@@ -401,8 +402,8 @@ class Signin5 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 291.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 291.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -414,8 +415,8 @@ class Signin5 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 291.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 291.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -433,8 +434,8 @@ class Signin5 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(121.0, 277.0, 134.0, 5.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(121.0, 277.0, 134.0, 5.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinBottom: true,
@@ -449,8 +450,8 @@ class Signin5 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(330.0, 251.3, 15.0, 14.7),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(330.0, 251.3, 15.0, 14.7),
+                          size: const Size(375.0, 291.0),
                           pinRight: true,
                           pinBottom: true,
                           fixedWidth: true,
@@ -464,8 +465,8 @@ class Signin5 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(332.7, 264.3, 1.7, 1.7),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(332.7, 264.3, 1.7, 1.7),
+                          size: const Size(375.0, 291.0),
                           pinRight: true,
                           pinBottom: true,
                           fixedWidth: true,
@@ -479,8 +480,8 @@ class Signin5 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(340.7, 264.3, 1.7, 1.7),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(340.7, 264.3, 1.7, 1.7),
+                          size: const Size(375.0, 291.0),
                           pinRight: true,
                           pinBottom: true,
                           fixedWidth: true,
@@ -494,8 +495,8 @@ class Signin5 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(333.0, 241.0, 9.0, 18.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(333.0, 241.0, 9.0, 18.0),
+                          size: const Size(375.0, 291.0),
                           pinRight: true,
                           pinBottom: true,
                           fixedWidth: true,
@@ -509,8 +510,8 @@ class Signin5 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(334.7, 242.7, 5.7, 14.7),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(334.7, 242.7, 5.7, 14.7),
+                          size: const Size(375.0, 291.0),
                           pinRight: true,
                           pinBottom: true,
                           fixedWidth: true,
@@ -524,8 +525,8 @@ class Signin5 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(25.0, 240.0, 27.0, 27.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(25.0, 240.0, 27.0, 27.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinBottom: true,
                           fixedWidth: true,
@@ -539,8 +540,8 @@ class Signin5 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(32.7, 247.6, 3.2, 3.1),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(32.7, 247.6, 3.2, 3.1),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinBottom: true,
                           fixedWidth: true,
@@ -554,8 +555,8 @@ class Signin5 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(29.5, 254.9, 18.0, 8.1),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(29.5, 254.9, 18.0, 8.1),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinBottom: true,
                           fixedWidth: true,
@@ -569,8 +570,8 @@ class Signin5 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(31.1, 256.3, 14.9, 2.9),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(31.1, 256.3, 14.9, 2.9),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinBottom: true,
                           fixedWidth: true,
@@ -584,8 +585,8 @@ class Signin5 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(41.2, 247.6, 3.2, 3.2),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(41.2, 247.6, 3.2, 3.2),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinBottom: true,
                           fixedWidth: true,
@@ -599,8 +600,8 @@ class Signin5 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(284.0, 170.0, 88.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(284.0, 170.0, 88.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinRight: true,
                           fixedWidth: true,
                           fixedHeight: true,
@@ -611,8 +612,8 @@ class Signin5 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(284.0, 170.0, 88.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(284.0, 170.0, 88.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -623,19 +624,19 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xffadb3bc),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const [
+                               BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(284.0, 170.0, 88.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(284.0, 170.0, 88.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -643,22 +644,22 @@ class Signin5 extends StatelessWidget {
                           child:
                               // Adobe XD layer: '↳ Links to' (shape)
                               Container(
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(284.0, 181.0, 88.0, 21.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(284.0, 181.0, 88.0, 21.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           child:
                               // Adobe XD layer: '↳ Label' (text)
-                              Text(
+                              const Text(
                             'Go',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 16,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.005119999885559082,
                               height: 1.3125,
                             ),
@@ -666,8 +667,8 @@ class Signin5 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(96.0, 170.0, 182.0, 33.9),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(96.0, 170.0, 182.0, 33.9),
+                          size: const Size(375.0, 291.0),
                           fixedWidth: true,
                           fixedHeight: true,
                           child:
@@ -677,8 +678,8 @@ class Signin5 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(96.0, 170.0, 182.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(96.0, 170.0, 182.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -689,29 +690,29 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xfffcfcfe),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const [
+                               BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(96.0, 180.7, 182.0, 21.3),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(96.0, 180.7, 182.0, 21.3),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           child:
                               // Adobe XD layer: '↳ Label' (text)
-                              Text(
+                              const Text(
                             'space',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 16,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.005119999885559082,
                               height: 1.3125,
                             ),
@@ -719,8 +720,8 @@ class Signin5 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(3.0, 170.0, 87.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(3.0, 170.0, 87.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           fixedWidth: true,
                           fixedHeight: true,
@@ -731,8 +732,8 @@ class Signin5 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(3.0, 170.0, 87.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(3.0, 170.0, 87.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -743,29 +744,29 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xffadb3bc),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const [
+                               BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(3.0, 182.0, 87.0, 21.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(3.0, 182.0, 87.0, 21.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           child:
                               // Adobe XD layer: '↳ Label' (text)
-                              Text(
+                              const Text(
                             '123',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 16,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.32,
                               height: 1.3125,
                             ),
@@ -773,8 +774,8 @@ class Signin5 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(330.0, 116.0, 42.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(330.0, 116.0, 42.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinRight: true,
                           fixedWidth: true,
                           fixedHeight: true,
@@ -785,8 +786,8 @@ class Signin5 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(330.0, 116.0, 42.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(330.0, 116.0, 42.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -797,29 +798,29 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xffadb3bc),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const [
+                               BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(330.0, 128.0, 42.0, 21.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(330.0, 128.0, 42.0, 21.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           child:
                               // Adobe XD layer: '↳ Label' (text)
-                              Text(
+                              const Text(
                             ' ',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 16,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.32,
                               height: 1.3125,
                             ),
@@ -827,8 +828,8 @@ class Signin5 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(339.7, 128.7, 22.7, 17.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(339.7, 128.7, 22.7, 17.0),
+                          size: const Size(375.0, 291.0),
                           pinRight: true,
                           fixedWidth: true,
                           fixedHeight: true,
@@ -841,8 +842,8 @@ class Signin5 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(349.8, 139.5, 1.1, 1.1),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(349.8, 139.5, 1.1, 1.1),
+                          size: const Size(375.0, 291.0),
                           pinRight: true,
                           fixedWidth: true,
                           fixedHeight: true,
@@ -855,8 +856,8 @@ class Signin5 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(355.7, 139.5, 1.1, 1.1),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(355.7, 139.5, 1.1, 1.1),
+                          size: const Size(375.0, 291.0),
                           pinRight: true,
                           fixedWidth: true,
                           fixedHeight: true,
@@ -869,8 +870,8 @@ class Signin5 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(349.9, 133.6, 1.1, 1.1),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(349.9, 133.6, 1.1, 1.1),
+                          size: const Size(375.0, 291.0),
                           pinRight: true,
                           fixedWidth: true,
                           fixedHeight: true,
@@ -883,8 +884,8 @@ class Signin5 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(3.0, 116.0, 42.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(3.0, 116.0, 42.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           fixedWidth: true,
                           fixedHeight: true,
@@ -895,8 +896,8 @@ class Signin5 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(3.0, 116.0, 42.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(3.0, 116.0, 42.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -907,36 +908,35 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xfffcfcfe),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const[
+                                 BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(20.7, 128.0, 6.0, 22.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(20.7, 128.0, 6.0, 22.0),
+                          size: const Size(375.0, 291.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Symbol' (text)
-                              Text(
+                              const Text(
                             ' ',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 22,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.5423790893554687,
                             ),
                             textAlign: TextAlign.center,
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(14.7, 128.2, 18.9, 16.5),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(14.7, 128.2, 18.9, 16.5),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           fixedWidth: true,
                           fixedHeight: true,
@@ -949,8 +949,8 @@ class Signin5 extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(285.0, 116.0, 32.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(285.0, 116.0, 32.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -961,36 +961,36 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xfffcfcfe),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const [
+                               BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(292.5, 128.0, 18.0, 22.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(292.5, 128.0, 18.0, 22.0),
+                          size: const Size(375.0, 291.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Symbol' (text)
-                              Text(
+                              const Text(
                             'M',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 22.5,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.5547058868408203,
                             ),
                             textAlign: TextAlign.center,
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(247.0, 116.0, 32.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(247.0, 116.0, 32.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1001,36 +1001,36 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xfffcfcfe),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const [
+                               BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(255.5, 128.0, 16.0, 22.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(255.5, 128.0, 16.0, 22.0),
+                          size: const Size(375.0, 291.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Symbol' (text)
-                              Text(
+                              const Text(
                             'N',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 22.5,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.5547058868408203,
                             ),
                             textAlign: TextAlign.center,
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(209.0, 116.0, 32.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(209.0, 116.0, 32.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1041,36 +1041,36 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xfffcfcfe),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const [
+                               BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(217.5, 128.0, 16.0, 22.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(217.5, 128.0, 16.0, 22.0),
+                          size: const Size(375.0, 291.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Symbol' (text)
-                              Text(
+                              const Text(
                             'B',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 22.5,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.5547058868408203,
                             ),
                             textAlign: TextAlign.center,
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(172.0, 116.0, 32.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(172.0, 116.0, 32.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1081,36 +1081,36 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xfffcfcfe),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const [
+                               BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(180.5, 128.0, 16.0, 22.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(180.5, 128.0, 16.0, 22.0),
+                          size: const Size(375.0, 291.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Symbol' (text)
-                              Text(
+                              const Text(
                             'V',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 22.5,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.5547058868408203,
                             ),
                             textAlign: TextAlign.center,
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(134.0, 116.0, 32.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(134.0, 116.0, 32.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1121,36 +1121,36 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xfffcfcfe),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const [
+                               BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(142.5, 128.0, 16.0, 22.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(142.5, 128.0, 16.0, 22.0),
+                          size: const Size(375.0, 291.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Symbol' (text)
-                              Text(
+                              const Text(
                             'C',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 22.5,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.5547058868408203,
                             ),
                             textAlign: TextAlign.center,
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(97.0, 116.0, 32.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(97.0, 116.0, 32.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1161,36 +1161,36 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xfffcfcfe),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const [
+                               BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(105.5, 128.0, 16.0, 22.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(105.5, 128.0, 16.0, 22.0),
+                          size: const Size(375.0, 291.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Symbol' (text)
-                              Text(
+                              const Text(
                             'X',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 22.5,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.5547058868408203,
                             ),
                             textAlign: TextAlign.center,
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(59.0, 116.0, 32.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(59.0, 116.0, 32.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1201,36 +1201,36 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xfffcfcfe),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const [
+                               BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(68.5, 128.0, 14.0, 22.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(68.5, 128.0, 14.0, 22.0),
+                          size: const Size(375.0, 291.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Symbol' (text)
-                              Text(
+                              const Text(
                             'Z',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 22.5,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.5547058868408203,
                             ),
                             textAlign: TextAlign.center,
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(322.0, 62.0, 32.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(322.0, 62.0, 32.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1241,36 +1241,36 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xfffcfcfe),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const [
+                               BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(332.5, 74.0, 12.0, 22.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(332.5, 74.0, 12.0, 22.0),
+                          size: const Size(375.0, 291.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Symbol' (text)
-                              Text(
+                              const Text(
                             'L',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 22.5,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.5547058868408203,
                             ),
                             textAlign: TextAlign.center,
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(284.0, 62.0, 32.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(284.0, 62.0, 32.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1281,36 +1281,36 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xfffcfcfe),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const [
+                               BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(292.5, 74.0, 16.0, 22.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(292.5, 74.0, 16.0, 22.0),
+                          size: const Size(375.0, 291.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Symbol' (text)
-                              Text(
+                              const Text(
                             'K',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 22.5,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.5547058868408203,
                             ),
                             textAlign: TextAlign.center,
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(247.0, 62.0, 32.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(247.0, 62.0, 32.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1321,36 +1321,36 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xfffcfcfe),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const [
+                               BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(257.5, 74.0, 12.0, 22.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(257.5, 74.0, 12.0, 22.0),
+                          size: const Size(375.0, 291.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Symbol' (text)
-                              Text(
+                              const Text(
                             'J',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 22.5,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.5547058868408203,
                             ),
                             textAlign: TextAlign.center,
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(209.0, 62.0, 32.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(209.0, 62.0, 32.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1361,36 +1361,36 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xfffcfcfe),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const [
+                               BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(217.5, 74.0, 16.0, 22.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(217.5, 74.0, 16.0, 22.0),
+                          size: const Size(375.0, 291.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Symbol' (text)
-                              Text(
+                              const Text(
                             'H',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 22.5,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.5547058868408203,
                             ),
                             textAlign: TextAlign.center,
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(172.0, 62.0, 32.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(172.0, 62.0, 32.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1401,36 +1401,36 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xfffcfcfe),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const [
+                               BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(179.5, 74.0, 18.0, 22.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(179.5, 74.0, 18.0, 22.0),
+                          size: const Size(375.0, 291.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Symbol' (text)
-                              Text(
+                              const Text(
                             'G',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 22.5,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.5547058868408203,
                             ),
                             textAlign: TextAlign.center,
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(134.0, 62.0, 32.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(134.0, 62.0, 32.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1441,36 +1441,36 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xfffcfcfe),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const [
+                               BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(143.5, 74.0, 14.0, 22.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(143.5, 74.0, 14.0, 22.0),
+                          size: const Size(375.0, 291.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Symbol' (text)
-                              Text(
+                              const Text(
                             'F',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 22.5,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.5547058868408203,
                             ),
                             textAlign: TextAlign.center,
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(97.0, 62.0, 32.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(97.0, 62.0, 32.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1481,36 +1481,36 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xfffcfcfe),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const [
+                               BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(105.5, 74.0, 16.0, 22.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(105.5, 74.0, 16.0, 22.0),
+                          size: const Size(375.0, 291.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Symbol' (text)
-                              Text(
+                              const Text(
                             'D',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 22.5,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.5547058868408203,
                             ),
                             textAlign: TextAlign.center,
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(59.0, 62.0, 32.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(59.0, 62.0, 32.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1521,36 +1521,36 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xfffcfcfe),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const [
+                               BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(67.5, 74.0, 16.0, 22.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(67.5, 74.0, 16.0, 22.0),
+                          size: const Size(375.0, 291.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Symbol' (text)
-                              Text(
+                              const Text(
                             'S',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 22.5,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.5547058868408203,
                             ),
                             textAlign: TextAlign.center,
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(22.0, 62.0, 32.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(22.0, 62.0, 32.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1561,36 +1561,36 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xfffcfcfe),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const [
+                               BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(30.5, 74.0, 16.0, 22.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(30.5, 74.0, 16.0, 22.0),
+                          size: const Size(375.0, 291.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Symbol' (text)
-                              Text(
+                              const Text(
                             'A',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 22.5,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.5547058868408203,
                             ),
                             textAlign: TextAlign.center,
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(340.0, 8.0, 32.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(340.0, 8.0, 32.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1601,36 +1601,36 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xfffcfcfe),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const [
+                               BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(348.5, 20.0, 16.0, 22.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(348.5, 20.0, 16.0, 22.0),
+                          size: const Size(375.0, 291.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Symbol' (text)
-                              Text(
+                              const Text(
                             'P',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 22.5,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.5547058868408203,
                             ),
                             textAlign: TextAlign.center,
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(303.0, 8.0, 32.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(303.0, 8.0, 32.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1641,36 +1641,36 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xfffcfcfe),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const [
+                               BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(310.5, 20.0, 18.0, 22.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(310.5, 20.0, 18.0, 22.0),
+                          size: const Size(375.0, 291.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Symbol' (text)
-                              Text(
+                              const Text(
                             'O',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 22.5,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.5547058868408203,
                             ),
                             textAlign: TextAlign.center,
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(265.0, 8.0, 32.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(265.0, 8.0, 32.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1681,36 +1681,36 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xfffcfcfe),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const [
+                               BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(278.5, 20.0, 6.0, 22.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(278.5, 20.0, 6.0, 22.0),
+                          size: const Size(375.0, 291.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Symbol' (text)
-                              Text(
+                              const Text(
                             'I',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 22.5,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.5547058868408203,
                             ),
                             textAlign: TextAlign.center,
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(228.0, 8.0, 32.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(228.0, 8.0, 32.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1721,36 +1721,36 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xfffcfcfe),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const [
+                               BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(236.5, 20.0, 16.0, 22.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(236.5, 20.0, 16.0, 22.0),
+                          size: const Size(375.0, 291.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Symbol' (text)
-                              Text(
+                              const Text(
                             'U',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 22.5,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.5547058868408203,
                             ),
                             textAlign: TextAlign.center,
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(190.0, 8.0, 32.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(190.0, 8.0, 32.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1761,36 +1761,36 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xfffcfcfe),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const [
+                               BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(198.5, 20.0, 16.0, 22.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(198.5, 20.0, 16.0, 22.0),
+                          size: const Size(375.0, 291.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Symbol' (text)
-                              Text(
+                              const Text(
                             'Y',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 22.5,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.5547058868408203,
                             ),
                             textAlign: TextAlign.center,
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(153.0, 8.0, 32.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(153.0, 8.0, 32.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1801,36 +1801,36 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xfffcfcfe),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const [
+                               BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(162.5, 20.0, 14.0, 22.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(162.5, 20.0, 14.0, 22.0),
+                          size: const Size(375.0, 291.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Symbol' (text)
-                              Text(
+                              const Text(
                             'T',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 22.5,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.5547058868408203,
                             ),
                             textAlign: TextAlign.center,
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(115.0, 8.0, 32.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(115.0, 8.0, 32.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1841,36 +1841,36 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xfffcfcfe),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const [
+                               BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(123.5, 20.0, 16.0, 22.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(123.5, 20.0, 16.0, 22.0),
+                          size: const Size(375.0, 291.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Symbol' (text)
-                              Text(
+                              const Text(
                             'R',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 22.5,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.5547058868408203,
                             ),
                             textAlign: TextAlign.center,
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(78.0, 8.0, 32.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(78.0, 8.0, 32.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1881,36 +1881,36 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xfffcfcfe),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const[
+                                 BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(86.5, 20.0, 16.0, 22.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(86.5, 20.0, 16.0, 22.0),
+                          size: const Size(375.0, 291.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Symbol' (text)
-                              Text(
+                              const Text(
                             'E',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 22.5,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.5547058868408203,
                             ),
                             textAlign: TextAlign.center,
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(40.0, 8.0, 32.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(40.0, 8.0, 32.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1921,36 +1921,36 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xfffcfcfe),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const [
+                               BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(45.5, 20.0, 22.0, 22.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(45.5, 20.0, 22.0, 22.0),
+                          size: const Size(375.0, 291.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Symbol' (text)
-                              Text(
+                              const Text(
                             'W',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 22.5,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.5547058868408203,
                             ),
                             textAlign: TextAlign.center,
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(3.0, 8.0, 32.0, 42.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(3.0, 8.0, 32.0, 42.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1961,28 +1961,28 @@ class Signin5 extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(4.6),
                               color: const Color(0xfffcfcfe),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: const Color(0xff898a8d),
+                              boxShadow: const [
+                               BoxShadow(
+                                  color: Color(0xff898a8d),
                                   offset: Offset(0, 1),
-                                  blurRadius: 0,
+                                  
                                 ),
                               ],
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(10.5, 20.0, 18.0, 22.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(10.5, 20.0, 18.0, 22.0),
+                          size: const Size(375.0, 291.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Symbol' (text)
-                              Text(
+                              const Text(
                             'Q',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 22.5,
-                              color: const Color(0xff000000),
+                              color: Color(0xff000000),
                               letterSpacing: -0.5547058868408203,
                             ),
                             textAlign: TextAlign.center,
@@ -1996,7 +1996,7 @@ class Signin5 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 444.0),
+            offset: const Offset(30.0, 444.0),
             child:
                 // Adobe XD layer: 'Primary Button' (group)
                 SizedBox(
@@ -2005,8 +2005,8 @@ class Signin5 extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 315.0, 46.0),
-                    size: Size(315.0, 46.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 315.0, 46.0),
+                    size: const Size(315.0, 46.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -2019,17 +2019,17 @@ class Signin5 extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(134.0, 17.0, 48.0, 16.0),
-                    size: Size(315.0, 46.0),
+                    bounds: const Rect.fromLTWH(134.0, 17.0, 48.0, 16.0),
+                    size: const Size(315.0, 46.0),
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: 'Filter' (text)
-                        Text(
+                        const Text(
                       'Sign in',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 16,
-                        color: const Color(0xffffffff),
+                        color: Color(0xffffffff),
                         letterSpacing: -0.16,
                       ),
                       textAlign: TextAlign.center,
@@ -2040,7 +2040,7 @@ class Signin5 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 381.0),
+            offset: const Offset(30.0, 381.0),
             child:
                 // Adobe XD layer: 'Secondary button' (group)
                 SizedBox(
@@ -2049,8 +2049,8 @@ class Signin5 extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 315.0, 48.0),
-                    size: Size(315.0, 48.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 315.0, 48.0),
+                    size: const Size(315.0, 48.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -2063,25 +2063,25 @@ class Signin5 extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(102.0, 18.0, 112.0, 14.0),
-                    size: Size(315.0, 48.0),
+                    bounds: const Rect.fromLTWH(102.0, 18.0, 112.0, 14.0),
+                    size: const Size(315.0, 48.0),
                     fixedWidth: true,
                     fixedHeight: true,
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 112.0, 14.0),
-                          size: Size(112.0, 14.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 112.0, 14.0),
+                          size: const Size(112.0, 14.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
                           pinBottom: true,
-                          child: Text(
+                          child: const Text(
                             'Forgot password?',
                             style: TextStyle(
                               fontFamily: 'SF Pro Display',
                               fontSize: 14,
-                              color: const Color(0xff1a1824),
+                              color: Color(0xff1a1824),
                               height: 1.4285714285714286,
                             ),
                             textAlign: TextAlign.center,
@@ -2095,7 +2095,7 @@ class Signin5 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(0.0, 265.0),
+            offset: const Offset(0.0, 265.0),
             child:
                 // Adobe XD layer: 'Password field' (group)
                 SizedBox(
@@ -2104,8 +2104,8 @@ class Signin5 extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 60.0),
-                    size: Size(375.0, 60.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 60.0),
+                    size: const Size(375.0, 60.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -2113,15 +2113,15 @@ class Signin5 extends StatelessWidget {
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 60.0),
-                          size: Size(375.0, 60.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 60.0),
+                          size: const Size(375.0, 60.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
                           pinBottom: true,
                           child: Container(
-                            decoration: BoxDecoration(
-                              color: const Color(0xffffffff),
+                            decoration: const BoxDecoration(
+                              color: Color(0xffffffff),
                             ),
                           ),
                         ),
@@ -2129,32 +2129,32 @@ class Signin5 extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 59.0, 315.0, 1.0),
-                    size: Size(375.0, 60.0),
+                    bounds: const Rect.fromLTWH(30.0, 59.0, 315.0, 1.0),
+                    size: const Size(375.0, 60.0),
                     pinLeft: true,
                     pinRight: true,
                     pinBottom: true,
                     fixedHeight: true,
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xff1a1824),
+                      decoration: const BoxDecoration(
+                        color: Color(0xff1a1824),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 31.0, 158.0, 15.0),
-                    size: Size(375.0, 60.0),
+                    bounds: const Rect.fromLTWH(30.0, 31.0, 158.0, 15.0),
+                    size: const Size(375.0, 60.0),
                     pinLeft: true,
                     fixedWidth: true,
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: 'text' (text)
-                        Text(
+                        const Text(
                       'Strong_passworD#9988',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 15,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         letterSpacing: -0.15,
                         height: 1.3333333333333333,
                       ),
@@ -2162,13 +2162,13 @@ class Signin5 extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(198.0, 27.0, 2.0, 22.0),
-                    size: Size(375.0, 60.0),
+                    bounds: const Rect.fromLTWH(198.0, 27.0, 2.0, 22.0),
+                    size: const Size(375.0, 60.0),
                     fixedWidth: true,
                     fixedHeight: true,
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xff34c47c),
+                      decoration: const BoxDecoration(
+                        color: Color(0xff34c47c),
                       ),
                     ),
                   ),
@@ -2177,7 +2177,7 @@ class Signin5 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(0.0, 205.0),
+            offset: const Offset(0.0, 205.0),
             child:
                 // Adobe XD layer: 'Email field' (group)
                 SizedBox(
@@ -2186,8 +2186,8 @@ class Signin5 extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 60.0),
-                    size: Size(375.0, 60.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 60.0),
+                    size: const Size(375.0, 60.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -2195,15 +2195,15 @@ class Signin5 extends StatelessWidget {
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 60.0),
-                          size: Size(375.0, 60.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 60.0),
+                          size: const Size(375.0, 60.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
                           pinBottom: true,
                           child: Container(
-                            decoration: BoxDecoration(
-                              color: const Color(0xffffffff),
+                            decoration: const BoxDecoration(
+                              color: Color(0xffffffff),
                             ),
                           ),
                         ),
@@ -2211,32 +2211,32 @@ class Signin5 extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 59.0, 315.0, 1.0),
-                    size: Size(375.0, 60.0),
+                    bounds: const Rect.fromLTWH(30.0, 59.0, 315.0, 1.0),
+                    size: const Size(375.0, 60.0),
                     pinLeft: true,
                     pinRight: true,
                     pinBottom: true,
                     fixedHeight: true,
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xffefefef),
+                      decoration: const BoxDecoration(
+                        color: Color(0xffefefef),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 31.0, 165.0, 15.0),
-                    size: Size(375.0, 60.0),
+                    bounds: const Rect.fromLTWH(30.0, 31.0, 165.0, 15.0),
+                    size: const Size(375.0, 60.0),
                     pinLeft: true,
                     fixedWidth: true,
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: 'text' (text)
-                        Text(
+                        const Text(
                       'niculici.victor@gmail.com',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 15,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         letterSpacing: -0.15,
                         height: 1.3333333333333333,
                       ),
@@ -2248,13 +2248,13 @@ class Signin5 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 119.0),
-            child: Text(
+            offset: const Offset(30.0, 119.0),
+            child: const Text(
               'Welcome back!\nYou’ve been missed',
               style: TextStyle(
                 fontFamily: 'SF Pro Text',
                 fontSize: 30,
-                color: const Color(0xff1a1824),
+                color: Color(0xff1a1824),
                 letterSpacing: -0.3,
                 fontWeight: FontWeight.w700,
                 height: 1.2,
@@ -2263,7 +2263,7 @@ class Signin5 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(15.0, 43.0),
+            offset: const Offset(15.0, 43.0),
             child:
                 // Adobe XD layer: 'Sign up button' (group)
                 SizedBox(
@@ -2272,8 +2272,8 @@ class Signin5 extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 79.0, 46.0),
-                    size: Size(79.0, 46.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 79.0, 46.0),
+                    size: const Size(79.0, 46.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -2285,16 +2285,16 @@ class Signin5 extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(17.0, 17.0, 47.0, 14.0),
-                    size: Size(79.0, 46.0),
+                    bounds: const Rect.fromLTWH(17.0, 17.0, 47.0, 14.0),
+                    size: const Size(79.0, 46.0),
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'Sign up',
                       style: TextStyle(
                         fontFamily: 'SF Pro Display',
                         fontSize: 14,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         height: 1.4285714285714286,
                       ),
                       textAlign: TextAlign.right,
@@ -2305,7 +2305,7 @@ class Signin5 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(316.0, 43.0),
+            offset: const Offset(316.0, 43.0),
             child:
                 // Adobe XD layer: 'Close button' (group)
                 SizedBox(
@@ -2314,28 +2314,28 @@ class Signin5 extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
+                    size: const Size(46.0, 46.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
                     pinBottom: true,
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xffffffff),
+                      decoration: const BoxDecoration(
+                        color: Color(0xffffffff),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(17.0, 17.0, 12.0, 12.0),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(17.0, 17.0, 12.0, 12.0),
+                    size: const Size(46.0, 46.0),
                     fixedWidth: true,
                     fixedHeight: true,
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 12.0, 12.0),
-                          size: Size(12.0, 12.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 12.0, 12.0),
+                          size: const Size(12.0, 12.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -2354,7 +2354,7 @@ class Signin5 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(176.0, 58.0),
+            offset: const Offset(176.0, 58.0),
             child:
                 // Adobe XD layer: 'Logo' (group)
                 SizedBox(
@@ -2367,28 +2367,28 @@ class Signin5 extends StatelessWidget {
                     child: Container(
                       width: 16.0,
                       height: 16.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(60.0),
                           bottomRight: Radius.circular(60.0),
                           bottomLeft: Radius.circular(60.0),
                         ),
-                        color: const Color(0x1a1a1824),
+                        color: Color(0x1a1a1824),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(8.0, 0.8),
+                    offset: const Offset(8.0, 0.8),
                     child: Container(
                       width: 16.0,
                       height: 16.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(60.0),
                           bottomRight: Radius.circular(60.0),
                           bottomLeft: Radius.circular(60.0),
                         ),
-                        color: const Color(0xff34c47c),
+                        color: Color(0xff34c47c),
                       ),
                     ),
                   ),
@@ -2397,7 +2397,7 @@ class Signin5 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(322.0, 288.0),
+            offset: const Offset(322.0, 288.0),
             child:
                 // Adobe XD layer: 'Eye visible button' (group)
                 SizedBox(
@@ -2406,21 +2406,21 @@ class Signin5 extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 30.0, 30.0),
-                    size: Size(30.0, 30.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 30.0, 30.0),
+                    size: const Size(30.0, 30.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
                     pinBottom: true,
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xffffffff),
+                      decoration: const BoxDecoration(
+                        color: Color(0xffffffff),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(7.0, 9.0, 16.0, 12.0),
-                    size: Size(30.0, 30.0),
+                    bounds: const Rect.fromLTWH(7.0, 9.0, 16.0, 12.0),
+                    size: const Size(30.0, 30.0),
                     child: Stack(
                       children: <Widget>[
                         SvgPicture.string(
@@ -2428,14 +2428,14 @@ class Signin5 extends StatelessWidget {
                           allowDrawingOutsideViewBox: true,
                         ),
                         Transform.translate(
-                          offset: Offset(5.3, 3.3),
+                          offset: const Offset(5.3, 3.3),
                           child: Container(
                             width: 5.3,
                             height: 5.3,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               borderRadius: BorderRadius.all(
                                   Radius.elliptical(9999.0, 9999.0)),
-                              color: const Color(0xff34c47c),
+                              color: Color(0xff34c47c),
                             ),
                           ),
                         ),

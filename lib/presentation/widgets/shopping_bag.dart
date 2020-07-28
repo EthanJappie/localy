@@ -16,12 +16,12 @@ class Shoppingbag extends StatelessWidget {
           Container(
             width: 375.0,
             height: 812.0,
-            decoration: BoxDecoration(
-              color: const Color(0xffffffff),
+            decoration: const BoxDecoration(
+              color: Color(0xffffffff),
             ),
           ),
           Transform.translate(
-            offset: Offset(20.0, 15.0),
+            offset: const Offset(20.0, 15.0),
             child:
                 // Adobe XD layer: 'iOS elements' (group)
                 SizedBox(
@@ -30,8 +30,8 @@ class Shoppingbag extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
-                    size: Size(340.3, 788.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
+                    size: const Size(340.3, 788.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -39,8 +39,8 @@ class Shoppingbag extends StatelessWidget {
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
-                          size: Size(340.3, 16.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
+                          size: const Size(340.3, 16.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -50,8 +50,8 @@ class Shoppingbag extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(316.0, 2.3, 24.3, 11.3),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(316.0, 2.3, 24.3, 11.3),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 pinTop: true,
                                 pinBottom: true,
@@ -62,8 +62,8 @@ class Shoppingbag extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
+                                      size: const Size(24.3, 11.3),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -73,9 +73,9 @@ class Shoppingbag extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 22.0, 11.3),
-                                            size: Size(22.0, 11.3),
+                                            size: const Size(22.0, 11.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -89,9 +89,9 @@ class Shoppingbag extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 22.0, 11.3),
-                                            size: Size(22.0, 11.3),
+                                            size: const Size(22.0, 11.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -109,8 +109,8 @@ class Shoppingbag extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(23.0, 3.7, 1.3, 4.0),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(23.0, 3.7, 1.3, 4.0),
+                                      size: const Size(24.3, 11.3),
                                       pinRight: true,
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -119,9 +119,9 @@ class Shoppingbag extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 11.3, 14.0),
-                                            size: Size(1.3, 4.0),
+                                            size: const Size(1.3, 4.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -135,9 +135,9 @@ class Shoppingbag extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 1.3, 4.0),
-                                            size: Size(1.3, 4.0),
+                                            size: const Size(1.3, 4.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -155,8 +155,8 @@ class Shoppingbag extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(2.0, 2.0, 18.0, 7.3),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(2.0, 2.0, 18.0, 7.3),
+                                      size: const Size(24.3, 11.3),
                                       pinLeft: true,
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -165,9 +165,9 @@ class Shoppingbag extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 28.0, 17.3),
-                                            size: Size(18.0, 7.3),
+                                            size: const Size(18.0, 7.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -181,9 +181,9 @@ class Shoppingbag extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 18.0, 7.3),
-                                            size: Size(18.0, 7.3),
+                                            size: const Size(18.0, 7.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -203,8 +203,8 @@ class Shoppingbag extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(295.7, 2.3, 15.3, 11.0),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(295.7, 2.3, 15.3, 11.0),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 pinTop: true,
                                 fixedWidth: true,
@@ -215,8 +215,8 @@ class Shoppingbag extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 15.3, 11.0),
-                                      size: Size(15.3, 11.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 15.3, 11.0),
+                                      size: const Size(15.3, 11.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -226,9 +226,9 @@ class Shoppingbag extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 25.3, 21.0),
-                                            size: Size(15.3, 11.0),
+                                            size: const Size(15.3, 11.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -242,9 +242,9 @@ class Shoppingbag extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 15.3, 11.0),
-                                            size: Size(15.3, 11.0),
+                                            size: const Size(15.3, 11.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -264,8 +264,8 @@ class Shoppingbag extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(273.7, 2.7, 17.0, 10.7),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(273.7, 2.7, 17.0, 10.7),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 fixedWidth: true,
                                 fixedHeight: true,
@@ -275,8 +275,8 @@ class Shoppingbag extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 17.0, 10.7),
-                                      size: Size(17.0, 10.7),
+                                          const Rect.fromLTWH(0.0, 0.0, 17.0, 10.7),
+                                      size: const Size(17.0, 10.7),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -286,9 +286,9 @@ class Shoppingbag extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 27.0, 20.7),
-                                            size: Size(17.0, 10.7),
+                                            size: const Size(17.0, 10.7),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -302,9 +302,9 @@ class Shoppingbag extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 17.0, 10.7),
-                                            size: Size(17.0, 10.7),
+                                            size: const Size(17.0, 10.7),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -324,8 +324,8 @@ class Shoppingbag extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
+                                size: const Size(340.3, 16.0),
                                 pinLeft: true,
                                 pinTop: true,
                                 pinBottom: true,
@@ -336,8 +336,8 @@ class Shoppingbag extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
-                                      size: Size(54.0, 16.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
+                                      size: const Size(54.0, 16.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -352,8 +352,8 @@ class Shoppingbag extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(12.8, 4.9, 27.5, 10.3),
-                                      size: Size(54.0, 16.0),
+                                          const Rect.fromLTWH(12.8, 4.9, 27.5, 10.3),
+                                      size: const Size(54.0, 16.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinBottom: true,
@@ -376,8 +376,8 @@ class Shoppingbag extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(101.0, 783.0, 134.0, 5.0),
-                    size: Size(340.3, 788.0),
+                    bounds: const Rect.fromLTWH(101.0, 783.0, 134.0, 5.0),
+                    size: const Size(340.3, 788.0),
                     pinBottom: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -393,19 +393,19 @@ class Shoppingbag extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(76.0, 504.0),
+            offset: const Offset(76.0, 504.0),
             child:
                 // Adobe XD layer: 'Divider' (shape)
                 Container(
               width: 299.0,
               height: 1.0,
-              decoration: BoxDecoration(
-                color: const Color(0x80efefef),
+              decoration: const BoxDecoration(
+                color: Color(0x80efefef),
               ),
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 710.0),
+            offset: const Offset(30.0, 710.0),
             child:
                 // Adobe XD layer: 'Secondary button' (group)
                 SizedBox(
@@ -414,8 +414,8 @@ class Shoppingbag extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 315.0, 48.0),
-                    size: Size(315.0, 48.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 315.0, 48.0),
+                    size: const Size(315.0, 48.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -428,16 +428,16 @@ class Shoppingbag extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(100.0, 18.0, 116.0, 14.0),
-                    size: Size(315.0, 48.0),
+                    bounds: const Rect.fromLTWH(100.0, 18.0, 116.0, 14.0),
+                    size: const Size(315.0, 48.0),
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'Continue shopping',
                       style: TextStyle(
                         fontFamily: 'SF Pro Display',
                         fontSize: 14,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         height: 1.4285714285714286,
                       ),
                       textAlign: TextAlign.center,
@@ -448,7 +448,7 @@ class Shoppingbag extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 653.0),
+            offset: const Offset(30.0, 653.0),
             child:
                 // Adobe XD layer: 'Primary button' (group)
                 SizedBox(
@@ -457,8 +457,8 @@ class Shoppingbag extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 315.0, 46.0),
-                    size: Size(315.0, 46.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 315.0, 46.0),
+                    size: const Size(315.0, 46.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -470,17 +470,17 @@ class Shoppingbag extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(87.0, 17.0, 142.0, 16.0),
-                    size: Size(315.0, 46.0),
+                    bounds: const Rect.fromLTWH(87.0, 17.0, 142.0, 16.0),
+                    size: const Size(315.0, 46.0),
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: 'Filter' (text)
-                        Text(
+                        const Text(
                       'Proceed to checkout',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 16,
-                        color: const Color(0xffffffff),
+                        color: Color(0xffffffff),
                         letterSpacing: -0.16,
                       ),
                       textAlign: TextAlign.center,
@@ -491,7 +491,7 @@ class Shoppingbag extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(94.0, 537.0),
+            offset: const Offset(94.0, 537.0),
             child:
                 // Adobe XD layer: 'Total' (group)
                 SizedBox(
@@ -500,18 +500,18 @@ class Shoppingbag extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(215.0, 0.0, 36.0, 12.0),
-                    size: Size(251.0, 65.0),
+                    bounds: const Rect.fromLTWH(215.0, 0.0, 36.0, 12.0),
+                    size: const Size(251.0, 65.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text(
+                          const Text(
                         '\$33.00',
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 12,
-                          color: const Color(0x801a1824),
+                          color: Color(0x801a1824),
                           letterSpacing: -0.12,
                         ),
                         textAlign: TextAlign.right,
@@ -519,18 +519,18 @@ class Shoppingbag extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(221.0, 24.0, 30.0, 12.0),
-                    size: Size(251.0, 65.0),
+                    bounds: const Rect.fromLTWH(221.0, 24.0, 30.0, 12.0),
+                    size: const Size(251.0, 65.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text(
+                          const Text(
                         '\$0.00',
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 12,
-                          color: const Color(0x801a1824),
+                          color: Color(0x801a1824),
                           letterSpacing: -0.12,
                         ),
                         textAlign: TextAlign.right,
@@ -538,18 +538,18 @@ class Shoppingbag extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(2.0, 0.0, 25.0, 12.0),
-                    size: Size(251.0, 65.0),
+                    bounds: const Rect.fromLTWH(2.0, 0.0, 25.0, 12.0),
+                    size: const Size(251.0, 65.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text(
+                          const Text(
                         'Total',
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 12,
-                          color: const Color(0x801a1824),
+                          color: Color(0x801a1824),
                           letterSpacing: -0.12,
                         ),
                         textAlign: TextAlign.right,
@@ -557,18 +557,18 @@ class Shoppingbag extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 24.0, 43.0, 12.0),
-                    size: Size(251.0, 65.0),
+                    bounds: const Rect.fromLTWH(0.0, 24.0, 43.0, 12.0),
+                    size: const Size(251.0, 65.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text(
+                          const Text(
                         'Delivery',
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 12,
-                          color: const Color(0x801a1824),
+                          color: Color(0x801a1824),
                           letterSpacing: -0.12,
                         ),
                         textAlign: TextAlign.left,
@@ -576,18 +576,18 @@ class Shoppingbag extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(203.0, 49.0, 48.0, 16.0),
-                    size: Size(251.0, 65.0),
+                    bounds: const Rect.fromLTWH(203.0, 49.0, 48.0, 16.0),
+                    size: const Size(251.0, 65.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text(
+                          const Text(
                         '\$33.00',
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 16,
-                          color: const Color(0xff34c47c),
+                          color: Color(0xff34c47c),
                           letterSpacing: -0.16,
                           fontWeight: FontWeight.w700,
                           height: 1.5,
@@ -597,18 +597,18 @@ class Shoppingbag extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(3.0, 49.0, 36.0, 16.0),
-                    size: Size(251.0, 65.0),
+                    bounds: const Rect.fromLTWH(3.0, 49.0, 36.0, 16.0),
+                    size: const Size(251.0, 65.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text(
+                          const Text(
                         'Total',
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 16,
-                          color: const Color(0xff34c47c),
+                          color: Color(0xff34c47c),
                           letterSpacing: -0.16,
                           fontWeight: FontWeight.w700,
                           height: 1.5,
@@ -622,7 +622,7 @@ class Shoppingbag extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 360.0),
+            offset: const Offset(30.0, 360.0),
             child:
                 // Adobe XD layer: 'Product 2' (group)
                 SizedBox(
@@ -631,21 +631,21 @@ class Shoppingbag extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(145.0, 84.0, 30.0, 30.0),
-                    size: Size(315.0, 116.0),
+                    bounds: const Rect.fromLTWH(145.0, 84.0, 30.0, 30.0),
+                    size: const Size(315.0, 116.0),
                     child: Stack(
                       children: <Widget>[
                         Container(
                           width: 30.0,
                           height: 30.0,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             borderRadius: BorderRadius.all(
                                 Radius.elliptical(9999.0, 9999.0)),
-                            color: const Color(0xff34c47c),
+                            color: Color(0xff34c47c),
                           ),
                         ),
                         Transform.translate(
-                          offset: Offset(9.0, 9.0),
+                          offset: const Offset(9.0, 9.0),
                           child: SvgPicture.string(
                             _svg_xh521y,
                             allowDrawingOutsideViewBox: true,
@@ -655,8 +655,8 @@ class Shoppingbag extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(65.0, 84.0, 30.0, 30.0),
-                    size: Size(315.0, 116.0),
+                    bounds: const Rect.fromLTWH(65.0, 84.0, 30.0, 30.0),
+                    size: const Size(315.0, 116.0),
                     child: SvgPicture.string(
                       _svg_7s08cb,
                       allowDrawingOutsideViewBox: true,
@@ -664,17 +664,17 @@ class Shoppingbag extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(273.0, 84.0, 42.0, 14.0),
-                    size: Size(315.0, 116.0),
+                    bounds: const Rect.fromLTWH(273.0, 84.0, 42.0, 14.0),
+                    size: const Size(315.0, 116.0),
                     pinRight: true,
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       '\$16.00',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 14,
-                        color: const Color(0xff34c47c),
+                        color: Color(0xff34c47c),
                         letterSpacing: -0.14,
                         fontWeight: FontWeight.w700,
                         height: 1.4285714285714286,
@@ -683,8 +683,8 @@ class Shoppingbag extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(105.0, 84.0, 30.0, 30.0),
-                    size: Size(315.0, 116.0),
+                    bounds: const Rect.fromLTWH(105.0, 84.0, 30.0, 30.0),
+                    size: const Size(315.0, 116.0),
                     child: SvgPicture.string(
                       _svg_7ki25o,
                       allowDrawingOutsideViewBox: true,
@@ -692,18 +692,18 @@ class Shoppingbag extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(117.0, 94.0, 7.0, 12.0),
-                    size: Size(315.0, 116.0),
+                    bounds: const Rect.fromLTWH(117.0, 94.0, 7.0, 12.0),
+                    size: const Size(315.0, 116.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text(
+                          const Text(
                         '1',
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 12,
-                          color: const Color(0xffffffff),
+                          color: Color(0xffffffff),
                           letterSpacing: -0.12,
                         ),
                         textAlign: TextAlign.left,
@@ -711,18 +711,18 @@ class Shoppingbag extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(276.0, 104.0, 36.0, 12.0),
-                    size: Size(315.0, 116.0),
+                    bounds: const Rect.fromLTWH(276.0, 104.0, 36.0, 12.0),
+                    size: const Size(315.0, 116.0),
                     pinRight: true,
                     pinBottom: true,
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       '\$19.50',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 12,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         letterSpacing: -0.24,
                         height: 1.5,
                       ),
@@ -730,30 +730,30 @@ class Shoppingbag extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(273.0, 109.0, 40.0, 1.0),
-                    size: Size(315.0, 116.0),
+                    bounds: const Rect.fromLTWH(273.0, 109.0, 40.0, 1.0),
+                    size: const Size(315.0, 116.0),
                     pinRight: true,
                     pinBottom: true,
                     fixedWidth: true,
                     fixedHeight: true,
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xff1a1824),
+                      decoration: const BoxDecoration(
+                        color: Color(0xff1a1824),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(64.0, 5.0, 112.0, 14.0),
-                    size: Size(315.0, 116.0),
+                    bounds: const Rect.fromLTWH(64.0, 5.0, 112.0, 14.0),
+                    size: const Size(315.0, 116.0),
                     pinTop: true,
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'Quatro Formaggi',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 14,
-                        color: const Color(0xff1a1a1a),
+                        color: Color(0xff1a1a1a),
                         letterSpacing: -0.14,
                         fontWeight: FontWeight.w700,
                         height: 1.7142857142857142,
@@ -762,8 +762,8 @@ class Shoppingbag extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 44.0, 44.0),
-                    size: Size(315.0, 116.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 44.0, 44.0),
+                    size: const Size(315.0, 116.0),
                     pinLeft: true,
                     pinTop: true,
                     fixedWidth: true,
@@ -775,17 +775,17 @@ class Shoppingbag extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(64.0, 30.0, 218.0, 32.0),
-                    size: Size(315.0, 116.0),
+                    bounds: const Rect.fromLTWH(64.0, 30.0, 218.0, 32.0),
+                    size: const Size(315.0, 116.0),
                     pinLeft: true,
                     pinRight: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'Tomato sauce, mozzarella, parmigiano, romano, olive oil and fresh basil (300g).',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 12,
-                        color: const Color(0xff919099),
+                        color: Color(0xff919099),
                         letterSpacing: -0.12,
                         height: 1.5,
                       ),
@@ -793,8 +793,8 @@ class Shoppingbag extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(74.0, 93.0, 12.0, 12.0),
-                    size: Size(315.0, 116.0),
+                    bounds: const Rect.fromLTWH(74.0, 93.0, 12.0, 12.0),
+                    size: const Size(315.0, 116.0),
                     child:
                         // Adobe XD layer: 'garbage' (group)
                         Stack(
@@ -819,7 +819,7 @@ class Shoppingbag extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 208.0),
+            offset: const Offset(30.0, 208.0),
             child:
                 // Adobe XD layer: 'Product 1' (group)
                 SizedBox(
@@ -828,21 +828,21 @@ class Shoppingbag extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(145.0, 82.0, 30.0, 30.0),
-                    size: Size(315.0, 114.0),
+                    bounds: const Rect.fromLTWH(145.0, 82.0, 30.0, 30.0),
+                    size: const Size(315.0, 114.0),
                     child: Stack(
                       children: <Widget>[
                         Container(
                           width: 30.0,
                           height: 30.0,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             borderRadius: BorderRadius.all(
                                 Radius.elliptical(9999.0, 9999.0)),
-                            color: const Color(0xff34c47c),
+                            color: Color(0xff34c47c),
                           ),
                         ),
                         Transform.translate(
-                          offset: Offset(9.0, 9.0),
+                          offset: const Offset(9.0, 9.0),
                           child: SvgPicture.string(
                             _svg_xh521y,
                             allowDrawingOutsideViewBox: true,
@@ -852,8 +852,8 @@ class Shoppingbag extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(65.0, 82.0, 30.0, 30.0),
-                    size: Size(315.0, 114.0),
+                    bounds: const Rect.fromLTWH(65.0, 82.0, 30.0, 30.0),
+                    size: const Size(315.0, 114.0),
                     child: Stack(
                       children: <Widget>[
                         SvgPicture.string(
@@ -861,14 +861,14 @@ class Shoppingbag extends StatelessWidget {
                           allowDrawingOutsideViewBox: true,
                         ),
                         Transform.translate(
-                          offset: Offset(14.3, 9.0),
+                          offset: const Offset(14.3, 9.0),
                           child: Transform.rotate(
                             angle: 1.5708,
                             child: Container(
                               width: 1.5,
                               height: 12.0,
-                              decoration: BoxDecoration(
-                                color: const Color(0xffffffff),
+                              decoration: const BoxDecoration(
+                                color: Color(0xffffffff),
                               ),
                             ),
                           ),
@@ -877,17 +877,17 @@ class Shoppingbag extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(273.0, 82.0, 42.0, 14.0),
-                    size: Size(315.0, 114.0),
+                    bounds: const Rect.fromLTWH(273.0, 82.0, 42.0, 14.0),
+                    size: const Size(315.0, 114.0),
                     pinRight: true,
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       '\$17.00',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 14,
-                        color: const Color(0xff34c47c),
+                        color: Color(0xff34c47c),
                         letterSpacing: -0.14,
                         fontWeight: FontWeight.w700,
                         height: 1.4285714285714286,
@@ -896,8 +896,8 @@ class Shoppingbag extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(105.0, 82.0, 30.0, 30.0),
-                    size: Size(315.0, 114.0),
+                    bounds: const Rect.fromLTWH(105.0, 82.0, 30.0, 30.0),
+                    size: const Size(315.0, 114.0),
                     child: SvgPicture.string(
                       _svg_ym7476,
                       allowDrawingOutsideViewBox: true,
@@ -905,18 +905,18 @@ class Shoppingbag extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(116.0, 92.0, 7.0, 12.0),
-                    size: Size(315.0, 114.0),
+                    bounds: const Rect.fromLTWH(116.0, 92.0, 7.0, 12.0),
+                    size: const Size(315.0, 114.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text(
+                          const Text(
                         '2',
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 12,
-                          color: const Color(0xffffffff),
+                          color: Color(0xffffffff),
                           letterSpacing: -0.12,
                         ),
                         textAlign: TextAlign.left,
@@ -924,18 +924,18 @@ class Shoppingbag extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(276.0, 102.0, 36.0, 12.0),
-                    size: Size(315.0, 114.0),
+                    bounds: const Rect.fromLTWH(276.0, 102.0, 36.0, 12.0),
+                    size: const Size(315.0, 114.0),
                     pinRight: true,
                     pinBottom: true,
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       '\$19.50',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 12,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         letterSpacing: -0.24,
                         height: 1.5,
                       ),
@@ -943,30 +943,30 @@ class Shoppingbag extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(273.0, 107.0, 40.0, 1.0),
-                    size: Size(315.0, 114.0),
+                    bounds: const Rect.fromLTWH(273.0, 107.0, 40.0, 1.0),
+                    size: const Size(315.0, 114.0),
                     pinRight: true,
                     pinBottom: true,
                     fixedWidth: true,
                     fixedHeight: true,
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xff1a1824),
+                      decoration: const BoxDecoration(
+                        color: Color(0xff1a1824),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(64.0, 5.0, 110.0, 14.0),
-                    size: Size(315.0, 114.0),
+                    bounds: const Rect.fromLTWH(64.0, 5.0, 110.0, 14.0),
+                    size: const Size(315.0, 114.0),
                     pinTop: true,
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'Burger Delicious',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 14,
-                        color: const Color(0xff1a1a1a),
+                        color: Color(0xff1a1a1a),
                         letterSpacing: -0.14,
                         fontWeight: FontWeight.w700,
                         height: 1.7142857142857142,
@@ -975,8 +975,8 @@ class Shoppingbag extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 44.0, 44.0),
-                    size: Size(315.0, 114.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 44.0, 44.0),
+                    size: const Size(315.0, 114.0),
                     pinLeft: true,
                     pinTop: true,
                     fixedWidth: true,
@@ -988,17 +988,17 @@ class Shoppingbag extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(64.0, 30.0, 251.0, 32.0),
-                    size: Size(315.0, 114.0),
+                    bounds: const Rect.fromLTWH(64.0, 30.0, 251.0, 32.0),
+                    size: const Size(315.0, 114.0),
                     pinLeft: true,
                     pinRight: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'Tomato sauce, mozzarella, parmigiano, romano, olive oil and fresh basil (300g).',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 12,
-                        color: const Color(0xff919099),
+                        color: Color(0xff919099),
                         letterSpacing: -0.12,
                         height: 1.5,
                       ),
@@ -1010,7 +1010,7 @@ class Shoppingbag extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 119.0),
+            offset: const Offset(30.0, 119.0),
             child:
                 // Adobe XD layer: 'Title & subtitle' (group)
                 SizedBox(
@@ -1019,18 +1019,18 @@ class Shoppingbag extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 242.0, 30.0),
-                    size: Size(242.0, 59.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 242.0, 30.0),
+                    size: const Size(242.0, 59.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'My shopping bag',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 30,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         letterSpacing: -0.3,
                         fontWeight: FontWeight.w700,
                         height: 1.2,
@@ -1039,18 +1039,18 @@ class Shoppingbag extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 43.0, 99.0, 16.0),
-                    size: Size(242.0, 59.0),
+                    bounds: const Rect.fromLTWH(0.0, 43.0, 99.0, 16.0),
+                    size: const Size(242.0, 59.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text(
+                          const Text(
                         '3 items added',
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 16,
-                          color: const Color(0xff1a1824),
+                          color: Color(0xff1a1824),
                           letterSpacing: -0.16,
                         ),
                         textAlign: TextAlign.left,
@@ -1062,7 +1062,7 @@ class Shoppingbag extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(316.0, 43.0),
+            offset: const Offset(316.0, 43.0),
             child:
                 // Adobe XD layer: 'Close button' (group)
                 SizedBox(
@@ -1071,28 +1071,28 @@ class Shoppingbag extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
+                    size: const Size(46.0, 46.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
                     pinBottom: true,
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xffffffff),
+                      decoration: const BoxDecoration(
+                        color: Color(0xffffffff),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(17.0, 17.0, 12.0, 12.0),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(17.0, 17.0, 12.0, 12.0),
+                    size: const Size(46.0, 46.0),
                     fixedWidth: true,
                     fixedHeight: true,
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 12.0, 12.0),
-                          size: Size(12.0, 12.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 12.0, 12.0),
+                          size: const Size(12.0, 12.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1111,7 +1111,7 @@ class Shoppingbag extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(176.0, 58.0),
+            offset: const Offset(176.0, 58.0),
             child:
                 // Adobe XD layer: 'Logo' (group)
                 SizedBox(
@@ -1124,28 +1124,28 @@ class Shoppingbag extends StatelessWidget {
                     child: Container(
                       width: 16.0,
                       height: 16.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(60.0),
                           bottomRight: Radius.circular(60.0),
                           bottomLeft: Radius.circular(60.0),
                         ),
-                        color: const Color(0x1a1a1824),
+                        color: Color(0x1a1a1824),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(8.0, 0.8),
+                    offset: const Offset(8.0, 0.8),
                     child: Container(
                       width: 16.0,
                       height: 16.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(60.0),
                           bottomRight: Radius.circular(60.0),
                           bottomLeft: Radius.circular(60.0),
                         ),
-                        color: const Color(0xff34c47c),
+                        color: Color(0xff34c47c),
                       ),
                     ),
                   ),

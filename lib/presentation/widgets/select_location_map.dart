@@ -13,14 +13,14 @@ class Selectlocationonmap extends StatelessWidget {
       body: Stack(
         children: <Widget>[
           Transform.translate(
-            offset: Offset(-41.0, 0.0),
+            offset: const Offset(-41.0, 0.0),
             child: SvgPicture.string(
               _svg_kl8yh,
               allowDrawingOutsideViewBox: true,
             ),
           ),
           Transform.translate(
-            offset: Offset(0.0, 425.0),
+            offset: const Offset(0.0, 425.0),
             child:
                 // Adobe XD layer: 'Modal' (group)
                 SizedBox(
@@ -29,8 +29,8 @@ class Selectlocationonmap extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 387.0),
-                    size: Size(375.0, 387.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 387.0),
+                    size: const Size(375.0, 387.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -38,15 +38,15 @@ class Selectlocationonmap extends StatelessWidget {
                     child:
                         // Adobe XD layer: 'modal bg' (shape)
                         Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(20.0),
                           topRight: Radius.circular(20.0),
                         ),
-                        color: const Color(0xffffffff),
+                        color: Color(0xffffffff),
                         boxShadow: [
                           BoxShadow(
-                            color: const Color(0x0f000000),
+                            color: Color(0x0f000000),
                             offset: Offset(0, -10),
                             blurRadius: 20,
                           ),
@@ -55,8 +55,8 @@ class Selectlocationonmap extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 56.0, 286.0, 129.0),
-                    size: Size(375.0, 387.0),
+                    bounds: const Rect.fromLTWH(30.0, 56.0, 286.0, 129.0),
+                    size: const Size(375.0, 387.0),
                     pinLeft: true,
                     pinTop: true,
                     fixedWidth: true,
@@ -66,18 +66,18 @@ class Selectlocationonmap extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 89.0, 286.0, 40.0),
-                          size: Size(286.0, 129.0),
+                          bounds: const Rect.fromLTWH(0.0, 89.0, 286.0, 40.0),
+                          size: const Size(286.0, 129.0),
                           pinLeft: true,
                           pinRight: true,
                           pinBottom: true,
                           fixedHeight: true,
-                          child: Text(
+                          child: const Text(
                             'Move the map pin to find your location and\nselect the delivery address.',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 16,
-                              color: const Color(0xff1a1824),
+                              color: Color(0xff1a1824),
                               letterSpacing: -0.4,
                               height: 1.5,
                             ),
@@ -85,18 +85,18 @@ class Selectlocationonmap extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 279.0, 66.0),
-                          size: Size(286.0, 129.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 279.0, 66.0),
+                          size: const Size(286.0, 129.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
                           fixedHeight: true,
-                          child: Text(
+                          child: const Text(
                             'Select your location\nfrom the map',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 30,
-                              color: const Color(0xff1a1824),
+                              color: Color(0xff1a1824),
                               letterSpacing: -0.3,
                               fontWeight: FontWeight.w700,
                               height: 1.2,
@@ -108,8 +108,8 @@ class Selectlocationonmap extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 195.0, 375.0, 60.0),
-                    size: Size(375.0, 387.0),
+                    bounds: const Rect.fromLTWH(0.0, 195.0, 375.0, 60.0),
+                    size: const Size(375.0, 387.0),
                     pinLeft: true,
                     pinRight: true,
                     fixedHeight: true,
@@ -118,8 +118,8 @@ class Selectlocationonmap extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 60.0),
-                          size: Size(375.0, 60.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 60.0),
+                          size: const Size(375.0, 60.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -127,15 +127,15 @@ class Selectlocationonmap extends StatelessWidget {
                           child: Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 60.0),
-                                size: Size(375.0, 60.0),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 60.0),
+                                size: const Size(375.0, 60.0),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinTop: true,
                                 pinBottom: true,
                                 child: Container(
-                                  decoration: BoxDecoration(
-                                    color: const Color(0xffffffff),
+                                  decoration: const BoxDecoration(
+                                    color: Color(0xffffffff),
                                   ),
                                 ),
                               ),
@@ -143,21 +143,21 @@ class Selectlocationonmap extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(30.0, 59.0, 315.0, 1.0),
-                          size: Size(375.0, 60.0),
+                          bounds: const Rect.fromLTWH(30.0, 59.0, 315.0, 1.0),
+                          size: const Size(375.0, 60.0),
                           pinLeft: true,
                           pinRight: true,
                           pinBottom: true,
                           fixedHeight: true,
                           child: Container(
-                            decoration: BoxDecoration(
-                              color: const Color(0xffefefef),
+                            decoration: const BoxDecoration(
+                              color: Color(0xffefefef),
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(30.0, 31.0, 16.0, 14.4),
-                          size: Size(375.0, 60.0),
+                          bounds: const Rect.fromLTWH(30.0, 31.0, 16.0, 14.4),
+                          size: const Size(375.0, 60.0),
                           child: Transform.rotate(
                             angle: 0.0,
                             child:
@@ -181,18 +181,18 @@ class Selectlocationonmap extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(62.0, 31.0, 83.0, 15.0),
-                          size: Size(375.0, 60.0),
+                          bounds: const Rect.fromLTWH(62.0, 31.0, 83.0, 15.0),
+                          size: const Size(375.0, 60.0),
                           fixedWidth: true,
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'text' (text)
-                              Text(
+                              const Text(
                             'Piata Unirii 2',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 15,
-                              color: const Color(0xff242134),
+                              color: Color(0xff242134),
                               letterSpacing: -0.15,
                               height: 1.3333333333333333,
                             ),
@@ -203,8 +203,8 @@ class Selectlocationonmap extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 286.0, 315.0, 46.0),
-                    size: Size(375.0, 387.0),
+                    bounds: const Rect.fromLTWH(30.0, 286.0, 315.0, 46.0),
+                    size: const Size(375.0, 387.0),
                     pinLeft: true,
                     pinRight: true,
                     pinBottom: true,
@@ -214,8 +214,8 @@ class Selectlocationonmap extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 315.0, 46.0),
-                          size: Size(315.0, 46.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 315.0, 46.0),
+                          size: const Size(315.0, 46.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -227,17 +227,17 @@ class Selectlocationonmap extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(142.0, 17.0, 32.0, 16.0),
-                          size: Size(315.0, 46.0),
+                          bounds: const Rect.fromLTWH(142.0, 17.0, 32.0, 16.0),
+                          size: const Size(315.0, 46.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Filter' (text)
-                              Text(
+                              const Text(
                             'Next',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 16,
-                              color: const Color(0xffffffff),
+                              color: Color(0xffffffff),
                               letterSpacing: -0.16,
                             ),
                             textAlign: TextAlign.center,
@@ -247,8 +247,8 @@ class Selectlocationonmap extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(121.0, 373.0, 134.0, 5.0),
-                    size: Size(375.0, 387.0),
+                    bounds: const Rect.fromLTWH(121.0, 373.0, 134.0, 5.0),
+                    size: const Size(375.0, 387.0),
                     pinBottom: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -266,7 +266,7 @@ class Selectlocationonmap extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(172.0, 151.0),
+            offset: const Offset(172.0, 151.0),
             child:
                 // Adobe XD layer: 'Location pin' (group)
                 SizedBox(
@@ -275,35 +275,35 @@ class Selectlocationonmap extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 70.0, 70.0),
-                    size: Size(70.0, 70.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 70.0, 70.0),
+                    size: const Size(70.0, 70.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
                     pinBottom: true,
                     child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x80ffffff),
+                        color: Color(0x80ffffff),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(9.0, 9.0, 52.0, 52.0),
-                    size: Size(70.0, 70.0),
+                    bounds: const Rect.fromLTWH(9.0, 9.0, 52.0, 52.0),
+                    size: const Size(70.0, 70.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
                     pinBottom: true,
                     child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xff34c47c),
+                        color: Color(0xff34c47c),
                         boxShadow: [
                           BoxShadow(
-                            color: const Color(0x406c63ff),
+                            color: Color(0x406c63ff),
                             offset: Offset(0, 10),
                             blurRadius: 20,
                           ),
@@ -312,8 +312,8 @@ class Selectlocationonmap extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(25.7, 24.8, 20.3, 20.3),
-                    size: Size(70.0, 70.0),
+                    bounds: const Rect.fromLTWH(25.7, 24.8, 20.3, 20.3),
+                    size: const Size(70.0, 70.0),
                     fixedWidth: true,
                     fixedHeight: true,
                     child:
@@ -321,19 +321,19 @@ class Selectlocationonmap extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 20.3, 20.3),
-                          size: Size(20.3, 20.3),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 20.3, 20.3),
+                          size: const Size(20.3, 20.3),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
                           pinBottom: true,
                           child: Container(
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(1.3, 0.0, 16.8, 20.3),
-                          size: Size(20.3, 20.3),
+                          bounds: const Rect.fromLTWH(1.3, 0.0, 16.8, 20.3),
+                          size: const Size(20.3, 20.3),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,

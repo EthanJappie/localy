@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:adobe_xd/pinned.dart';
 import 'dart:ui' as ui;
+
+import 'package:adobe_xd/pinned.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class Enterphonenonotindb extends StatelessWidget {
@@ -17,12 +18,12 @@ class Enterphonenonotindb extends StatelessWidget {
           Container(
             width: 375.0,
             height: 812.0,
-            decoration: BoxDecoration(
-              color: const Color(0xffffffff),
+            decoration: const BoxDecoration(
+              color: Color(0xffffffff),
             ),
           ),
           Transform.translate(
-            offset: Offset(0.0, 15.0),
+            offset: const Offset(0.0, 15.0),
             child:
                 // Adobe XD layer: 'iOS elements' (group)
                 SizedBox(
@@ -31,8 +32,8 @@ class Enterphonenonotindb extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(20.0, 0.0, 340.3, 16.0),
-                    size: Size(375.0, 797.0),
+                    bounds: const Rect.fromLTWH(20.0, 0.0, 340.3, 16.0),
+                    size: const Size(375.0, 797.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -40,8 +41,8 @@ class Enterphonenonotindb extends StatelessWidget {
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
-                          size: Size(340.3, 16.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
+                          size: const Size(340.3, 16.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -51,8 +52,8 @@ class Enterphonenonotindb extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(316.0, 2.3, 24.3, 11.3),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(316.0, 2.3, 24.3, 11.3),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 pinTop: true,
                                 pinBottom: true,
@@ -63,8 +64,8 @@ class Enterphonenonotindb extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
+                                      size: const Size(24.3, 11.3),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -74,9 +75,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 22.0, 11.3),
-                                            size: Size(22.0, 11.3),
+                                            size: const Size(22.0, 11.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -90,9 +91,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 22.0, 11.3),
-                                            size: Size(22.0, 11.3),
+                                            size: const Size(22.0, 11.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -110,8 +111,8 @@ class Enterphonenonotindb extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(23.0, 3.7, 1.3, 4.0),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(23.0, 3.7, 1.3, 4.0),
+                                      size: const Size(24.3, 11.3),
                                       pinRight: true,
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -120,9 +121,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 11.3, 14.0),
-                                            size: Size(1.3, 4.0),
+                                            size: const Size(1.3, 4.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -136,9 +137,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 1.3, 4.0),
-                                            size: Size(1.3, 4.0),
+                                            size: const Size(1.3, 4.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -156,8 +157,8 @@ class Enterphonenonotindb extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(2.0, 2.0, 18.0, 7.3),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(2.0, 2.0, 18.0, 7.3),
+                                      size: const Size(24.3, 11.3),
                                       pinLeft: true,
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -166,9 +167,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 28.0, 17.3),
-                                            size: Size(18.0, 7.3),
+                                            size: const Size(18.0, 7.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -182,9 +183,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 18.0, 7.3),
-                                            size: Size(18.0, 7.3),
+                                            size: const Size(18.0, 7.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -204,8 +205,8 @@ class Enterphonenonotindb extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(295.7, 2.3, 15.3, 11.0),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(295.7, 2.3, 15.3, 11.0),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 pinTop: true,
                                 fixedWidth: true,
@@ -216,8 +217,8 @@ class Enterphonenonotindb extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 15.3, 11.0),
-                                      size: Size(15.3, 11.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 15.3, 11.0),
+                                      size: const Size(15.3, 11.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -227,9 +228,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 25.3, 21.0),
-                                            size: Size(15.3, 11.0),
+                                            size: const Size(15.3, 11.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -243,9 +244,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 15.3, 11.0),
-                                            size: Size(15.3, 11.0),
+                                            size: const Size(15.3, 11.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -265,8 +266,8 @@ class Enterphonenonotindb extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(273.7, 2.7, 17.0, 10.7),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(273.7, 2.7, 17.0, 10.7),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 fixedWidth: true,
                                 fixedHeight: true,
@@ -276,8 +277,8 @@ class Enterphonenonotindb extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 17.0, 10.7),
-                                      size: Size(17.0, 10.7),
+                                          const Rect.fromLTWH(0.0, 0.0, 17.0, 10.7),
+                                      size: const Size(17.0, 10.7),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -287,9 +288,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 27.0, 20.7),
-                                            size: Size(17.0, 10.7),
+                                            size: const Size(17.0, 10.7),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -303,9 +304,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 17.0, 10.7),
-                                            size: Size(17.0, 10.7),
+                                            size: const Size(17.0, 10.7),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -325,8 +326,8 @@ class Enterphonenonotindb extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
+                                size: const Size(340.3, 16.0),
                                 pinLeft: true,
                                 pinTop: true,
                                 pinBottom: true,
@@ -337,8 +338,8 @@ class Enterphonenonotindb extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
-                                      size: Size(54.0, 16.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
+                                      size: const Size(54.0, 16.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -353,8 +354,8 @@ class Enterphonenonotindb extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(12.8, 4.9, 27.5, 10.3),
-                                      size: Size(54.0, 16.0),
+                                          const Rect.fromLTWH(12.8, 4.9, 27.5, 10.3),
+                                      size: const Size(54.0, 16.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinBottom: true,
@@ -377,8 +378,8 @@ class Enterphonenonotindb extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 506.0, 375.0, 291.0),
-                    size: Size(375.0, 797.0),
+                    bounds: const Rect.fromLTWH(0.0, 506.0, 375.0, 291.0),
+                    size: const Size(375.0, 797.0),
                     pinLeft: true,
                     pinRight: true,
                     pinBottom: true,
@@ -388,8 +389,8 @@ class Enterphonenonotindb extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 291.0),
-                          size: Size(375.0, 291.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 291.0),
+                          size: const Size(375.0, 291.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -399,8 +400,8 @@ class Enterphonenonotindb extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 291.0),
-                                size: Size(375.0, 291.0),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 291.0),
+                                size: const Size(375.0, 291.0),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinTop: true,
@@ -412,8 +413,8 @@ class Enterphonenonotindb extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 291.0),
-                                size: Size(375.0, 291.0),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 291.0),
+                                size: const Size(375.0, 291.0),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinTop: true,
@@ -424,8 +425,8 @@ class Enterphonenonotindb extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 375.0, 291.0),
-                                      size: Size(375.0, 291.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 375.0, 291.0),
+                                      size: const Size(375.0, 291.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -438,8 +439,8 @@ class Enterphonenonotindb extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 375.0, 291.0),
-                                      size: Size(375.0, 291.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 375.0, 291.0),
+                                      size: const Size(375.0, 291.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -460,8 +461,8 @@ class Enterphonenonotindb extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(121.0, 277.0, 134.0, 5.0),
-                                size: Size(375.0, 291.0),
+                                bounds: const Rect.fromLTWH(121.0, 277.0, 134.0, 5.0),
+                                size: const Size(375.0, 291.0),
                                 pinBottom: true,
                                 fixedWidth: true,
                                 fixedHeight: true,
@@ -471,8 +472,8 @@ class Enterphonenonotindb extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 134.0, 5.0),
-                                      size: Size(134.0, 5.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 134.0, 5.0),
+                                      size: const Size(134.0, 5.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinBottom: true,
@@ -491,8 +492,8 @@ class Enterphonenonotindb extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(6.0, 6.0, 363.0, 207.0),
-                                size: Size(375.0, 291.0),
+                                bounds: const Rect.fromLTWH(6.0, 6.0, 363.0, 207.0),
+                                size: const Size(375.0, 291.0),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinTop: true,
@@ -502,9 +503,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                     Stack(
                                   children: <Widget>[
                                     Pinned.fromSize(
-                                      bounds: Rect.fromLTWH(
+                                      bounds: const Rect.fromLTWH(
                                           295.0, 174.0, 24.0, 18.0),
-                                      size: Size(363.0, 207.0),
+                                      size: const Size(363.0, 207.0),
                                       pinRight: true,
                                       pinBottom: true,
                                       fixedWidth: true,
@@ -518,9 +519,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                       ),
                                     ),
                                     Pinned.fromSize(
-                                      bounds: Rect.fromLTWH(
+                                      bounds: const Rect.fromLTWH(
                                           123.0, 161.0, 117.0, 46.0),
-                                      size: Size(363.0, 207.0),
+                                      size: const Size(363.0, 207.0),
                                       pinBottom: true,
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -529,9 +530,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 117.0, 46.0),
-                                            size: Size(117.0, 46.0),
+                                            size: const Size(117.0, 46.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -543,32 +544,32 @@ class Enterphonenonotindb extends StatelessWidget {
                                                 borderRadius:
                                                     BorderRadius.circular(5.0),
                                                 color: const Color(0xfffcfcfe),
-                                                boxShadow: [
+                                                boxShadow: const [
                                                   BoxShadow(
                                                     color:
-                                                        const Color(0xff898a8d),
+                                                        Color(0xff898a8d),
                                                     offset: Offset(0, 1),
-                                                    blurRadius: 0,
+                                                    
                                                   ),
                                                 ],
                                               ),
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 7.0, 117.0, 30.0),
-                                            size: Size(117.0, 46.0),
+                                            size: const Size(117.0, 46.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinBottom: true,
                                             child:
                                                 // Adobe XD layer: '↳ Number' (text)
-                                                Text(
+                                                const Text(
                                               '0',
                                               style: TextStyle(
                                                 fontFamily: 'SF Pro Display',
                                                 fontSize: 25,
-                                                color: const Color(0xff000000),
+                                                color: Color(0xff000000),
                                                 letterSpacing:
                                                     0.291225004196167,
                                               ),
@@ -579,9 +580,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                       ),
                                     ),
                                     Pinned.fromSize(
-                                      bounds: Rect.fromLTWH(
+                                      bounds: const Rect.fromLTWH(
                                           246.0, 107.0, 117.0, 47.0),
-                                      size: Size(363.0, 207.0),
+                                      size: const Size(363.0, 207.0),
                                       pinRight: true,
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -590,9 +591,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 117.0, 47.0),
-                                            size: Size(117.0, 47.0),
+                                            size: const Size(117.0, 47.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -604,9 +605,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 117.0, 47.0),
-                                            size: Size(117.0, 47.0),
+                                            size: const Size(117.0, 47.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -618,32 +619,32 @@ class Enterphonenonotindb extends StatelessWidget {
                                                 borderRadius:
                                                     BorderRadius.circular(5.0),
                                                 color: const Color(0xfffcfcfe),
-                                                boxShadow: [
+                                                boxShadow: const [
                                                   BoxShadow(
                                                     color:
-                                                        const Color(0xff898a8d),
+                                                        Color(0xff898a8d),
                                                     offset: Offset(0, 1),
-                                                    blurRadius: 0,
+                                                    
                                                   ),
                                                 ],
                                               ),
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 29.7, 117.0, 12.3),
-                                            size: Size(117.0, 47.0),
+                                            size: const Size(117.0, 47.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinBottom: true,
                                             child:
                                                 // Adobe XD layer: '↳ Label' (text)
-                                                Text(
+                                                const Text(
                                               'WXYZ',
                                               style: TextStyle(
                                                 fontFamily: 'SF Pro Text',
                                                 fontSize: 10,
-                                                color: const Color(0xff000000),
+                                                color: Color(0xff000000),
                                                 letterSpacing: 2,
                                                 fontWeight: FontWeight.w700,
                                               ),
@@ -651,20 +652,20 @@ class Enterphonenonotindb extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 1.3, 117.0, 30.7),
-                                            size: Size(117.0, 47.0),
+                                            size: const Size(117.0, 47.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinBottom: true,
                                             child:
                                                 // Adobe XD layer: '↳ Number' (text)
-                                                Text(
+                                                const Text(
                                               '9',
                                               style: TextStyle(
                                                 fontFamily: 'SF Pro Display',
                                                 fontSize: 25,
-                                                color: const Color(0xff000000),
+                                                color: Color(0xff000000),
                                                 letterSpacing:
                                                     0.291225004196167,
                                               ),
@@ -675,9 +676,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                       ),
                                     ),
                                     Pinned.fromSize(
-                                      bounds: Rect.fromLTWH(
+                                      bounds: const Rect.fromLTWH(
                                           123.0, 107.0, 117.0, 47.0),
-                                      size: Size(363.0, 207.0),
+                                      size: const Size(363.0, 207.0),
                                       fixedWidth: true,
                                       fixedHeight: true,
                                       child:
@@ -685,9 +686,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 117.0, 47.0),
-                                            size: Size(117.0, 47.0),
+                                            size: const Size(117.0, 47.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -699,9 +700,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 117.0, 47.0),
-                                            size: Size(117.0, 47.0),
+                                            size: const Size(117.0, 47.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -713,32 +714,32 @@ class Enterphonenonotindb extends StatelessWidget {
                                                 borderRadius:
                                                     BorderRadius.circular(5.0),
                                                 color: const Color(0xfffcfcfe),
-                                                boxShadow: [
+                                                boxShadow: const [
                                                   BoxShadow(
                                                     color:
-                                                        const Color(0xff898a8d),
+                                                        Color(0xff898a8d),
                                                     offset: Offset(0, 1),
-                                                    blurRadius: 0,
+                                                    
                                                   ),
                                                 ],
                                               ),
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 29.7, 117.0, 12.3),
-                                            size: Size(117.0, 47.0),
+                                            size: const Size(117.0, 47.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinBottom: true,
                                             child:
                                                 // Adobe XD layer: '↳ Label' (text)
-                                                Text(
+                                                const Text(
                                               'TUV',
                                               style: TextStyle(
                                                 fontFamily: 'SF Pro Text',
                                                 fontSize: 10,
-                                                color: const Color(0xff000000),
+                                                color: Color(0xff000000),
                                                 letterSpacing: 2,
                                                 fontWeight: FontWeight.w700,
                                               ),
@@ -746,20 +747,20 @@ class Enterphonenonotindb extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 1.3, 117.0, 30.7),
-                                            size: Size(117.0, 47.0),
+                                            size: const Size(117.0, 47.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinBottom: true,
                                             child:
                                                 // Adobe XD layer: '↳ Number' (text)
-                                                Text(
+                                                const Text(
                                               '8',
                                               style: TextStyle(
                                                 fontFamily: 'SF Pro Display',
                                                 fontSize: 25,
-                                                color: const Color(0xff000000),
+                                                color: Color(0xff000000),
                                                 letterSpacing:
                                                     0.291225004196167,
                                               ),
@@ -770,9 +771,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                       ),
                                     ),
                                     Pinned.fromSize(
-                                      bounds: Rect.fromLTWH(
+                                      bounds: const Rect.fromLTWH(
                                           0.0, 107.0, 117.0, 47.0),
-                                      size: Size(363.0, 207.0),
+                                      size: const Size(363.0, 207.0),
                                       pinLeft: true,
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -781,9 +782,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 117.0, 47.0),
-                                            size: Size(117.0, 47.0),
+                                            size: const Size(117.0, 47.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -795,9 +796,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 117.0, 47.0),
-                                            size: Size(117.0, 47.0),
+                                            size: const Size(117.0, 47.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -809,32 +810,32 @@ class Enterphonenonotindb extends StatelessWidget {
                                                 borderRadius:
                                                     BorderRadius.circular(5.0),
                                                 color: const Color(0xfffcfcfe),
-                                                boxShadow: [
+                                                boxShadow: const [
                                                   BoxShadow(
                                                     color:
-                                                        const Color(0xff898a8d),
+                                                        Color(0xff898a8d),
                                                     offset: Offset(0, 1),
-                                                    blurRadius: 0,
+                                                    
                                                   ),
                                                 ],
                                               ),
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 29.7, 117.0, 12.3),
-                                            size: Size(117.0, 47.0),
+                                            size: const Size(117.0, 47.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinBottom: true,
                                             child:
                                                 // Adobe XD layer: '↳ Label' (text)
-                                                Text(
+                                                const Text(
                                               'PQRS',
                                               style: TextStyle(
                                                 fontFamily: 'SF Pro Text',
                                                 fontSize: 10,
-                                                color: const Color(0xff000000),
+                                                color: Color(0xff000000),
                                                 letterSpacing: 2,
                                                 fontWeight: FontWeight.w700,
                                               ),
@@ -842,20 +843,20 @@ class Enterphonenonotindb extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 1.3, 117.0, 30.7),
-                                            size: Size(117.0, 47.0),
+                                            size: const Size(117.0, 47.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinBottom: true,
                                             child:
                                                 // Adobe XD layer: '↳ Number' (text)
-                                                Text(
+                                                const Text(
                                               '7',
                                               style: TextStyle(
                                                 fontFamily: 'SF Pro Display',
                                                 fontSize: 25,
-                                                color: const Color(0xff000000),
+                                                color: Color(0xff000000),
                                                 letterSpacing:
                                                     0.291225004196167,
                                               ),
@@ -866,9 +867,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                       ),
                                     ),
                                     Pinned.fromSize(
-                                      bounds: Rect.fromLTWH(
+                                      bounds: const Rect.fromLTWH(
                                           246.0, 53.0, 117.0, 47.0),
-                                      size: Size(363.0, 207.0),
+                                      size: const Size(363.0, 207.0),
                                       pinRight: true,
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -877,9 +878,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 117.0, 47.0),
-                                            size: Size(117.0, 47.0),
+                                            size: const Size(117.0, 47.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -891,9 +892,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 117.0, 47.0),
-                                            size: Size(117.0, 47.0),
+                                            size: const Size(117.0, 47.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -905,32 +906,32 @@ class Enterphonenonotindb extends StatelessWidget {
                                                 borderRadius:
                                                     BorderRadius.circular(5.0),
                                                 color: const Color(0xfffcfcfe),
-                                                boxShadow: [
+                                                boxShadow: const [
                                                   BoxShadow(
                                                     color:
-                                                        const Color(0xff898a8d),
+                                                        Color(0xff898a8d),
                                                     offset: Offset(0, 1),
-                                                    blurRadius: 0,
+                                                    
                                                   ),
                                                 ],
                                               ),
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 29.7, 117.0, 12.3),
-                                            size: Size(117.0, 47.0),
+                                            size: const Size(117.0, 47.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinBottom: true,
                                             child:
                                                 // Adobe XD layer: '↳ Label' (text)
-                                                Text(
+                                                const Text(
                                               'MNO',
                                               style: TextStyle(
                                                 fontFamily: 'SF Pro Text',
                                                 fontSize: 10,
-                                                color: const Color(0xff000000),
+                                                color: Color(0xff000000),
                                                 letterSpacing: 2,
                                                 fontWeight: FontWeight.w700,
                                               ),
@@ -938,20 +939,20 @@ class Enterphonenonotindb extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 1.3, 117.0, 30.7),
-                                            size: Size(117.0, 47.0),
+                                            size: const Size(117.0, 47.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinBottom: true,
                                             child:
                                                 // Adobe XD layer: '↳ Number' (text)
-                                                Text(
+                                                const Text(
                                               '6',
                                               style: TextStyle(
                                                 fontFamily: 'SF Pro Display',
                                                 fontSize: 25,
-                                                color: const Color(0xff000000),
+                                                color: Color(0xff000000),
                                                 letterSpacing:
                                                     0.291225004196167,
                                               ),
@@ -962,9 +963,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                       ),
                                     ),
                                     Pinned.fromSize(
-                                      bounds: Rect.fromLTWH(
+                                      bounds: const Rect.fromLTWH(
                                           123.0, 53.0, 117.0, 47.0),
-                                      size: Size(363.0, 207.0),
+                                      size: const Size(363.0, 207.0),
                                       fixedWidth: true,
                                       fixedHeight: true,
                                       child:
@@ -972,9 +973,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 117.0, 47.0),
-                                            size: Size(117.0, 47.0),
+                                            size: const Size(117.0, 47.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -986,9 +987,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 117.0, 47.0),
-                                            size: Size(117.0, 47.0),
+                                            size: const Size(117.0, 47.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -1000,32 +1001,32 @@ class Enterphonenonotindb extends StatelessWidget {
                                                 borderRadius:
                                                     BorderRadius.circular(5.0),
                                                 color: const Color(0xfffcfcfe),
-                                                boxShadow: [
+                                                boxShadow: const [
                                                   BoxShadow(
                                                     color:
-                                                        const Color(0xff898a8d),
+                                                        Color(0xff898a8d),
                                                     offset: Offset(0, 1),
-                                                    blurRadius: 0,
+                                                    
                                                   ),
                                                 ],
                                               ),
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 29.7, 117.0, 12.3),
-                                            size: Size(117.0, 47.0),
+                                            size: const Size(117.0, 47.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinBottom: true,
                                             child:
                                                 // Adobe XD layer: '↳ Label' (text)
-                                                Text(
+                                                const Text(
                                               'JKL',
                                               style: TextStyle(
                                                 fontFamily: 'SF Pro Text',
                                                 fontSize: 10,
-                                                color: const Color(0xff000000),
+                                                color: Color(0xff000000),
                                                 letterSpacing: 2,
                                                 fontWeight: FontWeight.w700,
                                               ),
@@ -1033,20 +1034,20 @@ class Enterphonenonotindb extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 1.3, 117.0, 30.7),
-                                            size: Size(117.0, 47.0),
+                                            size: const Size(117.0, 47.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinBottom: true,
                                             child:
                                                 // Adobe XD layer: '↳ Number' (text)
-                                                Text(
+                                                const Text(
                                               '5',
                                               style: TextStyle(
                                                 fontFamily: 'SF Pro Display',
                                                 fontSize: 25,
-                                                color: const Color(0xff000000),
+                                                color: Color(0xff000000),
                                                 letterSpacing:
                                                     0.291225004196167,
                                               ),
@@ -1058,8 +1059,8 @@ class Enterphonenonotindb extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 53.0, 117.0, 47.0),
-                                      size: Size(363.0, 207.0),
+                                          const Rect.fromLTWH(0.0, 53.0, 117.0, 47.0),
+                                      size: const Size(363.0, 207.0),
                                       pinLeft: true,
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -1068,9 +1069,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 117.0, 47.0),
-                                            size: Size(117.0, 47.0),
+                                            size: const Size(117.0, 47.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -1082,9 +1083,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 117.0, 47.0),
-                                            size: Size(117.0, 47.0),
+                                            size: const Size(117.0, 47.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -1096,32 +1097,32 @@ class Enterphonenonotindb extends StatelessWidget {
                                                 borderRadius:
                                                     BorderRadius.circular(5.0),
                                                 color: const Color(0xfffcfcfe),
-                                                boxShadow: [
+                                                boxShadow: const [
                                                   BoxShadow(
                                                     color:
-                                                        const Color(0xff898a8d),
+                                                        Color(0xff898a8d),
                                                     offset: Offset(0, 1),
-                                                    blurRadius: 0,
+                                                    
                                                   ),
                                                 ],
                                               ),
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 29.7, 117.0, 12.3),
-                                            size: Size(117.0, 47.0),
+                                            size: const Size(117.0, 47.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinBottom: true,
                                             child:
                                                 // Adobe XD layer: '↳ Label' (text)
-                                                Text(
+                                                const Text(
                                               'GHI',
                                               style: TextStyle(
                                                 fontFamily: 'SF Pro Text',
                                                 fontSize: 10,
-                                                color: const Color(0xff000000),
+                                                color: Color(0xff000000),
                                                 letterSpacing: 2,
                                                 fontWeight: FontWeight.w700,
                                               ),
@@ -1129,20 +1130,20 @@ class Enterphonenonotindb extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 1.3, 117.0, 30.7),
-                                            size: Size(117.0, 47.0),
+                                            size: const Size(117.0, 47.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinBottom: true,
                                             child:
                                                 // Adobe XD layer: '↳ Number' (text)
-                                                Text(
+                                                const Text(
                                               '4',
                                               style: TextStyle(
                                                 fontFamily: 'SF Pro Display',
                                                 fontSize: 25,
-                                                color: const Color(0xff000000),
+                                                color: Color(0xff000000),
                                                 letterSpacing:
                                                     0.291225004196167,
                                               ),
@@ -1153,9 +1154,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                       ),
                                     ),
                                     Pinned.fromSize(
-                                      bounds: Rect.fromLTWH(
+                                      bounds: const Rect.fromLTWH(
                                           246.0, 0.0, 117.0, 46.0),
-                                      size: Size(363.0, 207.0),
+                                      size: const Size(363.0, 207.0),
                                       pinRight: true,
                                       pinTop: true,
                                       fixedWidth: true,
@@ -1165,9 +1166,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 117.0, 46.0),
-                                            size: Size(117.0, 46.0),
+                                            size: const Size(117.0, 46.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -1179,32 +1180,32 @@ class Enterphonenonotindb extends StatelessWidget {
                                                 borderRadius:
                                                     BorderRadius.circular(5.0),
                                                 color: const Color(0xfffcfcfe),
-                                                boxShadow: [
+                                                boxShadow: const [
                                                   BoxShadow(
                                                     color:
-                                                        const Color(0xff898a8d),
+                                                        Color(0xff898a8d),
                                                     offset: Offset(0, 1),
-                                                    blurRadius: 0,
+                                                    
                                                   ),
                                                 ],
                                               ),
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 29.0, 117.0, 12.0),
-                                            size: Size(117.0, 46.0),
+                                            size: const Size(117.0, 46.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinBottom: true,
                                             child:
                                                 // Adobe XD layer: '↳ Label' (text)
-                                                Text(
+                                                const Text(
                                               'DEF',
                                               style: TextStyle(
                                                 fontFamily: 'SF Pro Text',
                                                 fontSize: 10,
-                                                color: const Color(0xff000000),
+                                                color: Color(0xff000000),
                                                 letterSpacing: 2,
                                                 fontWeight: FontWeight.w700,
                                               ),
@@ -1212,20 +1213,20 @@ class Enterphonenonotindb extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 1.0, 117.0, 30.0),
-                                            size: Size(117.0, 46.0),
+                                            size: const Size(117.0, 46.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinBottom: true,
                                             child:
                                                 // Adobe XD layer: '↳ Number' (text)
-                                                Text(
+                                                const Text(
                                               '3',
                                               style: TextStyle(
                                                 fontFamily: 'SF Pro Display',
                                                 fontSize: 25,
-                                                color: const Color(0xff000000),
+                                                color: Color(0xff000000),
                                                 letterSpacing:
                                                     0.291225004196167,
                                               ),
@@ -1236,9 +1237,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                       ),
                                     ),
                                     Pinned.fromSize(
-                                      bounds: Rect.fromLTWH(
+                                      bounds: const Rect.fromLTWH(
                                           123.0, 0.0, 117.0, 46.0),
-                                      size: Size(363.0, 207.0),
+                                      size: const Size(363.0, 207.0),
                                       pinTop: true,
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -1247,9 +1248,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 117.0, 46.0),
-                                            size: Size(117.0, 46.0),
+                                            size: const Size(117.0, 46.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -1261,32 +1262,31 @@ class Enterphonenonotindb extends StatelessWidget {
                                                 borderRadius:
                                                     BorderRadius.circular(5.0),
                                                 color: const Color(0xfffcfcfe),
-                                                boxShadow: [
-                                                  BoxShadow(
+                                                boxShadow:const [
+                                                   BoxShadow(
                                                     color:
-                                                        const Color(0xff898a8d),
+                                                        Color(0xff898a8d),
                                                     offset: Offset(0, 1),
-                                                    blurRadius: 0,
                                                   ),
                                                 ],
                                               ),
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 29.0, 117.0, 12.0),
-                                            size: Size(117.0, 46.0),
+                                            size: const Size(117.0, 46.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinBottom: true,
                                             child:
                                                 // Adobe XD layer: '↳ Label' (text)
-                                                Text(
+                                                const Text(
                                               'ABC',
                                               style: TextStyle(
                                                 fontFamily: 'SF Pro Text',
                                                 fontSize: 10,
-                                                color: const Color(0xff000000),
+                                                color: Color(0xff000000),
                                                 letterSpacing: 2,
                                                 fontWeight: FontWeight.w700,
                                               ),
@@ -1294,20 +1294,20 @@ class Enterphonenonotindb extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 1.0, 117.0, 30.0),
-                                            size: Size(117.0, 46.0),
+                                            size: const Size(117.0, 46.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinBottom: true,
                                             child:
                                                 // Adobe XD layer: '↳ Number' (text)
-                                                Text(
+                                                const Text(
                                               '2',
                                               style: TextStyle(
                                                 fontFamily: 'SF Pro Display',
                                                 fontSize: 25,
-                                                color: const Color(0xff000000),
+                                                color: Color(0xff000000),
                                                 letterSpacing:
                                                     0.291225004196167,
                                               ),
@@ -1319,8 +1319,8 @@ class Enterphonenonotindb extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 117.0, 46.0),
-                                      size: Size(363.0, 207.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 117.0, 46.0),
+                                      size: const Size(363.0, 207.0),
                                       pinLeft: true,
                                       pinTop: true,
                                       fixedWidth: true,
@@ -1330,9 +1330,9 @@ class Enterphonenonotindb extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 117.0, 46.0),
-                                            size: Size(117.0, 46.0),
+                                            size: const Size(117.0, 46.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -1344,32 +1344,32 @@ class Enterphonenonotindb extends StatelessWidget {
                                                 borderRadius:
                                                     BorderRadius.circular(5.0),
                                                 color: const Color(0xfffcfcfe),
-                                                boxShadow: [
+                                                boxShadow: const [
                                                   BoxShadow(
                                                     color:
-                                                        const Color(0xff898a8d),
+                                                        Color(0xff898a8d),
                                                     offset: Offset(0, 1),
-                                                    blurRadius: 0,
+                                                    
                                                   ),
                                                 ],
                                               ),
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 29.0, 117.0, 12.0),
-                                            size: Size(117.0, 46.0),
+                                            size: const Size(117.0, 46.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinBottom: true,
                                             child:
                                                 // Adobe XD layer: '↳ Label' (text)
-                                                Text(
+                                                const Text(
                                               ' ',
                                               style: TextStyle(
                                                 fontFamily: 'SF Pro Text',
                                                 fontSize: 10,
-                                                color: const Color(0xff000000),
+                                                color: Color(0xff000000),
                                                 letterSpacing: 2,
                                                 fontWeight: FontWeight.w700,
                                               ),
@@ -1377,20 +1377,20 @@ class Enterphonenonotindb extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 1.0, 117.0, 30.0),
-                                            size: Size(117.0, 46.0),
+                                            size: const Size(117.0, 46.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinBottom: true,
                                             child:
                                                 // Adobe XD layer: '↳ Number' (text)
-                                                Text(
+                                                const Text(
                                               '1',
                                               style: TextStyle(
                                                 fontFamily: 'SF Pro Display',
                                                 fontSize: 25,
-                                                color: const Color(0xff000000),
+                                                color: Color(0xff000000),
                                                 letterSpacing:
                                                     0.291225004196167,
                                               ),
@@ -1414,7 +1414,7 @@ class Enterphonenonotindb extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 444.0),
+            offset: const Offset(30.0, 444.0),
             child:
                 // Adobe XD layer: 'Primary Button' (group)
                 SizedBox(
@@ -1423,8 +1423,8 @@ class Enterphonenonotindb extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 315.0, 46.0),
-                    size: Size(315.0, 46.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 315.0, 46.0),
+                    size: const Size(315.0, 46.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -1437,17 +1437,17 @@ class Enterphonenonotindb extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(142.0, 17.0, 32.0, 16.0),
-                    size: Size(315.0, 46.0),
+                    bounds: const Rect.fromLTWH(142.0, 17.0, 32.0, 16.0),
+                    size: const Size(315.0, 46.0),
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: 'Filter' (text)
-                        Text(
+                        const Text(
                       'Next',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 16,
-                        color: const Color(0xffffffff),
+                        color: Color(0xffffffff),
                         letterSpacing: -0.16,
                       ),
                       textAlign: TextAlign.center,
@@ -1458,7 +1458,7 @@ class Enterphonenonotindb extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(0.0, 195.0),
+            offset: const Offset(0.0, 195.0),
             child:
                 // Adobe XD layer: 'Phone field' (group)
                 SizedBox(
@@ -1467,8 +1467,8 @@ class Enterphonenonotindb extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 60.0),
-                    size: Size(375.0, 60.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 60.0),
+                    size: const Size(375.0, 60.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -1476,15 +1476,15 @@ class Enterphonenonotindb extends StatelessWidget {
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 60.0),
-                          size: Size(375.0, 60.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 60.0),
+                          size: const Size(375.0, 60.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
                           pinBottom: true,
                           child: Container(
-                            decoration: BoxDecoration(
-                              color: const Color(0xffffffff),
+                            decoration: const BoxDecoration(
+                              color: Color(0xffffffff),
                             ),
                           ),
                         ),
@@ -1492,31 +1492,31 @@ class Enterphonenonotindb extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 59.0, 315.0, 1.0),
-                    size: Size(375.0, 60.0),
+                    bounds: const Rect.fromLTWH(30.0, 59.0, 315.0, 1.0),
+                    size: const Size(375.0, 60.0),
                     pinLeft: true,
                     pinRight: true,
                     pinBottom: true,
                     fixedHeight: true,
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xff1a1824),
+                      decoration: const BoxDecoration(
+                        color: Color(0xff1a1824),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(70.0, 31.0, 25.0, 15.0),
-                    size: Size(375.0, 60.0),
+                    bounds: const Rect.fromLTWH(70.0, 31.0, 25.0, 15.0),
+                    size: const Size(375.0, 60.0),
                     fixedWidth: true,
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: 'text' (text)
-                        Text(
+                        const Text(
                       '+40',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 15,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         letterSpacing: -0.15,
                         height: 1.3333333333333333,
                       ),
@@ -1524,8 +1524,8 @@ class Enterphonenonotindb extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(54.0, 37.0, 6.0, 3.0),
-                    size: Size(375.0, 60.0),
+                    bounds: const Rect.fromLTWH(54.0, 37.0, 6.0, 3.0),
+                    size: const Size(375.0, 60.0),
                     child:
                         // Adobe XD layer: 'chevron' (shape)
                         SvgPicture.string(
@@ -1535,34 +1535,34 @@ class Enterphonenonotindb extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 32.0, 20.0, 12.0),
-                    size: Size(375.0, 60.0),
+                    bounds: const Rect.fromLTWH(30.0, 32.0, 20.0, 12.0),
+                    size: const Size(375.0, 60.0),
                     child: Stack(
                       children: <Widget>[
                         Container(
                           width: 6.7,
                           height: 12.0,
-                          decoration: BoxDecoration(
-                            color: const Color(0xcc0e4691),
+                          decoration: const BoxDecoration(
+                            color: Color(0xcc0e4691),
                           ),
                         ),
                         Transform.translate(
-                          offset: Offset(6.7, 0.0),
+                          offset: const Offset(6.7, 0.0),
                           child: Container(
                             width: 6.7,
                             height: 12.0,
-                            decoration: BoxDecoration(
-                              color: const Color(0xccffe200),
+                            decoration: const BoxDecoration(
+                              color: Color(0xccffe200),
                             ),
                           ),
                         ),
                         Transform.translate(
-                          offset: Offset(13.3, 0.0),
+                          offset: const Offset(13.3, 0.0),
                           child: Container(
                             width: 6.7,
                             height: 12.0,
-                            decoration: BoxDecoration(
-                              color: const Color(0xccff0000),
+                            decoration: const BoxDecoration(
+                              color: Color(0xccff0000),
                             ),
                           ),
                         ),
@@ -1570,18 +1570,18 @@ class Enterphonenonotindb extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(109.0, 31.0, 82.0, 15.0),
-                    size: Size(375.0, 60.0),
+                    bounds: const Rect.fromLTWH(109.0, 31.0, 82.0, 15.0),
+                    size: const Size(375.0, 60.0),
                     fixedWidth: true,
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: 'text' (text)
-                        Text(
+                        const Text(
                       '0767217315',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 15,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         letterSpacing: -0.15,
                         height: 1.3333333333333333,
                       ),
@@ -1589,13 +1589,13 @@ class Enterphonenonotindb extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(191.0, 27.0, 2.0, 22.0),
-                    size: Size(375.0, 60.0),
+                    bounds: const Rect.fromLTWH(191.0, 27.0, 2.0, 22.0),
+                    size: const Size(375.0, 60.0),
                     fixedWidth: true,
                     fixedHeight: true,
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xff34c47c),
+                      decoration: const BoxDecoration(
+                        color: Color(0xff34c47c),
                       ),
                     ),
                   ),
@@ -1604,7 +1604,7 @@ class Enterphonenonotindb extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(316.0, 212.0),
+            offset: const Offset(316.0, 212.0),
             child:
                 // Adobe XD layer: 'delete button' (group)
                 SizedBox(
@@ -1613,21 +1613,21 @@ class Enterphonenonotindb extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 40.0, 40.0),
-                    size: Size(40.0, 40.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 40.0, 40.0),
+                    size: const Size(40.0, 40.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
                     pinBottom: true,
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xffffffff),
+                      decoration: const BoxDecoration(
+                        color: Color(0xffffffff),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(11.0, 11.0, 18.0, 18.0),
-                    size: Size(40.0, 40.0),
+                    bounds: const Rect.fromLTWH(11.0, 11.0, 18.0, 18.0),
+                    size: const Size(40.0, 40.0),
                     child: Stack(
                       children: <Widget>[
                         Transform.rotate(
@@ -1637,15 +1637,15 @@ class Enterphonenonotindb extends StatelessWidget {
                               Container(
                             width: 18.0,
                             height: 18.0,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               borderRadius: BorderRadius.all(
                                   Radius.elliptical(9999.0, 9999.0)),
-                              color: const Color(0x661a1824),
+                              color: Color(0x661a1824),
                             ),
                           ),
                         ),
                         Transform.translate(
-                          offset: Offset(6.0, 6.0),
+                          offset: const Offset(6.0, 6.0),
                           child: SvgPicture.string(
                             _svg_grhv4x,
                             allowDrawingOutsideViewBox: true,
@@ -1659,13 +1659,13 @@ class Enterphonenonotindb extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 119.0),
-            child: Text(
+            offset: const Offset(30.0, 119.0),
+            child: const Text(
               'Enter your phone\nnumber',
               style: TextStyle(
                 fontFamily: 'SF Pro Text',
                 fontSize: 30,
-                color: const Color(0xff1a1824),
+                color: Color(0xff1a1824),
                 letterSpacing: -0.3,
                 fontWeight: FontWeight.w700,
                 height: 1.2,
@@ -1674,7 +1674,7 @@ class Enterphonenonotindb extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(250.0, 43.0),
+            offset: const Offset(250.0, 43.0),
             child:
                 // Adobe XD layer: 'Skip button' (group)
                 SizedBox(
@@ -1683,8 +1683,8 @@ class Enterphonenonotindb extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 110.0, 46.0),
-                    size: Size(110.0, 46.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 110.0, 46.0),
+                    size: const Size(110.0, 46.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -1696,17 +1696,17 @@ class Enterphonenonotindb extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(15.0, 17.0, 77.0, 14.0),
-                    size: Size(110.0, 46.0),
+                    bounds: const Rect.fromLTWH(15.0, 17.0, 77.0, 14.0),
+                    size: const Size(110.0, 46.0),
                     pinLeft: true,
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'Skip for now',
                       style: TextStyle(
                         fontFamily: 'SF Pro Display',
                         fontSize: 14,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         height: 1.4285714285714286,
                       ),
                       textAlign: TextAlign.left,
@@ -1717,7 +1717,7 @@ class Enterphonenonotindb extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(176.0, 58.0),
+            offset: const Offset(176.0, 58.0),
             child:
                 // Adobe XD layer: 'Logo' (group)
                 SizedBox(
@@ -1730,28 +1730,28 @@ class Enterphonenonotindb extends StatelessWidget {
                     child: Container(
                       width: 16.0,
                       height: 16.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(60.0),
                           bottomRight: Radius.circular(60.0),
                           bottomLeft: Radius.circular(60.0),
                         ),
-                        color: const Color(0x1a1a1824),
+                        color: Color(0x1a1a1824),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(8.0, 0.8),
+                    offset: const Offset(8.0, 0.8),
                     child: Container(
                       width: 16.0,
                       height: 16.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(60.0),
                           bottomRight: Radius.circular(60.0),
                           bottomLeft: Radius.circular(60.0),
                         ),
-                        color: const Color(0xff34c47c),
+                        color: Color(0xff34c47c),
                       ),
                     ),
                   ),

@@ -13,14 +13,14 @@ class Trackorder extends StatelessWidget {
       body: Stack(
         children: <Widget>[
           Transform.translate(
-            offset: Offset(-41.0, 0.0),
+            offset: const Offset(-41.0, 0.0),
             child: SvgPicture.string(
               _svg_ua8yf4,
               allowDrawingOutsideViewBox: true,
             ),
           ),
           Transform.translate(
-            offset: Offset(130.0, 432.0),
+            offset: const Offset(130.0, 432.0),
             child:
                 // Adobe XD layer: 'Location pin 2' (group)
                 SizedBox(
@@ -29,23 +29,23 @@ class Trackorder extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 70.0, 70.0),
-                    size: Size(70.0, 70.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 70.0, 70.0),
+                    size: const Size(70.0, 70.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
                     pinBottom: true,
                     child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x80ffffff),
+                        color: Color(0x80ffffff),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(9.0, 9.0, 52.0, 52.0),
-                    size: Size(70.0, 70.0),
+                    bounds: const Rect.fromLTWH(9.0, 9.0, 52.0, 52.0),
+                    size: const Size(70.0, 70.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -53,13 +53,13 @@ class Trackorder extends StatelessWidget {
                     child: Container(
                       decoration: BoxDecoration(
                         borderRadius:
-                            BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
+                            const BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
                         color: const Color(0xff34c47c),
                         border: Border.all(
                             width: 5.0, color: const Color(0xffffffff)),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
-                            color: const Color(0x4d34c47c),
+                            color: Color(0x4d34c47c),
                             offset: Offset(0, 2),
                             blurRadius: 4,
                           ),
@@ -68,8 +68,8 @@ class Trackorder extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(25.7, 24.8, 20.3, 20.3),
-                    size: Size(70.0, 70.0),
+                    bounds: const Rect.fromLTWH(25.7, 24.8, 20.3, 20.3),
+                    size: const Size(70.0, 70.0),
                     fixedWidth: true,
                     fixedHeight: true,
                     child:
@@ -77,19 +77,19 @@ class Trackorder extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 20.3, 20.3),
-                          size: Size(20.3, 20.3),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 20.3, 20.3),
+                          size: const Size(20.3, 20.3),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
                           pinBottom: true,
                           child: Container(
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(1.3, 0.0, 16.8, 20.3),
-                          size: Size(20.3, 20.3),
+                          bounds: const Rect.fromLTWH(1.3, 0.0, 16.8, 20.3),
+                          size: const Size(20.3, 20.3),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -108,7 +108,7 @@ class Trackorder extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(107.0, 43.0),
+            offset: const Offset(107.0, 43.0),
             child:
                 // Adobe XD layer: 'Location pin 1' (group)
                 SizedBox(
@@ -117,23 +117,23 @@ class Trackorder extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 70.0, 70.0),
-                    size: Size(70.0, 70.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 70.0, 70.0),
+                    size: const Size(70.0, 70.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
                     pinBottom: true,
                     child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x80ffffff),
+                        color: Color(0x80ffffff),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(9.0, 9.0, 52.0, 52.0),
-                    size: Size(70.0, 70.0),
+                    bounds: const Rect.fromLTWH(9.0, 9.0, 52.0, 52.0),
+                    size: const Size(70.0, 70.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -141,23 +141,22 @@ class Trackorder extends StatelessWidget {
                     child: Container(
                       decoration: BoxDecoration(
                         borderRadius:
-                            BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
+                            const BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
                         color: const Color(0xff34c47c),
                         border: Border.all(
                             width: 5.0, color: const Color(0xffffffff)),
-                        boxShadow: [
-                          BoxShadow(
-                            color: const Color(0x4d34c47c),
+                        boxShadow:const [
+                           BoxShadow(
+                            color: Color(0x4d34c47c),
                             offset: Offset(0, 2),
-                            blurRadius: 4,
                           ),
                         ],
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(25.7, 24.8, 20.3, 20.3),
-                    size: Size(70.0, 70.0),
+                    bounds: const Rect.fromLTWH(25.7, 24.8, 20.3, 20.3),
+                    size: const Size(70.0, 70.0),
                     fixedWidth: true,
                     fixedHeight: true,
                     child:
@@ -165,19 +164,19 @@ class Trackorder extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 20.3, 20.3),
-                          size: Size(20.3, 20.3),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 20.3, 20.3),
+                          size: const Size(20.3, 20.3),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
                           pinBottom: true,
                           child: Container(
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(1.3, 0.0, 16.8, 20.3),
-                          size: Size(20.3, 20.3),
+                          bounds: const Rect.fromLTWH(1.3, 0.0, 16.8, 20.3),
+                          size: const Size(20.3, 20.3),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -196,7 +195,7 @@ class Trackorder extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(316.0, 43.0),
+            offset: const Offset(316.0, 43.0),
             child:
                 // Adobe XD layer: 'Close button' (group)
                 SizedBox(
@@ -205,26 +204,26 @@ class Trackorder extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
+                    size: const Size(46.0, 46.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
                     pinBottom: true,
                     child: Container(
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(17.0, 17.0, 12.0, 12.0),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(17.0, 17.0, 12.0, 12.0),
+                    size: const Size(46.0, 46.0),
                     fixedWidth: true,
                     fixedHeight: true,
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 12.0, 12.0),
-                          size: Size(12.0, 12.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 12.0, 12.0),
+                          size: const Size(12.0, 12.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -243,7 +242,7 @@ class Trackorder extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(0.0, 542.0),
+            offset: const Offset(0.0, 542.0),
             child:
                 // Adobe XD layer: 'Modal' (group)
                 SizedBox(
@@ -252,8 +251,8 @@ class Trackorder extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 270.0),
-                    size: Size(375.0, 270.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 270.0),
+                    size: const Size(375.0, 270.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -261,15 +260,15 @@ class Trackorder extends StatelessWidget {
                     child:
                         // Adobe XD layer: 'Bg modal' (shape)
                         Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(20.0),
                           topRight: Radius.circular(20.0),
                         ),
-                        color: const Color(0xffffffff),
+                        color: Color(0xffffffff),
                         boxShadow: [
                           BoxShadow(
-                            color: const Color(0x0f000000),
+                            color: Color(0x0f000000),
                             offset: Offset(0, -10),
                             blurRadius: 20,
                           ),
@@ -278,8 +277,8 @@ class Trackorder extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(121.0, 256.0, 134.0, 5.0),
-                    size: Size(375.0, 270.0),
+                    bounds: const Rect.fromLTWH(121.0, 256.0, 134.0, 5.0),
+                    size: const Size(375.0, 270.0),
                     pinBottom: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -293,17 +292,17 @@ class Trackorder extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(33.0, 147.0, 17.0, 60.0),
-                    size: Size(375.0, 270.0),
+                    bounds: const Rect.fromLTWH(33.0, 147.0, 17.0, 60.0),
+                    size: const Size(375.0, 270.0),
                     pinLeft: true,
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       ' ',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 60,
-                        color: const Color(0xff34c47c),
+                        color: Color(0xff34c47c),
                         letterSpacing: -0.6,
                         fontWeight: FontWeight.w700,
                         height: 0.6,
@@ -312,8 +311,8 @@ class Trackorder extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 56.0, 276.0, 59.0),
-                    size: Size(375.0, 270.0),
+                    bounds: const Rect.fromLTWH(30.0, 56.0, 276.0, 59.0),
+                    size: const Size(375.0, 270.0),
                     pinLeft: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -322,18 +321,18 @@ class Trackorder extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 276.0, 30.0),
-                          size: Size(276.0, 59.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 276.0, 30.0),
+                          size: const Size(276.0, 59.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
                           fixedHeight: true,
-                          child: Text(
+                          child: const Text(
                             'Tracking your order',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 30,
-                              color: const Color(0xff1a1824),
+                              color: Color(0xff1a1824),
                               letterSpacing: -0.3,
                               fontWeight: FontWeight.w700,
                               height: 1.2,
@@ -342,18 +341,18 @@ class Trackorder extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(3.0, 43.0, 266.0, 16.0),
-                          size: Size(276.0, 59.0),
+                          bounds: const Rect.fromLTWH(3.0, 43.0, 266.0, 16.0),
+                          size: const Size(276.0, 59.0),
                           pinLeft: true,
                           pinRight: true,
                           pinBottom: true,
                           fixedHeight: true,
-                          child: Text(
+                          child: const Text(
                             'Your order should be at your location in:',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 16,
-                              color: const Color(0xff1a1824),
+                              color: Color(0xff1a1824),
                               letterSpacing: -0.4,
                               height: 1.5,
                             ),

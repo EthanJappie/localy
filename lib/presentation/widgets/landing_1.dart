@@ -16,12 +16,12 @@ class Landing1 extends StatelessWidget {
           Container(
             width: 375.0,
             height: 812.0,
-            decoration: BoxDecoration(
-              color: const Color(0xff34c47c),
+            decoration: const BoxDecoration(
+              color: Color(0xff34c47c),
             ),
           ),
           Transform.translate(
-            offset: Offset(150.0, 369.0),
+            offset: const Offset(150.0, 369.0),
             child:
                 // Adobe XD layer: 'check' (group)
                 SizedBox(
@@ -35,19 +35,19 @@ class Landing1 extends StatelessWidget {
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 74.8, 74.8),
-                          size: Size(74.8, 74.8),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 74.8, 74.8),
+                          size: const Size(74.8, 74.8),
                           child: Container(
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               borderRadius: BorderRadius.all(
                                   Radius.elliptical(9999.0, 9999.0)),
-                              color: const Color(0xff34c47c),
+                              color: Color(0xff34c47c),
                             ),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(19.0, 23.0, 37.7, 28.1),
-                          size: Size(74.8, 74.8),
+                          bounds: const Rect.fromLTWH(19.0, 23.0, 37.7, 28.1),
+                          size: const Size(74.8, 74.8),
                           child: SvgPicture.string(
                             _svg_a7b2v6,
                             allowDrawingOutsideViewBox: true,

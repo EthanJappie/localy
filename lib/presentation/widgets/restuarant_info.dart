@@ -13,14 +13,14 @@ class RestaurantInfo extends StatelessWidget {
       body: Stack(
         children: <Widget>[
           Transform.translate(
-            offset: Offset(-41.0, 0.0),
+            offset: const Offset(-41.0, 0.0),
             child: SvgPicture.string(
               _svg_kl8yh,
               allowDrawingOutsideViewBox: true,
             ),
           ),
           Transform.translate(
-            offset: Offset(172.0, 151.0),
+            offset: const Offset(172.0, 151.0),
             child:
                 // Adobe XD layer: 'Location pin' (group)
                 SizedBox(
@@ -29,23 +29,23 @@ class RestaurantInfo extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 70.0, 70.0),
-                    size: Size(70.0, 70.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 70.0, 70.0),
+                    size: const Size(70.0, 70.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
                     pinBottom: true,
                     child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x80ffffff),
+                        color: Color(0x80ffffff),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(9.0, 9.0, 52.0, 52.0),
-                    size: Size(70.0, 70.0),
+                    bounds: const Rect.fromLTWH(9.0, 9.0, 52.0, 52.0),
+                    size: const Size(70.0, 70.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -53,23 +53,22 @@ class RestaurantInfo extends StatelessWidget {
                     child: Container(
                       decoration: BoxDecoration(
                         borderRadius:
-                            BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
+                            const BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
                         color: const Color(0xff34c47c),
                         border: Border.all(
                             width: 5.0, color: const Color(0xffffffff)),
-                        boxShadow: [
-                          BoxShadow(
-                            color: const Color(0x4d34c47c),
+                        boxShadow: const[
+                           BoxShadow(
+                            color: Color(0x4d34c47c),
                             offset: Offset(0, 2),
-                            blurRadius: 4,
                           ),
                         ],
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(25.7, 24.8, 20.3, 20.3),
-                    size: Size(70.0, 70.0),
+                    bounds: const Rect.fromLTWH(25.7, 24.8, 20.3, 20.3),
+                    size: const Size(70.0, 70.0),
                     fixedWidth: true,
                     fixedHeight: true,
                     child:
@@ -77,19 +76,19 @@ class RestaurantInfo extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 20.3, 20.3),
-                          size: Size(20.3, 20.3),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 20.3, 20.3),
+                          size: const Size(20.3, 20.3),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
                           pinBottom: true,
                           child: Container(
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(1.3, 0.0, 16.8, 20.3),
-                          size: Size(20.3, 20.3),
+                          bounds: const Rect.fromLTWH(1.3, 0.0, 16.8, 20.3),
+                          size: const Size(20.3, 20.3),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -108,7 +107,7 @@ class RestaurantInfo extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(0.0, 466.0),
+            offset: const Offset(0.0, 466.0),
             child:
                 // Adobe XD layer: 'Modal' (group)
                 SizedBox(
@@ -117,8 +116,8 @@ class RestaurantInfo extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 346.0),
-                    size: Size(375.0, 346.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 346.0),
+                    size: const Size(375.0, 346.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -126,15 +125,15 @@ class RestaurantInfo extends StatelessWidget {
                     child:
                         // Adobe XD layer: 'Bg modal' (shape)
                         Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(20.0),
                           topRight: Radius.circular(20.0),
                         ),
-                        color: const Color(0xffffffff),
+                        color: Color(0xffffffff),
                         boxShadow: [
                           BoxShadow(
-                            color: const Color(0x0f000000),
+                            color: Color(0x0f000000),
                             offset: Offset(0, -10),
                             blurRadius: 20,
                           ),
@@ -143,8 +142,8 @@ class RestaurantInfo extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 222.0, 315.0, 64.0),
-                    size: Size(375.0, 346.0),
+                    bounds: const Rect.fromLTWH(30.0, 222.0, 315.0, 64.0),
+                    size: const Size(375.0, 346.0),
                     pinLeft: true,
                     pinRight: true,
                     fixedHeight: true,
@@ -153,36 +152,36 @@ class RestaurantInfo extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 34.0, 103.0, 30.0),
-                          size: Size(315.0, 64.0),
+                          bounds: const Rect.fromLTWH(0.0, 34.0, 103.0, 30.0),
+                          size: const Size(315.0, 64.0),
                           pinLeft: true,
                           pinBottom: true,
                           fixedWidth: true,
                           fixedHeight: true,
-                          child: Text(
+                          child: const Text(
                             'Monday - Thursday\nFriday - Sunday',
                             style: TextStyle(
                               fontFamily: 'SF Pro Display',
                               fontSize: 12,
-                              color: const Color(0x801a1824),
+                              color: Color(0x801a1824),
                               height: 1.5,
                             ),
                             textAlign: TextAlign.left,
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(246.0, 34.0, 69.0, 30.0),
-                          size: Size(315.0, 64.0),
+                          bounds: const Rect.fromLTWH(246.0, 34.0, 69.0, 30.0),
+                          size: const Size(315.0, 64.0),
                           pinRight: true,
                           pinBottom: true,
                           fixedWidth: true,
                           fixedHeight: true,
-                          child: Text(
+                          child: const Text(
                             '10:00 - 19:00\n09:00 - 22:00',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 12,
-                              color: const Color(0xff34c47c),
+                              color: Color(0xff34c47c),
                               letterSpacing: -0.12,
                               height: 1.5,
                             ),
@@ -190,18 +189,18 @@ class RestaurantInfo extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 153.0, 18.0),
-                          size: Size(315.0, 64.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 153.0, 18.0),
+                          size: const Size(315.0, 64.0),
                           pinLeft: true,
                           pinTop: true,
                           fixedWidth: true,
                           fixedHeight: true,
-                          child: Text(
+                          child: const Text(
                             'Hours information',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 18,
-                              color: const Color(0xff1a1a1a),
+                              color: Color(0xff1a1a1a),
                               letterSpacing: -0.18,
                               fontWeight: FontWeight.w700,
                               height: 1.3333333333333333,
@@ -213,8 +212,8 @@ class RestaurantInfo extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 119.0, 209.0, 64.0),
-                    size: Size(375.0, 346.0),
+                    bounds: const Rect.fromLTWH(30.0, 119.0, 209.0, 64.0),
+                    size: const Size(375.0, 346.0),
                     pinLeft: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -223,36 +222,36 @@ class RestaurantInfo extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 34.0, 209.0, 30.0),
-                          size: Size(209.0, 64.0),
+                          bounds: const Rect.fromLTWH(0.0, 34.0, 209.0, 30.0),
+                          size: const Size(209.0, 64.0),
                           pinLeft: true,
                           pinRight: true,
                           pinBottom: true,
                           fixedHeight: true,
-                          child: Text(
+                          child: const Text(
                             '23715 Malibu Road, Malibu, CA 90265,\nCalifornia, USA',
                             style: TextStyle(
                               fontFamily: 'SF Pro Display',
                               fontSize: 12,
-                              color: const Color(0x801a1824),
+                              color: Color(0x801a1824),
                               height: 1.5,
                             ),
                             textAlign: TextAlign.left,
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 71.0, 18.0),
-                          size: Size(209.0, 64.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 71.0, 18.0),
+                          size: const Size(209.0, 64.0),
                           pinLeft: true,
                           pinTop: true,
                           fixedWidth: true,
                           fixedHeight: true,
-                          child: Text(
+                          child: const Text(
                             'Address',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 18,
-                              color: const Color(0xff1a1a1a),
+                              color: Color(0xff1a1a1a),
                               letterSpacing: -0.18,
                               fontWeight: FontWeight.w700,
                               height: 1.3333333333333333,
@@ -264,19 +263,19 @@ class RestaurantInfo extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 56.0, 275.0, 30.0),
-                    size: Size(375.0, 346.0),
+                    bounds: const Rect.fromLTWH(30.0, 56.0, 275.0, 30.0),
+                    size: const Size(375.0, 346.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
                     child:
                         // Adobe XD layer: 'Large Title' (text)
-                        Text(
+                        const Text(
                       'Basic Kneads Pizza',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 30,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         letterSpacing: -0.3,
                         fontWeight: FontWeight.w700,
                         height: 1.2,
@@ -285,8 +284,8 @@ class RestaurantInfo extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(121.0, 332.0, 134.0, 5.0),
-                    size: Size(375.0, 346.0),
+                    bounds: const Rect.fromLTWH(121.0, 332.0, 134.0, 5.0),
+                    size: const Size(375.0, 346.0),
                     pinBottom: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -304,7 +303,7 @@ class RestaurantInfo extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(19.0, 45.0),
+            offset: const Offset(19.0, 45.0),
             child:
                 // Adobe XD layer: 'Back button' (group)
                 SizedBox(
@@ -313,8 +312,8 @@ class RestaurantInfo extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
+                    size: const Size(46.0, 46.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -326,8 +325,8 @@ class RestaurantInfo extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(11.0, 18.0, 24.0, 9.3),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(11.0, 18.0, 24.0, 9.3),
+                    size: const Size(46.0, 46.0),
                     child: Transform.rotate(
                       angle: 3.1416,
                       child:

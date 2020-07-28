@@ -10,4 +10,6 @@ analyzer:
     - lib/**.freezed.dart
     - lib/**.g.dart
     - lib/**.gr.dart
-    
+linter:
+  rules:
+    constant_identifier_names: false

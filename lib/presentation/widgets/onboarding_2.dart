@@ -16,12 +16,12 @@ class Onboarding2 extends StatelessWidget {
           Container(
             width: 375.0,
             height: 812.0,
-            decoration: BoxDecoration(
-              color: const Color(0xffffffff),
+            decoration: const BoxDecoration(
+              color: Color(0xffffffff),
             ),
           ),
           Transform.translate(
-            offset: Offset(20.0, 15.0),
+            offset: const Offset(20.0, 15.0),
             child:
                 // Adobe XD layer: 'iOS elements' (group)
                 SizedBox(
@@ -30,8 +30,8 @@ class Onboarding2 extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
-                    size: Size(340.3, 788.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
+                    size: const Size(340.3, 788.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -39,8 +39,8 @@ class Onboarding2 extends StatelessWidget {
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
-                          size: Size(340.3, 16.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
+                          size: const Size(340.3, 16.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -50,8 +50,8 @@ class Onboarding2 extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(316.0, 2.3, 24.3, 11.3),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(316.0, 2.3, 24.3, 11.3),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 pinTop: true,
                                 pinBottom: true,
@@ -62,8 +62,8 @@ class Onboarding2 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
+                                      size: const Size(24.3, 11.3),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -73,9 +73,9 @@ class Onboarding2 extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 22.0, 11.3),
-                                            size: Size(22.0, 11.3),
+                                            size: const Size(22.0, 11.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -89,9 +89,9 @@ class Onboarding2 extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 22.0, 11.3),
-                                            size: Size(22.0, 11.3),
+                                            size: const Size(22.0, 11.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -109,8 +109,8 @@ class Onboarding2 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(23.0, 3.7, 1.3, 4.0),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(23.0, 3.7, 1.3, 4.0),
+                                      size: const Size(24.3, 11.3),
                                       pinRight: true,
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -119,9 +119,9 @@ class Onboarding2 extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 11.3, 14.0),
-                                            size: Size(1.3, 4.0),
+                                            size: const Size(1.3, 4.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -135,9 +135,9 @@ class Onboarding2 extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 1.3, 4.0),
-                                            size: Size(1.3, 4.0),
+                                            size: const Size(1.3, 4.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -155,8 +155,8 @@ class Onboarding2 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(2.0, 2.0, 18.0, 7.3),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(2.0, 2.0, 18.0, 7.3),
+                                      size: const Size(24.3, 11.3),
                                       pinLeft: true,
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -165,9 +165,9 @@ class Onboarding2 extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 28.0, 17.3),
-                                            size: Size(18.0, 7.3),
+                                            size: const Size(18.0, 7.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -181,9 +181,9 @@ class Onboarding2 extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 18.0, 7.3),
-                                            size: Size(18.0, 7.3),
+                                            size: const Size(18.0, 7.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -203,8 +203,8 @@ class Onboarding2 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(295.7, 2.3, 15.3, 11.0),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(295.7, 2.3, 15.3, 11.0),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 pinTop: true,
                                 fixedWidth: true,
@@ -215,8 +215,8 @@ class Onboarding2 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 15.3, 11.0),
-                                      size: Size(15.3, 11.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 15.3, 11.0),
+                                      size: const Size(15.3, 11.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -226,9 +226,9 @@ class Onboarding2 extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 25.3, 21.0),
-                                            size: Size(15.3, 11.0),
+                                            size: const Size(15.3, 11.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -242,9 +242,9 @@ class Onboarding2 extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 15.3, 11.0),
-                                            size: Size(15.3, 11.0),
+                                            size: const Size(15.3, 11.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -264,8 +264,8 @@ class Onboarding2 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(273.7, 2.7, 17.0, 10.7),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(273.7, 2.7, 17.0, 10.7),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 fixedWidth: true,
                                 fixedHeight: true,
@@ -275,8 +275,8 @@ class Onboarding2 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 17.0, 10.7),
-                                      size: Size(17.0, 10.7),
+                                          const Rect.fromLTWH(0.0, 0.0, 17.0, 10.7),
+                                      size: const Size(17.0, 10.7),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -286,9 +286,9 @@ class Onboarding2 extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 27.0, 20.7),
-                                            size: Size(17.0, 10.7),
+                                            size: const Size(17.0, 10.7),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -302,9 +302,9 @@ class Onboarding2 extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 17.0, 10.7),
-                                            size: Size(17.0, 10.7),
+                                            size: const Size(17.0, 10.7),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -324,8 +324,8 @@ class Onboarding2 extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
+                                size: const Size(340.3, 16.0),
                                 pinLeft: true,
                                 pinTop: true,
                                 pinBottom: true,
@@ -336,8 +336,8 @@ class Onboarding2 extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
-                                      size: Size(54.0, 16.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
+                                      size: const Size(54.0, 16.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -352,8 +352,8 @@ class Onboarding2 extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(12.8, 4.9, 27.5, 10.3),
-                                      size: Size(54.0, 16.0),
+                                          const Rect.fromLTWH(12.8, 4.9, 27.5, 10.3),
+                                      size: const Size(54.0, 16.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinBottom: true,
@@ -376,8 +376,8 @@ class Onboarding2 extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(101.0, 783.0, 134.0, 5.0),
-                    size: Size(340.3, 788.0),
+                    bounds: const Rect.fromLTWH(101.0, 783.0, 134.0, 5.0),
+                    size: const Size(340.3, 788.0),
                     pinBottom: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -393,7 +393,7 @@ class Onboarding2 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 710.0),
+            offset: const Offset(30.0, 710.0),
             child:
                 // Adobe XD layer: 'Secondary Button' (group)
                 SizedBox(
@@ -402,8 +402,8 @@ class Onboarding2 extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 315.0, 48.0),
-                    size: Size(315.0, 48.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 315.0, 48.0),
+                    size: const Size(315.0, 48.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -416,16 +416,16 @@ class Onboarding2 extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(144.0, 19.0, 28.0, 14.0),
-                    size: Size(315.0, 48.0),
+                    bounds: const Rect.fromLTWH(144.0, 19.0, 28.0, 14.0),
+                    size: const Size(315.0, 48.0),
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'Skip',
                       style: TextStyle(
                         fontFamily: 'SF Pro Display',
                         fontSize: 14,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         height: 1.4285714285714286,
                       ),
                       textAlign: TextAlign.center,
@@ -436,7 +436,7 @@ class Onboarding2 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 653.0),
+            offset: const Offset(30.0, 653.0),
             child:
                 // Adobe XD layer: 'Primary Button' (group)
                 SizedBox(
@@ -445,8 +445,8 @@ class Onboarding2 extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 315.0, 46.0),
-                    size: Size(315.0, 46.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 315.0, 46.0),
+                    size: const Size(315.0, 46.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -459,17 +459,17 @@ class Onboarding2 extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(142.0, 17.0, 32.0, 16.0),
-                    size: Size(315.0, 46.0),
+                    bounds: const Rect.fromLTWH(142.0, 17.0, 32.0, 16.0),
+                    size: const Size(315.0, 46.0),
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: 'Filter' (text)
-                        Text(
+                        const Text(
                       'Next',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 16,
-                        color: const Color(0xffffffff),
+                        color: Color(0xffffffff),
                         letterSpacing: -0.16,
                       ),
                       textAlign: TextAlign.center,
@@ -480,7 +480,7 @@ class Onboarding2 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(168.0, 565.0),
+            offset: const Offset(168.0, 565.0),
             child:
                 // Adobe XD layer: 'Slider dots' (group)
                 SizedBox(
@@ -489,8 +489,8 @@ class Onboarding2 extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(16.0, 0.0, 8.0, 8.0),
-                    size: Size(40.0, 8.0),
+                    bounds: const Rect.fromLTWH(16.0, 0.0, 8.0, 8.0),
+                    size: const Size(40.0, 8.0),
                     pinTop: true,
                     pinBottom: true,
                     fixedWidth: true,
@@ -504,8 +504,8 @@ class Onboarding2 extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(32.0, 0.0, 8.0, 8.0),
-                    size: Size(40.0, 8.0),
+                    bounds: const Rect.fromLTWH(32.0, 0.0, 8.0, 8.0),
+                    size: const Size(40.0, 8.0),
                     pinRight: true,
                     pinTop: true,
                     pinBottom: true,
@@ -520,8 +520,8 @@ class Onboarding2 extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 8.0, 8.0),
-                    size: Size(40.0, 8.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 8.0, 8.0),
+                    size: const Size(40.0, 8.0),
                     pinLeft: true,
                     pinTop: true,
                     pinBottom: true,
@@ -540,7 +540,7 @@ class Onboarding2 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(33.0, 431.0),
+            offset: const Offset(33.0, 431.0),
             child:
                 // Adobe XD layer: 'Title & subtitle' (group)
                 SizedBox(
@@ -549,16 +549,16 @@ class Onboarding2 extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(65.0, 0.0, 180.0, 30.0),
-                    size: Size(309.0, 94.0),
+                    bounds: const Rect.fromLTWH(65.0, 0.0, 180.0, 30.0),
+                    size: const Size(309.0, 94.0),
                     child: Transform.rotate(
                       angle: 0.0,
-                      child: Text(
+                      child: const Text(
                         'Fast delivery',
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 30,
-                          color: const Color(0xff1a1824),
+                          color: Color(0xff1a1824),
                           letterSpacing: -0.3,
                           fontWeight: FontWeight.w700,
                           height: 1.2,
@@ -568,18 +568,18 @@ class Onboarding2 extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 50.0, 309.0, 44.0),
-                    size: Size(309.0, 94.0),
+                    bounds: const Rect.fromLTWH(0.0, 50.0, 309.0, 44.0),
+                    size: const Size(309.0, 94.0),
                     pinLeft: true,
                     pinRight: true,
                     pinBottom: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'Fast & free delivery to your home or office. We will deliver it, wherever you are! ',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 16,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         letterSpacing: -0.384,
                         height: 1.5,
                       ),
@@ -591,7 +591,7 @@ class Onboarding2 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(43.0, 150.0),
+            offset: const Offset(43.0, 150.0),
             child:
                 // Adobe XD layer: 'Image' (group)
                 SizedBox(
@@ -604,124 +604,124 @@ class Onboarding2 extends StatelessWidget {
                     allowDrawingOutsideViewBox: true,
                   ),
                   Transform.translate(
-                    offset: Offset(0.6, 201.9),
+                    offset: const Offset(0.6, 201.9),
                     child: Container(
                       width: 14.2,
                       height: 1.9,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a34c47c),
+                        color: Color(0x1a34c47c),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(27.8, 204.6),
+                    offset: const Offset(27.8, 204.6),
                     child: Container(
                       width: 14.2,
                       height: 1.9,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a34c47c),
+                        color: Color(0x1a34c47c),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(59.8, 200.9),
+                    offset: const Offset(59.8, 200.9),
                     child: Container(
                       width: 14.2,
                       height: 1.9,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a34c47c),
+                        color: Color(0x1a34c47c),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(19.0, 212.7),
+                    offset: const Offset(19.0, 212.7),
                     child: Container(
                       width: 10.1,
                       height: 1.4,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a34c47c),
+                        color: Color(0x1a34c47c),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(47.2, 212.0),
+                    offset: const Offset(47.2, 212.0),
                     child: Container(
                       width: 10.1,
                       height: 1.4,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a34c47c),
+                        color: Color(0x1a34c47c),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(4.1, 151.5),
+                    offset: const Offset(4.1, 151.5),
                     child: SvgPicture.string(
                       _svg_ubas9l,
                       allowDrawingOutsideViewBox: true,
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(77.7, 213.9),
+                    offset: const Offset(77.7, 213.9),
                     child: Container(
                       width: 180.9,
                       height: 8.2,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0x1a34c47c),
+                        color: Color(0x1a34c47c),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(149.0, 94.2),
+                    offset: const Offset(149.0, 94.2),
                     child: SvgPicture.string(
                       _svg_wnydkn,
                       allowDrawingOutsideViewBox: true,
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(212.5, 185.2),
+                    offset: const Offset(212.5, 185.2),
                     child: Container(
                       width: 24.7,
                       height: 24.7,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xffdce0ed),
+                        color: Color(0xffdce0ed),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(217.5, 190.1),
+                    offset: const Offset(217.5, 190.1),
                     child: Container(
                       width: 14.8,
                       height: 14.8,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xff65617d),
+                        color: Color(0xff65617d),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(91.2, 128.3),
+                    offset: const Offset(91.2, 128.3),
                     child: SvgPicture.string(
                       _svg_dkus0n,
                       allowDrawingOutsideViewBox: true,
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(88.0, 149.1),
+                    offset: const Offset(88.0, 149.1),
                     child: Container(
                       width: 80.1,
                       height: 2.2,
@@ -732,57 +732,57 @@ class Onboarding2 extends StatelessWidget {
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(198.0, 128.3),
+                    offset: const Offset(198.0, 128.3),
                     child: SvgPicture.string(
                       _svg_yejt2g,
                       allowDrawingOutsideViewBox: true,
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(105.9, 174.9),
+                    offset: const Offset(105.9, 174.9),
                     child: Container(
                       width: 45.3,
                       height: 45.3,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xff65617d),
+                        color: Color(0xff65617d),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(116.2, 185.2),
+                    offset: const Offset(116.2, 185.2),
                     child: Container(
                       width: 24.7,
                       height: 24.7,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xffdce0ed),
+                        color: Color(0xffdce0ed),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(121.1, 190.1),
+                    offset: const Offset(121.1, 190.1),
                     child: Container(
                       width: 14.8,
                       height: 14.8,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xff65617d),
+                        color: Color(0xff65617d),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(102.0, 164.2),
+                    offset: const Offset(102.0, 164.2),
                     child: SvgPicture.string(
                       _svg_r3h787,
                       allowDrawingOutsideViewBox: true,
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(92.0, 192.6),
+                    offset: const Offset(92.0, 192.6),
                     child: Container(
                       width: 67.1,
                       height: 5.9,
@@ -793,7 +793,7 @@ class Onboarding2 extends StatelessWidget {
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(92.0, 192.0),
+                    offset: const Offset(92.0, 192.0),
                     child: Container(
                       width: 67.1,
                       height: 5.9,
@@ -804,44 +804,44 @@ class Onboarding2 extends StatelessWidget {
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(213.9, 138.0),
+                    offset: const Offset(213.9, 138.0),
                     child: Transform.rotate(
                       angle: -0.4246,
                       child: Container(
                         width: 6.6,
                         height: 16.6,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           borderRadius: BorderRadius.all(
                               Radius.elliptical(9999.0, 9999.0)),
-                          color: const Color(0x1a000000),
+                          color: Color(0x1a000000),
                         ),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(214.2, 137.7),
+                    offset: const Offset(214.2, 137.7),
                     child: Transform.rotate(
                       angle: -0.4246,
                       child: Container(
                         width: 6.6,
                         height: 16.6,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           borderRadius: BorderRadius.all(
                               Radius.elliptical(9999.0, 9999.0)),
-                          color: const Color(0xffdce0ed),
+                          color: Color(0xffdce0ed),
                         ),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(89.3, 43.8),
+                    offset: const Offset(89.3, 43.8),
                     child: SvgPicture.string(
                       _svg_147k8u,
                       allowDrawingOutsideViewBox: true,
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(89.3, 53.3),
+                    offset: const Offset(89.3, 53.3),
                     child: SizedBox(
                       width: 72.0,
                       height: 33.0,
@@ -856,26 +856,26 @@ class Onboarding2 extends StatelessWidget {
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(183.3, 150.5),
+                    offset: const Offset(183.3, 150.5),
                     child: SvgPicture.string(
                       _svg_4ofiqs,
                       allowDrawingOutsideViewBox: true,
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(180.7, 113.3),
+                    offset: const Offset(180.7, 113.3),
                     child: Container(
                       width: 11.1,
                       height: 13.5,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius:
                             BorderRadius.all(Radius.elliptical(9999.0, 9999.0)),
-                        color: const Color(0xff34c47c),
+                        color: Color(0xff34c47c),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(94.4, 111.3),
+                    offset: const Offset(94.4, 111.3),
                     child: SvgPicture.string(
                       _svg_e8279i,
                       allowDrawingOutsideViewBox: true,
@@ -886,7 +886,7 @@ class Onboarding2 extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(176.0, 58.0),
+            offset: const Offset(176.0, 58.0),
             child:
                 // Adobe XD layer: 'Logo icon' (group)
                 SizedBox(
@@ -899,28 +899,28 @@ class Onboarding2 extends StatelessWidget {
                     child: Container(
                       width: 16.0,
                       height: 16.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(60.0),
                           bottomRight: Radius.circular(60.0),
                           bottomLeft: Radius.circular(60.0),
                         ),
-                        color: const Color(0x1a1a1824),
+                        color: Color(0x1a1a1824),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(8.0, 0.8),
+                    offset: const Offset(8.0, 0.8),
                     child: Container(
                       width: 16.0,
                       height: 16.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(60.0),
                           bottomRight: Radius.circular(60.0),
                           bottomLeft: Radius.circular(60.0),
                         ),
-                        color: const Color(0xff34c47c),
+                        color: Color(0xff34c47c),
                       ),
                     ),
                   ),

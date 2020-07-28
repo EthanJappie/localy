@@ -17,12 +17,12 @@ class Filter extends StatelessWidget {
           Container(
             width: 375.0,
             height: 812.0,
-            decoration: BoxDecoration(
-              color: const Color(0xffffffff),
+            decoration: const BoxDecoration(
+              color: Color(0xffffffff),
             ),
           ),
           Transform.translate(
-            offset: Offset(20.0, 15.0),
+            offset: const Offset(20.0, 15.0),
             child:
                 // Adobe XD layer: 'iOS elements' (group)
                 SizedBox(
@@ -31,8 +31,8 @@ class Filter extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
-                    size: Size(340.3, 788.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
+                    size: const Size(340.3, 788.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -40,8 +40,8 @@ class Filter extends StatelessWidget {
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
-                          size: Size(340.3, 16.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
+                          size: const Size(340.3, 16.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -51,8 +51,8 @@ class Filter extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(316.0, 2.3, 24.3, 11.3),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(316.0, 2.3, 24.3, 11.3),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 pinTop: true,
                                 pinBottom: true,
@@ -63,8 +63,8 @@ class Filter extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
+                                      size: const Size(24.3, 11.3),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -74,9 +74,9 @@ class Filter extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 22.0, 11.3),
-                                            size: Size(22.0, 11.3),
+                                            size: const Size(22.0, 11.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -90,9 +90,9 @@ class Filter extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 22.0, 11.3),
-                                            size: Size(22.0, 11.3),
+                                            size: const Size(22.0, 11.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -110,8 +110,8 @@ class Filter extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(23.0, 3.7, 1.3, 4.0),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(23.0, 3.7, 1.3, 4.0),
+                                      size: const Size(24.3, 11.3),
                                       pinRight: true,
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -120,9 +120,9 @@ class Filter extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 11.3, 14.0),
-                                            size: Size(1.3, 4.0),
+                                            size: const Size(1.3, 4.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -136,9 +136,9 @@ class Filter extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 1.3, 4.0),
-                                            size: Size(1.3, 4.0),
+                                            size: const Size(1.3, 4.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -156,8 +156,8 @@ class Filter extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(2.0, 2.0, 18.0, 7.3),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(2.0, 2.0, 18.0, 7.3),
+                                      size: const Size(24.3, 11.3),
                                       pinLeft: true,
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -166,9 +166,9 @@ class Filter extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 28.0, 17.3),
-                                            size: Size(18.0, 7.3),
+                                            size: const Size(18.0, 7.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -182,9 +182,9 @@ class Filter extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 18.0, 7.3),
-                                            size: Size(18.0, 7.3),
+                                            size: const Size(18.0, 7.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -204,8 +204,8 @@ class Filter extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(295.7, 2.3, 15.3, 11.0),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(295.7, 2.3, 15.3, 11.0),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 pinTop: true,
                                 fixedWidth: true,
@@ -216,8 +216,8 @@ class Filter extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 15.3, 11.0),
-                                      size: Size(15.3, 11.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 15.3, 11.0),
+                                      size: const Size(15.3, 11.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -227,9 +227,9 @@ class Filter extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 25.3, 21.0),
-                                            size: Size(15.3, 11.0),
+                                            size: const Size(15.3, 11.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -243,9 +243,9 @@ class Filter extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 15.3, 11.0),
-                                            size: Size(15.3, 11.0),
+                                            size: const Size(15.3, 11.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -265,8 +265,8 @@ class Filter extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(273.7, 2.7, 17.0, 10.7),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(273.7, 2.7, 17.0, 10.7),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 fixedWidth: true,
                                 fixedHeight: true,
@@ -276,8 +276,8 @@ class Filter extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 17.0, 10.7),
-                                      size: Size(17.0, 10.7),
+                                          const Rect.fromLTWH(0.0, 0.0, 17.0, 10.7),
+                                      size: const Size(17.0, 10.7),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -287,9 +287,9 @@ class Filter extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 27.0, 20.7),
-                                            size: Size(17.0, 10.7),
+                                            size: const Size(17.0, 10.7),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -303,9 +303,9 @@ class Filter extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 17.0, 10.7),
-                                            size: Size(17.0, 10.7),
+                                            size: const Size(17.0, 10.7),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -325,8 +325,8 @@ class Filter extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
+                                size: const Size(340.3, 16.0),
                                 pinLeft: true,
                                 pinTop: true,
                                 pinBottom: true,
@@ -337,8 +337,8 @@ class Filter extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
-                                      size: Size(54.0, 16.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
+                                      size: const Size(54.0, 16.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -353,8 +353,8 @@ class Filter extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(12.8, 4.9, 27.5, 10.3),
-                                      size: Size(54.0, 16.0),
+                                          const Rect.fromLTWH(12.8, 4.9, 27.5, 10.3),
+                                      size: const Size(54.0, 16.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinBottom: true,
@@ -377,8 +377,8 @@ class Filter extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(101.0, 783.0, 134.0, 5.0),
-                    size: Size(340.3, 788.0),
+                    bounds: const Rect.fromLTWH(101.0, 783.0, 134.0, 5.0),
+                    size: const Size(340.3, 788.0),
                     pinBottom: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -394,7 +394,7 @@ class Filter extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 710.0),
+            offset: const Offset(30.0, 710.0),
             child:
                 // Adobe XD layer: 'Secondary button' (group)
                 SizedBox(
@@ -403,8 +403,8 @@ class Filter extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 315.0, 48.0),
-                    size: Size(315.0, 48.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 315.0, 48.0),
+                    size: const Size(315.0, 48.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -417,16 +417,16 @@ class Filter extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(123.0, 18.0, 70.0, 14.0),
-                    size: Size(315.0, 48.0),
+                    bounds: const Rect.fromLTWH(123.0, 18.0, 70.0, 14.0),
+                    size: const Size(315.0, 48.0),
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'Clear filters',
                       style: TextStyle(
                         fontFamily: 'SF Pro Display',
                         fontSize: 14,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         height: 1.4285714285714286,
                       ),
                       textAlign: TextAlign.center,
@@ -437,7 +437,7 @@ class Filter extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 653.0),
+            offset: const Offset(30.0, 653.0),
             child:
                 // Adobe XD layer: 'Primary button' (group)
                 SizedBox(
@@ -446,8 +446,8 @@ class Filter extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 315.0, 46.0),
-                    size: Size(315.0, 46.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 315.0, 46.0),
+                    size: const Size(315.0, 46.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -459,17 +459,17 @@ class Filter extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(118.0, 17.0, 80.0, 16.0),
-                    size: Size(315.0, 46.0),
+                    bounds: const Rect.fromLTWH(118.0, 17.0, 80.0, 16.0),
+                    size: const Size(315.0, 46.0),
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: 'Filter' (text)
-                        Text(
+                        const Text(
                       'Apply filters',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 16,
-                        color: const Color(0xffffffff),
+                        color: Color(0xffffffff),
                         letterSpacing: -0.16,
                       ),
                       textAlign: TextAlign.center,
@@ -480,7 +480,7 @@ class Filter extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 498.0),
+            offset: const Offset(30.0, 498.0),
             child:
                 // Adobe XD layer: 'Price range' (group)
                 SizedBox(
@@ -489,8 +489,8 @@ class Filter extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(5.0, 71.0, 310.0, 1.0),
-                    size: Size(315.0, 84.0),
+                    bounds: const Rect.fromLTWH(5.0, 71.0, 310.0, 1.0),
+                    size: const Size(315.0, 84.0),
                     pinLeft: true,
                     pinRight: true,
                     pinBottom: true,
@@ -504,8 +504,8 @@ class Filter extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(170.0, 40.0, 26.0, 44.0),
-                    size: Size(315.0, 84.0),
+                    bounds: const Rect.fromLTWH(170.0, 40.0, 26.0, 44.0),
+                    size: const Size(315.0, 84.0),
                     pinBottom: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -514,8 +514,8 @@ class Filter extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 18.0, 26.0, 26.0),
-                          size: Size(26.0, 44.0),
+                          bounds: const Rect.fromLTWH(0.0, 18.0, 26.0, 26.0),
+                          size: const Size(26.0, 44.0),
                           pinLeft: true,
                           pinRight: true,
                           pinBottom: true,
@@ -529,17 +529,17 @@ class Filter extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 26.0, 12.0),
-                          size: Size(26.0, 44.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 26.0, 12.0),
+                          size: const Size(26.0, 44.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: '0 m' (text)
-                              Text(
+                              const Text(
                             '\$125',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 12,
-                              color: const Color(0xff1a1824),
+                              color: Color(0xff1a1824),
                               letterSpacing: -0.2894117889404297,
                               height: 1.3333333333333333,
                             ),
@@ -550,8 +550,8 @@ class Filter extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 40.0, 26.0, 44.0),
-                    size: Size(315.0, 84.0),
+                    bounds: const Rect.fromLTWH(0.0, 40.0, 26.0, 44.0),
+                    size: const Size(315.0, 84.0),
                     pinLeft: true,
                     pinBottom: true,
                     fixedWidth: true,
@@ -561,8 +561,8 @@ class Filter extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 18.0, 26.0, 26.0),
-                          size: Size(26.0, 44.0),
+                          bounds: const Rect.fromLTWH(0.0, 18.0, 26.0, 26.0),
+                          size: const Size(26.0, 44.0),
                           pinLeft: true,
                           pinRight: true,
                           pinBottom: true,
@@ -576,17 +576,17 @@ class Filter extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(6.0, 0.0, 14.0, 12.0),
-                          size: Size(26.0, 44.0),
+                          bounds: const Rect.fromLTWH(6.0, 0.0, 14.0, 12.0),
+                          size: const Size(26.0, 44.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: '0 m' (text)
-                              Text(
+                              const Text(
                             '\$5',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 12,
-                              color: const Color(0xff1a1824),
+                              color: Color(0xff1a1824),
                               letterSpacing: -0.2894117889404297,
                               height: 1.3333333333333333,
                             ),
@@ -597,17 +597,17 @@ class Filter extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 96.0, 18.0),
-                    size: Size(315.0, 84.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 96.0, 18.0),
+                    size: const Size(315.0, 84.0),
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: 'Distance' (text)
-                        Text(
+                        const Text(
                       'Price range',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 18,
-                        color: const Color(0xff1a1a1a),
+                        color: Color(0xff1a1a1a),
                         letterSpacing: -0.18,
                         fontWeight: FontWeight.w700,
                         height: 1.3333333333333333,
@@ -620,7 +620,7 @@ class Filter extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 385.0),
+            offset: const Offset(30.0, 385.0),
             child:
                 // Adobe XD layer: 'Type of food' (group)
                 SizedBox(
@@ -629,8 +629,8 @@ class Filter extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(233.0, 38.0, 88.0, 32.0),
-                    size: Size(321.0, 70.0),
+                    bounds: const Rect.fromLTWH(233.0, 38.0, 88.0, 32.0),
+                    size: const Size(321.0, 70.0),
                     pinRight: true,
                     pinBottom: true,
                     fixedWidth: true,
@@ -640,8 +640,8 @@ class Filter extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 88.0, 32.0),
-                          size: Size(88.0, 32.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 88.0, 32.0),
+                          size: const Size(88.0, 32.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -656,17 +656,17 @@ class Filter extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(16.0, 11.0, 53.0, 12.0),
-                          size: Size(88.0, 32.0),
+                          bounds: const Rect.fromLTWH(16.0, 11.0, 53.0, 12.0),
+                          size: const Size(88.0, 32.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Restaurants' (text)
-                              Text(
+                              const Text(
                             'Lacto ovo ',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 12,
-                              color: const Color(0xff1a1824),
+                              color: Color(0xff1a1824),
                               letterSpacing: -0.2894117889404297,
                               height: 1.8333333333333333,
                             ),
@@ -677,8 +677,8 @@ class Filter extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(159.0, 38.0, 66.0, 32.0),
-                    size: Size(321.0, 70.0),
+                    bounds: const Rect.fromLTWH(159.0, 38.0, 66.0, 32.0),
+                    size: const Size(321.0, 70.0),
                     pinBottom: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -687,8 +687,8 @@ class Filter extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 66.0, 32.0),
-                          size: Size(66.0, 32.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 66.0, 32.0),
+                          size: const Size(66.0, 32.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -703,17 +703,17 @@ class Filter extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(16.0, 11.0, 33.0, 12.0),
-                          size: Size(66.0, 32.0),
+                          bounds: const Rect.fromLTWH(16.0, 11.0, 33.0, 12.0),
+                          size: const Size(66.0, 32.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Restaurants' (text)
-                              Text(
+                              const Text(
                             'Vegan',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 12,
-                              color: const Color(0xff1a1824),
+                              color: Color(0xff1a1824),
                               letterSpacing: -0.2894117889404297,
                               height: 1.8333333333333333,
                             ),
@@ -724,8 +724,8 @@ class Filter extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(61.0, 38.0, 90.0, 32.0),
-                    size: Size(321.0, 70.0),
+                    bounds: const Rect.fromLTWH(61.0, 38.0, 90.0, 32.0),
+                    size: const Size(321.0, 70.0),
                     pinBottom: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -734,8 +734,8 @@ class Filter extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 90.0, 32.0),
-                          size: Size(90.0, 32.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 90.0, 32.0),
+                          size: const Size(90.0, 32.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -749,17 +749,17 @@ class Filter extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(16.0, 11.0, 55.0, 12.0),
-                          size: Size(90.0, 32.0),
+                          bounds: const Rect.fromLTWH(16.0, 11.0, 55.0, 12.0),
+                          size: const Size(90.0, 32.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Markets' (text)
-                              Text(
+                              const Text(
                             'Vegetarian',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 12,
-                              color: const Color(0xffffffff),
+                              color: Color(0xffffffff),
                               letterSpacing: -0.2894117889404297,
                               height: 1.8333333333333333,
                             ),
@@ -770,8 +770,8 @@ class Filter extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 38.0, 53.0, 32.0),
-                    size: Size(321.0, 70.0),
+                    bounds: const Rect.fromLTWH(0.0, 38.0, 53.0, 32.0),
+                    size: const Size(321.0, 70.0),
                     pinLeft: true,
                     pinBottom: true,
                     fixedWidth: true,
@@ -781,8 +781,8 @@ class Filter extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 53.0, 32.0),
-                          size: Size(53.0, 32.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 53.0, 32.0),
+                          size: const Size(53.0, 32.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -797,17 +797,17 @@ class Filter extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(16.0, 11.0, 20.0, 12.0),
-                          size: Size(53.0, 32.0),
+                          bounds: const Rect.fromLTWH(16.0, 11.0, 20.0, 12.0),
+                          size: const Size(53.0, 32.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'All' (text)
-                              Text(
+                              const Text(
                             'Any',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 12,
-                              color: const Color(0xff1a1824),
+                              color: Color(0xff1a1824),
                               letterSpacing: -0.2894117889404297,
                               height: 1.8333333333333333,
                             ),
@@ -818,17 +818,17 @@ class Filter extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 105.0, 18.0),
-                    size: Size(321.0, 70.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 105.0, 18.0),
+                    size: const Size(321.0, 70.0),
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: 'Distance' (text)
-                        Text(
+                        const Text(
                       'Type of food',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 18,
-                        color: const Color(0xff1a1a1a),
+                        color: Color(0xff1a1a1a),
                         letterSpacing: -0.18,
                         fontWeight: FontWeight.w700,
                         height: 1.3333333333333333,
@@ -841,7 +841,7 @@ class Filter extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 192.0),
+            offset: const Offset(30.0, 192.0),
             child:
                 // Adobe XD layer: 'Categories' (group)
                 SizedBox(
@@ -850,8 +850,8 @@ class Filter extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(229.0, 118.0, 66.0, 32.0),
-                    size: Size(295.0, 150.0),
+                    bounds: const Rect.fromLTWH(229.0, 118.0, 66.0, 32.0),
+                    size: const Size(295.0, 150.0),
                     pinRight: true,
                     pinBottom: true,
                     fixedWidth: true,
@@ -861,8 +861,8 @@ class Filter extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 66.0, 32.0),
-                          size: Size(66.0, 32.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 66.0, 32.0),
+                          size: const Size(66.0, 32.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -877,17 +877,17 @@ class Filter extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(16.0, 11.0, 33.0, 12.0),
-                          size: Size(66.0, 32.0),
+                          bounds: const Rect.fromLTWH(16.0, 11.0, 33.0, 12.0),
+                          size: const Size(66.0, 32.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Bakeries' (text)
-                              Text(
+                              const Text(
                             'Soups',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 12,
-                              color: const Color(0xff1a1824),
+                              color: Color(0xff1a1824),
                               letterSpacing: -0.2894117889404297,
                               height: 1.8333333333333333,
                             ),
@@ -898,8 +898,8 @@ class Filter extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(153.0, 118.0, 68.0, 32.0),
-                    size: Size(295.0, 150.0),
+                    bounds: const Rect.fromLTWH(153.0, 118.0, 68.0, 32.0),
+                    size: const Size(295.0, 150.0),
                     pinBottom: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -908,8 +908,8 @@ class Filter extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 68.0, 32.0),
-                          size: Size(68.0, 32.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 68.0, 32.0),
+                          size: const Size(68.0, 32.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -924,17 +924,17 @@ class Filter extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(16.0, 11.0, 35.0, 12.0),
-                          size: Size(68.0, 32.0),
+                          bounds: const Rect.fromLTWH(16.0, 11.0, 35.0, 12.0),
+                          size: const Size(68.0, 32.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Bakeries' (text)
-                              Text(
+                              const Text(
                             'Salads',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 12,
-                              color: const Color(0xff1a1824),
+                              color: Color(0xff1a1824),
                               letterSpacing: -0.2894117889404297,
                               height: 1.8333333333333333,
                             ),
@@ -945,8 +945,8 @@ class Filter extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(84.0, 118.0, 61.0, 32.0),
-                    size: Size(295.0, 150.0),
+                    bounds: const Rect.fromLTWH(84.0, 118.0, 61.0, 32.0),
+                    size: const Size(295.0, 150.0),
                     pinBottom: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -955,8 +955,8 @@ class Filter extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 61.0, 32.0),
-                          size: Size(61.0, 32.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 61.0, 32.0),
+                          size: const Size(61.0, 32.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -971,17 +971,17 @@ class Filter extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(16.0, 11.0, 28.0, 12.0),
-                          size: Size(61.0, 32.0),
+                          bounds: const Rect.fromLTWH(16.0, 11.0, 28.0, 12.0),
+                          size: const Size(61.0, 32.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Snacks & Drinks' (text)
-                              Text(
+                              const Text(
                             'Pizza',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 12,
-                              color: const Color(0xff1a1824),
+                              color: Color(0xff1a1824),
                               letterSpacing: -0.2894117889404297,
                               height: 1.8333333333333333,
                             ),
@@ -992,8 +992,8 @@ class Filter extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 118.0, 76.0, 32.0),
-                    size: Size(295.0, 150.0),
+                    bounds: const Rect.fromLTWH(0.0, 118.0, 76.0, 32.0),
+                    size: const Size(295.0, 150.0),
                     pinLeft: true,
                     pinBottom: true,
                     fixedWidth: true,
@@ -1003,8 +1003,8 @@ class Filter extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 76.0, 32.0),
-                          size: Size(76.0, 32.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 76.0, 32.0),
+                          size: const Size(76.0, 32.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1019,17 +1019,17 @@ class Filter extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(16.0, 11.0, 42.0, 12.0),
-                          size: Size(76.0, 32.0),
+                          bounds: const Rect.fromLTWH(16.0, 11.0, 42.0, 12.0),
+                          size: const Size(76.0, 32.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Snacks & Drinks' (text)
-                              Text(
+                              const Text(
                             'Chinese',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 12,
-                              color: const Color(0xff1a1824),
+                              color: Color(0xff1a1824),
                               letterSpacing: -0.2894117889404297,
                               height: 1.8333333333333333,
                             ),
@@ -1040,8 +1040,8 @@ class Filter extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(197.0, 78.0, 62.0, 32.0),
-                    size: Size(295.0, 150.0),
+                    bounds: const Rect.fromLTWH(197.0, 78.0, 62.0, 32.0),
+                    size: const Size(295.0, 150.0),
                     pinRight: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -1050,8 +1050,8 @@ class Filter extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 62.0, 32.0),
-                          size: Size(62.0, 32.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 62.0, 32.0),
+                          size: const Size(62.0, 32.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1066,17 +1066,17 @@ class Filter extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(16.0, 11.0, 30.0, 12.0),
-                          size: Size(62.0, 32.0),
+                          bounds: const Rect.fromLTWH(16.0, 11.0, 30.0, 12.0),
+                          size: const Size(62.0, 32.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Bakeries' (text)
-                              Text(
+                              const Text(
                             'Pasta',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 12,
-                              color: const Color(0xff1a1824),
+                              color: Color(0xff1a1824),
                               letterSpacing: -0.2894117889404297,
                               height: 1.8333333333333333,
                             ),
@@ -1087,8 +1087,8 @@ class Filter extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(82.0, 78.0, 107.0, 32.0),
-                    size: Size(295.0, 150.0),
+                    bounds: const Rect.fromLTWH(82.0, 78.0, 107.0, 32.0),
+                    size: const Size(295.0, 150.0),
                     fixedWidth: true,
                     fixedHeight: true,
                     child:
@@ -1096,8 +1096,8 @@ class Filter extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 107.0, 32.0),
-                          size: Size(107.0, 32.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 107.0, 32.0),
+                          size: const Size(107.0, 32.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1111,17 +1111,17 @@ class Filter extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(16.0, 11.0, 71.0, 12.0),
-                          size: Size(107.0, 32.0),
+                          bounds: const Rect.fromLTWH(16.0, 11.0, 71.0, 12.0),
+                          size: const Size(107.0, 32.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Snacks & Drinks' (text)
-                              Text(
+                              const Text(
                             'Italian Cuisine',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 12,
-                              color: const Color(0xffffffff),
+                              color: Color(0xffffffff),
                               letterSpacing: -0.2894117889404297,
                               height: 1.8333333333333333,
                             ),
@@ -1132,8 +1132,8 @@ class Filter extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 78.0, 74.0, 32.0),
-                    size: Size(295.0, 150.0),
+                    bounds: const Rect.fromLTWH(0.0, 78.0, 74.0, 32.0),
+                    size: const Size(295.0, 150.0),
                     pinLeft: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -1142,8 +1142,8 @@ class Filter extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 74.0, 32.0),
-                          size: Size(74.0, 32.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 74.0, 32.0),
+                          size: const Size(74.0, 32.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1158,17 +1158,17 @@ class Filter extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(16.0, 11.0, 40.0, 12.0),
-                          size: Size(74.0, 32.0),
+                          bounds: const Rect.fromLTWH(16.0, 11.0, 40.0, 12.0),
+                          size: const Size(74.0, 32.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Bakeries' (text)
-                              Text(
+                              const Text(
                             'Burgers',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 12,
-                              color: const Color(0xff1a1824),
+                              color: Color(0xff1a1824),
                               letterSpacing: -0.2894117889404297,
                               height: 1.8333333333333333,
                             ),
@@ -1179,8 +1179,8 @@ class Filter extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(219.0, 38.0, 68.0, 32.0),
-                    size: Size(295.0, 150.0),
+                    bounds: const Rect.fromLTWH(219.0, 38.0, 68.0, 32.0),
+                    size: const Size(295.0, 150.0),
                     pinRight: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -1189,8 +1189,8 @@ class Filter extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 68.0, 32.0),
-                          size: Size(68.0, 32.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 68.0, 32.0),
+                          size: const Size(68.0, 32.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1205,17 +1205,17 @@ class Filter extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(16.0, 11.0, 34.0, 12.0),
-                          size: Size(68.0, 32.0),
+                          bounds: const Rect.fromLTWH(16.0, 11.0, 34.0, 12.0),
+                          size: const Size(68.0, 32.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Cafe' (text)
-                              Text(
+                              const Text(
                             'Dinner',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 12,
-                              color: const Color(0xff1a1824),
+                              color: Color(0xff1a1824),
                               letterSpacing: -0.2894117889404297,
                               height: 1.8333333333333333,
                             ),
@@ -1226,8 +1226,8 @@ class Filter extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(145.0, 38.0, 66.0, 32.0),
-                    size: Size(295.0, 150.0),
+                    bounds: const Rect.fromLTWH(145.0, 38.0, 66.0, 32.0),
+                    size: const Size(295.0, 150.0),
                     fixedWidth: true,
                     fixedHeight: true,
                     child:
@@ -1235,8 +1235,8 @@ class Filter extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 66.0, 32.0),
-                          size: Size(66.0, 32.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 66.0, 32.0),
+                          size: const Size(66.0, 32.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1251,17 +1251,17 @@ class Filter extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(16.0, 11.0, 32.0, 12.0),
-                          size: Size(66.0, 32.0),
+                          bounds: const Rect.fromLTWH(16.0, 11.0, 32.0, 12.0),
+                          size: const Size(66.0, 32.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Restaurants' (text)
-                              Text(
+                              const Text(
                             'Lunch',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 12,
-                              color: const Color(0xff1a1824),
+                              color: Color(0xff1a1824),
                               letterSpacing: -0.2894117889404297,
                               height: 1.8333333333333333,
                             ),
@@ -1272,8 +1272,8 @@ class Filter extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(54.0, 38.0, 83.0, 32.0),
-                    size: Size(295.0, 150.0),
+                    bounds: const Rect.fromLTWH(54.0, 38.0, 83.0, 32.0),
+                    size: const Size(295.0, 150.0),
                     fixedWidth: true,
                     fixedHeight: true,
                     child:
@@ -1281,8 +1281,8 @@ class Filter extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 83.0, 32.0),
-                          size: Size(83.0, 32.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 83.0, 32.0),
+                          size: const Size(83.0, 32.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1297,17 +1297,17 @@ class Filter extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(16.0, 11.0, 48.0, 12.0),
-                          size: Size(83.0, 32.0),
+                          bounds: const Rect.fromLTWH(16.0, 11.0, 48.0, 12.0),
+                          size: const Size(83.0, 32.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'Markets' (text)
-                              Text(
+                              const Text(
                             'Breakfast',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 12,
-                              color: const Color(0xff1a1824),
+                              color: Color(0xff1a1824),
                               letterSpacing: -0.2894117889404297,
                               height: 1.8333333333333333,
                             ),
@@ -1318,8 +1318,8 @@ class Filter extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 38.0, 46.0, 32.0),
-                    size: Size(295.0, 150.0),
+                    bounds: const Rect.fromLTWH(0.0, 38.0, 46.0, 32.0),
+                    size: const Size(295.0, 150.0),
                     pinLeft: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -1328,8 +1328,8 @@ class Filter extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 46.0, 32.0),
-                          size: Size(46.0, 32.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 46.0, 32.0),
+                          size: const Size(46.0, 32.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -1344,17 +1344,17 @@ class Filter extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(16.0, 11.0, 13.0, 12.0),
-                          size: Size(46.0, 32.0),
+                          bounds: const Rect.fromLTWH(16.0, 11.0, 13.0, 12.0),
+                          size: const Size(46.0, 32.0),
                           fixedHeight: true,
                           child:
                               // Adobe XD layer: 'All' (text)
-                              Text(
+                              const Text(
                             'All',
                             style: TextStyle(
                               fontFamily: 'SF Pro Text',
                               fontSize: 12,
-                              color: const Color(0xff1a1824),
+                              color: Color(0xff1a1824),
                               letterSpacing: -0.2894117889404297,
                               height: 1.8333333333333333,
                             ),
@@ -1365,17 +1365,17 @@ class Filter extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 91.0, 18.0),
-                    size: Size(295.0, 150.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 91.0, 18.0),
+                    size: const Size(295.0, 150.0),
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: 'Distance' (text)
-                        Text(
+                        const Text(
                       'Categories',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 18,
-                        color: const Color(0xff1a1a1a),
+                        color: Color(0xff1a1a1a),
                         letterSpacing: -0.18,
                         fontWeight: FontWeight.w700,
                         height: 1.3333333333333333,
@@ -1388,13 +1388,13 @@ class Filter extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 119.0),
-            child: Text(
+            offset: const Offset(30.0, 119.0),
+            child: const Text(
               'Filter your search',
               style: TextStyle(
                 fontFamily: 'SF Pro Text',
                 fontSize: 30,
-                color: const Color(0xff1a1824),
+                color: Color(0xff1a1824),
                 letterSpacing: -0.3,
                 fontWeight: FontWeight.w700,
                 height: 1.2,
@@ -1403,7 +1403,7 @@ class Filter extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(176.0, 58.0),
+            offset: const Offset(176.0, 58.0),
             child:
                 // Adobe XD layer: 'Logo' (group)
                 SizedBox(
@@ -1416,28 +1416,28 @@ class Filter extends StatelessWidget {
                     child: Container(
                       width: 16.0,
                       height: 16.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(60.0),
                           bottomRight: Radius.circular(60.0),
                           bottomLeft: Radius.circular(60.0),
                         ),
-                        color: const Color(0x1a1a1824),
+                        color: Color(0x1a1a1824),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(8.0, 0.8),
+                    offset: const Offset(8.0, 0.8),
                     child: Container(
                       width: 16.0,
                       height: 16.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(60.0),
                           bottomRight: Radius.circular(60.0),
                           bottomLeft: Radius.circular(60.0),
                         ),
-                        color: const Color(0xff34c47c),
+                        color: Color(0xff34c47c),
                       ),
                     ),
                   ),
@@ -1446,7 +1446,7 @@ class Filter extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(316.0, 43.0),
+            offset: const Offset(316.0, 43.0),
             child:
                 // Adobe XD layer: 'Close button' (group)
                 SizedBox(
@@ -1455,28 +1455,28 @@ class Filter extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
+                    size: const Size(46.0, 46.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
                     pinBottom: true,
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xffffffff),
+                      decoration: const BoxDecoration(
+                        color: Color(0xffffffff),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(17.0, 17.0, 12.0, 12.0),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(17.0, 17.0, 12.0, 12.0),
+                    size: const Size(46.0, 46.0),
                     fixedWidth: true,
                     fixedHeight: true,
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 12.0, 12.0),
-                          size: Size(12.0, 12.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 12.0, 12.0),
+                          size: const Size(12.0, 12.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,

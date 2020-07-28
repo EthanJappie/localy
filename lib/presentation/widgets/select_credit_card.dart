@@ -16,12 +16,12 @@ class Selectcreditcard extends StatelessWidget {
           Container(
             width: 375.0,
             height: 812.0,
-            decoration: BoxDecoration(
-              color: const Color(0xffffffff),
+            decoration: const BoxDecoration(
+              color: Color(0xffffffff),
             ),
           ),
           Transform.translate(
-            offset: Offset(20.0, 15.0),
+            offset: const Offset(20.0, 15.0),
             child:
                 // Adobe XD layer: 'iOS elements' (group)
                 SizedBox(
@@ -30,8 +30,8 @@ class Selectcreditcard extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
-                    size: Size(340.3, 788.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
+                    size: const Size(340.3, 788.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -39,8 +39,8 @@ class Selectcreditcard extends StatelessWidget {
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
-                          size: Size(340.3, 16.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
+                          size: const Size(340.3, 16.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -50,8 +50,8 @@ class Selectcreditcard extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(316.0, 2.3, 24.3, 11.3),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(316.0, 2.3, 24.3, 11.3),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 pinTop: true,
                                 pinBottom: true,
@@ -62,8 +62,8 @@ class Selectcreditcard extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
+                                      size: const Size(24.3, 11.3),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -73,9 +73,9 @@ class Selectcreditcard extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 22.0, 11.3),
-                                            size: Size(22.0, 11.3),
+                                            size: const Size(22.0, 11.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -89,9 +89,9 @@ class Selectcreditcard extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 22.0, 11.3),
-                                            size: Size(22.0, 11.3),
+                                            size: const Size(22.0, 11.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -109,8 +109,8 @@ class Selectcreditcard extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(23.0, 3.7, 1.3, 4.0),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(23.0, 3.7, 1.3, 4.0),
+                                      size: const Size(24.3, 11.3),
                                       pinRight: true,
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -119,9 +119,9 @@ class Selectcreditcard extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 11.3, 14.0),
-                                            size: Size(1.3, 4.0),
+                                            size: const Size(1.3, 4.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -135,9 +135,9 @@ class Selectcreditcard extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 1.3, 4.0),
-                                            size: Size(1.3, 4.0),
+                                            size: const Size(1.3, 4.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -155,8 +155,8 @@ class Selectcreditcard extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(2.0, 2.0, 18.0, 7.3),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(2.0, 2.0, 18.0, 7.3),
+                                      size: const Size(24.3, 11.3),
                                       pinLeft: true,
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -165,9 +165,9 @@ class Selectcreditcard extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 28.0, 17.3),
-                                            size: Size(18.0, 7.3),
+                                            size: const Size(18.0, 7.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -181,9 +181,9 @@ class Selectcreditcard extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 18.0, 7.3),
-                                            size: Size(18.0, 7.3),
+                                            size: const Size(18.0, 7.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -203,8 +203,8 @@ class Selectcreditcard extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(295.7, 2.3, 15.3, 11.0),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(295.7, 2.3, 15.3, 11.0),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 pinTop: true,
                                 fixedWidth: true,
@@ -215,8 +215,8 @@ class Selectcreditcard extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 15.3, 11.0),
-                                      size: Size(15.3, 11.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 15.3, 11.0),
+                                      size: const Size(15.3, 11.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -226,9 +226,9 @@ class Selectcreditcard extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 25.3, 21.0),
-                                            size: Size(15.3, 11.0),
+                                            size: const Size(15.3, 11.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -242,9 +242,9 @@ class Selectcreditcard extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 15.3, 11.0),
-                                            size: Size(15.3, 11.0),
+                                            size: const Size(15.3, 11.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -264,8 +264,8 @@ class Selectcreditcard extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(273.7, 2.7, 17.0, 10.7),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(273.7, 2.7, 17.0, 10.7),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 fixedWidth: true,
                                 fixedHeight: true,
@@ -275,8 +275,8 @@ class Selectcreditcard extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 17.0, 10.7),
-                                      size: Size(17.0, 10.7),
+                                          const Rect.fromLTWH(0.0, 0.0, 17.0, 10.7),
+                                      size: const Size(17.0, 10.7),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -286,9 +286,9 @@ class Selectcreditcard extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 27.0, 20.7),
-                                            size: Size(17.0, 10.7),
+                                            size: const Size(17.0, 10.7),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -302,9 +302,9 @@ class Selectcreditcard extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 17.0, 10.7),
-                                            size: Size(17.0, 10.7),
+                                            size: const Size(17.0, 10.7),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -324,8 +324,8 @@ class Selectcreditcard extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
+                                size: const Size(340.3, 16.0),
                                 pinLeft: true,
                                 pinTop: true,
                                 pinBottom: true,
@@ -336,8 +336,8 @@ class Selectcreditcard extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
-                                      size: Size(54.0, 16.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
+                                      size: const Size(54.0, 16.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -352,8 +352,8 @@ class Selectcreditcard extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(12.8, 4.9, 27.5, 10.3),
-                                      size: Size(54.0, 16.0),
+                                          const Rect.fromLTWH(12.8, 4.9, 27.5, 10.3),
+                                      size: const Size(54.0, 16.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinBottom: true,
@@ -376,8 +376,8 @@ class Selectcreditcard extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(101.0, 783.0, 134.0, 5.0),
-                    size: Size(340.3, 788.0),
+                    bounds: const Rect.fromLTWH(101.0, 783.0, 134.0, 5.0),
+                    size: const Size(340.3, 788.0),
                     pinBottom: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -393,7 +393,7 @@ class Selectcreditcard extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 712.0),
+            offset: const Offset(30.0, 712.0),
             child:
                 // Adobe XD layer: 'Primary button' (group)
                 SizedBox(
@@ -402,8 +402,8 @@ class Selectcreditcard extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 315.0, 46.0),
-                    size: Size(315.0, 46.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 315.0, 46.0),
+                    size: const Size(315.0, 46.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -415,17 +415,17 @@ class Selectcreditcard extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(105.0, 17.0, 106.0, 16.0),
-                    size: Size(315.0, 46.0),
+                    bounds: const Rect.fromLTWH(105.0, 17.0, 106.0, 16.0),
+                    size: const Size(315.0, 46.0),
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: 'Filter' (text)
-                        Text(
+                        const Text(
                       'Add credit card',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 16,
-                        color: const Color(0xffffffff),
+                        color: Color(0xffffffff),
                         letterSpacing: -0.16,
                       ),
                       textAlign: TextAlign.center,
@@ -436,7 +436,7 @@ class Selectcreditcard extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(0.0, 342.0),
+            offset: const Offset(0.0, 342.0),
             child:
                 // Adobe XD layer: 'Card 3' (group)
                 SizedBox(
@@ -445,8 +445,8 @@ class Selectcreditcard extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 68.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 68.0),
+                    size: const Size(375.0, 68.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -458,18 +458,18 @@ class Selectcreditcard extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(68.0, 40.0, 76.0, 12.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(68.0, 40.0, 76.0, 12.0),
+                    size: const Size(375.0, 68.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text(
+                          const Text(
                         'Revolut: 09/23',
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 12,
-                          color: const Color(0x801a1824),
+                          color: Color(0x801a1824),
                           letterSpacing: -0.12,
                         ),
                         textAlign: TextAlign.left,
@@ -477,16 +477,16 @@ class Selectcreditcard extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(68.0, 18.0, 122.0, 14.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(68.0, 18.0, 122.0, 14.0),
+                    size: const Size(375.0, 68.0),
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text.rich(
+                    child: const Text.rich(
                       TextSpan(
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 14,
-                          color: const Color(0xff1a1824),
+                          color: Color(0xff1a1824),
                           letterSpacing: 1.4000000000000001,
                           height: 1.4285714285714286,
                         ),
@@ -510,17 +510,17 @@ class Selectcreditcard extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(304.0, 28.0, 41.0, 14.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(304.0, 28.0, 41.0, 14.0),
+                    size: const Size(375.0, 68.0),
                     pinRight: true,
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'Delete',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 14,
-                        color: const Color(0xff34c47c),
+                        color: Color(0xff34c47c),
                         letterSpacing: -0.14,
                         fontWeight: FontWeight.w700,
                         height: 1.4285714285714286,
@@ -529,8 +529,8 @@ class Selectcreditcard extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 23.0, 22.0, 22.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(30.0, 23.0, 22.0, 22.0),
+                    size: const Size(375.0, 68.0),
                     child: Stack(
                       children: <Widget>[
                         SvgPicture.string(
@@ -545,7 +545,7 @@ class Selectcreditcard extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(0.0, 274.0),
+            offset: const Offset(0.0, 274.0),
             child:
                 // Adobe XD layer: 'Card 2' (group)
                 SizedBox(
@@ -554,8 +554,8 @@ class Selectcreditcard extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 68.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 68.0),
+                    size: const Size(375.0, 68.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -567,18 +567,18 @@ class Selectcreditcard extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(68.0, 40.0, 63.0, 12.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(68.0, 40.0, 63.0, 12.0),
+                    size: const Size(375.0, 68.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text(
+                          const Text(
                         'Visa - 08/22',
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 12,
-                          color: const Color(0x801a1824),
+                          color: Color(0x801a1824),
                           letterSpacing: -0.12,
                         ),
                         textAlign: TextAlign.left,
@@ -586,16 +586,16 @@ class Selectcreditcard extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(68.0, 18.0, 122.0, 14.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(68.0, 18.0, 122.0, 14.0),
+                    size: const Size(375.0, 68.0),
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text.rich(
+                    child: const Text.rich(
                       TextSpan(
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 14,
-                          color: const Color(0xff1a1824),
+                          color: Color(0xff1a1824),
                           letterSpacing: 1.4000000000000001,
                           height: 1.4285714285714286,
                         ),
@@ -619,17 +619,17 @@ class Selectcreditcard extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(304.0, 28.0, 41.0, 14.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(304.0, 28.0, 41.0, 14.0),
+                    size: const Size(375.0, 68.0),
                     pinRight: true,
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'Delete',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 14,
-                        color: const Color(0xff34c47c),
+                        color: Color(0xff34c47c),
                         letterSpacing: -0.14,
                         fontWeight: FontWeight.w700,
                         height: 1.4285714285714286,
@@ -638,8 +638,8 @@ class Selectcreditcard extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 23.0, 22.0, 22.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(30.0, 23.0, 22.0, 22.0),
+                    size: const Size(375.0, 68.0),
                     child: Stack(
                       children: <Widget>[
                         SvgPicture.string(
@@ -654,7 +654,7 @@ class Selectcreditcard extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(0.0, 206.0),
+            offset: const Offset(0.0, 206.0),
             child:
                 // Adobe XD layer: 'Card 1' (group)
                 SizedBox(
@@ -663,8 +663,8 @@ class Selectcreditcard extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 68.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 68.0),
+                    size: const Size(375.0, 68.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -676,18 +676,18 @@ class Selectcreditcard extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(68.0, 40.0, 99.0, 12.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(68.0, 40.0, 99.0, 12.0),
+                    size: const Size(375.0, 68.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text(
+                          const Text(
                         'Mastercard - 06/23',
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 12,
-                          color: const Color(0x801a1824),
+                          color: Color(0x801a1824),
                           letterSpacing: -0.12,
                         ),
                         textAlign: TextAlign.left,
@@ -695,16 +695,16 @@ class Selectcreditcard extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(68.0, 18.0, 122.0, 14.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(68.0, 18.0, 122.0, 14.0),
+                    size: const Size(375.0, 68.0),
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text.rich(
+                    child: const Text.rich(
                       TextSpan(
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 14,
-                          color: const Color(0xff1a1824),
+                          color: Color(0xff1a1824),
                           letterSpacing: 1.4000000000000001,
                           height: 1.4285714285714286,
                         ),
@@ -728,17 +728,17 @@ class Selectcreditcard extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(304.0, 28.0, 41.0, 14.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(304.0, 28.0, 41.0, 14.0),
+                    size: const Size(375.0, 68.0),
                     pinRight: true,
                     fixedWidth: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'Delete',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 14,
-                        color: const Color(0xff34c47c),
+                        color: Color(0xff34c47c),
                         letterSpacing: -0.14,
                         fontWeight: FontWeight.w700,
                         height: 1.4285714285714286,
@@ -747,8 +747,8 @@ class Selectcreditcard extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 23.0, 22.0, 22.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(30.0, 23.0, 22.0, 22.0),
+                    size: const Size(375.0, 68.0),
                     child: Stack(
                       children: <Widget>[
                         SvgPicture.string(
@@ -759,8 +759,8 @@ class Selectcreditcard extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(36.0, 30.0, 10.0, 8.1),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(36.0, 30.0, 10.0, 8.1),
+                    size: const Size(375.0, 68.0),
                     child:
                         // Adobe XD layer: 'tick-sign' (shape)
                         SvgPicture.string(
@@ -774,13 +774,13 @@ class Selectcreditcard extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 119.0),
-            child: Text(
+            offset: const Offset(30.0, 119.0),
+            child: const Text(
               'Select what credit\ncard you want to use',
               style: TextStyle(
                 fontFamily: 'SF Pro Text',
                 fontSize: 30,
-                color: const Color(0xff1a1824),
+                color: Color(0xff1a1824),
                 letterSpacing: -0.3,
                 fontWeight: FontWeight.w700,
                 height: 1.2,
@@ -789,7 +789,7 @@ class Selectcreditcard extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(316.0, 43.0),
+            offset: const Offset(316.0, 43.0),
             child:
                 // Adobe XD layer: 'Close button' (group)
                 SizedBox(
@@ -798,28 +798,28 @@ class Selectcreditcard extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
+                    size: const Size(46.0, 46.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
                     pinBottom: true,
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xffffffff),
+                      decoration: const BoxDecoration(
+                        color: Color(0xffffffff),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(17.0, 17.0, 12.0, 12.0),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(17.0, 17.0, 12.0, 12.0),
+                    size: const Size(46.0, 46.0),
                     fixedWidth: true,
                     fixedHeight: true,
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 12.0, 12.0),
-                          size: Size(12.0, 12.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 12.0, 12.0),
+                          size: const Size(12.0, 12.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -838,7 +838,7 @@ class Selectcreditcard extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(176.0, 58.0),
+            offset: const Offset(176.0, 58.0),
             child:
                 // Adobe XD layer: 'Logo' (group)
                 SizedBox(
@@ -851,28 +851,28 @@ class Selectcreditcard extends StatelessWidget {
                     child: Container(
                       width: 16.0,
                       height: 16.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(60.0),
                           bottomRight: Radius.circular(60.0),
                           bottomLeft: Radius.circular(60.0),
                         ),
-                        color: const Color(0x1a1a1824),
+                        color: Color(0x1a1a1824),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(8.0, 0.8),
+                    offset: const Offset(8.0, 0.8),
                     child: Container(
                       width: 16.0,
                       height: 16.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(60.0),
                           bottomRight: Radius.circular(60.0),
                           bottomLeft: Radius.circular(60.0),
                         ),
-                        color: const Color(0xff34c47c),
+                        color: Color(0xff34c47c),
                       ),
                     ),
                   ),

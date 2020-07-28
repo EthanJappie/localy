@@ -16,12 +16,12 @@ class Menugreennotlogged extends StatelessWidget {
           Container(
             width: 375.0,
             height: 812.0,
-            decoration: BoxDecoration(
-              color: const Color(0xff34c47c),
+            decoration: const BoxDecoration(
+              color: Color(0xff34c47c),
             ),
           ),
           Transform.translate(
-            offset: Offset(20.0, 15.0),
+            offset: const Offset(20.0, 15.0),
             child:
                 // Adobe XD layer: 'iOS elements' (group)
                 SizedBox(
@@ -30,8 +30,8 @@ class Menugreennotlogged extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
-                    size: Size(340.3, 788.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
+                    size: const Size(340.3, 788.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -39,8 +39,8 @@ class Menugreennotlogged extends StatelessWidget {
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(316.0, 2.3, 22.0, 11.3),
-                          size: Size(340.3, 16.0),
+                          bounds: const Rect.fromLTWH(316.0, 2.3, 22.0, 11.3),
+                          size: const Size(340.3, 16.0),
                           pinRight: true,
                           pinTop: true,
                           pinBottom: true,
@@ -50,8 +50,8 @@ class Menugreennotlogged extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
-                                size: Size(22.0, 11.3),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
+                                size: const Size(22.0, 11.3),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinTop: true,
@@ -65,8 +65,8 @@ class Menugreennotlogged extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
-                                size: Size(22.0, 11.3),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
+                                size: const Size(22.0, 11.3),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinTop: true,
@@ -83,8 +83,8 @@ class Menugreennotlogged extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(339.0, 6.0, 1.3, 4.0),
-                          size: Size(340.3, 16.0),
+                          bounds: const Rect.fromLTWH(339.0, 6.0, 1.3, 4.0),
+                          size: const Size(340.3, 16.0),
                           pinRight: true,
                           fixedWidth: true,
                           fixedHeight: true,
@@ -93,8 +93,8 @@ class Menugreennotlogged extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(-5.0, -5.0, 11.3, 14.0),
-                                size: Size(1.3, 4.0),
+                                bounds: const Rect.fromLTWH(-5.0, -5.0, 11.3, 14.0),
+                                size: const Size(1.3, 4.0),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinTop: true,
@@ -108,8 +108,8 @@ class Menugreennotlogged extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 1.3, 4.0),
-                                size: Size(1.3, 4.0),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 1.3, 4.0),
+                                size: const Size(1.3, 4.0),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinTop: true,
@@ -126,8 +126,8 @@ class Menugreennotlogged extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(318.0, 4.3, 18.0, 7.3),
-                          size: Size(340.3, 16.0),
+                          bounds: const Rect.fromLTWH(318.0, 4.3, 18.0, 7.3),
+                          size: const Size(340.3, 16.0),
                           pinRight: true,
                           fixedWidth: true,
                           fixedHeight: true,
@@ -136,8 +136,8 @@ class Menugreennotlogged extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(-5.0, -5.0, 28.0, 17.3),
-                                size: Size(18.0, 7.3),
+                                bounds: const Rect.fromLTWH(-5.0, -5.0, 28.0, 17.3),
+                                size: const Size(18.0, 7.3),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinTop: true,
@@ -151,8 +151,8 @@ class Menugreennotlogged extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 18.0, 7.3),
-                                size: Size(18.0, 7.3),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 18.0, 7.3),
+                                size: const Size(18.0, 7.3),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinTop: true,
@@ -169,8 +169,8 @@ class Menugreennotlogged extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(295.7, 2.3, 15.3, 11.0),
-                          size: Size(340.3, 16.0),
+                          bounds: const Rect.fromLTWH(295.7, 2.3, 15.3, 11.0),
+                          size: const Size(340.3, 16.0),
                           pinRight: true,
                           pinTop: true,
                           fixedWidth: true,
@@ -180,8 +180,8 @@ class Menugreennotlogged extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(-5.0, -5.0, 25.3, 21.0),
-                                size: Size(15.3, 11.0),
+                                bounds: const Rect.fromLTWH(-5.0, -5.0, 25.3, 21.0),
+                                size: const Size(15.3, 11.0),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinTop: true,
@@ -195,8 +195,8 @@ class Menugreennotlogged extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 15.3, 11.0),
-                                size: Size(15.3, 11.0),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 15.3, 11.0),
+                                size: const Size(15.3, 11.0),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinTop: true,
@@ -213,8 +213,8 @@ class Menugreennotlogged extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(273.7, 2.7, 17.0, 10.7),
-                          size: Size(340.3, 16.0),
+                          bounds: const Rect.fromLTWH(273.7, 2.7, 17.0, 10.7),
+                          size: const Size(340.3, 16.0),
                           pinRight: true,
                           fixedWidth: true,
                           fixedHeight: true,
@@ -223,8 +223,8 @@ class Menugreennotlogged extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(-5.0, -5.0, 27.0, 20.7),
-                                size: Size(17.0, 10.7),
+                                bounds: const Rect.fromLTWH(-5.0, -5.0, 27.0, 20.7),
+                                size: const Size(17.0, 10.7),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinTop: true,
@@ -238,8 +238,8 @@ class Menugreennotlogged extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 17.0, 10.7),
-                                size: Size(17.0, 10.7),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 17.0, 10.7),
+                                size: const Size(17.0, 10.7),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinTop: true,
@@ -256,8 +256,8 @@ class Menugreennotlogged extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
-                          size: Size(340.3, 16.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
+                          size: const Size(340.3, 16.0),
                           pinLeft: true,
                           pinTop: true,
                           pinBottom: true,
@@ -271,8 +271,8 @@ class Menugreennotlogged extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(12.8, 4.9, 27.5, 10.3),
-                          size: Size(340.3, 16.0),
+                          bounds: const Rect.fromLTWH(12.8, 4.9, 27.5, 10.3),
+                          size: const Size(340.3, 16.0),
                           pinLeft: true,
                           pinBottom: true,
                           fixedWidth: true,
@@ -289,8 +289,8 @@ class Menugreennotlogged extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(101.0, 783.0, 134.0, 5.0),
-                    size: Size(340.3, 788.0),
+                    bounds: const Rect.fromLTWH(101.0, 783.0, 134.0, 5.0),
+                    size: const Size(340.3, 788.0),
                     pinBottom: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -306,7 +306,7 @@ class Menugreennotlogged extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(271.0, 89.0),
+            offset: const Offset(271.0, 89.0),
             child:
                 // Adobe XD layer: 'Scaled portview' (group)
                 SizedBox(
@@ -315,8 +315,8 @@ class Menugreennotlogged extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 150.0, 634.0),
-                    size: Size(150.0, 634.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 150.0, 634.0),
+                    size: const Size(150.0, 634.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -325,9 +325,9 @@ class Menugreennotlogged extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10.0),
                         color: const Color(0xffffffff),
-                        boxShadow: [
-                          BoxShadow(
-                            color: const Color(0x29000000),
+                        boxShadow: const[
+                           BoxShadow(
+                            color: Color(0x29000000),
                             offset: Offset(0, 20),
                             blurRadius: 40,
                           ),
@@ -336,8 +336,8 @@ class Menugreennotlogged extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 150.0, 634.0),
-                    size: Size(150.0, 634.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 150.0, 634.0),
+                    size: const Size(150.0, 634.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -354,7 +354,7 @@ class Menugreennotlogged extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(40.0, 261.0),
+            offset: const Offset(40.0, 261.0),
             child:
                 // Adobe XD layer: 'Menu links' (group)
                 SizedBox(
@@ -363,17 +363,17 @@ class Menugreennotlogged extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 192.0, 102.0, 12.0),
-                    size: Size(151.0, 292.0),
+                    bounds: const Rect.fromLTWH(0.0, 192.0, 102.0, 12.0),
+                    size: const Size(151.0, 292.0),
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: 'Discounts' (text)
-                        Text(
+                        const Text(
                       'Terms & Conditions',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 12,
-                        color: const Color(0xb2ffffff),
+                        color: Color(0xb2ffffff),
                         letterSpacing: -0.12,
                         height: 1.5,
                       ),
@@ -381,17 +381,17 @@ class Menugreennotlogged extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 236.0, 73.0, 12.0),
-                    size: Size(151.0, 292.0),
+                    bounds: const Rect.fromLTWH(0.0, 236.0, 73.0, 12.0),
+                    size: const Size(151.0, 292.0),
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: 'Discounts' (text)
-                        Text(
+                        const Text(
                       'Privacy Policy',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 12,
-                        color: const Color(0xb2ffffff),
+                        color: Color(0xb2ffffff),
                         letterSpacing: -0.12,
                         height: 1.5,
                       ),
@@ -399,17 +399,17 @@ class Menugreennotlogged extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 280.0, 76.0, 12.0),
-                    size: Size(151.0, 292.0),
+                    bounds: const Rect.fromLTWH(0.0, 280.0, 76.0, 12.0),
+                    size: const Size(151.0, 292.0),
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: 'Discounts' (text)
-                        Text(
+                        const Text(
                       'Faq & Support',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 12,
-                        color: const Color(0xb2ffffff),
+                        color: Color(0xb2ffffff),
                         letterSpacing: -0.12,
                         height: 1.5,
                       ),
@@ -417,17 +417,17 @@ class Menugreennotlogged extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(34.0, 46.0, 66.0, 14.0),
-                    size: Size(151.0, 292.0),
+                    bounds: const Rect.fromLTWH(34.0, 46.0, 66.0, 14.0),
+                    size: const Size(151.0, 292.0),
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: 'Discounts' (text)
-                        Text(
+                        const Text(
                       'My orders',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 14,
-                        color: const Color(0xffffffff),
+                        color: Color(0xffffffff),
                         letterSpacing: -0.14,
                         fontWeight: FontWeight.w700,
                         height: 1.4285714285714286,
@@ -436,17 +436,17 @@ class Menugreennotlogged extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(34.0, 1.0, 117.0, 14.0),
-                    size: Size(151.0, 292.0),
+                    bounds: const Rect.fromLTWH(34.0, 1.0, 117.0, 14.0),
+                    size: const Size(151.0, 292.0),
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: 'Discounts' (text)
-                        Text(
+                        const Text(
                       'Sign in or Sign up',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 14,
-                        color: const Color(0xffffffff),
+                        color: Color(0xffffffff),
                         letterSpacing: -0.14,
                         fontWeight: FontWeight.w700,
                         height: 1.4285714285714286,
@@ -455,17 +455,17 @@ class Menugreennotlogged extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(34.0, 91.0, 54.0, 14.0),
-                    size: Size(151.0, 292.0),
+                    bounds: const Rect.fromLTWH(34.0, 91.0, 54.0, 14.0),
+                    size: const Size(151.0, 292.0),
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: 'Discounts' (text)
-                        Text(
+                        const Text(
                       'Settings',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 14,
-                        color: const Color(0xffffffff),
+                        color: Color(0xffffffff),
                         letterSpacing: -0.14,
                         fontWeight: FontWeight.w700,
                         height: 1.4285714285714286,
@@ -474,17 +474,17 @@ class Menugreennotlogged extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(34.0, 136.0, 51.0, 14.0),
-                    size: Size(151.0, 292.0),
+                    bounds: const Rect.fromLTWH(34.0, 136.0, 51.0, 14.0),
+                    size: const Size(151.0, 292.0),
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: 'Discounts' (text)
-                        Text(
+                        const Text(
                       'Contact',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 14,
-                        color: const Color(0xffffffff),
+                        color: Color(0xffffffff),
                         letterSpacing: -0.14,
                         fontWeight: FontWeight.w700,
                         height: 1.4285714285714286,
@@ -493,8 +493,8 @@ class Menugreennotlogged extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(2.0, 45.0, 11.2, 14.0),
-                    size: Size(151.0, 292.0),
+                    bounds: const Rect.fromLTWH(2.0, 45.0, 11.2, 14.0),
+                    size: const Size(151.0, 292.0),
                     child: Stack(
                       children: <Widget>[
                         SvgPicture.string(
@@ -505,8 +505,8 @@ class Menugreennotlogged extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 90.0, 14.0, 14.0),
-                    size: Size(151.0, 292.0),
+                    bounds: const Rect.fromLTWH(0.0, 90.0, 14.0, 14.0),
+                    size: const Size(151.0, 292.0),
                     child: Stack(
                       children: <Widget>[
                         SvgPicture.string(
@@ -514,14 +514,14 @@ class Menugreennotlogged extends StatelessWidget {
                           allowDrawingOutsideViewBox: true,
                         ),
                         Transform.translate(
-                          offset: Offset(5.6, 5.7),
+                          offset: const Offset(5.6, 5.7),
                           child: Container(
                             width: 2.8,
                             height: 2.8,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               borderRadius: BorderRadius.all(
                                   Radius.elliptical(9999.0, 9999.0)),
-                              color: const Color(0x80ffffff),
+                              color: Color(0x80ffffff),
                             ),
                           ),
                         ),
@@ -529,8 +529,8 @@ class Menugreennotlogged extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 135.0, 14.0, 14.0),
-                    size: Size(151.0, 292.0),
+                    bounds: const Rect.fromLTWH(0.0, 135.0, 14.0, 14.0),
+                    size: const Size(151.0, 292.0),
                     child: Stack(
                       children: <Widget>[
                         SvgPicture.string(
@@ -541,8 +541,8 @@ class Menugreennotlogged extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(1.0, 0.0, 12.6, 14.0),
-                    size: Size(151.0, 292.0),
+                    bounds: const Rect.fromLTWH(1.0, 0.0, 12.6, 14.0),
+                    size: const Size(151.0, 292.0),
                     child: Stack(
                       children: <Widget>[
                         SvgPicture.string(

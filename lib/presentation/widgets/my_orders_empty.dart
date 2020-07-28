@@ -16,12 +16,12 @@ class Myordersempty extends StatelessWidget {
           Container(
             width: 375.0,
             height: 812.0,
-            decoration: BoxDecoration(
-              color: const Color(0xffffffff),
+            decoration: const BoxDecoration(
+              color: Color(0xffffffff),
             ),
           ),
           Transform.translate(
-            offset: Offset(20.0, 15.0),
+            offset: const Offset(20.0, 15.0),
             child:
                 // Adobe XD layer: 'iOS elements' (group)
                 SizedBox(
@@ -30,8 +30,8 @@ class Myordersempty extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
-                    size: Size(340.3, 788.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
+                    size: const Size(340.3, 788.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -39,8 +39,8 @@ class Myordersempty extends StatelessWidget {
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
-                          size: Size(340.3, 16.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
+                          size: const Size(340.3, 16.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -50,8 +50,8 @@ class Myordersempty extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(316.0, 2.3, 24.3, 11.3),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(316.0, 2.3, 24.3, 11.3),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 pinTop: true,
                                 pinBottom: true,
@@ -62,8 +62,8 @@ class Myordersempty extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
+                                      size: const Size(24.3, 11.3),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -73,9 +73,9 @@ class Myordersempty extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 22.0, 11.3),
-                                            size: Size(22.0, 11.3),
+                                            size: const Size(22.0, 11.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -89,9 +89,9 @@ class Myordersempty extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 22.0, 11.3),
-                                            size: Size(22.0, 11.3),
+                                            size: const Size(22.0, 11.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -109,8 +109,8 @@ class Myordersempty extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(23.0, 3.7, 1.3, 4.0),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(23.0, 3.7, 1.3, 4.0),
+                                      size: const Size(24.3, 11.3),
                                       pinRight: true,
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -119,9 +119,9 @@ class Myordersempty extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 11.3, 14.0),
-                                            size: Size(1.3, 4.0),
+                                            size: const Size(1.3, 4.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -135,9 +135,9 @@ class Myordersempty extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 1.3, 4.0),
-                                            size: Size(1.3, 4.0),
+                                            size: const Size(1.3, 4.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -155,8 +155,8 @@ class Myordersempty extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(2.0, 2.0, 18.0, 7.3),
-                                      size: Size(24.3, 11.3),
+                                          const Rect.fromLTWH(2.0, 2.0, 18.0, 7.3),
+                                      size: const Size(24.3, 11.3),
                                       pinLeft: true,
                                       fixedWidth: true,
                                       fixedHeight: true,
@@ -165,9 +165,9 @@ class Myordersempty extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 28.0, 17.3),
-                                            size: Size(18.0, 7.3),
+                                            size: const Size(18.0, 7.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -181,9 +181,9 @@ class Myordersempty extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 18.0, 7.3),
-                                            size: Size(18.0, 7.3),
+                                            size: const Size(18.0, 7.3),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -203,8 +203,8 @@ class Myordersempty extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(295.7, 2.3, 15.3, 11.0),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(295.7, 2.3, 15.3, 11.0),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 pinTop: true,
                                 fixedWidth: true,
@@ -215,8 +215,8 @@ class Myordersempty extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 15.3, 11.0),
-                                      size: Size(15.3, 11.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 15.3, 11.0),
+                                      size: const Size(15.3, 11.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -226,9 +226,9 @@ class Myordersempty extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 25.3, 21.0),
-                                            size: Size(15.3, 11.0),
+                                            size: const Size(15.3, 11.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -242,9 +242,9 @@ class Myordersempty extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 15.3, 11.0),
-                                            size: Size(15.3, 11.0),
+                                            size: const Size(15.3, 11.0),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -264,8 +264,8 @@ class Myordersempty extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(273.7, 2.7, 17.0, 10.7),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(273.7, 2.7, 17.0, 10.7),
+                                size: const Size(340.3, 16.0),
                                 pinRight: true,
                                 fixedWidth: true,
                                 fixedHeight: true,
@@ -275,8 +275,8 @@ class Myordersempty extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 17.0, 10.7),
-                                      size: Size(17.0, 10.7),
+                                          const Rect.fromLTWH(0.0, 0.0, 17.0, 10.7),
+                                      size: const Size(17.0, 10.7),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -286,9 +286,9 @@ class Myordersempty extends StatelessWidget {
                                           Stack(
                                         children: <Widget>[
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 -5.0, -5.0, 27.0, 20.7),
-                                            size: Size(17.0, 10.7),
+                                            size: const Size(17.0, 10.7),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -302,9 +302,9 @@ class Myordersempty extends StatelessWidget {
                                             ),
                                           ),
                                           Pinned.fromSize(
-                                            bounds: Rect.fromLTWH(
+                                            bounds: const Rect.fromLTWH(
                                                 0.0, 0.0, 17.0, 10.7),
-                                            size: Size(17.0, 10.7),
+                                            size: const Size(17.0, 10.7),
                                             pinLeft: true,
                                             pinRight: true,
                                             pinTop: true,
@@ -324,8 +324,8 @@ class Myordersempty extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
-                                size: Size(340.3, 16.0),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
+                                size: const Size(340.3, 16.0),
                                 pinLeft: true,
                                 pinTop: true,
                                 pinBottom: true,
@@ -336,8 +336,8 @@ class Myordersempty extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
-                                      size: Size(54.0, 16.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
+                                      size: const Size(54.0, 16.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -352,8 +352,8 @@ class Myordersempty extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(12.8, 4.9, 27.5, 10.3),
-                                      size: Size(54.0, 16.0),
+                                          const Rect.fromLTWH(12.8, 4.9, 27.5, 10.3),
+                                      size: const Size(54.0, 16.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinBottom: true,
@@ -376,8 +376,8 @@ class Myordersempty extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(101.0, 783.0, 134.0, 5.0),
-                    size: Size(340.3, 788.0),
+                    bounds: const Rect.fromLTWH(101.0, 783.0, 134.0, 5.0),
+                    size: const Size(340.3, 788.0),
                     pinBottom: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -393,7 +393,7 @@ class Myordersempty extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(30.0, 712.0),
+            offset: const Offset(30.0, 712.0),
             child:
                 // Adobe XD layer: 'Primary button' (group)
                 SizedBox(
@@ -402,8 +402,8 @@ class Myordersempty extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 315.0, 46.0),
-                    size: Size(315.0, 46.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 315.0, 46.0),
+                    size: const Size(315.0, 46.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -415,17 +415,17 @@ class Myordersempty extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(90.0, 17.0, 136.0, 16.0),
-                    size: Size(315.0, 46.0),
+                    bounds: const Rect.fromLTWH(90.0, 17.0, 136.0, 16.0),
+                    size: const Size(315.0, 46.0),
                     fixedHeight: true,
                     child:
                         // Adobe XD layer: 'Filter' (text)
-                        Text(
+                        const Text(
                       'Browse restaurants',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 16,
-                        color: const Color(0xffffffff),
+                        color: Color(0xffffffff),
                         letterSpacing: -0.16,
                       ),
                       textAlign: TextAlign.center,
@@ -436,7 +436,7 @@ class Myordersempty extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(65.0, 415.0),
+            offset: const Offset(65.0, 415.0),
             child:
                 // Adobe XD layer: 'Title & subtitle' (group)
                 SizedBox(
@@ -445,18 +445,18 @@ class Myordersempty extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 53.0, 244.0, 40.0),
-                    size: Size(244.0, 93.0),
+                    bounds: const Rect.fromLTWH(0.0, 53.0, 244.0, 40.0),
+                    size: const Size(244.0, 93.0),
                     pinLeft: true,
                     pinRight: true,
                     pinBottom: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'Try one of our awesome restaurants\nand place your first order!',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 16,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         letterSpacing: -0.4,
                         height: 1.5,
                       ),
@@ -464,18 +464,18 @@ class Myordersempty extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(28.0, 0.0, 190.0, 30.0),
-                    size: Size(244.0, 93.0),
+                    bounds: const Rect.fromLTWH(28.0, 0.0, 190.0, 30.0),
+                    size: const Size(244.0, 93.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
                     fixedHeight: true,
-                    child: Text(
+                    child: const Text(
                       'No orders yet',
                       style: TextStyle(
                         fontFamily: 'SF Pro Text',
                         fontSize: 30,
-                        color: const Color(0xff1a1824),
+                        color: Color(0xff1a1824),
                         letterSpacing: -0.3,
                         fontWeight: FontWeight.w700,
                         height: 1.2,
@@ -488,7 +488,7 @@ class Myordersempty extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(107.0, 244.0),
+            offset: const Offset(107.0, 244.0),
             child:
                 // Adobe XD layer: 'Image' (group)
                 SizedBox(
@@ -497,8 +497,8 @@ class Myordersempty extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 161.8, 108.0),
-                    size: Size(161.8, 127.2),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 161.8, 108.0),
+                    size: const Size(161.8, 127.2),
                     child: SvgPicture.string(
                       _svg_mcb8vn,
                       allowDrawingOutsideViewBox: true,
@@ -506,47 +506,47 @@ class Myordersempty extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(31.1, 25.6, 91.6, 101.6),
-                    size: Size(161.8, 127.2),
+                    bounds: const Rect.fromLTWH(31.1, 25.6, 91.6, 101.6),
+                    size: const Size(161.8, 127.2),
                     child:
                         // Adobe XD layer: 'image' (group)
                         Stack(
                       children: <Widget>[
                         Transform.translate(
-                          offset: Offset(8.6, 7.5),
+                          offset: const Offset(8.6, 7.5),
                           child: Transform.rotate(
                             angle: -0.2114,
                             child: Container(
                               width: 63.9,
                               height: 88.3,
-                              decoration: BoxDecoration(
-                                color: const Color(0xffe0e0e0),
+                              decoration: const BoxDecoration(
+                                color: Color(0xffe0e0e0),
                               ),
                             ),
                           ),
                         ),
                         Transform.translate(
-                          offset: Offset(1.4, 3.5),
+                          offset: const Offset(1.4, 3.5),
                           child: SizedBox(
                             width: 78.0,
                             height: 96.0,
                             child: Stack(
                               children: <Widget>[
                                 Transform.translate(
-                                  offset: Offset(8.3, 5.5),
+                                  offset: const Offset(8.3, 5.5),
                                   child: Transform.rotate(
                                     angle: -0.2114,
                                     child: Container(
                                       width: 61.8,
                                       height: 85.4,
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                         gradient: LinearGradient(
                                           begin: Alignment(0.02, 0.99),
                                           end: Alignment(0.02, -1.01),
                                           colors: [
-                                            const Color(0x20808080),
-                                            const Color(0x010808080),
-                                            const Color(0x0d808080)
+                                            Color(0x20808080),
+                                            Color(0x10808080),
+                                            Color(0x0d808080)
                                           ],
                                           stops: [0.0, 0.54, 1.0],
                                         ),
@@ -559,33 +559,33 @@ class Myordersempty extends StatelessWidget {
                           ),
                         ),
                         Transform.translate(
-                          offset: Offset(10.4, 9.6),
+                          offset: const Offset(10.4, 9.6),
                           child: Transform.rotate(
                             angle: -0.2114,
                             child: Container(
                               width: 60.2,
                               height: 83.5,
-                              decoration: BoxDecoration(
-                                color: const Color(0xfffafafa),
+                              decoration: const BoxDecoration(
+                                color: Color(0xfffafafa),
                               ),
                             ),
                           ),
                         ),
                         Transform.translate(
-                          offset: Offset(16.8, 6.9),
+                          offset: const Offset(16.8, 6.9),
                           child: Transform.rotate(
                             angle: -0.2114,
                             child: Container(
                               width: 29.9,
                               height: 7.2,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 gradient: LinearGradient(
                                   begin: Alignment(0.63, 0.68),
                                   end: Alignment(0.63, -1.32),
                                   colors: [
-                                    const Color(0x40808080),
-                                    const Color(0x1f808080),
-                                    const Color(0x1a808080)
+                                    Color(0x40808080),
+                                    Color(0x1f808080),
+                                    Color(0x1a808080)
                                   ],
                                   stops: [0.0, 0.54, 1.0],
                                 ),
@@ -594,44 +594,44 @@ class Myordersempty extends StatelessWidget {
                           ),
                         ),
                         Transform.translate(
-                          offset: Offset(26.3, 0.0),
+                          offset: const Offset(26.3, 0.0),
                           child: SvgPicture.string(
                             _svg_azyizd,
                             allowDrawingOutsideViewBox: true,
                           ),
                         ),
                         Transform.translate(
-                          offset: Offset(17.1, 6.6),
+                          offset: const Offset(17.1, 6.6),
                           child: Transform.rotate(
                             angle: -0.2114,
                             child: Container(
                               width: 29.2,
                               height: 6.9,
-                              decoration: BoxDecoration(
-                                color: const Color(0xff34c47c),
+                              decoration: const BoxDecoration(
+                                color: Color(0xff34c47c),
                               ),
                             ),
                           ),
                         ),
                         Transform.translate(
-                          offset: Offset(26.3, 0.0),
+                          offset: const Offset(26.3, 0.0),
                           child: SvgPicture.string(
                             _svg_c9avmv,
                             allowDrawingOutsideViewBox: true,
                           ),
                         ),
                         Transform.translate(
-                          offset: Offset(27.6, 12.5),
+                          offset: const Offset(27.6, 12.5),
                           child: Container(
                             width: 63.9,
                             height: 88.3,
-                            decoration: BoxDecoration(
-                              color: const Color(0xffe0e0e0),
+                            decoration: const BoxDecoration(
+                              color: Color(0xffe0e0e0),
                             ),
                           ),
                         ),
                         Transform.translate(
-                          offset: Offset(28.7, 14.0),
+                          offset: const Offset(28.7, 14.0),
                           child: SizedBox(
                             width: 62.0,
                             height: 85.0,
@@ -640,14 +640,14 @@ class Myordersempty extends StatelessWidget {
                                 Container(
                                   width: 61.8,
                                   height: 85.4,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     gradient: LinearGradient(
                                       begin: Alignment(0.0, 1.0),
                                       end: Alignment(0.0, -1.0),
                                       colors: [
-                                        const Color(0x20808080),
-                                        const Color(0x010808080),
-                                        const Color(0x0d808080)
+                                        Color(0x20808080),
+                                        Color(0x10808080),
+                                        Color(0x0d808080)
                                       ],
                                       stops: [0.0, 0.54, 1.0],
                                     ),
@@ -658,28 +658,28 @@ class Myordersempty extends StatelessWidget {
                           ),
                         ),
                         Transform.translate(
-                          offset: Offset(29.5, 14.6),
+                          offset: const Offset(29.5, 14.6),
                           child: Container(
                             width: 60.2,
                             height: 83.5,
-                            decoration: BoxDecoration(
-                              color: const Color(0xffffffff),
+                            decoration: const BoxDecoration(
+                              color: Color(0xffffffff),
                             ),
                           ),
                         ),
                         Transform.translate(
-                          offset: Offset(44.7, 11.0),
+                          offset: const Offset(44.7, 11.0),
                           child: Container(
                             width: 29.9,
                             height: 7.2,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               gradient: LinearGradient(
                                 begin: Alignment(0.0, 1.0),
                                 end: Alignment(0.0, -1.0),
                                 colors: [
-                                  const Color(0x40808080),
-                                  const Color(0x1f808080),
-                                  const Color(0x1a808080)
+                                  Color(0x40808080),
+                                  Color(0x1f808080),
+                                  Color(0x1a808080)
                                 ],
                                 stops: [0.0, 0.54, 1.0],
                               ),
@@ -687,24 +687,24 @@ class Myordersempty extends StatelessWidget {
                           ),
                         ),
                         Transform.translate(
-                          offset: Offset(55.5, 3.9),
+                          offset: const Offset(55.5, 3.9),
                           child: SvgPicture.string(
                             _svg_o015km,
                             allowDrawingOutsideViewBox: true,
                           ),
                         ),
                         Transform.translate(
-                          offset: Offset(45.0, 10.7),
+                          offset: const Offset(45.0, 10.7),
                           child: Container(
                             width: 29.2,
                             height: 6.9,
-                            decoration: BoxDecoration(
-                              color: const Color(0xff34c47c),
+                            decoration: const BoxDecoration(
+                              color: Color(0xff34c47c),
                             ),
                           ),
                         ),
                         Transform.translate(
-                          offset: Offset(55.6, 3.9),
+                          offset: const Offset(55.6, 3.9),
                           child: SvgPicture.string(
                             _svg_33rxot,
                             allowDrawingOutsideViewBox: true,
@@ -718,7 +718,7 @@ class Myordersempty extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(316.0, 43.0),
+            offset: const Offset(316.0, 43.0),
             child:
                 // Adobe XD layer: 'Close button' (group)
                 SizedBox(
@@ -727,28 +727,28 @@ class Myordersempty extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
+                    size: const Size(46.0, 46.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
                     pinBottom: true,
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xffffffff),
+                      decoration: const BoxDecoration(
+                        color: Color(0xffffffff),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(17.0, 17.0, 12.0, 12.0),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(17.0, 17.0, 12.0, 12.0),
+                    size: const Size(46.0, 46.0),
                     fixedWidth: true,
                     fixedHeight: true,
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 12.0, 12.0),
-                          size: Size(12.0, 12.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 12.0, 12.0),
+                          size: const Size(12.0, 12.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
@@ -767,7 +767,7 @@ class Myordersempty extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(176.0, 58.0),
+            offset: const Offset(176.0, 58.0),
             child:
                 // Adobe XD layer: 'Logo' (group)
                 SizedBox(
@@ -780,28 +780,28 @@ class Myordersempty extends StatelessWidget {
                     child: Container(
                       width: 16.0,
                       height: 16.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(60.0),
                           bottomRight: Radius.circular(60.0),
                           bottomLeft: Radius.circular(60.0),
                         ),
-                        color: const Color(0x1a1a1824),
+                        color: Color(0x1a1a1824),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(8.0, 0.8),
+                    offset: const Offset(8.0, 0.8),
                     child: Container(
                       width: 16.0,
                       height: 16.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(60.0),
                           bottomRight: Radius.circular(60.0),
                           bottomLeft: Radius.circular(60.0),
                         ),
-                        color: const Color(0xff34c47c),
+                        color: Color(0xff34c47c),
                       ),
                     ),
                   ),
@@ -819,6 +819,7 @@ const String _svg_5i4lwc =
     '<svg viewBox="336.0 17.3 22.0 11.3" ><path transform="translate(336.0, 17.33)" d="M 2.666666984558105 0 L 19.33333015441895 0 L 19.33333015441895 0 C 20.80608940124512 0 22 1.193907022476196 22 2.666666984558105 L 22 8.666666984558105 L 22 8.666666984558105 C 22 10.13943004608154 20.80608940124512 11.33333015441895 19.33333015441895 11.33333015441895 L 2.666666984558105 11.33333015441895 L 2.666666984558105 11.33333015441895 C 1.193907022476196 11.33333015441895 0 10.13943004608154 0 8.666666984558105 L 0 2.666666984558105 L 0 2.666666984558105 C 0 1.193907022476196 1.193907022476196 0 2.666666984558105 0 Z" fill="none" stroke="#000000" stroke-width="2" stroke-opacity="0.35" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
 const String _svg_4798hn =
     '<svg viewBox="336.0 17.3 22.0 11.3" ><path transform="translate(0.0, 44.0)" d="M 338.6666870117188 -26.66666984558105 L 355.3333129882812 -26.66666984558105 L 355.3333129882812 -26.66666984558105 C 356.8060913085938 -26.66666984558105 358 -25.47275924682617 358 -24 L 358 -18 L 358 -18 C 358 -16.52724075317383 356.8060913085938 -15.33333015441895 355.3333129882812 -15.33333015441895 L 338.6666870117188 -15.33333015441895 L 338.6666870117188 -15.33333015441895 C 337.1939086914062 -15.33333015441895 336 -16.52724075317383 336 -18 L 336 -24 L 336 -24 C 336 -25.47275924682617 337.1939086914062 -26.66666984558105 338.6666870117188 -26.66666984558105 Z" fill="none" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
+
 const String _svg_tszyk4 =
     '<svg viewBox="354.0 16.0 11.3 14.0" ><path transform="translate(0.0, 44.0)" d="M 354 -28 L 365.3280029296875 -28 L 365.3280029296875 -14 L 354 -14 L 354 -28 Z" fill="#000000" fill-opacity="0.4" stroke="none" stroke-width="1" stroke-miterlimit="4" stroke-linecap="butt" /></svg>';
 const String _svg_w6qqk0 =

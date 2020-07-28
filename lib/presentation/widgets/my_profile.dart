@@ -16,12 +16,12 @@ class Myprofile extends StatelessWidget {
           Container(
             width: 375.0,
             height: 812.0,
-            decoration: BoxDecoration(
-              color: const Color(0xffffffff),
+            decoration: const BoxDecoration(
+              color: Color(0xffffffff),
             ),
           ),
           Transform.translate(
-            offset: Offset(20.0, 15.0),
+            offset: const Offset(20.0, 15.0),
             child:
                 // Adobe XD layer: 'iOS elements' (group)
                 SizedBox(
@@ -30,8 +30,8 @@ class Myprofile extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
-                    size: Size(340.3, 788.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 340.3, 16.0),
+                    size: const Size(340.3, 788.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
@@ -41,8 +41,8 @@ class Myprofile extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(316.0, 2.3, 24.3, 11.3),
-                          size: Size(340.3, 16.0),
+                          bounds: const Rect.fromLTWH(316.0, 2.3, 24.3, 11.3),
+                          size: const Size(340.3, 16.0),
                           pinRight: true,
                           pinTop: true,
                           pinBottom: true,
@@ -52,8 +52,8 @@ class Myprofile extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
-                                size: Size(24.3, 11.3),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
+                                size: const Size(24.3, 11.3),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinTop: true,
@@ -64,8 +64,8 @@ class Myprofile extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
-                                      size: Size(22.0, 11.3),
+                                          const Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
+                                      size: const Size(22.0, 11.3),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -80,8 +80,8 @@ class Myprofile extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
-                                      size: Size(22.0, 11.3),
+                                          const Rect.fromLTWH(0.0, 0.0, 22.0, 11.3),
+                                      size: const Size(22.0, 11.3),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -98,8 +98,8 @@ class Myprofile extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(23.0, 3.7, 1.3, 4.0),
-                                size: Size(24.3, 11.3),
+                                bounds: const Rect.fromLTWH(23.0, 3.7, 1.3, 4.0),
+                                size: const Size(24.3, 11.3),
                                 pinRight: true,
                                 fixedWidth: true,
                                 fixedHeight: true,
@@ -109,8 +109,8 @@ class Myprofile extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(-5.0, -5.0, 11.3, 14.0),
-                                      size: Size(1.3, 4.0),
+                                          const Rect.fromLTWH(-5.0, -5.0, 11.3, 14.0),
+                                      size: const Size(1.3, 4.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -124,8 +124,8 @@ class Myprofile extends StatelessWidget {
                                       ),
                                     ),
                                     Pinned.fromSize(
-                                      bounds: Rect.fromLTWH(0.0, 0.0, 1.3, 4.0),
-                                      size: Size(1.3, 4.0),
+                                      bounds: const Rect.fromLTWH(0.0, 0.0, 1.3, 4.0),
+                                      size: const Size(1.3, 4.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -142,8 +142,8 @@ class Myprofile extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(2.0, 2.0, 18.0, 7.3),
-                                size: Size(24.3, 11.3),
+                                bounds: const Rect.fromLTWH(2.0, 2.0, 18.0, 7.3),
+                                size: const Size(24.3, 11.3),
                                 pinLeft: true,
                                 fixedWidth: true,
                                 fixedHeight: true,
@@ -153,8 +153,8 @@ class Myprofile extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(-5.0, -5.0, 28.0, 17.3),
-                                      size: Size(18.0, 7.3),
+                                          const Rect.fromLTWH(-5.0, -5.0, 28.0, 17.3),
+                                      size: const Size(18.0, 7.3),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -169,8 +169,8 @@ class Myprofile extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 18.0, 7.3),
-                                      size: Size(18.0, 7.3),
+                                          const Rect.fromLTWH(0.0, 0.0, 18.0, 7.3),
+                                      size: const Size(18.0, 7.3),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -190,8 +190,8 @@ class Myprofile extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(295.7, 2.3, 15.3, 11.0),
-                          size: Size(340.3, 16.0),
+                          bounds: const Rect.fromLTWH(295.7, 2.3, 15.3, 11.0),
+                          size: const Size(340.3, 16.0),
                           pinRight: true,
                           pinTop: true,
                           fixedWidth: true,
@@ -201,8 +201,8 @@ class Myprofile extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 15.3, 11.0),
-                                size: Size(15.3, 11.0),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 15.3, 11.0),
+                                size: const Size(15.3, 11.0),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinTop: true,
@@ -213,8 +213,8 @@ class Myprofile extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(-5.0, -5.0, 25.3, 21.0),
-                                      size: Size(15.3, 11.0),
+                                          const Rect.fromLTWH(-5.0, -5.0, 25.3, 21.0),
+                                      size: const Size(15.3, 11.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -229,8 +229,8 @@ class Myprofile extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 15.3, 11.0),
-                                      size: Size(15.3, 11.0),
+                                          const Rect.fromLTWH(0.0, 0.0, 15.3, 11.0),
+                                      size: const Size(15.3, 11.0),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -250,8 +250,8 @@ class Myprofile extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(273.7, 2.7, 17.0, 10.7),
-                          size: Size(340.3, 16.0),
+                          bounds: const Rect.fromLTWH(273.7, 2.7, 17.0, 10.7),
+                          size: const Size(340.3, 16.0),
                           pinRight: true,
                           fixedWidth: true,
                           fixedHeight: true,
@@ -260,8 +260,8 @@ class Myprofile extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 17.0, 10.7),
-                                size: Size(17.0, 10.7),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 17.0, 10.7),
+                                size: const Size(17.0, 10.7),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinTop: true,
@@ -272,8 +272,8 @@ class Myprofile extends StatelessWidget {
                                   children: <Widget>[
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(-5.0, -5.0, 27.0, 20.7),
-                                      size: Size(17.0, 10.7),
+                                          const Rect.fromLTWH(-5.0, -5.0, 27.0, 20.7),
+                                      size: const Size(17.0, 10.7),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -288,8 +288,8 @@ class Myprofile extends StatelessWidget {
                                     ),
                                     Pinned.fromSize(
                                       bounds:
-                                          Rect.fromLTWH(0.0, 0.0, 17.0, 10.7),
-                                      size: Size(17.0, 10.7),
+                                          const Rect.fromLTWH(0.0, 0.0, 17.0, 10.7),
+                                      size: const Size(17.0, 10.7),
                                       pinLeft: true,
                                       pinRight: true,
                                       pinTop: true,
@@ -309,8 +309,8 @@ class Myprofile extends StatelessWidget {
                           ),
                         ),
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
-                          size: Size(340.3, 16.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
+                          size: const Size(340.3, 16.0),
                           pinLeft: true,
                           pinTop: true,
                           pinBottom: true,
@@ -320,8 +320,8 @@ class Myprofile extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
-                                size: Size(54.0, 16.0),
+                                bounds: const Rect.fromLTWH(0.0, 0.0, 54.0, 16.0),
+                                size: const Size(54.0, 16.0),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinTop: true,
@@ -335,8 +335,8 @@ class Myprofile extends StatelessWidget {
                                 ),
                               ),
                               Pinned.fromSize(
-                                bounds: Rect.fromLTWH(12.8, 4.9, 27.5, 10.3),
-                                size: Size(54.0, 16.0),
+                                bounds: const Rect.fromLTWH(12.8, 4.9, 27.5, 10.3),
+                                size: const Size(54.0, 16.0),
                                 pinLeft: true,
                                 pinRight: true,
                                 pinBottom: true,
@@ -356,8 +356,8 @@ class Myprofile extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(101.0, 783.0, 134.0, 5.0),
-                    size: Size(340.3, 788.0),
+                    bounds: const Rect.fromLTWH(101.0, 783.0, 134.0, 5.0),
+                    size: const Size(340.3, 788.0),
                     pinBottom: true,
                     fixedWidth: true,
                     fixedHeight: true,
@@ -373,7 +373,7 @@ class Myprofile extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(0.4, 546.0),
+            offset: const Offset(0.4, 546.0),
             child:
                 // Adobe XD layer: 'Settings 4' (group)
                 SizedBox(
@@ -382,30 +382,30 @@ class Myprofile extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 68.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 68.0),
+                    size: const Size(375.0, 68.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child: Container(
-                        decoration: BoxDecoration(
-                          color: const Color(0xffffffff),
+                        decoration: const BoxDecoration(
+                          color: Color(0xffffffff),
                         ),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 18.0, 78.0, 12.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(30.0, 18.0, 78.0, 12.0),
+                    size: const Size(375.0, 68.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text.rich(
+                          const Text.rich(
                         TextSpan(
                           style: TextStyle(
                             fontFamily: 'SF Pro Display',
                             fontSize: 12,
-                            color: const Color(0xff1a1824),
+                            color: Color(0xff1a1824),
                             height: 1.5,
                           ),
                           children: [
@@ -426,18 +426,18 @@ class Myprofile extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(29.6, 38.0, 92.0, 14.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(29.6, 38.0, 92.0, 14.0),
+                    size: const Size(375.0, 68.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text(
+                          const Text(
                         '+40767217315',
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 14,
-                          color: const Color(0xff1a1824),
+                          color: Color(0xff1a1824),
                           letterSpacing: -0.14,
                         ),
                         textAlign: TextAlign.left,
@@ -445,18 +445,18 @@ class Myprofile extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(293.6, 28.0, 51.0, 14.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(293.6, 28.0, 51.0, 14.0),
+                    size: const Size(375.0, 68.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text(
+                          const Text(
                         'Change',
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 14,
-                          color: const Color(0xff34c47c),
+                          color: Color(0xff34c47c),
                           letterSpacing: -0.14,
                           fontWeight: FontWeight.w700,
                         ),
@@ -469,7 +469,7 @@ class Myprofile extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(0.4, 478.0),
+            offset: const Offset(0.4, 478.0),
             child:
                 // Adobe XD layer: 'Settings 3' (group)
                 SizedBox(
@@ -478,30 +478,30 @@ class Myprofile extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 68.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 68.0),
+                    size: const Size(375.0, 68.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child: Container(
-                        decoration: BoxDecoration(
-                          color: const Color(0xffffffff),
+                        decoration: const BoxDecoration(
+                          color: Color(0xffffffff),
                         ),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(29.6, 18.0, 30.0, 12.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(29.6, 18.0, 30.0, 12.0),
+                    size: const Size(375.0, 68.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text(
+                          const Text(
                         'Email',
                         style: TextStyle(
                           fontFamily: 'SF Pro Display',
                           fontSize: 12,
-                          color: const Color(0x801a1824),
+                          color: Color(0x801a1824),
                           height: 1.5,
                         ),
                         textAlign: TextAlign.left,
@@ -509,18 +509,18 @@ class Myprofile extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 38.0, 154.0, 14.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(30.0, 38.0, 154.0, 14.0),
+                    size: const Size(375.0, 68.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text(
+                          const Text(
                         'niculici.victor@gmail.com',
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 14,
-                          color: const Color(0xff1a1824),
+                          color: Color(0xff1a1824),
                           letterSpacing: -0.14,
                         ),
                         textAlign: TextAlign.left,
@@ -528,18 +528,18 @@ class Myprofile extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(293.6, 28.0, 51.0, 14.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(293.6, 28.0, 51.0, 14.0),
+                    size: const Size(375.0, 68.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text(
+                          const Text(
                         'Change',
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 14,
-                          color: const Color(0xff34c47c),
+                          color: Color(0xff34c47c),
                           letterSpacing: -0.14,
                           fontWeight: FontWeight.w700,
                         ),
@@ -552,7 +552,7 @@ class Myprofile extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(0.4, 410.0),
+            offset: const Offset(0.4, 410.0),
             child:
                 // Adobe XD layer: 'Settings 2' (group)
                 SizedBox(
@@ -561,30 +561,30 @@ class Myprofile extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 68.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 68.0),
+                    size: const Size(375.0, 68.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child: Container(
-                        decoration: BoxDecoration(
-                          color: const Color(0xffffffff),
+                        decoration: const BoxDecoration(
+                          color: Color(0xffffffff),
                         ),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 18.0, 56.0, 12.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(30.0, 18.0, 56.0, 12.0),
+                    size: const Size(375.0, 68.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text.rich(
+                          const Text.rich(
                         TextSpan(
                           style: TextStyle(
                             fontFamily: 'SF Pro Display',
                             fontSize: 12,
-                            color: const Color(0xff1a1824),
+                            color: Color(0xff1a1824),
                             height: 1.5,
                           ),
                           children: [
@@ -605,18 +605,18 @@ class Myprofile extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 38.0, 35.0, 14.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(30.0, 38.0, 35.0, 14.0),
+                    size: const Size(375.0, 68.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text(
+                          const Text(
                         'Victor',
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 14,
-                          color: const Color(0xff1a1824),
+                          color: Color(0xff1a1824),
                           letterSpacing: -0.14,
                         ),
                         textAlign: TextAlign.left,
@@ -624,18 +624,18 @@ class Myprofile extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(318.6, 28.0, 26.0, 14.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(318.6, 28.0, 26.0, 14.0),
+                    size: const Size(375.0, 68.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text(
+                          const Text(
                         'Edit',
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 14,
-                          color: const Color(0xff34c47c),
+                          color: Color(0xff34c47c),
                           letterSpacing: -0.14,
                           fontWeight: FontWeight.w700,
                         ),
@@ -648,7 +648,7 @@ class Myprofile extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(0.4, 342.0),
+            offset: const Offset(0.4, 342.0),
             child:
                 // Adobe XD layer: 'Settings 1' (group)
                 SizedBox(
@@ -657,30 +657,30 @@ class Myprofile extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 375.0, 68.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 375.0, 68.0),
+                    size: const Size(375.0, 68.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child: Container(
-                        decoration: BoxDecoration(
-                          color: const Color(0xffffffff),
+                        decoration: const BoxDecoration(
+                          color: Color(0xffffffff),
                         ),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(29.6, 18.0, 56.0, 12.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(29.6, 18.0, 56.0, 12.0),
+                    size: const Size(375.0, 68.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text.rich(
+                          const Text.rich(
                         TextSpan(
                           style: TextStyle(
                             fontFamily: 'SF Pro Display',
                             fontSize: 12,
-                            color: const Color(0xff1a1824),
+                            color: Color(0xff1a1824),
                             height: 1.5,
                           ),
                           children: [
@@ -701,18 +701,18 @@ class Myprofile extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(30.0, 38.0, 43.0, 14.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(30.0, 38.0, 43.0, 14.0),
+                    size: const Size(375.0, 68.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text(
+                          const Text(
                         'Niculici',
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 14,
-                          color: const Color(0xff1a1824),
+                          color: Color(0xff1a1824),
                           letterSpacing: -0.14,
                         ),
                         textAlign: TextAlign.left,
@@ -720,18 +720,18 @@ class Myprofile extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(318.6, 28.0, 26.0, 14.0),
-                    size: Size(375.0, 68.0),
+                    bounds: const Rect.fromLTWH(318.6, 28.0, 26.0, 14.0),
+                    size: const Size(375.0, 68.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text(
+                          const Text(
                         'Edit',
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 14,
-                          color: const Color(0xff34c47c),
+                          color: Color(0xff34c47c),
                           letterSpacing: -0.14,
                           fontWeight: FontWeight.w700,
                         ),
@@ -744,7 +744,7 @@ class Myprofile extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(84.4, 262.0),
+            offset: const Offset(84.4, 262.0),
             child:
                 // Adobe XD layer: 'Name & address' (group)
                 SizedBox(
@@ -753,16 +753,16 @@ class Myprofile extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 208.0, 32.0),
-                    size: Size(208.0, 60.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 208.0, 32.0),
+                    size: const Size(208.0, 60.0),
                     child: Transform.rotate(
                       angle: 0.0,
-                      child: Text(
+                      child: const Text(
                         'Victor Niculici',
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 32,
-                          color: const Color(0xff1a1824),
+                          color: Color(0xff1a1824),
                           letterSpacing: -0.32,
                           fontWeight: FontWeight.w700,
                           height: 1,
@@ -772,18 +772,18 @@ class Myprofile extends StatelessWidget {
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(29.6, 44.0, 142.0, 16.0),
-                    size: Size(208.0, 60.0),
+                    bounds: const Rect.fromLTWH(29.6, 44.0, 142.0, 16.0),
+                    size: const Size(208.0, 60.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child:
                           // Adobe XD layer: 'text' (text)
-                          Text(
+                          const Text(
                         'Bucharest, Romania',
                         style: TextStyle(
                           fontFamily: 'SF Pro Text',
                           fontSize: 16,
-                          color: const Color(0xff1a1824),
+                          color: Color(0xff1a1824),
                           letterSpacing: -0.16,
                         ),
                         textAlign: TextAlign.left,
@@ -795,7 +795,7 @@ class Myprofile extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(122.0, 105.0),
+            offset: const Offset(122.0, 105.0),
             child:
                 // Adobe XD layer: 'Profile image' (group)
                 SizedBox(
@@ -804,29 +804,29 @@ class Myprofile extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 132.0, 132.0),
-                    size: Size(132.0, 132.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 132.0, 132.0),
+                    size: const Size(132.0, 132.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child: Container(
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           borderRadius: BorderRadius.all(
                               Radius.elliptical(9999.0, 9999.0)),
-                          color: const Color(0x1a1a1824),
+                          color: Color(0x1a1a1824),
                         ),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(11.0, 11.0, 110.0, 110.0),
-                    size: Size(132.0, 132.0),
+                    bounds: const Rect.fromLTWH(11.0, 11.0, 110.0, 110.0),
+                    size: const Size(132.0, 132.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child: Container(
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           borderRadius: BorderRadius.all(
                               Radius.elliptical(9999.0, 9999.0)),
-                          color: const Color(0xff34c47c),
+                          color: Color(0xff34c47c),
                         ),
                       ),
                     ),
@@ -836,7 +836,7 @@ class Myprofile extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(228.4, 151.0),
+            offset: const Offset(228.4, 151.0),
             child:
                 // Adobe XD layer: 'Change image button' (group)
                 SizedBox(
@@ -845,8 +845,8 @@ class Myprofile extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 40.0, 40.0),
-                    size: Size(40.0, 40.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 40.0, 40.0),
+                    size: const Size(40.0, 40.0),
                     child: Transform.rotate(
                       angle: 0.0,
                       child: Stack(
@@ -854,14 +854,14 @@ class Myprofile extends StatelessWidget {
                           Container(
                             width: 40.0,
                             height: 40.0,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               borderRadius: BorderRadius.all(
                                   Radius.elliptical(9999.0, 9999.0)),
-                              color: const Color(0xcc1a1824),
+                              color: Color(0xcc1a1824),
                             ),
                           ),
                           Transform.translate(
-                            offset: Offset(11.1, 13.3),
+                            offset: const Offset(11.1, 13.3),
                             child:
                                 // Adobe XD layer: '112-photo-camera-1' (group)
                                 SizedBox(
@@ -891,7 +891,7 @@ class Myprofile extends StatelessWidget {
                                     ),
                                   ),
                                   Transform.translate(
-                                    offset: Offset(4.7, 3.7),
+                                    offset: const Offset(4.7, 3.7),
                                     child: SizedBox(
                                       width: 8.0,
                                       height: 8.0,
@@ -927,7 +927,7 @@ class Myprofile extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(176.0, 58.0),
+            offset: const Offset(176.0, 58.0),
             child:
                 // Adobe XD layer: 'Logo' (group)
                 SizedBox(
@@ -940,28 +940,28 @@ class Myprofile extends StatelessWidget {
                     child: Container(
                       width: 16.0,
                       height: 16.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(60.0),
                           bottomRight: Radius.circular(60.0),
                           bottomLeft: Radius.circular(60.0),
                         ),
-                        color: const Color(0x1a1a1824),
+                        color: Color(0x1a1a1824),
                       ),
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(8.0, 0.8),
+                    offset: const Offset(8.0, 0.8),
                     child: Container(
                       width: 16.0,
                       height: 16.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(60.0),
                           bottomRight: Radius.circular(60.0),
                           bottomLeft: Radius.circular(60.0),
                         ),
-                        color: const Color(0xff34c47c),
+                        color: Color(0xff34c47c),
                       ),
                     ),
                   ),
@@ -970,7 +970,7 @@ class Myprofile extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(316.0, 43.0),
+            offset: const Offset(316.0, 43.0),
             child:
                 // Adobe XD layer: 'Close button' (group)
                 SizedBox(
@@ -979,28 +979,28 @@ class Myprofile extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(0.0, 0.0, 46.0, 46.0),
+                    size: const Size(46.0, 46.0),
                     pinLeft: true,
                     pinRight: true,
                     pinTop: true,
                     pinBottom: true,
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xffffffff),
+                      decoration: const BoxDecoration(
+                        color: Color(0xffffffff),
                       ),
                     ),
                   ),
                   Pinned.fromSize(
-                    bounds: Rect.fromLTWH(17.0, 17.0, 12.0, 12.0),
-                    size: Size(46.0, 46.0),
+                    bounds: const Rect.fromLTWH(17.0, 17.0, 12.0, 12.0),
+                    size: const Size(46.0, 46.0),
                     fixedWidth: true,
                     fixedHeight: true,
                     child: Stack(
                       children: <Widget>[
                         Pinned.fromSize(
-                          bounds: Rect.fromLTWH(0.0, 0.0, 12.0, 12.0),
-                          size: Size(12.0, 12.0),
+                          bounds: const Rect.fromLTWH(0.0, 0.0, 12.0, 12.0),
+                          size: const Size(12.0, 12.0),
                           pinLeft: true,
                           pinRight: true,
                           pinTop: true,
