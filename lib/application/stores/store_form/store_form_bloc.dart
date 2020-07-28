@@ -30,7 +30,7 @@ class StoreFormBloc extends Bloc<StoreFormEvent, StoreFormState> {
     StoreFormEvent event,
   ) async* {
     yield* event.map(
-      intialized: (e) async* {
+      initialized: (e) async* {
         yield e.initialStoreOption.fold(
           () => state,
           (initialStore) => state.copyWith(

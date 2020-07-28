@@ -2,7 +2,7 @@ part of 'store_form_bloc.dart';
 
 @freezed
 abstract class StoreFormEvent with _$StoreFormEvent {
-  const factory StoreFormEvent.intialized(Option<Restaurant> initialStoreOption) =
+  const factory StoreFormEvent.initialized(Option<Restaurant> initialStoreOption) =
   _Initialized;
 
   const factory StoreFormEvent.storeNameChanged(String storeName) =

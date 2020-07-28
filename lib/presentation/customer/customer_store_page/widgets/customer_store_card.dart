@@ -21,22 +21,24 @@ class CustomerStoreCard extends StatelessWidget {
           store: store,
         );
       },
-      child: Card(
-        margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+      child: Container(
+        margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
         child: Column(
           children: <Widget>[
             Stack(
               children: <Widget>[
-                Card(
-                  child: Container(
-                    color: Colors.grey,
-                    child: Center(
-                      heightFactor: store.coverImageUrl == null ||
-                              store.coverImageUrl.isEmpty
-                          ? 3
-                          : 1,
-                      child: _renderImage(store.coverImageUrl, 200),
-                    ),
+                Container(
+                  decoration: const BoxDecoration(
+                      color: Color(0xFFEAEAEB),
+                      borderRadius: BorderRadius.all(Radius.circular(8))),
+                  height: MediaQuery.of(context).size.width / 1.5,
+                  child: Center(
+                    heightFactor: store.coverImageUrl == null ||
+                            store.coverImageUrl.isEmpty
+                        ? 3
+                        : 1,
+                    child: _renderImage(store.coverImageUrl,
+                        MediaQuery.of(context).size.width / 1.5),
                   ),
                 ),
               ],
@@ -50,37 +52,54 @@ class CustomerStoreCard extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Row(
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Card(
-                            child: Container(
-                              height: 30,
-                              width: 30,
-                              color: Colors.grey,
-                              child: _renderImage(store.logoImageUrl, 30,
-                                  iconSize: 24),
-                            ),
+                          Text(
+                            store.storeName.getOrCrash(),
+                            style: _storeNameTextStyle(),
                           ),
-                          const SizedBox(width: 8),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
+                          const SizedBox(height: 8),
+                          Text(
+                            store.notes.getOrCrash(),
+                            style: _subtitleTextStyle(),
+                          ),
+                          const SizedBox(height: 8),
+                          Row(
                             children: <Widget>[
-                              Text(
-                                store.storeName.getOrCrash(),
-                                style: _storeNameTextStyle(),
+                              Icon(
+                                Icons.star,
+                                color: Theme.of(context).primaryColor,
+                                size: 16,
                               ),
+                              const SizedBox(width: 4),
+                              const Text("4.8 (120+)"),
+                              const SizedBox(width: 16),
+                              Icon(
+                                Icons.directions_car,
+                                color: Colors.grey,
+                                size: 16,
+                              ),
+                              const SizedBox(width: 4),
                               Text(
-                                store.notes.getOrCrash(),
+                                "${_getDistance().toStringAsFixed(2)}km",
                                 style: _subtitleTextStyle(),
                               ),
+                              const SizedBox(width: 16),
+                              Icon(
+                                Icons.monetization_on,
+                                color: Colors.grey,
+                                size: 16,
+                              ),
+                              const SizedBox(width: 4),
+                              Text(
+                                "Free",
+                                style: _subtitleTextStyle(),
+                              )
                             ],
-                          ),
+                          )
                         ],
                       ),
-                      Text(
-                        "${_getDistance().toStringAsFixed(2)}km away",
-                        style: _subtitleTextStyle(),
-                      )
                     ],
                   ),
                 ],
@@ -108,11 +127,20 @@ class CustomerStoreCard extends StatelessWidget {
         size: iconSize,
       );
     } else if (urlOrPath.contains("http")) {
-      return Image.network(
-        urlOrPath,
-        fit: BoxFit.fill,
+      return Container(
         height: size,
+        decoration: BoxDecoration(
+          image: DecorationImage(
+              fit: BoxFit.cover, image: NetworkImage(urlOrPath)),
+          borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+          color: Colors.redAccent,
+        ),
       );
+//      return Image.network(
+//        urlOrPath,
+//        fit: BoxFit.fill,
+//        height: size,
+//      );
     } else {
       return Image.file(
         File(urlOrPath),

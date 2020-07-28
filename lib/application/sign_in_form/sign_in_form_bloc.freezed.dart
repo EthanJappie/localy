@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
 
 part of 'sign_in_form_bloc.dart';
 
@@ -12,38 +12,32 @@ T _$identity<T>(T value) => value;
 class _$SignInFormEventTearOff {
   const _$SignInFormEventTearOff();
 
-// ignore: unused_element
   EmailChanged emailChanged(String emailStr) {
     return EmailChanged(
       emailStr,
     );
   }
 
-// ignore: unused_element
   PasswordChanged passwordChanged(String passwordStr) {
     return PasswordChanged(
       passwordStr,
     );
   }
 
-// ignore: unused_element
   ConfirmPasswordChanged confirmPasswordChanged(String confirmPasswordStr) {
     return ConfirmPasswordChanged(
       confirmPasswordStr,
     );
   }
 
-// ignore: unused_element
   RegisterWithEmailAndPasswordPressed registerWithEmailAndPasswordPressed() {
     return const RegisterWithEmailAndPasswordPressed();
   }
 
-// ignore: unused_element
   SignInWithEmailAndPasswordPressed signInWithEmailAndPasswordPressed() {
     return const SignInWithEmailAndPasswordPressed();
   }
 
-// ignore: unused_element
   SignInWithGooglePressed signInWithGooglePressed() {
     return const SignInWithGooglePressed();
   }
@@ -918,7 +912,6 @@ abstract class SignInWithGooglePressed implements SignInFormEvent {
 class _$SignInFormStateTearOff {
   const _$SignInFormStateTearOff();
 
-// ignore: unused_element
   _SignInFormState call(
       {@required EmailAddress emailAddress,
       @required Password password,

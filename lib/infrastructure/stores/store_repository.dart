@@ -124,6 +124,7 @@ class StoreRepository implements IStoreRepository {
         .where("coordinates.geohash", isLessThanOrEqualTo: "$center\uf8ff")
         .where("open", isEqualTo: true)
         .where("active", isEqualTo: true)
+        .orderBy("coordinates.geohash", descending: true)
         .snapshots()
         .map(
           (snapshots) => right<StoreFailure, KtList<Restaurant>>(

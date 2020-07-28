@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
 
 part of 'store_form_bloc.dart';
 
@@ -12,77 +12,66 @@ T _$identity<T>(T value) => value;
 class _$StoreFormEventTearOff {
   const _$StoreFormEventTearOff();
 
-// ignore: unused_element
-  _Initialized intialized(Option<Restaurant> initialStoreOption) {
+  _Initialized initialized(Option<Restaurant> initialStoreOption) {
     return _Initialized(
       initialStoreOption,
     );
   }
 
-// ignore: unused_element
   _StoreNameChanged storeNameChanged(String storeName) {
     return _StoreNameChanged(
       storeName,
     );
   }
 
-// ignore: unused_element
   _AddressChanged addressChanged(String address) {
     return _AddressChanged(
       address,
     );
   }
 
-// ignore: unused_element
   _CoordinatesChanged coordinatesChanged(GeoFirePoint coordinates) {
     return _CoordinatesChanged(
       coordinates,
     );
   }
 
-// ignore: unused_element
   _WorkHoursFromChanged workHoursFromChanged(Timestamp workHours) {
     return _WorkHoursFromChanged(
       workHours,
     );
   }
 
-// ignore: unused_element
   _WorkHoursToChanged workHoursToChanged(Timestamp workHours) {
     return _WorkHoursToChanged(
       workHours,
     );
   }
 
-// ignore: unused_element
   _TelephoneChanged telephoneChanged(String telephone) {
     return _TelephoneChanged(
       telephone,
     );
   }
 
-// ignore: unused_element
   _NotesChanged notesChanged(String notes) {
     return _NotesChanged(
       notes,
     );
   }
 
-// ignore: unused_element
   _ActiveChanged activeChanged({bool active}) {
     return _ActiveChanged(
       active: active,
     );
   }
 
-// ignore: unused_element
   _OpenChanged openChanged({bool open}) {
     return _OpenChanged(
       open: open,
     );
   }
 
-// ignore: unused_element
   _AcceptingStaffRequestsChanged acceptingStaffRequestsChanged(
       {bool acceptingStaffRequests}) {
     return _AcceptingStaffRequestsChanged(
@@ -90,54 +79,46 @@ class _$StoreFormEventTearOff {
     );
   }
 
-// ignore: unused_element
   _AcceptCashChanged acceptCashChanged({bool acceptCash}) {
     return _AcceptCashChanged(
       acceptCash: acceptCash,
     );
   }
 
-// ignore: unused_element
   _AcceptCardChanged acceptCardChanged({bool acceptCard}) {
     return _AcceptCardChanged(
       acceptCard: acceptCard,
     );
   }
 
-// ignore: unused_element
   _AcceptOtherChanged acceptOtherChanged({bool acceptOther}) {
     return _AcceptOtherChanged(
       acceptOther: acceptOther,
     );
   }
 
-// ignore: unused_element
   _FoodDeliveriesChanged foodDeliveriesChanged({bool foodDeliveries}) {
     return _FoodDeliveriesChanged(
       foodDeliveries: foodDeliveries,
     );
   }
 
-// ignore: unused_element
   _FoodCollectionChanged foodCollectionChanged({bool foodCollection}) {
     return _FoodCollectionChanged(
       foodCollection: foodCollection,
     );
   }
 
-// ignore: unused_element
   _Saved saved() {
     return const _Saved();
   }
 
-// ignore: unused_element
   _CoverImageChanged coverImageChanged(String coverImage) {
     return _CoverImageChanged(
       coverImage,
     );
   }
 
-// ignore: unused_element
   _LogoImageChanged logoImageChanged(String logoImage) {
     return _LogoImageChanged(
       logoImage,
@@ -151,7 +132,7 @@ const $StoreFormEvent = _$StoreFormEventTearOff();
 mixin _$StoreFormEvent {
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Restaurant> initialStoreOption),
+    @required Result initialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -173,7 +154,7 @@ mixin _$StoreFormEvent {
   });
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Restaurant> initialStoreOption),
+    Result initialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -196,7 +177,7 @@ mixin _$StoreFormEvent {
   });
   @optionalTypeArgs
   Result map<Result extends Object>({
-    @required Result intialized(_Initialized value),
+    @required Result initialized(_Initialized value),
     @required Result storeNameChanged(_StoreNameChanged value),
     @required Result addressChanged(_AddressChanged value),
     @required Result coordinatesChanged(_CoordinatesChanged value),
@@ -220,7 +201,7 @@ mixin _$StoreFormEvent {
   });
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
-    Result intialized(_Initialized value),
+    Result initialized(_Initialized value),
     Result storeNameChanged(_StoreNameChanged value),
     Result addressChanged(_AddressChanged value),
     Result coordinatesChanged(_CoordinatesChanged value),
@@ -296,7 +277,7 @@ class _$_Initialized implements _Initialized {
 
   @override
   String toString() {
-    return 'StoreFormEvent.intialized(initialStoreOption: $initialStoreOption)';
+    return 'StoreFormEvent.initialized(initialStoreOption: $initialStoreOption)';
   }
 
   @override
@@ -320,7 +301,7 @@ class _$_Initialized implements _Initialized {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Restaurant> initialStoreOption),
+    @required Result initialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -340,7 +321,7 @@ class _$_Initialized implements _Initialized {
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -359,13 +340,13 @@ class _$_Initialized implements _Initialized {
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
-    return intialized(initialStoreOption);
+    return initialized(initialStoreOption);
   }
 
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Restaurant> initialStoreOption),
+    Result initialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -387,8 +368,8 @@ class _$_Initialized implements _Initialized {
     @required Result orElse(),
   }) {
     assert(orElse != null);
-    if (intialized != null) {
-      return intialized(initialStoreOption);
+    if (initialized != null) {
+      return initialized(initialStoreOption);
     }
     return orElse();
   }
@@ -396,7 +377,7 @@ class _$_Initialized implements _Initialized {
   @override
   @optionalTypeArgs
   Result map<Result extends Object>({
-    @required Result intialized(_Initialized value),
+    @required Result initialized(_Initialized value),
     @required Result storeNameChanged(_StoreNameChanged value),
     @required Result addressChanged(_AddressChanged value),
     @required Result coordinatesChanged(_CoordinatesChanged value),
@@ -418,7 +399,7 @@ class _$_Initialized implements _Initialized {
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -437,13 +418,13 @@ class _$_Initialized implements _Initialized {
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
-    return intialized(this);
+    return initialized(this);
   }
 
   @override
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
-    Result intialized(_Initialized value),
+    Result initialized(_Initialized value),
     Result storeNameChanged(_StoreNameChanged value),
     Result addressChanged(_AddressChanged value),
     Result coordinatesChanged(_CoordinatesChanged value),
@@ -465,8 +446,8 @@ class _$_Initialized implements _Initialized {
     @required Result orElse(),
   }) {
     assert(orElse != null);
-    if (intialized != null) {
-      return intialized(this);
+    if (initialized != null) {
+      return initialized(this);
     }
     return orElse();
   }
@@ -538,7 +519,7 @@ class _$_StoreNameChanged implements _StoreNameChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Restaurant> initialStoreOption),
+    @required Result initialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -558,7 +539,7 @@ class _$_StoreNameChanged implements _StoreNameChanged {
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -583,7 +564,7 @@ class _$_StoreNameChanged implements _StoreNameChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Restaurant> initialStoreOption),
+    Result initialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -614,7 +595,7 @@ class _$_StoreNameChanged implements _StoreNameChanged {
   @override
   @optionalTypeArgs
   Result map<Result extends Object>({
-    @required Result intialized(_Initialized value),
+    @required Result initialized(_Initialized value),
     @required Result storeNameChanged(_StoreNameChanged value),
     @required Result addressChanged(_AddressChanged value),
     @required Result coordinatesChanged(_CoordinatesChanged value),
@@ -636,7 +617,7 @@ class _$_StoreNameChanged implements _StoreNameChanged {
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -661,7 +642,7 @@ class _$_StoreNameChanged implements _StoreNameChanged {
   @override
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
-    Result intialized(_Initialized value),
+    Result initialized(_Initialized value),
     Result storeNameChanged(_StoreNameChanged value),
     Result addressChanged(_AddressChanged value),
     Result coordinatesChanged(_CoordinatesChanged value),
@@ -754,7 +735,7 @@ class _$_AddressChanged implements _AddressChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Restaurant> initialStoreOption),
+    @required Result initialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -774,7 +755,7 @@ class _$_AddressChanged implements _AddressChanged {
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -799,7 +780,7 @@ class _$_AddressChanged implements _AddressChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Restaurant> initialStoreOption),
+    Result initialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -830,7 +811,7 @@ class _$_AddressChanged implements _AddressChanged {
   @override
   @optionalTypeArgs
   Result map<Result extends Object>({
-    @required Result intialized(_Initialized value),
+    @required Result initialized(_Initialized value),
     @required Result storeNameChanged(_StoreNameChanged value),
     @required Result addressChanged(_AddressChanged value),
     @required Result coordinatesChanged(_CoordinatesChanged value),
@@ -852,7 +833,7 @@ class _$_AddressChanged implements _AddressChanged {
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -877,7 +858,7 @@ class _$_AddressChanged implements _AddressChanged {
   @override
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
-    Result intialized(_Initialized value),
+    Result initialized(_Initialized value),
     Result storeNameChanged(_StoreNameChanged value),
     Result addressChanged(_AddressChanged value),
     Result coordinatesChanged(_CoordinatesChanged value),
@@ -971,7 +952,7 @@ class _$_CoordinatesChanged implements _CoordinatesChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Restaurant> initialStoreOption),
+    @required Result initialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -991,7 +972,7 @@ class _$_CoordinatesChanged implements _CoordinatesChanged {
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -1016,7 +997,7 @@ class _$_CoordinatesChanged implements _CoordinatesChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Restaurant> initialStoreOption),
+    Result initialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -1047,7 +1028,7 @@ class _$_CoordinatesChanged implements _CoordinatesChanged {
   @override
   @optionalTypeArgs
   Result map<Result extends Object>({
-    @required Result intialized(_Initialized value),
+    @required Result initialized(_Initialized value),
     @required Result storeNameChanged(_StoreNameChanged value),
     @required Result addressChanged(_AddressChanged value),
     @required Result coordinatesChanged(_CoordinatesChanged value),
@@ -1069,7 +1050,7 @@ class _$_CoordinatesChanged implements _CoordinatesChanged {
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -1094,7 +1075,7 @@ class _$_CoordinatesChanged implements _CoordinatesChanged {
   @override
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
-    Result intialized(_Initialized value),
+    Result initialized(_Initialized value),
     Result storeNameChanged(_StoreNameChanged value),
     Result addressChanged(_AddressChanged value),
     Result coordinatesChanged(_CoordinatesChanged value),
@@ -1190,7 +1171,7 @@ class _$_WorkHoursFromChanged implements _WorkHoursFromChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Restaurant> initialStoreOption),
+    @required Result initialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -1210,7 +1191,7 @@ class _$_WorkHoursFromChanged implements _WorkHoursFromChanged {
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -1235,7 +1216,7 @@ class _$_WorkHoursFromChanged implements _WorkHoursFromChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Restaurant> initialStoreOption),
+    Result initialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -1266,7 +1247,7 @@ class _$_WorkHoursFromChanged implements _WorkHoursFromChanged {
   @override
   @optionalTypeArgs
   Result map<Result extends Object>({
-    @required Result intialized(_Initialized value),
+    @required Result initialized(_Initialized value),
     @required Result storeNameChanged(_StoreNameChanged value),
     @required Result addressChanged(_AddressChanged value),
     @required Result coordinatesChanged(_CoordinatesChanged value),
@@ -1288,7 +1269,7 @@ class _$_WorkHoursFromChanged implements _WorkHoursFromChanged {
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -1313,7 +1294,7 @@ class _$_WorkHoursFromChanged implements _WorkHoursFromChanged {
   @override
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
-    Result intialized(_Initialized value),
+    Result initialized(_Initialized value),
     Result storeNameChanged(_StoreNameChanged value),
     Result addressChanged(_AddressChanged value),
     Result coordinatesChanged(_CoordinatesChanged value),
@@ -1408,7 +1389,7 @@ class _$_WorkHoursToChanged implements _WorkHoursToChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Restaurant> initialStoreOption),
+    @required Result initialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -1428,7 +1409,7 @@ class _$_WorkHoursToChanged implements _WorkHoursToChanged {
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -1453,7 +1434,7 @@ class _$_WorkHoursToChanged implements _WorkHoursToChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Restaurant> initialStoreOption),
+    Result initialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -1484,7 +1465,7 @@ class _$_WorkHoursToChanged implements _WorkHoursToChanged {
   @override
   @optionalTypeArgs
   Result map<Result extends Object>({
-    @required Result intialized(_Initialized value),
+    @required Result initialized(_Initialized value),
     @required Result storeNameChanged(_StoreNameChanged value),
     @required Result addressChanged(_AddressChanged value),
     @required Result coordinatesChanged(_CoordinatesChanged value),
@@ -1506,7 +1487,7 @@ class _$_WorkHoursToChanged implements _WorkHoursToChanged {
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -1531,7 +1512,7 @@ class _$_WorkHoursToChanged implements _WorkHoursToChanged {
   @override
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
-    Result intialized(_Initialized value),
+    Result initialized(_Initialized value),
     Result storeNameChanged(_StoreNameChanged value),
     Result addressChanged(_AddressChanged value),
     Result coordinatesChanged(_CoordinatesChanged value),
@@ -1626,7 +1607,7 @@ class _$_TelephoneChanged implements _TelephoneChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Restaurant> initialStoreOption),
+    @required Result initialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -1646,7 +1627,7 @@ class _$_TelephoneChanged implements _TelephoneChanged {
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -1671,7 +1652,7 @@ class _$_TelephoneChanged implements _TelephoneChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Restaurant> initialStoreOption),
+    Result initialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -1702,7 +1683,7 @@ class _$_TelephoneChanged implements _TelephoneChanged {
   @override
   @optionalTypeArgs
   Result map<Result extends Object>({
-    @required Result intialized(_Initialized value),
+    @required Result initialized(_Initialized value),
     @required Result storeNameChanged(_StoreNameChanged value),
     @required Result addressChanged(_AddressChanged value),
     @required Result coordinatesChanged(_CoordinatesChanged value),
@@ -1724,7 +1705,7 @@ class _$_TelephoneChanged implements _TelephoneChanged {
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -1749,7 +1730,7 @@ class _$_TelephoneChanged implements _TelephoneChanged {
   @override
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
-    Result intialized(_Initialized value),
+    Result initialized(_Initialized value),
     Result storeNameChanged(_StoreNameChanged value),
     Result addressChanged(_AddressChanged value),
     Result coordinatesChanged(_CoordinatesChanged value),
@@ -1842,7 +1823,7 @@ class _$_NotesChanged implements _NotesChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Restaurant> initialStoreOption),
+    @required Result initialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -1862,7 +1843,7 @@ class _$_NotesChanged implements _NotesChanged {
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -1887,7 +1868,7 @@ class _$_NotesChanged implements _NotesChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Restaurant> initialStoreOption),
+    Result initialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -1918,7 +1899,7 @@ class _$_NotesChanged implements _NotesChanged {
   @override
   @optionalTypeArgs
   Result map<Result extends Object>({
-    @required Result intialized(_Initialized value),
+    @required Result initialized(_Initialized value),
     @required Result storeNameChanged(_StoreNameChanged value),
     @required Result addressChanged(_AddressChanged value),
     @required Result coordinatesChanged(_CoordinatesChanged value),
@@ -1940,7 +1921,7 @@ class _$_NotesChanged implements _NotesChanged {
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -1965,7 +1946,7 @@ class _$_NotesChanged implements _NotesChanged {
   @override
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
-    Result intialized(_Initialized value),
+    Result initialized(_Initialized value),
     Result storeNameChanged(_StoreNameChanged value),
     Result addressChanged(_AddressChanged value),
     Result coordinatesChanged(_CoordinatesChanged value),
@@ -2058,7 +2039,7 @@ class _$_ActiveChanged implements _ActiveChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Restaurant> initialStoreOption),
+    @required Result initialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -2078,7 +2059,7 @@ class _$_ActiveChanged implements _ActiveChanged {
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -2103,7 +2084,7 @@ class _$_ActiveChanged implements _ActiveChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Restaurant> initialStoreOption),
+    Result initialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -2134,7 +2115,7 @@ class _$_ActiveChanged implements _ActiveChanged {
   @override
   @optionalTypeArgs
   Result map<Result extends Object>({
-    @required Result intialized(_Initialized value),
+    @required Result initialized(_Initialized value),
     @required Result storeNameChanged(_StoreNameChanged value),
     @required Result addressChanged(_AddressChanged value),
     @required Result coordinatesChanged(_CoordinatesChanged value),
@@ -2156,7 +2137,7 @@ class _$_ActiveChanged implements _ActiveChanged {
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -2181,7 +2162,7 @@ class _$_ActiveChanged implements _ActiveChanged {
   @override
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
-    Result intialized(_Initialized value),
+    Result initialized(_Initialized value),
     Result storeNameChanged(_StoreNameChanged value),
     Result addressChanged(_AddressChanged value),
     Result coordinatesChanged(_CoordinatesChanged value),
@@ -2274,7 +2255,7 @@ class _$_OpenChanged implements _OpenChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Restaurant> initialStoreOption),
+    @required Result initialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -2294,7 +2275,7 @@ class _$_OpenChanged implements _OpenChanged {
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -2319,7 +2300,7 @@ class _$_OpenChanged implements _OpenChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Restaurant> initialStoreOption),
+    Result initialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -2350,7 +2331,7 @@ class _$_OpenChanged implements _OpenChanged {
   @override
   @optionalTypeArgs
   Result map<Result extends Object>({
-    @required Result intialized(_Initialized value),
+    @required Result initialized(_Initialized value),
     @required Result storeNameChanged(_StoreNameChanged value),
     @required Result addressChanged(_AddressChanged value),
     @required Result coordinatesChanged(_CoordinatesChanged value),
@@ -2372,7 +2353,7 @@ class _$_OpenChanged implements _OpenChanged {
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -2397,7 +2378,7 @@ class _$_OpenChanged implements _OpenChanged {
   @override
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
-    Result intialized(_Initialized value),
+    Result initialized(_Initialized value),
     Result storeNameChanged(_StoreNameChanged value),
     Result addressChanged(_AddressChanged value),
     Result coordinatesChanged(_CoordinatesChanged value),
@@ -2499,7 +2480,7 @@ class _$_AcceptingStaffRequestsChanged
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Restaurant> initialStoreOption),
+    @required Result initialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -2519,7 +2500,7 @@ class _$_AcceptingStaffRequestsChanged
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -2544,7 +2525,7 @@ class _$_AcceptingStaffRequestsChanged
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Restaurant> initialStoreOption),
+    Result initialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -2575,7 +2556,7 @@ class _$_AcceptingStaffRequestsChanged
   @override
   @optionalTypeArgs
   Result map<Result extends Object>({
-    @required Result intialized(_Initialized value),
+    @required Result initialized(_Initialized value),
     @required Result storeNameChanged(_StoreNameChanged value),
     @required Result addressChanged(_AddressChanged value),
     @required Result coordinatesChanged(_CoordinatesChanged value),
@@ -2597,7 +2578,7 @@ class _$_AcceptingStaffRequestsChanged
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -2622,7 +2603,7 @@ class _$_AcceptingStaffRequestsChanged
   @override
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
-    Result intialized(_Initialized value),
+    Result initialized(_Initialized value),
     Result storeNameChanged(_StoreNameChanged value),
     Result addressChanged(_AddressChanged value),
     Result coordinatesChanged(_CoordinatesChanged value),
@@ -2719,7 +2700,7 @@ class _$_AcceptCashChanged implements _AcceptCashChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Restaurant> initialStoreOption),
+    @required Result initialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -2739,7 +2720,7 @@ class _$_AcceptCashChanged implements _AcceptCashChanged {
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -2764,7 +2745,7 @@ class _$_AcceptCashChanged implements _AcceptCashChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Restaurant> initialStoreOption),
+    Result initialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -2795,7 +2776,7 @@ class _$_AcceptCashChanged implements _AcceptCashChanged {
   @override
   @optionalTypeArgs
   Result map<Result extends Object>({
-    @required Result intialized(_Initialized value),
+    @required Result initialized(_Initialized value),
     @required Result storeNameChanged(_StoreNameChanged value),
     @required Result addressChanged(_AddressChanged value),
     @required Result coordinatesChanged(_CoordinatesChanged value),
@@ -2817,7 +2798,7 @@ class _$_AcceptCashChanged implements _AcceptCashChanged {
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -2842,7 +2823,7 @@ class _$_AcceptCashChanged implements _AcceptCashChanged {
   @override
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
-    Result intialized(_Initialized value),
+    Result initialized(_Initialized value),
     Result storeNameChanged(_StoreNameChanged value),
     Result addressChanged(_AddressChanged value),
     Result coordinatesChanged(_CoordinatesChanged value),
@@ -2937,7 +2918,7 @@ class _$_AcceptCardChanged implements _AcceptCardChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Restaurant> initialStoreOption),
+    @required Result initialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -2957,7 +2938,7 @@ class _$_AcceptCardChanged implements _AcceptCardChanged {
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -2982,7 +2963,7 @@ class _$_AcceptCardChanged implements _AcceptCardChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Restaurant> initialStoreOption),
+    Result initialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -3013,7 +2994,7 @@ class _$_AcceptCardChanged implements _AcceptCardChanged {
   @override
   @optionalTypeArgs
   Result map<Result extends Object>({
-    @required Result intialized(_Initialized value),
+    @required Result initialized(_Initialized value),
     @required Result storeNameChanged(_StoreNameChanged value),
     @required Result addressChanged(_AddressChanged value),
     @required Result coordinatesChanged(_CoordinatesChanged value),
@@ -3035,7 +3016,7 @@ class _$_AcceptCardChanged implements _AcceptCardChanged {
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -3060,7 +3041,7 @@ class _$_AcceptCardChanged implements _AcceptCardChanged {
   @override
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
-    Result intialized(_Initialized value),
+    Result initialized(_Initialized value),
     Result storeNameChanged(_StoreNameChanged value),
     Result addressChanged(_AddressChanged value),
     Result coordinatesChanged(_CoordinatesChanged value),
@@ -3155,7 +3136,7 @@ class _$_AcceptOtherChanged implements _AcceptOtherChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Restaurant> initialStoreOption),
+    @required Result initialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -3175,7 +3156,7 @@ class _$_AcceptOtherChanged implements _AcceptOtherChanged {
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -3200,7 +3181,7 @@ class _$_AcceptOtherChanged implements _AcceptOtherChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Restaurant> initialStoreOption),
+    Result initialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -3231,7 +3212,7 @@ class _$_AcceptOtherChanged implements _AcceptOtherChanged {
   @override
   @optionalTypeArgs
   Result map<Result extends Object>({
-    @required Result intialized(_Initialized value),
+    @required Result initialized(_Initialized value),
     @required Result storeNameChanged(_StoreNameChanged value),
     @required Result addressChanged(_AddressChanged value),
     @required Result coordinatesChanged(_CoordinatesChanged value),
@@ -3253,7 +3234,7 @@ class _$_AcceptOtherChanged implements _AcceptOtherChanged {
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -3278,7 +3259,7 @@ class _$_AcceptOtherChanged implements _AcceptOtherChanged {
   @override
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
-    Result intialized(_Initialized value),
+    Result initialized(_Initialized value),
     Result storeNameChanged(_StoreNameChanged value),
     Result addressChanged(_AddressChanged value),
     Result coordinatesChanged(_CoordinatesChanged value),
@@ -3376,7 +3357,7 @@ class _$_FoodDeliveriesChanged implements _FoodDeliveriesChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Restaurant> initialStoreOption),
+    @required Result initialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -3396,7 +3377,7 @@ class _$_FoodDeliveriesChanged implements _FoodDeliveriesChanged {
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -3421,7 +3402,7 @@ class _$_FoodDeliveriesChanged implements _FoodDeliveriesChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Restaurant> initialStoreOption),
+    Result initialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -3452,7 +3433,7 @@ class _$_FoodDeliveriesChanged implements _FoodDeliveriesChanged {
   @override
   @optionalTypeArgs
   Result map<Result extends Object>({
-    @required Result intialized(_Initialized value),
+    @required Result initialized(_Initialized value),
     @required Result storeNameChanged(_StoreNameChanged value),
     @required Result addressChanged(_AddressChanged value),
     @required Result coordinatesChanged(_CoordinatesChanged value),
@@ -3474,7 +3455,7 @@ class _$_FoodDeliveriesChanged implements _FoodDeliveriesChanged {
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -3499,7 +3480,7 @@ class _$_FoodDeliveriesChanged implements _FoodDeliveriesChanged {
   @override
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
-    Result intialized(_Initialized value),
+    Result initialized(_Initialized value),
     Result storeNameChanged(_StoreNameChanged value),
     Result addressChanged(_AddressChanged value),
     Result coordinatesChanged(_CoordinatesChanged value),
@@ -3598,7 +3579,7 @@ class _$_FoodCollectionChanged implements _FoodCollectionChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Restaurant> initialStoreOption),
+    @required Result initialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -3618,7 +3599,7 @@ class _$_FoodCollectionChanged implements _FoodCollectionChanged {
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -3643,7 +3624,7 @@ class _$_FoodCollectionChanged implements _FoodCollectionChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Restaurant> initialStoreOption),
+    Result initialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -3674,7 +3655,7 @@ class _$_FoodCollectionChanged implements _FoodCollectionChanged {
   @override
   @optionalTypeArgs
   Result map<Result extends Object>({
-    @required Result intialized(_Initialized value),
+    @required Result initialized(_Initialized value),
     @required Result storeNameChanged(_StoreNameChanged value),
     @required Result addressChanged(_AddressChanged value),
     @required Result coordinatesChanged(_CoordinatesChanged value),
@@ -3696,7 +3677,7 @@ class _$_FoodCollectionChanged implements _FoodCollectionChanged {
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -3721,7 +3702,7 @@ class _$_FoodCollectionChanged implements _FoodCollectionChanged {
   @override
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
-    Result intialized(_Initialized value),
+    Result initialized(_Initialized value),
     Result storeNameChanged(_StoreNameChanged value),
     Result addressChanged(_AddressChanged value),
     Result coordinatesChanged(_CoordinatesChanged value),
@@ -3791,7 +3772,7 @@ class _$_Saved implements _Saved {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Restaurant> initialStoreOption),
+    @required Result initialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -3811,7 +3792,7 @@ class _$_Saved implements _Saved {
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -3836,7 +3817,7 @@ class _$_Saved implements _Saved {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Restaurant> initialStoreOption),
+    Result initialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -3867,7 +3848,7 @@ class _$_Saved implements _Saved {
   @override
   @optionalTypeArgs
   Result map<Result extends Object>({
-    @required Result intialized(_Initialized value),
+    @required Result initialized(_Initialized value),
     @required Result storeNameChanged(_StoreNameChanged value),
     @required Result addressChanged(_AddressChanged value),
     @required Result coordinatesChanged(_CoordinatesChanged value),
@@ -3889,7 +3870,7 @@ class _$_Saved implements _Saved {
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -3914,7 +3895,7 @@ class _$_Saved implements _Saved {
   @override
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
-    Result intialized(_Initialized value),
+    Result initialized(_Initialized value),
     Result storeNameChanged(_StoreNameChanged value),
     Result addressChanged(_AddressChanged value),
     Result coordinatesChanged(_CoordinatesChanged value),
@@ -4005,7 +3986,7 @@ class _$_CoverImageChanged implements _CoverImageChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Restaurant> initialStoreOption),
+    @required Result initialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -4025,7 +4006,7 @@ class _$_CoverImageChanged implements _CoverImageChanged {
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -4050,7 +4031,7 @@ class _$_CoverImageChanged implements _CoverImageChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Restaurant> initialStoreOption),
+    Result initialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -4081,7 +4062,7 @@ class _$_CoverImageChanged implements _CoverImageChanged {
   @override
   @optionalTypeArgs
   Result map<Result extends Object>({
-    @required Result intialized(_Initialized value),
+    @required Result initialized(_Initialized value),
     @required Result storeNameChanged(_StoreNameChanged value),
     @required Result addressChanged(_AddressChanged value),
     @required Result coordinatesChanged(_CoordinatesChanged value),
@@ -4103,7 +4084,7 @@ class _$_CoverImageChanged implements _CoverImageChanged {
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -4128,7 +4109,7 @@ class _$_CoverImageChanged implements _CoverImageChanged {
   @override
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
-    Result intialized(_Initialized value),
+    Result initialized(_Initialized value),
     Result storeNameChanged(_StoreNameChanged value),
     Result addressChanged(_AddressChanged value),
     Result coordinatesChanged(_CoordinatesChanged value),
@@ -4222,7 +4203,7 @@ class _$_LogoImageChanged implements _LogoImageChanged {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result intialized(Option<Restaurant> initialStoreOption),
+    @required Result initialized(Option<Restaurant> initialStoreOption),
     @required Result storeNameChanged(String storeName),
     @required Result addressChanged(String address),
     @required Result coordinatesChanged(GeoFirePoint coordinates),
@@ -4242,7 +4223,7 @@ class _$_LogoImageChanged implements _LogoImageChanged {
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -4267,7 +4248,7 @@ class _$_LogoImageChanged implements _LogoImageChanged {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result intialized(Option<Restaurant> initialStoreOption),
+    Result initialized(Option<Restaurant> initialStoreOption),
     Result storeNameChanged(String storeName),
     Result addressChanged(String address),
     Result coordinatesChanged(GeoFirePoint coordinates),
@@ -4298,7 +4279,7 @@ class _$_LogoImageChanged implements _LogoImageChanged {
   @override
   @optionalTypeArgs
   Result map<Result extends Object>({
-    @required Result intialized(_Initialized value),
+    @required Result initialized(_Initialized value),
     @required Result storeNameChanged(_StoreNameChanged value),
     @required Result addressChanged(_AddressChanged value),
     @required Result coordinatesChanged(_CoordinatesChanged value),
@@ -4320,7 +4301,7 @@ class _$_LogoImageChanged implements _LogoImageChanged {
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
   }) {
-    assert(intialized != null);
+    assert(initialized != null);
     assert(storeNameChanged != null);
     assert(addressChanged != null);
     assert(coordinatesChanged != null);
@@ -4345,7 +4326,7 @@ class _$_LogoImageChanged implements _LogoImageChanged {
   @override
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
-    Result intialized(_Initialized value),
+    Result initialized(_Initialized value),
     Result storeNameChanged(_StoreNameChanged value),
     Result addressChanged(_AddressChanged value),
     Result coordinatesChanged(_CoordinatesChanged value),
@@ -4384,7 +4365,6 @@ abstract class _LogoImageChanged implements StoreFormEvent {
 class _$StoreFormStateTearOff {
   const _$StoreFormStateTearOff();
 
-// ignore: unused_element
   _StoreFormState call(
       {@required
           Restaurant store,

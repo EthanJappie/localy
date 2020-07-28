@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
 
 part of 'store_watcher_bloc.dart';
 
@@ -12,17 +12,14 @@ T _$identity<T>(T value) => value;
 class _$StoreWatcherEventTearOff {
   const _$StoreWatcherEventTearOff();
 
-// ignore: unused_element
   _WatchAllStoresStarted watchAllStarted() {
     return const _WatchAllStoresStarted();
   }
 
-// ignore: unused_element
   _WatchAllInRadiusStarted watchAllInRadiusStarted() {
     return const _WatchAllInRadiusStarted();
   }
 
-// ignore: unused_element
   _StoresReceived storesReceived(
       Either<StoreFailure, KtList<Restaurant>> failureOrStore) {
     return _StoresReceived(
@@ -406,24 +403,20 @@ abstract class _StoresReceived implements StoreWatcherEvent {
 class _$StoreWatcherStateTearOff {
   const _$StoreWatcherStateTearOff();
 
-// ignore: unused_element
   _IntialStoreWatcher initial() {
     return const _IntialStoreWatcher();
   }
 
-// ignore: unused_element
   _LoadingStoreWatcher loading() {
     return const _LoadingStoreWatcher();
   }
 
-// ignore: unused_element
   _LoadSuccessStoreWatcher loadSuccess(KtList<Restaurant> stores) {
     return _LoadSuccessStoreWatcher(
       stores,
     );
   }
 
-// ignore: unused_element
   _LoadStoreFailure loadFailure(StoreFailure storeFailure) {
     return _LoadStoreFailure(
       storeFailure,

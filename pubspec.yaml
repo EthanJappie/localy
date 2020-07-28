@@ -39,7 +39,7 @@ dependencies:
   kt_dart: ^0.7.0+1
   json_annotation: ^3.0.1
   google_fonts: ^1.1.0
-  flutter_svg: ^0.18.0
+  flutter_svg:
   flutter_hooks: ^0.12.0
   google_map_location_picker: ^3.3.3
   location: ^3.0.2
@@ -48,13 +48,12 @@ dependencies:
   http: ^0.12.2
   camera: ^0.5.8+2
   image_picker: ^0.6.7+4
-  image: ^2.1.14
+  image:
   path_provider: ^1.6.11
   flutter_image_compress: ^0.7.0
   firebase_storage: ^3.1.6
   image_cropper: ^1.2.3
   email_validator: ^1.0.5
-  preview: ^0.0.8
   geoflutterfire:
     git:
       url: https://github.com/brad007/GeoFlutterFire
@@ -63,7 +62,7 @@ dependencies:
   firebase_messaging: ^6.0.16
   firebase_crashlytics: ^0.1.4+1
   adobe_xd: ^1.0.0+1
-  dartfix: ^0.1.7
+  dartfix:
 
 dev_dependencies:
   test:
@@ -100,6 +99,10 @@ flutter:
     - assets/images/ic_google.svg
     - assets/images/ingredients.svg
     - assets/images/tray.svg
+    - assets/images/splash.svg
+    - assets/images/logo.svg
+    - assets/images/logo_white.svg
+    - assets/images/no_restaurant_image.svg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

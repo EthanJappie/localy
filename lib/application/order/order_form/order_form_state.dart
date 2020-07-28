@@ -1,6 +1,20 @@
 part of 'order_form_bloc.dart';
 
-@immutable
-abstract class OrderFormState {}
+@freezed
+abstract class OrderFormState with _$OrderFormState {
+  const factory OrderFormState({
+    @required StoreOrder order,
+    @required bool showErrorMessages,
+    @required bool isEditing,
+    @required bool isSaving,
+    @required Option<Either<OrderFailure, Unit>> saveFailureOrSuccessOption,
+  }) = _OrderFormState;
 
-class OrderFormInitial extends OrderFormState {}
+  factory OrderFormState.initial() => OrderFormState(
+        order: StoreOrder.empty(),
+        showErrorMessages: false,
+        isEditing: false,
+        isSaving: false,
+        saveFailureOrSuccessOption: none(),
+      );
+}

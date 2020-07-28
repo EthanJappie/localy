@@ -56,20 +56,20 @@ class _CustomerHomePageState extends State<CustomerHomePage> {
           ],
         ),
         body: CustomerStorePage(),
-        bottomNavigationBar: BottomNavigationBar(
-          currentIndex: _currentIndex,
-          items: const [
-            BottomNavigationBarItem(
-                icon: Icon(Icons.store), title:  Text("Store")),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.person), title:  Text("Profile")),
-          ],
-          onTap: (value) {
-            setState(() {
-              _currentIndex = value;
-            });
-          },
-        ),
+//        bottomNavigationBar: BottomNavigationBar(
+//          currentIndex: _currentIndex,
+//          items: const [
+//            BottomNavigationBarItem(
+//                icon: Icon(Icons.store), title:  Text("Store")),
+//            BottomNavigationBarItem(
+//                icon: Icon(Icons.person), title:  Text("Profile")),
+//          ],
+//          onTap: (value) {
+//            setState(() {
+//              _currentIndex = value;
+//            });
+//          },
+//        ),
       ),
     );
   }

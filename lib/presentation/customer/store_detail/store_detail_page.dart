@@ -40,48 +40,62 @@ class StoreDetailPage extends StatelessWidget {
             orElse: () {},
           );
         },
-        child: BlocBuilder<MenuWatcherBloc, MenuWatcherState>(
-          builder: (BuildContext context, MenuWatcherState state) {
-            return state.map(
-              initial: (_) => Container(),
-              loading: (_) => const Center(
-                child: CircularProgressIndicator(),
-              ),
-              loadSuccess: (state) {
-                return DefaultTabController(
-                  length: state.menus.size,
-                  child: Scaffold(
-                    appBar: AppBar(
-                      title: Text(store.storeName.getOrCrash()),
-                      bottom: TabBar(
-                        isScrollable: true,
-                        indicatorColor: Colors.white,
-                        tabs: state.menus
+        child: Container(
+          child: BlocBuilder<MenuWatcherBloc, MenuWatcherState>(
+            builder: (BuildContext context, MenuWatcherState state) {
+              return state.map(
+                initial: (_) => Container(),
+                loading: (_) => const Center(
+                  child: CircularProgressIndicator(),
+                ),
+                loadSuccess: (state) {
+                  return DefaultTabController(
+                    length: state.menus.size,
+                    child: Scaffold(
+                      appBar: AppBar(
+                        title: Text(
+                            store.storeName.value.fold((l) => "", (r) => r)),
+                        elevation: 0,
+                        bottom: TabBar(
+                          labelStyle: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                          ),
+                          isScrollable: true,
+                          indicatorColor: Colors.white,
+                          tabs: state.menus
+                              .asList()
+                              .map((e) => Tab(
+                                    text: e.name.getOrCrash(),
+                                  ))
+                              .toList(),
+                        ),
+                      ),
+                      body: TabBarView(
+                        children: state.menus
                             .asList()
-                            .map((e) => Tab(
-                                  text: e.name.getOrCrash(),
+                            .map((e) => Center(
+                                  child: StoreDetailMenuItems(
+                                    menuID: e.id.getOrCrash(),
+                                  ),
                                 ))
                             .toList(),
                       ),
+                      floatingActionButton: FloatingActionButton.extended(
+                        onPressed: (){},
+                        backgroundColor: Colors.grey,
+                        label: const Text("Checkout"),
+                        icon: Icon(Icons.shopping_cart),
+                      ),
                     ),
-                    body: TabBarView(
-                      children: state.menus
-                          .asList()
-                          .map((e) => Center(
-                                child: StoreDetailMenuItems(
-                                  menuID: e.id.getOrCrash(),
-                                ),
-                              ))
-                          .toList(),
-                    ),
-                  ),
-                );
-              },
-              loadFailure: (state) {
-                return const Center(child: Text("Unable to load menus"));
-              },
-            );
-          },
+                  );
+                },
+                loadFailure: (state) {
+                  return const Center(child: Text("Unable to load menus"));
+                },
+              );
+            },
+          ),
         ),
       ),
     );

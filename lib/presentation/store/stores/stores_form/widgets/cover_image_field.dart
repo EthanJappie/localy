@@ -21,7 +21,7 @@ class CoverImageField extends StatelessWidget {
               if (pickedFile != null) {
                 final croppedImage = await ImageCropper.cropImage(
                   sourcePath: pickedFile.path,
-                  aspectRatio: const CropAspectRatio(ratioX: 2, ratioY: 1),
+                  aspectRatio: const CropAspectRatio(ratioX: 3, ratioY: 2),
                   maxHeight: 200,
                 );
 

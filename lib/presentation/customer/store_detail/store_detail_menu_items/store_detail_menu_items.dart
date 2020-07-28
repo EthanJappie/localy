@@ -41,34 +41,94 @@ class StoreDetailMenuItems extends StatelessWidget {
                 );
               } else {
                 return ListView.separated(
-
                   itemBuilder: (context, index) {
                     final menuItem = menuItems[index];
-                    return ListTile(
-                      onTap: () {
-                        ExtendedNavigator.of(context).pushMenuItemsFormPage(
-                          menuID: menuID,
-                          editedMenuItem: menuItem,
-                        );
-                      },
-                      leading: menuItem.imageUrl.value
+                    return Container(
+                      margin: const EdgeInsets.symmetric(vertical: 16),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          const SizedBox(width: 8),
+                          if (menuItem.imageUrl.value
                               .fold((l) => "", (r) => r)
-                              .isEmpty
-                          ? null
-                          : Image.network(menuItem.imageUrl.value
-                              .fold((l) => "", (r) => r)),
-//                    leading: Text("test"),
-                      title: Text(menuItem.name.getOrCrash()),
-                      subtitle: Text(menuItem.description.getOrCrash()),
-                      trailing: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text("R${menuItem.price}"),
-                          const Chip(
-                              label: Text(
-                            "Select",
-                            style: TextStyle(color: Colors.white),
-                          )),
+                              .isEmpty)
+                            Container(
+                              margin: const EdgeInsets.only(right: 16, left: 8),
+                              height: 40,
+                              width: 40,
+                              decoration: BoxDecoration(
+                                color: Colors.grey[300],
+                                borderRadius: const BorderRadius.all(
+                                  Radius.circular(8),
+                                ),
+                              ),
+                            )
+                          else
+                            Container(
+                              margin: const EdgeInsets.only(right: 16, left: 8),
+                              height: 40,
+                              width: 40,
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                  fit: BoxFit.cover,
+                                  image: NetworkImage(
+                                    menuItem.imageUrl.value.fold(
+                                      (l) => "",
+                                      (r) => r,
+                                    ),
+                                  ),
+                                ),
+                                borderRadius: const BorderRadius.all(
+                                  Radius.circular(8.0),
+                                ),
+                                color: Colors.redAccent,
+                              ),
+                            ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text(
+                                menuItem.name.getOrCrash(),
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .subtitle1
+                                    .copyWith(fontWeight: FontWeight.bold),
+                              ),
+                              Container(
+                                width: 200,
+                                child: Text(
+                                  menuItem.description.getOrCrash(),
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .bodyText2
+                                      .copyWith(color: Colors.grey[600]),
+                                ),
+                              ),
+                            ],
+                          ),
+                          const Spacer(),
+                          Column(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: <Widget>[
+                              Container(
+                                height: 32,
+                                child: Text(
+                                  "R${menuItem.price}",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Theme.of(context).primaryColor,
+                                  ),
+                                ),
+                              ),
+                              InkWell(
+                                  onTap: () {
+
+                                  },
+                                  child: Icon(Icons.add_circle_outline))
+                            ],
+                          ),
+                          const SizedBox(width: 32),
                         ],
                       ),
                     );

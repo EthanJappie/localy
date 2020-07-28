@@ -37,7 +37,7 @@ class StoreFormPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => getIt<StoreFormBloc>()
-        ..add(StoreFormEvent.intialized(optionOf(editedStore))),
+        ..add(StoreFormEvent.initialized(optionOf(editedStore))),
       child: BlocConsumer<StoreFormBloc, StoreFormState>(
         listenWhen: (p, c) =>
             p.saveFailureOrSuccessOption != c.saveFailureOrSuccessOption,

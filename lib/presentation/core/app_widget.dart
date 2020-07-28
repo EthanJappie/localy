@@ -12,7 +12,7 @@ import 'package:localy/presentation/core/routes/customer_router.gr.dart';
 import '../../injection.dart';
 
 const appColor = 0xFFF57B51;
-const backgroundCOlor = 0xFFEFEFEF;
+const backgroundColor = 0xFFEFEFEF;
 
 class AppWidget extends StatelessWidget {
   final FirebaseAnalyticsObserver observer =
@@ -36,7 +36,7 @@ class AppWidget extends StatelessWidget {
           primaryColor: const Color(appColor),
           textTheme: GoogleFonts.montserratTextTheme(),
           accentColor: const Color(appColor),
-          backgroundColor: const Color(backgroundCOlor),
+          backgroundColor: const Color(backgroundColor),
           floatingActionButtonTheme: const FloatingActionButtonThemeData(
             backgroundColor: Color(appColor),
           ),
