@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'store_actor_bloc.dart';
 
@@ -12,6 +12,7 @@ T _$identity<T>(T value) => value;
 class _$StoreActorEventTearOff {
   const _$StoreActorEventTearOff();
 
+// ignore: unused_element
   _Deleted deleted(Restaurant store) {
     return _Deleted(
       store,
@@ -24,6 +25,25 @@ const $StoreActorEvent = _$StoreActorEventTearOff();
 
 mixin _$StoreActorEvent {
   Restaurant get store;
+
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result deleted(Restaurant store),
+  });
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result deleted(Restaurant store),
+    @required Result orElse(),
+  });
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result deleted(_Deleted value),
+  });
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result deleted(_Deleted value),
+    @required Result orElse(),
+  });
 
   $StoreActorEventCopyWith<StoreActorEvent> get copyWith;
 }
@@ -120,6 +140,50 @@ class _$_Deleted implements _Deleted {
   @override
   _$DeletedCopyWith<_Deleted> get copyWith =>
       __$DeletedCopyWithImpl<_Deleted>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result deleted(Restaurant store),
+  }) {
+    assert(deleted != null);
+    return deleted(store);
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result deleted(Restaurant store),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (deleted != null) {
+      return deleted(store);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result deleted(_Deleted value),
+  }) {
+    assert(deleted != null);
+    return deleted(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result deleted(_Deleted value),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (deleted != null) {
+      return deleted(this);
+    }
+    return orElse();
+  }
 }
 
 abstract class _Deleted implements StoreActorEvent {
@@ -134,20 +198,24 @@ abstract class _Deleted implements StoreActorEvent {
 class _$StoreActorStateTearOff {
   const _$StoreActorStateTearOff();
 
+// ignore: unused_element
   _Initial initial() {
     return const _Initial();
   }
 
+// ignore: unused_element
   _Loading loading() {
     return const _Loading();
   }
 
+// ignore: unused_element
   _DeleteFailure deleteFailure(StoreFailure storeFailure) {
     return _DeleteFailure(
       storeFailure,
     );
   }
 
+// ignore: unused_element
   _DeleteSuccess deleteSuccess() {
     return const _DeleteSuccess();
   }

@@ -18,9 +18,11 @@ abstract class MenuItem implements _$MenuItem {
     @required ValueString menuID,
     ValueString imageUrl,
     bool hidden,
+    int count,
   }) = _MenuItem;
 
-  factory MenuItem.empty() => MenuItem(
+  factory MenuItem.empty() =>
+      MenuItem(
         id: UniqueId(),
         name: ValueString.fromString(""),
         description: ValueString.fromString(""),
@@ -29,6 +31,7 @@ abstract class MenuItem implements _$MenuItem {
         menuID: ValueString(),
         imageUrl: ValueString(),
         hidden: true,
+         count: 1,
       );
 
   Option<ValueFailure<dynamic>> get failureOption {
@@ -38,6 +41,6 @@ abstract class MenuItem implements _$MenuItem {
         .fold(
           (f) => some(f),
           (r) => none(),
-        );
+    );
   }
 }

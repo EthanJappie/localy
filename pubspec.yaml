@@ -24,7 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
   dartz: ^0.9.1
-  freezed_annotation:
+  freezed_annotation: ^0.11.0
   flutter_bloc: ^6.0.1
   firebase_core: ^0.4.5
   firebase_analytics: ^5.0.16
@@ -35,11 +35,11 @@ dependencies:
   injectable: ^1.0.2
   flushbar: ^1.10.4
   uuid: ^2.2.0
-  auto_route: ^0.6.6
+  auto_route: ^0.6.7
   kt_dart: ^0.7.0+1
   json_annotation: ^3.0.1
   google_fonts: ^1.1.0
-  flutter_svg:
+  flutter_svg: ^0.17.0
   flutter_hooks: ^0.12.0
   google_map_location_picker: ^3.3.3
   location: ^3.0.2
@@ -48,7 +48,7 @@ dependencies:
   http: ^0.12.2
   camera: ^0.5.8+2
   image_picker: ^0.6.7+4
-  image:
+  image: ^2.1.13
   path_provider: ^1.6.11
   flutter_image_compress: ^0.7.0
   firebase_storage: ^3.1.6
@@ -61,22 +61,22 @@ dependencies:
   cached_network_image: ^2.2.0+1
   firebase_messaging: ^6.0.16
   firebase_crashlytics: ^0.1.4+1
-  adobe_xd: ^1.0.0+1
-  dartfix:
+  url_launcher: ^5.5.0
+  flutter_mapbox_navigation: ^0.0.11
 
 dev_dependencies:
-  test:
-  flutter_test:
-    sdk: flutter
-  flutter_driver:
-    sdk: flutter
+#  test:
+#  flutter_test:
+#    sdk: flutter
+#  flutter_driver:
+#    sdk: flutter
   mockito: 4.1.1
   bloc_test: 7.0.0
-  build_runner:
-  freezed:
+  build_runner: ^1.10.1
+  freezed: ^0.11.4
   lint: ^1.2.0
-  injectable_generator: ^1.0.2
-  auto_route_generator: ^0.6.6
+  injectable_generator: ^1.0.3
+  auto_route_generator: ^0.6.7
   json_serializable: ^3.3.0
   clippy_flutter: ^1.1.1
   remove_from_coverage: any

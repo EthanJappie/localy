@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dartz/dartz.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:localy/domain/core/failures.dart';
@@ -24,8 +25,8 @@ abstract class StoreOrder implements _$StoreOrder {
     @required bool payingByCard,
     @required bool payingByOther,
     @required bool foodDeliveriesChosen,
-    @required bool foodCollectionChosen,
     @required ValueString phoneNumber,
+    @required Timestamp dateCreated,
     ValueString deliveryAddress,
     FireCoordinates deliveryCoordinates,
   }) = _Order;
@@ -43,10 +44,10 @@ abstract class StoreOrder implements _$StoreOrder {
         payingByCard: false,
         payingByOther: false,
         foodDeliveriesChosen: false,
-        foodCollectionChosen: false,
         phoneNumber: ValueString.fromString(""),
-        deliveryAddress: ValueString.fromString(""),
+        deliveryAddress: ValueString(),
         deliveryCoordinates: FireCoordinates.zero(),
+        dateCreated: Timestamp.now(),
       );
 
   Option<ValueFailure<dynamic>> get failureOption {

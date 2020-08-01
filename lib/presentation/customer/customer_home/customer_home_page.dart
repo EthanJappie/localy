@@ -2,11 +2,13 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:localy/application/auth/auth_bloc.dart';
+import 'package:localy/application/order/order_watcher/order_watcher_bloc.dart';
 import 'package:localy/application/stores/store_actor/store_actor_bloc.dart';
 import 'package:localy/application/stores/store_watcher/store_watcher_bloc.dart';
 import 'package:localy/injection.dart';
 import 'package:localy/presentation/core/routes/customer_router.gr.dart';
-import 'package:localy/presentation/customer/customer_store_page/customer_store_page.dart';
+import 'package:localy/presentation/customer/customer_orders/customer_order_page.dart';
+import 'package:localy/presentation/customer/customer_store/customer_store_page.dart';
 
 class CustomerHomePage extends StatefulWidget implements AutoRouteWrapper {
   @override
@@ -17,12 +19,20 @@ class CustomerHomePage extends StatefulWidget implements AutoRouteWrapper {
     return MultiBlocProvider(
       providers: [
         BlocProvider<StoreWatcherBloc>(
-          create: (context) => getIt<StoreWatcherBloc>()
-            ..add(const StoreWatcherEvent.watchAllInRadiusStarted()),
+          create: (_) => getIt<StoreWatcherBloc>()
+            ..add(
+              const StoreWatcherEvent.watchAllInRadiusStarted(),
+            ),
         ),
         BlocProvider<StoreActorBloc>(
-          create: (context) => getIt<StoreActorBloc>(),
+          create: (_) => getIt<StoreActorBloc>(),
         ),
+        BlocProvider<OrderWatcherBloc>(
+          create: (_) => getIt<OrderWatcherBloc>()
+            ..add(
+              const OrderWatcherEvent.watchALlByCustomerID(),
+            ),
+        )
       ],
       child: this,
     );
@@ -32,7 +42,11 @@ class CustomerHomePage extends StatefulWidget implements AutoRouteWrapper {
 class _CustomerHomePageState extends State<CustomerHomePage> {
   int _currentIndex = 0;
 
-  final _titles = ["Stores", "Profile"];
+  final _titles = ["Kitchens", "Orders"];
+  final _pages = [
+    CustomerStorePage(),
+    CustomerOrderPage(),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -55,21 +69,21 @@ class _CustomerHomePageState extends State<CustomerHomePage> {
             )
           ],
         ),
-        body: CustomerStorePage(),
-//        bottomNavigationBar: BottomNavigationBar(
-//          currentIndex: _currentIndex,
-//          items: const [
-//            BottomNavigationBarItem(
-//                icon: Icon(Icons.store), title:  Text("Store")),
-//            BottomNavigationBarItem(
-//                icon: Icon(Icons.person), title:  Text("Profile")),
-//          ],
-//          onTap: (value) {
-//            setState(() {
-//              _currentIndex = value;
-//            });
-//          },
-//        ),
+        body: _pages[_currentIndex],
+        bottomNavigationBar: BottomNavigationBar(
+          currentIndex: _currentIndex,
+          items: const [
+            BottomNavigationBarItem(
+                icon: Icon(Icons.store), title: Text("Kitchens")),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.person), title: Text("Orders")),
+          ],
+          onTap: (value) {
+            setState(() {
+              _currentIndex = value;
+            });
+          },
+        ),
       ),
     );
   }

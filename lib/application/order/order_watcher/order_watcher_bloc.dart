@@ -46,6 +46,28 @@ class OrderWatcherBloc extends Bloc<OrderWatcherEvent, OrderWatcherState> {
           (orders) => OrderWatcherState.loadSuccess(orders),
         );
       },
+      watchAllByStoreID: (e) async* {
+        yield const OrderWatcherState.loading();
+        await _orderStreamSubscription?.cancel();
+
+        _orderStreamSubscription =
+            _orderRepository.watchAllByStoreID(e.storeID).listen(
+                  (failureOrOrders) => add(
+                    OrderWatcherEvent.ordersReceived(failureOrOrders),
+                  ),
+                );
+      },
+      watchALlByCustomerID: (e) async* {
+        yield const OrderWatcherState.loading();
+        await _orderStreamSubscription?.cancel();
+
+        _orderStreamSubscription =
+            _orderRepository.watchAllByCustomerID().listen(
+                  (failureOrOrders) => add(
+                    OrderWatcherEvent.ordersReceived(failureOrOrders),
+                  ),
+                );
+      },
     );
   }
 }

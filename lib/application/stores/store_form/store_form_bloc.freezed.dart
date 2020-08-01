@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'store_form_bloc.dart';
 
@@ -12,66 +12,77 @@ T _$identity<T>(T value) => value;
 class _$StoreFormEventTearOff {
   const _$StoreFormEventTearOff();
 
+// ignore: unused_element
   _Initialized initialized(Option<Restaurant> initialStoreOption) {
     return _Initialized(
       initialStoreOption,
     );
   }
 
+// ignore: unused_element
   _StoreNameChanged storeNameChanged(String storeName) {
     return _StoreNameChanged(
       storeName,
     );
   }
 
+// ignore: unused_element
   _AddressChanged addressChanged(String address) {
     return _AddressChanged(
       address,
     );
   }
 
+// ignore: unused_element
   _CoordinatesChanged coordinatesChanged(GeoFirePoint coordinates) {
     return _CoordinatesChanged(
       coordinates,
     );
   }
 
+// ignore: unused_element
   _WorkHoursFromChanged workHoursFromChanged(Timestamp workHours) {
     return _WorkHoursFromChanged(
       workHours,
     );
   }
 
+// ignore: unused_element
   _WorkHoursToChanged workHoursToChanged(Timestamp workHours) {
     return _WorkHoursToChanged(
       workHours,
     );
   }
 
+// ignore: unused_element
   _TelephoneChanged telephoneChanged(String telephone) {
     return _TelephoneChanged(
       telephone,
     );
   }
 
+// ignore: unused_element
   _NotesChanged notesChanged(String notes) {
     return _NotesChanged(
       notes,
     );
   }
 
+// ignore: unused_element
   _ActiveChanged activeChanged({bool active}) {
     return _ActiveChanged(
       active: active,
     );
   }
 
+// ignore: unused_element
   _OpenChanged openChanged({bool open}) {
     return _OpenChanged(
       open: open,
     );
   }
 
+// ignore: unused_element
   _AcceptingStaffRequestsChanged acceptingStaffRequestsChanged(
       {bool acceptingStaffRequests}) {
     return _AcceptingStaffRequestsChanged(
@@ -79,46 +90,54 @@ class _$StoreFormEventTearOff {
     );
   }
 
+// ignore: unused_element
   _AcceptCashChanged acceptCashChanged({bool acceptCash}) {
     return _AcceptCashChanged(
       acceptCash: acceptCash,
     );
   }
 
+// ignore: unused_element
   _AcceptCardChanged acceptCardChanged({bool acceptCard}) {
     return _AcceptCardChanged(
       acceptCard: acceptCard,
     );
   }
 
+// ignore: unused_element
   _AcceptOtherChanged acceptOtherChanged({bool acceptOther}) {
     return _AcceptOtherChanged(
       acceptOther: acceptOther,
     );
   }
 
+// ignore: unused_element
   _FoodDeliveriesChanged foodDeliveriesChanged({bool foodDeliveries}) {
     return _FoodDeliveriesChanged(
       foodDeliveries: foodDeliveries,
     );
   }
 
+// ignore: unused_element
   _FoodCollectionChanged foodCollectionChanged({bool foodCollection}) {
     return _FoodCollectionChanged(
       foodCollection: foodCollection,
     );
   }
 
+// ignore: unused_element
   _Saved saved() {
     return const _Saved();
   }
 
+// ignore: unused_element
   _CoverImageChanged coverImageChanged(String coverImage) {
     return _CoverImageChanged(
       coverImage,
     );
   }
 
+// ignore: unused_element
   _LogoImageChanged logoImageChanged(String logoImage) {
     return _LogoImageChanged(
       logoImage,
@@ -4365,6 +4384,7 @@ abstract class _LogoImageChanged implements StoreFormEvent {
 class _$StoreFormStateTearOff {
   const _$StoreFormStateTearOff();
 
+// ignore: unused_element
   _StoreFormState call(
       {@required
           Restaurant store,

@@ -7,7 +7,7 @@ import 'package:localy/presentation/core/pages/sign_in/sign_in_page.dart';
 import 'package:localy/presentation/core/pages/splash/splash_page.dart';
 import 'package:localy/presentation/profile/profile_page.dart';
 import 'package:localy/presentation/store/active_orders/active_orders_page.dart';
-import 'package:localy/presentation/store/adminstration/adminstration_page.dart';
+import 'package:localy/presentation/store/administration/administration_page.dart';
 import 'package:localy/presentation/store/home/home_page.dart';
 import 'package:localy/presentation/store/inactive_orders/inactive_orders_page.dart';
 import 'package:localy/presentation/store/menu_items/menu_items_form_page/menu_items_form_page.dart';
@@ -15,6 +15,7 @@ import 'package:localy/presentation/store/menu_items/menu_items_overview/menu_it
 import 'package:localy/presentation/store/staff_access/staff_access_page.dart';
 import 'package:localy/presentation/store/stores/stores_form/store_form_page.dart';
 import 'package:localy/presentation/store/stores/stores_overview/stores_over_view_page.dart';
+import 'package:localy/presentation/store/view_order/view_order_page.dart';
 
 @MaterialAutoRouter(
     routesClassName: "ManagerRoute",
@@ -33,6 +34,7 @@ import 'package:localy/presentation/store/stores/stores_overview/stores_over_vie
       MaterialRoute(page: ActiveOrdersPage),
       MaterialRoute(page: InactiveOrdersPage),
       MaterialRoute(page: MenuItemsOverviewPage),
+      MaterialRoute(page: ViewOrderPage),
       MaterialRoute(page: MenuItemsFormPage, fullscreenDialog: true),
       MaterialRoute(page: MenuBuilderFormPage, fullscreenDialog: true),
       MaterialRoute(page: StoreFormPage, fullscreenDialog: true),

@@ -25,9 +25,8 @@ class OrderRepository implements IOrderRepository {
         customerID: userDoc.documentID,
       );
 
-      await _firestore.orderCollection
-          .document(orderDTO.id)
-          .setData(orderDTO.toJson());
+      final orderJson = orderDTO.toJson();
+      await _firestore.orderCollection.document(orderDTO.id).setData(orderJson);
 
       return right(unit);
     } on PlatformException catch (e) {
@@ -82,6 +81,37 @@ class OrderRepository implements IOrderRepository {
   @override
   Stream<Either<OrderFailure, KtList<StoreOrder>>> watchAll() async* {
     yield* _firestore.orderCollection.snapshots().map(
+          (snapshots) => right<OrderFailure, KtList<StoreOrder>>(
+            snapshots.documents
+                .map((doc) => StoreOrderDTO.fromFirestore(doc).toDomain())
+                .toImmutableList(),
+          ),
+        );
+  }
+
+  @override
+  Stream<Either<OrderFailure, KtList<StoreOrder>>> watchAllByStoreID(
+      String storeID) async* {
+    yield* _firestore.orderCollection
+        .where("storeID", isEqualTo: storeID)
+        .snapshots()
+        .map(
+          (snapshots) => right<OrderFailure, KtList<StoreOrder>>(
+            snapshots.documents
+                .map((doc) => StoreOrderDTO.fromFirestore(doc).toDomain())
+                .toImmutableList(),
+          ),
+        );
+  }
+
+  @override
+  Stream<Either<OrderFailure, KtList<StoreOrder>>>
+      watchAllByCustomerID() async* {
+    final userDoc = await _firestore.userDocument();
+    yield* _firestore.orderCollection
+        .where("customerID", isEqualTo: userDoc.documentID)
+        .snapshots()
+        .map(
           (snapshots) => right<OrderFailure, KtList<StoreOrder>>(
             snapshots.documents
                 .map((doc) => StoreOrderDTO.fromFirestore(doc).toDomain())

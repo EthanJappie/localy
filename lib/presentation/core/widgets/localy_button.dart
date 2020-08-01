@@ -4,11 +4,13 @@ class LocalyButton extends StatelessWidget {
   final String title;
   final VoidCallback onPressed;
   final bool empty;
+  final bool strikeThrough;
 
   const LocalyButton({
     Key key,
     this.title,
     this.empty = false,
+    this.strikeThrough = false,
     this.onPressed,
   }) : super(key: key);
 
@@ -31,6 +33,8 @@ class LocalyButton extends StatelessWidget {
             child: Text(
               title,
               style: TextStyle(
+                decoration: strikeThrough ? TextDecoration.lineThrough : TextDecoration.none,
+                decorationThickness: 3,
                 fontWeight: FontWeight.bold,
                 color: empty ? Colors.black : Colors.white,
               ),

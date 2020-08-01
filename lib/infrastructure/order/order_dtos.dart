@@ -5,7 +5,9 @@ import 'package:localy/domain/core/value_objects.dart';
 import 'package:localy/domain/order/order.dart';
 import 'package:localy/domain/store/value_objects.dart';
 import 'package:localy/infrastructure/core/converters/geopoint_converts.dart';
+import 'package:localy/infrastructure/core/converters/timestamp_converters.dart';
 import 'package:localy/infrastructure/menu_item/menu_item_dtos.dart';
+import 'package:localy/infrastructure/menu_item/menu_items_converters.dart';
 
 part 'order_dtos.freezed.dart';
 
@@ -23,13 +25,13 @@ abstract class StoreOrderDTO implements _$StoreOrderDTO {
     @required String storeAddress,
     @required @GeoPointConverters() GeoFirePoint storeCoordinates,
     @required String storePhoneNumber,
-    @required List<MenuItemDTO> menuItems,
+    @required @MenuItemConverters() List<MenuItemDTO> menuItems,
     @required bool payingByCash,
     @required bool payingByCard,
     @required bool payingByOther,
     @required bool foodDeliveriesChosen,
-    @required bool foodCollectionChosen,
     @required String phoneNumber,
+    @required @TimestampConverter() Timestamp dateCreated,
     String deliveryAddress,
     @GeoPointConverters() GeoFirePoint deliveryCoordinates,
   }) = _StoreOrderDTO;
@@ -47,33 +49,32 @@ abstract class StoreOrderDTO implements _$StoreOrderDTO {
       payingByCash: order.payingByCash,
       payingByCard: order.payingByCard,
       payingByOther: order.payingByOther,
-      foodCollectionChosen: order.foodCollectionChosen,
       foodDeliveriesChosen: order.foodDeliveriesChosen,
       phoneNumber: order.phoneNumber.getOrCrash(),
       deliveryAddress: order.deliveryAddress.getOrCrash(),
       deliveryCoordinates: order.deliveryCoordinates.getOrCrash(),
+      dateCreated: order.dateCreated,
     );
   }
 
-   StoreOrder toDomain() {
+  StoreOrder toDomain() {
     return StoreOrder(
-      id: UniqueId.fromUniqueString(id),
-      customerID: ValueString.fromString(customerID),
-      storeID: ValueString.fromString(storeID),
-      storeName: ValueString.fromString(storeName),
-      storeAddress: ValueString.fromString(storeAddress),
-      storeCoordinates: FireCoordinates(storeCoordinates),
-      storePhoneNumber: ValueString.fromString(storePhoneNumber),
-      menuItems: menuItems.map((e) => e.toDomain()).toList(),
-      payingByCash: payingByCash,
-      payingByCard: payingByCard,
-      payingByOther: payingByOther,
-      foodCollectionChosen: foodCollectionChosen,
-      foodDeliveriesChosen: foodDeliveriesChosen,
-      phoneNumber: ValueString.fromString(phoneNumber),
-      deliveryAddress: ValueString.fromString(deliveryAddress),
-      deliveryCoordinates: FireCoordinates(deliveryCoordinates),
-    );
+        id: UniqueId.fromUniqueString(id),
+        customerID: ValueString.fromString(customerID),
+        storeID: ValueString.fromString(storeID),
+        storeName: ValueString.fromString(storeName),
+        storeAddress: ValueString.fromString(storeAddress),
+        storeCoordinates: FireCoordinates(storeCoordinates),
+        storePhoneNumber: ValueString.fromString(storePhoneNumber),
+        menuItems: menuItems.map((e) => e.toDomain()).toList(),
+        payingByCash: payingByCash,
+        payingByCard: payingByCard,
+        payingByOther: payingByOther,
+        foodDeliveriesChosen: foodDeliveriesChosen,
+        phoneNumber: ValueString.fromString(phoneNumber),
+        deliveryAddress: ValueString.fromString(deliveryAddress),
+        deliveryCoordinates: FireCoordinates(deliveryCoordinates),
+        dateCreated: dateCreated);
   }
 
   factory StoreOrderDTO.fromJson(Map<String, dynamic> json) =>

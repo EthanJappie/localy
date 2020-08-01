@@ -33,12 +33,12 @@ class AppWidget extends StatelessWidget {
 //        navigatorObservers: <NavigatorObserver>[observer],
         builder: ExtendedNavigator(router: _getRouter()),
         theme: ThemeData.light().copyWith(
-          primaryColor: const Color(appColor),
+          primaryColor: _getAppColor(),
           textTheme: GoogleFonts.montserratTextTheme(),
-          accentColor: const Color(appColor),
+          accentColor: _getAppColor(),
           backgroundColor: const Color(backgroundColor),
-          floatingActionButtonTheme: const FloatingActionButtonThemeData(
-            backgroundColor: Color(appColor),
+          floatingActionButtonTheme:  FloatingActionButtonThemeData(
+            backgroundColor: _getAppColor(),
           ),
         ),
       ),
@@ -50,6 +50,14 @@ class AppWidget extends StatelessWidget {
       return ManagerRouter();
     } else {
       return CustomerRouter();
+    }
+  }
+
+  Color _getAppColor(){
+    if (EnvironmentConfig.APP_NAME == "LocalyManager") {
+      return const Color(appColor);
+    } else {
+      return Colors.green;
     }
   }
 }

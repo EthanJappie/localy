@@ -19,7 +19,8 @@ abstract class MenuItemDTO implements _$MenuItemDTO {
     @required String menuID,
     bool hidden,
     String imageUrl,
-    @JsonKey(ignore: true) String id,
+    int count,
+    String id,
   }) = _MenuItemDTO;
 
   factory MenuItemDTO.fromDomain(MenuItem menuItem) {
@@ -32,6 +33,7 @@ abstract class MenuItemDTO implements _$MenuItemDTO {
       sequenceOfAppearance: menuItem.sequenceOfAppearance,
       hidden: menuItem.hidden,
       imageUrl: menuItem.imageUrl.value.fold((l) => "", (r) => r),
+      count: menuItem.count ?? 1,
     );
   }
 
@@ -45,6 +47,7 @@ abstract class MenuItemDTO implements _$MenuItemDTO {
       sequenceOfAppearance: sequenceOfAppearance,
       hidden: hidden,
       imageUrl: ValueString.fromString(imageUrl ?? ""),
+      count: count ?? 1,
     );
   }
 

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:localy/application/menu/menu_actor/menu_actor_bloc.dart';
 import 'package:localy/application/menu/menu_watcher/menu_watcher_bloc.dart';
+import 'package:localy/application/order/order_watcher/order_watcher_bloc.dart';
 import 'package:localy/domain/store/restaurant.dart';
 import 'package:localy/injection.dart';
 import 'package:localy/presentation/core/pages/menu_builder/menu_builder_overview/menu_builder_overview_page.dart';
@@ -28,15 +29,11 @@ class _AdministrationPageState extends State<AdministrationPage> {
       MenuBuilderOverviewPage(
         storeID: widget.store.id.getOrCrash(),
       ),
-      ActiveOrdersPage(),
+      const ActiveOrdersPage(),
       InactiveOrdersPage()
     ];
 
-    _titles = [
-      "Menus",
-      "Active Orders",
-      "Inactive Orders"
-    ];
+    _titles = ["Menus", "Active Orders", "Inactive Orders"];
 
     super.initState();
   }
@@ -46,13 +43,18 @@ class _AdministrationPageState extends State<AdministrationPage> {
     return MultiBlocProvider(
       providers: [
         BlocProvider<MenuActorBloc>(
-          create: (context) => getIt<MenuActorBloc>(),
+          create: (_) => getIt<MenuActorBloc>(),
         ),
         BlocProvider<MenuWatcherBloc>(
-          create: (context) => getIt<MenuWatcherBloc>()
+          create: (_) => getIt<MenuWatcherBloc>()
             ..add(
                 MenuWatcherEvent.watchAllStarted(widget.store.id.getOrCrash())),
         ),
+        BlocProvider<OrderWatcherBloc>(
+          create: (_) => getIt<OrderWatcherBloc>()
+            ..add(OrderWatcherEvent.watchAllByStoreID(
+                widget.store.id.getOrCrash())),
+        )
       ],
       child: Scaffold(
         appBar: AppBar(
@@ -72,15 +74,15 @@ class _AdministrationPageState extends State<AdministrationPage> {
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: Icon(Icons.menu),
-              title:  Text("Menu"),
+              title: Text("Menu"),
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.receipt),
-              title:  Text("Active"),
+              title: Text("Active"),
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.receipt),
-              title:  Text("Inactive"),
+              title: Text("Inactive"),
             ),
           ],
         ),

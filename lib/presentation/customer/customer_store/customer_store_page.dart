@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:geoflutterfire/geoflutterfire.dart';
 import 'package:localy/application/stores/store_actor/store_actor_bloc.dart';
 import 'package:localy/application/stores/store_watcher/store_watcher_bloc.dart';
-import 'package:localy/presentation/customer/customer_store_page/widgets/customer_store_card.dart';
+import 'package:localy/presentation/customer/customer_store/widgets/customer_store_card.dart';
 import 'package:location/location.dart';
 
 class CustomerStorePage extends StatefulWidget {

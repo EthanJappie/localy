@@ -21,7 +21,7 @@ class LocalyLocationPicker extends FormField<String> {
   final BuildContext context;
 
   LocalyLocationPicker({
-    this.context,
+    @required this.context,
     this.title,
     this.address,
     this.onLocationChanged,

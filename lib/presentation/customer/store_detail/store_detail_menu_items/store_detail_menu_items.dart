@@ -2,23 +2,30 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:localy/application/menu_item/menu_item_watcher/menu_item_watcher_bloc.dart';
+import 'package:localy/application/order/order_form/order_form_bloc.dart';
 import 'package:localy/injection.dart';
-import 'package:localy/presentation/core/routes/manager_router.gr.dart';
 
-class StoreDetailMenuItems extends StatelessWidget {
+class StoreDetailMenuItems extends StatefulWidget {
   final String menuID;
+  final BuildContext blocContext;
 
   const StoreDetailMenuItems({
     Key key,
     @required this.menuID,
+    @required this.blocContext,
   }) : super(key: key);
 
+  @override
+  _StoreDetailMenuItemsState createState() => _StoreDetailMenuItemsState();
+}
+
+class _StoreDetailMenuItemsState extends State<StoreDetailMenuItems> {
   @override
   Widget build(BuildContext context) {
     return BlocProvider<MenuItemWatcherBloc>(
       create: (context) => getIt<MenuItemWatcherBloc>()
         ..add(
-          MenuItemWatcherEvent.watchAllUnhidden(menuID),
+          MenuItemWatcherEvent.watchAllUnhidden(widget.menuID),
         ),
       child: BlocBuilder<MenuItemWatcherBloc, MenuItemWatcherState>(
         builder: (BuildContext context, MenuItemWatcherState state) {
@@ -110,6 +117,7 @@ class StoreDetailMenuItems extends StatelessWidget {
                           Column(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.end,
                             children: <Widget>[
                               Container(
                                 height: 32,
@@ -121,11 +129,33 @@ class StoreDetailMenuItems extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              InkWell(
-                                  onTap: () {
-
+                              BlocProvider.value(
+                                value: BlocProvider.of<OrderFormBloc>(widget.blocContext),
+                                child: BlocBuilder<OrderFormBloc, OrderFormState>(
+                                  builder: (context, state) {
+                                    return InkWell(
+                                        onTap: () {
+                                          if (!state.order.menuItems
+                                              .contains(menuItem)) {
+                                            widget.blocContext.bloc<OrderFormBloc>().add(
+                                                OrderFormEvent.addedItem(menuItem));
+                                            setState(() {});
+                                          } else {
+                                            widget.blocContext.bloc<OrderFormBloc>().add(
+                                                OrderFormEvent.deletedItem(
+                                                    menuItem));
+                                            setState(() {});
+                                          }
+                                        },
+                                        child: state.order.menuItems
+                                                .contains(menuItem)
+                                            ? Icon(
+                                                Icons.delete_forever
+                                              )
+                                            : Icon(Icons.add_circle_outline));
                                   },
-                                  child: Icon(Icons.add_circle_outline))
+                                ),
+                              )
                             ],
                           ),
                           const SizedBox(width: 32),

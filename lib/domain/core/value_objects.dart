@@ -64,6 +64,8 @@ class ValueString extends ValueObject<String> {
   @override
   final Either<ValueFailure<String>, String> value;
 
+
+
   factory ValueString() {
     return ValueString._(right(""));
   }

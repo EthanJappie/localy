@@ -50,58 +50,100 @@ class CustomerStoreCard extends StatelessWidget {
                 children: <Widget>[
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                      Text(
+                        store.storeName.getOrCrash(),
+                        style: _storeNameTextStyle(),
+                      ),
+                      Row(
                         children: <Widget>[
-                          Text(
-                            store.storeName.getOrCrash(),
-                            style: _storeNameTextStyle(),
-                          ),
-                          const SizedBox(height: 8),
-                          Text(
-                            store.notes.getOrCrash(),
-                            style: _subtitleTextStyle(),
-                          ),
-                          const SizedBox(height: 8),
-                          Row(
+                          Column(
                             children: <Widget>[
                               Icon(
-                                Icons.star,
-                                color: Theme.of(context).primaryColor,
+                                store.foodCollection
+                                    ? Icons.check_circle
+                                    : Icons.remove_circle,
                                 size: 16,
+                                color:
+                                store.foodCollection
+                                    ? Colors.green
+                                    : Colors.red,
                               ),
-                              const SizedBox(width: 4),
-                              const Text("4.8 (120+)"),
-                              const SizedBox(width: 16),
-                              Icon(
-                                Icons.directions_car,
-                                color: Colors.grey,
-                                size: 16,
-                              ),
-                              const SizedBox(width: 4),
-                              Text(
-                                "${_getDistance().toStringAsFixed(2)}km",
-                                style: _subtitleTextStyle(),
-                              ),
-                              const SizedBox(width: 16),
-                              Icon(
-                                Icons.monetization_on,
-                                color: Colors.grey,
-                                size: 16,
-                              ),
-                              const SizedBox(width: 4),
-                              Text(
-                                "Free",
-                                style: _subtitleTextStyle(),
+                              const Text(
+                                "Collect",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12,
+                                ),
                               )
                             ],
-                          )
+                          ),
+                          const SizedBox(width: 16),
+                          Column(
+                            children: <Widget>[
+                              Icon(
+                                store.foodDeliveries
+                                    ? Icons.check_circle
+                                    : Icons.remove_circle,
+                                size: 16,
+                                color: store.foodDeliveries
+                                    ? Colors.green
+                                    : Colors.red,
+                              ),
+                              const Text(
+                                "Delivery",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12,
+                                ),
+                              )
+                            ],
+                          ),
                         ],
-                      ),
+                      )
                     ],
                   ),
+                  const SizedBox(height: 8),
+                  Text(
+                    store.notes.getOrCrash(),
+                    style: _subtitleTextStyle(),
+                  ),
+                  const SizedBox(height: 8),
+                  Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.star,
+                        color: Theme.of(context).primaryColor,
+                        size: 16,
+                      ),
+                      const SizedBox(width: 4),
+                      const Text("4.8 (120+)"),
+                      const SizedBox(width: 16),
+                      Icon(
+                        Icons.directions_car,
+                        color: Colors.grey,
+                        size: 16,
+                      ),
+                      const SizedBox(width: 4),
+                      Text(
+                        "${_getDistance().toStringAsFixed(2)}km",
+                        style: _subtitleTextStyle(),
+                      ),
+                      const SizedBox(width: 16),
+                      Icon(
+                        Icons.monetization_on,
+                        color: Colors.grey,
+                        size: 16,
+                      ),
+                      const SizedBox(width: 4),
+                      Text(
+                        "Free",
+                        style: _subtitleTextStyle(),
+                      )
+                    ],
+                  )
                 ],
               ),
             )
@@ -136,11 +178,6 @@ class CustomerStoreCard extends StatelessWidget {
           color: Colors.redAccent,
         ),
       );
-//      return Image.network(
-//        urlOrPath,
-//        fit: BoxFit.fill,
-//        height: size,
-//      );
     } else {
       return Image.file(
         File(urlOrPath),

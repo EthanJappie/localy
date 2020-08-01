@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="google_map_api_key">AIzaSyDQipUrdmQsxCMwEyPl5ygjAWAUOpMjSYg</string>
+    <string name="mapbox_access_token" translatable="false">pk.eyJ1IjoiYnJhZDAwNyIsImEiOiJja2NjMGM4dm4wMDFzMnhvYTQ5ajQ4NzM0In0.jh5GgJClnWFzsrV648Klbg</string>
+    <string name="user_location_permission_explanation">This app needs location permissions to show its functionality.</string>
+    <string name="user_location_permission_not_granted">You didn\'t grant location permissions.</string>
 </resources>
