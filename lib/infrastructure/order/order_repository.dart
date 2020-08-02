@@ -94,6 +94,7 @@ class OrderRepository implements IOrderRepository {
       String storeID) async* {
     yield* _firestore.orderCollection
         .where("storeID", isEqualTo: storeID)
+        .orderBy("dateCreated")
         .snapshots()
         .map(
           (snapshots) => right<OrderFailure, KtList<StoreOrder>>(
@@ -110,6 +111,7 @@ class OrderRepository implements IOrderRepository {
     final userDoc = await _firestore.userDocument();
     yield* _firestore.orderCollection
         .where("customerID", isEqualTo: userDoc.documentID)
+        .orderBy("dateCreated")
         .snapshots()
         .map(
           (snapshots) => right<OrderFailure, KtList<StoreOrder>>(

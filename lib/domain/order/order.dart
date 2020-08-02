@@ -27,6 +27,7 @@ abstract class StoreOrder implements _$StoreOrder {
     @required bool foodDeliveriesChosen,
     @required ValueString phoneNumber,
     @required Timestamp dateCreated,
+    @required ValueString status,
     ValueString deliveryAddress,
     FireCoordinates deliveryCoordinates,
   }) = _Order;
@@ -48,6 +49,7 @@ abstract class StoreOrder implements _$StoreOrder {
         deliveryAddress: ValueString(),
         deliveryCoordinates: FireCoordinates.zero(),
         dateCreated: Timestamp.now(),
+        status: ValueString.fromString("pending"),
       );
 
   Option<ValueFailure<dynamic>> get failureOption {

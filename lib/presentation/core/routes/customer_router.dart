@@ -5,6 +5,7 @@ import 'package:localy/presentation/core/pages/sign_in/sign_in_page.dart';
 import 'package:localy/presentation/core/pages/splash/splash_page.dart';
 import 'package:localy/presentation/customer/checkout/checkout_page.dart';
 import 'package:localy/presentation/customer/customer_home/customer_home_page.dart';
+import 'package:localy/presentation/customer/customer_view_order/customer_view_order_page.dart';
 import 'package:localy/presentation/customer/store_detail/store_detail_page.dart';
 
 @MaterialAutoRouter(
@@ -18,5 +19,6 @@ import 'package:localy/presentation/customer/store_detail/store_detail_page.dart
       MaterialRoute(page: ForgetPasswordPage),
       MaterialRoute(page: StoreDetailPage),
       MaterialRoute(page: CheckoutPage),
+      MaterialRoute(page: CustomerViewOrderPage),
     ])
 class $CustomerRouter {}
