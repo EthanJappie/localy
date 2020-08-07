@@ -71,7 +71,7 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
                           Text(
                             widget.order.phoneNumber.value
                                 .fold((l) => "", (r) => r),
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontWeight: FontWeight.bold,
                               color: Colors.black,
                             ),
@@ -99,8 +99,6 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
                           .longitude,
                       name: "destination",
                     ),
-                    mode: MapBoxNavigationMode.drivingWithTraffic,
-                    simulateRoute: false,
                     language: "English",
                     units: VoiceUnits.metric,
                   );
@@ -119,7 +117,7 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
                           Text(
                             widget.order.deliveryAddress.value
                                 .fold((l) => "", (r) => r),
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontWeight: FontWeight.bold,
                               color: Colors.black,
                             ),
@@ -263,7 +261,7 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
                                 menuItem.count == null
                                     ? "x1"
                                     : "x${menuItem.count.toString()}",
-                                style: TextStyle(color: Colors.white),
+                                style: const TextStyle(color: Colors.white),
                               ),
                             ),
                           ],

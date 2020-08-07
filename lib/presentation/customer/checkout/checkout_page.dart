@@ -48,7 +48,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                         const SizedBox(height: 16),
                         Text(
                           "${state.order.menuItems.length} Items added",
-                          style: TextStyle(fontWeight: FontWeight.bold),
+                          style: const TextStyle(fontWeight: FontWeight.bold),
                         ),
                         const SizedBox(
                           height: 16,
@@ -249,7 +249,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                               child: CircleAvatar(
                                 radius: 16,
                                 backgroundColor: Colors.grey[300],
-                                child: Icon(
+                                child: const Icon(
                                   Icons.remove,
                                   color: Colors.white,
                                 ),
@@ -263,7 +263,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                                 menuItem.count == null
                                     ? "1"
                                     : menuItem.count.toString(),
-                                style: TextStyle(color: Colors.white),
+                                style: const TextStyle(color: Colors.white),
                               ),
                             ),
                             const SizedBox(width: 8),
@@ -276,7 +276,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                               child: CircleAvatar(
                                 radius: 16,
                                 backgroundColor: Theme.of(context).primaryColor,
-                                child: Icon(
+                                child: const Icon(
                                   Icons.add,
                                   color: Colors.white,
                                 ),

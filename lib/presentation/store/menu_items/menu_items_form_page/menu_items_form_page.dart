@@ -3,6 +3,7 @@ import 'package:dartz/dartz.dart';
 import 'package:flushbar/flushbar_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:localy/application/menu_item/menu_item_actor/menu_item_actor_bloc.dart';
 import 'package:localy/application/menu_item/menu_item_form/menu_item_form_bloc.dart';
 import 'package:localy/domain/menu_item/menu_item.dart';
 import 'package:localy/injection.dart';
@@ -28,9 +29,20 @@ class MenuItemsFormPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => getIt<MenuItemFormBloc>()
-        ..add(MenuItemFormEvent.initialized(optionOf(editedMenuItem))),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(
+          create: (_) => getIt<MenuItemFormBloc>()
+            ..add(
+              MenuItemFormEvent.initialized(
+                optionOf(editedMenuItem),
+              ),
+            ),
+        ),
+        BlocProvider(
+          create: (_) => getIt<MenuItemActorBloc>(),
+        ),
+      ],
       child: BlocConsumer<MenuItemFormBloc, MenuItemFormState>(
         listenWhen: (p, c) =>
             p.saveFailureOrSuccessOption != c.saveFailureOrSuccessOption,
@@ -57,7 +69,8 @@ class MenuItemsFormPage extends StatelessWidget {
                   // the overview page.
                   ExtendedNavigator.of(context).popUntil(
                     (route) =>
-                        route.settings.name == ManagerRoute.menuItemsOverviewPage,
+                        route.settings.name ==
+                        ManagerRoute.menuItemsOverviewPage,
                   );
                 },
               );
@@ -70,6 +83,7 @@ class MenuItemsFormPage extends StatelessWidget {
             children: <Widget>[
               MenuItemFormPageScaffold(
                 menuID: menuID,
+                editedMenuItem: editedMenuItem,
               ),
               SavingInProgressOverlay(
                 isSaving: state.isSaving,
@@ -84,10 +98,12 @@ class MenuItemsFormPage extends StatelessWidget {
 
 class MenuItemFormPageScaffold extends StatelessWidget {
   final String menuID;
+  final MenuItem editedMenuItem;
 
   const MenuItemFormPageScaffold({
     Key key,
     @required this.menuID,
+    this.editedMenuItem,
   }) : super(key: key);
 
   @override
@@ -99,7 +115,6 @@ class MenuItemFormPageScaffold extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: BlocBuilder<MenuItemFormBloc, MenuItemFormState>(
-          buildWhen: (p, c) => p.isEditing != c.isEditing,
           builder: (context, state) {
             return Text(state.isEditing ? "Edit Menu Item" : "Add Menu Item");
           },
@@ -136,6 +151,19 @@ class MenuItemFormPageScaffold extends StatelessWidget {
                       },
                     ),
                   ),
+                  if (editedMenuItem != null)
+                    SliverToBoxAdapter(
+                      child: LocalyButton(
+                        title: "Delete",
+                        empty: true,
+                        onPressed: () {
+                          context
+                              .bloc<MenuItemActorBloc>()
+                              .add(MenuItemActorEvent.deleted(editedMenuItem));
+                          ExtendedNavigator.of(context).pop();
+                        },
+                      ),
+                    ),
                   const SliverToBoxAdapter(
                     child: SizedBox(height: 16),
                   ),

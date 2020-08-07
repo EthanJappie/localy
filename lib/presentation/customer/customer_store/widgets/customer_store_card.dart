@@ -121,7 +121,7 @@ class CustomerStoreCard extends StatelessWidget {
                       const SizedBox(width: 4),
                       const Text("4.8 (120+)"),
                       const SizedBox(width: 16),
-                      Icon(
+                      const Icon(
                         Icons.directions_car,
                         color: Colors.grey,
                         size: 16,
@@ -132,7 +132,7 @@ class CustomerStoreCard extends StatelessWidget {
                         style: _subtitleTextStyle(),
                       ),
                       const SizedBox(width: 16),
-                      Icon(
+                      const Icon(
                         Icons.monetization_on,
                         color: Colors.grey,
                         size: 16,

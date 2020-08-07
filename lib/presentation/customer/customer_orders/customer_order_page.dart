@@ -44,7 +44,7 @@ class CustomerOrderPage extends StatelessWidget {
                               children: <Widget>[
                                 Text(
                                   order.storeName.getOrCrash(),
-                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                  style: const TextStyle(fontWeight: FontWeight.bold),
                                 ),
                                 Container(
                                   padding: const EdgeInsets.symmetric(
@@ -61,7 +61,7 @@ class CustomerOrderPage extends StatelessWidget {
                                     order.foodDeliveriesChosen
                                         ? "DELIVERY"
                                         : "COLLECT",
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -91,13 +91,13 @@ class CustomerOrderPage extends StatelessWidget {
                                   children: <Widget>[
                                     Text(
                                       order.id.getOrCrash().substring(0, 5),
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                           fontWeight: FontWeight.bold),
                                     ),
                                     const SizedBox(height: 8),
                                     Text(
                                       _toDate(order.dateCreated.toDate()),
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                           fontWeight: FontWeight.bold),
                                     ),
                                   ],

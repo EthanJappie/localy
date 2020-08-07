@@ -3,6 +3,7 @@ import 'package:dartz/dartz.dart';
 import 'package:flushbar/flushbar_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:localy/application/menu/menu_actor/menu_actor_bloc.dart';
 import 'package:localy/application/menu/menu_form/menu_form_bloc.dart';
 import 'package:localy/domain/menu/menu.dart';
 import 'package:localy/injection.dart';
@@ -26,9 +27,20 @@ class MenuBuilderFormPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => getIt<MenuFormBloc>()
-        ..add(MenuFormEvent.initialized(optionOf(editedMenu))),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(
+          create: (_) => getIt<MenuFormBloc>()
+            ..add(
+              MenuFormEvent.initialized(
+                optionOf(editedMenu),
+              ),
+            ),
+        ),
+        BlocProvider(
+          create: (_) => getIt<MenuActorBloc>(),
+        )
+      ],
       child: BlocConsumer<MenuFormBloc, MenuFormState>(
         listenWhen: (p, c) =>
             p.saveFailureOrSuccessOption != c.saveFailureOrSuccessOption,
@@ -66,6 +78,7 @@ class MenuBuilderFormPage extends StatelessWidget {
             children: <Widget>[
               MenuBuilderFormPageScaffold(
                 storeID: storeID,
+                editedMenu: editedMenu,
               ),
               SavingInProgressOverlay(isSaving: state.isSaving)
             ],
@@ -78,9 +91,13 @@ class MenuBuilderFormPage extends StatelessWidget {
 
 class MenuBuilderFormPageScaffold extends StatelessWidget {
   final String storeID;
+  final Menu editedMenu;
 
-  const MenuBuilderFormPageScaffold({Key key, @required this.storeID})
-      : super(key: key);
+  const MenuBuilderFormPageScaffold({
+    Key key,
+    @required this.storeID,
+    this.editedMenu,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -120,6 +137,19 @@ class MenuBuilderFormPageScaffold extends StatelessWidget {
                       },
                     ),
                   ),
+                  if (editedMenu != null)
+                    SliverToBoxAdapter(
+                      child: LocalyButton(
+                        title: "Delete",
+                        empty: true,
+                        onPressed: () {
+                          context
+                              .bloc<MenuActorBloc>()
+                              .add(MenuActorEvent.deleted(editedMenu));
+                          ExtendedNavigator.of(context).pop();
+                        },
+                      ),
+                    ),
                   const SliverToBoxAdapter(
                     child: SizedBox(height: 16),
                   ),

@@ -115,7 +115,6 @@ class _StoreDetailMenuItemsState extends State<StoreDetailMenuItems> {
                           ),
                           const Spacer(),
                           Column(
-                            mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             crossAxisAlignment: CrossAxisAlignment.end,
                             children: <Widget>[
@@ -149,10 +148,10 @@ class _StoreDetailMenuItemsState extends State<StoreDetailMenuItems> {
                                         },
                                         child: state.order.menuItems
                                                 .contains(menuItem)
-                                            ? Icon(
+                                            ? const Icon(
                                                 Icons.delete_forever
                                               )
-                                            : Icon(Icons.add_circle_outline));
+                                            : const Icon(Icons.add_circle_outline));
                                   },
                                 ),
                               )

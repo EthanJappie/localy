@@ -3,6 +3,7 @@ import 'package:dartz/dartz.dart';
 import 'package:flushbar/flushbar_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:localy/application/stores/store_actor/store_actor_bloc.dart';
 import 'package:localy/application/stores/store_form/store_form_bloc.dart';
 import 'package:localy/domain/store/restaurant.dart';
 import 'package:localy/injection.dart';
@@ -35,9 +36,20 @@ class StoreFormPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => getIt<StoreFormBloc>()
-        ..add(StoreFormEvent.initialized(optionOf(editedStore))),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(
+          create: (_) => getIt<StoreFormBloc>()
+            ..add(
+              StoreFormEvent.initialized(
+                optionOf(editedStore),
+              ),
+            ),
+        ),
+        BlocProvider(
+          create: (_) => getIt<StoreActorBloc>(),
+        )
+      ],
       child: BlocConsumer<StoreFormBloc, StoreFormState>(
         listenWhen: (p, c) =>
             p.saveFailureOrSuccessOption != c.saveFailureOrSuccessOption,
@@ -62,8 +74,8 @@ class StoreFormPage extends StatelessWidget {
                 (_) {
                   // Can't be just a simple pop. If another route (like a Flushbar) is on top of stack, we'll need to pop even that to get to
                   // the overview page.
-                  ExtendedNavigator.of(context).popUntil((route) =>
-                      route.settings.name == ManagerRoute.homePage);
+                  ExtendedNavigator.of(context).popUntil(
+                      (route) => route.settings.name == ManagerRoute.homePage);
                 },
               );
             },
@@ -91,6 +103,7 @@ class StoreFormPageScaffold extends StatelessWidget {
 
   Widget _returnBody(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: BlocBuilder<StoreFormBloc, StoreFormState>(
           buildWhen: (p, c) => p.isEditing != c.isEditing,
@@ -102,7 +115,7 @@ class StoreFormPageScaffold extends StatelessWidget {
       body: Container(
         margin: const EdgeInsets.symmetric(horizontal: 16),
         child: BlocBuilder<StoreFormBloc, StoreFormState>(
-          buildWhen: (p, c) => p.showErrorMessages != c.showErrorMessages,
+//          buildWhen: (p, c) => p.showErrorMessages != c.showErrorMessages,
           builder: (context, state) {
             return Form(
                 autovalidate: state.showErrorMessages,
@@ -157,6 +170,20 @@ class StoreFormPageScaffold extends StatelessWidget {
                         },
                       ),
                     ),
+                    if (state.isEditing == true)
+                      SliverToBoxAdapter(
+                        child: LocalyButton(
+                          empty: true,
+                          title: "Delete",
+                          onPressed: () {
+                            context
+                                .bloc<StoreActorBloc>()
+                                .add(StoreActorEvent.deleted(state.store));
+
+                            ExtendedNavigator.of(context).pop();
+                          },
+                        ),
+                      ),
                     const SliverToBoxAdapter(
                       child: SizedBox(height: 16),
                     ),
@@ -176,120 +203,5 @@ class StoreFormPageScaffold extends StatelessWidget {
       SliverToBoxAdapter(child: SizedBox(height: height)),
       const SliverToBoxAdapter(child: Divider()),
     ];
-  }
-
-  void toHold() {
-//    Container(
-//      margin: const EdgeInsets.symmetric(horizontal: 16),
-//      child: SingleChildScrollView(
-//        child: Column(
-//          children: <Widget>[
-//            EntryField(
-//              "Store name",
-//              textColor: Theme.of(context).primaryColor,
-//              onChanged: (String value) => context
-//                  .bloc<StoreFormBloc>()
-//                  .add(StoreFormEvent.storeNameChanged(value)),
-//              validator: (_) => context
-//                  .bloc<StoreFormBloc>()
-//                  .state
-//                  .store
-//                  .storeName
-//                  .value
-//                  .fold(
-//                    (f) => f.maybeMap(
-//                      empty: (_) => "Store name cannot be empty",
-//                      orElse: () => null,
-//                    ),
-//                    (_) => null,
-//                  ),
-//            ),
-//            EntryField(
-//              "Telephone",
-//              isNumber: true,
-//              textColor: Theme.of(context).primaryColor,
-//              onChanged: (String value) {},
-//            ),
-//            EntryField(
-//              "Notes",
-//              textColor: Theme.of(context).primaryColor,
-//              onChanged: (String value) {},
-//            ),
-//            const Divider(),
-//            const SizedBox(height: 8),
-//            LocalyLocationPicker(
-//              title: "Address",
-//              onLocationChanged: (geoPoint) {},
-//              onAddressChanged: (value) {},
-//            ),
-//            const SizedBox(height: 8),
-//            const Divider(),
-//            const SizedBox(height: 8),
-//            LocalyTimePicker(
-//              title: "Opening time",
-//              onTimeChanged: (time) {},
-//            ),
-//            const SizedBox(height: 8),
-//            const Divider(),
-//            const SizedBox(height: 8),
-//            LocalyTimePicker(
-//              title: "Closing time",
-//              onTimeChanged: (time) {},
-//            ),
-//            const SizedBox(height: 8),
-//            const Divider(),
-//            LocalySwitch(
-//              title: "Active",
-//              condition: true,
-//              onChanged: (value) {},
-//            ),
-//            const Divider(),
-//            LocalySwitch(
-//              title: "Open",
-//              condition: false,
-//              onChanged: (value) {},
-//            ),
-//            const Divider(),
-//            LocalySwitch(
-//              title: "Accepting Staff Requests",
-//              condition: true,
-//              onChanged: (value) {},
-//            ),
-//            const Divider(),
-//            LocalySwitch(
-//              title: "Accept Cash",
-//              condition: false,
-//              onChanged: (value) {},
-//            ),
-//            const Divider(),
-//            LocalySwitch(
-//              title: "Accept Card",
-//              condition: true,
-//              onChanged: (value) {},
-//            ),
-//            const Divider(),
-//            LocalySwitch(
-//              title: "Food Deliveries",
-//              condition: false,
-//              onChanged: (value) {},
-//            ),
-//            const Divider(),
-//            LocalySwitch(
-//              title: "Food Collection",
-//              condition: true,
-//              onChanged: (value) {},
-//            ),
-//            const SizedBox(height: 16),
-//            LocalyButton(
-//              title: "Save",
-//              onPressed: () {
-//                context.bloc<StoreFormBloc>().add(const StoreFormEvent.saved());
-//              },
-//            ),
-//            const SizedBox(height: 16),
-//          ],
-//        ),
-//      ),
-//    );
   }
 }

@@ -3,7 +3,6 @@ import 'package:flutter_mapbox_navigation/library.dart';
 import 'package:localy/domain/menu_item/menu_item.dart';
 import 'package:localy/domain/order/order.dart';
 import 'package:localy/presentation/core/helpers/utils.dart';
-import 'package:localy/presentation/core/widgets/localy_button.dart';
 import 'package:location/location.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -71,7 +70,7 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
                           Text(
                             widget.order.storePhoneNumber.value
                                 .fold((l) => "", (r) => r),
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontWeight: FontWeight.bold,
                               color: Colors.black,
                             ),
@@ -99,8 +98,6 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
                           .longitude,
                       name: "destination",
                     ),
-                    mode: MapBoxNavigationMode.drivingWithTraffic,
-                    simulateRoute: false,
                     language: "English",
                     units: VoiceUnits.metric,
                   );
@@ -119,7 +116,7 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
                           Text(
                             widget.order.storeAddress.value
                                 .fold((l) => "", (r) => r),
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontWeight: FontWeight.bold,
                               color: Colors.black,
                             ),
@@ -253,7 +250,7 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
                                 menuItem.count == null
                                     ? "x1"
                                     : "x${menuItem.count.toString()}",
-                                style: TextStyle(color: Colors.white),
+                                style: const TextStyle(color: Colors.white),
                               ),
                             ),
                           ],

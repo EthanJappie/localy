@@ -120,7 +120,7 @@ class _StoreDetailPageState extends State<StoreDetailPage> {
                           label: const Text("Checkout", style: TextStyle(
                             fontWeight: FontWeight.bold,
                           ),),
-                          icon: Icon(Icons.shopping_cart),
+                          icon: const Icon(Icons.shopping_cart),
                         );
                       },
                     ),
