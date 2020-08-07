@@ -1,7 +1,6 @@
 import 'dart:io';
 
 import 'package:auto_route/auto_route.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:localy/domain/store/restaurant.dart';
 import 'package:localy/presentation/core/routes/manager_router.gr.dart';
@@ -40,7 +39,8 @@ class StoreCard extends StatelessWidget {
                   children: <Widget>[
                     IconButton(
                       padding: const EdgeInsets.all(24),
-                      icon: const Icon(Icons.remove_red_eye, color: Colors.white),
+                      icon:
+                          const Icon(Icons.remove_red_eye, color: Colors.white),
                       onPressed: () {
                         ExtendedNavigator.of(context)
                             .pushStoreFormPage(editedStore: store);
@@ -114,20 +114,17 @@ class StoreCard extends StatelessWidget {
         size: iconSize,
       );
     } else if (urlOrPath.contains("http")) {
-      return CachedNetworkImage(
-        imageUrl: urlOrPath,
-        height: size,
-        fit: BoxFit.fill,
-        placeholder: (context, url) => Icon(
-          Icons.camera_alt,
-          color: Colors.white,
-          size: iconSize,
-        ),
-        errorWidget: (context, url, error) => Icon(
-          Icons.error,
-          color: Colors.white,
-          size: iconSize,
-        ),
+      return Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Expanded(
+            child: Image.network(
+                urlOrPath,
+                height: size,
+                fit: BoxFit.fitWidth,
+              ),
+          ),
+        ],
       );
     } else {
       return Image.file(

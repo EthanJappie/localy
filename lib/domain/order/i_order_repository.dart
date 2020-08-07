@@ -7,7 +7,16 @@ abstract class IOrderRepository {
   Stream<Either<OrderFailure, KtList<StoreOrder>>> watchAll();
 
   Stream<Either<OrderFailure, KtList<StoreOrder>>> watchAllByStoreID(
-      String storeID);
+    String storeID,
+  );
+
+  Stream<Either<OrderFailure, KtList<StoreOrder>>> watchAllByStoreIDAndActive(
+    String storeID,
+  );
+
+  Stream<Either<OrderFailure, KtList<StoreOrder>>> watchAllByStoreIDAndInactive(
+      String storeID,
+      );
 
   Stream<Either<OrderFailure, KtList<StoreOrder>>> watchAllByCustomerID();
 

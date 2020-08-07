@@ -2,14 +2,14 @@ import 'package:flushbar/flushbar_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:localy/application/order/order_actor/order_actor_bloc.dart';
+import 'package:localy/application/order/order_watcher/order_watcher_bloc.dart';
 import 'package:localy/injection.dart';
 import 'package:localy/presentation/store/active_orders/widgets/active_orders_body_widget.dart';
 
 class ActiveOrdersPage extends StatelessWidget {
+  final String storeID;
 
-  const ActiveOrdersPage({
-    Key key,
-  }) : super(key: key);
+  const ActiveOrdersPage({Key key, @required this.storeID}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,13 @@ class ActiveOrdersPage extends StatelessWidget {
       providers: [
         BlocProvider<OrderActorBloc>(
           create: (_) => getIt<OrderActorBloc>(),
-        )
+        ),
+        BlocProvider<OrderWatcherBloc>(
+          create: (_) => getIt<OrderWatcherBloc>()
+            ..add(
+              OrderWatcherEvent.watchAllByStoreIDActive(storeID),
+            ),
+        ),
       ],
       child: BlocListener<OrderActorBloc, OrderActorState>(
         listener: (BuildContext context, state) {

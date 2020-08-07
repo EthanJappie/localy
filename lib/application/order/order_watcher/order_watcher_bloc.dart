@@ -10,11 +10,11 @@ import 'package:localy/domain/order/order.dart';
 import 'package:localy/domain/order/order_failure.dart';
 import 'package:meta/meta.dart';
 
+part 'order_watcher_bloc.freezed.dart';
+
 part 'order_watcher_event.dart';
 
 part 'order_watcher_state.dart';
-
-part 'order_watcher_bloc.freezed.dart';
 
 @injectable
 class OrderWatcherBloc extends Bloc<OrderWatcherEvent, OrderWatcherState> {
@@ -63,6 +63,28 @@ class OrderWatcherBloc extends Bloc<OrderWatcherEvent, OrderWatcherState> {
 
         _orderStreamSubscription =
             _orderRepository.watchAllByCustomerID().listen(
+                  (failureOrOrders) => add(
+                    OrderWatcherEvent.ordersReceived(failureOrOrders),
+                  ),
+                );
+      },
+      watchAllByStoreIDInactive: (e) async* {
+        yield const OrderWatcherState.loading();
+        await _orderStreamSubscription?.cancel();
+
+        _orderStreamSubscription =
+            _orderRepository.watchAllByStoreIDAndInactive(e.storeID).listen(
+                  (failureOrOrders) => add(
+                    OrderWatcherEvent.ordersReceived(failureOrOrders),
+                  ),
+                );
+      },
+      watchAllByStoreIDActive: (e) async* {
+        yield const OrderWatcherState.loading();
+        await _orderStreamSubscription?.cancel();
+
+        _orderStreamSubscription =
+            _orderRepository.watchAllByStoreIDAndActive(e.storeID).listen(
                   (failureOrOrders) => add(
                     OrderWatcherEvent.ordersReceived(failureOrOrders),
                   ),

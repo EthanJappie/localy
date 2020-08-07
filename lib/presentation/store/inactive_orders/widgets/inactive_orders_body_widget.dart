@@ -4,12 +4,12 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:localy/application/order/order_watcher/order_watcher_bloc.dart';
 import 'package:localy/presentation/core/routes/manager_router.gr.dart';
 
-class ActiveOrdersBodyWidget extends StatefulWidget {
+class InactiveOrdersBodyWidget extends StatefulWidget {
   @override
-  _ActiveOrdersBodyWidgetState createState() => _ActiveOrdersBodyWidgetState();
+  _InactiveOrdersBodyWidgetState createState() => _InactiveOrdersBodyWidgetState();
 }
 
-class _ActiveOrdersBodyWidgetState extends State<ActiveOrdersBodyWidget> {
+class _InactiveOrdersBodyWidgetState extends State<InactiveOrdersBodyWidget> {
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<OrderWatcherBloc, OrderWatcherState>(
@@ -22,19 +22,14 @@ class _ActiveOrdersBodyWidgetState extends State<ActiveOrdersBodyWidget> {
           loadSuccess: (state) {
             final orders = state.orders;
 
-            if (orders.isEmpty()) {
-              return const Center(
-                child: Text("No Orders"),
-              );
+            if(orders.isEmpty()){
+              return const Center(child: Text("No Orders"),);
             }
+
             return ListView.separated(
               itemBuilder: (context, index) {
                 final order = orders[index];
                 return ListTile(
-                  onTap: () {
-                    ExtendedNavigator.of(context)
-                        .pushViewOrderPage(order: order);
-                  },
                   title:
                       Text("OrderID: ${order.id.getOrCrash().substring(0, 5)}"),
                   subtitle: Text(

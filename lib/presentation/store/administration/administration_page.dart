@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:localy/application/menu/menu_actor/menu_actor_bloc.dart';
 import 'package:localy/application/menu/menu_watcher/menu_watcher_bloc.dart';
-import 'package:localy/application/order/order_watcher/order_watcher_bloc.dart';
 import 'package:localy/domain/store/restaurant.dart';
 import 'package:localy/injection.dart';
 import 'package:localy/presentation/core/pages/menu_builder/menu_builder_overview/menu_builder_overview_page.dart';
@@ -29,8 +28,12 @@ class _AdministrationPageState extends State<AdministrationPage> {
       MenuBuilderOverviewPage(
         storeID: widget.store.id.getOrCrash(),
       ),
-      const ActiveOrdersPage(),
-      InactiveOrdersPage()
+      ActiveOrdersPage(
+        storeID: widget.store.id.getOrCrash(),
+      ),
+      InactiveOrdersPage(
+        storeID: widget.store.id.getOrCrash(),
+      ),
     ];
 
     _titles = ["Menus", "Active Orders", "Inactive Orders"];
@@ -50,11 +53,6 @@ class _AdministrationPageState extends State<AdministrationPage> {
             ..add(
                 MenuWatcherEvent.watchAllStarted(widget.store.id.getOrCrash())),
         ),
-        BlocProvider<OrderWatcherBloc>(
-          create: (_) => getIt<OrderWatcherBloc>()
-            ..add(OrderWatcherEvent.watchAllByStoreID(
-                widget.store.id.getOrCrash())),
-        )
       ],
       child: Scaffold(
         appBar: AppBar(

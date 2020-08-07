@@ -121,4 +121,42 @@ class OrderRepository implements IOrderRepository {
           ),
         );
   }
+
+  @override
+  Stream<Either<OrderFailure, KtList<StoreOrder>>> watchAllByStoreIDAndActive(
+    String storeID,
+  ) async* {
+    final userDoc = await _firestore.userDocument();
+    yield* _firestore.orderCollection
+        .where("storeID", isEqualTo: storeID)
+        .where("status", isEqualTo: "pending")
+        .orderBy("dateCreated")
+        .snapshots()
+        .map(
+          (snapshots) => right<OrderFailure, KtList<StoreOrder>>(
+            snapshots.documents
+                .map((doc) => StoreOrderDTO.fromFirestore(doc).toDomain())
+                .toImmutableList(),
+          ),
+        );
+  }
+
+  @override
+  Stream<Either<OrderFailure, KtList<StoreOrder>>> watchAllByStoreIDAndInactive(
+    String storeID,
+  ) async* {
+    final userDoc = await _firestore.userDocument();
+    yield* _firestore.orderCollection
+        .where("storeID", isEqualTo: storeID)
+        .where("status", isEqualTo: "inactive")
+        .orderBy("dateCreated")
+        .snapshots()
+        .map(
+          (snapshots) => right<OrderFailure, KtList<StoreOrder>>(
+            snapshots.documents
+                .map((doc) => StoreOrderDTO.fromFirestore(doc).toDomain())
+                .toImmutableList(),
+          ),
+        );
+  }
 }
