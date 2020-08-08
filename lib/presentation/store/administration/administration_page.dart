@@ -6,6 +6,7 @@ import 'package:localy/domain/store/restaurant.dart';
 import 'package:localy/injection.dart';
 import 'package:localy/presentation/core/pages/menu_builder/menu_builder_overview/menu_builder_overview_page.dart';
 import 'package:localy/presentation/store/active_orders/active_orders_page.dart';
+import 'package:localy/presentation/store/completed_orders/completed_orders_page.dart';
 import 'package:localy/presentation/store/inactive_orders/inactive_orders_page.dart';
 
 class AdministrationPage extends StatefulWidget {
@@ -34,9 +35,17 @@ class _AdministrationPageState extends State<AdministrationPage> {
       InactiveOrdersPage(
         storeID: widget.store.id.getOrCrash(),
       ),
+      CompletedOrdersPage(
+        storeID: widget.store.id.getOrCrash(),
+      )
     ];
 
-    _titles = ["Menus", "Active Orders", "Inactive Orders"];
+    _titles = [
+      "Menus",
+      "Active Orders",
+      "Inactive Orders",
+      "Completed Orders",
+    ];
 
     super.initState();
   }
@@ -81,6 +90,10 @@ class _AdministrationPageState extends State<AdministrationPage> {
             BottomNavigationBarItem(
               icon: Icon(Icons.receipt),
               title: Text("Inactive"),
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.receipt),
+              title: Text("Completed"),
             ),
           ],
         ),

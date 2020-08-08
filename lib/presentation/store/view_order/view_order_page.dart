@@ -176,20 +176,52 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
                 ],
               ),
               const SizedBox(height: 32),
-              LocalyButton(
-                title: "Accept",
-                onPressed: () {
-                  getIt<OrderActorBloc>().add(
-                    OrderActorEvent.changedState(
-                      widget.order.copyWith(
-                        status: ValueString.fromString("accepted"),
+              if (widget.order.status.getOrCrash() == "pending")
+                LocalyButton(
+                  title: "Accept",
+                  onPressed: () {
+                    getIt<OrderActorBloc>().add(
+                      OrderActorEvent.changedState(
+                        widget.order.copyWith(
+                          status: ValueString.fromString("accepted"),
+                        ),
                       ),
-                    ),
-                  );
+                    );
 
-                  ExtendedNavigator.of(context).pop();
-                },
-              ),
+                    ExtendedNavigator.of(context).pop();
+                  },
+                ),
+              if (widget.order.status.getOrCrash() == "accepted")
+                LocalyButton(
+                  title: "Ready",
+                  onPressed: () {
+                    getIt<OrderActorBloc>().add(
+                      OrderActorEvent.changedState(
+                        widget.order.copyWith(
+                          status: ValueString.fromString("ready"),
+                        ),
+                      ),
+                    );
+
+                    ExtendedNavigator.of(context).pop();
+                  },
+                ),
+              if (widget.order.status.getOrCrash() == "ready")
+                LocalyButton(
+                  title: "Complete",
+                  onPressed: () {
+                    getIt<OrderActorBloc>().add(
+                      OrderActorEvent.changedState(
+                        widget.order.copyWith(
+                          status: ValueString.fromString("completed"),
+                          isCompleted: true,
+                        ),
+                      ),
+                    );
+
+                    ExtendedNavigator.of(context).pop();
+                  },
+                ),
               LocalyButton(
                 empty: true,
                 title: "Cancel",

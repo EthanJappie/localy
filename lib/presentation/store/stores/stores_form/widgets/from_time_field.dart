@@ -2,35 +2,63 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:localy/application/stores/store_form/store_form_bloc.dart';
-import 'package:localy/presentation/core/widgets/localy_time_picker.dart';
+import 'package:time_range/time_range.dart';
 
 class FromTimeField extends StatelessWidget {
   const FromTimeField({Key key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<StoreFormBloc, StoreFormState>(
       buildWhen: (p, c) => p.store.workingHoursFrom != c.store.workingHoursFrom,
       builder: (context, state) {
-        return LocalyTimePicker(
-          title: "Opening time",
-          context: context,
-          time: state.store.workingHoursFrom.value.fold((l) => Timestamp.now(), (r) => r),
-          onTimeChanged: (value) =>
-              context
-                  .bloc<StoreFormBloc>()
-                  .add(StoreFormEvent.workHoursFromChanged(value)),
-          validator: (_) =>
-              context
-                  .bloc<StoreFormBloc>()
-                  .state
-                  .store
-                  .workingHoursFrom
-                  .value
-                  .fold((f) =>
-                  f.maybeMap(
-                    orElse: () => null,
-                  ), (r) => null,
-              ),
+        return TimeRange(
+          fromTitle: const Text(
+            'From',
+            style: TextStyle(
+              fontSize: 18,
+              color: Colors.black,
+            ),
+          ),
+          toTitle: const Text(
+            'To',
+            style: TextStyle(
+              fontSize: 18,
+              color: Colors.black,
+            ),
+          ),
+          activeTextStyle: const TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+          firstTime: const TimeOfDay(hour: 0, minute: 0),
+          lastTime: const TimeOfDay(hour: 24, minute: 0),
+          timeBlock: 30,
+          onRangeCompleted: (TimeRangeResult range) {
+            final now = DateTime.now();
+            final fromTime = DateTime(
+              now.year,
+              now.month,
+              now.day,
+              range.start.hour,
+              range.start.minute,
+            ).millisecondsSinceEpoch;
+            final toTime = DateTime(
+              now.year,
+              now.month,
+              now.day,
+              range.end.hour,
+              range.end.minute,
+            ).millisecondsSinceEpoch;
+            context.bloc<StoreFormBloc>()
+              ..add(
+                StoreFormEvent.workHoursFromChanged(
+                  Timestamp.fromMicrosecondsSinceEpoch(fromTime),
+                ),
+              )
+              ..add(
+                StoreFormEvent.workHoursToChanged(
+                  Timestamp.fromMicrosecondsSinceEpoch(toTime),
+                ),
+              );
+          },
         );
       },
     );

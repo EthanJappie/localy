@@ -4,12 +4,12 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:localy/application/order/order_watcher/order_watcher_bloc.dart';
 import 'package:localy/presentation/core/routes/manager_router.gr.dart';
 
-class ActiveOrdersBodyWidget extends StatefulWidget {
+class CompletedOrdersBodyWidget extends StatefulWidget {
   @override
-  _ActiveOrdersBodyWidgetState createState() => _ActiveOrdersBodyWidgetState();
+  _CompletedOrdersBodyWidgetState createState() => _CompletedOrdersBodyWidgetState();
 }
 
-class _ActiveOrdersBodyWidgetState extends State<ActiveOrdersBodyWidget> {
+class _CompletedOrdersBodyWidgetState extends State<CompletedOrdersBodyWidget> {
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<OrderWatcherBloc, OrderWatcherState>(
@@ -33,8 +33,8 @@ class _ActiveOrdersBodyWidgetState extends State<ActiveOrdersBodyWidget> {
                 final orderID = order.id.getOrCrash();
                 return ListTile(
                   onTap: () {
-                    ExtendedNavigator.of(context)
-                        .pushViewOrderPage(order: order);
+//                    ExtendedNavigator.of(context)
+//                        .pushViewOrderPage(order: order);
                   },
                   title: Text(
                       "OrderID: ${orderID.substring(orderID.length - 5, orderID.length)}-${orderID.substring(0, 5)}"),

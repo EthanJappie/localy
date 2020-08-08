@@ -24,7 +24,6 @@ import 'package:localy/presentation/store/stores/stores_form/widgets/notes_field
 import 'package:localy/presentation/store/stores/stores_form/widgets/open_field.dart';
 import 'package:localy/presentation/store/stores/stores_form/widgets/store_name_field.dart';
 import 'package:localy/presentation/store/stores/stores_form/widgets/telephone_field.dart';
-import 'package:localy/presentation/store/stores/stores_form/widgets/to_time_field.dart';
 
 class StoreFormPage extends StatelessWidget {
   final Restaurant editedStore;
@@ -137,8 +136,6 @@ class StoreFormPageScaffold extends StatelessWidget {
                         const SliverToBoxAdapter(child: LocationField())),
                     ..._inDividers(
                         const SliverToBoxAdapter(child: FromTimeField())),
-                    ..._inDividers(
-                        const SliverToBoxAdapter(child: ToTimeField())),
                     ..._inDividers(
                         const SliverToBoxAdapter(child: ActiveField()),
                         height: 0),

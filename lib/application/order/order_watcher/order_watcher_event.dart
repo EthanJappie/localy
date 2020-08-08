@@ -8,9 +8,10 @@ abstract class OrderWatcherEvent with _$OrderWatcherEvent {
     String storeID,
   ) = _WatchAllByStoreID;
 
-  const factory OrderWatcherEvent.watchAllByStoreIDActive(
-    String storeID,
-  ) = _WatchAllByStoreIDActive;
+  const factory OrderWatcherEvent.watchAllByStoreIDCompleted({
+    @required String storeID,
+    @required bool completed,
+  }) = _WatchAllByStoreIDCompleted;
 
   const factory OrderWatcherEvent.watchAllByStoreIDInactive(
     String storeID,

@@ -1,4 +1,5 @@
 import 'package:dartz/dartz.dart';
+import 'package:flutter/foundation.dart';
 import 'package:kt_dart/kt.dart';
 import 'package:localy/domain/order/order.dart';
 import 'package:localy/domain/order/order_failure.dart';
@@ -10,13 +11,15 @@ abstract class IOrderRepository {
     String storeID,
   );
 
-  Stream<Either<OrderFailure, KtList<StoreOrder>>> watchAllByStoreIDAndActive(
-    String storeID,
-  );
+  Stream<Either<OrderFailure, KtList<StoreOrder>>>
+      watchAllByStoreIDAndCompleted({
+    @required String storeID,
+    bool completed = false,
+  });
 
   Stream<Either<OrderFailure, KtList<StoreOrder>>> watchAllByStoreIDAndInactive(
-      String storeID,
-      );
+    String storeID,
+  );
 
   Stream<Either<OrderFailure, KtList<StoreOrder>>> watchAllByCustomerID();
 

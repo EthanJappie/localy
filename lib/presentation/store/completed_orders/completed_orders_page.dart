@@ -4,12 +4,13 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:localy/application/order/order_actor/order_actor_bloc.dart';
 import 'package:localy/application/order/order_watcher/order_watcher_bloc.dart';
 import 'package:localy/injection.dart';
-import 'package:localy/presentation/store/active_orders/widgets/active_orders_body_widget.dart';
+import 'package:localy/presentation/store/completed_orders/widgets/completed_orders_body_widget.dart';
 
-class ActiveOrdersPage extends StatelessWidget {
+class CompletedOrdersPage extends StatelessWidget {
   final String storeID;
 
-  const ActiveOrdersPage({Key key, @required this.storeID}) : super(key: key);
+  const CompletedOrdersPage({Key key, @required this.storeID})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +24,7 @@ class ActiveOrdersPage extends StatelessWidget {
             ..add(
               OrderWatcherEvent.watchAllByStoreIDCompleted(
                 storeID: storeID,
-                completed: false,
+                completed: true,
               ),
             ),
         ),
@@ -45,7 +46,7 @@ class ActiveOrdersPage extends StatelessWidget {
           );
         },
         child: Scaffold(
-          body: ActiveOrdersBodyWidget(),
+          body: CompletedOrdersBodyWidget(),
         ),
       ),
     );

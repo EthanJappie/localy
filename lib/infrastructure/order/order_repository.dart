@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dartz/dartz.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:injectable/injectable.dart';
 import 'package:kt_dart/kt.dart';
@@ -123,12 +124,14 @@ class OrderRepository implements IOrderRepository {
   }
 
   @override
-  Stream<Either<OrderFailure, KtList<StoreOrder>>> watchAllByStoreIDAndActive(
-    String storeID,
-  ) async* {
+  Stream<Either<OrderFailure, KtList<StoreOrder>>>
+      watchAllByStoreIDAndCompleted({
+    @required String storeID,
+    bool completed = false,
+  }) async* {
     yield* _firestore.orderCollection
         .where("storeID", isEqualTo: storeID)
-        .where("isCompleted", isEqualTo: false)
+        .where("isCompleted", isEqualTo: completed)
         .orderBy("dateCreated")
         .snapshots()
         .map(
