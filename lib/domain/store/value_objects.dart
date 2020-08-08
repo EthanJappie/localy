@@ -10,7 +10,7 @@ class FireCoordinates extends ValueObject<GeoFirePoint> {
   final Either<ValueFailure<GeoFirePoint>, GeoFirePoint> value;
 
   factory FireCoordinates.zero() {
-    return FireCoordinates._(right( GeoFirePoint(0, 0)));
+    return FireCoordinates._(right(GeoFirePoint(0, 0)));
   }
 
   factory FireCoordinates(GeoFirePoint input) {
@@ -18,6 +18,10 @@ class FireCoordinates extends ValueObject<GeoFirePoint> {
     return FireCoordinates._(
       validateGeoPoint(input),
     );
+  }
+
+  factory FireCoordinates.ignoreZeroCoordinates(GeoFirePoint input) {
+    return FireCoordinates._(right(input));
   }
 
   const FireCoordinates._(this.value);

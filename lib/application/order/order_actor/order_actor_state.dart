@@ -7,7 +7,12 @@ abstract class OrderActorState with _$OrderActorState {
   const factory OrderActorState.loading() = _Loading;
 
   const factory OrderActorState.deleteFailure(OrderFailure orderFailure) =
-  _DeleteFailure;
+      _DeleteFailure;
+
+  const factory OrderActorState.updateFailure(OrderFailure orderFailure) =
+      _UpdateFailure;
 
   const factory OrderActorState.deleteSuccess() = _DeleteSuccess;
+
+  const factory OrderActorState.updateSuccess() = _UpdateSuccess;
 }

@@ -126,10 +126,9 @@ class OrderRepository implements IOrderRepository {
   Stream<Either<OrderFailure, KtList<StoreOrder>>> watchAllByStoreIDAndActive(
     String storeID,
   ) async* {
-    final userDoc = await _firestore.userDocument();
     yield* _firestore.orderCollection
         .where("storeID", isEqualTo: storeID)
-        .where("status", isEqualTo: "pending")
+        .where("isCompleted", isEqualTo: false)
         .orderBy("dateCreated")
         .snapshots()
         .map(
@@ -145,7 +144,6 @@ class OrderRepository implements IOrderRepository {
   Stream<Either<OrderFailure, KtList<StoreOrder>>> watchAllByStoreIDAndInactive(
     String storeID,
   ) async* {
-    final userDoc = await _firestore.userDocument();
     yield* _firestore.orderCollection
         .where("storeID", isEqualTo: storeID)
         .where("status", isEqualTo: "inactive")

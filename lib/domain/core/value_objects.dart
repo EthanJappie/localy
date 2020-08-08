@@ -64,8 +64,6 @@ class ValueString extends ValueObject<String> {
   @override
   final Either<ValueFailure<String>, String> value;
 
-
-
   factory ValueString() {
     return ValueString._(right(""));
   }
@@ -75,6 +73,11 @@ class ValueString extends ValueObject<String> {
     return ValueString._(
       validateStringNotEmpty(input),
     );
+  }
+
+  factory ValueString.fromStringIgnoreEmpty(String input) {
+    assert(input != null);
+    return ValueString._(right(input));
   }
 
   const ValueString._(this.value);

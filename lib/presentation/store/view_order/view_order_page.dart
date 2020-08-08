@@ -1,7 +1,11 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mapbox_navigation/library.dart';
+import 'package:localy/application/order/order_actor/order_actor_bloc.dart';
+import 'package:localy/domain/core/value_objects.dart';
 import 'package:localy/domain/menu_item/menu_item.dart';
 import 'package:localy/domain/order/order.dart';
+import 'package:localy/injection.dart';
 import 'package:localy/presentation/core/helpers/utils.dart';
 import 'package:localy/presentation/core/widgets/localy_button.dart';
 import 'package:location/location.dart';
@@ -83,52 +87,56 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
                 ),
               ),
               const SizedBox(height: 16),
-              InkWell(
-                onTap: () async {
-                  _directions.startNavigation(
-                    origin: WayPoint(
-                        latitude: _location.latitude,
-                        longitude: _location.longitude,
-                        name: "origin"),
-                    destination: WayPoint(
-                      latitude: widget.order.deliveryCoordinates
-                          .getOrCrash()
-                          .latitude,
-                      longitude: widget.order.deliveryCoordinates
-                          .getOrCrash()
-                          .longitude,
-                      name: "destination",
-                    ),
-                    language: "English",
-                    units: VoiceUnits.metric,
-                  );
-                },
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.location_on,
-                      color: Theme.of(context).primaryColor,
-                    ),
-                    const SizedBox(width: 16),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: <Widget>[
-                          Text(
-                            widget.order.deliveryAddress.value
-                                .fold((l) => "", (r) => r),
-                            style: const TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.black,
-                            ),
-                          ),
-                        ],
+              if (widget.order.deliveryAddress.value
+                  .fold((l) => "", (r) => r)
+                  .isNotEmpty) ...[
+                InkWell(
+                  onTap: () async {
+                    _directions.startNavigation(
+                      origin: WayPoint(
+                          latitude: _location.latitude,
+                          longitude: _location.longitude,
+                          name: "origin"),
+                      destination: WayPoint(
+                        latitude: widget.order.deliveryCoordinates
+                            .getOrCrash()
+                            .latitude,
+                        longitude: widget.order.deliveryCoordinates
+                            .getOrCrash()
+                            .longitude,
+                        name: "destination",
                       ),
-                    ),
-                  ],
+                      language: "English",
+                      units: VoiceUnits.metric,
+                    );
+                  },
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.location_on,
+                        color: Theme.of(context).primaryColor,
+                      ),
+                      const SizedBox(width: 16),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text(
+                              widget.order.deliveryAddress.value
+                                  .fold((l) => "", (r) => r),
+                              style: const TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-              const SizedBox(height: 16),
+                const SizedBox(height: 16),
+              ],
               const Divider(),
               const SizedBox(height: 16),
               Row(
@@ -170,7 +178,17 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
               const SizedBox(height: 32),
               LocalyButton(
                 title: "Accept",
-                onPressed: () {},
+                onPressed: () {
+                  getIt<OrderActorBloc>().add(
+                    OrderActorEvent.changedState(
+                      widget.order.copyWith(
+                        status: ValueString.fromString("accepted"),
+                      ),
+                    ),
+                  );
+
+                  ExtendedNavigator.of(context).pop();
+                },
               ),
               LocalyButton(
                 empty: true,
