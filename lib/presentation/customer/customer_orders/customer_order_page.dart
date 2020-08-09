@@ -58,9 +58,7 @@ class CustomerOrderPage extends StatelessWidget {
                                     ),
                                   ),
                                   child: Text(
-                                    order.foodDeliveriesChosen
-                                        ? "DELIVERY"
-                                        : "COLLECT",
+                                    order.status.getOrCrash().toUpperCase(),
                                     style: const TextStyle(
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold,

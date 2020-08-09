@@ -5,3 +5,8 @@ cov: ./coverage-test-report.sh
 cov-open: ./coverage-test-report.sh && open coverage/index.html
 beta: flutter channel beta && flutter upgrade
 stable: flutter channel stable && flutter upgrade
+build-manager: flutter build appbundle --dart-define=LOCALY_APP_NAME=LocalyManager --dart-define=LOCALY_APP_SUFFIX=.manager
+build-customer: flutter build appbundle
+
+#build-manager: flutter build appbundle --dart-define=LOCALY_APP_NAME=LocalyManager --dart-define=LOCALY_APP_SUFFIX=.manager
+#build-customer: flutter build appbundle
