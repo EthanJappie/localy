@@ -14,11 +14,11 @@ import 'package:localy/domain/store/restaurant.dart';
 import 'package:localy/domain/store/value_objects.dart';
 import 'package:meta/meta.dart';
 
+part 'order_form_bloc.freezed.dart';
+
 part 'order_form_event.dart';
 
 part 'order_form_state.dart';
-
-part 'order_form_bloc.freezed.dart';
 
 @injectable
 class OrderFormBloc extends Bloc<OrderFormEvent, OrderFormState> {
@@ -131,6 +131,7 @@ class OrderFormBloc extends Bloc<OrderFormEvent, OrderFormState> {
           storeAddress: e.store.address,
           storeCoordinates: e.store.coordinates,
           storePhoneNumber: e.store.telephoneNumber,
+          storeToken: e.store.token,
         ));
       },
       countChanged: (e) async* {

@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dartz/dartz.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:injectable/injectable.dart';
@@ -21,9 +22,11 @@ class OrderRepository implements IOrderRepository {
   Future<Either<OrderFailure, Unit>> create(StoreOrder order) async {
     try {
       final userDoc = await _firestore.userDocument();
+      final token = await FirebaseMessaging().getToken();
       var orderDTO = StoreOrderDTO.fromDomain(order);
       orderDTO = orderDTO.copyWith(
         customerID: userDoc.documentID,
+        customerToken: token,
       );
 
       final orderJson = orderDTO.toJson();

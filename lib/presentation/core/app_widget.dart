@@ -1,23 +1,27 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:firebase_analytics/firebase_analytics.dart';
-import 'package:firebase_analytics/observer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:localy/application/auth/auth_bloc.dart';
 import 'package:localy/environment_config.dart';
-import 'package:localy/presentation/core/routes/manager_router.gr.dart';
 import 'package:localy/presentation/core/routes/customer_router.gr.dart';
+import 'package:localy/presentation/core/routes/manager_router.gr.dart';
 
 import '../../injection.dart';
+
+final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
+    FlutterLocalNotificationsPlugin();
 
 const appColor = 0xFFF57B51;
 const backgroundColor = 0xFFEFEFEF;
 
-class AppWidget extends StatelessWidget {
-  final FirebaseAnalyticsObserver observer =
-      FirebaseAnalyticsObserver(analytics: FirebaseAnalytics());
+class AppWidget extends StatefulWidget {
+  @override
+  _AppWidgetState createState() => _AppWidgetState();
+}
 
+class _AppWidgetState extends State<AppWidget> {
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
@@ -37,7 +41,7 @@ class AppWidget extends StatelessWidget {
           textTheme: GoogleFonts.montserratTextTheme(),
           accentColor: _getAppColor(),
           backgroundColor: const Color(backgroundColor),
-          floatingActionButtonTheme:  FloatingActionButtonThemeData(
+          floatingActionButtonTheme: FloatingActionButtonThemeData(
             backgroundColor: _getAppColor(),
           ),
         ),
@@ -53,11 +57,34 @@ class AppWidget extends StatelessWidget {
     }
   }
 
-  Color _getAppColor(){
+  Color _getAppColor() {
     if (EnvironmentConfig.APP_NAME == "LocalyManager") {
       return const Color(appColor);
     } else {
       return Colors.green;
     }
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    const initializationSettingsAndroid =
+        AndroidInitializationSettings('app_icon');
+    const initializationSettingsIOs = IOSInitializationSettings();
+    const initSettings = InitializationSettings(
+        initializationSettingsAndroid, initializationSettingsIOs);
+
+    flutterLocalNotificationsPlugin.initialize(
+      initSettings,
+      onSelectNotification: onSelectNotification,
+    );
+  }
+
+  Future<void> onSelectNotification(String payload) async {
+//    Navigator.of(context).push(MaterialPageRoute(builder: (_) {
+//      return NewScreen(
+//        payload: payload,
+//      );
+//    }));
   }
 }

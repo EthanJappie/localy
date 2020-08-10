@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dartz/dartz.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/services.dart';
 import 'package:geoflutterfire/geoflutterfire.dart';
@@ -26,8 +27,13 @@ class StoreRepository implements IStoreRepository {
   Future<Either<StoreFailure, Unit>> create(Restaurant store) async {
     try {
       final userDoc = await _firestore.userDocument();
+      final token = await FirebaseMessaging().getToken();
+
       var storeDTO = StoreDTO.fromDomain(store);
-      storeDTO = storeDTO.copyWith(ownerID: userDoc.documentID);
+      storeDTO = storeDTO.copyWith(
+        ownerID: userDoc.documentID,
+        token: token,
+      );
 
       storeDTO = await _uploadImages(
         store.coverImageUrl,
@@ -117,7 +123,7 @@ class StoreRepository implements IStoreRepository {
 
     final center = GeoFirePoint(location.latitude, location.longitude)
         .hash
-        .substring(0, 5);
+        .substring(0, 4);
 
     yield* _firestore.storeCollection
         .where("coordinates.geohash", isGreaterThanOrEqualTo: center)

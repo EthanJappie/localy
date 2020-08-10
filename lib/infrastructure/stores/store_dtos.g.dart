@@ -11,6 +11,7 @@ _$_StoreDTO _$_$_StoreDTOFromJson(Map<String, dynamic> json) {
     ownerID: json['ownerID'] as String,
     storeName: json['storeName'] as String,
     address: json['address'] as String,
+    token: json['token'] as String,
     coordinates: const GeoPointConverters().fromJson(json['coordinates']),
     workingHoursFrom:
         const TimestampConverter().fromJson(json['workingHoursFrom']),
@@ -37,6 +38,7 @@ Map<String, dynamic> _$_$_StoreDTOToJson(_$_StoreDTO instance) =>
       'ownerID': instance.ownerID,
       'storeName': instance.storeName,
       'address': instance.address,
+      'token': instance.token,
       'coordinates': const GeoPointConverters().toJson(instance.coordinates),
       'workingHoursFrom':
           const TimestampConverter().toJson(instance.workingHoursFrom),

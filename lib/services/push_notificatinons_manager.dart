@@ -1,4 +1,8 @@
 import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+
+final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
+    FlutterLocalNotificationsPlugin();
 
 class PushNotificationsManager {
   PushNotificationsManager._();
@@ -15,10 +19,10 @@ class PushNotificationsManager {
     if (!_initialized) {
       _firebaseMessaging.requestNotificationPermissions();
       _firebaseMessaging.configure(
-        onMessage: _onMessage,
-        onBackgroundMessage: _onBackgroundMessage,
-        onLaunch: _onLaunch,
-        onResume: _onResume,
+        onMessage: onMessage,
+        onBackgroundMessage: onBackgroundMessage,
+        onLaunch: onLaunch,
+        onResume: onResume,
       );
 
       final String token = await _firebaseMessaging.getToken();
@@ -27,11 +31,68 @@ class PushNotificationsManager {
     }
   }
 
-  Future<void> _onMessage(Map<String, dynamic> message) async {}
+  static Future<void> onMessage(Map<String, dynamic> message) async {
+    if (message.containsKey("notification")) {
+      final notification = message['notification'];
+      print("onMessage: ${notification.toString()}");
+      showNotification(
+        notification['title'] as String,
+        notification['body'] as String,
+      );
+    }
+  }
 
-  Future<void> _onBackgroundMessage(Map<String, dynamic> message) async {}
+  static Future<void> onBackgroundMessage(Map<String, dynamic> message) async {
+    if (message.containsKey("notification")) {
+      final notification = message['notification'];
+      print("onMessage: ${notification.toString()}");
+      showNotification(
+        notification['title'] as String,
+        notification['body'] as String,
+      );
+    }
+  }
 
-  Future<void> _onLaunch(Map<String, dynamic> message) async {}
+  static Future<void> onLaunch(Map<String, dynamic> message) async {
+    if (message.containsKey("notification")) {
+      final notification = message['notification'];
+      print("onMessage: ${notification.toString()}");
+      showNotification(
+        notification['title'] as String,
+        notification['body'] as String,
+      );
+    }
+  }
 
-  Future<void> _onResume(Map<String, dynamic> message) async {}
+  static Future<void> onResume(Map<String, dynamic> message) async {
+    if (message.containsKey("notification")) {
+      final notification = message['notification'];
+      print("onMessage: ${notification.toString()}");
+      showNotification(
+        notification['title'] as String,
+        notification['body'] as String,
+      );
+    }
+  }
+
+  static Future<void> showNotification(String title, String body) async {
+    const android = AndroidNotificationDetails(
+      '0',
+      'channel ',
+      'description',
+      priority: Priority.High,
+      importance: Importance.Max,
+    );
+    const iOS = IOSNotificationDetails();
+    const platform = NotificationDetails(
+      android,
+      iOS,
+    );
+    await flutterLocalNotificationsPlugin.show(
+      0,
+      title,
+      body,
+      platform,
+    );
+  }
 }
