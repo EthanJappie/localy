@@ -55,7 +55,7 @@ abstract class StoreOrder implements _$StoreOrder {
         deliveryAddress: ValueString(),
         deliveryCoordinates: FireCoordinates.zero(),
         dateCreated: Timestamp.now(),
-        status: ValueString.fromString("pending"),
+        status: ValueString.fromString("invalid"),
       );
 
   Option<ValueFailure<dynamic>> get failureOption {

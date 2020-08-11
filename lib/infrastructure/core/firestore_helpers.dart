@@ -25,6 +25,9 @@ extension FirestoreX on Firestore {
 
   CollectionReference get orderCollection =>
       Firestore.instance.collection('orders');
+
+  CollectionReference get bundleCollection =>
+      Firestore.instance.collection('bundles');
 }
 
 extension DocumentReferenceX on DocumentReference {}

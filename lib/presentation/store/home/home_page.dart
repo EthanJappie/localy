@@ -6,8 +6,8 @@ import 'package:localy/application/stores/store_actor/store_actor_bloc.dart';
 import 'package:localy/application/stores/store_watcher/store_watcher_bloc.dart';
 import 'package:localy/injection.dart';
 import 'package:localy/presentation/core/routes/manager_router.gr.dart';
-import 'package:localy/presentation/profile/profile_page.dart';
 import 'package:localy/presentation/store/staff_access/staff_access_page.dart';
+import 'package:localy/presentation/store/store_profile/store_profile_page.dart';
 import 'package:localy/presentation/store/stores/stores_overview/stores_over_view_page.dart';
 
 class HomePage extends StatefulWidget implements AutoRouteWrapper {
@@ -35,10 +35,14 @@ class _HomePageState extends State<HomePage> {
   final _pages = [
     StoresOverviewPage(),
     StaffAccessPage(),
-    ProfilePage(),
+    StoreProfilePage(),
   ];
 
-  final _titles = ["Stores", "Staff Access", "Profile"];
+  final _titles = [
+    "Stores",
+    "Staff Access",
+    "Profile",
+  ];
 
   int _currentIndex = 0;
 
@@ -69,11 +73,17 @@ class _HomePageState extends State<HomePage> {
           currentIndex: _currentIndex,
           items: const [
             BottomNavigationBarItem(
-                icon: Icon(Icons.store), title:  Text("Store")),
+              icon: Icon(Icons.store),
+              title: Text("Store"),
+            ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.group_add), title:  Text("Staff Access")),
+              icon: Icon(Icons.group_add),
+              title: Text("Staff Access"),
+            ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.person), title:  Text("Profile")),
+              icon: Icon(Icons.person),
+              title: Text("Profile"),
+            ),
           ],
           onTap: (value) {
             setState(() {

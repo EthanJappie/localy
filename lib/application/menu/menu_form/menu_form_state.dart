@@ -15,7 +15,7 @@ abstract class MenuFormState with _$MenuFormState{
         showErrorMessages: false,
         isEditing: false,
         isSaving: false,
-        saveFailureOrSuccessOption: none()
+        saveFailureOrSuccessOption: none(),
       );
 }
 

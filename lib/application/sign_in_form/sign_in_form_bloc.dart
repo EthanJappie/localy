@@ -7,19 +7,23 @@ import 'package:injectable/injectable.dart';
 import 'package:localy/domain/auth/auth_failure.dart';
 import 'package:localy/domain/auth/i_auth_facade.dart';
 import 'package:localy/domain/auth/value_objects.dart';
+import 'package:localy/domain/bundle/bundle_entity.dart';
+import 'package:localy/domain/bundle/i_bundle_repository.dart';
 import 'package:meta/meta.dart';
+
+part 'sign_in_form_bloc.freezed.dart';
 
 part 'sign_in_form_event.dart';
 
 part 'sign_in_form_state.dart';
 
-part 'sign_in_form_bloc.freezed.dart';
-
 @injectable
 class SignInFormBloc extends Bloc<SignInFormEvent, SignInFormState> {
   final IAuthFacade _authFacade;
+  final IBundleRepository _bundleRepository;
 
-  SignInFormBloc(this._authFacade) : super(SignInFormState.initial());
+  SignInFormBloc(this._authFacade, this._bundleRepository)
+      : super(SignInFormState.initial());
 
   @override
   Stream<SignInFormState> mapEventToState(
@@ -126,6 +130,10 @@ class SignInFormBloc extends Bloc<SignInFormEvent, SignInFormState> {
         confirmPassword: state.confirmPassword,
       );
     }
+
+    _bundleRepository.create(
+      const BundleEntity(numberOfCredits: 10),
+    );
 
     yield state.copyWith(
       isSubmitting: false,
