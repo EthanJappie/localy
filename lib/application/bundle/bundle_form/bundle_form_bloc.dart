@@ -10,7 +10,9 @@ import 'package:localy/domain/bundle/i_bundle_repository.dart';
 import 'package:meta/meta.dart';
 
 part 'bundle_form_bloc.freezed.dart';
+
 part 'bundle_form_event.dart';
+
 part 'bundle_form_state.dart';
 
 @injectable
@@ -20,16 +22,15 @@ class BundleFormBloc extends Bloc<BundleFormEvent, BundleFormState> {
   BundleFormBloc(this._bundleRepository) : super(BundleFormState.initial());
 
   @override
-  Stream<BundleFormState> mapEventToState(
-    BundleFormEvent event,
-  ) async* {
+  Stream<BundleFormState> mapEventToState(BundleFormEvent event,) async* {
     yield* event.map(
       initialized: (e) async* {
         yield e.initialBundleOption.fold(
-          () => state,
-          (initialBundle) => state.copyWith(
-            bundle: initialBundle,
-          ),
+              () => state,
+              (initialBundle) =>
+              state.copyWith(
+                bundle: initialBundle,
+              ),
         );
       },
       saved: (e) async* {
@@ -44,10 +45,10 @@ class BundleFormBloc extends Bloc<BundleFormEvent, BundleFormState> {
           isSaving: false,
           saveFailureOrSuccessOption: optionOf(failureOrSuccess),
         );
-
-        await _bundleRepository.update(state.bundle);
       },
       numberOfCreditsChanged: (e) async* {
+        await _bundleRepository.update(e.numberOfCredits);
+
         yield state.copyWith(
           bundle: state.bundle.copyWith(numberOfCredits: e.numberOfCredits),
         );

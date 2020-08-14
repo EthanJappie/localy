@@ -7,6 +7,6 @@ abstract class IBundleRepository {
 
   Future<Either<BundleEntityFailure, Unit>> create(BundleEntity bundle);
 
-  Future<Either<BundleEntityFailure, Unit>> update(BundleEntity bundle);
+  Future<Either<BundleEntityFailure, Unit>> update(int numberOfCredits);
 
 }

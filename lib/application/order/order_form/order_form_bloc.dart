@@ -127,6 +127,7 @@ class OrderFormBloc extends Bloc<OrderFormEvent, OrderFormState> {
         yield state.copyWith(
             order: state.order.copyWith(
           storeID: ValueString.fromString(e.store.id.getOrCrash()),
+          storeOwnerID: ValueString.fromString(e.store.ownerID.getOrCrash()),
           storeName: e.store.storeName,
           storeAddress: e.store.address,
           storeCoordinates: e.store.coordinates,

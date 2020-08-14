@@ -1,0 +1,69 @@
+const functions = require('firebase-functions');
+const admin = require('firebase-admin');
+admin.initializeApp();
+
+exports.sendNewOrderNotification = functions.firestore
+    .document('/orders/{orderID}')
+    .onCreate((snap, context) => {
+        const data = snap.data();
+        const payload = {
+            notification: {
+                title: 'Order Up',
+                body: 'You have a new order'
+            }
+        };
+        console.log(`token ${JSON.stringify(data.storeToken)}`);
+        return admin.messaging().sendToDevice(data.storeToken, payload);
+    });
+
+exports.sendStatusChangedNotification = functions.firestore
+    .document('/orders/{orderID}')
+    .onUpdate((change, context) => {
+        const newValue = change.after.data();
+        const previousValue = change.before.data();
+
+        const hasSameStatus = newValue.status === previousValue.status;
+
+        if (!hasSameStatus) {
+            const payload = {
+                notification: {
+                    title: 'Order Update',
+                    body: `Your order status has changed to: ${newValue.status}`
+                }
+            };
+
+            console.log(`sending nofication changed to ${newValue.customerToken}`);
+            return admin.messaging().sendToDevice(newValue.customerToken, payload);
+        }
+    });
+
+exports.onOrderCreated = functions.firestore
+    .document('/orders/{orderID}')
+    .onCreate((snap, context) => {
+        const data = snap.data();
+        const orderRef = admin.firestore().collection("orders").doc(data.storeID);
+
+        const orderDoc = await orderRef.get();
+        const orderEntity = orderDoc.data();
+
+        if (orderEntity.numberOfCredits > 0) {
+            await admin.firestore().runTransaction(async (transaction) => {
+                const snapshot = await transaction.get(orderRef);
+
+                await transaction.update(orderRef, {
+                    "numberOfCredits": snapshot.numberOfCredits - 1
+                });
+
+                const orderID = context.params.orderID;
+
+                admin.firestore()
+                    .collection("orders")
+                    .doc(orderID)
+                    .update({ "status": "pending" });
+            });
+        }
+    });
+
+
+
+

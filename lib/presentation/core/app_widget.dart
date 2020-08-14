@@ -50,7 +50,7 @@ class _AppWidgetState extends State<AppWidget> {
   }
 
   RouterBase _getRouter() {
-    if (EnvironmentConfig.APP_NAME == "LocalyManager") {
+    if (EnvironmentConfig.APP_NAME == EnvironmentConfig.APP_NAME_LOCALY_MANAGER) {
       return ManagerRouter();
     } else {
       return CustomerRouter();
@@ -58,7 +58,7 @@ class _AppWidgetState extends State<AppWidget> {
   }
 
   Color _getAppColor() {
-    if (EnvironmentConfig.APP_NAME == "LocalyManager") {
+    if (EnvironmentConfig.APP_NAME == EnvironmentConfig.APP_NAME_LOCALY_MANAGER) {
       return const Color(appColor);
     } else {
       return Colors.green;

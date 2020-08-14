@@ -152,7 +152,7 @@ class OrderRepository implements IOrderRepository {
   ) async* {
     yield* _firestore.orderCollection
         .where("storeID", isEqualTo: storeID)
-        .where("status", isEqualTo: "inactive")
+        .where("status", isEqualTo: "invalid")
         .orderBy("dateCreated")
         .snapshots()
         .map(

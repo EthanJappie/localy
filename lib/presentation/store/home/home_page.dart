@@ -2,8 +2,11 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:localy/application/auth/auth_bloc.dart';
+import 'package:localy/application/bundle/bundle_form/bundle_form_bloc.dart';
+import 'package:localy/application/bundle/bundle_watcher/bundle_watcher_bloc.dart';
 import 'package:localy/application/stores/store_actor/store_actor_bloc.dart';
 import 'package:localy/application/stores/store_watcher/store_watcher_bloc.dart';
+import 'package:localy/environment_config.dart';
 import 'package:localy/injection.dart';
 import 'package:localy/presentation/core/routes/manager_router.gr.dart';
 import 'package:localy/presentation/store/staff_access/staff_access_page.dart';
@@ -24,6 +27,13 @@ class HomePage extends StatefulWidget implements AutoRouteWrapper {
         ),
         BlocProvider<StoreActorBloc>(
           create: (context) => getIt<StoreActorBloc>(),
+        ),
+        BlocProvider<BundleWatcherBloc>(
+          create: (_) =>
+              getIt<BundleWatcherBloc>()..add(const BundleWatcherEvent.watch()),
+        ),
+        BlocProvider<BundleFormBloc>(
+          create: (_) => getIt<BundleFormBloc>(),
         ),
       ],
       child: this,
@@ -60,6 +70,21 @@ class _HomePageState extends State<HomePage> {
         appBar: AppBar(
           title: Text(_titles[_currentIndex]),
           actions: <Widget>[
+            IconButton(
+              icon: const Icon(Icons.info_outline),
+              onPressed: () {
+                showAboutDialog(
+                  context: context,
+                  applicationName:
+                      EnvironmentConfig.APP_NAME.replaceAll("_", " "),
+                  applicationVersion: EnvironmentConfig.VERSION_NUMBER,
+                  applicationIcon: Image.asset(
+                    "assets/launchericon.png",
+                    height: 40,
+                  ),
+                );
+              },
+            ),
             IconButton(
               icon: const Icon(Icons.exit_to_app),
               onPressed: () {

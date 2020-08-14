@@ -33,7 +33,7 @@ class RegisterForm extends StatelessWidget {
               ).show(context);
             },
             (_) {
-              if (EnvironmentConfig.APP_NAME == "LocalyManager") {
+              if (EnvironmentConfig.APP_NAME == EnvironmentConfig.APP_NAME_LOCALY_MANAGER) {
                 ExtendedNavigator.of(context)
                     .replace(ManagerRoute.homePage);
               } else {
@@ -180,7 +180,7 @@ class RegisterForm extends StatelessWidget {
                               onPressed: () {
                                 context.bloc<SignInFormBloc>().add(
                                     const SignInFormEvent
-                                        .signInWithEmailAndPasswordPressed());
+                                        .registerWithEmailAndPasswordPressed());
                               },
                             ),
                             if (state.isSubmitting) ...[

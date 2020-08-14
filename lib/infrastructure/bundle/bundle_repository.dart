@@ -36,17 +36,25 @@ class BundleRepository implements IBundleRepository {
     }
   }
 
-
-
   @override
-  Future<Either<BundleEntityFailure, Unit>> update(BundleEntity bundle) async {
+  Future<Either<BundleEntityFailure, Unit>> update(int numberOfCredits) async {
     try {
       final userDoc = await _firestore.userDocument();
-      final bundleDTO = BundleEntityDTO.fromDomain(bundle);
+      final bundleRef =
+          _firestore.bundleCollection.document(userDoc.documentID);
 
-      await _firestore.bundleCollection
-          .document(userDoc.documentID)
-          .updateData(bundleDTO.toJson());
+      await _firestore.runTransaction((transaction) async {
+        final postSnapshot = await transaction.get(bundleRef);
+        if (postSnapshot.exists) {
+          await transaction.update(
+            bundleRef,
+            <String, dynamic>{
+              "numberOfCredits":
+                  postSnapshot.data["numberOfCredits"] + numberOfCredits
+            },
+          );
+        }
+      });
 
       return right(unit);
     } on PlatformException catch (e) {
@@ -73,5 +81,4 @@ class BundleRepository implements IBundleRepository {
           ),
         );
   }
-
 }
