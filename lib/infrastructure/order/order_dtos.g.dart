@@ -28,6 +28,7 @@ _$_StoreOrderDTO _$_$_StoreOrderDTOFromJson(Map<String, dynamic> json) {
     dateCreated: const TimestampConverter().fromJson(json['dateCreated']),
     status: json['status'] as String,
     deliveryAddress: json['deliveryAddress'] as String,
+    orderNotes: json['orderNotes'] as String,
     deliveryCoordinates:
         const GeoPointConverters().fromJson(json['deliveryCoordinates']),
   );
@@ -55,6 +56,7 @@ Map<String, dynamic> _$_$_StoreOrderDTOToJson(_$_StoreOrderDTO instance) =>
       'dateCreated': const TimestampConverter().toJson(instance.dateCreated),
       'status': instance.status,
       'deliveryAddress': instance.deliveryAddress,
+      'orderNotes': instance.orderNotes,
       'deliveryCoordinates':
           const GeoPointConverters().toJson(instance.deliveryCoordinates),
     };

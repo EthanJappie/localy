@@ -4,8 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:localy/application/auth/auth_bloc.dart';
 import 'package:localy/environment_config.dart';
-import 'package:localy/presentation/core/routes/customer_router.gr.dart';
-import 'package:localy/presentation/core/routes/manager_router.gr.dart';
+import 'package:localy/presentation/core/routes/router.gr.dart';
 import 'package:localy/presentation/core/widgets/localy_button.dart';
 
 class SplashPage extends StatelessWidget {
@@ -18,10 +17,10 @@ class SplashPage extends StatelessWidget {
             authenticated: (_) {
               if (EnvironmentConfig.APP_NAME ==
                   EnvironmentConfig.APP_NAME_LOCALY_MANAGER) {
-                ExtendedNavigator.of(context).replace(ManagerRoute.homePage);
+                ExtendedNavigator.of(context).replace(Routes.homePage);
               } else {
                 ExtendedNavigator.of(context)
-                    .replace(CustomerRoute.customerHomePage);
+                    .replace(Routes.customerHomePage);
               }
             },
             unauthenticated: (_) {});
@@ -80,14 +79,9 @@ class SplashPage extends StatelessWidget {
                     LocalyButton(
                       title: "Sign in",
                       onPressed: () {
-                        if (EnvironmentConfig.APP_NAME ==
-                            EnvironmentConfig.APP_NAME_LOCALY_MANAGER) {
                           ExtendedNavigator.of(context)
-                              .push(ManagerRoute.signInPage);
-                        } else {
-                          ExtendedNavigator.of(context)
-                              .push(CustomerRoute.signInPage);
-                        }
+                              .push(Routes.signInPage);
+
                       },
                     ),
                     const SizedBox(
@@ -97,14 +91,8 @@ class SplashPage extends StatelessWidget {
                       title: "Sign up",
                       empty: true,
                       onPressed: () {
-                        if (EnvironmentConfig.APP_NAME ==
-                            EnvironmentConfig.APP_NAME_LOCALY_MANAGER) {
                           ExtendedNavigator.of(context)
-                              .push(ManagerRoute.registerPage);
-                        } else {
-                          ExtendedNavigator.of(context)
-                              .push(CustomerRoute.registerPage);
-                        }
+                              .push(Routes.registerPage);
                       },
                     ),
                   ],

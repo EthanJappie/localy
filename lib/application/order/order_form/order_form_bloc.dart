@@ -155,6 +155,13 @@ class OrderFormBloc extends Bloc<OrderFormEvent, OrderFormState> {
 
         yield state.copyWith(order: state.order.copyWith(menuItems: menuItems));
       },
+      addedNote: (e) async* {
+        yield state.copyWith(
+          order: state.order.copyWith(
+            orderNotes: ValueString.fromStringIgnoreEmpty(e.note),
+          ),
+        );
+      },
     );
   }
 }

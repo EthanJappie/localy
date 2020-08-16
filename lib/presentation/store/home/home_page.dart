@@ -8,7 +8,7 @@ import 'package:localy/application/stores/store_actor/store_actor_bloc.dart';
 import 'package:localy/application/stores/store_watcher/store_watcher_bloc.dart';
 import 'package:localy/environment_config.dart';
 import 'package:localy/injection.dart';
-import 'package:localy/presentation/core/routes/manager_router.gr.dart';
+import 'package:localy/presentation/core/routes/router.gr.dart';
 import 'package:localy/presentation/store/staff_access/staff_access_page.dart';
 import 'package:localy/presentation/store/store_profile/store_profile_page.dart';
 import 'package:localy/presentation/store/stores/stores_overview/stores_over_view_page.dart';
@@ -62,7 +62,7 @@ class _HomePageState extends State<HomePage> {
       listener: (context, state) {
         state.maybeMap(
           unauthenticated: (_) =>
-              ExtendedNavigator.of(context).replace(ManagerRoute.signInPage),
+              ExtendedNavigator.of(context).replace(Routes.signInPage),
           orElse: () {},
         );
       },

@@ -9,8 +9,8 @@ import 'package:localy/application/order/order_form/order_form_bloc.dart';
 import 'package:localy/application/order/order_watcher/order_watcher_bloc.dart';
 import 'package:localy/domain/store/restaurant.dart';
 import 'package:localy/injection.dart';
+import 'package:localy/presentation/core/routes/router.gr.dart';
 import 'package:localy/presentation/customer/store_detail/store_detail_menu_items/store_detail_menu_items.dart';
-import 'package:localy/presentation/core/routes/customer_router.gr.dart';
 
 class StoreDetailPage extends StatefulWidget {
   final Restaurant store;
@@ -31,15 +31,16 @@ class _StoreDetailPageState extends State<StoreDetailPage> {
         ),
         BlocProvider<MenuWatcherBloc>(
           create: (context) => getIt<MenuWatcherBloc>()
-            ..add(MenuWatcherEvent.watchAllNotHidden(widget.store.id.getOrCrash())),
+            ..add(MenuWatcherEvent.watchAllNotHidden(
+                widget.store.id.getOrCrash())),
         ),
         BlocProvider<OrderWatcherBloc>(
           create: (context) => getIt<OrderWatcherBloc>()
             ..add(const OrderWatcherEvent.watchAllStarted()),
         ),
         BlocProvider<OrderFormBloc>(
-          create: (context) =>
-              getIt<OrderFormBloc>()..add(OrderFormEvent.addedStore(widget.store)),
+          create: (context) => getIt<OrderFormBloc>()
+            ..add(OrderFormEvent.addedStore(widget.store)),
         ),
         BlocProvider<OrderActorBloc>(
           create: (context) => getIt<OrderActorBloc>(),
@@ -73,8 +74,20 @@ class _StoreDetailPageState extends State<StoreDetailPage> {
                   length: state.menus.size,
                   child: Scaffold(
                     appBar: AppBar(
-                      title:
-                          Text(widget.store.storeName.value.fold((l) => "", (r) => r)),
+                      title: Text(widget.store.storeName.value
+                          .fold((l) => "", (r) => r)),
+                      actions: [
+                        FlatButton(
+                          onPressed: () {},
+                          child: const Text(
+                            "Review",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        )
+                      ],
                       elevation: 0,
                       bottom: TabBar(
                         labelStyle: const TextStyle(
@@ -108,18 +121,20 @@ class _StoreDetailPageState extends State<StoreDetailPage> {
                         return FloatingActionButton.extended(
                           onPressed: () async {
                             if (state.order.menuItems.isNotEmpty) {
-                               await ExtendedNavigator.of(context).pushCheckoutPage(
+                              await ExtendedNavigator.of(context)
+                                  .pushCheckoutPage(
                                 blocContext: context,
                               );
 
-                               setState(() {
-                               });
-
+                              setState(() {});
                             }
                           },
-                          label: const Text("Checkout", style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                          ),),
+                          label: const Text(
+                            "Checkout",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           icon: const Icon(Icons.shopping_cart),
                         );
                       },

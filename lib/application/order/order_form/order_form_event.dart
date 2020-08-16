@@ -21,6 +21,8 @@ abstract class OrderFormEvent with _$OrderFormEvent {
   const factory OrderFormEvent.customerAddedPhoneNumber(
       String customerPhoneNumber) = _CustomerAddedPhoneNumber;
 
+  const factory OrderFormEvent.addedNote(String note) = _AddedNote;
+
   const factory OrderFormEvent.customerAddedDeliveryAddress(
       String customerAddress) = _CustomerAddedDeliveryAddress;
 

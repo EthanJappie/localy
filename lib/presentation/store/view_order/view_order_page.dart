@@ -87,6 +87,31 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
                 ),
               ),
               const SizedBox(height: 16),
+              Row(
+                children: <Widget>[
+                  Icon(
+                    Icons.speaker_notes,
+                    color: Theme.of(context).primaryColor,
+                  ),
+                  const SizedBox(width: 16),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text(
+                          widget.order.orderNotes.value.fold((l) => "No notes",
+                              (r) => r.isEmpty ? "No notes" : r),
+                          style: const TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 16),
               if (widget.order.deliveryAddress.value
                   .fold((l) => "", (r) => r)
                   .isNotEmpty) ...[

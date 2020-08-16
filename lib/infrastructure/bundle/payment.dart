@@ -30,7 +30,7 @@ Future<RaveStatus> performTransaction({
     ..acceptAchPayments = false
     ..acceptGHMobileMoneyPayments = false
     ..acceptUgMobileMoneyPayments = false
-    ..companyName = Text('Sennit', style: Theme.of(context).textTheme.subtitle1)
+    ..companyName = Text('Localy', style: Theme.of(context).textTheme.subtitle1)
     ..staging = true
     ..isPreAuth = true
     ..displayFee = true;
@@ -41,10 +41,7 @@ Future<RaveStatus> performTransaction({
     initializer: initializer,
   )
       .catchError((error) {
-    print("Unexpected Error in RavePayManager: $error");
     return error;
   });
-  print(response.message);
-
   return response.status;
 }

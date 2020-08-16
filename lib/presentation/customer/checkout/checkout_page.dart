@@ -13,7 +13,7 @@ import 'package:localy/presentation/customer/checkout/widgets/cash_field.dart';
 import 'package:localy/presentation/customer/checkout/widgets/delivery_field.dart';
 import 'package:localy/presentation/customer/checkout/widgets/location_delivery_field.dart';
 import 'package:localy/presentation/customer/checkout/widgets/other_field.dart';
-import 'package:localy/presentation/core/routes/customer_router.gr.dart';
+import 'package:localy/presentation/core/routes/router.gr.dart';
 
 class CheckoutPage extends StatefulWidget {
   final BuildContext blocContext;
@@ -59,6 +59,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                         const Divider(),
                         LocalyEntryField(
                           "Phone Number",
+                          isNumber: true,
                           hintText: "081 234 5678",
                           onChanged: (String value) {
                             widget.blocContext.bloc<OrderFormBloc>().add(
@@ -66,6 +67,17 @@ class _CheckoutPageState extends State<CheckoutPage> {
                                     value,
                                   ),
                                 );
+                          },
+                        ),
+                        LocalyEntryField(
+                          "Additional Information",
+                          hintText: "No tomatoes, etc..",
+                          onChanged: (String value) {
+                            widget.blocContext.bloc<OrderFormBloc>().add(
+                              OrderFormEvent.addedNote(
+                                value,
+                              ),
+                            );
                           },
                         ),
                          const CashField(),
@@ -154,7 +166,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                 (_) {
                   // Can't be just a simple pop. If another route (like a Flushbar) is on top of stack, we'll need to pop even that to get to
                   // the overview page.
-                  ExtendedNavigator.of(context).replace(CustomerRoute.customerHomePage);
+                  ExtendedNavigator.of(context).replace(Routes.customerHomePage);
                 },
               );
             },

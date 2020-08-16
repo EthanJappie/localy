@@ -8,7 +8,7 @@ import 'package:localy/application/menu_item/menu_item_form/menu_item_form_bloc.
 import 'package:localy/domain/menu_item/menu_item.dart';
 import 'package:localy/injection.dart';
 import 'package:localy/presentation/core/pages/forget_password/widgets/saving_in_progress_overlaay.dart';
-import 'package:localy/presentation/core/routes/manager_router.gr.dart';
+import 'package:localy/presentation/core/routes/router.gr.dart';
 import 'package:localy/presentation/core/widgets/localy_button.dart';
 import 'package:localy/presentation/store/menu_items/menu_items_form_page/widgets/menu_item_description_field.dart';
 import 'package:localy/presentation/store/menu_items/menu_items_form_page/widgets/menu_item_hidden_field.dart';
@@ -70,7 +70,7 @@ class MenuItemsFormPage extends StatelessWidget {
                   ExtendedNavigator.of(context).popUntil(
                     (route) =>
                         route.settings.name ==
-                        ManagerRoute.menuItemsOverviewPage,
+                            Routes.menuItemsOverviewPage,
                   );
                 },
               );

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 import 'package:localy/application/order/order_watcher/order_watcher_bloc.dart';
-import 'package:localy/presentation/core/routes/customer_router.gr.dart';
+import 'package:localy/presentation/core/routes/router.gr.dart';
 
 class CustomerOrderPage extends StatelessWidget {
   @override

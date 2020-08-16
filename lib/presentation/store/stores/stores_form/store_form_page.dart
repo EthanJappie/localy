@@ -8,7 +8,7 @@ import 'package:localy/application/stores/store_form/store_form_bloc.dart';
 import 'package:localy/domain/store/restaurant.dart';
 import 'package:localy/injection.dart';
 import 'package:localy/presentation/core/pages/forget_password/widgets/saving_in_progress_overlaay.dart';
-import 'package:localy/presentation/core/routes/manager_router.gr.dart';
+import 'package:localy/presentation/core/routes/router.gr.dart';
 import 'package:localy/presentation/core/widgets/localy_button.dart';
 import 'package:localy/presentation/store/stores/stores_form/widgets/accept_card_field.dart';
 import 'package:localy/presentation/store/stores/stores_form/widgets/accept_cash_field.dart';
@@ -74,7 +74,7 @@ class StoreFormPage extends StatelessWidget {
                   // Can't be just a simple pop. If another route (like a Flushbar) is on top of stack, we'll need to pop even that to get to
                   // the overview page.
                   ExtendedNavigator.of(context).popUntil(
-                      (route) => route.settings.name == ManagerRoute.homePage);
+                      (route) => route.settings.name == Routes.homePage);
                 },
               );
             },

@@ -6,7 +6,7 @@ import 'package:localy/application/order/order_watcher/order_watcher_bloc.dart';
 import 'package:localy/application/stores/store_actor/store_actor_bloc.dart';
 import 'package:localy/application/stores/store_watcher/store_watcher_bloc.dart';
 import 'package:localy/injection.dart';
-import 'package:localy/presentation/core/routes/customer_router.gr.dart';
+import 'package:localy/presentation/core/routes/router.gr.dart';
 import 'package:localy/presentation/customer/customer_orders/customer_order_page.dart';
 import 'package:localy/presentation/customer/customer_store/customer_store_page.dart';
 
@@ -54,7 +54,7 @@ class _CustomerHomePageState extends State<CustomerHomePage> {
       listener: (context, state) {
         state.maybeMap(
             unauthenticated: (_) =>
-                ExtendedNavigator.of(context).replace(CustomerRoute.signInPage),
+                ExtendedNavigator.of(context).replace(Routes.signInPage),
             orElse: () {});
       },
       child: Scaffold(

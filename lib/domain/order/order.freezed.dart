@@ -21,19 +21,20 @@ class _$StoreOrderTearOff {
       @required ValueString storeName,
       @required ValueString storeAddress,
       @required ValueString storeToken,
-      @required FireCoordinates storeCoordinates,
+      @required ValueString phoneNumber,
+      @required ValueString customerToken,
+      @required ValueString status,
       @required ValueString storePhoneNumber,
-      @required List<MenuItem> menuItems,
       @required bool payingByCash,
       @required bool payingByCard,
       @required bool payingByOther,
       @required bool foodDeliveriesChosen,
       @required bool isCompleted,
-      @required ValueString phoneNumber,
-      @required ValueString customerToken,
+      @required FireCoordinates storeCoordinates,
+      @required List<MenuItem> menuItems,
       @required Timestamp dateCreated,
-      @required ValueString status,
       ValueString deliveryAddress,
+      ValueString orderNotes,
       FireCoordinates deliveryCoordinates}) {
     return _Order(
       id: id,
@@ -43,19 +44,20 @@ class _$StoreOrderTearOff {
       storeName: storeName,
       storeAddress: storeAddress,
       storeToken: storeToken,
-      storeCoordinates: storeCoordinates,
+      phoneNumber: phoneNumber,
+      customerToken: customerToken,
+      status: status,
       storePhoneNumber: storePhoneNumber,
-      menuItems: menuItems,
       payingByCash: payingByCash,
       payingByCard: payingByCard,
       payingByOther: payingByOther,
       foodDeliveriesChosen: foodDeliveriesChosen,
       isCompleted: isCompleted,
-      phoneNumber: phoneNumber,
-      customerToken: customerToken,
+      storeCoordinates: storeCoordinates,
+      menuItems: menuItems,
       dateCreated: dateCreated,
-      status: status,
       deliveryAddress: deliveryAddress,
+      orderNotes: orderNotes,
       deliveryCoordinates: deliveryCoordinates,
     );
   }
@@ -72,19 +74,20 @@ mixin _$StoreOrder {
   ValueString get storeName;
   ValueString get storeAddress;
   ValueString get storeToken;
-  FireCoordinates get storeCoordinates;
+  ValueString get phoneNumber;
+  ValueString get customerToken;
+  ValueString get status;
   ValueString get storePhoneNumber;
-  List<MenuItem> get menuItems;
   bool get payingByCash;
   bool get payingByCard;
   bool get payingByOther;
   bool get foodDeliveriesChosen;
   bool get isCompleted;
-  ValueString get phoneNumber;
-  ValueString get customerToken;
+  FireCoordinates get storeCoordinates;
+  List<MenuItem> get menuItems;
   Timestamp get dateCreated;
-  ValueString get status;
   ValueString get deliveryAddress;
+  ValueString get orderNotes;
   FireCoordinates get deliveryCoordinates;
 
   $StoreOrderCopyWith<StoreOrder> get copyWith;
@@ -102,19 +105,20 @@ abstract class $StoreOrderCopyWith<$Res> {
       ValueString storeName,
       ValueString storeAddress,
       ValueString storeToken,
-      FireCoordinates storeCoordinates,
+      ValueString phoneNumber,
+      ValueString customerToken,
+      ValueString status,
       ValueString storePhoneNumber,
-      List<MenuItem> menuItems,
       bool payingByCash,
       bool payingByCard,
       bool payingByOther,
       bool foodDeliveriesChosen,
       bool isCompleted,
-      ValueString phoneNumber,
-      ValueString customerToken,
+      FireCoordinates storeCoordinates,
+      List<MenuItem> menuItems,
       Timestamp dateCreated,
-      ValueString status,
       ValueString deliveryAddress,
+      ValueString orderNotes,
       FireCoordinates deliveryCoordinates});
 }
 
@@ -134,19 +138,20 @@ class _$StoreOrderCopyWithImpl<$Res> implements $StoreOrderCopyWith<$Res> {
     Object storeName = freezed,
     Object storeAddress = freezed,
     Object storeToken = freezed,
-    Object storeCoordinates = freezed,
+    Object phoneNumber = freezed,
+    Object customerToken = freezed,
+    Object status = freezed,
     Object storePhoneNumber = freezed,
-    Object menuItems = freezed,
     Object payingByCash = freezed,
     Object payingByCard = freezed,
     Object payingByOther = freezed,
     Object foodDeliveriesChosen = freezed,
     Object isCompleted = freezed,
-    Object phoneNumber = freezed,
-    Object customerToken = freezed,
+    Object storeCoordinates = freezed,
+    Object menuItems = freezed,
     Object dateCreated = freezed,
-    Object status = freezed,
     Object deliveryAddress = freezed,
+    Object orderNotes = freezed,
     Object deliveryCoordinates = freezed,
   }) {
     return _then(_value.copyWith(
@@ -164,14 +169,16 @@ class _$StoreOrderCopyWithImpl<$Res> implements $StoreOrderCopyWith<$Res> {
           : storeAddress as ValueString,
       storeToken:
           storeToken == freezed ? _value.storeToken : storeToken as ValueString,
-      storeCoordinates: storeCoordinates == freezed
-          ? _value.storeCoordinates
-          : storeCoordinates as FireCoordinates,
+      phoneNumber: phoneNumber == freezed
+          ? _value.phoneNumber
+          : phoneNumber as ValueString,
+      customerToken: customerToken == freezed
+          ? _value.customerToken
+          : customerToken as ValueString,
+      status: status == freezed ? _value.status : status as ValueString,
       storePhoneNumber: storePhoneNumber == freezed
           ? _value.storePhoneNumber
           : storePhoneNumber as ValueString,
-      menuItems:
-          menuItems == freezed ? _value.menuItems : menuItems as List<MenuItem>,
       payingByCash:
           payingByCash == freezed ? _value.payingByCash : payingByCash as bool,
       payingByCard:
@@ -184,19 +191,19 @@ class _$StoreOrderCopyWithImpl<$Res> implements $StoreOrderCopyWith<$Res> {
           : foodDeliveriesChosen as bool,
       isCompleted:
           isCompleted == freezed ? _value.isCompleted : isCompleted as bool,
-      phoneNumber: phoneNumber == freezed
-          ? _value.phoneNumber
-          : phoneNumber as ValueString,
-      customerToken: customerToken == freezed
-          ? _value.customerToken
-          : customerToken as ValueString,
+      storeCoordinates: storeCoordinates == freezed
+          ? _value.storeCoordinates
+          : storeCoordinates as FireCoordinates,
+      menuItems:
+          menuItems == freezed ? _value.menuItems : menuItems as List<MenuItem>,
       dateCreated: dateCreated == freezed
           ? _value.dateCreated
           : dateCreated as Timestamp,
-      status: status == freezed ? _value.status : status as ValueString,
       deliveryAddress: deliveryAddress == freezed
           ? _value.deliveryAddress
           : deliveryAddress as ValueString,
+      orderNotes:
+          orderNotes == freezed ? _value.orderNotes : orderNotes as ValueString,
       deliveryCoordinates: deliveryCoordinates == freezed
           ? _value.deliveryCoordinates
           : deliveryCoordinates as FireCoordinates,
@@ -216,19 +223,20 @@ abstract class _$OrderCopyWith<$Res> implements $StoreOrderCopyWith<$Res> {
       ValueString storeName,
       ValueString storeAddress,
       ValueString storeToken,
-      FireCoordinates storeCoordinates,
+      ValueString phoneNumber,
+      ValueString customerToken,
+      ValueString status,
       ValueString storePhoneNumber,
-      List<MenuItem> menuItems,
       bool payingByCash,
       bool payingByCard,
       bool payingByOther,
       bool foodDeliveriesChosen,
       bool isCompleted,
-      ValueString phoneNumber,
-      ValueString customerToken,
+      FireCoordinates storeCoordinates,
+      List<MenuItem> menuItems,
       Timestamp dateCreated,
-      ValueString status,
       ValueString deliveryAddress,
+      ValueString orderNotes,
       FireCoordinates deliveryCoordinates});
 }
 
@@ -249,19 +257,20 @@ class __$OrderCopyWithImpl<$Res> extends _$StoreOrderCopyWithImpl<$Res>
     Object storeName = freezed,
     Object storeAddress = freezed,
     Object storeToken = freezed,
-    Object storeCoordinates = freezed,
+    Object phoneNumber = freezed,
+    Object customerToken = freezed,
+    Object status = freezed,
     Object storePhoneNumber = freezed,
-    Object menuItems = freezed,
     Object payingByCash = freezed,
     Object payingByCard = freezed,
     Object payingByOther = freezed,
     Object foodDeliveriesChosen = freezed,
     Object isCompleted = freezed,
-    Object phoneNumber = freezed,
-    Object customerToken = freezed,
+    Object storeCoordinates = freezed,
+    Object menuItems = freezed,
     Object dateCreated = freezed,
-    Object status = freezed,
     Object deliveryAddress = freezed,
+    Object orderNotes = freezed,
     Object deliveryCoordinates = freezed,
   }) {
     return _then(_Order(
@@ -279,14 +288,16 @@ class __$OrderCopyWithImpl<$Res> extends _$StoreOrderCopyWithImpl<$Res>
           : storeAddress as ValueString,
       storeToken:
           storeToken == freezed ? _value.storeToken : storeToken as ValueString,
-      storeCoordinates: storeCoordinates == freezed
-          ? _value.storeCoordinates
-          : storeCoordinates as FireCoordinates,
+      phoneNumber: phoneNumber == freezed
+          ? _value.phoneNumber
+          : phoneNumber as ValueString,
+      customerToken: customerToken == freezed
+          ? _value.customerToken
+          : customerToken as ValueString,
+      status: status == freezed ? _value.status : status as ValueString,
       storePhoneNumber: storePhoneNumber == freezed
           ? _value.storePhoneNumber
           : storePhoneNumber as ValueString,
-      menuItems:
-          menuItems == freezed ? _value.menuItems : menuItems as List<MenuItem>,
       payingByCash:
           payingByCash == freezed ? _value.payingByCash : payingByCash as bool,
       payingByCard:
@@ -299,19 +310,19 @@ class __$OrderCopyWithImpl<$Res> extends _$StoreOrderCopyWithImpl<$Res>
           : foodDeliveriesChosen as bool,
       isCompleted:
           isCompleted == freezed ? _value.isCompleted : isCompleted as bool,
-      phoneNumber: phoneNumber == freezed
-          ? _value.phoneNumber
-          : phoneNumber as ValueString,
-      customerToken: customerToken == freezed
-          ? _value.customerToken
-          : customerToken as ValueString,
+      storeCoordinates: storeCoordinates == freezed
+          ? _value.storeCoordinates
+          : storeCoordinates as FireCoordinates,
+      menuItems:
+          menuItems == freezed ? _value.menuItems : menuItems as List<MenuItem>,
       dateCreated: dateCreated == freezed
           ? _value.dateCreated
           : dateCreated as Timestamp,
-      status: status == freezed ? _value.status : status as ValueString,
       deliveryAddress: deliveryAddress == freezed
           ? _value.deliveryAddress
           : deliveryAddress as ValueString,
+      orderNotes:
+          orderNotes == freezed ? _value.orderNotes : orderNotes as ValueString,
       deliveryCoordinates: deliveryCoordinates == freezed
           ? _value.deliveryCoordinates
           : deliveryCoordinates as FireCoordinates,
@@ -328,19 +339,20 @@ class _$_Order extends _Order {
       @required this.storeName,
       @required this.storeAddress,
       @required this.storeToken,
-      @required this.storeCoordinates,
+      @required this.phoneNumber,
+      @required this.customerToken,
+      @required this.status,
       @required this.storePhoneNumber,
-      @required this.menuItems,
       @required this.payingByCash,
       @required this.payingByCard,
       @required this.payingByOther,
       @required this.foodDeliveriesChosen,
       @required this.isCompleted,
-      @required this.phoneNumber,
-      @required this.customerToken,
+      @required this.storeCoordinates,
+      @required this.menuItems,
       @required this.dateCreated,
-      @required this.status,
       this.deliveryAddress,
+      this.orderNotes,
       this.deliveryCoordinates})
       : assert(id != null),
         assert(customerID != null),
@@ -349,18 +361,18 @@ class _$_Order extends _Order {
         assert(storeName != null),
         assert(storeAddress != null),
         assert(storeToken != null),
-        assert(storeCoordinates != null),
+        assert(phoneNumber != null),
+        assert(customerToken != null),
+        assert(status != null),
         assert(storePhoneNumber != null),
-        assert(menuItems != null),
         assert(payingByCash != null),
         assert(payingByCard != null),
         assert(payingByOther != null),
         assert(foodDeliveriesChosen != null),
         assert(isCompleted != null),
-        assert(phoneNumber != null),
-        assert(customerToken != null),
+        assert(storeCoordinates != null),
+        assert(menuItems != null),
         assert(dateCreated != null),
-        assert(status != null),
         super._();
 
   @override
@@ -378,11 +390,13 @@ class _$_Order extends _Order {
   @override
   final ValueString storeToken;
   @override
-  final FireCoordinates storeCoordinates;
+  final ValueString phoneNumber;
+  @override
+  final ValueString customerToken;
+  @override
+  final ValueString status;
   @override
   final ValueString storePhoneNumber;
-  @override
-  final List<MenuItem> menuItems;
   @override
   final bool payingByCash;
   @override
@@ -394,21 +408,21 @@ class _$_Order extends _Order {
   @override
   final bool isCompleted;
   @override
-  final ValueString phoneNumber;
+  final FireCoordinates storeCoordinates;
   @override
-  final ValueString customerToken;
+  final List<MenuItem> menuItems;
   @override
   final Timestamp dateCreated;
   @override
-  final ValueString status;
-  @override
   final ValueString deliveryAddress;
+  @override
+  final ValueString orderNotes;
   @override
   final FireCoordinates deliveryCoordinates;
 
   @override
   String toString() {
-    return 'StoreOrder(id: $id, customerID: $customerID, storeID: $storeID, storeOwnerID: $storeOwnerID, storeName: $storeName, storeAddress: $storeAddress, storeToken: $storeToken, storeCoordinates: $storeCoordinates, storePhoneNumber: $storePhoneNumber, menuItems: $menuItems, payingByCash: $payingByCash, payingByCard: $payingByCard, payingByOther: $payingByOther, foodDeliveriesChosen: $foodDeliveriesChosen, isCompleted: $isCompleted, phoneNumber: $phoneNumber, customerToken: $customerToken, dateCreated: $dateCreated, status: $status, deliveryAddress: $deliveryAddress, deliveryCoordinates: $deliveryCoordinates)';
+    return 'StoreOrder(id: $id, customerID: $customerID, storeID: $storeID, storeOwnerID: $storeOwnerID, storeName: $storeName, storeAddress: $storeAddress, storeToken: $storeToken, phoneNumber: $phoneNumber, customerToken: $customerToken, status: $status, storePhoneNumber: $storePhoneNumber, payingByCash: $payingByCash, payingByCard: $payingByCard, payingByOther: $payingByOther, foodDeliveriesChosen: $foodDeliveriesChosen, isCompleted: $isCompleted, storeCoordinates: $storeCoordinates, menuItems: $menuItems, dateCreated: $dateCreated, deliveryAddress: $deliveryAddress, orderNotes: $orderNotes, deliveryCoordinates: $deliveryCoordinates)';
   }
 
   @override
@@ -435,15 +449,17 @@ class _$_Order extends _Order {
             (identical(other.storeToken, storeToken) ||
                 const DeepCollectionEquality()
                     .equals(other.storeToken, storeToken)) &&
-            (identical(other.storeCoordinates, storeCoordinates) ||
+            (identical(other.phoneNumber, phoneNumber) ||
                 const DeepCollectionEquality()
-                    .equals(other.storeCoordinates, storeCoordinates)) &&
+                    .equals(other.phoneNumber, phoneNumber)) &&
+            (identical(other.customerToken, customerToken) ||
+                const DeepCollectionEquality()
+                    .equals(other.customerToken, customerToken)) &&
+            (identical(other.status, status) ||
+                const DeepCollectionEquality().equals(other.status, status)) &&
             (identical(other.storePhoneNumber, storePhoneNumber) ||
                 const DeepCollectionEquality()
                     .equals(other.storePhoneNumber, storePhoneNumber)) &&
-            (identical(other.menuItems, menuItems) ||
-                const DeepCollectionEquality()
-                    .equals(other.menuItems, menuItems)) &&
             (identical(other.payingByCash, payingByCash) ||
                 const DeepCollectionEquality()
                     .equals(other.payingByCash, payingByCash)) &&
@@ -459,20 +475,21 @@ class _$_Order extends _Order {
             (identical(other.isCompleted, isCompleted) ||
                 const DeepCollectionEquality()
                     .equals(other.isCompleted, isCompleted)) &&
-            (identical(other.phoneNumber, phoneNumber) ||
+            (identical(other.storeCoordinates, storeCoordinates) ||
                 const DeepCollectionEquality()
-                    .equals(other.phoneNumber, phoneNumber)) &&
-            (identical(other.customerToken, customerToken) ||
+                    .equals(other.storeCoordinates, storeCoordinates)) &&
+            (identical(other.menuItems, menuItems) ||
                 const DeepCollectionEquality()
-                    .equals(other.customerToken, customerToken)) &&
+                    .equals(other.menuItems, menuItems)) &&
             (identical(other.dateCreated, dateCreated) ||
                 const DeepCollectionEquality()
                     .equals(other.dateCreated, dateCreated)) &&
-            (identical(other.status, status) ||
-                const DeepCollectionEquality().equals(other.status, status)) &&
             (identical(other.deliveryAddress, deliveryAddress) ||
                 const DeepCollectionEquality()
                     .equals(other.deliveryAddress, deliveryAddress)) &&
+            (identical(other.orderNotes, orderNotes) ||
+                const DeepCollectionEquality()
+                    .equals(other.orderNotes, orderNotes)) &&
             (identical(other.deliveryCoordinates, deliveryCoordinates) ||
                 const DeepCollectionEquality()
                     .equals(other.deliveryCoordinates, deliveryCoordinates)));
@@ -488,19 +505,20 @@ class _$_Order extends _Order {
       const DeepCollectionEquality().hash(storeName) ^
       const DeepCollectionEquality().hash(storeAddress) ^
       const DeepCollectionEquality().hash(storeToken) ^
-      const DeepCollectionEquality().hash(storeCoordinates) ^
+      const DeepCollectionEquality().hash(phoneNumber) ^
+      const DeepCollectionEquality().hash(customerToken) ^
+      const DeepCollectionEquality().hash(status) ^
       const DeepCollectionEquality().hash(storePhoneNumber) ^
-      const DeepCollectionEquality().hash(menuItems) ^
       const DeepCollectionEquality().hash(payingByCash) ^
       const DeepCollectionEquality().hash(payingByCard) ^
       const DeepCollectionEquality().hash(payingByOther) ^
       const DeepCollectionEquality().hash(foodDeliveriesChosen) ^
       const DeepCollectionEquality().hash(isCompleted) ^
-      const DeepCollectionEquality().hash(phoneNumber) ^
-      const DeepCollectionEquality().hash(customerToken) ^
+      const DeepCollectionEquality().hash(storeCoordinates) ^
+      const DeepCollectionEquality().hash(menuItems) ^
       const DeepCollectionEquality().hash(dateCreated) ^
-      const DeepCollectionEquality().hash(status) ^
       const DeepCollectionEquality().hash(deliveryAddress) ^
+      const DeepCollectionEquality().hash(orderNotes) ^
       const DeepCollectionEquality().hash(deliveryCoordinates);
 
   @override
@@ -518,19 +536,20 @@ abstract class _Order extends StoreOrder {
       @required ValueString storeName,
       @required ValueString storeAddress,
       @required ValueString storeToken,
-      @required FireCoordinates storeCoordinates,
+      @required ValueString phoneNumber,
+      @required ValueString customerToken,
+      @required ValueString status,
       @required ValueString storePhoneNumber,
-      @required List<MenuItem> menuItems,
       @required bool payingByCash,
       @required bool payingByCard,
       @required bool payingByOther,
       @required bool foodDeliveriesChosen,
       @required bool isCompleted,
-      @required ValueString phoneNumber,
-      @required ValueString customerToken,
+      @required FireCoordinates storeCoordinates,
+      @required List<MenuItem> menuItems,
       @required Timestamp dateCreated,
-      @required ValueString status,
       ValueString deliveryAddress,
+      ValueString orderNotes,
       FireCoordinates deliveryCoordinates}) = _$_Order;
 
   @override
@@ -548,11 +567,13 @@ abstract class _Order extends StoreOrder {
   @override
   ValueString get storeToken;
   @override
-  FireCoordinates get storeCoordinates;
+  ValueString get phoneNumber;
+  @override
+  ValueString get customerToken;
+  @override
+  ValueString get status;
   @override
   ValueString get storePhoneNumber;
-  @override
-  List<MenuItem> get menuItems;
   @override
   bool get payingByCash;
   @override
@@ -564,15 +585,15 @@ abstract class _Order extends StoreOrder {
   @override
   bool get isCompleted;
   @override
-  ValueString get phoneNumber;
+  FireCoordinates get storeCoordinates;
   @override
-  ValueString get customerToken;
+  List<MenuItem> get menuItems;
   @override
   Timestamp get dateCreated;
   @override
-  ValueString get status;
-  @override
   ValueString get deliveryAddress;
+  @override
+  ValueString get orderNotes;
   @override
   FireCoordinates get deliveryCoordinates;
   @override

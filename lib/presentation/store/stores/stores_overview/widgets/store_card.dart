@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:localy/domain/store/restaurant.dart';
-import 'package:localy/presentation/core/routes/manager_router.gr.dart';
+import 'package:localy/presentation/core/routes/router.gr.dart';
 
 class StoreCard extends StatelessWidget {
   final Restaurant store;

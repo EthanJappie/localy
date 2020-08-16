@@ -38,6 +38,7 @@ abstract class StoreOrderDTO implements _$StoreOrderDTO {
     @required @TimestampConverter() Timestamp dateCreated,
     @required String status,
     String deliveryAddress,
+    String orderNotes,
     @GeoPointConverters() GeoFirePoint deliveryCoordinates,
   }) = _StoreOrderDTO;
 
@@ -60,7 +61,8 @@ abstract class StoreOrderDTO implements _$StoreOrderDTO {
       foodDeliveriesChosen: order.foodDeliveriesChosen,
       isCompleted: order.isCompleted,
       phoneNumber: order.phoneNumber.getOrCrash(),
-      deliveryAddress: order.deliveryAddress.getOrCrash(),
+      deliveryAddress: order.deliveryAddress.value.fold((l) => "", (r) => r),
+      orderNotes: order.orderNotes.value.fold((l) => "", (r) => r),
       deliveryCoordinates: order.deliveryCoordinates.getOrCrash(),
       dateCreated: order.dateCreated,
       status: order.status.getOrCrash(),
@@ -87,6 +89,7 @@ abstract class StoreOrderDTO implements _$StoreOrderDTO {
       isCompleted: isCompleted,
       phoneNumber: ValueString.fromString(phoneNumber),
       deliveryAddress: ValueString.fromStringIgnoreEmpty(deliveryAddress),
+      orderNotes: ValueString.fromStringIgnoreEmpty(orderNotes),
       deliveryCoordinates: FireCoordinates.ignoreZeroCoordinates(deliveryCoordinates),
       dateCreated: dateCreated,
       status: ValueString.fromString(status),

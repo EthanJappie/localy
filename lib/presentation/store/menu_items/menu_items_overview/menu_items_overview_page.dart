@@ -5,7 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:localy/application/menu_item/menu_item_actor/menu_item_actor_bloc.dart';
 import 'package:localy/application/menu_item/menu_item_watcher/menu_item_watcher_bloc.dart';
 import 'package:localy/injection.dart';
-import 'package:localy/presentation/core/routes/manager_router.gr.dart';
+import 'package:localy/presentation/core/routes/router.gr.dart';
 import 'package:localy/presentation/store/menu_items/menu_items_overview/widgets/menu_items_overview_body_widget.dart';
 
 class MenuItemsOverviewPage extends StatelessWidget {

@@ -5,8 +5,7 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:localy/application/auth/auth_bloc.dart';
 import 'package:localy/environment_config.dart';
-import 'package:localy/presentation/core/routes/customer_router.gr.dart';
-import 'package:localy/presentation/core/routes/manager_router.gr.dart';
+import 'package:localy/presentation/core/routes/router.gr.dart';
 
 import '../../injection.dart';
 
@@ -35,7 +34,7 @@ class _AppWidgetState extends State<AppWidget> {
         title: 'Localy',
         debugShowCheckedModeBanner: false,
 //        navigatorObservers: <NavigatorObserver>[observer],
-        builder: ExtendedNavigator(router: _getRouter()),
+        builder: ExtendedNavigator(router: Router()),
         theme: ThemeData.light().copyWith(
           primaryColor: _getAppColor(),
           textTheme: GoogleFonts.montserratTextTheme(),
@@ -49,13 +48,6 @@ class _AppWidgetState extends State<AppWidget> {
     );
   }
 
-  RouterBase _getRouter() {
-    if (EnvironmentConfig.APP_NAME == EnvironmentConfig.APP_NAME_LOCALY_MANAGER) {
-      return ManagerRouter();
-    } else {
-      return CustomerRouter();
-    }
-  }
 
   Color _getAppColor() {
     if (EnvironmentConfig.APP_NAME == EnvironmentConfig.APP_NAME_LOCALY_MANAGER) {

@@ -4,7 +4,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:geoflutterfire/geoflutterfire.dart';
 import 'package:localy/domain/store/restaurant.dart';
-import 'package:localy/presentation/core/routes/customer_router.gr.dart';
+import 'package:localy/presentation/core/routes/router.gr.dart';
 
 class CustomerStoreCard extends StatelessWidget {
   final Restaurant store;

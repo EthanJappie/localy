@@ -13,6 +13,10 @@ import '../../../domain/menu/menu.dart';
 import '../../../domain/menu_item/menu_item.dart';
 import '../../../domain/order/order.dart';
 import '../../../domain/store/restaurant.dart';
+import '../../customer/checkout/checkout_page.dart';
+import '../../customer/customer_home/customer_home_page.dart';
+import '../../customer/customer_view_order/customer_view_order_page.dart';
+import '../../customer/store_detail/store_detail_page.dart';
 import '../../profile/profile_page.dart';
 import '../../store/active_orders/active_orders_page.dart';
 import '../../store/administration/administration_page.dart';
@@ -31,38 +35,46 @@ import '../pages/register/register_page.dart';
 import '../pages/sign_in/sign_in_page.dart';
 import '../pages/splash/splash_page.dart';
 
-class ManagerRoute {
+class Routes {
   static const String splashPage = '/';
-  static const String signInPage = '/sign-in-page';
-  static const String registerPage = '/register-page';
+  static const String activeOrdersPage = '/active-orders-page';
+  static const String administrationPage = '/administration-page';
+  static const String checkoutPage = '/checkout-page';
+  static const String customerHomePage = '/customer-home-page';
+  static const String customerViewOrderPage = '/customer-view-order-page';
   static const String forgetPasswordPage = '/forget-password-page';
   static const String homePage = '/home-page';
-  static const String storesOverviewPage = '/stores-overview-page';
-  static const String profilePage = '/profile-page';
-  static const String staffAccessPage = '/staff-access-page';
-  static const String administrationPage = '/administration-page';
-  static const String menuBuilderOverviewPage = '/menu-builder-overview-page';
-  static const String activeOrdersPage = '/active-orders-page';
   static const String inactiveOrdersPage = '/inactive-orders-page';
+  static const String menuBuilderOverviewPage = '/menu-builder-overview-page';
   static const String menuItemsOverviewPage = '/menu-items-overview-page';
+  static const String profilePage = '/profile-page';
+  static const String registerPage = '/register-page';
+  static const String signInPage = '/sign-in-page';
+  static const String staffAccessPage = '/staff-access-page';
+  static const String storeDetailPage = '/store-detail-page';
+  static const String storesOverviewPage = '/stores-overview-page';
   static const String viewOrderPage = '/view-order-page';
   static const String menuItemsFormPage = '/menu-items-form-page';
   static const String menuBuilderFormPage = '/menu-builder-form-page';
   static const String storeFormPage = '/store-form-page';
   static const all = <String>{
     splashPage,
-    signInPage,
-    registerPage,
+    activeOrdersPage,
+    administrationPage,
+    checkoutPage,
+    customerHomePage,
+    customerViewOrderPage,
     forgetPasswordPage,
     homePage,
-    storesOverviewPage,
-    profilePage,
-    staffAccessPage,
-    administrationPage,
-    menuBuilderOverviewPage,
-    activeOrdersPage,
     inactiveOrdersPage,
+    menuBuilderOverviewPage,
     menuItemsOverviewPage,
+    profilePage,
+    registerPage,
+    signInPage,
+    staffAccessPage,
+    storeDetailPage,
+    storesOverviewPage,
     viewOrderPage,
     menuItemsFormPage,
     menuBuilderFormPage,
@@ -70,28 +82,31 @@ class ManagerRoute {
   };
 }
 
-class ManagerRouter extends RouterBase {
+class Router extends RouterBase {
   @override
   List<RouteDef> get routes => _routes;
   final _routes = <RouteDef>[
-    RouteDef(ManagerRoute.splashPage, page: SplashPage),
-    RouteDef(ManagerRoute.signInPage, page: SignInPage),
-    RouteDef(ManagerRoute.registerPage, page: RegisterPage),
-    RouteDef(ManagerRoute.forgetPasswordPage, page: ForgetPasswordPage),
-    RouteDef(ManagerRoute.homePage, page: HomePage),
-    RouteDef(ManagerRoute.storesOverviewPage, page: StoresOverviewPage),
-    RouteDef(ManagerRoute.profilePage, page: ProfilePage),
-    RouteDef(ManagerRoute.staffAccessPage, page: StaffAccessPage),
-    RouteDef(ManagerRoute.administrationPage, page: AdministrationPage),
-    RouteDef(ManagerRoute.menuBuilderOverviewPage,
-        page: MenuBuilderOverviewPage),
-    RouteDef(ManagerRoute.activeOrdersPage, page: ActiveOrdersPage),
-    RouteDef(ManagerRoute.inactiveOrdersPage, page: InactiveOrdersPage),
-    RouteDef(ManagerRoute.menuItemsOverviewPage, page: MenuItemsOverviewPage),
-    RouteDef(ManagerRoute.viewOrderPage, page: ViewOrderPage),
-    RouteDef(ManagerRoute.menuItemsFormPage, page: MenuItemsFormPage),
-    RouteDef(ManagerRoute.menuBuilderFormPage, page: MenuBuilderFormPage),
-    RouteDef(ManagerRoute.storeFormPage, page: StoreFormPage),
+    RouteDef(Routes.splashPage, page: SplashPage),
+    RouteDef(Routes.activeOrdersPage, page: ActiveOrdersPage),
+    RouteDef(Routes.administrationPage, page: AdministrationPage),
+    RouteDef(Routes.checkoutPage, page: CheckoutPage),
+    RouteDef(Routes.customerHomePage, page: CustomerHomePage),
+    RouteDef(Routes.customerViewOrderPage, page: CustomerViewOrderPage),
+    RouteDef(Routes.forgetPasswordPage, page: ForgetPasswordPage),
+    RouteDef(Routes.homePage, page: HomePage),
+    RouteDef(Routes.inactiveOrdersPage, page: InactiveOrdersPage),
+    RouteDef(Routes.menuBuilderOverviewPage, page: MenuBuilderOverviewPage),
+    RouteDef(Routes.menuItemsOverviewPage, page: MenuItemsOverviewPage),
+    RouteDef(Routes.profilePage, page: ProfilePage),
+    RouteDef(Routes.registerPage, page: RegisterPage),
+    RouteDef(Routes.signInPage, page: SignInPage),
+    RouteDef(Routes.staffAccessPage, page: StaffAccessPage),
+    RouteDef(Routes.storeDetailPage, page: StoreDetailPage),
+    RouteDef(Routes.storesOverviewPage, page: StoresOverviewPage),
+    RouteDef(Routes.viewOrderPage, page: ViewOrderPage),
+    RouteDef(Routes.menuItemsFormPage, page: MenuItemsFormPage),
+    RouteDef(Routes.menuBuilderFormPage, page: MenuBuilderFormPage),
+    RouteDef(Routes.storeFormPage, page: StoreFormPage),
   ];
   @override
   Map<Type, AutoRouteFactory> get pagesMap => _pagesMap;
@@ -102,15 +117,53 @@ class ManagerRouter extends RouterBase {
         settings: data,
       );
     },
-    SignInPage: (data) {
+    ActiveOrdersPage: (data) {
+      final args = data.getArgs<ActiveOrdersPageArguments>(nullOk: false);
       return MaterialPageRoute<dynamic>(
-        builder: (context) => SignInPage(),
+        builder: (context) => ActiveOrdersPage(
+          key: args.key,
+          storeID: args.storeID,
+        ),
         settings: data,
       );
     },
-    RegisterPage: (data) {
+    AdministrationPage: (data) {
+      final args = data.getArgs<AdministrationPageArguments>(nullOk: false);
       return MaterialPageRoute<dynamic>(
-        builder: (context) => RegisterPage(),
+        builder: (context) => AdministrationPage(
+          key: args.key,
+          store: args.store,
+        ),
+        settings: data,
+      );
+    },
+    CheckoutPage: (data) {
+      final args = data.getArgs<CheckoutPageArguments>(
+        orElse: () => CheckoutPageArguments(),
+      );
+      return MaterialPageRoute<dynamic>(
+        builder: (context) => CheckoutPage(
+          key: args.key,
+          blocContext: args.blocContext,
+        ),
+        settings: data,
+      );
+    },
+    CustomerHomePage: (data) {
+      return MaterialPageRoute<dynamic>(
+        builder: (context) => CustomerHomePage().wrappedRoute(context),
+        settings: data,
+      );
+    },
+    CustomerViewOrderPage: (data) {
+      final args = data.getArgs<CustomerViewOrderPageArguments>(
+        orElse: () => CustomerViewOrderPageArguments(),
+      );
+      return MaterialPageRoute<dynamic>(
+        builder: (context) => CustomerViewOrderPage(
+          key: args.key,
+          order: args.order,
+        ),
         settings: data,
       );
     },
@@ -126,30 +179,12 @@ class ManagerRouter extends RouterBase {
         settings: data,
       );
     },
-    StoresOverviewPage: (data) {
+    InactiveOrdersPage: (data) {
+      final args = data.getArgs<InactiveOrdersPageArguments>(nullOk: false);
       return MaterialPageRoute<dynamic>(
-        builder: (context) => StoresOverviewPage(),
-        settings: data,
-      );
-    },
-    ProfilePage: (data) {
-      return MaterialPageRoute<dynamic>(
-        builder: (context) => ProfilePage(),
-        settings: data,
-      );
-    },
-    StaffAccessPage: (data) {
-      return MaterialPageRoute<dynamic>(
-        builder: (context) => StaffAccessPage(),
-        settings: data,
-      );
-    },
-    AdministrationPage: (data) {
-      final args = data.getArgs<AdministrationPageArguments>(nullOk: false);
-      return MaterialPageRoute<dynamic>(
-        builder: (context) => AdministrationPage(
+        builder: (context) => InactiveOrdersPage(
           key: args.key,
-          store: args.store,
+          storeID: args.storeID,
         ),
         settings: data,
       );
@@ -165,26 +200,6 @@ class ManagerRouter extends RouterBase {
         settings: data,
       );
     },
-    ActiveOrdersPage: (data) {
-      final args = data.getArgs<ActiveOrdersPageArguments>(nullOk: false);
-      return MaterialPageRoute<dynamic>(
-        builder: (context) => ActiveOrdersPage(
-          key: args.key,
-          storeID: args.storeID,
-        ),
-        settings: data,
-      );
-    },
-    InactiveOrdersPage: (data) {
-      final args = data.getArgs<InactiveOrdersPageArguments>(nullOk: false);
-      return MaterialPageRoute<dynamic>(
-        builder: (context) => InactiveOrdersPage(
-          key: args.key,
-          storeID: args.storeID,
-        ),
-        settings: data,
-      );
-    },
     MenuItemsOverviewPage: (data) {
       final args = data.getArgs<MenuItemsOverviewPageArguments>(nullOk: false);
       return MaterialPageRoute<dynamic>(
@@ -192,6 +207,48 @@ class ManagerRouter extends RouterBase {
           key: args.key,
           menuID: args.menuID,
         ),
+        settings: data,
+      );
+    },
+    ProfilePage: (data) {
+      return MaterialPageRoute<dynamic>(
+        builder: (context) => ProfilePage(),
+        settings: data,
+      );
+    },
+    RegisterPage: (data) {
+      return MaterialPageRoute<dynamic>(
+        builder: (context) => RegisterPage(),
+        settings: data,
+      );
+    },
+    SignInPage: (data) {
+      return MaterialPageRoute<dynamic>(
+        builder: (context) => SignInPage(),
+        settings: data,
+      );
+    },
+    StaffAccessPage: (data) {
+      return MaterialPageRoute<dynamic>(
+        builder: (context) => StaffAccessPage(),
+        settings: data,
+      );
+    },
+    StoreDetailPage: (data) {
+      final args = data.getArgs<StoreDetailPageArguments>(
+        orElse: () => StoreDetailPageArguments(),
+      );
+      return MaterialPageRoute<dynamic>(
+        builder: (context) => StoreDetailPage(
+          key: args.key,
+          store: args.store,
+        ),
+        settings: data,
+      );
+    },
+    StoresOverviewPage: (data) {
+      return MaterialPageRoute<dynamic>(
+        builder: (context) => StoresOverviewPage(),
         settings: data,
       );
     },
@@ -249,34 +306,60 @@ class ManagerRouter extends RouterBase {
 /// Navigation helper methods extension
 /// *************************************************************************
 
-extension ManagerRouterExtendedNavigatorStateX on ExtendedNavigatorState {
-  Future<dynamic> pushSplashPage() => push<dynamic>(ManagerRoute.splashPage);
+extension RouterExtendedNavigatorStateX on ExtendedNavigatorState {
+  Future<dynamic> pushSplashPage() => push<dynamic>(Routes.splashPage);
 
-  Future<dynamic> pushSignInPage() => push<dynamic>(ManagerRoute.signInPage);
-
-  Future<dynamic> pushRegisterPage() =>
-      push<dynamic>(ManagerRoute.registerPage);
-
-  Future<dynamic> pushForgetPasswordPage() =>
-      push<dynamic>(ManagerRoute.forgetPasswordPage);
-
-  Future<dynamic> pushHomePage() => push<dynamic>(ManagerRoute.homePage);
-
-  Future<dynamic> pushStoresOverviewPage() =>
-      push<dynamic>(ManagerRoute.storesOverviewPage);
-
-  Future<dynamic> pushProfilePage() => push<dynamic>(ManagerRoute.profilePage);
-
-  Future<dynamic> pushStaffAccessPage() =>
-      push<dynamic>(ManagerRoute.staffAccessPage);
+  Future<dynamic> pushActiveOrdersPage({
+    Key key,
+    @required String storeID,
+  }) =>
+      push<dynamic>(
+        Routes.activeOrdersPage,
+        arguments: ActiveOrdersPageArguments(key: key, storeID: storeID),
+      );
 
   Future<dynamic> pushAdministrationPage({
     Key key,
     @required Restaurant store,
   }) =>
       push<dynamic>(
-        ManagerRoute.administrationPage,
+        Routes.administrationPage,
         arguments: AdministrationPageArguments(key: key, store: store),
+      );
+
+  Future<dynamic> pushCheckoutPage({
+    Key key,
+    BuildContext blocContext,
+  }) =>
+      push<dynamic>(
+        Routes.checkoutPage,
+        arguments: CheckoutPageArguments(key: key, blocContext: blocContext),
+      );
+
+  Future<dynamic> pushCustomerHomePage() =>
+      push<dynamic>(Routes.customerHomePage);
+
+  Future<dynamic> pushCustomerViewOrderPage({
+    Key key,
+    StoreOrder order,
+  }) =>
+      push<dynamic>(
+        Routes.customerViewOrderPage,
+        arguments: CustomerViewOrderPageArguments(key: key, order: order),
+      );
+
+  Future<dynamic> pushForgetPasswordPage() =>
+      push<dynamic>(Routes.forgetPasswordPage);
+
+  Future<dynamic> pushHomePage() => push<dynamic>(Routes.homePage);
+
+  Future<dynamic> pushInactiveOrdersPage({
+    Key key,
+    @required String storeID,
+  }) =>
+      push<dynamic>(
+        Routes.inactiveOrdersPage,
+        arguments: InactiveOrdersPageArguments(key: key, storeID: storeID),
       );
 
   Future<dynamic> pushMenuBuilderOverviewPage({
@@ -284,26 +367,8 @@ extension ManagerRouterExtendedNavigatorStateX on ExtendedNavigatorState {
     @required String storeID,
   }) =>
       push<dynamic>(
-        ManagerRoute.menuBuilderOverviewPage,
+        Routes.menuBuilderOverviewPage,
         arguments: MenuBuilderOverviewPageArguments(key: key, storeID: storeID),
-      );
-
-  Future<dynamic> pushActiveOrdersPage({
-    Key key,
-    @required String storeID,
-  }) =>
-      push<dynamic>(
-        ManagerRoute.activeOrdersPage,
-        arguments: ActiveOrdersPageArguments(key: key, storeID: storeID),
-      );
-
-  Future<dynamic> pushInactiveOrdersPage({
-    Key key,
-    @required String storeID,
-  }) =>
-      push<dynamic>(
-        ManagerRoute.inactiveOrdersPage,
-        arguments: InactiveOrdersPageArguments(key: key, storeID: storeID),
       );
 
   Future<dynamic> pushMenuItemsOverviewPage({
@@ -311,16 +376,37 @@ extension ManagerRouterExtendedNavigatorStateX on ExtendedNavigatorState {
     @required String menuID,
   }) =>
       push<dynamic>(
-        ManagerRoute.menuItemsOverviewPage,
+        Routes.menuItemsOverviewPage,
         arguments: MenuItemsOverviewPageArguments(key: key, menuID: menuID),
       );
+
+  Future<dynamic> pushProfilePage() => push<dynamic>(Routes.profilePage);
+
+  Future<dynamic> pushRegisterPage() => push<dynamic>(Routes.registerPage);
+
+  Future<dynamic> pushSignInPage() => push<dynamic>(Routes.signInPage);
+
+  Future<dynamic> pushStaffAccessPage() =>
+      push<dynamic>(Routes.staffAccessPage);
+
+  Future<dynamic> pushStoreDetailPage({
+    Key key,
+    Restaurant store,
+  }) =>
+      push<dynamic>(
+        Routes.storeDetailPage,
+        arguments: StoreDetailPageArguments(key: key, store: store),
+      );
+
+  Future<dynamic> pushStoresOverviewPage() =>
+      push<dynamic>(Routes.storesOverviewPage);
 
   Future<dynamic> pushViewOrderPage({
     Key key,
     StoreOrder order,
   }) =>
       push<dynamic>(
-        ManagerRoute.viewOrderPage,
+        Routes.viewOrderPage,
         arguments: ViewOrderPageArguments(key: key, order: order),
       );
 
@@ -330,7 +416,7 @@ extension ManagerRouterExtendedNavigatorStateX on ExtendedNavigatorState {
     @required String menuID,
   }) =>
       push<dynamic>(
-        ManagerRoute.menuItemsFormPage,
+        Routes.menuItemsFormPage,
         arguments: MenuItemsFormPageArguments(
             key: key, editedMenuItem: editedMenuItem, menuID: menuID),
       );
@@ -341,7 +427,7 @@ extension ManagerRouterExtendedNavigatorStateX on ExtendedNavigatorState {
     @required String storeID,
   }) =>
       push<dynamic>(
-        ManagerRoute.menuBuilderFormPage,
+        Routes.menuBuilderFormPage,
         arguments: MenuBuilderFormPageArguments(
             key: key, editedMenu: editedMenu, storeID: storeID),
       );
@@ -351,7 +437,7 @@ extension ManagerRouterExtendedNavigatorStateX on ExtendedNavigatorState {
     @required Restaurant editedStore,
   }) =>
       push<dynamic>(
-        ManagerRoute.storeFormPage,
+        Routes.storeFormPage,
         arguments: StoreFormPageArguments(key: key, editedStore: editedStore),
       );
 }
@@ -360,6 +446,13 @@ extension ManagerRouterExtendedNavigatorStateX on ExtendedNavigatorState {
 /// Arguments holder classes
 /// *************************************************************************
 
+/// ActiveOrdersPage arguments holder class
+class ActiveOrdersPageArguments {
+  final Key key;
+  final String storeID;
+  ActiveOrdersPageArguments({this.key, @required this.storeID});
+}
+
 /// AdministrationPage arguments holder class
 class AdministrationPageArguments {
   final Key key;
@@ -367,18 +460,18 @@ class AdministrationPageArguments {
   AdministrationPageArguments({this.key, @required this.store});
 }
 
-/// MenuBuilderOverviewPage arguments holder class
-class MenuBuilderOverviewPageArguments {
+/// CheckoutPage arguments holder class
+class CheckoutPageArguments {
   final Key key;
-  final String storeID;
-  MenuBuilderOverviewPageArguments({this.key, @required this.storeID});
+  final BuildContext blocContext;
+  CheckoutPageArguments({this.key, this.blocContext});
 }
 
-/// ActiveOrdersPage arguments holder class
-class ActiveOrdersPageArguments {
+/// CustomerViewOrderPage arguments holder class
+class CustomerViewOrderPageArguments {
   final Key key;
-  final String storeID;
-  ActiveOrdersPageArguments({this.key, @required this.storeID});
+  final StoreOrder order;
+  CustomerViewOrderPageArguments({this.key, this.order});
 }
 
 /// InactiveOrdersPage arguments holder class
@@ -388,11 +481,25 @@ class InactiveOrdersPageArguments {
   InactiveOrdersPageArguments({this.key, @required this.storeID});
 }
 
+/// MenuBuilderOverviewPage arguments holder class
+class MenuBuilderOverviewPageArguments {
+  final Key key;
+  final String storeID;
+  MenuBuilderOverviewPageArguments({this.key, @required this.storeID});
+}
+
 /// MenuItemsOverviewPage arguments holder class
 class MenuItemsOverviewPageArguments {
   final Key key;
   final String menuID;
   MenuItemsOverviewPageArguments({this.key, @required this.menuID});
+}
+
+/// StoreDetailPage arguments holder class
+class StoreDetailPageArguments {
+  final Key key;
+  final Restaurant store;
+  StoreDetailPageArguments({this.key, this.store});
 }
 
 /// ViewOrderPage arguments holder class

@@ -12,7 +12,7 @@ import 'package:localy/presentation/core/pages/menu_builder/menu_builder_form_pa
 import 'package:localy/presentation/core/pages/menu_builder/menu_builder_form_page/widgets/menu_name_field.dart';
 import 'package:localy/presentation/core/pages/menu_builder/menu_builder_form_page/widgets/menu_notes_field.dart';
 import 'package:localy/presentation/core/pages/menu_builder/menu_builder_form_page/widgets/menu_sequence_field.dart';
-import 'package:localy/presentation/core/routes/manager_router.gr.dart';
+import 'package:localy/presentation/core/routes/router.gr.dart';
 import 'package:localy/presentation/core/widgets/localy_button.dart';
 
 class MenuBuilderFormPage extends StatelessWidget {
@@ -66,7 +66,7 @@ class MenuBuilderFormPage extends StatelessWidget {
                   // Can't be just a simple pop. If another route (like a Flushbar) is on top of stack, we'll need to pop even that to get to
                   // the overview page.
                   ExtendedNavigator.of(context).popUntil((route) =>
-                      route.settings.name == ManagerRoute.administrationPage);
+                      route.settings.name == Routes.administrationPage);
                 },
               );
             },

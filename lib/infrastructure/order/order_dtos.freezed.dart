@@ -37,6 +37,7 @@ class _$StoreOrderDTOTearOff {
       @required @TimestampConverter() Timestamp dateCreated,
       @required String status,
       String deliveryAddress,
+      String orderNotes,
       @GeoPointConverters() GeoFirePoint deliveryCoordinates}) {
     return _StoreOrderDTO(
       id: id,
@@ -59,6 +60,7 @@ class _$StoreOrderDTOTearOff {
       dateCreated: dateCreated,
       status: status,
       deliveryAddress: deliveryAddress,
+      orderNotes: orderNotes,
       deliveryCoordinates: deliveryCoordinates,
     );
   }
@@ -92,6 +94,7 @@ mixin _$StoreOrderDTO {
   Timestamp get dateCreated;
   String get status;
   String get deliveryAddress;
+  String get orderNotes;
   @GeoPointConverters()
   GeoFirePoint get deliveryCoordinates;
 
@@ -124,6 +127,7 @@ abstract class $StoreOrderDTOCopyWith<$Res> {
       @TimestampConverter() Timestamp dateCreated,
       String status,
       String deliveryAddress,
+      String orderNotes,
       @GeoPointConverters() GeoFirePoint deliveryCoordinates});
 }
 
@@ -157,6 +161,7 @@ class _$StoreOrderDTOCopyWithImpl<$Res>
     Object dateCreated = freezed,
     Object status = freezed,
     Object deliveryAddress = freezed,
+    Object orderNotes = freezed,
     Object deliveryCoordinates = freezed,
   }) {
     return _then(_value.copyWith(
@@ -206,6 +211,8 @@ class _$StoreOrderDTOCopyWithImpl<$Res>
       deliveryAddress: deliveryAddress == freezed
           ? _value.deliveryAddress
           : deliveryAddress as String,
+      orderNotes:
+          orderNotes == freezed ? _value.orderNotes : orderNotes as String,
       deliveryCoordinates: deliveryCoordinates == freezed
           ? _value.deliveryCoordinates
           : deliveryCoordinates as GeoFirePoint,
@@ -240,6 +247,7 @@ abstract class _$StoreOrderDTOCopyWith<$Res>
       @TimestampConverter() Timestamp dateCreated,
       String status,
       String deliveryAddress,
+      String orderNotes,
       @GeoPointConverters() GeoFirePoint deliveryCoordinates});
 }
 
@@ -275,6 +283,7 @@ class __$StoreOrderDTOCopyWithImpl<$Res>
     Object dateCreated = freezed,
     Object status = freezed,
     Object deliveryAddress = freezed,
+    Object orderNotes = freezed,
     Object deliveryCoordinates = freezed,
   }) {
     return _then(_StoreOrderDTO(
@@ -324,6 +333,8 @@ class __$StoreOrderDTOCopyWithImpl<$Res>
       deliveryAddress: deliveryAddress == freezed
           ? _value.deliveryAddress
           : deliveryAddress as String,
+      orderNotes:
+          orderNotes == freezed ? _value.orderNotes : orderNotes as String,
       deliveryCoordinates: deliveryCoordinates == freezed
           ? _value.deliveryCoordinates
           : deliveryCoordinates as GeoFirePoint,
@@ -354,6 +365,7 @@ class _$_StoreOrderDTO extends _StoreOrderDTO {
       @required @TimestampConverter() this.dateCreated,
       @required this.status,
       this.deliveryAddress,
+      this.orderNotes,
       @GeoPointConverters() this.deliveryCoordinates})
       : assert(customerID != null),
         assert(storeID != null),
@@ -423,12 +435,14 @@ class _$_StoreOrderDTO extends _StoreOrderDTO {
   @override
   final String deliveryAddress;
   @override
+  final String orderNotes;
+  @override
   @GeoPointConverters()
   final GeoFirePoint deliveryCoordinates;
 
   @override
   String toString() {
-    return 'StoreOrderDTO(id: $id, customerID: $customerID, storeID: $storeID, storeOwnerID: $storeOwnerID, storeName: $storeName, storeAddress: $storeAddress, storeToken: $storeToken, storeCoordinates: $storeCoordinates, storePhoneNumber: $storePhoneNumber, customerToken: $customerToken, menuItems: $menuItems, payingByCash: $payingByCash, payingByCard: $payingByCard, payingByOther: $payingByOther, foodDeliveriesChosen: $foodDeliveriesChosen, isCompleted: $isCompleted, phoneNumber: $phoneNumber, dateCreated: $dateCreated, status: $status, deliveryAddress: $deliveryAddress, deliveryCoordinates: $deliveryCoordinates)';
+    return 'StoreOrderDTO(id: $id, customerID: $customerID, storeID: $storeID, storeOwnerID: $storeOwnerID, storeName: $storeName, storeAddress: $storeAddress, storeToken: $storeToken, storeCoordinates: $storeCoordinates, storePhoneNumber: $storePhoneNumber, customerToken: $customerToken, menuItems: $menuItems, payingByCash: $payingByCash, payingByCard: $payingByCard, payingByOther: $payingByOther, foodDeliveriesChosen: $foodDeliveriesChosen, isCompleted: $isCompleted, phoneNumber: $phoneNumber, dateCreated: $dateCreated, status: $status, deliveryAddress: $deliveryAddress, orderNotes: $orderNotes, deliveryCoordinates: $deliveryCoordinates)';
   }
 
   @override
@@ -493,6 +507,9 @@ class _$_StoreOrderDTO extends _StoreOrderDTO {
             (identical(other.deliveryAddress, deliveryAddress) ||
                 const DeepCollectionEquality()
                     .equals(other.deliveryAddress, deliveryAddress)) &&
+            (identical(other.orderNotes, orderNotes) ||
+                const DeepCollectionEquality()
+                    .equals(other.orderNotes, orderNotes)) &&
             (identical(other.deliveryCoordinates, deliveryCoordinates) ||
                 const DeepCollectionEquality()
                     .equals(other.deliveryCoordinates, deliveryCoordinates)));
@@ -521,6 +538,7 @@ class _$_StoreOrderDTO extends _StoreOrderDTO {
       const DeepCollectionEquality().hash(dateCreated) ^
       const DeepCollectionEquality().hash(status) ^
       const DeepCollectionEquality().hash(deliveryAddress) ^
+      const DeepCollectionEquality().hash(orderNotes) ^
       const DeepCollectionEquality().hash(deliveryCoordinates);
 
   @override
@@ -556,6 +574,7 @@ abstract class _StoreOrderDTO extends StoreOrderDTO {
           @required @TimestampConverter() Timestamp dateCreated,
           @required String status,
           String deliveryAddress,
+          String orderNotes,
           @GeoPointConverters() GeoFirePoint deliveryCoordinates}) =
       _$_StoreOrderDTO;
 
@@ -606,6 +625,8 @@ abstract class _StoreOrderDTO extends StoreOrderDTO {
   String get status;
   @override
   String get deliveryAddress;
+  @override
+  String get orderNotes;
   @override
   @GeoPointConverters()
   GeoFirePoint get deliveryCoordinates;

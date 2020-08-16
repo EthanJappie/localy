@@ -5,6 +5,10 @@ import 'package:localy/presentation/core/pages/menu_builder/menu_builder_overvie
 import 'package:localy/presentation/core/pages/register/register_page.dart';
 import 'package:localy/presentation/core/pages/sign_in/sign_in_page.dart';
 import 'package:localy/presentation/core/pages/splash/splash_page.dart';
+import 'package:localy/presentation/customer/checkout/checkout_page.dart';
+import 'package:localy/presentation/customer/customer_home/customer_home_page.dart';
+import 'package:localy/presentation/customer/customer_view_order/customer_view_order_page.dart';
+import 'package:localy/presentation/customer/store_detail/store_detail_page.dart';
 import 'package:localy/presentation/profile/profile_page.dart';
 import 'package:localy/presentation/store/active_orders/active_orders_page.dart';
 import 'package:localy/presentation/store/administration/administration_page.dart';
@@ -18,25 +22,28 @@ import 'package:localy/presentation/store/stores/stores_overview/stores_over_vie
 import 'package:localy/presentation/store/view_order/view_order_page.dart';
 
 @MaterialAutoRouter(
-    routesClassName: "ManagerRoute",
     generateNavigationHelperExtension: true,
     routes: <AutoRoute>[
       MaterialRoute(page: SplashPage, initial: true),
-      MaterialRoute(page: SignInPage),
-      MaterialRoute(page: RegisterPage),
+      MaterialRoute(page: ActiveOrdersPage),
+      MaterialRoute(page: AdministrationPage),
+      MaterialRoute(page: CheckoutPage),
+      MaterialRoute(page: CustomerHomePage),
+      MaterialRoute(page: CustomerViewOrderPage),
       MaterialRoute(page: ForgetPasswordPage),
       MaterialRoute(page: HomePage),
-      MaterialRoute(page: StoresOverviewPage),
-      MaterialRoute(page: ProfilePage),
-      MaterialRoute(page: StaffAccessPage),
-      MaterialRoute(page: AdministrationPage),
-      MaterialRoute(page: MenuBuilderOverviewPage),
-      MaterialRoute(page: ActiveOrdersPage),
       MaterialRoute(page: InactiveOrdersPage),
+      MaterialRoute(page: MenuBuilderOverviewPage),
       MaterialRoute(page: MenuItemsOverviewPage),
+      MaterialRoute(page: ProfilePage),
+      MaterialRoute(page: RegisterPage),
+      MaterialRoute(page: SignInPage),
+      MaterialRoute(page: StaffAccessPage),
+      MaterialRoute(page: StoreDetailPage),
+      MaterialRoute(page: StoresOverviewPage),
       MaterialRoute(page: ViewOrderPage),
       MaterialRoute(page: MenuItemsFormPage, fullscreenDialog: true),
       MaterialRoute(page: MenuBuilderFormPage, fullscreenDialog: true),
       MaterialRoute(page: StoreFormPage, fullscreenDialog: true),
     ])
-class $ManagerRouter {}
+class $Router {}

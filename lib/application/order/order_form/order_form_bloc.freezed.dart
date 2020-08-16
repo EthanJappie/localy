@@ -70,6 +70,13 @@ class _$OrderFormEventTearOff {
   }
 
 // ignore: unused_element
+  _AddedNote addedNote(String note) {
+    return _AddedNote(
+      note,
+    );
+  }
+
+// ignore: unused_element
   _CustomerAddedDeliveryAddress customerAddedDeliveryAddress(
       String customerAddress) {
     return _CustomerAddedDeliveryAddress(
@@ -120,6 +127,7 @@ mixin _$OrderFormEvent {
     @required Result payedByOther(bool payedByOther),
     @required Result foodDeliveryChosen(bool foodDeliveryChosen),
     @required Result customerAddedPhoneNumber(String customerPhoneNumber),
+    @required Result addedNote(String note),
     @required Result customerAddedDeliveryAddress(String customerAddress),
     @required
         Result customerAddedDeliveryCoordinates(
@@ -138,6 +146,7 @@ mixin _$OrderFormEvent {
     Result payedByOther(bool payedByOther),
     Result foodDeliveryChosen(bool foodDeliveryChosen),
     Result customerAddedPhoneNumber(String customerPhoneNumber),
+    Result addedNote(String note),
     Result customerAddedDeliveryAddress(String customerAddress),
     Result customerAddedDeliveryCoordinates(GeoFirePoint customerCoordinates),
     Result deletedItem(MenuItem menuItem),
@@ -155,6 +164,7 @@ mixin _$OrderFormEvent {
     @required Result payedByOther(_PayedByOther value),
     @required Result foodDeliveryChosen(_FoodDeliveryChosen value),
     @required Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    @required Result addedNote(_AddedNote value),
     @required
         Result customerAddedDeliveryAddress(
             _CustomerAddedDeliveryAddress value),
@@ -175,6 +185,7 @@ mixin _$OrderFormEvent {
     Result payedByOther(_PayedByOther value),
     Result foodDeliveryChosen(_FoodDeliveryChosen value),
     Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    Result addedNote(_AddedNote value),
     Result customerAddedDeliveryAddress(_CustomerAddedDeliveryAddress value),
     Result customerAddedDeliveryCoordinates(
         _CustomerAddedDeliveryCoordinates value),
@@ -270,6 +281,7 @@ class _$_Initialized implements _Initialized {
     @required Result payedByOther(bool payedByOther),
     @required Result foodDeliveryChosen(bool foodDeliveryChosen),
     @required Result customerAddedPhoneNumber(String customerPhoneNumber),
+    @required Result addedNote(String note),
     @required Result customerAddedDeliveryAddress(String customerAddress),
     @required
         Result customerAddedDeliveryCoordinates(
@@ -286,6 +298,7 @@ class _$_Initialized implements _Initialized {
     assert(payedByOther != null);
     assert(foodDeliveryChosen != null);
     assert(customerAddedPhoneNumber != null);
+    assert(addedNote != null);
     assert(customerAddedDeliveryAddress != null);
     assert(customerAddedDeliveryCoordinates != null);
     assert(deletedItem != null);
@@ -305,6 +318,7 @@ class _$_Initialized implements _Initialized {
     Result payedByOther(bool payedByOther),
     Result foodDeliveryChosen(bool foodDeliveryChosen),
     Result customerAddedPhoneNumber(String customerPhoneNumber),
+    Result addedNote(String note),
     Result customerAddedDeliveryAddress(String customerAddress),
     Result customerAddedDeliveryCoordinates(GeoFirePoint customerCoordinates),
     Result deletedItem(MenuItem menuItem),
@@ -330,6 +344,7 @@ class _$_Initialized implements _Initialized {
     @required Result payedByOther(_PayedByOther value),
     @required Result foodDeliveryChosen(_FoodDeliveryChosen value),
     @required Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    @required Result addedNote(_AddedNote value),
     @required
         Result customerAddedDeliveryAddress(
             _CustomerAddedDeliveryAddress value),
@@ -348,6 +363,7 @@ class _$_Initialized implements _Initialized {
     assert(payedByOther != null);
     assert(foodDeliveryChosen != null);
     assert(customerAddedPhoneNumber != null);
+    assert(addedNote != null);
     assert(customerAddedDeliveryAddress != null);
     assert(customerAddedDeliveryCoordinates != null);
     assert(deletedItem != null);
@@ -367,6 +383,7 @@ class _$_Initialized implements _Initialized {
     Result payedByOther(_PayedByOther value),
     Result foodDeliveryChosen(_FoodDeliveryChosen value),
     Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    Result addedNote(_AddedNote value),
     Result customerAddedDeliveryAddress(_CustomerAddedDeliveryAddress value),
     Result customerAddedDeliveryCoordinates(
         _CustomerAddedDeliveryCoordinates value),
@@ -466,6 +483,7 @@ class _$_AddItem implements _AddItem {
     @required Result payedByOther(bool payedByOther),
     @required Result foodDeliveryChosen(bool foodDeliveryChosen),
     @required Result customerAddedPhoneNumber(String customerPhoneNumber),
+    @required Result addedNote(String note),
     @required Result customerAddedDeliveryAddress(String customerAddress),
     @required
         Result customerAddedDeliveryCoordinates(
@@ -482,6 +500,7 @@ class _$_AddItem implements _AddItem {
     assert(payedByOther != null);
     assert(foodDeliveryChosen != null);
     assert(customerAddedPhoneNumber != null);
+    assert(addedNote != null);
     assert(customerAddedDeliveryAddress != null);
     assert(customerAddedDeliveryCoordinates != null);
     assert(deletedItem != null);
@@ -501,6 +520,7 @@ class _$_AddItem implements _AddItem {
     Result payedByOther(bool payedByOther),
     Result foodDeliveryChosen(bool foodDeliveryChosen),
     Result customerAddedPhoneNumber(String customerPhoneNumber),
+    Result addedNote(String note),
     Result customerAddedDeliveryAddress(String customerAddress),
     Result customerAddedDeliveryCoordinates(GeoFirePoint customerCoordinates),
     Result deletedItem(MenuItem menuItem),
@@ -526,6 +546,7 @@ class _$_AddItem implements _AddItem {
     @required Result payedByOther(_PayedByOther value),
     @required Result foodDeliveryChosen(_FoodDeliveryChosen value),
     @required Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    @required Result addedNote(_AddedNote value),
     @required
         Result customerAddedDeliveryAddress(
             _CustomerAddedDeliveryAddress value),
@@ -544,6 +565,7 @@ class _$_AddItem implements _AddItem {
     assert(payedByOther != null);
     assert(foodDeliveryChosen != null);
     assert(customerAddedPhoneNumber != null);
+    assert(addedNote != null);
     assert(customerAddedDeliveryAddress != null);
     assert(customerAddedDeliveryCoordinates != null);
     assert(deletedItem != null);
@@ -563,6 +585,7 @@ class _$_AddItem implements _AddItem {
     Result payedByOther(_PayedByOther value),
     Result foodDeliveryChosen(_FoodDeliveryChosen value),
     Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    Result addedNote(_AddedNote value),
     Result customerAddedDeliveryAddress(_CustomerAddedDeliveryAddress value),
     Result customerAddedDeliveryCoordinates(
         _CustomerAddedDeliveryCoordinates value),
@@ -660,6 +683,7 @@ class _$_AddStore implements _AddStore {
     @required Result payedByOther(bool payedByOther),
     @required Result foodDeliveryChosen(bool foodDeliveryChosen),
     @required Result customerAddedPhoneNumber(String customerPhoneNumber),
+    @required Result addedNote(String note),
     @required Result customerAddedDeliveryAddress(String customerAddress),
     @required
         Result customerAddedDeliveryCoordinates(
@@ -676,6 +700,7 @@ class _$_AddStore implements _AddStore {
     assert(payedByOther != null);
     assert(foodDeliveryChosen != null);
     assert(customerAddedPhoneNumber != null);
+    assert(addedNote != null);
     assert(customerAddedDeliveryAddress != null);
     assert(customerAddedDeliveryCoordinates != null);
     assert(deletedItem != null);
@@ -695,6 +720,7 @@ class _$_AddStore implements _AddStore {
     Result payedByOther(bool payedByOther),
     Result foodDeliveryChosen(bool foodDeliveryChosen),
     Result customerAddedPhoneNumber(String customerPhoneNumber),
+    Result addedNote(String note),
     Result customerAddedDeliveryAddress(String customerAddress),
     Result customerAddedDeliveryCoordinates(GeoFirePoint customerCoordinates),
     Result deletedItem(MenuItem menuItem),
@@ -720,6 +746,7 @@ class _$_AddStore implements _AddStore {
     @required Result payedByOther(_PayedByOther value),
     @required Result foodDeliveryChosen(_FoodDeliveryChosen value),
     @required Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    @required Result addedNote(_AddedNote value),
     @required
         Result customerAddedDeliveryAddress(
             _CustomerAddedDeliveryAddress value),
@@ -738,6 +765,7 @@ class _$_AddStore implements _AddStore {
     assert(payedByOther != null);
     assert(foodDeliveryChosen != null);
     assert(customerAddedPhoneNumber != null);
+    assert(addedNote != null);
     assert(customerAddedDeliveryAddress != null);
     assert(customerAddedDeliveryCoordinates != null);
     assert(deletedItem != null);
@@ -757,6 +785,7 @@ class _$_AddStore implements _AddStore {
     Result payedByOther(_PayedByOther value),
     Result foodDeliveryChosen(_FoodDeliveryChosen value),
     Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    Result addedNote(_AddedNote value),
     Result customerAddedDeliveryAddress(_CustomerAddedDeliveryAddress value),
     Result customerAddedDeliveryCoordinates(
         _CustomerAddedDeliveryCoordinates value),
@@ -847,6 +876,7 @@ class _$_PayedByCash implements _PayedByCash {
     @required Result payedByOther(bool payedByOther),
     @required Result foodDeliveryChosen(bool foodDeliveryChosen),
     @required Result customerAddedPhoneNumber(String customerPhoneNumber),
+    @required Result addedNote(String note),
     @required Result customerAddedDeliveryAddress(String customerAddress),
     @required
         Result customerAddedDeliveryCoordinates(
@@ -863,6 +893,7 @@ class _$_PayedByCash implements _PayedByCash {
     assert(payedByOther != null);
     assert(foodDeliveryChosen != null);
     assert(customerAddedPhoneNumber != null);
+    assert(addedNote != null);
     assert(customerAddedDeliveryAddress != null);
     assert(customerAddedDeliveryCoordinates != null);
     assert(deletedItem != null);
@@ -882,6 +913,7 @@ class _$_PayedByCash implements _PayedByCash {
     Result payedByOther(bool payedByOther),
     Result foodDeliveryChosen(bool foodDeliveryChosen),
     Result customerAddedPhoneNumber(String customerPhoneNumber),
+    Result addedNote(String note),
     Result customerAddedDeliveryAddress(String customerAddress),
     Result customerAddedDeliveryCoordinates(GeoFirePoint customerCoordinates),
     Result deletedItem(MenuItem menuItem),
@@ -907,6 +939,7 @@ class _$_PayedByCash implements _PayedByCash {
     @required Result payedByOther(_PayedByOther value),
     @required Result foodDeliveryChosen(_FoodDeliveryChosen value),
     @required Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    @required Result addedNote(_AddedNote value),
     @required
         Result customerAddedDeliveryAddress(
             _CustomerAddedDeliveryAddress value),
@@ -925,6 +958,7 @@ class _$_PayedByCash implements _PayedByCash {
     assert(payedByOther != null);
     assert(foodDeliveryChosen != null);
     assert(customerAddedPhoneNumber != null);
+    assert(addedNote != null);
     assert(customerAddedDeliveryAddress != null);
     assert(customerAddedDeliveryCoordinates != null);
     assert(deletedItem != null);
@@ -944,6 +978,7 @@ class _$_PayedByCash implements _PayedByCash {
     Result payedByOther(_PayedByOther value),
     Result foodDeliveryChosen(_FoodDeliveryChosen value),
     Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    Result addedNote(_AddedNote value),
     Result customerAddedDeliveryAddress(_CustomerAddedDeliveryAddress value),
     Result customerAddedDeliveryCoordinates(
         _CustomerAddedDeliveryCoordinates value),
@@ -1034,6 +1069,7 @@ class _$_PayedByCard implements _PayedByCard {
     @required Result payedByOther(bool payedByOther),
     @required Result foodDeliveryChosen(bool foodDeliveryChosen),
     @required Result customerAddedPhoneNumber(String customerPhoneNumber),
+    @required Result addedNote(String note),
     @required Result customerAddedDeliveryAddress(String customerAddress),
     @required
         Result customerAddedDeliveryCoordinates(
@@ -1050,6 +1086,7 @@ class _$_PayedByCard implements _PayedByCard {
     assert(payedByOther != null);
     assert(foodDeliveryChosen != null);
     assert(customerAddedPhoneNumber != null);
+    assert(addedNote != null);
     assert(customerAddedDeliveryAddress != null);
     assert(customerAddedDeliveryCoordinates != null);
     assert(deletedItem != null);
@@ -1069,6 +1106,7 @@ class _$_PayedByCard implements _PayedByCard {
     Result payedByOther(bool payedByOther),
     Result foodDeliveryChosen(bool foodDeliveryChosen),
     Result customerAddedPhoneNumber(String customerPhoneNumber),
+    Result addedNote(String note),
     Result customerAddedDeliveryAddress(String customerAddress),
     Result customerAddedDeliveryCoordinates(GeoFirePoint customerCoordinates),
     Result deletedItem(MenuItem menuItem),
@@ -1094,6 +1132,7 @@ class _$_PayedByCard implements _PayedByCard {
     @required Result payedByOther(_PayedByOther value),
     @required Result foodDeliveryChosen(_FoodDeliveryChosen value),
     @required Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    @required Result addedNote(_AddedNote value),
     @required
         Result customerAddedDeliveryAddress(
             _CustomerAddedDeliveryAddress value),
@@ -1112,6 +1151,7 @@ class _$_PayedByCard implements _PayedByCard {
     assert(payedByOther != null);
     assert(foodDeliveryChosen != null);
     assert(customerAddedPhoneNumber != null);
+    assert(addedNote != null);
     assert(customerAddedDeliveryAddress != null);
     assert(customerAddedDeliveryCoordinates != null);
     assert(deletedItem != null);
@@ -1131,6 +1171,7 @@ class _$_PayedByCard implements _PayedByCard {
     Result payedByOther(_PayedByOther value),
     Result foodDeliveryChosen(_FoodDeliveryChosen value),
     Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    Result addedNote(_AddedNote value),
     Result customerAddedDeliveryAddress(_CustomerAddedDeliveryAddress value),
     Result customerAddedDeliveryCoordinates(
         _CustomerAddedDeliveryCoordinates value),
@@ -1221,6 +1262,7 @@ class _$_PayedByOther implements _PayedByOther {
     @required Result payedByOther(bool payedByOther),
     @required Result foodDeliveryChosen(bool foodDeliveryChosen),
     @required Result customerAddedPhoneNumber(String customerPhoneNumber),
+    @required Result addedNote(String note),
     @required Result customerAddedDeliveryAddress(String customerAddress),
     @required
         Result customerAddedDeliveryCoordinates(
@@ -1237,6 +1279,7 @@ class _$_PayedByOther implements _PayedByOther {
     assert(payedByOther != null);
     assert(foodDeliveryChosen != null);
     assert(customerAddedPhoneNumber != null);
+    assert(addedNote != null);
     assert(customerAddedDeliveryAddress != null);
     assert(customerAddedDeliveryCoordinates != null);
     assert(deletedItem != null);
@@ -1256,6 +1299,7 @@ class _$_PayedByOther implements _PayedByOther {
     Result payedByOther(bool payedByOther),
     Result foodDeliveryChosen(bool foodDeliveryChosen),
     Result customerAddedPhoneNumber(String customerPhoneNumber),
+    Result addedNote(String note),
     Result customerAddedDeliveryAddress(String customerAddress),
     Result customerAddedDeliveryCoordinates(GeoFirePoint customerCoordinates),
     Result deletedItem(MenuItem menuItem),
@@ -1281,6 +1325,7 @@ class _$_PayedByOther implements _PayedByOther {
     @required Result payedByOther(_PayedByOther value),
     @required Result foodDeliveryChosen(_FoodDeliveryChosen value),
     @required Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    @required Result addedNote(_AddedNote value),
     @required
         Result customerAddedDeliveryAddress(
             _CustomerAddedDeliveryAddress value),
@@ -1299,6 +1344,7 @@ class _$_PayedByOther implements _PayedByOther {
     assert(payedByOther != null);
     assert(foodDeliveryChosen != null);
     assert(customerAddedPhoneNumber != null);
+    assert(addedNote != null);
     assert(customerAddedDeliveryAddress != null);
     assert(customerAddedDeliveryCoordinates != null);
     assert(deletedItem != null);
@@ -1318,6 +1364,7 @@ class _$_PayedByOther implements _PayedByOther {
     Result payedByOther(_PayedByOther value),
     Result foodDeliveryChosen(_FoodDeliveryChosen value),
     Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    Result addedNote(_AddedNote value),
     Result customerAddedDeliveryAddress(_CustomerAddedDeliveryAddress value),
     Result customerAddedDeliveryCoordinates(
         _CustomerAddedDeliveryCoordinates value),
@@ -1410,6 +1457,7 @@ class _$_FoodDeliveryChosen implements _FoodDeliveryChosen {
     @required Result payedByOther(bool payedByOther),
     @required Result foodDeliveryChosen(bool foodDeliveryChosen),
     @required Result customerAddedPhoneNumber(String customerPhoneNumber),
+    @required Result addedNote(String note),
     @required Result customerAddedDeliveryAddress(String customerAddress),
     @required
         Result customerAddedDeliveryCoordinates(
@@ -1426,6 +1474,7 @@ class _$_FoodDeliveryChosen implements _FoodDeliveryChosen {
     assert(payedByOther != null);
     assert(foodDeliveryChosen != null);
     assert(customerAddedPhoneNumber != null);
+    assert(addedNote != null);
     assert(customerAddedDeliveryAddress != null);
     assert(customerAddedDeliveryCoordinates != null);
     assert(deletedItem != null);
@@ -1445,6 +1494,7 @@ class _$_FoodDeliveryChosen implements _FoodDeliveryChosen {
     Result payedByOther(bool payedByOther),
     Result foodDeliveryChosen(bool foodDeliveryChosen),
     Result customerAddedPhoneNumber(String customerPhoneNumber),
+    Result addedNote(String note),
     Result customerAddedDeliveryAddress(String customerAddress),
     Result customerAddedDeliveryCoordinates(GeoFirePoint customerCoordinates),
     Result deletedItem(MenuItem menuItem),
@@ -1470,6 +1520,7 @@ class _$_FoodDeliveryChosen implements _FoodDeliveryChosen {
     @required Result payedByOther(_PayedByOther value),
     @required Result foodDeliveryChosen(_FoodDeliveryChosen value),
     @required Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    @required Result addedNote(_AddedNote value),
     @required
         Result customerAddedDeliveryAddress(
             _CustomerAddedDeliveryAddress value),
@@ -1488,6 +1539,7 @@ class _$_FoodDeliveryChosen implements _FoodDeliveryChosen {
     assert(payedByOther != null);
     assert(foodDeliveryChosen != null);
     assert(customerAddedPhoneNumber != null);
+    assert(addedNote != null);
     assert(customerAddedDeliveryAddress != null);
     assert(customerAddedDeliveryCoordinates != null);
     assert(deletedItem != null);
@@ -1507,6 +1559,7 @@ class _$_FoodDeliveryChosen implements _FoodDeliveryChosen {
     Result payedByOther(_PayedByOther value),
     Result foodDeliveryChosen(_FoodDeliveryChosen value),
     Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    Result addedNote(_AddedNote value),
     Result customerAddedDeliveryAddress(_CustomerAddedDeliveryAddress value),
     Result customerAddedDeliveryCoordinates(
         _CustomerAddedDeliveryCoordinates value),
@@ -1603,6 +1656,7 @@ class _$_CustomerAddedPhoneNumber implements _CustomerAddedPhoneNumber {
     @required Result payedByOther(bool payedByOther),
     @required Result foodDeliveryChosen(bool foodDeliveryChosen),
     @required Result customerAddedPhoneNumber(String customerPhoneNumber),
+    @required Result addedNote(String note),
     @required Result customerAddedDeliveryAddress(String customerAddress),
     @required
         Result customerAddedDeliveryCoordinates(
@@ -1619,6 +1673,7 @@ class _$_CustomerAddedPhoneNumber implements _CustomerAddedPhoneNumber {
     assert(payedByOther != null);
     assert(foodDeliveryChosen != null);
     assert(customerAddedPhoneNumber != null);
+    assert(addedNote != null);
     assert(customerAddedDeliveryAddress != null);
     assert(customerAddedDeliveryCoordinates != null);
     assert(deletedItem != null);
@@ -1638,6 +1693,7 @@ class _$_CustomerAddedPhoneNumber implements _CustomerAddedPhoneNumber {
     Result payedByOther(bool payedByOther),
     Result foodDeliveryChosen(bool foodDeliveryChosen),
     Result customerAddedPhoneNumber(String customerPhoneNumber),
+    Result addedNote(String note),
     Result customerAddedDeliveryAddress(String customerAddress),
     Result customerAddedDeliveryCoordinates(GeoFirePoint customerCoordinates),
     Result deletedItem(MenuItem menuItem),
@@ -1663,6 +1719,7 @@ class _$_CustomerAddedPhoneNumber implements _CustomerAddedPhoneNumber {
     @required Result payedByOther(_PayedByOther value),
     @required Result foodDeliveryChosen(_FoodDeliveryChosen value),
     @required Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    @required Result addedNote(_AddedNote value),
     @required
         Result customerAddedDeliveryAddress(
             _CustomerAddedDeliveryAddress value),
@@ -1681,6 +1738,7 @@ class _$_CustomerAddedPhoneNumber implements _CustomerAddedPhoneNumber {
     assert(payedByOther != null);
     assert(foodDeliveryChosen != null);
     assert(customerAddedPhoneNumber != null);
+    assert(addedNote != null);
     assert(customerAddedDeliveryAddress != null);
     assert(customerAddedDeliveryCoordinates != null);
     assert(deletedItem != null);
@@ -1700,6 +1758,7 @@ class _$_CustomerAddedPhoneNumber implements _CustomerAddedPhoneNumber {
     Result payedByOther(_PayedByOther value),
     Result foodDeliveryChosen(_FoodDeliveryChosen value),
     Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    Result addedNote(_AddedNote value),
     Result customerAddedDeliveryAddress(_CustomerAddedDeliveryAddress value),
     Result customerAddedDeliveryCoordinates(
         _CustomerAddedDeliveryCoordinates value),
@@ -1722,6 +1781,195 @@ abstract class _CustomerAddedPhoneNumber implements OrderFormEvent {
 
   String get customerPhoneNumber;
   _$CustomerAddedPhoneNumberCopyWith<_CustomerAddedPhoneNumber> get copyWith;
+}
+
+abstract class _$AddedNoteCopyWith<$Res> {
+  factory _$AddedNoteCopyWith(
+          _AddedNote value, $Res Function(_AddedNote) then) =
+      __$AddedNoteCopyWithImpl<$Res>;
+  $Res call({String note});
+}
+
+class __$AddedNoteCopyWithImpl<$Res> extends _$OrderFormEventCopyWithImpl<$Res>
+    implements _$AddedNoteCopyWith<$Res> {
+  __$AddedNoteCopyWithImpl(_AddedNote _value, $Res Function(_AddedNote) _then)
+      : super(_value, (v) => _then(v as _AddedNote));
+
+  @override
+  _AddedNote get _value => super._value as _AddedNote;
+
+  @override
+  $Res call({
+    Object note = freezed,
+  }) {
+    return _then(_AddedNote(
+      note == freezed ? _value.note : note as String,
+    ));
+  }
+}
+
+class _$_AddedNote implements _AddedNote {
+  const _$_AddedNote(this.note) : assert(note != null);
+
+  @override
+  final String note;
+
+  @override
+  String toString() {
+    return 'OrderFormEvent.addedNote(note: $note)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other is _AddedNote &&
+            (identical(other.note, note) ||
+                const DeepCollectionEquality().equals(other.note, note)));
+  }
+
+  @override
+  int get hashCode =>
+      runtimeType.hashCode ^ const DeepCollectionEquality().hash(note);
+
+  @override
+  _$AddedNoteCopyWith<_AddedNote> get copyWith =>
+      __$AddedNoteCopyWithImpl<_AddedNote>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result initialized(Option<StoreOrder> initialOrderOption),
+    @required Result addedItem(MenuItem menuItem),
+    @required Result addedStore(Restaurant store),
+    @required Result payedByCash(bool payedByCash),
+    @required Result payedByCard(bool payedByCard),
+    @required Result payedByOther(bool payedByOther),
+    @required Result foodDeliveryChosen(bool foodDeliveryChosen),
+    @required Result customerAddedPhoneNumber(String customerPhoneNumber),
+    @required Result addedNote(String note),
+    @required Result customerAddedDeliveryAddress(String customerAddress),
+    @required
+        Result customerAddedDeliveryCoordinates(
+            GeoFirePoint customerCoordinates),
+    @required Result deletedItem(MenuItem menuItem),
+    @required Result saved(),
+    @required Result countChanged(MenuItem menuItem, int count),
+  }) {
+    assert(initialized != null);
+    assert(addedItem != null);
+    assert(addedStore != null);
+    assert(payedByCash != null);
+    assert(payedByCard != null);
+    assert(payedByOther != null);
+    assert(foodDeliveryChosen != null);
+    assert(customerAddedPhoneNumber != null);
+    assert(addedNote != null);
+    assert(customerAddedDeliveryAddress != null);
+    assert(customerAddedDeliveryCoordinates != null);
+    assert(deletedItem != null);
+    assert(saved != null);
+    assert(countChanged != null);
+    return addedNote(note);
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result initialized(Option<StoreOrder> initialOrderOption),
+    Result addedItem(MenuItem menuItem),
+    Result addedStore(Restaurant store),
+    Result payedByCash(bool payedByCash),
+    Result payedByCard(bool payedByCard),
+    Result payedByOther(bool payedByOther),
+    Result foodDeliveryChosen(bool foodDeliveryChosen),
+    Result customerAddedPhoneNumber(String customerPhoneNumber),
+    Result addedNote(String note),
+    Result customerAddedDeliveryAddress(String customerAddress),
+    Result customerAddedDeliveryCoordinates(GeoFirePoint customerCoordinates),
+    Result deletedItem(MenuItem menuItem),
+    Result saved(),
+    Result countChanged(MenuItem menuItem, int count),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (addedNote != null) {
+      return addedNote(note);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result initialized(_Initialized value),
+    @required Result addedItem(_AddItem value),
+    @required Result addedStore(_AddStore value),
+    @required Result payedByCash(_PayedByCash value),
+    @required Result payedByCard(_PayedByCard value),
+    @required Result payedByOther(_PayedByOther value),
+    @required Result foodDeliveryChosen(_FoodDeliveryChosen value),
+    @required Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    @required Result addedNote(_AddedNote value),
+    @required
+        Result customerAddedDeliveryAddress(
+            _CustomerAddedDeliveryAddress value),
+    @required
+        Result customerAddedDeliveryCoordinates(
+            _CustomerAddedDeliveryCoordinates value),
+    @required Result deletedItem(_DeleteItem value),
+    @required Result saved(_Saved value),
+    @required Result countChanged(_CountChanged value),
+  }) {
+    assert(initialized != null);
+    assert(addedItem != null);
+    assert(addedStore != null);
+    assert(payedByCash != null);
+    assert(payedByCard != null);
+    assert(payedByOther != null);
+    assert(foodDeliveryChosen != null);
+    assert(customerAddedPhoneNumber != null);
+    assert(addedNote != null);
+    assert(customerAddedDeliveryAddress != null);
+    assert(customerAddedDeliveryCoordinates != null);
+    assert(deletedItem != null);
+    assert(saved != null);
+    assert(countChanged != null);
+    return addedNote(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result initialized(_Initialized value),
+    Result addedItem(_AddItem value),
+    Result addedStore(_AddStore value),
+    Result payedByCash(_PayedByCash value),
+    Result payedByCard(_PayedByCard value),
+    Result payedByOther(_PayedByOther value),
+    Result foodDeliveryChosen(_FoodDeliveryChosen value),
+    Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    Result addedNote(_AddedNote value),
+    Result customerAddedDeliveryAddress(_CustomerAddedDeliveryAddress value),
+    Result customerAddedDeliveryCoordinates(
+        _CustomerAddedDeliveryCoordinates value),
+    Result deletedItem(_DeleteItem value),
+    Result saved(_Saved value),
+    Result countChanged(_CountChanged value),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (addedNote != null) {
+      return addedNote(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _AddedNote implements OrderFormEvent {
+  const factory _AddedNote(String note) = _$_AddedNote;
+
+  String get note;
+  _$AddedNoteCopyWith<_AddedNote> get copyWith;
 }
 
 abstract class _$CustomerAddedDeliveryAddressCopyWith<$Res> {
@@ -1798,6 +2046,7 @@ class _$_CustomerAddedDeliveryAddress implements _CustomerAddedDeliveryAddress {
     @required Result payedByOther(bool payedByOther),
     @required Result foodDeliveryChosen(bool foodDeliveryChosen),
     @required Result customerAddedPhoneNumber(String customerPhoneNumber),
+    @required Result addedNote(String note),
     @required Result customerAddedDeliveryAddress(String customerAddress),
     @required
         Result customerAddedDeliveryCoordinates(
@@ -1814,6 +2063,7 @@ class _$_CustomerAddedDeliveryAddress implements _CustomerAddedDeliveryAddress {
     assert(payedByOther != null);
     assert(foodDeliveryChosen != null);
     assert(customerAddedPhoneNumber != null);
+    assert(addedNote != null);
     assert(customerAddedDeliveryAddress != null);
     assert(customerAddedDeliveryCoordinates != null);
     assert(deletedItem != null);
@@ -1833,6 +2083,7 @@ class _$_CustomerAddedDeliveryAddress implements _CustomerAddedDeliveryAddress {
     Result payedByOther(bool payedByOther),
     Result foodDeliveryChosen(bool foodDeliveryChosen),
     Result customerAddedPhoneNumber(String customerPhoneNumber),
+    Result addedNote(String note),
     Result customerAddedDeliveryAddress(String customerAddress),
     Result customerAddedDeliveryCoordinates(GeoFirePoint customerCoordinates),
     Result deletedItem(MenuItem menuItem),
@@ -1858,6 +2109,7 @@ class _$_CustomerAddedDeliveryAddress implements _CustomerAddedDeliveryAddress {
     @required Result payedByOther(_PayedByOther value),
     @required Result foodDeliveryChosen(_FoodDeliveryChosen value),
     @required Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    @required Result addedNote(_AddedNote value),
     @required
         Result customerAddedDeliveryAddress(
             _CustomerAddedDeliveryAddress value),
@@ -1876,6 +2128,7 @@ class _$_CustomerAddedDeliveryAddress implements _CustomerAddedDeliveryAddress {
     assert(payedByOther != null);
     assert(foodDeliveryChosen != null);
     assert(customerAddedPhoneNumber != null);
+    assert(addedNote != null);
     assert(customerAddedDeliveryAddress != null);
     assert(customerAddedDeliveryCoordinates != null);
     assert(deletedItem != null);
@@ -1895,6 +2148,7 @@ class _$_CustomerAddedDeliveryAddress implements _CustomerAddedDeliveryAddress {
     Result payedByOther(_PayedByOther value),
     Result foodDeliveryChosen(_FoodDeliveryChosen value),
     Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    Result addedNote(_AddedNote value),
     Result customerAddedDeliveryAddress(_CustomerAddedDeliveryAddress value),
     Result customerAddedDeliveryCoordinates(
         _CustomerAddedDeliveryCoordinates value),
@@ -1995,6 +2249,7 @@ class _$_CustomerAddedDeliveryCoordinates
     @required Result payedByOther(bool payedByOther),
     @required Result foodDeliveryChosen(bool foodDeliveryChosen),
     @required Result customerAddedPhoneNumber(String customerPhoneNumber),
+    @required Result addedNote(String note),
     @required Result customerAddedDeliveryAddress(String customerAddress),
     @required
         Result customerAddedDeliveryCoordinates(
@@ -2011,6 +2266,7 @@ class _$_CustomerAddedDeliveryCoordinates
     assert(payedByOther != null);
     assert(foodDeliveryChosen != null);
     assert(customerAddedPhoneNumber != null);
+    assert(addedNote != null);
     assert(customerAddedDeliveryAddress != null);
     assert(customerAddedDeliveryCoordinates != null);
     assert(deletedItem != null);
@@ -2030,6 +2286,7 @@ class _$_CustomerAddedDeliveryCoordinates
     Result payedByOther(bool payedByOther),
     Result foodDeliveryChosen(bool foodDeliveryChosen),
     Result customerAddedPhoneNumber(String customerPhoneNumber),
+    Result addedNote(String note),
     Result customerAddedDeliveryAddress(String customerAddress),
     Result customerAddedDeliveryCoordinates(GeoFirePoint customerCoordinates),
     Result deletedItem(MenuItem menuItem),
@@ -2055,6 +2312,7 @@ class _$_CustomerAddedDeliveryCoordinates
     @required Result payedByOther(_PayedByOther value),
     @required Result foodDeliveryChosen(_FoodDeliveryChosen value),
     @required Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    @required Result addedNote(_AddedNote value),
     @required
         Result customerAddedDeliveryAddress(
             _CustomerAddedDeliveryAddress value),
@@ -2073,6 +2331,7 @@ class _$_CustomerAddedDeliveryCoordinates
     assert(payedByOther != null);
     assert(foodDeliveryChosen != null);
     assert(customerAddedPhoneNumber != null);
+    assert(addedNote != null);
     assert(customerAddedDeliveryAddress != null);
     assert(customerAddedDeliveryCoordinates != null);
     assert(deletedItem != null);
@@ -2092,6 +2351,7 @@ class _$_CustomerAddedDeliveryCoordinates
     Result payedByOther(_PayedByOther value),
     Result foodDeliveryChosen(_FoodDeliveryChosen value),
     Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    Result addedNote(_AddedNote value),
     Result customerAddedDeliveryAddress(_CustomerAddedDeliveryAddress value),
     Result customerAddedDeliveryCoordinates(
         _CustomerAddedDeliveryCoordinates value),
@@ -2194,6 +2454,7 @@ class _$_DeleteItem implements _DeleteItem {
     @required Result payedByOther(bool payedByOther),
     @required Result foodDeliveryChosen(bool foodDeliveryChosen),
     @required Result customerAddedPhoneNumber(String customerPhoneNumber),
+    @required Result addedNote(String note),
     @required Result customerAddedDeliveryAddress(String customerAddress),
     @required
         Result customerAddedDeliveryCoordinates(
@@ -2210,6 +2471,7 @@ class _$_DeleteItem implements _DeleteItem {
     assert(payedByOther != null);
     assert(foodDeliveryChosen != null);
     assert(customerAddedPhoneNumber != null);
+    assert(addedNote != null);
     assert(customerAddedDeliveryAddress != null);
     assert(customerAddedDeliveryCoordinates != null);
     assert(deletedItem != null);
@@ -2229,6 +2491,7 @@ class _$_DeleteItem implements _DeleteItem {
     Result payedByOther(bool payedByOther),
     Result foodDeliveryChosen(bool foodDeliveryChosen),
     Result customerAddedPhoneNumber(String customerPhoneNumber),
+    Result addedNote(String note),
     Result customerAddedDeliveryAddress(String customerAddress),
     Result customerAddedDeliveryCoordinates(GeoFirePoint customerCoordinates),
     Result deletedItem(MenuItem menuItem),
@@ -2254,6 +2517,7 @@ class _$_DeleteItem implements _DeleteItem {
     @required Result payedByOther(_PayedByOther value),
     @required Result foodDeliveryChosen(_FoodDeliveryChosen value),
     @required Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    @required Result addedNote(_AddedNote value),
     @required
         Result customerAddedDeliveryAddress(
             _CustomerAddedDeliveryAddress value),
@@ -2272,6 +2536,7 @@ class _$_DeleteItem implements _DeleteItem {
     assert(payedByOther != null);
     assert(foodDeliveryChosen != null);
     assert(customerAddedPhoneNumber != null);
+    assert(addedNote != null);
     assert(customerAddedDeliveryAddress != null);
     assert(customerAddedDeliveryCoordinates != null);
     assert(deletedItem != null);
@@ -2291,6 +2556,7 @@ class _$_DeleteItem implements _DeleteItem {
     Result payedByOther(_PayedByOther value),
     Result foodDeliveryChosen(_FoodDeliveryChosen value),
     Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    Result addedNote(_AddedNote value),
     Result customerAddedDeliveryAddress(_CustomerAddedDeliveryAddress value),
     Result customerAddedDeliveryCoordinates(
         _CustomerAddedDeliveryCoordinates value),
@@ -2355,6 +2621,7 @@ class _$_Saved implements _Saved {
     @required Result payedByOther(bool payedByOther),
     @required Result foodDeliveryChosen(bool foodDeliveryChosen),
     @required Result customerAddedPhoneNumber(String customerPhoneNumber),
+    @required Result addedNote(String note),
     @required Result customerAddedDeliveryAddress(String customerAddress),
     @required
         Result customerAddedDeliveryCoordinates(
@@ -2371,6 +2638,7 @@ class _$_Saved implements _Saved {
     assert(payedByOther != null);
     assert(foodDeliveryChosen != null);
     assert(customerAddedPhoneNumber != null);
+    assert(addedNote != null);
     assert(customerAddedDeliveryAddress != null);
     assert(customerAddedDeliveryCoordinates != null);
     assert(deletedItem != null);
@@ -2390,6 +2658,7 @@ class _$_Saved implements _Saved {
     Result payedByOther(bool payedByOther),
     Result foodDeliveryChosen(bool foodDeliveryChosen),
     Result customerAddedPhoneNumber(String customerPhoneNumber),
+    Result addedNote(String note),
     Result customerAddedDeliveryAddress(String customerAddress),
     Result customerAddedDeliveryCoordinates(GeoFirePoint customerCoordinates),
     Result deletedItem(MenuItem menuItem),
@@ -2415,6 +2684,7 @@ class _$_Saved implements _Saved {
     @required Result payedByOther(_PayedByOther value),
     @required Result foodDeliveryChosen(_FoodDeliveryChosen value),
     @required Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    @required Result addedNote(_AddedNote value),
     @required
         Result customerAddedDeliveryAddress(
             _CustomerAddedDeliveryAddress value),
@@ -2433,6 +2703,7 @@ class _$_Saved implements _Saved {
     assert(payedByOther != null);
     assert(foodDeliveryChosen != null);
     assert(customerAddedPhoneNumber != null);
+    assert(addedNote != null);
     assert(customerAddedDeliveryAddress != null);
     assert(customerAddedDeliveryCoordinates != null);
     assert(deletedItem != null);
@@ -2452,6 +2723,7 @@ class _$_Saved implements _Saved {
     Result payedByOther(_PayedByOther value),
     Result foodDeliveryChosen(_FoodDeliveryChosen value),
     Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    Result addedNote(_AddedNote value),
     Result customerAddedDeliveryAddress(_CustomerAddedDeliveryAddress value),
     Result customerAddedDeliveryCoordinates(
         _CustomerAddedDeliveryCoordinates value),
@@ -2560,6 +2832,7 @@ class _$_CountChanged implements _CountChanged {
     @required Result payedByOther(bool payedByOther),
     @required Result foodDeliveryChosen(bool foodDeliveryChosen),
     @required Result customerAddedPhoneNumber(String customerPhoneNumber),
+    @required Result addedNote(String note),
     @required Result customerAddedDeliveryAddress(String customerAddress),
     @required
         Result customerAddedDeliveryCoordinates(
@@ -2576,6 +2849,7 @@ class _$_CountChanged implements _CountChanged {
     assert(payedByOther != null);
     assert(foodDeliveryChosen != null);
     assert(customerAddedPhoneNumber != null);
+    assert(addedNote != null);
     assert(customerAddedDeliveryAddress != null);
     assert(customerAddedDeliveryCoordinates != null);
     assert(deletedItem != null);
@@ -2595,6 +2869,7 @@ class _$_CountChanged implements _CountChanged {
     Result payedByOther(bool payedByOther),
     Result foodDeliveryChosen(bool foodDeliveryChosen),
     Result customerAddedPhoneNumber(String customerPhoneNumber),
+    Result addedNote(String note),
     Result customerAddedDeliveryAddress(String customerAddress),
     Result customerAddedDeliveryCoordinates(GeoFirePoint customerCoordinates),
     Result deletedItem(MenuItem menuItem),
@@ -2620,6 +2895,7 @@ class _$_CountChanged implements _CountChanged {
     @required Result payedByOther(_PayedByOther value),
     @required Result foodDeliveryChosen(_FoodDeliveryChosen value),
     @required Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    @required Result addedNote(_AddedNote value),
     @required
         Result customerAddedDeliveryAddress(
             _CustomerAddedDeliveryAddress value),
@@ -2638,6 +2914,7 @@ class _$_CountChanged implements _CountChanged {
     assert(payedByOther != null);
     assert(foodDeliveryChosen != null);
     assert(customerAddedPhoneNumber != null);
+    assert(addedNote != null);
     assert(customerAddedDeliveryAddress != null);
     assert(customerAddedDeliveryCoordinates != null);
     assert(deletedItem != null);
@@ -2657,6 +2934,7 @@ class _$_CountChanged implements _CountChanged {
     Result payedByOther(_PayedByOther value),
     Result foodDeliveryChosen(_FoodDeliveryChosen value),
     Result customerAddedPhoneNumber(_CustomerAddedPhoneNumber value),
+    Result addedNote(_AddedNote value),
     Result customerAddedDeliveryAddress(_CustomerAddedDeliveryAddress value),
     Result customerAddedDeliveryCoordinates(
         _CustomerAddedDeliveryCoordinates value),
