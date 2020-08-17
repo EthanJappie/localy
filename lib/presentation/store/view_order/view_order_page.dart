@@ -205,14 +205,7 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
                 LocalyButton(
                   title: "Accept",
                   onPressed: () {
-                    getIt<OrderActorBloc>().add(
-                      OrderActorEvent.changedState(
-                        widget.order.copyWith(
-                          status: ValueString.fromString("accepted"),
-                        ),
-                      ),
-                    );
-
+                    _changeState("accepted");
                     ExtendedNavigator.of(context).pop();
                   },
                 ),
@@ -220,13 +213,7 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
                 LocalyButton(
                   title: "Ready",
                   onPressed: () {
-                    getIt<OrderActorBloc>().add(
-                      OrderActorEvent.changedState(
-                        widget.order.copyWith(
-                          status: ValueString.fromString("ready"),
-                        ),
-                      ),
-                    );
+                    _changeState("ready");
 
                     ExtendedNavigator.of(context).pop();
                   },
@@ -235,26 +222,32 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
                 LocalyButton(
                   title: "Complete",
                   onPressed: () {
-                    getIt<OrderActorBloc>().add(
-                      OrderActorEvent.changedState(
-                        widget.order.copyWith(
-                          status: ValueString.fromString("completed"),
-                          isCompleted: true,
-                        ),
-                      ),
-                    );
-
+                    _changeState("completed", completed: true);
                     ExtendedNavigator.of(context).pop();
                   },
                 ),
               LocalyButton(
                 empty: true,
                 title: "Cancel",
-                onPressed: () {},
+                onPressed: () {
+                  _changeState("cancelled", completed: true);
+                  ExtendedNavigator.of(context).pop();
+                },
               ),
               const SizedBox(height: 16),
             ],
           ),
+        ),
+      ),
+    );
+  }
+
+  void _changeState(String status, {bool completed = false}) {
+    getIt<OrderActorBloc>().add(
+      OrderActorEvent.changedState(
+        widget.order.copyWith(
+          status: ValueString.fromString(status),
+          isCompleted: completed,
         ),
       ),
     );

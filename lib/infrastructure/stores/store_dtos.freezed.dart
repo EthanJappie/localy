@@ -33,6 +33,7 @@ class _$StoreDTOTearOff {
       @required bool acceptOther,
       @required bool foodDeliveries,
       @required bool foodCollection,
+      @required bool isHalaal,
       @required @ServerTimestampConverter() FieldValue serverTimeStamp,
       @JsonKey(ignore: true) String id,
       String coverImageUrl,
@@ -55,6 +56,7 @@ class _$StoreDTOTearOff {
       acceptOther: acceptOther,
       foodDeliveries: foodDeliveries,
       foodCollection: foodCollection,
+      isHalaal: isHalaal,
       serverTimeStamp: serverTimeStamp,
       id: id,
       coverImageUrl: coverImageUrl,
@@ -87,6 +89,7 @@ mixin _$StoreDTO {
   bool get acceptOther;
   bool get foodDeliveries;
   bool get foodCollection;
+  bool get isHalaal;
   @ServerTimestampConverter()
   FieldValue get serverTimeStamp;
   @JsonKey(ignore: true)
@@ -119,6 +122,7 @@ abstract class $StoreDTOCopyWith<$Res> {
       bool acceptOther,
       bool foodDeliveries,
       bool foodCollection,
+      bool isHalaal,
       @ServerTimestampConverter() FieldValue serverTimeStamp,
       @JsonKey(ignore: true) String id,
       String coverImageUrl,
@@ -151,6 +155,7 @@ class _$StoreDTOCopyWithImpl<$Res> implements $StoreDTOCopyWith<$Res> {
     Object acceptOther = freezed,
     Object foodDeliveries = freezed,
     Object foodCollection = freezed,
+    Object isHalaal = freezed,
     Object serverTimeStamp = freezed,
     Object id = freezed,
     Object coverImageUrl = freezed,
@@ -191,6 +196,7 @@ class _$StoreDTOCopyWithImpl<$Res> implements $StoreDTOCopyWith<$Res> {
       foodCollection: foodCollection == freezed
           ? _value.foodCollection
           : foodCollection as bool,
+      isHalaal: isHalaal == freezed ? _value.isHalaal : isHalaal as bool,
       serverTimeStamp: serverTimeStamp == freezed
           ? _value.serverTimeStamp
           : serverTimeStamp as FieldValue,
@@ -227,6 +233,7 @@ abstract class _$StoreDTOCopyWith<$Res> implements $StoreDTOCopyWith<$Res> {
       bool acceptOther,
       bool foodDeliveries,
       bool foodCollection,
+      bool isHalaal,
       @ServerTimestampConverter() FieldValue serverTimeStamp,
       @JsonKey(ignore: true) String id,
       String coverImageUrl,
@@ -260,6 +267,7 @@ class __$StoreDTOCopyWithImpl<$Res> extends _$StoreDTOCopyWithImpl<$Res>
     Object acceptOther = freezed,
     Object foodDeliveries = freezed,
     Object foodCollection = freezed,
+    Object isHalaal = freezed,
     Object serverTimeStamp = freezed,
     Object id = freezed,
     Object coverImageUrl = freezed,
@@ -300,6 +308,7 @@ class __$StoreDTOCopyWithImpl<$Res> extends _$StoreDTOCopyWithImpl<$Res>
       foodCollection: foodCollection == freezed
           ? _value.foodCollection
           : foodCollection as bool,
+      isHalaal: isHalaal == freezed ? _value.isHalaal : isHalaal as bool,
       serverTimeStamp: serverTimeStamp == freezed
           ? _value.serverTimeStamp
           : serverTimeStamp as FieldValue,
@@ -334,6 +343,7 @@ class _$_StoreDTO extends _StoreDTO {
       @required this.acceptOther,
       @required this.foodDeliveries,
       @required this.foodCollection,
+      @required this.isHalaal,
       @required @ServerTimestampConverter() this.serverTimeStamp,
       @JsonKey(ignore: true) this.id,
       this.coverImageUrl,
@@ -355,6 +365,7 @@ class _$_StoreDTO extends _StoreDTO {
         assert(acceptOther != null),
         assert(foodDeliveries != null),
         assert(foodCollection != null),
+        assert(isHalaal != null),
         assert(serverTimeStamp != null),
         super._();
 
@@ -397,6 +408,8 @@ class _$_StoreDTO extends _StoreDTO {
   @override
   final bool foodCollection;
   @override
+  final bool isHalaal;
+  @override
   @ServerTimestampConverter()
   final FieldValue serverTimeStamp;
   @override
@@ -411,7 +424,7 @@ class _$_StoreDTO extends _StoreDTO {
 
   @override
   String toString() {
-    return 'StoreDTO(ownerID: $ownerID, storeName: $storeName, address: $address, token: $token, coordinates: $coordinates, workingHoursFrom: $workingHoursFrom, workingHoursTo: $workingHoursTo, telephoneNumber: $telephoneNumber, active: $active, open: $open, acceptingStaffRequests: $acceptingStaffRequests, acceptCash: $acceptCash, acceptCard: $acceptCard, acceptOther: $acceptOther, foodDeliveries: $foodDeliveries, foodCollection: $foodCollection, serverTimeStamp: $serverTimeStamp, id: $id, coverImageUrl: $coverImageUrl, logoImageUrl: $logoImageUrl, notes: $notes)';
+    return 'StoreDTO(ownerID: $ownerID, storeName: $storeName, address: $address, token: $token, coordinates: $coordinates, workingHoursFrom: $workingHoursFrom, workingHoursTo: $workingHoursTo, telephoneNumber: $telephoneNumber, active: $active, open: $open, acceptingStaffRequests: $acceptingStaffRequests, acceptCash: $acceptCash, acceptCard: $acceptCard, acceptOther: $acceptOther, foodDeliveries: $foodDeliveries, foodCollection: $foodCollection, isHalaal: $isHalaal, serverTimeStamp: $serverTimeStamp, id: $id, coverImageUrl: $coverImageUrl, logoImageUrl: $logoImageUrl, notes: $notes)';
   }
 
   @override
@@ -463,6 +476,9 @@ class _$_StoreDTO extends _StoreDTO {
             (identical(other.foodCollection, foodCollection) ||
                 const DeepCollectionEquality()
                     .equals(other.foodCollection, foodCollection)) &&
+            (identical(other.isHalaal, isHalaal) ||
+                const DeepCollectionEquality()
+                    .equals(other.isHalaal, isHalaal)) &&
             (identical(other.serverTimeStamp, serverTimeStamp) ||
                 const DeepCollectionEquality()
                     .equals(other.serverTimeStamp, serverTimeStamp)) &&
@@ -497,6 +513,7 @@ class _$_StoreDTO extends _StoreDTO {
       const DeepCollectionEquality().hash(acceptOther) ^
       const DeepCollectionEquality().hash(foodDeliveries) ^
       const DeepCollectionEquality().hash(foodCollection) ^
+      const DeepCollectionEquality().hash(isHalaal) ^
       const DeepCollectionEquality().hash(serverTimeStamp) ^
       const DeepCollectionEquality().hash(id) ^
       const DeepCollectionEquality().hash(coverImageUrl) ^
@@ -532,6 +549,7 @@ abstract class _StoreDTO extends StoreDTO {
       @required bool acceptOther,
       @required bool foodDeliveries,
       @required bool foodCollection,
+      @required bool isHalaal,
       @required @ServerTimestampConverter() FieldValue serverTimeStamp,
       @JsonKey(ignore: true) String id,
       String coverImageUrl,
@@ -575,6 +593,8 @@ abstract class _StoreDTO extends StoreDTO {
   bool get foodDeliveries;
   @override
   bool get foodCollection;
+  @override
+  bool get isHalaal;
   @override
   @ServerTimestampConverter()
   FieldValue get serverTimeStamp;

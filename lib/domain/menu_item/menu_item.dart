@@ -30,7 +30,7 @@ abstract class MenuItem implements _$MenuItem {
         sequenceOfAppearance: 0,
         menuID: ValueString(),
         imageUrl: ValueString(),
-        hidden: true,
+        hidden: false,
          count: 1,
       );
 

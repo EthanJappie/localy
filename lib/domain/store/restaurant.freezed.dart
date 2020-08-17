@@ -32,6 +32,7 @@ class _$RestaurantTearOff {
       @required bool acceptOther,
       @required bool foodDeliveries,
       @required bool foodCollection,
+      @required bool isHalaal,
       String coverImageUrl,
       String logoImageUrl}) {
     return _Restaurant(
@@ -53,6 +54,7 @@ class _$RestaurantTearOff {
       acceptOther: acceptOther,
       foodDeliveries: foodDeliveries,
       foodCollection: foodCollection,
+      isHalaal: isHalaal,
       coverImageUrl: coverImageUrl,
       logoImageUrl: logoImageUrl,
     );
@@ -81,6 +83,7 @@ mixin _$Restaurant {
   bool get acceptOther;
   bool get foodDeliveries;
   bool get foodCollection;
+  bool get isHalaal;
   String get coverImageUrl;
   String get logoImageUrl;
 
@@ -110,6 +113,7 @@ abstract class $RestaurantCopyWith<$Res> {
       bool acceptOther,
       bool foodDeliveries,
       bool foodCollection,
+      bool isHalaal,
       String coverImageUrl,
       String logoImageUrl});
 }
@@ -141,6 +145,7 @@ class _$RestaurantCopyWithImpl<$Res> implements $RestaurantCopyWith<$Res> {
     Object acceptOther = freezed,
     Object foodDeliveries = freezed,
     Object foodCollection = freezed,
+    Object isHalaal = freezed,
     Object coverImageUrl = freezed,
     Object logoImageUrl = freezed,
   }) {
@@ -181,6 +186,7 @@ class _$RestaurantCopyWithImpl<$Res> implements $RestaurantCopyWith<$Res> {
       foodCollection: foodCollection == freezed
           ? _value.foodCollection
           : foodCollection as bool,
+      isHalaal: isHalaal == freezed ? _value.isHalaal : isHalaal as bool,
       coverImageUrl: coverImageUrl == freezed
           ? _value.coverImageUrl
           : coverImageUrl as String,
@@ -215,6 +221,7 @@ abstract class _$RestaurantCopyWith<$Res> implements $RestaurantCopyWith<$Res> {
       bool acceptOther,
       bool foodDeliveries,
       bool foodCollection,
+      bool isHalaal,
       String coverImageUrl,
       String logoImageUrl});
 }
@@ -248,6 +255,7 @@ class __$RestaurantCopyWithImpl<$Res> extends _$RestaurantCopyWithImpl<$Res>
     Object acceptOther = freezed,
     Object foodDeliveries = freezed,
     Object foodCollection = freezed,
+    Object isHalaal = freezed,
     Object coverImageUrl = freezed,
     Object logoImageUrl = freezed,
   }) {
@@ -288,6 +296,7 @@ class __$RestaurantCopyWithImpl<$Res> extends _$RestaurantCopyWithImpl<$Res>
       foodCollection: foodCollection == freezed
           ? _value.foodCollection
           : foodCollection as bool,
+      isHalaal: isHalaal == freezed ? _value.isHalaal : isHalaal as bool,
       coverImageUrl: coverImageUrl == freezed
           ? _value.coverImageUrl
           : coverImageUrl as String,
@@ -318,6 +327,7 @@ class _$_Restaurant extends _Restaurant {
       @required this.acceptOther,
       @required this.foodDeliveries,
       @required this.foodCollection,
+      @required this.isHalaal,
       this.coverImageUrl,
       this.logoImageUrl})
       : assert(id != null),
@@ -338,6 +348,7 @@ class _$_Restaurant extends _Restaurant {
         assert(acceptOther != null),
         assert(foodDeliveries != null),
         assert(foodCollection != null),
+        assert(isHalaal != null),
         super._();
 
   @override
@@ -377,13 +388,15 @@ class _$_Restaurant extends _Restaurant {
   @override
   final bool foodCollection;
   @override
+  final bool isHalaal;
+  @override
   final String coverImageUrl;
   @override
   final String logoImageUrl;
 
   @override
   String toString() {
-    return 'Restaurant(id: $id, ownerID: $ownerID, storeName: $storeName, address: $address, token: $token, coordinates: $coordinates, workingHoursFrom: $workingHoursFrom, workingHoursTo: $workingHoursTo, telephoneNumber: $telephoneNumber, notes: $notes, active: $active, open: $open, acceptingStaffRequests: $acceptingStaffRequests, acceptCash: $acceptCash, acceptCard: $acceptCard, acceptOther: $acceptOther, foodDeliveries: $foodDeliveries, foodCollection: $foodCollection, coverImageUrl: $coverImageUrl, logoImageUrl: $logoImageUrl)';
+    return 'Restaurant(id: $id, ownerID: $ownerID, storeName: $storeName, address: $address, token: $token, coordinates: $coordinates, workingHoursFrom: $workingHoursFrom, workingHoursTo: $workingHoursTo, telephoneNumber: $telephoneNumber, notes: $notes, active: $active, open: $open, acceptingStaffRequests: $acceptingStaffRequests, acceptCash: $acceptCash, acceptCard: $acceptCard, acceptOther: $acceptOther, foodDeliveries: $foodDeliveries, foodCollection: $foodCollection, isHalaal: $isHalaal, coverImageUrl: $coverImageUrl, logoImageUrl: $logoImageUrl)';
   }
 
   @override
@@ -439,6 +452,9 @@ class _$_Restaurant extends _Restaurant {
             (identical(other.foodCollection, foodCollection) ||
                 const DeepCollectionEquality()
                     .equals(other.foodCollection, foodCollection)) &&
+            (identical(other.isHalaal, isHalaal) ||
+                const DeepCollectionEquality()
+                    .equals(other.isHalaal, isHalaal)) &&
             (identical(other.coverImageUrl, coverImageUrl) ||
                 const DeepCollectionEquality()
                     .equals(other.coverImageUrl, coverImageUrl)) &&
@@ -468,6 +484,7 @@ class _$_Restaurant extends _Restaurant {
       const DeepCollectionEquality().hash(acceptOther) ^
       const DeepCollectionEquality().hash(foodDeliveries) ^
       const DeepCollectionEquality().hash(foodCollection) ^
+      const DeepCollectionEquality().hash(isHalaal) ^
       const DeepCollectionEquality().hash(coverImageUrl) ^
       const DeepCollectionEquality().hash(logoImageUrl);
 
@@ -497,6 +514,7 @@ abstract class _Restaurant extends Restaurant {
       @required bool acceptOther,
       @required bool foodDeliveries,
       @required bool foodCollection,
+      @required bool isHalaal,
       String coverImageUrl,
       String logoImageUrl}) = _$_Restaurant;
 
@@ -536,6 +554,8 @@ abstract class _Restaurant extends Restaurant {
   bool get foodDeliveries;
   @override
   bool get foodCollection;
+  @override
+  bool get isHalaal;
   @override
   String get coverImageUrl;
   @override

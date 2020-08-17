@@ -17,11 +17,11 @@ import 'package:localy/presentation/store/stores/stores_form/widgets/active_fiel
 import 'package:localy/presentation/store/stores/stores_form/widgets/cover_image_field.dart';
 import 'package:localy/presentation/store/stores/stores_form/widgets/food_collection_field.dart';
 import 'package:localy/presentation/store/stores/stores_form/widgets/food_deliveries_field.dart';
-import 'package:localy/presentation/store/stores/stores_form/widgets/from_time_field.dart';
+import 'package:localy/presentation/store/stores/stores_form/widgets/halaal_field.dart';
 import 'package:localy/presentation/store/stores/stores_form/widgets/location_field.dart';
-import 'package:localy/presentation/store/stores/stores_form/widgets/logo_image_field.dart';
 import 'package:localy/presentation/store/stores/stores_form/widgets/notes_field.dart';
 import 'package:localy/presentation/store/stores/stores_form/widgets/open_field.dart';
+import 'package:localy/presentation/store/stores/stores_form/widgets/operating_time_field.dart';
 import 'package:localy/presentation/store/stores/stores_form/widgets/store_name_field.dart';
 import 'package:localy/presentation/store/stores/stores_form/widgets/telephone_field.dart';
 
@@ -127,7 +127,6 @@ class StoreFormPageScaffold extends StatelessWidget {
                     const SliverToBoxAdapter(
                       child: SizedBox(height: 8),
                     ),
-                    const SliverToBoxAdapter(child: LogoImageField()),
                     const SliverToBoxAdapter(child: StoreNameField()),
                     const SliverToBoxAdapter(child: TelephoneField()),
                     const SliverToBoxAdapter(child: NotesField()),
@@ -135,28 +134,40 @@ class StoreFormPageScaffold extends StatelessWidget {
                     ..._inDividers(
                         const SliverToBoxAdapter(child: LocationField())),
                     ..._inDividers(
-                        const SliverToBoxAdapter(child: FromTimeField())),
+                        const SliverToBoxAdapter(child: OperatingTimeField())),
                     ..._inDividers(
-                        const SliverToBoxAdapter(child: ActiveField()),
-                        height: 0),
-                    ..._inDividers(const SliverToBoxAdapter(child: OpenField()),
-                        height: 0),
+                      const SliverToBoxAdapter(child: ActiveField()),
+                      height: 0,
+                    ),
                     ..._inDividers(
-                        const SliverToBoxAdapter(
-                            child: AcceptingStaffRequestsField()),
-                        height: 0),
+                      const SliverToBoxAdapter(child: OpenField()),
+                      height: 0,
+                    ),
                     ..._inDividers(
-                        const SliverToBoxAdapter(child: AcceptCashField()),
-                        height: 0),
+                      const SliverToBoxAdapter(
+                          child: AcceptingStaffRequestsField()),
+                      height: 0,
+                    ),
                     ..._inDividers(
-                        const SliverToBoxAdapter(child: AcceptCardField()),
-                        height: 0),
+                      const SliverToBoxAdapter(child: HalaalField()),
+                      height: 0,
+                    ),
                     ..._inDividers(
-                        const SliverToBoxAdapter(child: FoodDeliveriesField()),
-                        height: 0),
+                      const SliverToBoxAdapter(child: AcceptCashField()),
+                      height: 0,
+                    ),
                     ..._inDividers(
-                        const SliverToBoxAdapter(child: FoodCollectionField()),
-                        height: 0),
+                      const SliverToBoxAdapter(child: AcceptCardField()),
+                      height: 0,
+                    ),
+                    ..._inDividers(
+                      const SliverToBoxAdapter(child: FoodDeliveriesField()),
+                      height: 0,
+                    ),
+                    ..._inDividers(
+                      const SliverToBoxAdapter(child: FoodCollectionField()),
+                      height: 0,
+                    ),
                     SliverToBoxAdapter(
                       child: LocalyButton(
                         title: "Save",

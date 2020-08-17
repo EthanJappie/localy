@@ -34,20 +34,6 @@ class StoreCard extends StatelessWidget {
                     ),
                   ),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: <Widget>[
-                    IconButton(
-                      padding: const EdgeInsets.all(24),
-                      icon:
-                          const Icon(Icons.remove_red_eye, color: Colors.white),
-                      onPressed: () {
-                        ExtendedNavigator.of(context)
-                            .pushStoreFormPage(editedStore: store);
-                      },
-                    ),
-                  ],
-                )
               ],
             ),
             Container(
@@ -86,15 +72,6 @@ class StoreCard extends StatelessWidget {
                           ),
                         ],
                       ),
-                      Column(
-                        children: <Widget>[
-                          Text(
-                            "orders",
-                            style: _ordersTextStyle(),
-                          ),
-                          const Text("12")
-                        ],
-                      )
                     ],
                   ),
                 ],
@@ -119,10 +96,10 @@ class StoreCard extends StatelessWidget {
         children: [
           Expanded(
             child: Image.network(
-                urlOrPath,
-                height: size,
-                fit: BoxFit.fitWidth,
-              ),
+              urlOrPath,
+              height: size,
+              fit: BoxFit.fitWidth,
+            ),
           ),
         ],
       );

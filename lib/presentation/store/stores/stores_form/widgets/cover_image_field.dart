@@ -1,5 +1,5 @@
 import 'dart:io';
-import 'package:cached_network_image/cached_network_image.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_cropper/image_cropper.dart';
@@ -17,7 +17,7 @@ class CoverImageField extends StatelessWidget {
           return InkWell(
             onTap: () async {
               final pickedFile =
-                  await ImagePicker().getImage(source: ImageSource.camera);
+                  await ImagePicker().getImage(source: ImageSource.gallery);
               if (pickedFile != null) {
                 final croppedImage = await ImageCropper.cropImage(
                   sourcePath: pickedFile.path,
@@ -43,13 +43,9 @@ class CoverImageField extends StatelessWidget {
                 Card(
                   child: Container(
                     color: Colors.grey,
-                    child: Center(
-                      heightFactor: state.store.coverImageUrl == null ||
-                              state.store.coverImageUrl.isEmpty
-                          ? 3
-                          : 1,
-                      child: _renderImage(state.store.coverImageUrl),
-                    ),
+                    height: 200,
+                    width: MediaQuery.of(context).size.width,
+                    child: _renderImage(state.store.coverImageUrl),
                   ),
                 ),
               ],
@@ -66,21 +62,26 @@ class CoverImageField extends StatelessWidget {
         size: 60,
       );
     } else if (urlOrPath.contains("http")) {
-      return CachedNetworkImage(
-        imageUrl: urlOrPath,
+      return Image.network(
+        urlOrPath,
         height: 200,
-        fit: BoxFit.fill,
-        placeholder: (context, url) => const Icon(
-          Icons.camera_alt,
-          color: Colors.white,
-          size: 60,
-        ),
-        errorWidget: (context, url, error) => const Icon(
-          Icons.error,
-          color: Colors.white,
-          size: 60,
-        ),
+        fit: BoxFit.fitWidth,
       );
+//      return CachedNetworkImage(
+//        imageUrl: urlOrPath,
+//        height: 200,
+//        fit: BoxFit.fill,
+//        placeholder: (context, url) => const Icon(
+//          Icons.camera_alt,
+//          color: Colors.white,
+//          size: 60,
+//        ),
+//        errorWidget: (context, url, error) => const Icon(
+//          Icons.error,
+//          color: Colors.white,
+//          size: 60,
+//        ),
+//      );
     } else {
       return Image.file(
         File(urlOrPath),

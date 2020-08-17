@@ -5,6 +5,7 @@ import 'package:localy/application/auth/auth_bloc.dart';
 import 'package:localy/application/order/order_watcher/order_watcher_bloc.dart';
 import 'package:localy/application/stores/store_actor/store_actor_bloc.dart';
 import 'package:localy/application/stores/store_watcher/store_watcher_bloc.dart';
+import 'package:localy/environment_config.dart';
 import 'package:localy/injection.dart';
 import 'package:localy/presentation/core/routes/router.gr.dart';
 import 'package:localy/presentation/customer/customer_orders/customer_order_page.dart';
@@ -61,6 +62,21 @@ class _CustomerHomePageState extends State<CustomerHomePage> {
         appBar: AppBar(
           title: Text(_titles[_currentIndex]),
           actions: <Widget>[
+            IconButton(
+              icon: const Icon(Icons.info_outline),
+              onPressed: () {
+                showAboutDialog(
+                  context: context,
+                  applicationName:
+                      EnvironmentConfig.APP_NAME.replaceAll("_", " "),
+                  applicationVersion: EnvironmentConfig.VERSION_NUMBER,
+                  applicationIcon: Image.asset(
+                    "assets/launchericon.png",
+                    height: 40,
+                  ),
+                );
+              },
+            ),
             IconButton(
               icon: const Icon(Icons.exit_to_app),
               onPressed: () {

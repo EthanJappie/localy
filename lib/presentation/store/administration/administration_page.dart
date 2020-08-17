@@ -1,3 +1,4 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:localy/application/menu/menu_actor/menu_actor_bloc.dart';
@@ -5,6 +6,8 @@ import 'package:localy/application/menu/menu_watcher/menu_watcher_bloc.dart';
 import 'package:localy/domain/store/restaurant.dart';
 import 'package:localy/injection.dart';
 import 'package:localy/presentation/core/pages/menu_builder/menu_builder_overview/menu_builder_overview_page.dart';
+import 'package:localy/presentation/core/routes/router.gr.dart';
+import 'package:localy/presentation/customer/view_reviews/view_reviews_page.dart';
 import 'package:localy/presentation/store/active_orders/active_orders_page.dart';
 import 'package:localy/presentation/store/completed_orders/completed_orders_page.dart';
 import 'package:localy/presentation/store/inactive_orders/inactive_orders_page.dart';
@@ -37,7 +40,12 @@ class _AdministrationPageState extends State<AdministrationPage> {
       ),
       CompletedOrdersPage(
         storeID: widget.store.id.getOrCrash(),
-      )
+      ),
+      ViewReviewsPage(
+        type: "store",
+        typeID: widget.store.id.getOrCrash(),
+        isStore: true,
+      ),
     ];
 
     _titles = [
@@ -45,6 +53,7 @@ class _AdministrationPageState extends State<AdministrationPage> {
       "Active Orders",
       "Inactive Orders",
       "Completed Orders",
+      "Reviews",
     ];
 
     super.initState();
@@ -66,6 +75,21 @@ class _AdministrationPageState extends State<AdministrationPage> {
       child: Scaffold(
         appBar: AppBar(
           title: Text(_titles[_currentIndex]),
+          actions: [
+            FlatButton(
+              onPressed: () {
+                ExtendedNavigator.of(context)
+                    .pushStoreFormPage(editedStore: widget.store);
+              },
+              child: const Text(
+                "Edit",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            )
+          ],
         ),
         body: _pages[_currentIndex],
         bottomNavigationBar: BottomNavigationBar(
@@ -94,6 +118,10 @@ class _AdministrationPageState extends State<AdministrationPage> {
             BottomNavigationBarItem(
               icon: Icon(Icons.receipt),
               title: Text("Completed"),
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.comment),
+              title: Text("Reviews"),
             ),
           ],
         ),

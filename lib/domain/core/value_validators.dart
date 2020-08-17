@@ -33,8 +33,8 @@ Either<ValueFailure<String>, String> validateSingleLine(String input) {
 }
 
 Either<ValueFailure<String>, String> validateEmailAddress(String input) {
-  if (EmailValidator.validate(input)) {
-    return right(input);
+  if (EmailValidator.validate(input.trim())) {
+    return right(input.trim());
   } else {
     return left(ValueFailure.invalidEmail(failedValue: input));
   }

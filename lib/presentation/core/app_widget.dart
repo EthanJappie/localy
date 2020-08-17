@@ -53,7 +53,7 @@ class _AppWidgetState extends State<AppWidget> {
     if (EnvironmentConfig.APP_NAME == EnvironmentConfig.APP_NAME_LOCALY_MANAGER) {
       return const Color(appColor);
     } else {
-      return Colors.green;
+      return const Color(appColor);
     }
   }
 

@@ -11,7 +11,7 @@ class EnvironmentConfig {
 
 
   static const VERSION_NUMBER =
-      String.fromEnvironment("VERSION_NUMBER", defaultValue: "1.0.0");
+      String.fromEnvironment("VERSION_NUMBER", defaultValue: "1.0.10");
 
   static const VERSION_NAME =
       int.fromEnvironment("VERSION_NAME", defaultValue: 1);

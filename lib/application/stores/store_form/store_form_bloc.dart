@@ -13,11 +13,11 @@ import 'package:localy/domain/store/store_failure.dart';
 import 'package:localy/domain/store/value_objects.dart';
 import 'package:meta/meta.dart';
 
+part 'store_form_bloc.freezed.dart';
+
 part 'store_form_event.dart';
 
 part 'store_form_state.dart';
-
-part 'store_form_bloc.freezed.dart';
 
 @injectable
 class StoreFormBloc extends Bloc<StoreFormEvent, StoreFormState> {
@@ -79,7 +79,8 @@ class StoreFormBloc extends Bloc<StoreFormEvent, StoreFormState> {
       },
       coordinatesChanged: (e) async* {
         yield state.copyWith(
-          store: state.store.copyWith(coordinates: FireCoordinates(e.coordinates)),
+          store:
+              state.store.copyWith(coordinates: FireCoordinates(e.coordinates)),
           saveFailureOrSuccessOption: none(),
         );
       },
@@ -137,17 +138,11 @@ class StoreFormBloc extends Bloc<StoreFormEvent, StoreFormState> {
       },
       logoImageChanged: (e) async* {
         yield state.copyWith(
-          store: state.store.copyWith(
-              logoImageUrl: e.logoImage
-          )
-        );
+            store: state.store.copyWith(logoImageUrl: e.logoImage));
       },
       coverImageChanged: (e) async* {
         yield state.copyWith(
-            store: state.store.copyWith(
-                coverImageUrl: e.coverImage
-            )
-        );
+            store: state.store.copyWith(coverImageUrl: e.coverImage));
       },
       saved: (e) async* {
         Either<StoreFailure, Unit> failureOrSuccess;
@@ -169,7 +164,12 @@ class StoreFormBloc extends Bloc<StoreFormEvent, StoreFormState> {
           saveFailureOrSuccessOption: optionOf(failureOrSuccess),
         );
       },
-
+      halaalChanged: (e) async* {
+        yield state.copyWith(
+          store: state.store.copyWith(isHalaal: e.isHalaal),
+          saveFailureOrSuccessOption: none(),
+        );
+      },
     );
   }
 }

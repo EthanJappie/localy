@@ -44,7 +44,8 @@ class CustomerOrderPage extends StatelessWidget {
                               children: <Widget>[
                                 Text(
                                   order.storeName.getOrCrash(),
-                                  style: const TextStyle(fontWeight: FontWeight.bold),
+                                  style: const TextStyle(
+                                      fontWeight: FontWeight.bold),
                                 ),
                                 Container(
                                   padding: const EdgeInsets.symmetric(
@@ -88,13 +89,13 @@ class CustomerOrderPage extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: <Widget>[
                                     Text(
-                                      order.id.getOrCrash().substring(0, 5),
+                                      _toDate(order.dateCreated.toDate()),
                                       style: const TextStyle(
                                           fontWeight: FontWeight.bold),
                                     ),
                                     const SizedBox(height: 8),
                                     Text(
-                                      _toDate(order.dateCreated.toDate()),
+                                      order.id.getOrCrash().substring(0, 5),
                                       style: const TextStyle(
                                           fontWeight: FontWeight.bold),
                                     ),

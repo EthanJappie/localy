@@ -17,6 +17,8 @@ import '../../customer/checkout/checkout_page.dart';
 import '../../customer/customer_home/customer_home_page.dart';
 import '../../customer/customer_view_order/customer_view_order_page.dart';
 import '../../customer/store_detail/store_detail_page.dart';
+import '../../customer/view_reviews/reviews_form/review_form_page.dart';
+import '../../customer/view_reviews/view_reviews_page.dart';
 import '../../profile/profile_page.dart';
 import '../../store/active_orders/active_orders_page.dart';
 import '../../store/administration/administration_page.dart';
@@ -49,6 +51,7 @@ class Routes {
   static const String menuItemsOverviewPage = '/menu-items-overview-page';
   static const String profilePage = '/profile-page';
   static const String registerPage = '/register-page';
+  static const String viewReviewsPage = '/view-reviews-page';
   static const String signInPage = '/sign-in-page';
   static const String staffAccessPage = '/staff-access-page';
   static const String storeDetailPage = '/store-detail-page';
@@ -56,6 +59,7 @@ class Routes {
   static const String viewOrderPage = '/view-order-page';
   static const String menuItemsFormPage = '/menu-items-form-page';
   static const String menuBuilderFormPage = '/menu-builder-form-page';
+  static const String reviewFormPage = '/review-form-page';
   static const String storeFormPage = '/store-form-page';
   static const all = <String>{
     splashPage,
@@ -71,6 +75,7 @@ class Routes {
     menuItemsOverviewPage,
     profilePage,
     registerPage,
+    viewReviewsPage,
     signInPage,
     staffAccessPage,
     storeDetailPage,
@@ -78,6 +83,7 @@ class Routes {
     viewOrderPage,
     menuItemsFormPage,
     menuBuilderFormPage,
+    reviewFormPage,
     storeFormPage,
   };
 }
@@ -99,6 +105,7 @@ class Router extends RouterBase {
     RouteDef(Routes.menuItemsOverviewPage, page: MenuItemsOverviewPage),
     RouteDef(Routes.profilePage, page: ProfilePage),
     RouteDef(Routes.registerPage, page: RegisterPage),
+    RouteDef(Routes.viewReviewsPage, page: ViewReviewsPage),
     RouteDef(Routes.signInPage, page: SignInPage),
     RouteDef(Routes.staffAccessPage, page: StaffAccessPage),
     RouteDef(Routes.storeDetailPage, page: StoreDetailPage),
@@ -106,6 +113,7 @@ class Router extends RouterBase {
     RouteDef(Routes.viewOrderPage, page: ViewOrderPage),
     RouteDef(Routes.menuItemsFormPage, page: MenuItemsFormPage),
     RouteDef(Routes.menuBuilderFormPage, page: MenuBuilderFormPage),
+    RouteDef(Routes.reviewFormPage, page: ReviewFormPage),
     RouteDef(Routes.storeFormPage, page: StoreFormPage),
   ];
   @override
@@ -222,6 +230,19 @@ class Router extends RouterBase {
         settings: data,
       );
     },
+    ViewReviewsPage: (data) {
+      final args = data.getArgs<ViewReviewsPageArguments>(nullOk: false);
+      return MaterialPageRoute<dynamic>(
+        builder: (context) => ViewReviewsPage(
+          key: args.key,
+          typeID: args.typeID,
+          type: args.type,
+          isStore: args.isStore,
+          showAppBar: args.showAppBar,
+        ),
+        settings: data,
+      );
+    },
     SignInPage: (data) {
       return MaterialPageRoute<dynamic>(
         builder: (context) => SignInPage(),
@@ -283,6 +304,18 @@ class Router extends RouterBase {
           key: args.key,
           editedMenu: args.editedMenu,
           storeID: args.storeID,
+        ),
+        settings: data,
+        fullscreenDialog: true,
+      );
+    },
+    ReviewFormPage: (data) {
+      final args = data.getArgs<ReviewFormPageArguments>(nullOk: false);
+      return MaterialPageRoute<dynamic>(
+        builder: (context) => ReviewFormPage(
+          key: args.key,
+          type: args.type,
+          typeID: args.typeID,
         ),
         settings: data,
         fullscreenDialog: true,
@@ -384,6 +417,23 @@ extension RouterExtendedNavigatorStateX on ExtendedNavigatorState {
 
   Future<dynamic> pushRegisterPage() => push<dynamic>(Routes.registerPage);
 
+  Future<dynamic> pushViewReviewsPage({
+    Key key,
+    @required String typeID,
+    @required String type,
+    bool isStore = false,
+    bool showAppBar = false,
+  }) =>
+      push<dynamic>(
+        Routes.viewReviewsPage,
+        arguments: ViewReviewsPageArguments(
+            key: key,
+            typeID: typeID,
+            type: type,
+            isStore: isStore,
+            showAppBar: showAppBar),
+      );
+
   Future<dynamic> pushSignInPage() => push<dynamic>(Routes.signInPage);
 
   Future<dynamic> pushStaffAccessPage() =>
@@ -430,6 +480,17 @@ extension RouterExtendedNavigatorStateX on ExtendedNavigatorState {
         Routes.menuBuilderFormPage,
         arguments: MenuBuilderFormPageArguments(
             key: key, editedMenu: editedMenu, storeID: storeID),
+      );
+
+  Future<dynamic> pushReviewFormPage({
+    Key key,
+    @required String type,
+    @required String typeID,
+  }) =>
+      push<dynamic>(
+        Routes.reviewFormPage,
+        arguments:
+            ReviewFormPageArguments(key: key, type: type, typeID: typeID),
       );
 
   Future<dynamic> pushStoreFormPage({
@@ -495,6 +556,21 @@ class MenuItemsOverviewPageArguments {
   MenuItemsOverviewPageArguments({this.key, @required this.menuID});
 }
 
+/// ViewReviewsPage arguments holder class
+class ViewReviewsPageArguments {
+  final Key key;
+  final String typeID;
+  final String type;
+  final bool isStore;
+  final bool showAppBar;
+  ViewReviewsPageArguments(
+      {this.key,
+      @required this.typeID,
+      @required this.type,
+      this.isStore = false,
+      this.showAppBar = false});
+}
+
 /// StoreDetailPage arguments holder class
 class StoreDetailPageArguments {
   final Key key;
@@ -525,6 +601,15 @@ class MenuBuilderFormPageArguments {
   final String storeID;
   MenuBuilderFormPageArguments(
       {this.key, this.editedMenu, @required this.storeID});
+}
+
+/// ReviewFormPage arguments holder class
+class ReviewFormPageArguments {
+  final Key key;
+  final String type;
+  final String typeID;
+  ReviewFormPageArguments(
+      {this.key, @required this.type, @required this.typeID});
 }
 
 /// StoreFormPage arguments holder class

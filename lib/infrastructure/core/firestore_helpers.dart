@@ -28,6 +28,9 @@ extension FirestoreX on Firestore {
 
   CollectionReference get bundleCollection =>
       Firestore.instance.collection('bundles');
+
+  CollectionReference get reviewCollection =>
+      Firestore.instance.collection('reviews');
 }
 
 extension DocumentReferenceX on DocumentReference {}

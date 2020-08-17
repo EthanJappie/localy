@@ -24,7 +24,7 @@ abstract class Menu implements _$Menu {
         name: ValueString.fromString(""),
         notes: ValueString(),
         sequenceOfAppearance: 0,
-        hidden: true,
+        hidden: false,
       );
 
   Option<ValueFailure<dynamic>> get failureOption {

@@ -4,8 +4,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:localy/application/stores/store_form/store_form_bloc.dart';
 import 'package:time_range/time_range.dart';
 
-class FromTimeField extends StatelessWidget {
-  const FromTimeField({Key key}) : super(key: key);
+class OperatingTimeField extends StatelessWidget {
+  const OperatingTimeField({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,6 +13,10 @@ class FromTimeField extends StatelessWidget {
       buildWhen: (p, c) => p.store.workingHoursFrom != c.store.workingHoursFrom,
       builder: (context, state) {
         return TimeRange(
+//          initialRange: TimeRangeResult(
+//            TimeOfDay.fromDateTime(state.store.workingHoursFrom.getOrCrash().toDate()),
+//            TimeOfDay.fromDateTime(state.store.workingHoursTo.getOrCrash().toDate()),
+//          ),
           fromTitle: const Text(
             'From',
             style: TextStyle(
@@ -27,7 +31,8 @@ class FromTimeField extends StatelessWidget {
               color: Colors.black,
             ),
           ),
-          activeTextStyle: const TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+          activeTextStyle:
+              const TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
           firstTime: const TimeOfDay(hour: 0, minute: 0),
           lastTime: const TimeOfDay(hour: 24, minute: 0),
           timeBlock: 30,

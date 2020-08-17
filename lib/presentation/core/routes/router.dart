@@ -9,6 +9,8 @@ import 'package:localy/presentation/customer/checkout/checkout_page.dart';
 import 'package:localy/presentation/customer/customer_home/customer_home_page.dart';
 import 'package:localy/presentation/customer/customer_view_order/customer_view_order_page.dart';
 import 'package:localy/presentation/customer/store_detail/store_detail_page.dart';
+import 'package:localy/presentation/customer/view_reviews/reviews_form/review_form_page.dart';
+import 'package:localy/presentation/customer/view_reviews/view_reviews_page.dart';
 import 'package:localy/presentation/profile/profile_page.dart';
 import 'package:localy/presentation/store/active_orders/active_orders_page.dart';
 import 'package:localy/presentation/store/administration/administration_page.dart';
@@ -37,6 +39,7 @@ import 'package:localy/presentation/store/view_order/view_order_page.dart';
       MaterialRoute(page: MenuItemsOverviewPage),
       MaterialRoute(page: ProfilePage),
       MaterialRoute(page: RegisterPage),
+      MaterialRoute(page: ViewReviewsPage),
       MaterialRoute(page: SignInPage),
       MaterialRoute(page: StaffAccessPage),
       MaterialRoute(page: StoreDetailPage),
@@ -44,6 +47,7 @@ import 'package:localy/presentation/store/view_order/view_order_page.dart';
       MaterialRoute(page: ViewOrderPage),
       MaterialRoute(page: MenuItemsFormPage, fullscreenDialog: true),
       MaterialRoute(page: MenuBuilderFormPage, fullscreenDialog: true),
+      MaterialRoute(page: ReviewFormPage, fullscreenDialog: true),
       MaterialRoute(page: StoreFormPage, fullscreenDialog: true),
     ])
 class $Router {}

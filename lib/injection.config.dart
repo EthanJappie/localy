@@ -23,6 +23,7 @@ import 'domain/bundle/i_bundle_repository.dart';
 import 'domain/menu_item/i_menu_item_repository.dart';
 import 'domain/menu/i_menu_repository.dart';
 import 'domain/order/i_order_repository.dart';
+import 'domain/review/i_review_repository.dart';
 import 'domain/store/i_store_repository.dart';
 import 'application/menu/menu_actor/menu_actor_bloc.dart';
 import 'application/menu/menu_form/menu_form_bloc.dart';
@@ -36,6 +37,10 @@ import 'application/order/order_actor/order_actor_bloc.dart';
 import 'application/order/order_form/order_form_bloc.dart';
 import 'infrastructure/order/order_repository.dart';
 import 'application/order/order_watcher/order_watcher_bloc.dart';
+import 'application/review/review_actor/review_actor_bloc.dart';
+import 'application/review/review_form/review_form_bloc.dart';
+import 'infrastructure/review/review_repository.dart';
+import 'application/review/review_watcher/review_watcher_bloc.dart';
 import 'application/sign_in_form/sign_in_form_bloc.dart';
 import 'application/stores/store_actor/store_actor_bloc.dart';
 import 'application/stores/store_form/store_form_bloc.dart';
@@ -70,6 +75,8 @@ GetIt $initGetIt(
   gh.lazySingleton<IMenuRepository>(() => MenuRepository(get<Firestore>()));
   gh.lazySingleton<IOrderRepository>(() => OrderRepository(get<Firestore>()),
       registerFor: {_prod});
+  gh.lazySingleton<IReviewRepository>(() => ReviewRepository(get<Firestore>()),
+      registerFor: {_prod});
   gh.lazySingleton<IStoreRepository>(
       () => StoreRepository(get<Firestore>(), get<FirebaseStorage>()),
       registerFor: {_prod});
@@ -85,6 +92,10 @@ GetIt $initGetIt(
   gh.factory<OrderActorBloc>(() => OrderActorBloc(get<IOrderRepository>()));
   gh.factory<OrderFormBloc>(() => OrderFormBloc(get<IOrderRepository>()));
   gh.factory<OrderWatcherBloc>(() => OrderWatcherBloc(get<IOrderRepository>()));
+  gh.factory<ReviewActorBloc>(() => ReviewActorBloc(get<IReviewRepository>()));
+  gh.factory<ReviewFormBloc>(() => ReviewFormBloc(get<IReviewRepository>()));
+  gh.factory<ReviewWatcherBloc>(
+      () => ReviewWatcherBloc(get<IReviewRepository>()));
   gh.factory<SignInFormBloc>(
       () => SignInFormBloc(get<IAuthFacade>(), get<IBundleRepository>()));
   gh.factory<StoreActorBloc>(() => StoreActorBloc(get<IStoreRepository>()));

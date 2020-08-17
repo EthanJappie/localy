@@ -78,9 +78,14 @@ class _StoreDetailPageState extends State<StoreDetailPage> {
                           .fold((l) => "", (r) => r)),
                       actions: [
                         FlatButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            ExtendedNavigator.of(context).pushViewReviewsPage(
+                              type: "store",
+                              typeID: widget.store.id.getOrCrash(),
+                            );
+                          },
                           child: const Text(
-                            "Review",
+                            "Reviews",
                             style: TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.bold,

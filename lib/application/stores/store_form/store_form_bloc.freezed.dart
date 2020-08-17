@@ -126,6 +126,13 @@ class _$StoreFormEventTearOff {
   }
 
 // ignore: unused_element
+  _HalaalChanged halaalChanged({bool isHalaal}) {
+    return _HalaalChanged(
+      isHalaal: isHalaal,
+    );
+  }
+
+// ignore: unused_element
   _Saved saved() {
     return const _Saved();
   }
@@ -167,6 +174,7 @@ mixin _$StoreFormEvent {
     @required Result acceptOtherChanged(bool acceptOther),
     @required Result foodDeliveriesChanged(bool foodDeliveries),
     @required Result foodCollectionChanged(bool foodCollection),
+    @required Result halaalChanged(bool isHalaal),
     @required Result saved(),
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
@@ -189,6 +197,7 @@ mixin _$StoreFormEvent {
     Result acceptOtherChanged(bool acceptOther),
     Result foodDeliveriesChanged(bool foodDeliveries),
     Result foodCollectionChanged(bool foodCollection),
+    Result halaalChanged(bool isHalaal),
     Result saved(),
     Result coverImageChanged(String coverImage),
     Result logoImageChanged(String logoImage),
@@ -214,6 +223,7 @@ mixin _$StoreFormEvent {
     @required Result acceptOtherChanged(_AcceptOtherChanged value),
     @required Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     @required Result foodCollectionChanged(_FoodCollectionChanged value),
+    @required Result halaalChanged(_HalaalChanged value),
     @required Result saved(_Saved value),
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
@@ -236,6 +246,7 @@ mixin _$StoreFormEvent {
     Result acceptOtherChanged(_AcceptOtherChanged value),
     Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     Result foodCollectionChanged(_FoodCollectionChanged value),
+    Result halaalChanged(_HalaalChanged value),
     Result saved(_Saved value),
     Result coverImageChanged(_CoverImageChanged value),
     Result logoImageChanged(_LogoImageChanged value),
@@ -336,6 +347,7 @@ class _$_Initialized implements _Initialized {
     @required Result acceptOtherChanged(bool acceptOther),
     @required Result foodDeliveriesChanged(bool foodDeliveries),
     @required Result foodCollectionChanged(bool foodCollection),
+    @required Result halaalChanged(bool isHalaal),
     @required Result saved(),
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
@@ -356,6 +368,7 @@ class _$_Initialized implements _Initialized {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -381,6 +394,7 @@ class _$_Initialized implements _Initialized {
     Result acceptOtherChanged(bool acceptOther),
     Result foodDeliveriesChanged(bool foodDeliveries),
     Result foodCollectionChanged(bool foodCollection),
+    Result halaalChanged(bool isHalaal),
     Result saved(),
     Result coverImageChanged(String coverImage),
     Result logoImageChanged(String logoImage),
@@ -414,6 +428,7 @@ class _$_Initialized implements _Initialized {
     @required Result acceptOtherChanged(_AcceptOtherChanged value),
     @required Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     @required Result foodCollectionChanged(_FoodCollectionChanged value),
+    @required Result halaalChanged(_HalaalChanged value),
     @required Result saved(_Saved value),
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
@@ -434,6 +449,7 @@ class _$_Initialized implements _Initialized {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -459,6 +475,7 @@ class _$_Initialized implements _Initialized {
     Result acceptOtherChanged(_AcceptOtherChanged value),
     Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     Result foodCollectionChanged(_FoodCollectionChanged value),
+    Result halaalChanged(_HalaalChanged value),
     Result saved(_Saved value),
     Result coverImageChanged(_CoverImageChanged value),
     Result logoImageChanged(_LogoImageChanged value),
@@ -554,6 +571,7 @@ class _$_StoreNameChanged implements _StoreNameChanged {
     @required Result acceptOtherChanged(bool acceptOther),
     @required Result foodDeliveriesChanged(bool foodDeliveries),
     @required Result foodCollectionChanged(bool foodCollection),
+    @required Result halaalChanged(bool isHalaal),
     @required Result saved(),
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
@@ -574,6 +592,7 @@ class _$_StoreNameChanged implements _StoreNameChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -599,6 +618,7 @@ class _$_StoreNameChanged implements _StoreNameChanged {
     Result acceptOtherChanged(bool acceptOther),
     Result foodDeliveriesChanged(bool foodDeliveries),
     Result foodCollectionChanged(bool foodCollection),
+    Result halaalChanged(bool isHalaal),
     Result saved(),
     Result coverImageChanged(String coverImage),
     Result logoImageChanged(String logoImage),
@@ -632,6 +652,7 @@ class _$_StoreNameChanged implements _StoreNameChanged {
     @required Result acceptOtherChanged(_AcceptOtherChanged value),
     @required Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     @required Result foodCollectionChanged(_FoodCollectionChanged value),
+    @required Result halaalChanged(_HalaalChanged value),
     @required Result saved(_Saved value),
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
@@ -652,6 +673,7 @@ class _$_StoreNameChanged implements _StoreNameChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -677,6 +699,7 @@ class _$_StoreNameChanged implements _StoreNameChanged {
     Result acceptOtherChanged(_AcceptOtherChanged value),
     Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     Result foodCollectionChanged(_FoodCollectionChanged value),
+    Result halaalChanged(_HalaalChanged value),
     Result saved(_Saved value),
     Result coverImageChanged(_CoverImageChanged value),
     Result logoImageChanged(_LogoImageChanged value),
@@ -770,6 +793,7 @@ class _$_AddressChanged implements _AddressChanged {
     @required Result acceptOtherChanged(bool acceptOther),
     @required Result foodDeliveriesChanged(bool foodDeliveries),
     @required Result foodCollectionChanged(bool foodCollection),
+    @required Result halaalChanged(bool isHalaal),
     @required Result saved(),
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
@@ -790,6 +814,7 @@ class _$_AddressChanged implements _AddressChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -815,6 +840,7 @@ class _$_AddressChanged implements _AddressChanged {
     Result acceptOtherChanged(bool acceptOther),
     Result foodDeliveriesChanged(bool foodDeliveries),
     Result foodCollectionChanged(bool foodCollection),
+    Result halaalChanged(bool isHalaal),
     Result saved(),
     Result coverImageChanged(String coverImage),
     Result logoImageChanged(String logoImage),
@@ -848,6 +874,7 @@ class _$_AddressChanged implements _AddressChanged {
     @required Result acceptOtherChanged(_AcceptOtherChanged value),
     @required Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     @required Result foodCollectionChanged(_FoodCollectionChanged value),
+    @required Result halaalChanged(_HalaalChanged value),
     @required Result saved(_Saved value),
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
@@ -868,6 +895,7 @@ class _$_AddressChanged implements _AddressChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -893,6 +921,7 @@ class _$_AddressChanged implements _AddressChanged {
     Result acceptOtherChanged(_AcceptOtherChanged value),
     Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     Result foodCollectionChanged(_FoodCollectionChanged value),
+    Result halaalChanged(_HalaalChanged value),
     Result saved(_Saved value),
     Result coverImageChanged(_CoverImageChanged value),
     Result logoImageChanged(_LogoImageChanged value),
@@ -987,6 +1016,7 @@ class _$_CoordinatesChanged implements _CoordinatesChanged {
     @required Result acceptOtherChanged(bool acceptOther),
     @required Result foodDeliveriesChanged(bool foodDeliveries),
     @required Result foodCollectionChanged(bool foodCollection),
+    @required Result halaalChanged(bool isHalaal),
     @required Result saved(),
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
@@ -1007,6 +1037,7 @@ class _$_CoordinatesChanged implements _CoordinatesChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -1032,6 +1063,7 @@ class _$_CoordinatesChanged implements _CoordinatesChanged {
     Result acceptOtherChanged(bool acceptOther),
     Result foodDeliveriesChanged(bool foodDeliveries),
     Result foodCollectionChanged(bool foodCollection),
+    Result halaalChanged(bool isHalaal),
     Result saved(),
     Result coverImageChanged(String coverImage),
     Result logoImageChanged(String logoImage),
@@ -1065,6 +1097,7 @@ class _$_CoordinatesChanged implements _CoordinatesChanged {
     @required Result acceptOtherChanged(_AcceptOtherChanged value),
     @required Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     @required Result foodCollectionChanged(_FoodCollectionChanged value),
+    @required Result halaalChanged(_HalaalChanged value),
     @required Result saved(_Saved value),
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
@@ -1085,6 +1118,7 @@ class _$_CoordinatesChanged implements _CoordinatesChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -1110,6 +1144,7 @@ class _$_CoordinatesChanged implements _CoordinatesChanged {
     Result acceptOtherChanged(_AcceptOtherChanged value),
     Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     Result foodCollectionChanged(_FoodCollectionChanged value),
+    Result halaalChanged(_HalaalChanged value),
     Result saved(_Saved value),
     Result coverImageChanged(_CoverImageChanged value),
     Result logoImageChanged(_LogoImageChanged value),
@@ -1206,6 +1241,7 @@ class _$_WorkHoursFromChanged implements _WorkHoursFromChanged {
     @required Result acceptOtherChanged(bool acceptOther),
     @required Result foodDeliveriesChanged(bool foodDeliveries),
     @required Result foodCollectionChanged(bool foodCollection),
+    @required Result halaalChanged(bool isHalaal),
     @required Result saved(),
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
@@ -1226,6 +1262,7 @@ class _$_WorkHoursFromChanged implements _WorkHoursFromChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -1251,6 +1288,7 @@ class _$_WorkHoursFromChanged implements _WorkHoursFromChanged {
     Result acceptOtherChanged(bool acceptOther),
     Result foodDeliveriesChanged(bool foodDeliveries),
     Result foodCollectionChanged(bool foodCollection),
+    Result halaalChanged(bool isHalaal),
     Result saved(),
     Result coverImageChanged(String coverImage),
     Result logoImageChanged(String logoImage),
@@ -1284,6 +1322,7 @@ class _$_WorkHoursFromChanged implements _WorkHoursFromChanged {
     @required Result acceptOtherChanged(_AcceptOtherChanged value),
     @required Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     @required Result foodCollectionChanged(_FoodCollectionChanged value),
+    @required Result halaalChanged(_HalaalChanged value),
     @required Result saved(_Saved value),
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
@@ -1304,6 +1343,7 @@ class _$_WorkHoursFromChanged implements _WorkHoursFromChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -1329,6 +1369,7 @@ class _$_WorkHoursFromChanged implements _WorkHoursFromChanged {
     Result acceptOtherChanged(_AcceptOtherChanged value),
     Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     Result foodCollectionChanged(_FoodCollectionChanged value),
+    Result halaalChanged(_HalaalChanged value),
     Result saved(_Saved value),
     Result coverImageChanged(_CoverImageChanged value),
     Result logoImageChanged(_LogoImageChanged value),
@@ -1424,6 +1465,7 @@ class _$_WorkHoursToChanged implements _WorkHoursToChanged {
     @required Result acceptOtherChanged(bool acceptOther),
     @required Result foodDeliveriesChanged(bool foodDeliveries),
     @required Result foodCollectionChanged(bool foodCollection),
+    @required Result halaalChanged(bool isHalaal),
     @required Result saved(),
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
@@ -1444,6 +1486,7 @@ class _$_WorkHoursToChanged implements _WorkHoursToChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -1469,6 +1512,7 @@ class _$_WorkHoursToChanged implements _WorkHoursToChanged {
     Result acceptOtherChanged(bool acceptOther),
     Result foodDeliveriesChanged(bool foodDeliveries),
     Result foodCollectionChanged(bool foodCollection),
+    Result halaalChanged(bool isHalaal),
     Result saved(),
     Result coverImageChanged(String coverImage),
     Result logoImageChanged(String logoImage),
@@ -1502,6 +1546,7 @@ class _$_WorkHoursToChanged implements _WorkHoursToChanged {
     @required Result acceptOtherChanged(_AcceptOtherChanged value),
     @required Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     @required Result foodCollectionChanged(_FoodCollectionChanged value),
+    @required Result halaalChanged(_HalaalChanged value),
     @required Result saved(_Saved value),
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
@@ -1522,6 +1567,7 @@ class _$_WorkHoursToChanged implements _WorkHoursToChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -1547,6 +1593,7 @@ class _$_WorkHoursToChanged implements _WorkHoursToChanged {
     Result acceptOtherChanged(_AcceptOtherChanged value),
     Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     Result foodCollectionChanged(_FoodCollectionChanged value),
+    Result halaalChanged(_HalaalChanged value),
     Result saved(_Saved value),
     Result coverImageChanged(_CoverImageChanged value),
     Result logoImageChanged(_LogoImageChanged value),
@@ -1642,6 +1689,7 @@ class _$_TelephoneChanged implements _TelephoneChanged {
     @required Result acceptOtherChanged(bool acceptOther),
     @required Result foodDeliveriesChanged(bool foodDeliveries),
     @required Result foodCollectionChanged(bool foodCollection),
+    @required Result halaalChanged(bool isHalaal),
     @required Result saved(),
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
@@ -1662,6 +1710,7 @@ class _$_TelephoneChanged implements _TelephoneChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -1687,6 +1736,7 @@ class _$_TelephoneChanged implements _TelephoneChanged {
     Result acceptOtherChanged(bool acceptOther),
     Result foodDeliveriesChanged(bool foodDeliveries),
     Result foodCollectionChanged(bool foodCollection),
+    Result halaalChanged(bool isHalaal),
     Result saved(),
     Result coverImageChanged(String coverImage),
     Result logoImageChanged(String logoImage),
@@ -1720,6 +1770,7 @@ class _$_TelephoneChanged implements _TelephoneChanged {
     @required Result acceptOtherChanged(_AcceptOtherChanged value),
     @required Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     @required Result foodCollectionChanged(_FoodCollectionChanged value),
+    @required Result halaalChanged(_HalaalChanged value),
     @required Result saved(_Saved value),
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
@@ -1740,6 +1791,7 @@ class _$_TelephoneChanged implements _TelephoneChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -1765,6 +1817,7 @@ class _$_TelephoneChanged implements _TelephoneChanged {
     Result acceptOtherChanged(_AcceptOtherChanged value),
     Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     Result foodCollectionChanged(_FoodCollectionChanged value),
+    Result halaalChanged(_HalaalChanged value),
     Result saved(_Saved value),
     Result coverImageChanged(_CoverImageChanged value),
     Result logoImageChanged(_LogoImageChanged value),
@@ -1858,6 +1911,7 @@ class _$_NotesChanged implements _NotesChanged {
     @required Result acceptOtherChanged(bool acceptOther),
     @required Result foodDeliveriesChanged(bool foodDeliveries),
     @required Result foodCollectionChanged(bool foodCollection),
+    @required Result halaalChanged(bool isHalaal),
     @required Result saved(),
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
@@ -1878,6 +1932,7 @@ class _$_NotesChanged implements _NotesChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -1903,6 +1958,7 @@ class _$_NotesChanged implements _NotesChanged {
     Result acceptOtherChanged(bool acceptOther),
     Result foodDeliveriesChanged(bool foodDeliveries),
     Result foodCollectionChanged(bool foodCollection),
+    Result halaalChanged(bool isHalaal),
     Result saved(),
     Result coverImageChanged(String coverImage),
     Result logoImageChanged(String logoImage),
@@ -1936,6 +1992,7 @@ class _$_NotesChanged implements _NotesChanged {
     @required Result acceptOtherChanged(_AcceptOtherChanged value),
     @required Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     @required Result foodCollectionChanged(_FoodCollectionChanged value),
+    @required Result halaalChanged(_HalaalChanged value),
     @required Result saved(_Saved value),
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
@@ -1956,6 +2013,7 @@ class _$_NotesChanged implements _NotesChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -1981,6 +2039,7 @@ class _$_NotesChanged implements _NotesChanged {
     Result acceptOtherChanged(_AcceptOtherChanged value),
     Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     Result foodCollectionChanged(_FoodCollectionChanged value),
+    Result halaalChanged(_HalaalChanged value),
     Result saved(_Saved value),
     Result coverImageChanged(_CoverImageChanged value),
     Result logoImageChanged(_LogoImageChanged value),
@@ -2074,6 +2133,7 @@ class _$_ActiveChanged implements _ActiveChanged {
     @required Result acceptOtherChanged(bool acceptOther),
     @required Result foodDeliveriesChanged(bool foodDeliveries),
     @required Result foodCollectionChanged(bool foodCollection),
+    @required Result halaalChanged(bool isHalaal),
     @required Result saved(),
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
@@ -2094,6 +2154,7 @@ class _$_ActiveChanged implements _ActiveChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -2119,6 +2180,7 @@ class _$_ActiveChanged implements _ActiveChanged {
     Result acceptOtherChanged(bool acceptOther),
     Result foodDeliveriesChanged(bool foodDeliveries),
     Result foodCollectionChanged(bool foodCollection),
+    Result halaalChanged(bool isHalaal),
     Result saved(),
     Result coverImageChanged(String coverImage),
     Result logoImageChanged(String logoImage),
@@ -2152,6 +2214,7 @@ class _$_ActiveChanged implements _ActiveChanged {
     @required Result acceptOtherChanged(_AcceptOtherChanged value),
     @required Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     @required Result foodCollectionChanged(_FoodCollectionChanged value),
+    @required Result halaalChanged(_HalaalChanged value),
     @required Result saved(_Saved value),
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
@@ -2172,6 +2235,7 @@ class _$_ActiveChanged implements _ActiveChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -2197,6 +2261,7 @@ class _$_ActiveChanged implements _ActiveChanged {
     Result acceptOtherChanged(_AcceptOtherChanged value),
     Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     Result foodCollectionChanged(_FoodCollectionChanged value),
+    Result halaalChanged(_HalaalChanged value),
     Result saved(_Saved value),
     Result coverImageChanged(_CoverImageChanged value),
     Result logoImageChanged(_LogoImageChanged value),
@@ -2290,6 +2355,7 @@ class _$_OpenChanged implements _OpenChanged {
     @required Result acceptOtherChanged(bool acceptOther),
     @required Result foodDeliveriesChanged(bool foodDeliveries),
     @required Result foodCollectionChanged(bool foodCollection),
+    @required Result halaalChanged(bool isHalaal),
     @required Result saved(),
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
@@ -2310,6 +2376,7 @@ class _$_OpenChanged implements _OpenChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -2335,6 +2402,7 @@ class _$_OpenChanged implements _OpenChanged {
     Result acceptOtherChanged(bool acceptOther),
     Result foodDeliveriesChanged(bool foodDeliveries),
     Result foodCollectionChanged(bool foodCollection),
+    Result halaalChanged(bool isHalaal),
     Result saved(),
     Result coverImageChanged(String coverImage),
     Result logoImageChanged(String logoImage),
@@ -2368,6 +2436,7 @@ class _$_OpenChanged implements _OpenChanged {
     @required Result acceptOtherChanged(_AcceptOtherChanged value),
     @required Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     @required Result foodCollectionChanged(_FoodCollectionChanged value),
+    @required Result halaalChanged(_HalaalChanged value),
     @required Result saved(_Saved value),
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
@@ -2388,6 +2457,7 @@ class _$_OpenChanged implements _OpenChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -2413,6 +2483,7 @@ class _$_OpenChanged implements _OpenChanged {
     Result acceptOtherChanged(_AcceptOtherChanged value),
     Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     Result foodCollectionChanged(_FoodCollectionChanged value),
+    Result halaalChanged(_HalaalChanged value),
     Result saved(_Saved value),
     Result coverImageChanged(_CoverImageChanged value),
     Result logoImageChanged(_LogoImageChanged value),
@@ -2515,6 +2586,7 @@ class _$_AcceptingStaffRequestsChanged
     @required Result acceptOtherChanged(bool acceptOther),
     @required Result foodDeliveriesChanged(bool foodDeliveries),
     @required Result foodCollectionChanged(bool foodCollection),
+    @required Result halaalChanged(bool isHalaal),
     @required Result saved(),
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
@@ -2535,6 +2607,7 @@ class _$_AcceptingStaffRequestsChanged
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -2560,6 +2633,7 @@ class _$_AcceptingStaffRequestsChanged
     Result acceptOtherChanged(bool acceptOther),
     Result foodDeliveriesChanged(bool foodDeliveries),
     Result foodCollectionChanged(bool foodCollection),
+    Result halaalChanged(bool isHalaal),
     Result saved(),
     Result coverImageChanged(String coverImage),
     Result logoImageChanged(String logoImage),
@@ -2593,6 +2667,7 @@ class _$_AcceptingStaffRequestsChanged
     @required Result acceptOtherChanged(_AcceptOtherChanged value),
     @required Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     @required Result foodCollectionChanged(_FoodCollectionChanged value),
+    @required Result halaalChanged(_HalaalChanged value),
     @required Result saved(_Saved value),
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
@@ -2613,6 +2688,7 @@ class _$_AcceptingStaffRequestsChanged
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -2638,6 +2714,7 @@ class _$_AcceptingStaffRequestsChanged
     Result acceptOtherChanged(_AcceptOtherChanged value),
     Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     Result foodCollectionChanged(_FoodCollectionChanged value),
+    Result halaalChanged(_HalaalChanged value),
     Result saved(_Saved value),
     Result coverImageChanged(_CoverImageChanged value),
     Result logoImageChanged(_LogoImageChanged value),
@@ -2735,6 +2812,7 @@ class _$_AcceptCashChanged implements _AcceptCashChanged {
     @required Result acceptOtherChanged(bool acceptOther),
     @required Result foodDeliveriesChanged(bool foodDeliveries),
     @required Result foodCollectionChanged(bool foodCollection),
+    @required Result halaalChanged(bool isHalaal),
     @required Result saved(),
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
@@ -2755,6 +2833,7 @@ class _$_AcceptCashChanged implements _AcceptCashChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -2780,6 +2859,7 @@ class _$_AcceptCashChanged implements _AcceptCashChanged {
     Result acceptOtherChanged(bool acceptOther),
     Result foodDeliveriesChanged(bool foodDeliveries),
     Result foodCollectionChanged(bool foodCollection),
+    Result halaalChanged(bool isHalaal),
     Result saved(),
     Result coverImageChanged(String coverImage),
     Result logoImageChanged(String logoImage),
@@ -2813,6 +2893,7 @@ class _$_AcceptCashChanged implements _AcceptCashChanged {
     @required Result acceptOtherChanged(_AcceptOtherChanged value),
     @required Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     @required Result foodCollectionChanged(_FoodCollectionChanged value),
+    @required Result halaalChanged(_HalaalChanged value),
     @required Result saved(_Saved value),
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
@@ -2833,6 +2914,7 @@ class _$_AcceptCashChanged implements _AcceptCashChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -2858,6 +2940,7 @@ class _$_AcceptCashChanged implements _AcceptCashChanged {
     Result acceptOtherChanged(_AcceptOtherChanged value),
     Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     Result foodCollectionChanged(_FoodCollectionChanged value),
+    Result halaalChanged(_HalaalChanged value),
     Result saved(_Saved value),
     Result coverImageChanged(_CoverImageChanged value),
     Result logoImageChanged(_LogoImageChanged value),
@@ -2953,6 +3036,7 @@ class _$_AcceptCardChanged implements _AcceptCardChanged {
     @required Result acceptOtherChanged(bool acceptOther),
     @required Result foodDeliveriesChanged(bool foodDeliveries),
     @required Result foodCollectionChanged(bool foodCollection),
+    @required Result halaalChanged(bool isHalaal),
     @required Result saved(),
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
@@ -2973,6 +3057,7 @@ class _$_AcceptCardChanged implements _AcceptCardChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -2998,6 +3083,7 @@ class _$_AcceptCardChanged implements _AcceptCardChanged {
     Result acceptOtherChanged(bool acceptOther),
     Result foodDeliveriesChanged(bool foodDeliveries),
     Result foodCollectionChanged(bool foodCollection),
+    Result halaalChanged(bool isHalaal),
     Result saved(),
     Result coverImageChanged(String coverImage),
     Result logoImageChanged(String logoImage),
@@ -3031,6 +3117,7 @@ class _$_AcceptCardChanged implements _AcceptCardChanged {
     @required Result acceptOtherChanged(_AcceptOtherChanged value),
     @required Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     @required Result foodCollectionChanged(_FoodCollectionChanged value),
+    @required Result halaalChanged(_HalaalChanged value),
     @required Result saved(_Saved value),
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
@@ -3051,6 +3138,7 @@ class _$_AcceptCardChanged implements _AcceptCardChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -3076,6 +3164,7 @@ class _$_AcceptCardChanged implements _AcceptCardChanged {
     Result acceptOtherChanged(_AcceptOtherChanged value),
     Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     Result foodCollectionChanged(_FoodCollectionChanged value),
+    Result halaalChanged(_HalaalChanged value),
     Result saved(_Saved value),
     Result coverImageChanged(_CoverImageChanged value),
     Result logoImageChanged(_LogoImageChanged value),
@@ -3171,6 +3260,7 @@ class _$_AcceptOtherChanged implements _AcceptOtherChanged {
     @required Result acceptOtherChanged(bool acceptOther),
     @required Result foodDeliveriesChanged(bool foodDeliveries),
     @required Result foodCollectionChanged(bool foodCollection),
+    @required Result halaalChanged(bool isHalaal),
     @required Result saved(),
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
@@ -3191,6 +3281,7 @@ class _$_AcceptOtherChanged implements _AcceptOtherChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -3216,6 +3307,7 @@ class _$_AcceptOtherChanged implements _AcceptOtherChanged {
     Result acceptOtherChanged(bool acceptOther),
     Result foodDeliveriesChanged(bool foodDeliveries),
     Result foodCollectionChanged(bool foodCollection),
+    Result halaalChanged(bool isHalaal),
     Result saved(),
     Result coverImageChanged(String coverImage),
     Result logoImageChanged(String logoImage),
@@ -3249,6 +3341,7 @@ class _$_AcceptOtherChanged implements _AcceptOtherChanged {
     @required Result acceptOtherChanged(_AcceptOtherChanged value),
     @required Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     @required Result foodCollectionChanged(_FoodCollectionChanged value),
+    @required Result halaalChanged(_HalaalChanged value),
     @required Result saved(_Saved value),
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
@@ -3269,6 +3362,7 @@ class _$_AcceptOtherChanged implements _AcceptOtherChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -3294,6 +3388,7 @@ class _$_AcceptOtherChanged implements _AcceptOtherChanged {
     Result acceptOtherChanged(_AcceptOtherChanged value),
     Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     Result foodCollectionChanged(_FoodCollectionChanged value),
+    Result halaalChanged(_HalaalChanged value),
     Result saved(_Saved value),
     Result coverImageChanged(_CoverImageChanged value),
     Result logoImageChanged(_LogoImageChanged value),
@@ -3392,6 +3487,7 @@ class _$_FoodDeliveriesChanged implements _FoodDeliveriesChanged {
     @required Result acceptOtherChanged(bool acceptOther),
     @required Result foodDeliveriesChanged(bool foodDeliveries),
     @required Result foodCollectionChanged(bool foodCollection),
+    @required Result halaalChanged(bool isHalaal),
     @required Result saved(),
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
@@ -3412,6 +3508,7 @@ class _$_FoodDeliveriesChanged implements _FoodDeliveriesChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -3437,6 +3534,7 @@ class _$_FoodDeliveriesChanged implements _FoodDeliveriesChanged {
     Result acceptOtherChanged(bool acceptOther),
     Result foodDeliveriesChanged(bool foodDeliveries),
     Result foodCollectionChanged(bool foodCollection),
+    Result halaalChanged(bool isHalaal),
     Result saved(),
     Result coverImageChanged(String coverImage),
     Result logoImageChanged(String logoImage),
@@ -3470,6 +3568,7 @@ class _$_FoodDeliveriesChanged implements _FoodDeliveriesChanged {
     @required Result acceptOtherChanged(_AcceptOtherChanged value),
     @required Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     @required Result foodCollectionChanged(_FoodCollectionChanged value),
+    @required Result halaalChanged(_HalaalChanged value),
     @required Result saved(_Saved value),
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
@@ -3490,6 +3589,7 @@ class _$_FoodDeliveriesChanged implements _FoodDeliveriesChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -3515,6 +3615,7 @@ class _$_FoodDeliveriesChanged implements _FoodDeliveriesChanged {
     Result acceptOtherChanged(_AcceptOtherChanged value),
     Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     Result foodCollectionChanged(_FoodCollectionChanged value),
+    Result halaalChanged(_HalaalChanged value),
     Result saved(_Saved value),
     Result coverImageChanged(_CoverImageChanged value),
     Result logoImageChanged(_LogoImageChanged value),
@@ -3614,6 +3715,7 @@ class _$_FoodCollectionChanged implements _FoodCollectionChanged {
     @required Result acceptOtherChanged(bool acceptOther),
     @required Result foodDeliveriesChanged(bool foodDeliveries),
     @required Result foodCollectionChanged(bool foodCollection),
+    @required Result halaalChanged(bool isHalaal),
     @required Result saved(),
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
@@ -3634,6 +3736,7 @@ class _$_FoodCollectionChanged implements _FoodCollectionChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -3659,6 +3762,7 @@ class _$_FoodCollectionChanged implements _FoodCollectionChanged {
     Result acceptOtherChanged(bool acceptOther),
     Result foodDeliveriesChanged(bool foodDeliveries),
     Result foodCollectionChanged(bool foodCollection),
+    Result halaalChanged(bool isHalaal),
     Result saved(),
     Result coverImageChanged(String coverImage),
     Result logoImageChanged(String logoImage),
@@ -3692,6 +3796,7 @@ class _$_FoodCollectionChanged implements _FoodCollectionChanged {
     @required Result acceptOtherChanged(_AcceptOtherChanged value),
     @required Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     @required Result foodCollectionChanged(_FoodCollectionChanged value),
+    @required Result halaalChanged(_HalaalChanged value),
     @required Result saved(_Saved value),
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
@@ -3712,6 +3817,7 @@ class _$_FoodCollectionChanged implements _FoodCollectionChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -3737,6 +3843,7 @@ class _$_FoodCollectionChanged implements _FoodCollectionChanged {
     Result acceptOtherChanged(_AcceptOtherChanged value),
     Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     Result foodCollectionChanged(_FoodCollectionChanged value),
+    Result halaalChanged(_HalaalChanged value),
     Result saved(_Saved value),
     Result coverImageChanged(_CoverImageChanged value),
     Result logoImageChanged(_LogoImageChanged value),
@@ -3756,6 +3863,229 @@ abstract class _FoodCollectionChanged implements StoreFormEvent {
 
   bool get foodCollection;
   _$FoodCollectionChangedCopyWith<_FoodCollectionChanged> get copyWith;
+}
+
+abstract class _$HalaalChangedCopyWith<$Res> {
+  factory _$HalaalChangedCopyWith(
+          _HalaalChanged value, $Res Function(_HalaalChanged) then) =
+      __$HalaalChangedCopyWithImpl<$Res>;
+  $Res call({bool isHalaal});
+}
+
+class __$HalaalChangedCopyWithImpl<$Res>
+    extends _$StoreFormEventCopyWithImpl<$Res>
+    implements _$HalaalChangedCopyWith<$Res> {
+  __$HalaalChangedCopyWithImpl(
+      _HalaalChanged _value, $Res Function(_HalaalChanged) _then)
+      : super(_value, (v) => _then(v as _HalaalChanged));
+
+  @override
+  _HalaalChanged get _value => super._value as _HalaalChanged;
+
+  @override
+  $Res call({
+    Object isHalaal = freezed,
+  }) {
+    return _then(_HalaalChanged(
+      isHalaal: isHalaal == freezed ? _value.isHalaal : isHalaal as bool,
+    ));
+  }
+}
+
+class _$_HalaalChanged implements _HalaalChanged {
+  const _$_HalaalChanged({this.isHalaal});
+
+  @override
+  final bool isHalaal;
+
+  @override
+  String toString() {
+    return 'StoreFormEvent.halaalChanged(isHalaal: $isHalaal)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other is _HalaalChanged &&
+            (identical(other.isHalaal, isHalaal) ||
+                const DeepCollectionEquality()
+                    .equals(other.isHalaal, isHalaal)));
+  }
+
+  @override
+  int get hashCode =>
+      runtimeType.hashCode ^ const DeepCollectionEquality().hash(isHalaal);
+
+  @override
+  _$HalaalChangedCopyWith<_HalaalChanged> get copyWith =>
+      __$HalaalChangedCopyWithImpl<_HalaalChanged>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  Result when<Result extends Object>({
+    @required Result initialized(Option<Restaurant> initialStoreOption),
+    @required Result storeNameChanged(String storeName),
+    @required Result addressChanged(String address),
+    @required Result coordinatesChanged(GeoFirePoint coordinates),
+    @required Result workHoursFromChanged(Timestamp workHours),
+    @required Result workHoursToChanged(Timestamp workHours),
+    @required Result telephoneChanged(String telephone),
+    @required Result notesChanged(String notes),
+    @required Result activeChanged(bool active),
+    @required Result openChanged(bool open),
+    @required Result acceptingStaffRequestsChanged(bool acceptingStaffRequests),
+    @required Result acceptCashChanged(bool acceptCash),
+    @required Result acceptCardChanged(bool acceptCard),
+    @required Result acceptOtherChanged(bool acceptOther),
+    @required Result foodDeliveriesChanged(bool foodDeliveries),
+    @required Result foodCollectionChanged(bool foodCollection),
+    @required Result halaalChanged(bool isHalaal),
+    @required Result saved(),
+    @required Result coverImageChanged(String coverImage),
+    @required Result logoImageChanged(String logoImage),
+  }) {
+    assert(initialized != null);
+    assert(storeNameChanged != null);
+    assert(addressChanged != null);
+    assert(coordinatesChanged != null);
+    assert(workHoursFromChanged != null);
+    assert(workHoursToChanged != null);
+    assert(telephoneChanged != null);
+    assert(notesChanged != null);
+    assert(activeChanged != null);
+    assert(openChanged != null);
+    assert(acceptingStaffRequestsChanged != null);
+    assert(acceptCashChanged != null);
+    assert(acceptCardChanged != null);
+    assert(acceptOtherChanged != null);
+    assert(foodDeliveriesChanged != null);
+    assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
+    assert(saved != null);
+    assert(coverImageChanged != null);
+    assert(logoImageChanged != null);
+    return halaalChanged(isHalaal);
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeWhen<Result extends Object>({
+    Result initialized(Option<Restaurant> initialStoreOption),
+    Result storeNameChanged(String storeName),
+    Result addressChanged(String address),
+    Result coordinatesChanged(GeoFirePoint coordinates),
+    Result workHoursFromChanged(Timestamp workHours),
+    Result workHoursToChanged(Timestamp workHours),
+    Result telephoneChanged(String telephone),
+    Result notesChanged(String notes),
+    Result activeChanged(bool active),
+    Result openChanged(bool open),
+    Result acceptingStaffRequestsChanged(bool acceptingStaffRequests),
+    Result acceptCashChanged(bool acceptCash),
+    Result acceptCardChanged(bool acceptCard),
+    Result acceptOtherChanged(bool acceptOther),
+    Result foodDeliveriesChanged(bool foodDeliveries),
+    Result foodCollectionChanged(bool foodCollection),
+    Result halaalChanged(bool isHalaal),
+    Result saved(),
+    Result coverImageChanged(String coverImage),
+    Result logoImageChanged(String logoImage),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (halaalChanged != null) {
+      return halaalChanged(isHalaal);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  Result map<Result extends Object>({
+    @required Result initialized(_Initialized value),
+    @required Result storeNameChanged(_StoreNameChanged value),
+    @required Result addressChanged(_AddressChanged value),
+    @required Result coordinatesChanged(_CoordinatesChanged value),
+    @required Result workHoursFromChanged(_WorkHoursFromChanged value),
+    @required Result workHoursToChanged(_WorkHoursToChanged value),
+    @required Result telephoneChanged(_TelephoneChanged value),
+    @required Result notesChanged(_NotesChanged value),
+    @required Result activeChanged(_ActiveChanged value),
+    @required Result openChanged(_OpenChanged value),
+    @required
+        Result acceptingStaffRequestsChanged(
+            _AcceptingStaffRequestsChanged value),
+    @required Result acceptCashChanged(_AcceptCashChanged value),
+    @required Result acceptCardChanged(_AcceptCardChanged value),
+    @required Result acceptOtherChanged(_AcceptOtherChanged value),
+    @required Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
+    @required Result foodCollectionChanged(_FoodCollectionChanged value),
+    @required Result halaalChanged(_HalaalChanged value),
+    @required Result saved(_Saved value),
+    @required Result coverImageChanged(_CoverImageChanged value),
+    @required Result logoImageChanged(_LogoImageChanged value),
+  }) {
+    assert(initialized != null);
+    assert(storeNameChanged != null);
+    assert(addressChanged != null);
+    assert(coordinatesChanged != null);
+    assert(workHoursFromChanged != null);
+    assert(workHoursToChanged != null);
+    assert(telephoneChanged != null);
+    assert(notesChanged != null);
+    assert(activeChanged != null);
+    assert(openChanged != null);
+    assert(acceptingStaffRequestsChanged != null);
+    assert(acceptCashChanged != null);
+    assert(acceptCardChanged != null);
+    assert(acceptOtherChanged != null);
+    assert(foodDeliveriesChanged != null);
+    assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
+    assert(saved != null);
+    assert(coverImageChanged != null);
+    assert(logoImageChanged != null);
+    return halaalChanged(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  Result maybeMap<Result extends Object>({
+    Result initialized(_Initialized value),
+    Result storeNameChanged(_StoreNameChanged value),
+    Result addressChanged(_AddressChanged value),
+    Result coordinatesChanged(_CoordinatesChanged value),
+    Result workHoursFromChanged(_WorkHoursFromChanged value),
+    Result workHoursToChanged(_WorkHoursToChanged value),
+    Result telephoneChanged(_TelephoneChanged value),
+    Result notesChanged(_NotesChanged value),
+    Result activeChanged(_ActiveChanged value),
+    Result openChanged(_OpenChanged value),
+    Result acceptingStaffRequestsChanged(_AcceptingStaffRequestsChanged value),
+    Result acceptCashChanged(_AcceptCashChanged value),
+    Result acceptCardChanged(_AcceptCardChanged value),
+    Result acceptOtherChanged(_AcceptOtherChanged value),
+    Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
+    Result foodCollectionChanged(_FoodCollectionChanged value),
+    Result halaalChanged(_HalaalChanged value),
+    Result saved(_Saved value),
+    Result coverImageChanged(_CoverImageChanged value),
+    Result logoImageChanged(_LogoImageChanged value),
+    @required Result orElse(),
+  }) {
+    assert(orElse != null);
+    if (halaalChanged != null) {
+      return halaalChanged(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _HalaalChanged implements StoreFormEvent {
+  const factory _HalaalChanged({bool isHalaal}) = _$_HalaalChanged;
+
+  bool get isHalaal;
+  _$HalaalChangedCopyWith<_HalaalChanged> get copyWith;
 }
 
 abstract class _$SavedCopyWith<$Res> {
@@ -3807,6 +4137,7 @@ class _$_Saved implements _Saved {
     @required Result acceptOtherChanged(bool acceptOther),
     @required Result foodDeliveriesChanged(bool foodDeliveries),
     @required Result foodCollectionChanged(bool foodCollection),
+    @required Result halaalChanged(bool isHalaal),
     @required Result saved(),
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
@@ -3827,6 +4158,7 @@ class _$_Saved implements _Saved {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -3852,6 +4184,7 @@ class _$_Saved implements _Saved {
     Result acceptOtherChanged(bool acceptOther),
     Result foodDeliveriesChanged(bool foodDeliveries),
     Result foodCollectionChanged(bool foodCollection),
+    Result halaalChanged(bool isHalaal),
     Result saved(),
     Result coverImageChanged(String coverImage),
     Result logoImageChanged(String logoImage),
@@ -3885,6 +4218,7 @@ class _$_Saved implements _Saved {
     @required Result acceptOtherChanged(_AcceptOtherChanged value),
     @required Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     @required Result foodCollectionChanged(_FoodCollectionChanged value),
+    @required Result halaalChanged(_HalaalChanged value),
     @required Result saved(_Saved value),
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
@@ -3905,6 +4239,7 @@ class _$_Saved implements _Saved {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -3930,6 +4265,7 @@ class _$_Saved implements _Saved {
     Result acceptOtherChanged(_AcceptOtherChanged value),
     Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     Result foodCollectionChanged(_FoodCollectionChanged value),
+    Result halaalChanged(_HalaalChanged value),
     Result saved(_Saved value),
     Result coverImageChanged(_CoverImageChanged value),
     Result logoImageChanged(_LogoImageChanged value),
@@ -4021,6 +4357,7 @@ class _$_CoverImageChanged implements _CoverImageChanged {
     @required Result acceptOtherChanged(bool acceptOther),
     @required Result foodDeliveriesChanged(bool foodDeliveries),
     @required Result foodCollectionChanged(bool foodCollection),
+    @required Result halaalChanged(bool isHalaal),
     @required Result saved(),
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
@@ -4041,6 +4378,7 @@ class _$_CoverImageChanged implements _CoverImageChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -4066,6 +4404,7 @@ class _$_CoverImageChanged implements _CoverImageChanged {
     Result acceptOtherChanged(bool acceptOther),
     Result foodDeliveriesChanged(bool foodDeliveries),
     Result foodCollectionChanged(bool foodCollection),
+    Result halaalChanged(bool isHalaal),
     Result saved(),
     Result coverImageChanged(String coverImage),
     Result logoImageChanged(String logoImage),
@@ -4099,6 +4438,7 @@ class _$_CoverImageChanged implements _CoverImageChanged {
     @required Result acceptOtherChanged(_AcceptOtherChanged value),
     @required Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     @required Result foodCollectionChanged(_FoodCollectionChanged value),
+    @required Result halaalChanged(_HalaalChanged value),
     @required Result saved(_Saved value),
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
@@ -4119,6 +4459,7 @@ class _$_CoverImageChanged implements _CoverImageChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -4144,6 +4485,7 @@ class _$_CoverImageChanged implements _CoverImageChanged {
     Result acceptOtherChanged(_AcceptOtherChanged value),
     Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     Result foodCollectionChanged(_FoodCollectionChanged value),
+    Result halaalChanged(_HalaalChanged value),
     Result saved(_Saved value),
     Result coverImageChanged(_CoverImageChanged value),
     Result logoImageChanged(_LogoImageChanged value),
@@ -4238,6 +4580,7 @@ class _$_LogoImageChanged implements _LogoImageChanged {
     @required Result acceptOtherChanged(bool acceptOther),
     @required Result foodDeliveriesChanged(bool foodDeliveries),
     @required Result foodCollectionChanged(bool foodCollection),
+    @required Result halaalChanged(bool isHalaal),
     @required Result saved(),
     @required Result coverImageChanged(String coverImage),
     @required Result logoImageChanged(String logoImage),
@@ -4258,6 +4601,7 @@ class _$_LogoImageChanged implements _LogoImageChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -4283,6 +4627,7 @@ class _$_LogoImageChanged implements _LogoImageChanged {
     Result acceptOtherChanged(bool acceptOther),
     Result foodDeliveriesChanged(bool foodDeliveries),
     Result foodCollectionChanged(bool foodCollection),
+    Result halaalChanged(bool isHalaal),
     Result saved(),
     Result coverImageChanged(String coverImage),
     Result logoImageChanged(String logoImage),
@@ -4316,6 +4661,7 @@ class _$_LogoImageChanged implements _LogoImageChanged {
     @required Result acceptOtherChanged(_AcceptOtherChanged value),
     @required Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     @required Result foodCollectionChanged(_FoodCollectionChanged value),
+    @required Result halaalChanged(_HalaalChanged value),
     @required Result saved(_Saved value),
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result logoImageChanged(_LogoImageChanged value),
@@ -4336,6 +4682,7 @@ class _$_LogoImageChanged implements _LogoImageChanged {
     assert(acceptOtherChanged != null);
     assert(foodDeliveriesChanged != null);
     assert(foodCollectionChanged != null);
+    assert(halaalChanged != null);
     assert(saved != null);
     assert(coverImageChanged != null);
     assert(logoImageChanged != null);
@@ -4361,6 +4708,7 @@ class _$_LogoImageChanged implements _LogoImageChanged {
     Result acceptOtherChanged(_AcceptOtherChanged value),
     Result foodDeliveriesChanged(_FoodDeliveriesChanged value),
     Result foodCollectionChanged(_FoodCollectionChanged value),
+    Result halaalChanged(_HalaalChanged value),
     Result saved(_Saved value),
     Result coverImageChanged(_CoverImageChanged value),
     Result logoImageChanged(_LogoImageChanged value),

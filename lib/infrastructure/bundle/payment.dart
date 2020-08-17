@@ -10,8 +10,8 @@ Future<RaveStatus> performTransaction({
   final time = DateTime.now();
   final initializer = RavePayInitializer(
     amount: amount,
-    publicKey: 'FLWPUBK_TEST-2480d1f2892841f8673068c16fb17b4f-X',
-    encryptionKey: 'FLWSECK_TESTefdf670e7808',
+    publicKey: 'FLWPUBK-c98365be1acbe3dc483e41c5ed3b0fba-X',
+    encryptionKey: '483a5ee104d8acf8ecfeab51',
   )
     ..country = "ZA"
     ..currency = "ZAR"

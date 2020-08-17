@@ -34,6 +34,7 @@ abstract class StoreDTO implements _$StoreDTO {
     @required bool acceptOther,
     @required bool foodDeliveries,
     @required bool foodCollection,
+    @required bool isHalaal,
     @required @ServerTimestampConverter() FieldValue serverTimeStamp,
     @JsonKey(ignore: true) String id,
     String coverImageUrl,
@@ -61,6 +62,7 @@ abstract class StoreDTO implements _$StoreDTO {
       acceptOther: store.acceptOther,
       foodDeliveries: store.foodDeliveries,
       foodCollection: store.foodCollection,
+      isHalaal: store.isHalaal,
       serverTimeStamp: FieldValue.serverTimestamp(),
       notes: store.notes.getOrCrash(),
       storeName: store.storeName.getOrCrash(),
@@ -87,6 +89,7 @@ abstract class StoreDTO implements _$StoreDTO {
       acceptOther: acceptOther,
       foodDeliveries: foodDeliveries,
       foodCollection: foodCollection,
+      isHalaal: isHalaal,
       notes: ValueString.fromString(notes),
       storeName: ValueString.fromString(storeName),
     );

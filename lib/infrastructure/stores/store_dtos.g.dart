@@ -25,6 +25,7 @@ _$_StoreDTO _$_$_StoreDTOFromJson(Map<String, dynamic> json) {
     acceptOther: json['acceptOther'] as bool,
     foodDeliveries: json['foodDeliveries'] as bool,
     foodCollection: json['foodCollection'] as bool,
+    isHalaal: json['isHalaal'] as bool,
     serverTimeStamp:
         const ServerTimestampConverter().fromJson(json['serverTimeStamp']),
     coverImageUrl: json['coverImageUrl'] as String,
@@ -53,6 +54,7 @@ Map<String, dynamic> _$_$_StoreDTOToJson(_$_StoreDTO instance) =>
       'acceptOther': instance.acceptOther,
       'foodDeliveries': instance.foodDeliveries,
       'foodCollection': instance.foodCollection,
+      'isHalaal': instance.isHalaal,
       'serverTimeStamp':
           const ServerTimestampConverter().toJson(instance.serverTimeStamp),
       'coverImageUrl': instance.coverImageUrl,

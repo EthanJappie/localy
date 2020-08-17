@@ -31,6 +31,7 @@ abstract class Restaurant implements _$Restaurant {
     @required bool acceptOther,
     @required bool foodDeliveries,
     @required bool foodCollection,
+    @required bool isHalaal,
     String coverImageUrl,
     String logoImageUrl,
   }) = _Restaurant;
@@ -48,14 +49,15 @@ abstract class Restaurant implements _$Restaurant {
         workingHoursTo: WorkingHours(Timestamp.now()),
         telephoneNumber: ValueString.fromString(""),
         notes: ValueString.fromString(""),
-        active: false,
-        open: false,
+        active: true,
+        open: true,
         acceptingStaffRequests: false,
         acceptCash: false,
         acceptCard: false,
         acceptOther: false,
         foodDeliveries: false,
         foodCollection: false,
+        isHalaal: false,
       );
 
   Option<ValueFailure<dynamic>> get failureOption {

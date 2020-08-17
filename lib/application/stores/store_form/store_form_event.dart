@@ -46,6 +46,8 @@ abstract class StoreFormEvent with _$StoreFormEvent {
   const factory StoreFormEvent.foodCollectionChanged({bool foodCollection}) =
   _FoodCollectionChanged;
 
+  const factory StoreFormEvent.halaalChanged({bool isHalaal}) = _HalaalChanged;
+
   const factory StoreFormEvent.saved() = _Saved;
 
   const factory StoreFormEvent.coverImageChanged(

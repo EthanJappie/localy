@@ -19,7 +19,7 @@ class MenuItemImageField extends StatelessWidget {
           return InkWell(
             onTap: () async {
               final pickedFile =
-                  await ImagePicker().getImage(source: ImageSource.camera);
+                  await ImagePicker().getImage(source: ImageSource.gallery);
               if (pickedFile != null) {
                 final croppedImage = await ImageCropper.cropImage(
                   sourcePath: pickedFile.path,

@@ -1,10 +1,16 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mapbox_navigation/library.dart';
+import 'package:localy/application/order/order_actor/order_actor_bloc.dart';
+import 'package:localy/domain/core/value_objects.dart';
 import 'package:localy/domain/menu_item/menu_item.dart';
 import 'package:localy/domain/order/order.dart';
 import 'package:localy/presentation/core/helpers/utils.dart';
+import 'package:localy/presentation/core/widgets/localy_button.dart';
 import 'package:location/location.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+import '../../../injection.dart';
 
 class CustomerViewOrderPage extends StatefulWidget {
   final StoreOrder order;
@@ -90,12 +96,10 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
                         longitude: _location.longitude,
                         name: "origin"),
                     destination: WayPoint(
-                      latitude: widget.order.storeCoordinates
-                          .getOrCrash()
-                          .latitude,
-                      longitude: widget.order.storeCoordinates
-                          .getOrCrash()
-                          .longitude,
+                      latitude:
+                          widget.order.storeCoordinates.getOrCrash().latitude,
+                      longitude:
+                          widget.order.storeCoordinates.getOrCrash().longitude,
                       name: "destination",
                     ),
                     language: "English",
@@ -167,8 +171,28 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
                 ],
               ),
               const SizedBox(height: 16),
+              if (!widget.order.isCompleted)
+                LocalyButton(
+                  empty: true,
+                  title: "Cancel",
+                  onPressed: () {
+                    _changeState("cancelled", completed: true);
+                    ExtendedNavigator.of(context).pop();
+                  },
+                ),
             ],
           ),
+        ),
+      ),
+    );
+  }
+
+  void _changeState(String status, {bool completed = false}) {
+    getIt<OrderActorBloc>().add(
+      OrderActorEvent.changedState(
+        widget.order.copyWith(
+          status: ValueString.fromString(status),
+          isCompleted: completed,
         ),
       ),
     );

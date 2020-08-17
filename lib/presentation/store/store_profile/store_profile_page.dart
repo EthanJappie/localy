@@ -1,10 +1,12 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:localy/application/auth/auth_bloc.dart';
 import 'package:localy/application/bundle/bundle_form/bundle_form_bloc.dart';
 import 'package:localy/application/bundle/bundle_watcher/bundle_watcher_bloc.dart';
 import 'package:localy/domain/bundle/bundle_entity.dart';
 import 'package:localy/infrastructure/bundle/payment.dart';
+import 'package:localy/presentation/core/widgets/localy_button.dart';
 import 'package:localy/presentation/core/widgets/localy_entry_field.dart';
 import 'package:rave_flutter/rave_flutter.dart';
 
@@ -23,9 +25,25 @@ class StoreProfilePage extends StatelessWidget {
             );
           },
           loadSuccess: (state) {
-            return _renderBundleCredits(
-              context,
-              state.bundle,
+            return SingleChildScrollView(
+              child: Container(
+                margin: const EdgeInsets.symmetric(horizontal: 16),
+                child: Column(
+                  children: [
+                    _renderBundleCredits(
+                      context,
+                      state.bundle,
+                    ),
+                    const SizedBox(height: 16),
+                    LocalyButton(
+                      title: "Logout",
+                      onPressed: () {
+                        context.bloc<AuthBloc>().add(const AuthEvent.signedOut());
+                      },
+                    )
+                  ],
+                ),
+              ),
             );
           },
           loadFailure: (failure) {
@@ -52,6 +70,10 @@ class StoreProfilePage extends StatelessWidget {
                 ),
                 Text(
                   bundle.numberOfCredits.toString(),
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                  ),
                 ),
               ],
             ),
@@ -61,8 +83,8 @@ class StoreProfilePage extends StatelessWidget {
             _renderBundleOption(context, 50),
             _renderBundleOption(context, 100),
             _renderBundleOption(context, 200),
-            const Divider(),
-            _renderOtherBundleOption(context),
+//            const Divider(),
+//            _renderOtherBundleOption(context),
           ],
         ),
       ),

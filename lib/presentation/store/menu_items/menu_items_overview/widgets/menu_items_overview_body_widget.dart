@@ -39,9 +39,11 @@ class MenuItemsOverviewBodyWidget extends StatelessWidget {
                   final menuItem = menuItems[index];
                   return ListTile(
                     onTap: () {
-                      ExtendedNavigator.of(context).pushMenuItemsFormPage(
-                        menuID: menuID,
-                        editedMenuItem: menuItem,
+                      ExtendedNavigator.of(context).pushViewReviewsPage(
+                        type: "menuItem",
+                        typeID: menuItem.id.getOrCrash(),
+                        isStore: true,
+                        showAppBar: true,
                       );
                     },
                     leading: Icon(
@@ -49,7 +51,22 @@ class MenuItemsOverviewBodyWidget extends StatelessWidget {
                     ),
                     title: Text(menuItem.name.getOrCrash()),
                     subtitle: Text(menuItem.description.getOrCrash()),
-                    trailing: Text("R${menuItem.price}"),
+                    trailing: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text("R${menuItem.price}"),
+                        const SizedBox(width: 16),
+                        InkWell(
+                          onTap: () {
+                            ExtendedNavigator.of(context).pushMenuItemsFormPage(
+                              menuID: menuID,
+                              editedMenuItem: menuItem,
+                            );
+                          },
+                          child: const Icon(Icons.edit),
+                        )
+                      ],
+                    ),
                   );
                 },
                 separatorBuilder: (context, index) => const Divider(),
