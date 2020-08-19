@@ -34,12 +34,13 @@ abstract class StoreDTO implements _$StoreDTO {
     @required bool acceptOther,
     @required bool foodDeliveries,
     @required bool foodCollection,
-    @required bool isHalaal,
+    bool isHalaal,
     @required @ServerTimestampConverter() FieldValue serverTimeStamp,
     @JsonKey(ignore: true) String id,
     String coverImageUrl,
     String logoImageUrl,
     String notes,
+    double deliveryCosts,
   }) = _StoreDTO;
 
   factory StoreDTO.fromDomain(Restaurant store) {
@@ -47,9 +48,8 @@ abstract class StoreDTO implements _$StoreDTO {
       id: store.id.getOrCrash(),
       ownerID: store.ownerID.getOrCrash(),
       address: store.address.getOrCrash(),
-      token : store.token.getOrCrash(),
+      token: store.token.getOrCrash(),
       coverImageUrl: store.coverImageUrl,
-      logoImageUrl: store.logoImageUrl,
       coordinates: store.coordinates.getOrCrash(),
       workingHoursFrom: store.workingHoursFrom.getOrCrash(),
       workingHoursTo: store.workingHoursTo.getOrCrash(),
@@ -62,10 +62,11 @@ abstract class StoreDTO implements _$StoreDTO {
       acceptOther: store.acceptOther,
       foodDeliveries: store.foodDeliveries,
       foodCollection: store.foodCollection,
-      isHalaal: store.isHalaal,
+      isHalaal: store.isHalaal ?? false,
       serverTimeStamp: FieldValue.serverTimestamp(),
       notes: store.notes.getOrCrash(),
       storeName: store.storeName.getOrCrash(),
+      deliveryCosts: store.deliveryCost ?? 0,
     );
   }
 
@@ -76,7 +77,6 @@ abstract class StoreDTO implements _$StoreDTO {
       address: ValueString.fromString(address),
       token: ValueString.fromString(token),
       coverImageUrl: coverImageUrl,
-      logoImageUrl: logoImageUrl,
       coordinates: FireCoordinates(coordinates),
       workingHoursFrom: WorkingHours(workingHoursFrom),
       workingHoursTo: WorkingHours(workingHoursTo),
@@ -92,6 +92,7 @@ abstract class StoreDTO implements _$StoreDTO {
       isHalaal: isHalaal,
       notes: ValueString.fromString(notes),
       storeName: ValueString.fromString(storeName),
+      deliveryCost: deliveryCosts,
     );
   }
 
@@ -99,6 +100,6 @@ abstract class StoreDTO implements _$StoreDTO {
       _$StoreDTOFromJson(json);
 
   factory StoreDTO.fromFirestore(DocumentSnapshot doc) {
-    return StoreDTO.fromJson(doc.data).copyWith(id: doc.documentID);
+    return StoreDTO.fromJson(doc.data()).copyWith(id: doc.id);
   }
 }

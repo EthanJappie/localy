@@ -32,9 +32,9 @@ class _$RestaurantTearOff {
       @required bool acceptOther,
       @required bool foodDeliveries,
       @required bool foodCollection,
-      @required bool isHalaal,
+      bool isHalaal,
       String coverImageUrl,
-      String logoImageUrl}) {
+      double deliveryCost}) {
     return _Restaurant(
       id: id,
       ownerID: ownerID,
@@ -56,7 +56,7 @@ class _$RestaurantTearOff {
       foodCollection: foodCollection,
       isHalaal: isHalaal,
       coverImageUrl: coverImageUrl,
-      logoImageUrl: logoImageUrl,
+      deliveryCost: deliveryCost,
     );
   }
 }
@@ -85,7 +85,7 @@ mixin _$Restaurant {
   bool get foodCollection;
   bool get isHalaal;
   String get coverImageUrl;
-  String get logoImageUrl;
+  double get deliveryCost;
 
   $RestaurantCopyWith<Restaurant> get copyWith;
 }
@@ -115,7 +115,7 @@ abstract class $RestaurantCopyWith<$Res> {
       bool foodCollection,
       bool isHalaal,
       String coverImageUrl,
-      String logoImageUrl});
+      double deliveryCost});
 }
 
 class _$RestaurantCopyWithImpl<$Res> implements $RestaurantCopyWith<$Res> {
@@ -147,7 +147,7 @@ class _$RestaurantCopyWithImpl<$Res> implements $RestaurantCopyWith<$Res> {
     Object foodCollection = freezed,
     Object isHalaal = freezed,
     Object coverImageUrl = freezed,
-    Object logoImageUrl = freezed,
+    Object deliveryCost = freezed,
   }) {
     return _then(_value.copyWith(
       id: id == freezed ? _value.id : id as UniqueId,
@@ -190,9 +190,9 @@ class _$RestaurantCopyWithImpl<$Res> implements $RestaurantCopyWith<$Res> {
       coverImageUrl: coverImageUrl == freezed
           ? _value.coverImageUrl
           : coverImageUrl as String,
-      logoImageUrl: logoImageUrl == freezed
-          ? _value.logoImageUrl
-          : logoImageUrl as String,
+      deliveryCost: deliveryCost == freezed
+          ? _value.deliveryCost
+          : deliveryCost as double,
     ));
   }
 }
@@ -223,7 +223,7 @@ abstract class _$RestaurantCopyWith<$Res> implements $RestaurantCopyWith<$Res> {
       bool foodCollection,
       bool isHalaal,
       String coverImageUrl,
-      String logoImageUrl});
+      double deliveryCost});
 }
 
 class __$RestaurantCopyWithImpl<$Res> extends _$RestaurantCopyWithImpl<$Res>
@@ -257,7 +257,7 @@ class __$RestaurantCopyWithImpl<$Res> extends _$RestaurantCopyWithImpl<$Res>
     Object foodCollection = freezed,
     Object isHalaal = freezed,
     Object coverImageUrl = freezed,
-    Object logoImageUrl = freezed,
+    Object deliveryCost = freezed,
   }) {
     return _then(_Restaurant(
       id: id == freezed ? _value.id : id as UniqueId,
@@ -300,9 +300,9 @@ class __$RestaurantCopyWithImpl<$Res> extends _$RestaurantCopyWithImpl<$Res>
       coverImageUrl: coverImageUrl == freezed
           ? _value.coverImageUrl
           : coverImageUrl as String,
-      logoImageUrl: logoImageUrl == freezed
-          ? _value.logoImageUrl
-          : logoImageUrl as String,
+      deliveryCost: deliveryCost == freezed
+          ? _value.deliveryCost
+          : deliveryCost as double,
     ));
   }
 }
@@ -327,9 +327,9 @@ class _$_Restaurant extends _Restaurant {
       @required this.acceptOther,
       @required this.foodDeliveries,
       @required this.foodCollection,
-      @required this.isHalaal,
+      this.isHalaal,
       this.coverImageUrl,
-      this.logoImageUrl})
+      this.deliveryCost})
       : assert(id != null),
         assert(ownerID != null),
         assert(storeName != null),
@@ -348,7 +348,6 @@ class _$_Restaurant extends _Restaurant {
         assert(acceptOther != null),
         assert(foodDeliveries != null),
         assert(foodCollection != null),
-        assert(isHalaal != null),
         super._();
 
   @override
@@ -392,11 +391,11 @@ class _$_Restaurant extends _Restaurant {
   @override
   final String coverImageUrl;
   @override
-  final String logoImageUrl;
+  final double deliveryCost;
 
   @override
   String toString() {
-    return 'Restaurant(id: $id, ownerID: $ownerID, storeName: $storeName, address: $address, token: $token, coordinates: $coordinates, workingHoursFrom: $workingHoursFrom, workingHoursTo: $workingHoursTo, telephoneNumber: $telephoneNumber, notes: $notes, active: $active, open: $open, acceptingStaffRequests: $acceptingStaffRequests, acceptCash: $acceptCash, acceptCard: $acceptCard, acceptOther: $acceptOther, foodDeliveries: $foodDeliveries, foodCollection: $foodCollection, isHalaal: $isHalaal, coverImageUrl: $coverImageUrl, logoImageUrl: $logoImageUrl)';
+    return 'Restaurant(id: $id, ownerID: $ownerID, storeName: $storeName, address: $address, token: $token, coordinates: $coordinates, workingHoursFrom: $workingHoursFrom, workingHoursTo: $workingHoursTo, telephoneNumber: $telephoneNumber, notes: $notes, active: $active, open: $open, acceptingStaffRequests: $acceptingStaffRequests, acceptCash: $acceptCash, acceptCard: $acceptCard, acceptOther: $acceptOther, foodDeliveries: $foodDeliveries, foodCollection: $foodCollection, isHalaal: $isHalaal, coverImageUrl: $coverImageUrl, deliveryCost: $deliveryCost)';
   }
 
   @override
@@ -458,9 +457,9 @@ class _$_Restaurant extends _Restaurant {
             (identical(other.coverImageUrl, coverImageUrl) ||
                 const DeepCollectionEquality()
                     .equals(other.coverImageUrl, coverImageUrl)) &&
-            (identical(other.logoImageUrl, logoImageUrl) ||
+            (identical(other.deliveryCost, deliveryCost) ||
                 const DeepCollectionEquality()
-                    .equals(other.logoImageUrl, logoImageUrl)));
+                    .equals(other.deliveryCost, deliveryCost)));
   }
 
   @override
@@ -486,7 +485,7 @@ class _$_Restaurant extends _Restaurant {
       const DeepCollectionEquality().hash(foodCollection) ^
       const DeepCollectionEquality().hash(isHalaal) ^
       const DeepCollectionEquality().hash(coverImageUrl) ^
-      const DeepCollectionEquality().hash(logoImageUrl);
+      const DeepCollectionEquality().hash(deliveryCost);
 
   @override
   _$RestaurantCopyWith<_Restaurant> get copyWith =>
@@ -514,9 +513,9 @@ abstract class _Restaurant extends Restaurant {
       @required bool acceptOther,
       @required bool foodDeliveries,
       @required bool foodCollection,
-      @required bool isHalaal,
+      bool isHalaal,
       String coverImageUrl,
-      String logoImageUrl}) = _$_Restaurant;
+      double deliveryCost}) = _$_Restaurant;
 
   @override
   UniqueId get id;
@@ -559,7 +558,7 @@ abstract class _Restaurant extends Restaurant {
   @override
   String get coverImageUrl;
   @override
-  String get logoImageUrl;
+  double get deliveryCost;
   @override
   _$RestaurantCopyWith<_Restaurant> get copyWith;
 }

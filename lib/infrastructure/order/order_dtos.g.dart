@@ -31,6 +31,7 @@ _$_StoreOrderDTO _$_$_StoreOrderDTOFromJson(Map<String, dynamic> json) {
     orderNotes: json['orderNotes'] as String,
     deliveryCoordinates:
         const GeoPointConverters().fromJson(json['deliveryCoordinates']),
+    deliveryCost: (json['deliveryCost'] as num)?.toDouble(),
   );
 }
 
@@ -59,4 +60,5 @@ Map<String, dynamic> _$_$_StoreOrderDTOToJson(_$_StoreOrderDTO instance) =>
       'orderNotes': instance.orderNotes,
       'deliveryCoordinates':
           const GeoPointConverters().toJson(instance.deliveryCoordinates),
+      'deliveryCost': instance.deliveryCost,
     };

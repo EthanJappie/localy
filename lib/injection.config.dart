@@ -5,8 +5,8 @@
 // **************************************************************************
 
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_storage/firebase_storage.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:get_it/get_it.dart';
 import 'package:injectable/injectable.dart';
 import 'package:google_sign_in/google_sign_in.dart';
@@ -61,24 +61,28 @@ GetIt $initGetIt(
   final gh = GetItHelper(get, environment, environmentFilter);
   final firebaseInjectableModule = _$FirebaseInjectableModule();
   gh.lazySingleton<FirebaseAuth>(() => firebaseInjectableModule.firebaseAuth);
+  gh.lazySingleton<FirebaseFirestore>(() => firebaseInjectableModule.firestore);
   gh.lazySingleton<FirebaseStorage>(
       () => firebaseInjectableModule.firebaseStorage);
-  gh.lazySingleton<Firestore>(() => firebaseInjectableModule.firestore);
   gh.lazySingleton<GoogleSignIn>(() => firebaseInjectableModule.googleSignIn);
   gh.lazySingleton<IAuthFacade>(
       () => FirebaseAuthFacade(get<FirebaseAuth>(), get<GoogleSignIn>()),
       registerFor: {_prod});
-  gh.lazySingleton<IBundleRepository>(() => BundleRepository(get<Firestore>()),
+  gh.lazySingleton<IBundleRepository>(
+      () => BundleRepository(get<FirebaseFirestore>()),
       registerFor: {_prod});
-  gh.lazySingleton<IMenuItemRepository>(
-      () => MenuItemRepository(get<Firestore>(), get<FirebaseStorage>()));
-  gh.lazySingleton<IMenuRepository>(() => MenuRepository(get<Firestore>()));
-  gh.lazySingleton<IOrderRepository>(() => OrderRepository(get<Firestore>()),
+  gh.lazySingleton<IMenuItemRepository>(() =>
+      MenuItemRepository(get<FirebaseFirestore>(), get<FirebaseStorage>()));
+  gh.lazySingleton<IMenuRepository>(
+      () => MenuRepository(get<FirebaseFirestore>()));
+  gh.lazySingleton<IOrderRepository>(
+      () => OrderRepository(get<FirebaseFirestore>()),
       registerFor: {_prod});
-  gh.lazySingleton<IReviewRepository>(() => ReviewRepository(get<Firestore>()),
+  gh.lazySingleton<IReviewRepository>(
+      () => ReviewRepository(get<FirebaseFirestore>()),
       registerFor: {_prod});
   gh.lazySingleton<IStoreRepository>(
-      () => StoreRepository(get<Firestore>(), get<FirebaseStorage>()),
+      () => StoreRepository(get<FirebaseFirestore>(), get<FirebaseStorage>()),
       registerFor: {_prod});
   gh.factory<MenuActorBloc>(() => MenuActorBloc(get<IMenuRepository>()));
   gh.factory<MenuFormBloc>(() => MenuFormBloc(get<IMenuRepository>()));

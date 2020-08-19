@@ -18,7 +18,7 @@ import 'package:location/location.dart';
 @prod
 @LazySingleton(as: IStoreRepository)
 class StoreRepository implements IStoreRepository {
-  final Firestore _firestore;
+  final FirebaseFirestore _firestore;
   final FirebaseStorage _firebaseStorage;
 
   StoreRepository(this._firestore, this._firebaseStorage);
@@ -31,19 +31,18 @@ class StoreRepository implements IStoreRepository {
 
       var storeDTO = StoreDTO.fromDomain(store);
       storeDTO = storeDTO.copyWith(
-        ownerID: userDoc.documentID,
+        ownerID: userDoc.id,
         token: token,
       );
 
       storeDTO = await _uploadImages(
         store.coverImageUrl,
-        store.logoImageUrl,
         storeDTO,
       );
 
       await _firestore.storeCollection
-          .document(storeDTO.id)
-          .setData(storeDTO.toJson());
+          .doc(storeDTO.id)
+          .set(storeDTO.toJson());
 
       return right(unit);
     } on PlatformException catch (e) {
@@ -60,7 +59,7 @@ class StoreRepository implements IStoreRepository {
     try {
       final storeId = store.id.getOrCrash();
 
-      await _firestore.storeCollection.document(storeId).delete();
+      await _firestore.storeCollection.doc(storeId).delete();
 
       return right(unit);
     } on PlatformException catch (e) {
@@ -81,13 +80,12 @@ class StoreRepository implements IStoreRepository {
 
       storeDTO = await _uploadImages(
         store.coverImageUrl,
-        store.logoImageUrl,
         storeDTO,
       );
 
       await _firestore.storeCollection
-          .document(storeDTO.id)
-          .updateData(storeDTO.toJson());
+          .doc(storeDTO.id)
+          .update(storeDTO.toJson());
 
       return right(unit);
     } on PlatformException catch (e) {
@@ -105,12 +103,12 @@ class StoreRepository implements IStoreRepository {
   Stream<Either<StoreFailure, KtList<Restaurant>>> watchAll() async* {
     final userDoc = await _firestore.userDocument();
     yield* _firestore.storeCollection
-        .where("ownerID", isEqualTo: userDoc.documentID)
+        .where("ownerID", isEqualTo: userDoc.id)
         .orderBy("serverTimeStamp", descending: true)
         .snapshots()
         .map(
           (snapshots) => right<StoreFailure, KtList<Restaurant>>(
-            snapshots.documents
+            snapshots.docs
                 .map((doc) => StoreDTO.fromFirestore(doc).toDomain())
                 .toImmutableList(),
           ),
@@ -134,7 +132,7 @@ class StoreRepository implements IStoreRepository {
         .snapshots()
         .map(
           (snapshots) => right<StoreFailure, KtList<Restaurant>>(
-            snapshots.documents
+            snapshots.docs
                 .map((doc) => StoreDTO.fromFirestore(doc).toDomain())
                 .toImmutableList(),
           ),
@@ -142,7 +140,7 @@ class StoreRepository implements IStoreRepository {
   }
 
   Future<StoreDTO> _uploadImages(
-      String coverImageUrl, String logoImageUrl, StoreDTO storeDTO) async {
+      String coverImageUrl, StoreDTO storeDTO) async {
     var store = storeDTO;
 
     if ((coverImageUrl != null && coverImageUrl.isNotEmpty) &&
@@ -155,18 +153,6 @@ class StoreRepository implements IStoreRepository {
       final String imageUrl = await downloadUrl.ref.getDownloadURL() as String;
 
       store = store.copyWith(coverImageUrl: imageUrl);
-    }
-
-    if ((logoImageUrl != null && logoImageUrl.isNotEmpty) &&
-        !logoImageUrl.contains("http")) {
-      final uploadTask =
-          _firebaseStorage.storeStorageReference.putFile(File(logoImageUrl));
-
-      final StorageTaskSnapshot downloadUrl = await uploadTask.onComplete;
-
-      final String imageUrl = await downloadUrl.ref.getDownloadURL() as String;
-
-      store = store.copyWith(logoImageUrl: imageUrl);
     }
 
     return store;

@@ -136,10 +136,6 @@ class StoreFormBloc extends Bloc<StoreFormEvent, StoreFormState> {
           saveFailureOrSuccessOption: none(),
         );
       },
-      logoImageChanged: (e) async* {
-        yield state.copyWith(
-            store: state.store.copyWith(logoImageUrl: e.logoImage));
-      },
       coverImageChanged: (e) async* {
         yield state.copyWith(
             store: state.store.copyWith(coverImageUrl: e.coverImage));
@@ -167,6 +163,12 @@ class StoreFormBloc extends Bloc<StoreFormEvent, StoreFormState> {
       halaalChanged: (e) async* {
         yield state.copyWith(
           store: state.store.copyWith(isHalaal: e.isHalaal),
+          saveFailureOrSuccessOption: none(),
+        );
+      },
+      deliveryCostChanged: (e) async* {
+        yield state.copyWith(
+          store: state.store.copyWith(deliveryCost: e.deliveryCosts),
           saveFailureOrSuccessOption: none(),
         );
       },

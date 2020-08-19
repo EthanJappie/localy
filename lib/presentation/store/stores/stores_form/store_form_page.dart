@@ -15,6 +15,7 @@ import 'package:localy/presentation/store/stores/stores_form/widgets/accept_cash
 import 'package:localy/presentation/store/stores/stores_form/widgets/accepting_staff_request_field.dart';
 import 'package:localy/presentation/store/stores/stores_form/widgets/active_field.dart';
 import 'package:localy/presentation/store/stores/stores_form/widgets/cover_image_field.dart';
+import 'package:localy/presentation/store/stores/stores_form/widgets/delivery_cost_field.dart';
 import 'package:localy/presentation/store/stores/stores_form/widgets/food_collection_field.dart';
 import 'package:localy/presentation/store/stores/stores_form/widgets/food_deliveries_field.dart';
 import 'package:localy/presentation/store/stores/stores_form/widgets/halaal_field.dart';
@@ -164,6 +165,11 @@ class StoreFormPageScaffold extends StatelessWidget {
                       const SliverToBoxAdapter(child: FoodDeliveriesField()),
                       height: 0,
                     ),
+                    if (state.store.foodDeliveries)
+                      ..._inDividers(
+                        const SliverToBoxAdapter(child: DeliveryCostField()),
+                        height: 0,
+                      ),
                     ..._inDividers(
                       const SliverToBoxAdapter(child: FoodCollectionField()),
                       height: 0,

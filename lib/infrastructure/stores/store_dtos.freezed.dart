@@ -33,12 +33,13 @@ class _$StoreDTOTearOff {
       @required bool acceptOther,
       @required bool foodDeliveries,
       @required bool foodCollection,
-      @required bool isHalaal,
+      bool isHalaal,
       @required @ServerTimestampConverter() FieldValue serverTimeStamp,
       @JsonKey(ignore: true) String id,
       String coverImageUrl,
       String logoImageUrl,
-      String notes}) {
+      String notes,
+      double deliveryCosts}) {
     return _StoreDTO(
       ownerID: ownerID,
       storeName: storeName,
@@ -62,6 +63,7 @@ class _$StoreDTOTearOff {
       coverImageUrl: coverImageUrl,
       logoImageUrl: logoImageUrl,
       notes: notes,
+      deliveryCosts: deliveryCosts,
     );
   }
 }
@@ -97,6 +99,7 @@ mixin _$StoreDTO {
   String get coverImageUrl;
   String get logoImageUrl;
   String get notes;
+  double get deliveryCosts;
 
   Map<String, dynamic> toJson();
   $StoreDTOCopyWith<StoreDTO> get copyWith;
@@ -127,7 +130,8 @@ abstract class $StoreDTOCopyWith<$Res> {
       @JsonKey(ignore: true) String id,
       String coverImageUrl,
       String logoImageUrl,
-      String notes});
+      String notes,
+      double deliveryCosts});
 }
 
 class _$StoreDTOCopyWithImpl<$Res> implements $StoreDTOCopyWith<$Res> {
@@ -161,6 +165,7 @@ class _$StoreDTOCopyWithImpl<$Res> implements $StoreDTOCopyWith<$Res> {
     Object coverImageUrl = freezed,
     Object logoImageUrl = freezed,
     Object notes = freezed,
+    Object deliveryCosts = freezed,
   }) {
     return _then(_value.copyWith(
       ownerID: ownerID == freezed ? _value.ownerID : ownerID as String,
@@ -208,6 +213,9 @@ class _$StoreDTOCopyWithImpl<$Res> implements $StoreDTOCopyWith<$Res> {
           ? _value.logoImageUrl
           : logoImageUrl as String,
       notes: notes == freezed ? _value.notes : notes as String,
+      deliveryCosts: deliveryCosts == freezed
+          ? _value.deliveryCosts
+          : deliveryCosts as double,
     ));
   }
 }
@@ -238,7 +246,8 @@ abstract class _$StoreDTOCopyWith<$Res> implements $StoreDTOCopyWith<$Res> {
       @JsonKey(ignore: true) String id,
       String coverImageUrl,
       String logoImageUrl,
-      String notes});
+      String notes,
+      double deliveryCosts});
 }
 
 class __$StoreDTOCopyWithImpl<$Res> extends _$StoreDTOCopyWithImpl<$Res>
@@ -273,6 +282,7 @@ class __$StoreDTOCopyWithImpl<$Res> extends _$StoreDTOCopyWithImpl<$Res>
     Object coverImageUrl = freezed,
     Object logoImageUrl = freezed,
     Object notes = freezed,
+    Object deliveryCosts = freezed,
   }) {
     return _then(_StoreDTO(
       ownerID: ownerID == freezed ? _value.ownerID : ownerID as String,
@@ -320,6 +330,9 @@ class __$StoreDTOCopyWithImpl<$Res> extends _$StoreDTOCopyWithImpl<$Res>
           ? _value.logoImageUrl
           : logoImageUrl as String,
       notes: notes == freezed ? _value.notes : notes as String,
+      deliveryCosts: deliveryCosts == freezed
+          ? _value.deliveryCosts
+          : deliveryCosts as double,
     ));
   }
 }
@@ -343,12 +356,13 @@ class _$_StoreDTO extends _StoreDTO {
       @required this.acceptOther,
       @required this.foodDeliveries,
       @required this.foodCollection,
-      @required this.isHalaal,
+      this.isHalaal,
       @required @ServerTimestampConverter() this.serverTimeStamp,
       @JsonKey(ignore: true) this.id,
       this.coverImageUrl,
       this.logoImageUrl,
-      this.notes})
+      this.notes,
+      this.deliveryCosts})
       : assert(ownerID != null),
         assert(storeName != null),
         assert(address != null),
@@ -365,7 +379,6 @@ class _$_StoreDTO extends _StoreDTO {
         assert(acceptOther != null),
         assert(foodDeliveries != null),
         assert(foodCollection != null),
-        assert(isHalaal != null),
         assert(serverTimeStamp != null),
         super._();
 
@@ -421,10 +434,12 @@ class _$_StoreDTO extends _StoreDTO {
   final String logoImageUrl;
   @override
   final String notes;
+  @override
+  final double deliveryCosts;
 
   @override
   String toString() {
-    return 'StoreDTO(ownerID: $ownerID, storeName: $storeName, address: $address, token: $token, coordinates: $coordinates, workingHoursFrom: $workingHoursFrom, workingHoursTo: $workingHoursTo, telephoneNumber: $telephoneNumber, active: $active, open: $open, acceptingStaffRequests: $acceptingStaffRequests, acceptCash: $acceptCash, acceptCard: $acceptCard, acceptOther: $acceptOther, foodDeliveries: $foodDeliveries, foodCollection: $foodCollection, isHalaal: $isHalaal, serverTimeStamp: $serverTimeStamp, id: $id, coverImageUrl: $coverImageUrl, logoImageUrl: $logoImageUrl, notes: $notes)';
+    return 'StoreDTO(ownerID: $ownerID, storeName: $storeName, address: $address, token: $token, coordinates: $coordinates, workingHoursFrom: $workingHoursFrom, workingHoursTo: $workingHoursTo, telephoneNumber: $telephoneNumber, active: $active, open: $open, acceptingStaffRequests: $acceptingStaffRequests, acceptCash: $acceptCash, acceptCard: $acceptCard, acceptOther: $acceptOther, foodDeliveries: $foodDeliveries, foodCollection: $foodCollection, isHalaal: $isHalaal, serverTimeStamp: $serverTimeStamp, id: $id, coverImageUrl: $coverImageUrl, logoImageUrl: $logoImageUrl, notes: $notes, deliveryCosts: $deliveryCosts)';
   }
 
   @override
@@ -491,7 +506,10 @@ class _$_StoreDTO extends _StoreDTO {
                 const DeepCollectionEquality()
                     .equals(other.logoImageUrl, logoImageUrl)) &&
             (identical(other.notes, notes) ||
-                const DeepCollectionEquality().equals(other.notes, notes)));
+                const DeepCollectionEquality().equals(other.notes, notes)) &&
+            (identical(other.deliveryCosts, deliveryCosts) ||
+                const DeepCollectionEquality()
+                    .equals(other.deliveryCosts, deliveryCosts)));
   }
 
   @override
@@ -518,7 +536,8 @@ class _$_StoreDTO extends _StoreDTO {
       const DeepCollectionEquality().hash(id) ^
       const DeepCollectionEquality().hash(coverImageUrl) ^
       const DeepCollectionEquality().hash(logoImageUrl) ^
-      const DeepCollectionEquality().hash(notes);
+      const DeepCollectionEquality().hash(notes) ^
+      const DeepCollectionEquality().hash(deliveryCosts);
 
   @override
   _$StoreDTOCopyWith<_StoreDTO> get copyWith =>
@@ -549,12 +568,13 @@ abstract class _StoreDTO extends StoreDTO {
       @required bool acceptOther,
       @required bool foodDeliveries,
       @required bool foodCollection,
-      @required bool isHalaal,
+      bool isHalaal,
       @required @ServerTimestampConverter() FieldValue serverTimeStamp,
       @JsonKey(ignore: true) String id,
       String coverImageUrl,
       String logoImageUrl,
-      String notes}) = _$_StoreDTO;
+      String notes,
+      double deliveryCosts}) = _$_StoreDTO;
 
   factory _StoreDTO.fromJson(Map<String, dynamic> json) = _$_StoreDTO.fromJson;
 
@@ -607,6 +627,8 @@ abstract class _StoreDTO extends StoreDTO {
   String get logoImageUrl;
   @override
   String get notes;
+  @override
+  double get deliveryCosts;
   @override
   _$StoreDTOCopyWith<_StoreDTO> get copyWith;
 }

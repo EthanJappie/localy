@@ -35,7 +35,8 @@ class _$StoreOrderTearOff {
       @required Timestamp dateCreated,
       ValueString deliveryAddress,
       ValueString orderNotes,
-      FireCoordinates deliveryCoordinates}) {
+      FireCoordinates deliveryCoordinates,
+      double deliveryCost}) {
     return _Order(
       id: id,
       customerID: customerID,
@@ -59,6 +60,7 @@ class _$StoreOrderTearOff {
       deliveryAddress: deliveryAddress,
       orderNotes: orderNotes,
       deliveryCoordinates: deliveryCoordinates,
+      deliveryCost: deliveryCost,
     );
   }
 }
@@ -89,6 +91,7 @@ mixin _$StoreOrder {
   ValueString get deliveryAddress;
   ValueString get orderNotes;
   FireCoordinates get deliveryCoordinates;
+  double get deliveryCost;
 
   $StoreOrderCopyWith<StoreOrder> get copyWith;
 }
@@ -119,7 +122,8 @@ abstract class $StoreOrderCopyWith<$Res> {
       Timestamp dateCreated,
       ValueString deliveryAddress,
       ValueString orderNotes,
-      FireCoordinates deliveryCoordinates});
+      FireCoordinates deliveryCoordinates,
+      double deliveryCost});
 }
 
 class _$StoreOrderCopyWithImpl<$Res> implements $StoreOrderCopyWith<$Res> {
@@ -153,6 +157,7 @@ class _$StoreOrderCopyWithImpl<$Res> implements $StoreOrderCopyWith<$Res> {
     Object deliveryAddress = freezed,
     Object orderNotes = freezed,
     Object deliveryCoordinates = freezed,
+    Object deliveryCost = freezed,
   }) {
     return _then(_value.copyWith(
       id: id == freezed ? _value.id : id as UniqueId,
@@ -207,6 +212,9 @@ class _$StoreOrderCopyWithImpl<$Res> implements $StoreOrderCopyWith<$Res> {
       deliveryCoordinates: deliveryCoordinates == freezed
           ? _value.deliveryCoordinates
           : deliveryCoordinates as FireCoordinates,
+      deliveryCost: deliveryCost == freezed
+          ? _value.deliveryCost
+          : deliveryCost as double,
     ));
   }
 }
@@ -237,7 +245,8 @@ abstract class _$OrderCopyWith<$Res> implements $StoreOrderCopyWith<$Res> {
       Timestamp dateCreated,
       ValueString deliveryAddress,
       ValueString orderNotes,
-      FireCoordinates deliveryCoordinates});
+      FireCoordinates deliveryCoordinates,
+      double deliveryCost});
 }
 
 class __$OrderCopyWithImpl<$Res> extends _$StoreOrderCopyWithImpl<$Res>
@@ -272,6 +281,7 @@ class __$OrderCopyWithImpl<$Res> extends _$StoreOrderCopyWithImpl<$Res>
     Object deliveryAddress = freezed,
     Object orderNotes = freezed,
     Object deliveryCoordinates = freezed,
+    Object deliveryCost = freezed,
   }) {
     return _then(_Order(
       id: id == freezed ? _value.id : id as UniqueId,
@@ -326,6 +336,9 @@ class __$OrderCopyWithImpl<$Res> extends _$StoreOrderCopyWithImpl<$Res>
       deliveryCoordinates: deliveryCoordinates == freezed
           ? _value.deliveryCoordinates
           : deliveryCoordinates as FireCoordinates,
+      deliveryCost: deliveryCost == freezed
+          ? _value.deliveryCost
+          : deliveryCost as double,
     ));
   }
 }
@@ -353,7 +366,8 @@ class _$_Order extends _Order {
       @required this.dateCreated,
       this.deliveryAddress,
       this.orderNotes,
-      this.deliveryCoordinates})
+      this.deliveryCoordinates,
+      this.deliveryCost})
       : assert(id != null),
         assert(customerID != null),
         assert(storeID != null),
@@ -419,10 +433,12 @@ class _$_Order extends _Order {
   final ValueString orderNotes;
   @override
   final FireCoordinates deliveryCoordinates;
+  @override
+  final double deliveryCost;
 
   @override
   String toString() {
-    return 'StoreOrder(id: $id, customerID: $customerID, storeID: $storeID, storeOwnerID: $storeOwnerID, storeName: $storeName, storeAddress: $storeAddress, storeToken: $storeToken, phoneNumber: $phoneNumber, customerToken: $customerToken, status: $status, storePhoneNumber: $storePhoneNumber, payingByCash: $payingByCash, payingByCard: $payingByCard, payingByOther: $payingByOther, foodDeliveriesChosen: $foodDeliveriesChosen, isCompleted: $isCompleted, storeCoordinates: $storeCoordinates, menuItems: $menuItems, dateCreated: $dateCreated, deliveryAddress: $deliveryAddress, orderNotes: $orderNotes, deliveryCoordinates: $deliveryCoordinates)';
+    return 'StoreOrder(id: $id, customerID: $customerID, storeID: $storeID, storeOwnerID: $storeOwnerID, storeName: $storeName, storeAddress: $storeAddress, storeToken: $storeToken, phoneNumber: $phoneNumber, customerToken: $customerToken, status: $status, storePhoneNumber: $storePhoneNumber, payingByCash: $payingByCash, payingByCard: $payingByCard, payingByOther: $payingByOther, foodDeliveriesChosen: $foodDeliveriesChosen, isCompleted: $isCompleted, storeCoordinates: $storeCoordinates, menuItems: $menuItems, dateCreated: $dateCreated, deliveryAddress: $deliveryAddress, orderNotes: $orderNotes, deliveryCoordinates: $deliveryCoordinates, deliveryCost: $deliveryCost)';
   }
 
   @override
@@ -492,7 +508,9 @@ class _$_Order extends _Order {
                     .equals(other.orderNotes, orderNotes)) &&
             (identical(other.deliveryCoordinates, deliveryCoordinates) ||
                 const DeepCollectionEquality()
-                    .equals(other.deliveryCoordinates, deliveryCoordinates)));
+                    .equals(other.deliveryCoordinates, deliveryCoordinates)) &&
+            (identical(other.deliveryCost, deliveryCost) ||
+                const DeepCollectionEquality().equals(other.deliveryCost, deliveryCost)));
   }
 
   @override
@@ -519,7 +537,8 @@ class _$_Order extends _Order {
       const DeepCollectionEquality().hash(dateCreated) ^
       const DeepCollectionEquality().hash(deliveryAddress) ^
       const DeepCollectionEquality().hash(orderNotes) ^
-      const DeepCollectionEquality().hash(deliveryCoordinates);
+      const DeepCollectionEquality().hash(deliveryCoordinates) ^
+      const DeepCollectionEquality().hash(deliveryCost);
 
   @override
   _$OrderCopyWith<_Order> get copyWith =>
@@ -550,7 +569,8 @@ abstract class _Order extends StoreOrder {
       @required Timestamp dateCreated,
       ValueString deliveryAddress,
       ValueString orderNotes,
-      FireCoordinates deliveryCoordinates}) = _$_Order;
+      FireCoordinates deliveryCoordinates,
+      double deliveryCost}) = _$_Order;
 
   @override
   UniqueId get id;
@@ -596,6 +616,8 @@ abstract class _Order extends StoreOrder {
   ValueString get orderNotes;
   @override
   FireCoordinates get deliveryCoordinates;
+  @override
+  double get deliveryCost;
   @override
   _$OrderCopyWith<_Order> get copyWith;
 }

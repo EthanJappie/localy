@@ -6,6 +6,7 @@ import 'package:localy/application/order/order_form/order_form_bloc.dart';
 import 'package:localy/domain/menu_item/menu_item.dart';
 import 'package:localy/presentation/core/helpers/utils.dart';
 import 'package:localy/presentation/core/pages/forget_password/widgets/saving_in_progress_overlaay.dart';
+import 'package:localy/presentation/core/routes/router.gr.dart';
 import 'package:localy/presentation/core/widgets/localy_button.dart';
 import 'package:localy/presentation/core/widgets/localy_entry_field.dart';
 import 'package:localy/presentation/customer/checkout/widgets/card_field.dart';
@@ -13,7 +14,6 @@ import 'package:localy/presentation/customer/checkout/widgets/cash_field.dart';
 import 'package:localy/presentation/customer/checkout/widgets/delivery_field.dart';
 import 'package:localy/presentation/customer/checkout/widgets/location_delivery_field.dart';
 import 'package:localy/presentation/customer/checkout/widgets/other_field.dart';
-import 'package:localy/presentation/core/routes/router.gr.dart';
 
 class CheckoutPage extends StatefulWidget {
   final BuildContext blocContext;
@@ -74,15 +74,15 @@ class _CheckoutPageState extends State<CheckoutPage> {
                           hintText: "No tomatoes, etc..",
                           onChanged: (String value) {
                             widget.blocContext.bloc<OrderFormBloc>().add(
-                              OrderFormEvent.addedNote(
-                                value,
-                              ),
-                            );
+                                  OrderFormEvent.addedNote(
+                                    value,
+                                  ),
+                                );
                           },
                         ),
-                         const CashField(),
-                         const CardField(),
-                         const OtherField(),
+                        const CashField(),
+                        const CardField(),
+                        const OtherField(),
                         const DeliveryField(),
                         const LocationDeliveryField(),
                         const Divider(),
@@ -98,9 +98,14 @@ class _CheckoutPageState extends State<CheckoutPage> {
                         const SizedBox(height: 8),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: const <Widget>[
-                            Text("Delivery"),
-                            Text("R0.00"),
+                          children: <Widget>[
+                            const Text("Delivery"),
+                            Text(
+                              state.order.deliveryCost == null ||
+                                      state.order.deliveryCost == 0.0
+                                  ? "R0.00"
+                                  : "R${state.order.deliveryCost.toStringAsFixed(2)}",
+                            ),
                           ],
                         ),
                         const SizedBox(height: 8),
@@ -115,7 +120,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                               ),
                             ),
                             Text(
-                              "R${calculateCost(state.order.menuItems).toStringAsFixed(2)}",
+                              "R${calculateCost(state.order.menuItems, costOfDelivery: state.order.deliveryCost).toStringAsFixed(2)}",
                               style: TextStyle(
                                 color: Theme.of(context).primaryColor,
                                 fontWeight: FontWeight.bold,
@@ -166,7 +171,8 @@ class _CheckoutPageState extends State<CheckoutPage> {
                 (_) {
                   // Can't be just a simple pop. If another route (like a Flushbar) is on top of stack, we'll need to pop even that to get to
                   // the overview page.
-                  ExtendedNavigator.of(context).replace(Routes.customerHomePage);
+                  ExtendedNavigator.of(context)
+                      .replace(Routes.customerHomePage);
                 },
               );
             },

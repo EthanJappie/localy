@@ -12,7 +12,7 @@ import 'package:localy/infrastructure/review/review_dtos.dart';
 @prod
 @LazySingleton(as: IReviewRepository)
 class ReviewRepository implements IReviewRepository {
-  final Firestore _firestore;
+  final FirebaseFirestore _firestore;
 
   ReviewRepository(this._firestore);
 
@@ -24,7 +24,7 @@ class ReviewRepository implements IReviewRepository {
 
       final reviewJson = review.toJson();
 
-      await _firestore.reviewCollection.document(review.id).setData(reviewJson);
+      await _firestore.reviewCollection.doc(review.id).set(reviewJson);
 
       return right(unit);
     } on PlatformException catch (e) {
@@ -42,7 +42,7 @@ class ReviewRepository implements IReviewRepository {
     try {
       final reviewID = reviewEntity.id.getOrCrash();
 
-      await _firestore.reviewCollection.document(reviewID).delete();
+      await _firestore.reviewCollection.doc(reviewID).delete();
 
       return right(unit);
     } on PlatformException catch (e) {
@@ -63,8 +63,8 @@ class ReviewRepository implements IReviewRepository {
       final review = ReviewDTO.fromDomain(reviewEntity);
 
       await _firestore.reviewCollection
-          .document(review.id)
-          .updateData(review.toJson());
+          .doc(review.id)
+          .update(review.toJson());
 
       return right(unit);
     } on PlatformException catch (e) {
@@ -87,7 +87,7 @@ class ReviewRepository implements IReviewRepository {
         .snapshots()
         .map(
           (snapshots) => right<ReviewEntityFailure, KtList<ReviewEntity>>(
-            snapshots.documents
+            snapshots.docs
                 .map((doc) => ReviewDTO.fromFirestore(doc).toDomain())
                 .toImmutableList(),
           ),

@@ -175,9 +175,14 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
               const SizedBox(height: 8),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const <Widget>[
-                  Text("Delivery"),
-                  Text("R0.00"),
+                children:  <Widget>[
+                  const Text("Delivery"),
+                  Text(
+                    widget.order.deliveryCost == null ||
+                        widget.order.deliveryCost == 0.0
+                        ? "R0.00"
+                        : "R${widget.order.deliveryCost.toStringAsFixed(2)}",
+                  ),
                 ],
               ),
               const SizedBox(height: 8),
@@ -192,7 +197,7 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
                     ),
                   ),
                   Text(
-                    "R${calculateCost(widget.order.menuItems).toStringAsFixed(2)}",
+                    "R${calculateCost(widget.order.menuItems, costOfDelivery: widget.order.deliveryCost).toStringAsFixed(2)}",
                     style: TextStyle(
                       color: Theme.of(context).primaryColor,
                       fontWeight: FontWeight.bold,

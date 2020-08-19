@@ -5,11 +5,11 @@ import 'package:rave_flutter/rave_flutter.dart';
 Future<RaveStatus> performTransaction({
   BuildContext context,
   double amount,
-  FirebaseUser user,
+  User user,
 }) async {
   final time = DateTime.now();
   final initializer = RavePayInitializer(
-    amount: amount,
+    amount: 2,
     publicKey: 'FLWPUBK-c98365be1acbe3dc483e41c5ed3b0fba-X',
     encryptionKey: '483a5ee104d8acf8ecfeab51',
   )
@@ -31,7 +31,7 @@ Future<RaveStatus> performTransaction({
     ..acceptGHMobileMoneyPayments = false
     ..acceptUgMobileMoneyPayments = false
     ..companyName = Text('Localy', style: Theme.of(context).textTheme.subtitle1)
-    ..staging = true
+    ..staging = false
     ..isPreAuth = true
     ..displayFee = true;
 
@@ -41,7 +41,10 @@ Future<RaveStatus> performTransaction({
     initializer: initializer,
   )
       .catchError((error) {
+        print("error: $error");
     return error;
   });
+
+  print("status: ${response.status}");
   return response.status;
 }

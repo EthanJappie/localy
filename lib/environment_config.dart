@@ -16,6 +16,8 @@ class EnvironmentConfig {
   static const VERSION_NAME =
       int.fromEnvironment("VERSION_NAME", defaultValue: 1);
 
+  static const MAP_API_KEY = String.fromEnvironment("MAP_API_KEY");
+
   // ignore: constant_identifier_names
   static const APP_SUFFIX = String.fromEnvironment("LOCALY_APP_SUFFIX");
 }

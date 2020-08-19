@@ -35,6 +35,7 @@ abstract class StoreOrder implements _$StoreOrder {
     ValueString deliveryAddress,
     ValueString orderNotes,
     FireCoordinates deliveryCoordinates,
+    double deliveryCost,
   }) = _Order;
 
   factory StoreOrder.empty() => StoreOrder(
@@ -60,6 +61,7 @@ abstract class StoreOrder implements _$StoreOrder {
         deliveryCoordinates: FireCoordinates.zero(),
         dateCreated: Timestamp.now(),
         status: ValueString.fromString("invalid"),
+     deliveryCost: 0,
       );
 
   Option<ValueFailure<dynamic>> get failureOption {

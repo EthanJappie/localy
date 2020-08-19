@@ -11,7 +11,7 @@ import 'package:localy/infrastructure/core/firestore_helpers.dart';
 
 @LazySingleton(as: IMenuRepository)
 class MenuRepository implements IMenuRepository {
-  final Firestore _firestore;
+  final FirebaseFirestore _firestore;
 
   MenuRepository(this._firestore);
 
@@ -22,8 +22,8 @@ class MenuRepository implements IMenuRepository {
       menuDTO = menuDTO.copyWith(storeID: storeID);
 
       await _firestore.menuCollection
-          .document(menuDTO.id)
-          .setData(menuDTO.toJson());
+          .doc(menuDTO.id)
+          .set(menuDTO.toJson());
 
       return right(unit);
     } on PlatformException catch (e) {
@@ -40,7 +40,7 @@ class MenuRepository implements IMenuRepository {
     try {
       final menuID = menu.id.getOrCrash();
 
-      await _firestore.menuCollection.document(menuID).delete();
+      await _firestore.menuCollection.doc(menuID).delete();
 
       return right(unit);
     } on PlatformException catch (e) {
@@ -60,8 +60,8 @@ class MenuRepository implements IMenuRepository {
       final menuDTO = MenuDTO.fromDomain(menu);
 
       await _firestore.menuCollection
-          .document(menuDTO.id)
-          .updateData(menuDTO.toJson());
+          .doc(menuDTO.id)
+          .update(menuDTO.toJson());
 
       return right(unit);
     } on PlatformException catch (e) {
@@ -83,7 +83,7 @@ class MenuRepository implements IMenuRepository {
         .snapshots()
         .map(
           (snapshots) => right<MenuFailure, KtList<Menu>>(
-            snapshots.documents
+            snapshots.docs
                 .map((doc) => MenuDTO.fromFirestore(doc).toDomain())
                 .toImmutableList(),
           ),
@@ -100,7 +100,7 @@ class MenuRepository implements IMenuRepository {
         .snapshots()
         .map(
           (snapshots) => right<MenuFailure, KtList<Menu>>(
-            snapshots.documents
+            snapshots.docs
                 .map((doc) => MenuDTO.fromFirestore(doc).toDomain())
                 .toImmutableList(),
           ),

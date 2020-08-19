@@ -151,7 +151,7 @@ class StoreProfilePage extends StatelessWidget {
   }
 
   Future<void> _handlePayment(BuildContext context, int numberOfCredits) async {
-    final user = await FirebaseAuth.instance.currentUser();
+    final user =  FirebaseAuth.instance.currentUser;
     final result = await performTransaction(
       context: context,
       amount: numberOfCredits * 5.toDouble(),

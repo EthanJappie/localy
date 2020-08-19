@@ -38,7 +38,8 @@ class _$StoreOrderDTOTearOff {
       @required String status,
       String deliveryAddress,
       String orderNotes,
-      @GeoPointConverters() GeoFirePoint deliveryCoordinates}) {
+      @GeoPointConverters() GeoFirePoint deliveryCoordinates,
+      double deliveryCost}) {
     return _StoreOrderDTO(
       id: id,
       customerID: customerID,
@@ -62,6 +63,7 @@ class _$StoreOrderDTOTearOff {
       deliveryAddress: deliveryAddress,
       orderNotes: orderNotes,
       deliveryCoordinates: deliveryCoordinates,
+      deliveryCost: deliveryCost,
     );
   }
 }
@@ -97,6 +99,7 @@ mixin _$StoreOrderDTO {
   String get orderNotes;
   @GeoPointConverters()
   GeoFirePoint get deliveryCoordinates;
+  double get deliveryCost;
 
   Map<String, dynamic> toJson();
   $StoreOrderDTOCopyWith<StoreOrderDTO> get copyWith;
@@ -128,7 +131,8 @@ abstract class $StoreOrderDTOCopyWith<$Res> {
       String status,
       String deliveryAddress,
       String orderNotes,
-      @GeoPointConverters() GeoFirePoint deliveryCoordinates});
+      @GeoPointConverters() GeoFirePoint deliveryCoordinates,
+      double deliveryCost});
 }
 
 class _$StoreOrderDTOCopyWithImpl<$Res>
@@ -163,6 +167,7 @@ class _$StoreOrderDTOCopyWithImpl<$Res>
     Object deliveryAddress = freezed,
     Object orderNotes = freezed,
     Object deliveryCoordinates = freezed,
+    Object deliveryCost = freezed,
   }) {
     return _then(_value.copyWith(
       id: id == freezed ? _value.id : id as String,
@@ -216,6 +221,9 @@ class _$StoreOrderDTOCopyWithImpl<$Res>
       deliveryCoordinates: deliveryCoordinates == freezed
           ? _value.deliveryCoordinates
           : deliveryCoordinates as GeoFirePoint,
+      deliveryCost: deliveryCost == freezed
+          ? _value.deliveryCost
+          : deliveryCost as double,
     ));
   }
 }
@@ -248,7 +256,8 @@ abstract class _$StoreOrderDTOCopyWith<$Res>
       String status,
       String deliveryAddress,
       String orderNotes,
-      @GeoPointConverters() GeoFirePoint deliveryCoordinates});
+      @GeoPointConverters() GeoFirePoint deliveryCoordinates,
+      double deliveryCost});
 }
 
 class __$StoreOrderDTOCopyWithImpl<$Res>
@@ -285,6 +294,7 @@ class __$StoreOrderDTOCopyWithImpl<$Res>
     Object deliveryAddress = freezed,
     Object orderNotes = freezed,
     Object deliveryCoordinates = freezed,
+    Object deliveryCost = freezed,
   }) {
     return _then(_StoreOrderDTO(
       id: id == freezed ? _value.id : id as String,
@@ -338,6 +348,9 @@ class __$StoreOrderDTOCopyWithImpl<$Res>
       deliveryCoordinates: deliveryCoordinates == freezed
           ? _value.deliveryCoordinates
           : deliveryCoordinates as GeoFirePoint,
+      deliveryCost: deliveryCost == freezed
+          ? _value.deliveryCost
+          : deliveryCost as double,
     ));
   }
 }
@@ -366,7 +379,8 @@ class _$_StoreOrderDTO extends _StoreOrderDTO {
       @required this.status,
       this.deliveryAddress,
       this.orderNotes,
-      @GeoPointConverters() this.deliveryCoordinates})
+      @GeoPointConverters() this.deliveryCoordinates,
+      this.deliveryCost})
       : assert(customerID != null),
         assert(storeID != null),
         assert(storeOwnerID != null),
@@ -439,10 +453,12 @@ class _$_StoreOrderDTO extends _StoreOrderDTO {
   @override
   @GeoPointConverters()
   final GeoFirePoint deliveryCoordinates;
+  @override
+  final double deliveryCost;
 
   @override
   String toString() {
-    return 'StoreOrderDTO(id: $id, customerID: $customerID, storeID: $storeID, storeOwnerID: $storeOwnerID, storeName: $storeName, storeAddress: $storeAddress, storeToken: $storeToken, storeCoordinates: $storeCoordinates, storePhoneNumber: $storePhoneNumber, customerToken: $customerToken, menuItems: $menuItems, payingByCash: $payingByCash, payingByCard: $payingByCard, payingByOther: $payingByOther, foodDeliveriesChosen: $foodDeliveriesChosen, isCompleted: $isCompleted, phoneNumber: $phoneNumber, dateCreated: $dateCreated, status: $status, deliveryAddress: $deliveryAddress, orderNotes: $orderNotes, deliveryCoordinates: $deliveryCoordinates)';
+    return 'StoreOrderDTO(id: $id, customerID: $customerID, storeID: $storeID, storeOwnerID: $storeOwnerID, storeName: $storeName, storeAddress: $storeAddress, storeToken: $storeToken, storeCoordinates: $storeCoordinates, storePhoneNumber: $storePhoneNumber, customerToken: $customerToken, menuItems: $menuItems, payingByCash: $payingByCash, payingByCard: $payingByCard, payingByOther: $payingByOther, foodDeliveriesChosen: $foodDeliveriesChosen, isCompleted: $isCompleted, phoneNumber: $phoneNumber, dateCreated: $dateCreated, status: $status, deliveryAddress: $deliveryAddress, orderNotes: $orderNotes, deliveryCoordinates: $deliveryCoordinates, deliveryCost: $deliveryCost)';
   }
 
   @override
@@ -512,7 +528,9 @@ class _$_StoreOrderDTO extends _StoreOrderDTO {
                     .equals(other.orderNotes, orderNotes)) &&
             (identical(other.deliveryCoordinates, deliveryCoordinates) ||
                 const DeepCollectionEquality()
-                    .equals(other.deliveryCoordinates, deliveryCoordinates)));
+                    .equals(other.deliveryCoordinates, deliveryCoordinates)) &&
+            (identical(other.deliveryCost, deliveryCost) ||
+                const DeepCollectionEquality().equals(other.deliveryCost, deliveryCost)));
   }
 
   @override
@@ -539,7 +557,8 @@ class _$_StoreOrderDTO extends _StoreOrderDTO {
       const DeepCollectionEquality().hash(status) ^
       const DeepCollectionEquality().hash(deliveryAddress) ^
       const DeepCollectionEquality().hash(orderNotes) ^
-      const DeepCollectionEquality().hash(deliveryCoordinates);
+      const DeepCollectionEquality().hash(deliveryCoordinates) ^
+      const DeepCollectionEquality().hash(deliveryCost);
 
   @override
   _$StoreOrderDTOCopyWith<_StoreOrderDTO> get copyWith =>
@@ -554,29 +573,29 @@ class _$_StoreOrderDTO extends _StoreOrderDTO {
 abstract class _StoreOrderDTO extends StoreOrderDTO {
   const _StoreOrderDTO._() : super._();
   const factory _StoreOrderDTO(
-          {@JsonKey(ignore: true) String id,
-          @required String customerID,
-          @required String storeID,
-          @required String storeOwnerID,
-          @required String storeName,
-          @required String storeAddress,
-          @required String storeToken,
-          @required @GeoPointConverters() GeoFirePoint storeCoordinates,
-          @required String storePhoneNumber,
-          @required String customerToken,
-          @required @MenuItemConverters() List<MenuItemDTO> menuItems,
-          @required bool payingByCash,
-          @required bool payingByCard,
-          @required bool payingByOther,
-          @required bool foodDeliveriesChosen,
-          @required bool isCompleted,
-          @required String phoneNumber,
-          @required @TimestampConverter() Timestamp dateCreated,
-          @required String status,
-          String deliveryAddress,
-          String orderNotes,
-          @GeoPointConverters() GeoFirePoint deliveryCoordinates}) =
-      _$_StoreOrderDTO;
+      {@JsonKey(ignore: true) String id,
+      @required String customerID,
+      @required String storeID,
+      @required String storeOwnerID,
+      @required String storeName,
+      @required String storeAddress,
+      @required String storeToken,
+      @required @GeoPointConverters() GeoFirePoint storeCoordinates,
+      @required String storePhoneNumber,
+      @required String customerToken,
+      @required @MenuItemConverters() List<MenuItemDTO> menuItems,
+      @required bool payingByCash,
+      @required bool payingByCard,
+      @required bool payingByOther,
+      @required bool foodDeliveriesChosen,
+      @required bool isCompleted,
+      @required String phoneNumber,
+      @required @TimestampConverter() Timestamp dateCreated,
+      @required String status,
+      String deliveryAddress,
+      String orderNotes,
+      @GeoPointConverters() GeoFirePoint deliveryCoordinates,
+      double deliveryCost}) = _$_StoreOrderDTO;
 
   factory _StoreOrderDTO.fromJson(Map<String, dynamic> json) =
       _$_StoreOrderDTO.fromJson;
@@ -630,6 +649,8 @@ abstract class _StoreOrderDTO extends StoreOrderDTO {
   @override
   @GeoPointConverters()
   GeoFirePoint get deliveryCoordinates;
+  @override
+  double get deliveryCost;
   @override
   _$StoreOrderDTOCopyWith<_StoreOrderDTO> get copyWith;
 }

@@ -47,15 +47,6 @@ class StoreCard extends StatelessWidget {
                     children: <Widget>[
                       Row(
                         children: <Widget>[
-                          Card(
-                            child: Container(
-                              height: 30,
-                              width: 30,
-                              color: Colors.grey,
-                              child: _renderImage(store.logoImageUrl, 30,
-                                  iconSize: 24),
-                            ),
-                          ),
                           const SizedBox(width: 8),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,

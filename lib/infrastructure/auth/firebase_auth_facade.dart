@@ -22,9 +22,9 @@ class FirebaseAuthFacade implements IAuthFacade {
   );
 
   @override
-  Future<Option<User>> getSignedInUser() => _firebaseAuth
-      .currentUser()
-      .then((firebaseUser) => optionOf(firebaseUser?.toDomain()));
+  Option<UserEntity> getSignedInUser() {
+    return optionOf(_firebaseAuth.currentUser?.toDomain());
+  }
 
   @override
   Future<Either<AuthFailure, Unit>> registerWithEmailAndPassword({
@@ -88,7 +88,7 @@ class FirebaseAuthFacade implements IAuthFacade {
 
       final googleAuthentication = await googleUser.authentication;
 
-      final authCredential = GoogleAuthProvider.getCredential(
+      final authCredential = GoogleAuthProvider.credential(
         idToken: googleAuthentication.idToken,
         accessToken: googleAuthentication.accessToken,
       );

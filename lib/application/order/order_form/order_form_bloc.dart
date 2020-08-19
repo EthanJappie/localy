@@ -133,6 +133,7 @@ class OrderFormBloc extends Bloc<OrderFormEvent, OrderFormState> {
           storeCoordinates: e.store.coordinates,
           storePhoneNumber: e.store.telephoneNumber,
           storeToken: e.store.token,
+          deliveryCost: e.store.deliveryCost,
         ));
       },
       countChanged: (e) async* {

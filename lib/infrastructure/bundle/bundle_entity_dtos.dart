@@ -28,6 +28,6 @@ abstract class BundleEntityDTO implements _$BundleEntityDTO {
   factory BundleEntityDTO.fromJson(Map<String, dynamic> json) => _$BundleEntityDTOFromJson(json);
 
   factory BundleEntityDTO.fromFirestore(DocumentSnapshot doc){
-    return BundleEntityDTO.fromJson(doc.data);
+    return BundleEntityDTO.fromJson(doc.data());
   }
 }

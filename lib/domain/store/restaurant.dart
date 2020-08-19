@@ -31,9 +31,9 @@ abstract class Restaurant implements _$Restaurant {
     @required bool acceptOther,
     @required bool foodDeliveries,
     @required bool foodCollection,
-    @required bool isHalaal,
+    bool isHalaal,
     String coverImageUrl,
-    String logoImageUrl,
+    double deliveryCost,
   }) = _Restaurant;
 
   factory Restaurant.empty() => Restaurant(
@@ -43,7 +43,6 @@ abstract class Restaurant implements _$Restaurant {
         address: ValueString.fromString(""),
         token: ValueString(),
         coverImageUrl: "",
-        logoImageUrl: "",
         coordinates: FireCoordinates.zero(),
         workingHoursFrom: WorkingHours(Timestamp.now()),
         workingHoursTo: WorkingHours(Timestamp.now()),
@@ -58,6 +57,7 @@ abstract class Restaurant implements _$Restaurant {
         foodDeliveries: false,
         foodCollection: false,
         isHalaal: false,
+        deliveryCost: 0.0,
       );
 
   Option<ValueFailure<dynamic>> get failureOption {

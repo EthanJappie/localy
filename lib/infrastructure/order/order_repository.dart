@@ -14,7 +14,7 @@ import 'package:localy/infrastructure/order/order_dtos.dart';
 @prod
 @LazySingleton(as: IOrderRepository)
 class OrderRepository implements IOrderRepository {
-  final Firestore _firestore;
+  final FirebaseFirestore _firestore;
 
   OrderRepository(this._firestore);
 
@@ -25,12 +25,12 @@ class OrderRepository implements IOrderRepository {
       final token = await FirebaseMessaging().getToken();
       var orderDTO = StoreOrderDTO.fromDomain(order);
       orderDTO = orderDTO.copyWith(
-        customerID: userDoc.documentID,
+        customerID: userDoc.id,
         customerToken: token,
       );
 
       final orderJson = orderDTO.toJson();
-      await _firestore.orderCollection.document(orderDTO.id).setData(orderJson);
+      await _firestore.orderCollection.doc(orderDTO.id).set(orderJson);
 
       return right(unit);
     } on PlatformException catch (e) {
@@ -47,7 +47,7 @@ class OrderRepository implements IOrderRepository {
     try {
       final orderID = order.id.getOrCrash();
 
-      await _firestore.orderCollection.document(orderID).delete();
+      await _firestore.orderCollection.doc(orderID).delete();
 
       return right(unit);
     } on PlatformException catch (e) {
@@ -67,8 +67,8 @@ class OrderRepository implements IOrderRepository {
       final orderDTO = StoreOrderDTO.fromDomain(order);
 
       await _firestore.orderCollection
-          .document(orderDTO.id)
-          .updateData(orderDTO.toJson());
+          .doc(orderDTO.id)
+          .update(orderDTO.toJson());
 
       return right(unit);
     } on PlatformException catch (e) {
@@ -86,7 +86,7 @@ class OrderRepository implements IOrderRepository {
   Stream<Either<OrderFailure, KtList<StoreOrder>>> watchAll() async* {
     yield* _firestore.orderCollection.snapshots().map(
           (snapshots) => right<OrderFailure, KtList<StoreOrder>>(
-            snapshots.documents
+            snapshots.docs
                 .map((doc) => StoreOrderDTO.fromFirestore(doc).toDomain())
                 .toImmutableList(),
           ),
@@ -102,7 +102,7 @@ class OrderRepository implements IOrderRepository {
         .snapshots()
         .map(
           (snapshots) => right<OrderFailure, KtList<StoreOrder>>(
-            snapshots.documents
+            snapshots.docs
                 .map((doc) => StoreOrderDTO.fromFirestore(doc).toDomain())
                 .toImmutableList(),
           ),
@@ -114,12 +114,12 @@ class OrderRepository implements IOrderRepository {
       watchAllByCustomerID() async* {
     final userDoc = await _firestore.userDocument();
     yield* _firestore.orderCollection
-        .where("customerID", isEqualTo: userDoc.documentID)
+        .where("customerID", isEqualTo: userDoc.id)
         .orderBy("dateCreated")
         .snapshots()
         .map(
           (snapshots) => right<OrderFailure, KtList<StoreOrder>>(
-            snapshots.documents
+            snapshots.docs
                 .map((doc) => StoreOrderDTO.fromFirestore(doc).toDomain())
                 .toImmutableList(),
           ),
@@ -139,7 +139,7 @@ class OrderRepository implements IOrderRepository {
         .snapshots()
         .map(
           (snapshots) => right<OrderFailure, KtList<StoreOrder>>(
-            snapshots.documents
+            snapshots.docs
                 .map((doc) => StoreOrderDTO.fromFirestore(doc).toDomain())
                 .toImmutableList(),
           ),
@@ -157,7 +157,7 @@ class OrderRepository implements IOrderRepository {
         .snapshots()
         .map(
           (snapshots) => right<OrderFailure, KtList<StoreOrder>>(
-            snapshots.documents
+            snapshots.docs
                 .map((doc) => StoreOrderDTO.fromFirestore(doc).toDomain())
                 .toImmutableList(),
           ),

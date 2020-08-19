@@ -31,6 +31,7 @@ _$_StoreDTO _$_$_StoreDTOFromJson(Map<String, dynamic> json) {
     coverImageUrl: json['coverImageUrl'] as String,
     logoImageUrl: json['logoImageUrl'] as String,
     notes: json['notes'] as String,
+    deliveryCosts: (json['deliveryCosts'] as num)?.toDouble(),
   );
 }
 
@@ -60,4 +61,5 @@ Map<String, dynamic> _$_$_StoreDTOToJson(_$_StoreDTO instance) =>
       'coverImageUrl': instance.coverImageUrl,
       'logoImageUrl': instance.logoImageUrl,
       'notes': instance.notes,
+      'deliveryCosts': instance.deliveryCosts,
     };

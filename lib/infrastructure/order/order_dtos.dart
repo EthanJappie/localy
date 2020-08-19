@@ -40,6 +40,7 @@ abstract class StoreOrderDTO implements _$StoreOrderDTO {
     String deliveryAddress,
     String orderNotes,
     @GeoPointConverters() GeoFirePoint deliveryCoordinates,
+    double deliveryCost,
   }) = _StoreOrderDTO;
 
   factory StoreOrderDTO.fromDomain(StoreOrder order) {
@@ -66,6 +67,7 @@ abstract class StoreOrderDTO implements _$StoreOrderDTO {
       deliveryCoordinates: order.deliveryCoordinates.getOrCrash(),
       dateCreated: order.dateCreated,
       status: order.status.getOrCrash(),
+      deliveryCost: order.deliveryCost ?? 0,
     );
   }
 
@@ -90,9 +92,11 @@ abstract class StoreOrderDTO implements _$StoreOrderDTO {
       phoneNumber: ValueString.fromString(phoneNumber),
       deliveryAddress: ValueString.fromStringIgnoreEmpty(deliveryAddress),
       orderNotes: ValueString.fromStringIgnoreEmpty(orderNotes),
-      deliveryCoordinates: FireCoordinates.ignoreZeroCoordinates(deliveryCoordinates),
+      deliveryCoordinates:
+          FireCoordinates.ignoreZeroCoordinates(deliveryCoordinates),
       dateCreated: dateCreated,
       status: ValueString.fromString(status),
+      deliveryCost: deliveryCost ?? 0,
     );
   }
 
@@ -100,6 +104,6 @@ abstract class StoreOrderDTO implements _$StoreOrderDTO {
       _$StoreOrderDTOFromJson(json);
 
   factory StoreOrderDTO.fromFirestore(DocumentSnapshot doc) {
-    return StoreOrderDTO.fromJson(doc.data).copyWith(id: doc.documentID);
+    return StoreOrderDTO.fromJson(doc.data()).copyWith(id: doc.id);
   }
 }

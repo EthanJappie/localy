@@ -5,32 +5,32 @@ import 'package:localy/domain/core/errors.dart';
 import 'package:localy/injection.dart';
 import 'package:uuid/uuid.dart';
 
-extension FirestoreX on Firestore {
+extension FirestoreX on FirebaseFirestore {
   Future<DocumentReference> userDocument() async {
-    final userOption = await getIt<IAuthFacade>().getSignedInUser();
+    final userOption =  getIt<IAuthFacade>().getSignedInUser();
     final user = userOption.getOrElse(() => throw NotAuthenticatedError());
-    return Firestore.instance
+    return FirebaseFirestore.instance
         .collection('users')
-        .document(user.id.getOrCrash());
+        .doc(user.id.getOrCrash());
   }
 
   CollectionReference get storeCollection =>
-      Firestore.instance.collection('stores');
+      FirebaseFirestore.instance.collection('stores');
 
   CollectionReference get menuCollection =>
-      Firestore.instance.collection('menues');
+      FirebaseFirestore.instance.collection('menues');
 
   CollectionReference get menuItemsCollection =>
-      Firestore.instance.collection('menuItems');
+      FirebaseFirestore.instance.collection('menuItems');
 
   CollectionReference get orderCollection =>
-      Firestore.instance.collection('orders');
+      FirebaseFirestore.instance.collection('orders');
 
   CollectionReference get bundleCollection =>
-      Firestore.instance.collection('bundles');
+      FirebaseFirestore.instance.collection('bundles');
 
   CollectionReference get reviewCollection =>
-      Firestore.instance.collection('reviews');
+      FirebaseFirestore.instance.collection('reviews');
 }
 
 extension DocumentReferenceX on DocumentReference {}

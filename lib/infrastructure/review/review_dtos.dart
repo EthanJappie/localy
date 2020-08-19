@@ -41,6 +41,6 @@ abstract class ReviewDTO implements _$ReviewDTO {
   factory ReviewDTO.fromJson(Map<String, dynamic> json) => _$ReviewDTOFromJson(json);
 
   factory ReviewDTO.fromFirestore(DocumentSnapshot doc){
-    return ReviewDTO.fromJson(doc.data).copyWith(id: doc.documentID);
+    return ReviewDTO.fromJson(doc.data()).copyWith(id: doc.id);
   }
 }

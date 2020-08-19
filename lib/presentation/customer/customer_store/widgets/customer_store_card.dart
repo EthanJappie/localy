@@ -64,8 +64,7 @@ class CustomerStoreCard extends StatelessWidget {
                                     ? Icons.check_circle
                                     : Icons.remove_circle,
                                 size: 16,
-                                color:
-                                store.foodCollection
+                                color: store.foodCollection
                                     ? Colors.green
                                     : Colors.red,
                               ),
@@ -121,9 +120,9 @@ class CustomerStoreCard extends StatelessWidget {
                       const SizedBox(width: 4),
                       const Text("4.8 (120+)"),
                       const SizedBox(width: 16),
-                      const Icon(
+                      Icon(
                         Icons.directions_car,
-                        color: Colors.grey,
+                        color: Theme.of(context).primaryColor,
                         size: 16,
                       ),
                       const SizedBox(width: 4),
@@ -132,15 +131,18 @@ class CustomerStoreCard extends StatelessWidget {
                         style: _subtitleTextStyle(),
                       ),
                       const SizedBox(width: 16),
-                      const Icon(
+                      Icon(
                         Icons.monetization_on,
-                        color: Colors.grey,
+                        color: _hasDeliveryCost()
+                            ? Theme.of(context).primaryColor
+                            : Colors.grey,
                         size: 16,
                       ),
                       const SizedBox(width: 4),
                       Text(
-                        "Free",
-                        style: _subtitleTextStyle(),
+                        _hasDeliveryCost() ? "R${store.deliveryCost}" : "Free",
+                        style: _subtitleTextStyle(
+                            color: _hasDeliveryCost() ? Colors.black : null),
                       )
                     ],
                   )
@@ -151,6 +153,10 @@ class CustomerStoreCard extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  bool _hasDeliveryCost() {
+    return !(store.deliveryCost == null || store.deliveryCost == 0);
   }
 
   double _getDistance() {
@@ -194,10 +200,10 @@ class CustomerStoreCard extends StatelessWidget {
     );
   }
 
-  TextStyle _subtitleTextStyle() {
+  TextStyle _subtitleTextStyle({Color color}) {
     return TextStyle(
       fontSize: 12,
-      color: Colors.grey[700],
+      color: color ?? Colors.grey[700],
     );
   }
 }

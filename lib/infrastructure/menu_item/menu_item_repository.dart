@@ -14,7 +14,7 @@ import 'package:localy/infrastructure/core/firestore_helpers.dart';
 
 @LazySingleton(as: IMenuItemRepository)
 class MenuItemRepository implements IMenuItemRepository {
-  final Firestore _firestore;
+  final FirebaseFirestore _firestore;
   final FirebaseStorage _firebaseStorage;
 
   MenuItemRepository(this._firestore, this._firebaseStorage);
@@ -36,8 +36,8 @@ class MenuItemRepository implements IMenuItemRepository {
           menuItemDTO);
 
       await _firestore.menuItemsCollection
-          .document(menuItemDTO.id)
-          .setData(menuItemDTO.toJson());
+          .doc(menuItemDTO.id)
+          .set(menuItemDTO.toJson());
 
       return right(unit);
     } on PlatformException catch (e) {
@@ -54,7 +54,7 @@ class MenuItemRepository implements IMenuItemRepository {
     try {
       final menuItemDID = menuItem.id.getOrCrash();
 
-      await _firestore.menuItemsCollection.document(menuItemDID).delete();
+      await _firestore.menuItemsCollection.doc(menuItemDID).delete();
 
       return right(unit);
     } on PlatformException catch (e) {
@@ -81,8 +81,8 @@ class MenuItemRepository implements IMenuItemRepository {
           menuItemDTO);
 
       await _firestore.menuItemsCollection
-          .document(menuItemDTO.id)
-          .updateData(menuItemDTO.toJson());
+          .doc(menuItemDTO.id)
+          .update(menuItemDTO.toJson());
 
       return right(unit);
     } on PlatformException catch (e) {
@@ -105,7 +105,7 @@ class MenuItemRepository implements IMenuItemRepository {
         .snapshots()
         .map(
           (snapshots) => right<MenuItemFailure, KtList<MenuItem>>(
-            snapshots.documents
+            snapshots.docs
                 .map((doc) => MenuItemDTO.fromFirestore(doc).toDomain())
                 .toImmutableList(),
           ),
@@ -143,7 +143,7 @@ class MenuItemRepository implements IMenuItemRepository {
         .snapshots()
         .map(
           (snapshots) => right<MenuItemFailure, KtList<MenuItem>>(
-            snapshots.documents
+            snapshots.docs
                 .map((doc) => MenuItemDTO.fromFirestore(doc).toDomain())
                 .toImmutableList(),
           ),

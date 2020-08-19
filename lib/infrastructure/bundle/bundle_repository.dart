@@ -11,20 +11,20 @@ import 'package:localy/infrastructure/core/firestore_helpers.dart';
 @prod
 @LazySingleton(as: IBundleRepository)
 class BundleRepository implements IBundleRepository {
-  final Firestore _firestore;
+  final FirebaseFirestore _firestore;
 
   BundleRepository(this._firestore);
 
   @override
   Future<Either<BundleEntityFailure, Unit>> create(BundleEntity bundle) async {
     try {
-      final userDoc = await _firestore.userDocument();
+      final userDoc =  await _firestore.userDocument();
 
       final bundleDTO = BundleEntityDTO.fromDomain(bundle);
 
       await _firestore.bundleCollection
-          .document(userDoc.documentID)
-          .setData(bundleDTO.toJson());
+          .doc(userDoc.id)
+          .set(bundleDTO.toJson());
 
       return right(unit);
     } on PlatformException catch (e) {
@@ -41,16 +41,16 @@ class BundleRepository implements IBundleRepository {
     try {
       final userDoc = await _firestore.userDocument();
       final bundleRef =
-          _firestore.bundleCollection.document(userDoc.documentID);
+          _firestore.bundleCollection.doc(userDoc.id);
 
       await _firestore.runTransaction((transaction) async {
         final postSnapshot = await transaction.get(bundleRef);
         if (postSnapshot.exists) {
-          await transaction.update(
+           transaction.update(
             bundleRef,
             <String, dynamic>{
               "numberOfCredits":
-                  postSnapshot.data["numberOfCredits"] + numberOfCredits
+                  postSnapshot.data()["numberOfCredits"] + numberOfCredits
             },
           );
         }
@@ -73,7 +73,7 @@ class BundleRepository implements IBundleRepository {
     final userDoc = await _firestore.userDocument();
 
     yield* _firestore.bundleCollection
-        .document(userDoc.documentID)
+        .doc(userDoc.id)
         .snapshots()
         .map(
           (documentSnapshot) => right<BundleEntityFailure, BundleEntity>(

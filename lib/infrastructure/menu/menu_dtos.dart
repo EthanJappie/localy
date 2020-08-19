@@ -46,7 +46,7 @@ abstract class MenuDTO implements _$MenuDTO {
       _$MenuDTOFromJson(json);
 
   factory MenuDTO.fromFirestore(DocumentSnapshot doc) {
-    return MenuDTO.fromJson(doc.data).copyWith(id: doc.documentID);
+    return MenuDTO.fromJson(doc.data()).copyWith(id: doc.id);
   }
 
 }
