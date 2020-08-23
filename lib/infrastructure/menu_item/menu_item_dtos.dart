@@ -1,8 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:kt_dart/kt.dart';
 import 'package:localy/domain/core/value_objects.dart';
 import 'package:localy/domain/menu_item/menu_item.dart';
-import 'package:kt_dart/kt.dart';
+import 'package:localy/domain/menu_item/menu_option_entity.dart';
 import 'package:localy/infrastructure/menu_item/menu_option_entity_dtos.dart';
 
 part 'menu_item_dtos.freezed.dart';
@@ -37,7 +38,12 @@ abstract class MenuItemDTO implements _$MenuItemDTO {
       hidden: menuItem.hidden,
       imageUrl: menuItem.imageUrl.value.fold((l) => "", (r) => r),
       count: menuItem.count ?? 1,
-      menuOptions: menuItem.menuOptions.asList().map((e) => MenuOptionEntityDTO.fromDomain(e)).toList()
+      menuOptions: menuItem.menuOptions == null
+          ? <MenuOptionEntityDTO>[].toList()
+          : menuItem.menuOptions
+              .asList()
+              .map((e) => MenuOptionEntityDTO.fromDomain(e))
+              .toList(),
     );
   }
 
@@ -52,7 +58,9 @@ abstract class MenuItemDTO implements _$MenuItemDTO {
       hidden: hidden,
       imageUrl: ValueString.fromString(imageUrl ?? ""),
       count: count ?? 1,
-      menuOptions: menuOptions.map((e) => e.toDomain()).toImmutableList()
+      menuOptions: menuOptions == null
+          ? <MenuOptionEntity>[].toImmutableList()
+          : menuOptions.map((e) => e.toDomain()).toImmutableList(),
     );
   }
 
