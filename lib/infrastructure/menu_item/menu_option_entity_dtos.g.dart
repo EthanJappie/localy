@@ -9,9 +9,12 @@ part of 'menu_option_entity_dtos.dart';
 _$_MenuOptionEntityDTO _$_$_MenuOptionEntityDTOFromJson(
     Map<String, dynamic> json) {
   return _$_MenuOptionEntityDTO(
-    variant: json['variant'] as String,
-    enabled: json['enabled'] as bool,
-    price: (json['price'] as num)?.toDouble(),
+    attributeName: json['attributeName'] as String,
+    menuOptionsItems: (json['menuOptionsItems'] as List)
+        ?.map((e) => e == null
+            ? null
+            : MenuOptionItemEntityDTO.fromJson(e as Map<String, dynamic>))
+        ?.toList(),
     id: json['id'] as String,
   );
 }
@@ -19,8 +22,7 @@ _$_MenuOptionEntityDTO _$_$_MenuOptionEntityDTOFromJson(
 Map<String, dynamic> _$_$_MenuOptionEntityDTOToJson(
         _$_MenuOptionEntityDTO instance) =>
     <String, dynamic>{
-      'variant': instance.variant,
-      'enabled': instance.enabled,
-      'price': instance.price,
+      'attributeName': instance.attributeName,
+      'menuOptionsItems': instance.menuOptionsItems,
       'id': instance.id,
     };
