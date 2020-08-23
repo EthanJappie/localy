@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:intl/intl.dart';
 import 'package:localy/application/order/order_watcher/order_watcher_bloc.dart';
 
 class CompletedOrdersBodyWidget extends StatefulWidget {
@@ -35,11 +36,23 @@ class _CompletedOrdersBodyWidgetState extends State<CompletedOrdersBodyWidget> {
 //                    ExtendedNavigator.of(context)
 //                        .pushViewOrderPage(order: order);
                   },
-                  title: Text(
-                      "OrderID: ${orderID.substring(orderID.length - 5, orderID.length)}-${orderID.substring(0, 5)}"),
-                  subtitle: Text(
-                    "Items: ${order.menuItems.length}",
+                  title: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                          "OrderID: ${orderID.substring(orderID.length - 5, orderID.length)}-${orderID.substring(0, 5)}"),
+                      CircleAvatar(
+                        radius: 12,
+                        backgroundColor: Theme.of(context).primaryColor,
+                        child: Text(
+                          "${order.menuItems.length}",
+                          style: const TextStyle(color: Colors.white),
+                        ),
+                      )
+                    ],
                   ),
+                  subtitle: Text(
+                      "${DateFormat.Hm().format(order.dateCreated.toDate())} - ${DateFormat.yMMMd().format(order.dateCreated.toDate())}"),
                 );
               },
               separatorBuilder: (context, index) => const Divider(),

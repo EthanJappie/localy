@@ -1,4 +1,5 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
@@ -23,6 +24,24 @@ class AppWidget extends StatefulWidget {
 class _AppWidgetState extends State<AppWidget> {
   @override
   Widget build(BuildContext context) {
+    return FutureBuilder(
+      future: Firebase.initializeApp(),
+      builder: (context, snapshot) {
+        if (snapshot.hasError) {
+          return _renderCenter(
+              const Text("Something went wrong, please restart the app"));
+        }
+
+        if (snapshot.connectionState == ConnectionState.done) {
+          return _renderApp();
+        }
+
+        return const CircularProgressIndicator();
+      },
+    );
+  }
+
+  Widget _renderApp() {
     return MultiBlocProvider(
       providers: [
         BlocProvider(
@@ -48,9 +67,17 @@ class _AppWidgetState extends State<AppWidget> {
     );
   }
 
+  Widget _renderCenter(Widget widget) {
+    return Scaffold(
+      body: Center(
+        child: widget,
+      ),
+    );
+  }
 
   Color _getAppColor() {
-    if (EnvironmentConfig.APP_NAME == EnvironmentConfig.APP_NAME_LOCALY_MANAGER) {
+    if (EnvironmentConfig.APP_NAME ==
+        EnvironmentConfig.APP_NAME_LOCALY_MANAGER) {
       return const Color(appColor);
     } else {
       return const Color(appColor);

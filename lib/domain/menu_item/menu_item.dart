@@ -1,7 +1,9 @@
 import 'package:dartz/dartz.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:kt_dart/kt.dart';
 import 'package:localy/domain/core/failures.dart';
 import 'package:localy/domain/core/value_objects.dart';
+import 'package:localy/domain/menu_item/menu_option_entity.dart';
 
 part 'menu_item.freezed.dart';
 
@@ -19,10 +21,10 @@ abstract class MenuItem implements _$MenuItem {
     ValueString imageUrl,
     bool hidden,
     int count,
+    KtList<MenuOptionEntity> menuOptions,
   }) = _MenuItem;
 
-  factory MenuItem.empty() =>
-      MenuItem(
+  factory MenuItem.empty() => MenuItem(
         id: UniqueId(),
         name: ValueString.fromString(""),
         description: ValueString.fromString(""),
@@ -31,7 +33,8 @@ abstract class MenuItem implements _$MenuItem {
         menuID: ValueString(),
         imageUrl: ValueString(),
         hidden: false,
-         count: 1,
+        count: 1,
+        menuOptions: <MenuOptionEntity>[].toImmutableList(),
       );
 
   Option<ValueFailure<dynamic>> get failureOption {
@@ -41,6 +44,6 @@ abstract class MenuItem implements _$MenuItem {
         .fold(
           (f) => some(f),
           (r) => none(),
-    );
+        );
   }
 }

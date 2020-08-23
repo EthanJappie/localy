@@ -17,6 +17,11 @@ _$_MenuItemDTO _$_$_MenuItemDTOFromJson(Map<String, dynamic> json) {
     imageUrl: json['imageUrl'] as String,
     count: json['count'] as int,
     id: json['id'] as String,
+    menuOptions: (json['menuOptions'] as List)
+        ?.map((e) => e == null
+            ? null
+            : MenuOptionEntityDTO.fromJson(e as Map<String, dynamic>))
+        ?.toList(),
   );
 }
 
@@ -31,4 +36,5 @@ Map<String, dynamic> _$_$_MenuItemDTOToJson(_$_MenuItemDTO instance) =>
       'imageUrl': instance.imageUrl,
       'count': instance.count,
       'id': instance.id,
+      'menuOptions': instance.menuOptions,
     };

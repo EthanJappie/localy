@@ -25,7 +25,8 @@ class _$MenuItemDTOTearOff {
       bool hidden,
       String imageUrl,
       int count,
-      String id}) {
+      String id,
+      List<MenuOptionEntityDTO> menuOptions}) {
     return _MenuItemDTO(
       name: name,
       description: description,
@@ -36,6 +37,7 @@ class _$MenuItemDTOTearOff {
       imageUrl: imageUrl,
       count: count,
       id: id,
+      menuOptions: menuOptions,
     );
   }
 }
@@ -53,6 +55,7 @@ mixin _$MenuItemDTO {
   String get imageUrl;
   int get count;
   String get id;
+  List<MenuOptionEntityDTO> get menuOptions;
 
   Map<String, dynamic> toJson();
   $MenuItemDTOCopyWith<MenuItemDTO> get copyWith;
@@ -71,7 +74,8 @@ abstract class $MenuItemDTOCopyWith<$Res> {
       bool hidden,
       String imageUrl,
       int count,
-      String id});
+      String id,
+      List<MenuOptionEntityDTO> menuOptions});
 }
 
 class _$MenuItemDTOCopyWithImpl<$Res> implements $MenuItemDTOCopyWith<$Res> {
@@ -92,6 +96,7 @@ class _$MenuItemDTOCopyWithImpl<$Res> implements $MenuItemDTOCopyWith<$Res> {
     Object imageUrl = freezed,
     Object count = freezed,
     Object id = freezed,
+    Object menuOptions = freezed,
   }) {
     return _then(_value.copyWith(
       name: name == freezed ? _value.name : name as String,
@@ -106,6 +111,9 @@ class _$MenuItemDTOCopyWithImpl<$Res> implements $MenuItemDTOCopyWith<$Res> {
       imageUrl: imageUrl == freezed ? _value.imageUrl : imageUrl as String,
       count: count == freezed ? _value.count : count as int,
       id: id == freezed ? _value.id : id as String,
+      menuOptions: menuOptions == freezed
+          ? _value.menuOptions
+          : menuOptions as List<MenuOptionEntityDTO>,
     ));
   }
 }
@@ -125,7 +133,8 @@ abstract class _$MenuItemDTOCopyWith<$Res>
       bool hidden,
       String imageUrl,
       int count,
-      String id});
+      String id,
+      List<MenuOptionEntityDTO> menuOptions});
 }
 
 class __$MenuItemDTOCopyWithImpl<$Res> extends _$MenuItemDTOCopyWithImpl<$Res>
@@ -148,6 +157,7 @@ class __$MenuItemDTOCopyWithImpl<$Res> extends _$MenuItemDTOCopyWithImpl<$Res>
     Object imageUrl = freezed,
     Object count = freezed,
     Object id = freezed,
+    Object menuOptions = freezed,
   }) {
     return _then(_MenuItemDTO(
       name: name == freezed ? _value.name : name as String,
@@ -162,6 +172,9 @@ class __$MenuItemDTOCopyWithImpl<$Res> extends _$MenuItemDTOCopyWithImpl<$Res>
       imageUrl: imageUrl == freezed ? _value.imageUrl : imageUrl as String,
       count: count == freezed ? _value.count : count as int,
       id: id == freezed ? _value.id : id as String,
+      menuOptions: menuOptions == freezed
+          ? _value.menuOptions
+          : menuOptions as List<MenuOptionEntityDTO>,
     ));
   }
 }
@@ -177,7 +190,8 @@ class _$_MenuItemDTO extends _MenuItemDTO {
       this.hidden,
       this.imageUrl,
       this.count,
-      this.id})
+      this.id,
+      this.menuOptions})
       : assert(name != null),
         assert(description != null),
         assert(price != null),
@@ -206,10 +220,12 @@ class _$_MenuItemDTO extends _MenuItemDTO {
   final int count;
   @override
   final String id;
+  @override
+  final List<MenuOptionEntityDTO> menuOptions;
 
   @override
   String toString() {
-    return 'MenuItemDTO(name: $name, description: $description, price: $price, sequenceOfAppearance: $sequenceOfAppearance, menuID: $menuID, hidden: $hidden, imageUrl: $imageUrl, count: $count, id: $id)';
+    return 'MenuItemDTO(name: $name, description: $description, price: $price, sequenceOfAppearance: $sequenceOfAppearance, menuID: $menuID, hidden: $hidden, imageUrl: $imageUrl, count: $count, id: $id, menuOptions: $menuOptions)';
   }
 
   @override
@@ -236,7 +252,10 @@ class _$_MenuItemDTO extends _MenuItemDTO {
             (identical(other.count, count) ||
                 const DeepCollectionEquality().equals(other.count, count)) &&
             (identical(other.id, id) ||
-                const DeepCollectionEquality().equals(other.id, id)));
+                const DeepCollectionEquality().equals(other.id, id)) &&
+            (identical(other.menuOptions, menuOptions) ||
+                const DeepCollectionEquality()
+                    .equals(other.menuOptions, menuOptions)));
   }
 
   @override
@@ -250,7 +269,8 @@ class _$_MenuItemDTO extends _MenuItemDTO {
       const DeepCollectionEquality().hash(hidden) ^
       const DeepCollectionEquality().hash(imageUrl) ^
       const DeepCollectionEquality().hash(count) ^
-      const DeepCollectionEquality().hash(id);
+      const DeepCollectionEquality().hash(id) ^
+      const DeepCollectionEquality().hash(menuOptions);
 
   @override
   _$MenuItemDTOCopyWith<_MenuItemDTO> get copyWith =>
@@ -273,7 +293,8 @@ abstract class _MenuItemDTO extends MenuItemDTO {
       bool hidden,
       String imageUrl,
       int count,
-      String id}) = _$_MenuItemDTO;
+      String id,
+      List<MenuOptionEntityDTO> menuOptions}) = _$_MenuItemDTO;
 
   factory _MenuItemDTO.fromJson(Map<String, dynamic> json) =
       _$_MenuItemDTO.fromJson;
@@ -296,6 +317,8 @@ abstract class _MenuItemDTO extends MenuItemDTO {
   int get count;
   @override
   String get id;
+  @override
+  List<MenuOptionEntityDTO> get menuOptions;
   @override
   _$MenuItemDTOCopyWith<_MenuItemDTO> get copyWith;
 }

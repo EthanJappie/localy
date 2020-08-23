@@ -22,7 +22,8 @@ class _$MenuItemTearOff {
       @required ValueString menuID,
       ValueString imageUrl,
       bool hidden,
-      int count}) {
+      int count,
+      KtList<MenuOptionEntity> menuOptions}) {
     return _MenuItem(
       id: id,
       name: name,
@@ -33,6 +34,7 @@ class _$MenuItemTearOff {
       imageUrl: imageUrl,
       hidden: hidden,
       count: count,
+      menuOptions: menuOptions,
     );
   }
 }
@@ -50,6 +52,7 @@ mixin _$MenuItem {
   ValueString get imageUrl;
   bool get hidden;
   int get count;
+  KtList<MenuOptionEntity> get menuOptions;
 
   $MenuItemCopyWith<MenuItem> get copyWith;
 }
@@ -66,7 +69,8 @@ abstract class $MenuItemCopyWith<$Res> {
       ValueString menuID,
       ValueString imageUrl,
       bool hidden,
-      int count});
+      int count,
+      KtList<MenuOptionEntity> menuOptions});
 }
 
 class _$MenuItemCopyWithImpl<$Res> implements $MenuItemCopyWith<$Res> {
@@ -87,6 +91,7 @@ class _$MenuItemCopyWithImpl<$Res> implements $MenuItemCopyWith<$Res> {
     Object imageUrl = freezed,
     Object hidden = freezed,
     Object count = freezed,
+    Object menuOptions = freezed,
   }) {
     return _then(_value.copyWith(
       id: id == freezed ? _value.id : id as UniqueId,
@@ -102,6 +107,9 @@ class _$MenuItemCopyWithImpl<$Res> implements $MenuItemCopyWith<$Res> {
       imageUrl: imageUrl == freezed ? _value.imageUrl : imageUrl as ValueString,
       hidden: hidden == freezed ? _value.hidden : hidden as bool,
       count: count == freezed ? _value.count : count as int,
+      menuOptions: menuOptions == freezed
+          ? _value.menuOptions
+          : menuOptions as KtList<MenuOptionEntity>,
     ));
   }
 }
@@ -119,7 +127,8 @@ abstract class _$MenuItemCopyWith<$Res> implements $MenuItemCopyWith<$Res> {
       ValueString menuID,
       ValueString imageUrl,
       bool hidden,
-      int count});
+      int count,
+      KtList<MenuOptionEntity> menuOptions});
 }
 
 class __$MenuItemCopyWithImpl<$Res> extends _$MenuItemCopyWithImpl<$Res>
@@ -141,6 +150,7 @@ class __$MenuItemCopyWithImpl<$Res> extends _$MenuItemCopyWithImpl<$Res>
     Object imageUrl = freezed,
     Object hidden = freezed,
     Object count = freezed,
+    Object menuOptions = freezed,
   }) {
     return _then(_MenuItem(
       id: id == freezed ? _value.id : id as UniqueId,
@@ -156,6 +166,9 @@ class __$MenuItemCopyWithImpl<$Res> extends _$MenuItemCopyWithImpl<$Res>
       imageUrl: imageUrl == freezed ? _value.imageUrl : imageUrl as ValueString,
       hidden: hidden == freezed ? _value.hidden : hidden as bool,
       count: count == freezed ? _value.count : count as int,
+      menuOptions: menuOptions == freezed
+          ? _value.menuOptions
+          : menuOptions as KtList<MenuOptionEntity>,
     ));
   }
 }
@@ -170,7 +183,8 @@ class _$_MenuItem extends _MenuItem {
       @required this.menuID,
       this.imageUrl,
       this.hidden,
-      this.count})
+      this.count,
+      this.menuOptions})
       : assert(id != null),
         assert(name != null),
         assert(description != null),
@@ -197,10 +211,12 @@ class _$_MenuItem extends _MenuItem {
   final bool hidden;
   @override
   final int count;
+  @override
+  final KtList<MenuOptionEntity> menuOptions;
 
   @override
   String toString() {
-    return 'MenuItem(id: $id, name: $name, description: $description, price: $price, sequenceOfAppearance: $sequenceOfAppearance, menuID: $menuID, imageUrl: $imageUrl, hidden: $hidden, count: $count)';
+    return 'MenuItem(id: $id, name: $name, description: $description, price: $price, sequenceOfAppearance: $sequenceOfAppearance, menuID: $menuID, imageUrl: $imageUrl, hidden: $hidden, count: $count, menuOptions: $menuOptions)';
   }
 
   @override
@@ -227,7 +243,10 @@ class _$_MenuItem extends _MenuItem {
             (identical(other.hidden, hidden) ||
                 const DeepCollectionEquality().equals(other.hidden, hidden)) &&
             (identical(other.count, count) ||
-                const DeepCollectionEquality().equals(other.count, count)));
+                const DeepCollectionEquality().equals(other.count, count)) &&
+            (identical(other.menuOptions, menuOptions) ||
+                const DeepCollectionEquality()
+                    .equals(other.menuOptions, menuOptions)));
   }
 
   @override
@@ -241,7 +260,8 @@ class _$_MenuItem extends _MenuItem {
       const DeepCollectionEquality().hash(menuID) ^
       const DeepCollectionEquality().hash(imageUrl) ^
       const DeepCollectionEquality().hash(hidden) ^
-      const DeepCollectionEquality().hash(count);
+      const DeepCollectionEquality().hash(count) ^
+      const DeepCollectionEquality().hash(menuOptions);
 
   @override
   _$MenuItemCopyWith<_MenuItem> get copyWith =>
@@ -259,7 +279,8 @@ abstract class _MenuItem extends MenuItem {
       @required ValueString menuID,
       ValueString imageUrl,
       bool hidden,
-      int count}) = _$_MenuItem;
+      int count,
+      KtList<MenuOptionEntity> menuOptions}) = _$_MenuItem;
 
   @override
   UniqueId get id;
@@ -279,6 +300,8 @@ abstract class _MenuItem extends MenuItem {
   bool get hidden;
   @override
   int get count;
+  @override
+  KtList<MenuOptionEntity> get menuOptions;
   @override
   _$MenuItemCopyWith<_MenuItem> get copyWith;
 }
