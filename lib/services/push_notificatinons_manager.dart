@@ -17,15 +17,16 @@ class PushNotificationsManager {
 
   Future<void> init() async {
     if (!_initialized) {
-      _firebaseMessaging.requestNotificationPermissions();
-      _firebaseMessaging.configure(
-        onMessage: onMessage,
-        onBackgroundMessage: onBackgroundMessage,
-        onLaunch: onLaunch,
-        onResume: onResume,
-      );
+      _firebaseMessaging
+        ..requestNotificationPermissions()
+        ..configure(
+          onMessage: onMessage,
+          onBackgroundMessage: onBackgroundMessage,
+          onLaunch: onLaunch,
+          onResume: onResume,
+        );
 
-      final String token = await _firebaseMessaging.getToken();
+      final token = await _firebaseMessaging.getToken();
       token.toString();
       _initialized = true;
     }

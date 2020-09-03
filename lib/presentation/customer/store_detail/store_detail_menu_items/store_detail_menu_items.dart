@@ -7,7 +7,6 @@ import 'package:localy/injection.dart';
 import 'package:localy/presentation/core/routes/router.gr.dart';
 
 class StoreDetailMenuItems extends StatefulWidget {
-
   const StoreDetailMenuItems({
     Key key,
     @required this.menuID,

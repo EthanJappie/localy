@@ -8,7 +8,6 @@ import 'package:localy/injection.dart';
 import 'package:localy/presentation/core/routes/router.gr.dart';
 
 class ViewReviewsPage extends StatelessWidget {
-
   const ViewReviewsPage({
     Key key,
     @required this.typeID,

@@ -13,7 +13,6 @@ class LocalyButton extends StatelessWidget {
   final bool empty;
   final bool strikeThrough;
 
-
   @override
   Widget build(BuildContext context) {
     return Row(

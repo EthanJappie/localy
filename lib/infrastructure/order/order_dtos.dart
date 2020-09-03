@@ -15,12 +15,14 @@ part 'order_dtos.g.dart';
 @freezed
 abstract class StoreOrderDTO implements _$StoreOrderDTO {
   const StoreOrderDTO._();
+
   factory StoreOrderDTO.fromJson(Map<String, dynamic> json) =>
       _$StoreOrderDTOFromJson(json);
 
   factory StoreOrderDTO.fromFirestore(DocumentSnapshot doc) {
     return StoreOrderDTO.fromJson(doc.data()).copyWith(id: doc.id);
   }
+
   const factory StoreOrderDTO({
     @JsonKey(ignore: true) String id,
     @required String customerID,
@@ -103,6 +105,4 @@ abstract class StoreOrderDTO implements _$StoreOrderDTO {
       deliveryCost: deliveryCost ?? 0,
     );
   }
-
-
 }

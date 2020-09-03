@@ -19,9 +19,9 @@ import 'package:location/location.dart';
 @LazySingleton(as: IStoreRepository)
 class StoreRepository implements IStoreRepository {
   StoreRepository(this._firestore, this._firebaseStorage);
+
   final FirebaseFirestore _firestore;
   final FirebaseStorage _firebaseStorage;
-
 
   @override
   Future<Either<StoreFailure, Unit>> create(Restaurant store) async {
@@ -146,9 +146,9 @@ class StoreRepository implements IStoreRepository {
       final uploadTask =
           _firebaseStorage.storeStorageReference.putFile(File(coverImageUrl));
 
-      final  downloadUrl = await uploadTask.onComplete;
+      final downloadUrl = await uploadTask.onComplete;
 
-      final  imageUrl = await downloadUrl.ref.getDownloadURL() as String;
+      final imageUrl = await downloadUrl.ref.getDownloadURL() as String;
 
       store = store.copyWith(coverImageUrl: imageUrl);
     }

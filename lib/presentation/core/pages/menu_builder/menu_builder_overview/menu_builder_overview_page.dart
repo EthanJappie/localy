@@ -13,7 +13,6 @@ class MenuBuilderOverviewPage extends StatelessWidget {
   }) : super(key: key);
   final String storeID;
 
-
   @override
   Widget build(BuildContext context) {
     return BlocListener<MenuActorBloc, MenuActorState>(

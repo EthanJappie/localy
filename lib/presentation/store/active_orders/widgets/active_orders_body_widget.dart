@@ -36,8 +36,10 @@ class _ActiveOrdersBodyWidgetState extends State<ActiveOrdersBodyWidget> {
                     ExtendedNavigator.of(context)
                         .pushViewOrderPage(order: order);
                   },
-                  title: Text(
-                      'OrderID: ${orderID.substring(orderID.length - 5, orderID.length)}-${orderID.substring(0, 5)}'),
+                  title: Text('OrderID: ${orderID.substring(
+                    orderID.length - 5,
+                    orderID.length,
+                  )}-${orderID.substring(0, 5)}'),
                   subtitle: Text(
                     'Items: ${order.menuItems.length}',
                   ),

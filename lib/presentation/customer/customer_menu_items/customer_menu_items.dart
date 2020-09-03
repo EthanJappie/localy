@@ -8,7 +8,6 @@ import 'package:localy/injection.dart';
 import 'package:localy/presentation/customer/customer_menu_items/widgets/customer_menu_items_body_widget.dart';
 
 class CustomerMenuItems extends StatelessWidget {
-
   const CustomerMenuItems({
     Key key,
     @required this.menuID,

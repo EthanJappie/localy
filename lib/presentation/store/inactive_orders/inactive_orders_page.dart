@@ -7,7 +7,6 @@ import 'package:localy/injection.dart';
 import 'package:localy/presentation/store/inactive_orders/widgets/inactive_orders_body_widget.dart';
 
 class InactiveOrdersPage extends StatelessWidget {
-
   const InactiveOrdersPage({Key key, @required this.storeID}) : super(key: key);
   final String storeID;
 

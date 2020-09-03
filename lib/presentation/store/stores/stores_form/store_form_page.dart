@@ -33,7 +33,6 @@ class StoreFormPage extends StatelessWidget {
   }) : super(key: key);
   final Restaurant editedStore;
 
-
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
@@ -62,13 +61,14 @@ class StoreFormPage extends StatelessWidget {
                   FlushbarHelper.createError(
                     duration: const Duration(seconds: 5),
                     message: failure.map(
-                        // Use localized strings here in your apps
-                        insufficientPermission: (_) =>
-                            'Insufficient permissions ❌',
-                        unableToUpdate: (_) =>
-                            "Couldn't update the note. Was it deleted from another device?",
-                        unexpected: (_) =>
-                            'Unexpected error occurred, please contact support.'),
+                      // Use localized strings here in your apps
+                      insufficientPermission: (_) =>
+                          'Insufficient permissions ❌',
+                      unableToUpdate: (_) =>
+                          "Couldn't update the note. Was it deleted from another device?",
+                      unexpected: (_) =>
+                          'Unexpected error occurred, please contact support.',
+                    ),
                   ).show(context);
                 },
                 (_) {

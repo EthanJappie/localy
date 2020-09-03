@@ -13,7 +13,6 @@ import 'package:localy/presentation/core/routes/router.gr.dart';
 import 'package:localy/presentation/customer/store_detail/store_detail_menu_items/store_detail_menu_items.dart';
 
 class StoreDetailPage extends StatefulWidget {
-
   const StoreDetailPage({Key key, this.store}) : super(key: key);
   final Restaurant store;
 

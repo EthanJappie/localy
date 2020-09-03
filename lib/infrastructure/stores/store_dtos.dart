@@ -16,6 +16,13 @@ part 'store_dtos.g.dart';
 abstract class StoreDTO implements _$StoreDTO {
   const StoreDTO._();
 
+  factory StoreDTO.fromJson(Map<String, dynamic> json) =>
+      _$StoreDTOFromJson(json);
+
+  factory StoreDTO.fromFirestore(DocumentSnapshot doc) {
+    return StoreDTO.fromJson(doc.data()).copyWith(id: doc.id);
+  }
+
   const factory StoreDTO({
     @required String ownerID,
     @required String storeName,
@@ -93,12 +100,5 @@ abstract class StoreDTO implements _$StoreDTO {
       storeName: ValueString.fromString(storeName),
       deliveryCost: deliveryCosts,
     );
-  }
-
-  factory StoreDTO.fromJson(Map<String, dynamic> json) =>
-      _$StoreDTOFromJson(json);
-
-  factory StoreDTO.fromFirestore(DocumentSnapshot doc) {
-    return StoreDTO.fromJson(doc.data()).copyWith(id: doc.id);
   }
 }

@@ -14,7 +14,9 @@ import 'package:localy/domain/store/value_objects.dart';
 import 'package:meta/meta.dart';
 
 part 'store_form_bloc.freezed.dart';
+
 part 'store_form_event.dart';
+
 part 'store_form_state.dart';
 
 @injectable

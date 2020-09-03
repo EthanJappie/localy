@@ -18,7 +18,6 @@ import 'package:localy/presentation/store/menu_items/menu_items_form_page/widget
 import 'package:localy/presentation/store/menu_items/menu_items_form_page/widgets/menu_item_sequence_field.dart';
 
 class MenuItemsFormPage extends StatelessWidget {
-
   const MenuItemsFormPage({
     Key key,
     this.editedMenuItem,
@@ -55,13 +54,14 @@ class MenuItemsFormPage extends StatelessWidget {
                   FlushbarHelper.createError(
                     duration: const Duration(seconds: 5),
                     message: failure.map(
-                        // Use localized strings here in your apps
-                        insufficientPermission: (_) =>
-                            'Insufficient permissions ❌',
-                        unableToUpdate: (_) =>
-                            "Couldn't update the note. Was it deleted from another device?",
-                        unexpected: (_) =>
-                            'Unexpected error occurred, please contact support.'),
+                      // Use localized strings here in your apps
+                      insufficientPermission: (_) =>
+                          'Insufficient permissions ❌',
+                      unableToUpdate: (_) =>
+                          "Couldn't update the note. Was it deleted from another device?",
+                      unexpected: (_) =>
+                          'Unexpected error occurred, please contact support.',
+                    ),
                   ).show(context);
                 },
                 (_) {
@@ -101,7 +101,6 @@ class MenuItemFormPageScaffold extends StatelessWidget {
   }) : super(key: key);
   final String menuID;
   final MenuItem editedMenuItem;
-
 
   @override
   Widget build(BuildContext context) {

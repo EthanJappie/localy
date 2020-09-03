@@ -90,8 +90,9 @@ class _CheckoutPageState extends State<CheckoutPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
                             const Text('Total'),
-                            Text(
-                                'R${calculateCost(state.order.menuItems).toStringAsFixed(2)}')
+                            Text('R${calculateCost(
+                              state.order.menuItems,
+                            ).toStringAsFixed(2)}')
                           ],
                         ),
                         const SizedBox(height: 8),
@@ -119,7 +120,10 @@ class _CheckoutPageState extends State<CheckoutPage> {
                               ),
                             ),
                             Text(
-                              'R${calculateCost(state.order.menuItems, costOfDelivery: state.order.deliveryCost).toStringAsFixed(2)}',
+                              'R${calculateCost(
+                                state.order.menuItems,
+                                costOfDelivery: state.order.deliveryCost,
+                              ).toStringAsFixed(2)}',
                               style: TextStyle(
                                 color: Theme.of(context).primaryColor,
                                 fontWeight: FontWeight.bold,

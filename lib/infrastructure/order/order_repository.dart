@@ -14,8 +14,8 @@ import 'package:localy/infrastructure/order/order_dtos.dart';
 @prod
 @LazySingleton(as: IOrderRepository)
 class OrderRepository implements IOrderRepository {
-
   OrderRepository(this._firestore);
+
   final FirebaseFirestore _firestore;
 
   @override

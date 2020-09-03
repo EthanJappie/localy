@@ -13,7 +13,6 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../../injection.dart';
 
 class CustomerViewOrderPage extends StatefulWidget {
-
   const CustomerViewOrderPage({Key key, this.order}) : super(key: key);
   final StoreOrder order;
 
@@ -59,8 +58,10 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
               const SizedBox(height: 16),
               InkWell(
                 onTap: () async {
-                  await launch(
-                      'tel:${widget.order.storePhoneNumber.value.fold((l) => '', (r) => r)}');
+                  await launch('tel:${widget.order.storePhoneNumber.value.fold(
+                    (l) => '',
+                    (r) => r,
+                  )}');
                 },
                 child: Row(
                   children: <Widget>[
@@ -138,8 +139,9 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   const Text('Total'),
-                  Text(
-                      'R${calculateCost(widget.order.menuItems).toStringAsFixed(2)}')
+                  Text('R${calculateCost(
+                    widget.order.menuItems,
+                  ).toStringAsFixed(2)}')
                 ],
               ),
               const SizedBox(height: 8),
@@ -167,7 +169,10 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
                     ),
                   ),
                   Text(
-                    'R${calculateCost(widget.order.menuItems, costOfDelivery: widget.order.deliveryCost).toStringAsFixed(2)}',
+                    'R${calculateCost(
+                      widget.order.menuItems,
+                      costOfDelivery: widget.order.deliveryCost,
+                    ).toStringAsFixed(2)}',
                     style: TextStyle(
                       color: Theme.of(context).primaryColor,
                       fontWeight: FontWeight.bold,

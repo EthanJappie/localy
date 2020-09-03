@@ -13,8 +13,8 @@ import 'package:localy/infrastructure/review/review_dtos.dart';
 @LazySingleton(as: IReviewRepository)
 class ReviewRepository implements IReviewRepository {
   ReviewRepository(this._firestore);
-  final FirebaseFirestore _firestore;
 
+  final FirebaseFirestore _firestore;
 
   @override
   Future<Either<ReviewEntityFailure, Unit>> create(

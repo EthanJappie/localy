@@ -6,7 +6,6 @@ import 'package:localy/domain/store/restaurant.dart';
 import 'package:localy/presentation/core/routes/router.gr.dart';
 
 class StoreCard extends StatelessWidget {
-
   const StoreCard({Key key, this.store}) : super(key: key);
   final Restaurant store;
 

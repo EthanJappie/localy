@@ -15,7 +15,6 @@ class ViewOrderPage extends StatefulWidget {
   const ViewOrderPage({Key key, this.order}) : super(key: key);
   final StoreOrder order;
 
-
   @override
   _ViewOrderPageState createState() => _ViewOrderPageState();
 }
@@ -58,8 +57,10 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
               const SizedBox(height: 16),
               InkWell(
                 onTap: () async {
-                  await launch(
-                      'tel:${widget.order.phoneNumber.value.fold((l) => '', (r) => r)}');
+                  await launch('tel:${widget.order.phoneNumber.value.fold(
+                    (l) => '',
+                    (r) => r,
+                  )}');
                 },
                 child: Row(
                   children: <Widget>[
@@ -169,7 +170,9 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
                 children: <Widget>[
                   const Text('Total'),
                   Text(
-                    'R${calculateCost(widget.order.menuItems).toStringAsFixed(2)}',
+                    'R${calculateCost(
+                      widget.order.menuItems,
+                    ).toStringAsFixed(2)}',
                   )
                 ],
               ),
@@ -198,7 +201,10 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
                     ),
                   ),
                   Text(
-                    'R${calculateCost(widget.order.menuItems, costOfDelivery: widget.order.deliveryCost).toStringAsFixed(2)}',
+                    'R${calculateCost(
+                      widget.order.menuItems,
+                      costOfDelivery: widget.order.deliveryCost,
+                    ).toStringAsFixed(2)}',
                     style: TextStyle(
                       color: Theme.of(context).primaryColor,
                       fontWeight: FontWeight.bold,

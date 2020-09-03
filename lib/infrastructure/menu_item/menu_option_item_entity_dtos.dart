@@ -9,12 +9,14 @@ part 'menu_option_item_entity_dtos.g.dart';
 @freezed
 abstract class MenuOptionItemEntityDTO implements _$MenuOptionItemEntityDTO {
   const MenuOptionItemEntityDTO._();
+
   factory MenuOptionItemEntityDTO.fromJson(Map<String, dynamic> json) =>
       _$MenuOptionItemEntityDTOFromJson(json);
 
   factory MenuOptionItemEntityDTO.fromFirestore(DocumentSnapshot doc) {
     return MenuOptionItemEntityDTO.fromJson(doc.data()).copyWith(id: doc.id);
   }
+
   const factory MenuOptionItemEntityDTO({
     @required String variant,
     @required bool enabled,
@@ -39,6 +41,4 @@ abstract class MenuOptionItemEntityDTO implements _$MenuOptionItemEntityDTO {
       price: price,
     );
   }
-
-
 }

@@ -9,7 +9,6 @@ import 'package:localy/presentation/core/routes/router.gr.dart';
 import 'package:localy/presentation/store/menu_items/menu_items_overview/widgets/menu_items_overview_body_widget.dart';
 
 class MenuItemsOverviewPage extends StatelessWidget {
-
   const MenuItemsOverviewPage({
     Key key,
     @required this.menuID,

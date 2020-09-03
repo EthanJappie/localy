@@ -11,7 +11,6 @@ class CustomerMenuItemsBodyWidget extends StatelessWidget {
   }) : super(key: key);
   final String menuID;
 
-
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<MenuItemWatcherBloc, MenuItemWatcherState>(

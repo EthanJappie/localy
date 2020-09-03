@@ -12,12 +12,14 @@ part 'menu_item_dtos.g.dart';
 @freezed
 abstract class MenuItemDTO implements _$MenuItemDTO {
   const MenuItemDTO._();
+
   factory MenuItemDTO.fromJson(Map<String, dynamic> json) =>
       _$MenuItemDTOFromJson(json);
 
   factory MenuItemDTO.fromFirestore(DocumentSnapshot doc) {
     return MenuItemDTO.fromJson(doc.data()).copyWith(id: doc.id);
   }
+
   const factory MenuItemDTO({
     @required String name,
     @required String description,
@@ -67,6 +69,4 @@ abstract class MenuItemDTO implements _$MenuItemDTO {
           : menuOptions.map((e) => e.toDomain()).toImmutableList(),
     );
   }
-
-
 }

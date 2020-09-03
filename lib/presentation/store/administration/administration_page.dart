@@ -16,7 +16,6 @@ class AdministrationPage extends StatefulWidget {
   const AdministrationPage({Key key, @required this.store}) : super(key: key);
   final Restaurant store;
 
-
   @override
   _AdministrationPageState createState() => _AdministrationPageState();
 }

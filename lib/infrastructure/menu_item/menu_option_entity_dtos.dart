@@ -13,6 +13,13 @@ part 'menu_option_entity_dtos.g.dart';
 abstract class MenuOptionEntityDTO implements _$MenuOptionEntityDTO {
   const MenuOptionEntityDTO._();
 
+  factory MenuOptionEntityDTO.fromJson(Map<String, dynamic> json) =>
+      _$MenuOptionEntityDTOFromJson(json);
+
+  factory MenuOptionEntityDTO.fromFirestore(DocumentSnapshot doc) {
+    return MenuOptionEntityDTO.fromJson(doc.data()).copyWith(id: doc.id);
+  }
+
   const factory MenuOptionEntityDTO({
     @required String attributeName,
     @required List<MenuOptionItemEntityDTO> menuOptionsItems,
@@ -39,12 +46,5 @@ abstract class MenuOptionEntityDTO implements _$MenuOptionEntityDTO {
           ? <MenuOptionItemEntity>[].toImmutableList()
           : menuOptionsItems.map((e) => e.toDomain()).toImmutableList(),
     );
-  }
-
-  factory MenuOptionEntityDTO.fromJson(Map<String, dynamic> json) =>
-      _$MenuOptionEntityDTOFromJson(json);
-
-  factory MenuOptionEntityDTO.fromFirestore(DocumentSnapshot doc) {
-    return MenuOptionEntityDTO.fromJson(doc.data()).copyWith(id: doc.id);
   }
 }

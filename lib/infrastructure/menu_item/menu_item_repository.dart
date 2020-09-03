@@ -15,9 +15,9 @@ import 'package:localy/infrastructure/menu_item/menu_item_dtos.dart';
 @LazySingleton(as: IMenuItemRepository)
 class MenuItemRepository implements IMenuItemRepository {
   MenuItemRepository(this._firestore, this._firebaseStorage);
+
   final FirebaseFirestore _firestore;
   final FirebaseStorage _firebaseStorage;
-
 
   @override
   Future<Either<MenuItemFailure, Unit>> create(
@@ -123,9 +123,9 @@ class MenuItemRepository implements IMenuItemRepository {
       final uploadTask = _firebaseStorage.menuItemsStorageReference
           .putFile(File(itemImageUrl));
 
-      final  downloadUrl = await uploadTask.onComplete;
+      final downloadUrl = await uploadTask.onComplete;
 
-      final  imageUrl = await downloadUrl.ref.getDownloadURL() as String;
+      final imageUrl = await downloadUrl.ref.getDownloadURL() as String;
 
       menuItem = menuItem.copyWith(imageUrl: imageUrl);
     }

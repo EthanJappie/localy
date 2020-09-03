@@ -39,8 +39,10 @@ class _CompletedOrdersBodyWidgetState extends State<CompletedOrdersBodyWidget> {
                   title: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
-                          'OrderID: ${orderID.substring(orderID.length - 5, orderID.length)}-${orderID.substring(0, 5)}'),
+                      Text('OrderID: ${orderID.substring(
+                        orderID.length - 5,
+                        orderID.length,
+                      )}-${orderID.substring(0, 5)}'),
                       CircleAvatar(
                         radius: 12,
                         backgroundColor: Theme.of(context).primaryColor,
@@ -51,8 +53,11 @@ class _CompletedOrdersBodyWidgetState extends State<CompletedOrdersBodyWidget> {
                       )
                     ],
                   ),
-                  subtitle: Text(
-                      '${DateFormat.Hm().format(order.dateCreated.toDate())} - ${DateFormat.yMMMd().format(order.dateCreated.toDate())}'),
+                  subtitle: Text('${DateFormat.Hm().format(
+                    order.dateCreated.toDate(),
+                  )} - ${DateFormat.yMMMd().format(
+                    order.dateCreated.toDate(),
+                  )}'),
                 );
               },
               separatorBuilder: (context, index) => const Divider(),

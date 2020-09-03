@@ -7,7 +7,6 @@ class SavingInProgressOverlay extends StatelessWidget {
   }) : super(key: key);
   final bool isSaving;
 
-
   @override
   Widget build(BuildContext context) {
     return IgnorePointer(

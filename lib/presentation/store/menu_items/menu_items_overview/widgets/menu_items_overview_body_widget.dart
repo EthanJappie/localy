@@ -5,7 +5,6 @@ import 'package:localy/application/menu_item/menu_item_watcher/menu_item_watcher
 import 'package:localy/presentation/core/routes/router.gr.dart';
 
 class MenuItemsOverviewBodyWidget extends StatelessWidget {
-
   const MenuItemsOverviewBodyWidget({
     Key key,
     @required this.menuID,

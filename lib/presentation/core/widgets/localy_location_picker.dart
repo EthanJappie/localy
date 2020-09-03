@@ -21,26 +21,23 @@ class LocalyLocationPicker extends FormField<String> {
             builder: (FormFieldState<String> state) {
               return InkWell(
                 onTap: () async {
-                  const  apiKey =
-                      'AIzaSyDQipUrdmQsxCMwEyPl5ygjAWAUOpMjSYg';
+                  const apiKey = 'AIzaSyDQipUrdmQsxCMwEyPl5ygjAWAUOpMjSYg';
 
-                  final map =
-                      Map<String, LocationResult>.from(
-                          (await Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (context) => LocationPicker(
-                                    apiKey,
-                                    automaticallyAnimateToCurrentLocation: true,
-                                    initialCenter:
-                                        const LatLng(30.5595, 22.9375),
-                                    requiredGPS: true,
-                                    myLocationButtonEnabled: true,
-                                    layersButtonEnabled: false,
-                                    initialZoom: 15,
-                                  ),
-                                ),
-                              )) ??
-                              {});
+                  final map = Map<String, LocationResult>.from(
+                      (await Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (context) => LocationPicker(
+                                apiKey,
+                                automaticallyAnimateToCurrentLocation: true,
+                                initialCenter: const LatLng(30.5595, 22.9375),
+                                requiredGPS: true,
+                                myLocationButtonEnabled: true,
+                                layersButtonEnabled: false,
+                                initialZoom: 15,
+                              ),
+                            ),
+                          )) ??
+                          {});
                   if (map.isEmpty) {
                     return null;
                   }

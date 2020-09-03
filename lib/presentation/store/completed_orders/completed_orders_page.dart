@@ -7,7 +7,6 @@ import 'package:localy/injection.dart';
 import 'package:localy/presentation/store/completed_orders/widgets/completed_orders_body_widget.dart';
 
 class CompletedOrdersPage extends StatelessWidget {
-
   const CompletedOrdersPage({Key key, @required this.storeID})
       : super(key: key);
   final String storeID;

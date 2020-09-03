@@ -9,7 +9,6 @@ class MenuBuilderOverviewBodyWidget extends StatelessWidget {
       : super(key: key);
   final String storeID;
 
-
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<MenuWatcherBloc, MenuWatcherState>(

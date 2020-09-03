@@ -12,7 +12,6 @@ class LocalySwitch extends StatelessWidget {
   final bool condition;
   final ValueChanged<bool> onChanged;
 
-
   @override
   Widget build(BuildContext context) {
     return Row(

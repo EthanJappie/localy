@@ -12,7 +12,6 @@ class CustomerStoreCard extends StatelessWidget {
   final Restaurant store;
   final GeoFirePoint currentPosition;
 
-
   @override
   Widget build(BuildContext context) {
     return InkWell(

@@ -9,12 +9,14 @@ part 'review_dtos.g.dart';
 @freezed
 abstract class ReviewDTO implements _$ReviewDTO {
   const ReviewDTO._();
+
   factory ReviewDTO.fromJson(Map<String, dynamic> json) =>
       _$ReviewDTOFromJson(json);
 
   factory ReviewDTO.fromFirestore(DocumentSnapshot doc) {
     return ReviewDTO.fromJson(doc.data()).copyWith(id: doc.id);
   }
+
   const factory ReviewDTO(
       {@JsonKey(ignore: true) String id,
       @required String review,
@@ -39,6 +41,4 @@ abstract class ReviewDTO implements _$ReviewDTO {
         typeID: ValueString.fromString(typeID),
         score: score);
   }
-
-
 }
