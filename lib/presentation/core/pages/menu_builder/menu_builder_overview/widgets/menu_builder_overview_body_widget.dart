@@ -5,10 +5,10 @@ import 'package:localy/application/menu/menu_watcher/menu_watcher_bloc.dart';
 import 'package:localy/presentation/core/routes/router.gr.dart';
 
 class MenuBuilderOverviewBodyWidget extends StatelessWidget {
-  final String storeID;
-
   const MenuBuilderOverviewBodyWidget({Key key, @required this.storeID})
       : super(key: key);
+  final String storeID;
+
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class MenuBuilderOverviewBodyWidget extends StatelessWidget {
                 child: Container(
                   margin: const EdgeInsets.all(16),
                   child: const Text(
-                    "You have no menus. Press the '+' button to add one.",
+                    'You have no menus. Press the + button to add one.',
                     textAlign: TextAlign.center,
                   ),
                 ),
@@ -65,7 +65,7 @@ class MenuBuilderOverviewBodyWidget extends StatelessWidget {
             }
           },
           loadFailure: (state) {
-            return const Center(child: Text("Unable to load menus"));
+            return const Center(child: Text('Unable to load menus'));
           },
         );
       },

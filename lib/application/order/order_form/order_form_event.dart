@@ -13,7 +13,9 @@ abstract class OrderFormEvent with _$OrderFormEvent {
 
   const factory OrderFormEvent.payedByCard({bool payedByCard}) = _PayedByCard;
 
-  const factory OrderFormEvent.payedByOther({bool payedByOther}) = _PayedByOther;
+  const factory OrderFormEvent.payedByOther({
+    bool payedByOther,
+  }) = _PayedByOther;
 
   const factory OrderFormEvent.foodDeliveryChosen({bool foodDeliveryChosen}) =
       _FoodDeliveryChosen;
@@ -33,5 +35,6 @@ abstract class OrderFormEvent with _$OrderFormEvent {
 
   const factory OrderFormEvent.saved() = _Saved;
 
-  const factory OrderFormEvent.countChanged(MenuItem menuItem, int count) = _CountChanged;
+  const factory OrderFormEvent.countChanged(MenuItem menuItem, int count) =
+      _CountChanged;
 }

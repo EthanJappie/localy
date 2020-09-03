@@ -14,9 +14,9 @@ import 'package:localy/infrastructure/order/order_dtos.dart';
 @prod
 @LazySingleton(as: IOrderRepository)
 class OrderRepository implements IOrderRepository {
-  final FirebaseFirestore _firestore;
 
   OrderRepository(this._firestore);
+  final FirebaseFirestore _firestore;
 
   @override
   Future<Either<OrderFailure, Unit>> create(StoreOrder order) async {
@@ -34,7 +34,7 @@ class OrderRepository implements IOrderRepository {
 
       return right(unit);
     } on PlatformException catch (e) {
-      if (e.message.contains("PERMISSION_DENIED")) {
+      if (e.message.contains('PERMISSION_DENIED')) {
         return left(const OrderFailure.insufficientPermission());
       } else {
         return left(const OrderFailure.unexpected());
@@ -51,9 +51,9 @@ class OrderRepository implements IOrderRepository {
 
       return right(unit);
     } on PlatformException catch (e) {
-      if (e.message.contains("PERMISSION_DENIED")) {
+      if (e.message.contains('PERMISSION_DENIED')) {
         return left(const OrderFailure.insufficientPermission());
-      } else if (e.message.contains("NOT_FOUND")) {
+      } else if (e.message.contains('NOT_FOUND')) {
         return left(const OrderFailure.unableToUpdate());
       } else {
         return left(const OrderFailure.unexpected());
@@ -97,8 +97,8 @@ class OrderRepository implements IOrderRepository {
   Stream<Either<OrderFailure, KtList<StoreOrder>>> watchAllByStoreID(
       String storeID) async* {
     yield* _firestore.orderCollection
-        .where("storeID", isEqualTo: storeID)
-        .orderBy("dateCreated")
+        .where('storeID', isEqualTo: storeID)
+        .orderBy('dateCreated')
         .snapshots()
         .map(
           (snapshots) => right<OrderFailure, KtList<StoreOrder>>(
@@ -114,8 +114,8 @@ class OrderRepository implements IOrderRepository {
       watchAllByCustomerID() async* {
     final userDoc = await _firestore.userDocument();
     yield* _firestore.orderCollection
-        .where("customerID", isEqualTo: userDoc.id)
-        .orderBy("dateCreated")
+        .where('customerID', isEqualTo: userDoc.id)
+        .orderBy('dateCreated')
         .snapshots()
         .map(
           (snapshots) => right<OrderFailure, KtList<StoreOrder>>(
@@ -133,9 +133,9 @@ class OrderRepository implements IOrderRepository {
     bool completed = false,
   }) async* {
     yield* _firestore.orderCollection
-        .where("storeID", isEqualTo: storeID)
-        .where("isCompleted", isEqualTo: completed)
-        .orderBy("dateCreated")
+        .where('storeID', isEqualTo: storeID)
+        .where('isCompleted', isEqualTo: completed)
+        .orderBy('dateCreated')
         .snapshots()
         .map(
           (snapshots) => right<OrderFailure, KtList<StoreOrder>>(
@@ -151,9 +151,9 @@ class OrderRepository implements IOrderRepository {
     String storeID,
   ) async* {
     yield* _firestore.orderCollection
-        .where("storeID", isEqualTo: storeID)
-        .where("status", isEqualTo: "invalid")
-        .orderBy("dateCreated")
+        .where('storeID', isEqualTo: storeID)
+        .where('status', isEqualTo: 'invalid')
+        .orderBy('dateCreated')
         .snapshots()
         .map(
           (snapshots) => right<OrderFailure, KtList<StoreOrder>>(

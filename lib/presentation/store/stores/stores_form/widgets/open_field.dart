@@ -12,7 +12,7 @@ class OpenField extends StatelessWidget {
       buildWhen: (p, c) => p.store.open != c.store.open,
       builder: (context, state) {
         return LocalySwitch(
-          title: "Open",
+          title: 'Open',
           condition: state.store.open,
           onChanged: (value) => context
               .bloc<StoreFormBloc>()

@@ -9,17 +9,14 @@ import 'package:localy/domain/review/review_entity_failure.dart';
 import 'package:meta/meta.dart';
 
 part 'review_actor_bloc.freezed.dart';
-
 part 'review_actor_event.dart';
-
 part 'review_actor_state.dart';
 
 @injectable
 class ReviewActorBloc extends Bloc<ReviewActorEvent, ReviewActorState> {
-  final IReviewRepository _reviewRepository;
-
   ReviewActorBloc(this._reviewRepository)
       : super(const ReviewActorState.initial());
+  final IReviewRepository _reviewRepository;
 
   @override
   Stream<ReviewActorState> mapEventToState(

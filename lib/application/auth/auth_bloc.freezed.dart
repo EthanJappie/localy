@@ -32,17 +32,20 @@ mixin _$AuthEvent {
     @required Result authCheckRequested(),
     @required Result signedOut(),
   });
+
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result authCheckRequested(),
     Result signedOut(),
     @required Result orElse(),
   });
+
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result authCheckRequested(AuthCheckRequested value),
     @required Result signedOut(SignedOut value),
   });
+
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result authCheckRequested(AuthCheckRequested value),
@@ -60,6 +63,7 @@ class _$AuthEventCopyWithImpl<$Res> implements $AuthEventCopyWith<$Res> {
   _$AuthEventCopyWithImpl(this._value, this._then);
 
   final AuthEvent _value;
+
   // ignore: unused_field
   final $Res Function(AuthEvent) _then;
 }
@@ -266,6 +270,7 @@ mixin _$AuthState {
     @required Result authenticated(),
     @required Result unauthenticated(),
   });
+
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result initial(),
@@ -273,12 +278,14 @@ mixin _$AuthState {
     Result unauthenticated(),
     @required Result orElse(),
   });
+
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result initial(Initial value),
     @required Result authenticated(Authenticated value),
     @required Result unauthenticated(Unauthenticated value),
   });
+
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result initial(Initial value),
@@ -297,6 +304,7 @@ class _$AuthStateCopyWithImpl<$Res> implements $AuthStateCopyWith<$Res> {
   _$AuthStateCopyWithImpl(this._value, this._then);
 
   final AuthState _value;
+
   // ignore: unused_field
   final $Res Function(AuthState) _then;
 }

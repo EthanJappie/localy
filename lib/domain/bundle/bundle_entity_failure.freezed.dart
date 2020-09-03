@@ -38,6 +38,7 @@ mixin _$BundleEntityFailure {
     @required Result insufficientPermission(),
     @required Result unableToUpdate(),
   });
+
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result unexpected(),
@@ -45,6 +46,7 @@ mixin _$BundleEntityFailure {
     Result unableToUpdate(),
     @required Result orElse(),
   });
+
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result unexpected(UnexpectedBundleEntity value),
@@ -52,6 +54,7 @@ mixin _$BundleEntityFailure {
         Result insufficientPermission(InsufficientBundleEntityPermision value),
     @required Result unableToUpdate(UnableToUpdateBundleEntity value),
   });
+
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result unexpected(UnexpectedBundleEntity value),
@@ -72,6 +75,7 @@ class _$BundleEntityFailureCopyWithImpl<$Res>
   _$BundleEntityFailureCopyWithImpl(this._value, this._then);
 
   final BundleEntityFailure _value;
+
   // ignore: unused_field
   final $Res Function(BundleEntityFailure) _then;
 }

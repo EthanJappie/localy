@@ -7,7 +7,7 @@ abstract class MenuFailure with _$MenuFailure {
   const factory MenuFailure.unexpected() = UnexpectetMenu;
 
   const factory MenuFailure.insufficientPermission() =
-  InsufficientStorePermission;
+      InsufficientStorePermission;
 
   const factory MenuFailure.unableToUpdate() = UnableToUpdateMenu;
 }

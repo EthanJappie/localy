@@ -19,7 +19,7 @@ abstract class ValueObject<T> {
 
   Either<ValueFailure<dynamic>, Unit> get failureOrUnit {
     return value.fold(
-      (l) => left(l),
+      left,
       (r) => right(unit),
     );
   }
@@ -41,9 +41,6 @@ abstract class ValueObject<T> {
 }
 
 class UniqueId extends ValueObject<String> {
-  @override
-  final Either<ValueFailure<String>, String> value;
-
   factory UniqueId() {
     return UniqueId._(
       right(Uuid().v1()),
@@ -58,14 +55,14 @@ class UniqueId extends ValueObject<String> {
   }
 
   const UniqueId._(this.value);
+
+  @override
+  final Either<ValueFailure<String>, String> value;
 }
 
 class ValueString extends ValueObject<String> {
-  @override
-  final Either<ValueFailure<String>, String> value;
-
   factory ValueString() {
-    return ValueString._(right(""));
+    return ValueString._(right(''));
   }
 
   factory ValueString.fromString(String input) {
@@ -81,4 +78,7 @@ class ValueString extends ValueObject<String> {
   }
 
   const ValueString._(this.value);
+
+  @override
+  final Either<ValueFailure<String>, String> value;
 }

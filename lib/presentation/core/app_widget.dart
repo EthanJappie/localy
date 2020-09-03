@@ -29,7 +29,7 @@ class _AppWidgetState extends State<AppWidget> {
       builder: (context, snapshot) {
         if (snapshot.hasError) {
           return _renderCenter(
-              const Text("Something went wrong, please restart the app"));
+              const Text('Something went wrong, please restart the app'));
         }
 
         if (snapshot.connectionState == ConnectionState.done) {

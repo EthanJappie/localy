@@ -12,8 +12,8 @@ class CardField extends StatelessWidget {
       builder: (context, state) {
         return ListTile(
           contentPadding: const EdgeInsets.all(0),
-          title:  Text(
-            "Pay by Card",
+          title: Text(
+            'Pay by Card',
             style: TextStyle(
               fontWeight: state.order.payingByCard
                   ? FontWeight.bold

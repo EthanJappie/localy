@@ -18,10 +18,10 @@ import 'package:location/location.dart';
 @prod
 @LazySingleton(as: IStoreRepository)
 class StoreRepository implements IStoreRepository {
+  StoreRepository(this._firestore, this._firebaseStorage);
   final FirebaseFirestore _firestore;
   final FirebaseStorage _firebaseStorage;
 
-  StoreRepository(this._firestore, this._firebaseStorage);
 
   @override
   Future<Either<StoreFailure, Unit>> create(Restaurant store) async {
@@ -40,13 +40,11 @@ class StoreRepository implements IStoreRepository {
         storeDTO,
       );
 
-      await _firestore.storeCollection
-          .doc(storeDTO.id)
-          .set(storeDTO.toJson());
+      await _firestore.storeCollection.doc(storeDTO.id).set(storeDTO.toJson());
 
       return right(unit);
     } on PlatformException catch (e) {
-      if (e.message.contains("PERMISSION_DENIED")) {
+      if (e.message.contains('PERMISSION_DENIED')) {
         return left(const StoreFailure.insufficientPermission());
       } else {
         return left(const StoreFailure.unexpected());
@@ -63,9 +61,9 @@ class StoreRepository implements IStoreRepository {
 
       return right(unit);
     } on PlatformException catch (e) {
-      if (e.message.contains("PERMISSION_DENIED")) {
+      if (e.message.contains('PERMISSION_DENIED')) {
         return left(const StoreFailure.insufficientPermission());
-      } else if (e.message.contains("NOT_FOUND")) {
+      } else if (e.message.contains('NOT_FOUND')) {
         return left(const StoreFailure.unableToUpdate());
       } else {
         return left(const StoreFailure.unexpected());
@@ -103,8 +101,8 @@ class StoreRepository implements IStoreRepository {
   Stream<Either<StoreFailure, KtList<Restaurant>>> watchAll() async* {
     final userDoc = await _firestore.userDocument();
     yield* _firestore.storeCollection
-        .where("ownerID", isEqualTo: userDoc.id)
-        .orderBy("serverTimeStamp", descending: true)
+        .where('ownerID', isEqualTo: userDoc.id)
+        .orderBy('serverTimeStamp', descending: true)
         .snapshots()
         .map(
           (snapshots) => right<StoreFailure, KtList<Restaurant>>(
@@ -124,11 +122,11 @@ class StoreRepository implements IStoreRepository {
         .substring(0, 4);
 
     yield* _firestore.storeCollection
-        .where("coordinates.geohash", isGreaterThanOrEqualTo: center)
-        .where("coordinates.geohash", isLessThanOrEqualTo: "$center\uf8ff")
-        .where("open", isEqualTo: true)
-        .where("active", isEqualTo: true)
-        .orderBy("coordinates.geohash", descending: true)
+        .where('coordinates.geohash', isGreaterThanOrEqualTo: center)
+        .where('coordinates.geohash', isLessThanOrEqualTo: '$center\uf8ff')
+        .where('open', isEqualTo: true)
+        .where('active', isEqualTo: true)
+        .orderBy('coordinates.geohash', descending: true)
         .snapshots()
         .map(
           (snapshots) => right<StoreFailure, KtList<Restaurant>>(
@@ -144,13 +142,13 @@ class StoreRepository implements IStoreRepository {
     var store = storeDTO;
 
     if ((coverImageUrl != null && coverImageUrl.isNotEmpty) &&
-        !coverImageUrl.contains("http")) {
+        !coverImageUrl.contains('http')) {
       final uploadTask =
           _firebaseStorage.storeStorageReference.putFile(File(coverImageUrl));
 
-      final StorageTaskSnapshot downloadUrl = await uploadTask.onComplete;
+      final  downloadUrl = await uploadTask.onComplete;
 
-      final String imageUrl = await downloadUrl.ref.getDownloadURL() as String;
+      final  imageUrl = await downloadUrl.ref.getDownloadURL() as String;
 
       store = store.copyWith(coverImageUrl: imageUrl);
     }

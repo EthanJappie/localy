@@ -38,7 +38,7 @@ class MenuItemImageField extends StatelessWidget {
                 Container(
                   margin: const EdgeInsets.only(left: 4),
                   child: Text(
-                    "Image",
+                    'Image',
                     style: _titleStyle(),
                   ),
                 ),
@@ -66,14 +66,14 @@ class MenuItemImageField extends StatelessWidget {
       );
     }
 
-    final urlOrPath = menuItem.imageUrl.value.fold((l) => "", (r) => r);
+    final urlOrPath = menuItem.imageUrl.value.fold((l) => '', (r) => r);
     if (urlOrPath == null || urlOrPath.isEmpty) {
       return const Icon(
         Icons.camera_alt,
         color: Colors.white,
         size: 60,
       );
-    } else if (urlOrPath.contains("http")) {
+    } else if (urlOrPath.contains('http')) {
       return CachedNetworkImage(
         imageUrl: urlOrPath,
         fit: BoxFit.fill,

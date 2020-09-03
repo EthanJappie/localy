@@ -16,14 +16,13 @@ import 'package:localy/presentation/core/routes/router.gr.dart';
 import 'package:localy/presentation/core/widgets/localy_button.dart';
 
 class MenuBuilderFormPage extends StatelessWidget {
-  final Menu editedMenu;
-  final String storeID;
-
   const MenuBuilderFormPage({
     Key key,
     this.editedMenu,
     @required this.storeID,
   }) : super(key: key);
+  final Menu editedMenu;
+  final String storeID;
 
   @override
   Widget build(BuildContext context) {
@@ -53,18 +52,17 @@ class MenuBuilderFormPage extends StatelessWidget {
                   FlushbarHelper.createError(
                     duration: const Duration(seconds: 5),
                     message: failure.map(
-                        // Use localized strings here in your apps
-                        insufficientPermission: (_) =>
-                            'Insufficient permissions ❌',
-                        unableToUpdate: (_) =>
-                            "Couldn't update the note. Was it deleted from another device?",
-                        unexpected: (_) =>
-                            'Unexpected error occurred, please contact support.'),
+                      // Use localized strings here in your apps
+                      insufficientPermission: (_) =>
+                          'Insufficient permissions ❌',
+                      unableToUpdate: (_) =>
+                          "Couldn't update the note. Was it deleted from another device?",
+                      unexpected: (_) =>
+                          'Unexpected error occurred, please contact support.',
+                    ),
                   ).show(context);
                 },
                 (_) {
-                  // Can't be just a simple pop. If another route (like a Flushbar) is on top of stack, we'll need to pop even that to get to
-                  // the overview page.
                   ExtendedNavigator.of(context).popUntil((route) =>
                       route.settings.name == Routes.administrationPage);
                 },
@@ -90,14 +88,13 @@ class MenuBuilderFormPage extends StatelessWidget {
 }
 
 class MenuBuilderFormPageScaffold extends StatelessWidget {
-  final String storeID;
-  final Menu editedMenu;
-
   const MenuBuilderFormPageScaffold({
     Key key,
     @required this.storeID,
     this.editedMenu,
   }) : super(key: key);
+  final String storeID;
+  final Menu editedMenu;
 
   @override
   Widget build(BuildContext context) {
@@ -110,7 +107,7 @@ class MenuBuilderFormPageScaffold extends StatelessWidget {
         title: BlocBuilder<MenuFormBloc, MenuFormState>(
           buildWhen: (p, c) => p.isEditing != c.isEditing,
           builder: (context, state) {
-            return Text(state.isEditing ? "Edit Menu" : "Add Menu");
+            return Text(state.isEditing ? 'Edit Menu' : 'Add Menu');
           },
         ),
       ),
@@ -129,7 +126,7 @@ class MenuBuilderFormPageScaffold extends StatelessWidget {
                   const SliverToBoxAdapter(child: MenuHiddenField()),
                   SliverToBoxAdapter(
                     child: LocalyButton(
-                      title: "Save",
+                      title: 'Save',
                       onPressed: () {
                         context
                             .bloc<MenuFormBloc>()
@@ -140,7 +137,7 @@ class MenuBuilderFormPageScaffold extends StatelessWidget {
                   if (editedMenu != null)
                     SliverToBoxAdapter(
                       child: LocalyButton(
-                        title: "Delete",
+                        title: 'Delete',
                         empty: true,
                         onPressed: () {
                           context

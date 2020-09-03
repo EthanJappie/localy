@@ -54,14 +54,14 @@ abstract class StoreOrder implements _$StoreOrder {
         payingByOther: false,
         foodDeliveriesChosen: false,
         isCompleted: false,
-        phoneNumber: ValueString.fromString(""),
+        phoneNumber: ValueString.fromString(''),
         customerToken: ValueString(),
         deliveryAddress: ValueString(),
         orderNotes: ValueString(),
         deliveryCoordinates: FireCoordinates.zero(),
         dateCreated: Timestamp.now(),
-        status: ValueString.fromString("invalid"),
-     deliveryCost: 0,
+        status: ValueString.fromString('invalid'),
+        deliveryCost: 0,
       );
 
   Option<ValueFailure<dynamic>> get failureOption {
@@ -71,7 +71,7 @@ abstract class StoreOrder implements _$StoreOrder {
         .andThen(storePhoneNumber.failureOrUnit)
         .andThen(phoneNumber.failureOrUnit)
         .fold(
-          (f) => some(f),
+          some,
           (_) => none(),
         );
   }

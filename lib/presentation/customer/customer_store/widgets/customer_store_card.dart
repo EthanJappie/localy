@@ -7,11 +7,11 @@ import 'package:localy/domain/store/restaurant.dart';
 import 'package:localy/presentation/core/routes/router.gr.dart';
 
 class CustomerStoreCard extends StatelessWidget {
+  const CustomerStoreCard({Key key, this.store, this.currentPosition})
+      : super(key: key);
   final Restaurant store;
   final GeoFirePoint currentPosition;
 
-  const CustomerStoreCard({Key key, this.store, this.currentPosition})
-      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -69,7 +69,7 @@ class CustomerStoreCard extends StatelessWidget {
                                     : Colors.red,
                               ),
                               const Text(
-                                "Collect",
+                                'Collect',
                                 style: TextStyle(
                                   color: Colors.grey,
                                   fontWeight: FontWeight.bold,
@@ -91,7 +91,7 @@ class CustomerStoreCard extends StatelessWidget {
                                     : Colors.red,
                               ),
                               const Text(
-                                "Delivery",
+                                'Delivery',
                                 style: TextStyle(
                                   color: Colors.grey,
                                   fontWeight: FontWeight.bold,
@@ -118,7 +118,7 @@ class CustomerStoreCard extends StatelessWidget {
                         size: 16,
                       ),
                       const SizedBox(width: 4),
-                      const Text("4.8 (120+)"),
+                      const Text('4.8 (120+)'),
                       const SizedBox(width: 16),
                       Icon(
                         Icons.directions_car,
@@ -127,7 +127,7 @@ class CustomerStoreCard extends StatelessWidget {
                       ),
                       const SizedBox(width: 4),
                       Text(
-                        "${_getDistance().toStringAsFixed(2)}km",
+                        '${_getDistance().toStringAsFixed(2)}km',
                         style: _subtitleTextStyle(),
                       ),
                       const SizedBox(width: 16),
@@ -140,7 +140,7 @@ class CustomerStoreCard extends StatelessWidget {
                       ),
                       const SizedBox(width: 4),
                       Text(
-                        _hasDeliveryCost() ? "R${store.deliveryCost}" : "Free",
+                        _hasDeliveryCost() ? 'R${store.deliveryCost}' : 'Free',
                         style: _subtitleTextStyle(
                             color: _hasDeliveryCost() ? Colors.black : null),
                       )
@@ -174,7 +174,7 @@ class CustomerStoreCard extends StatelessWidget {
         color: Colors.white,
         size: iconSize,
       );
-    } else if (urlOrPath.contains("http")) {
+    } else if (urlOrPath.contains('http')) {
       return Container(
         height: size,
         decoration: BoxDecoration(

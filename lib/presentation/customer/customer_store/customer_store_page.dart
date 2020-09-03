@@ -15,14 +15,13 @@ class CustomerStorePage extends StatefulWidget {
 class _CustomerStorePageState extends State<CustomerStorePage> {
   GeoFirePoint _currentPosition;
 
-
   @override
   void initState() {
     super.initState();
     _getCurrentPosition();
   }
 
-  Future<void> _getCurrentPosition() async{
+  Future<void> _getCurrentPosition() async {
     final location = await Location().getLocation();
     setState(() {
       _currentPosition = GeoFirePoint(location.latitude, location.longitude);
@@ -30,8 +29,7 @@ class _CustomerStorePageState extends State<CustomerStorePage> {
   }
 
   @override
-  Widget build(BuildContext context)  {
-
+  Widget build(BuildContext context) {
     return BlocListener<StoreActorBloc, StoreActorState>(
       listener: (context, state) {
         state.maybeMap(
@@ -63,21 +61,24 @@ class _CustomerStorePageState extends State<CustomerStorePage> {
                     child: Container(
                       margin: const EdgeInsets.all(16),
                       child: const Text(
-                        "You have no stores. Press the '+' button to add one.",
+                        'You have no stores. Press the + button to add one.',
                       ),
                     ),
                   );
                 } else {
                   return ListView.builder(
                     itemCount: state.stores.size,
-                    itemBuilder: (builder, index){
-                      return CustomerStoreCard(store: stores[index], currentPosition: _currentPosition,);
+                    itemBuilder: (builder, index) {
+                      return CustomerStoreCard(
+                        store: stores[index],
+                        currentPosition: _currentPosition,
+                      );
                     },
                   );
                 }
               },
               loadFailure: (state) {
-                return const Center(child: Text("Unable to load stores"));
+                return const Center(child: Text('Unable to load stores'));
               },
             );
           },

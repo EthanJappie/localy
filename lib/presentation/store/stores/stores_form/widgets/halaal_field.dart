@@ -12,7 +12,7 @@ class HalaalField extends StatelessWidget {
       buildWhen: (p, c) => p.store.isHalaal != c.store.isHalaal,
       builder: (context, state) {
         return LocalySwitch(
-          title: "halaal",
+          title: 'halaal',
           condition: state.store.isHalaal ?? false,
           onChanged: (value) => context
               .bloc<StoreFormBloc>()

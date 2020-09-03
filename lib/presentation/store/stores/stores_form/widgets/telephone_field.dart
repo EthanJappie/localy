@@ -18,20 +18,25 @@ class TelephoneField extends HookWidget {
       buildWhen: (p, c) => p.store.telephoneNumber != c.store.telephoneNumber,
       builder: (context, state) {
         return LocalyEntryField(
-          "Telephone",
-          hintText: "081 123 4567",
+          'Telephone',
+          hintText: '081 123 4567',
           controller: textEditingController,
           onChanged: (value) => context
               .bloc<StoreFormBloc>()
               .add(StoreFormEvent.telephoneChanged(value)),
-          validator: (_) =>
-              context.bloc<StoreFormBloc>().state.store.telephoneNumber.value.fold(
-                    (f) => f.maybeMap(
-                      empty: (f) => "Cannot be empty",
-                      orElse: () => null,
-                    ),
-                    (_) => null,
-                  ),
+          validator: (_) => context
+              .bloc<StoreFormBloc>()
+              .state
+              .store
+              .telephoneNumber
+              .value
+              .fold(
+                (f) => f.maybeMap(
+                  empty: (f) => 'Cannot be empty',
+                  orElse: () => null,
+                ),
+                (_) => null,
+              ),
         );
       },
     );

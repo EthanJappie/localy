@@ -9,25 +9,26 @@ part 'bundle_entity_dtos.g.dart';
 abstract class BundleEntityDTO implements _$BundleEntityDTO {
   const BundleEntityDTO._();
 
+  factory BundleEntityDTO.fromJson(Map<String, dynamic> json) =>
+      _$BundleEntityDTOFromJson(json);
+
+  factory BundleEntityDTO.fromFirestore(DocumentSnapshot doc) {
+    return BundleEntityDTO.fromJson(doc.data());
+  }
+
   const factory BundleEntityDTO({
     @required int numberOfCredits,
   }) = _BundleEntityDTO;
 
-  factory BundleEntityDTO.fromDomain(BundleEntity bundle){
+  factory BundleEntityDTO.fromDomain(BundleEntity bundle) {
     return BundleEntityDTO(
       numberOfCredits: bundle.numberOfCredits,
     );
   }
 
-  BundleEntity toDomain(){
+  BundleEntity toDomain() {
     return BundleEntity(
       numberOfCredits: numberOfCredits,
     );
-  }
-
-  factory BundleEntityDTO.fromJson(Map<String, dynamic> json) => _$BundleEntityDTOFromJson(json);
-
-  factory BundleEntityDTO.fromFirestore(DocumentSnapshot doc){
-    return BundleEntityDTO.fromJson(doc.data());
   }
 }

@@ -48,9 +48,9 @@ class _HomePageState extends State<HomePage> {
   ];
 
   final _titles = [
-    "Stores",
-//    "Staff Access",
-    "Profile",
+    'Stores',
+//    'Staff Access',
+    'Profile',
   ];
 
   int _currentIndex = 0;
@@ -75,10 +75,10 @@ class _HomePageState extends State<HomePage> {
                 showAboutDialog(
                   context: context,
                   applicationName:
-                      EnvironmentConfig.APP_NAME.replaceAll("_", " "),
+                      EnvironmentConfig.APP_NAME.replaceAll('_', ' '),
                   applicationVersion: EnvironmentConfig.VERSION_NUMBER,
                   applicationIcon: Image.asset(
-                    "assets/launchericon.png",
+                    'assets/launchericon.png',
                     height: 40,
                   ),
                 );
@@ -92,15 +92,15 @@ class _HomePageState extends State<HomePage> {
           items: const [
             BottomNavigationBarItem(
               icon: Icon(Icons.store),
-              title: Text("Store"),
+              title: Text('Store'),
             ),
 //            BottomNavigationBarItem(
 //              icon: Icon(Icons.group_add),
-//              title: Text("Staff Access"),
+//              title: Text('Staff Access'),
 //            ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person),
-              title: Text("Profile"),
+              title: Text('Profile'),
             ),
           ],
           onTap: (value) {

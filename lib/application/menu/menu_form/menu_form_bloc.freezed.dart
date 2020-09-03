@@ -69,6 +69,7 @@ mixin _$MenuFormEvent {
     @required Result sequenceOfAppearanceChanged(int sequenceOfAppearance),
     @required Result hiddenChanged(bool hidden),
   });
+
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result initialized(Option<Menu> initialMenuOption),
@@ -79,6 +80,7 @@ mixin _$MenuFormEvent {
     Result hiddenChanged(bool hidden),
     @required Result orElse(),
   });
+
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result initialized(_Initialized value),
@@ -89,6 +91,7 @@ mixin _$MenuFormEvent {
         Result sequenceOfAppearanceChanged(_SequenceOfAppearanceChanged value),
     @required Result hiddenChanged(_Hidden value),
   });
+
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result initialized(_Initialized value),
@@ -112,6 +115,7 @@ class _$MenuFormEventCopyWithImpl<$Res>
   _$MenuFormEventCopyWithImpl(this._value, this._then);
 
   final MenuFormEvent _value;
+
   // ignore: unused_field
   final $Res Function(MenuFormEvent) _then;
 }
@@ -120,6 +124,7 @@ abstract class _$InitializedCopyWith<$Res> {
   factory _$InitializedCopyWith(
           _Initialized value, $Res Function(_Initialized) then) =
       __$InitializedCopyWithImpl<$Res>;
+
   $Res call({Option<Menu> initialMenuOption});
 }
 
@@ -254,12 +259,14 @@ abstract class _Initialized implements MenuFormEvent {
   const factory _Initialized(Option<Menu> initialMenuOption) = _$_Initialized;
 
   Option<Menu> get initialMenuOption;
+
   _$InitializedCopyWith<_Initialized> get copyWith;
 }
 
 abstract class _$SavedCopyWith<$Res> {
   factory _$SavedCopyWith(_Saved value, $Res Function(_Saved) then) =
       __$SavedCopyWithImpl<$Res>;
+
   $Res call({String storeID});
 }
 
@@ -388,6 +395,7 @@ abstract class _Saved implements MenuFormEvent {
   const factory _Saved(String storeID) = _$_Saved;
 
   String get storeID;
+
   _$SavedCopyWith<_Saved> get copyWith;
 }
 
@@ -395,6 +403,7 @@ abstract class _$MenuNameChangedCopyWith<$Res> {
   factory _$MenuNameChangedCopyWith(
           _MenuNameChanged value, $Res Function(_MenuNameChanged) then) =
       __$MenuNameChangedCopyWithImpl<$Res>;
+
   $Res call({String name});
 }
 
@@ -525,6 +534,7 @@ abstract class _MenuNameChanged implements MenuFormEvent {
   const factory _MenuNameChanged(String name) = _$_MenuNameChanged;
 
   String get name;
+
   _$MenuNameChangedCopyWith<_MenuNameChanged> get copyWith;
 }
 
@@ -532,6 +542,7 @@ abstract class _$MenuNotesChangedCopyWith<$Res> {
   factory _$MenuNotesChangedCopyWith(
           _MenuNotesChanged value, $Res Function(_MenuNotesChanged) then) =
       __$MenuNotesChangedCopyWithImpl<$Res>;
+
   $Res call({String notes});
 }
 
@@ -662,6 +673,7 @@ abstract class _MenuNotesChanged implements MenuFormEvent {
   const factory _MenuNotesChanged(String notes) = _$_MenuNotesChanged;
 
   String get notes;
+
   _$MenuNotesChangedCopyWith<_MenuNotesChanged> get copyWith;
 }
 
@@ -670,6 +682,7 @@ abstract class _$SequenceOfAppearanceChangedCopyWith<$Res> {
           _SequenceOfAppearanceChanged value,
           $Res Function(_SequenceOfAppearanceChanged) then) =
       __$SequenceOfAppearanceChangedCopyWithImpl<$Res>;
+
   $Res call({int sequenceOfAppearance});
 }
 
@@ -809,6 +822,7 @@ abstract class _SequenceOfAppearanceChanged implements MenuFormEvent {
       _$_SequenceOfAppearanceChanged;
 
   int get sequenceOfAppearance;
+
   _$SequenceOfAppearanceChangedCopyWith<_SequenceOfAppearanceChanged>
       get copyWith;
 }
@@ -816,6 +830,7 @@ abstract class _SequenceOfAppearanceChanged implements MenuFormEvent {
 abstract class _$HiddenCopyWith<$Res> {
   factory _$HiddenCopyWith(_Hidden value, $Res Function(_Hidden) then) =
       __$HiddenCopyWithImpl<$Res>;
+
   $Res call({bool hidden});
 }
 
@@ -944,6 +959,7 @@ abstract class _Hidden implements MenuFormEvent {
   const factory _Hidden({bool hidden}) = _$_Hidden;
 
   bool get hidden;
+
   _$HiddenCopyWith<_Hidden> get copyWith;
 }
 
@@ -972,9 +988,13 @@ const $MenuFormState = _$MenuFormStateTearOff();
 
 mixin _$MenuFormState {
   Menu get menu;
+
   bool get showErrorMessages;
+
   bool get isSaving;
+
   bool get isEditing;
+
   Option<Either<MenuFailure, Unit>> get saveFailureOrSuccessOption;
 
   $MenuFormStateCopyWith<MenuFormState> get copyWith;
@@ -984,6 +1004,7 @@ abstract class $MenuFormStateCopyWith<$Res> {
   factory $MenuFormStateCopyWith(
           MenuFormState value, $Res Function(MenuFormState) then) =
       _$MenuFormStateCopyWithImpl<$Res>;
+
   $Res call(
       {Menu menu,
       bool showErrorMessages,
@@ -999,6 +1020,7 @@ class _$MenuFormStateCopyWithImpl<$Res>
   _$MenuFormStateCopyWithImpl(this._value, this._then);
 
   final MenuFormState _value;
+
   // ignore: unused_field
   final $Res Function(MenuFormState) _then;
 
@@ -1039,6 +1061,7 @@ abstract class _$MenuFormStateCopyWith<$Res>
   factory _$MenuFormStateCopyWith(
           _MenuFormState value, $Res Function(_MenuFormState) then) =
       __$MenuFormStateCopyWithImpl<$Res>;
+
   @override
   $Res call(
       {Menu menu,
@@ -1164,14 +1187,19 @@ abstract class _MenuFormState implements MenuFormState {
 
   @override
   Menu get menu;
+
   @override
   bool get showErrorMessages;
+
   @override
   bool get isSaving;
+
   @override
   bool get isEditing;
+
   @override
   Option<Either<MenuFailure, Unit>> get saveFailureOrSuccessOption;
+
   @override
   _$MenuFormStateCopyWith<_MenuFormState> get copyWith;
 }

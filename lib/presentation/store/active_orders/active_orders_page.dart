@@ -7,9 +7,9 @@ import 'package:localy/injection.dart';
 import 'package:localy/presentation/store/active_orders/widgets/active_orders_body_widget.dart';
 
 class ActiveOrdersPage extends StatelessWidget {
-  final String storeID;
 
   const ActiveOrdersPage({Key key, @required this.storeID}) : super(key: key);
+  final String storeID;
 
   @override
   Widget build(BuildContext context) {

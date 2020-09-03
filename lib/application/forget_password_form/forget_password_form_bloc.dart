@@ -9,19 +9,16 @@ import 'package:localy/domain/auth/i_auth_facade.dart';
 import 'package:localy/domain/auth/value_objects.dart';
 import 'package:meta/meta.dart';
 
-part 'forget_password_form_event.dart';
-
-part 'forget_password_form_state.dart';
-
 part 'forget_password_form_bloc.freezed.dart';
+part 'forget_password_form_event.dart';
+part 'forget_password_form_state.dart';
 
 @injectable
 class ForgetPasswordFormBloc
     extends Bloc<ForgetPasswordFormEvent, ForgetPasswordFormState> {
-  final IAuthFacade _authFacade;
-
   ForgetPasswordFormBloc(this._authFacade)
       : super(ForgetPasswordFormState.initial());
+  final IAuthFacade _authFacade;
 
   @override
   Stream<ForgetPasswordFormState> mapEventToState(

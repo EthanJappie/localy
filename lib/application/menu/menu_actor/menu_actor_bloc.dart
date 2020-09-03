@@ -8,17 +8,14 @@ import 'package:localy/domain/menu/menu.dart';
 import 'package:localy/domain/menu/menu_failure.dart';
 import 'package:meta/meta.dart';
 
-part 'menu_actor_event.dart';
-
-part 'menu_actor_state.dart';
-
 part 'menu_actor_bloc.freezed.dart';
+part 'menu_actor_event.dart';
+part 'menu_actor_state.dart';
 
 @injectable
 class MenuActorBloc extends Bloc<MenuActorEvent, MenuActorState> {
-  final IMenuRepository _menuRepository;
-
   MenuActorBloc(this._menuRepository) : super(const MenuActorState.initial());
+  final IMenuRepository _menuRepository;
 
   @override
   Stream<MenuActorState> mapEventToState(

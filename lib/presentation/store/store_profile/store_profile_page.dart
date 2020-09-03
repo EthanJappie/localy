@@ -36,9 +36,11 @@ class StoreProfilePage extends StatelessWidget {
                     ),
                     const SizedBox(height: 16),
                     LocalyButton(
-                      title: "Logout",
+                      title: 'Logout',
                       onPressed: () {
-                        context.bloc<AuthBloc>().add(const AuthEvent.signedOut());
+                        context
+                            .bloc<AuthBloc>()
+                            .add(const AuthEvent.signedOut());
                       },
                     )
                   ],
@@ -65,7 +67,7 @@ class StoreProfilePage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  "Credits:",
+                  'Credits:',
                   style: _bold(),
                 ),
                 Text(
@@ -98,7 +100,7 @@ class StoreProfilePage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
-            "$numberOfCredits Credits",
+            '$numberOfCredits Credits',
             style: _bold(),
           ),
           MaterialButton(
@@ -108,12 +110,12 @@ class StoreProfilePage extends StatelessWidget {
             color: Theme.of(context).primaryColor,
             textColor: Colors.white,
             child: Text(
-              "Buy",
+              'Buy',
               style: _bold(),
             ),
           )
 //        LocalyButton(
-//          title: "Buy",
+//          title: 'Buy',
 //          onPressed: () {},
 //        )
         ],
@@ -127,8 +129,8 @@ class StoreProfilePage extends StatelessWidget {
       child: Column(
         children: [
           LocalyEntryField(
-            "Other",
-            hintText: "500 Credits",
+            'Other',
+            hintText: '500 Credits',
             isNumber: true,
             onChanged: (value) {},
           ),
@@ -137,7 +139,7 @@ class StoreProfilePage extends StatelessWidget {
             color: Theme.of(context).primaryColor,
             textColor: Colors.white,
             child: Text(
-              "Buy",
+              'Buy',
               style: _bold(),
             ),
           )
@@ -151,7 +153,7 @@ class StoreProfilePage extends StatelessWidget {
   }
 
   Future<void> _handlePayment(BuildContext context, int numberOfCredits) async {
-    final user =  FirebaseAuth.instance.currentUser;
+    final user = FirebaseAuth.instance.currentUser;
     final result = await performTransaction(
       context: context,
       amount: numberOfCredits * 5.toDouble(),

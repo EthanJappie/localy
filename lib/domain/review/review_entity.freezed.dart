@@ -34,9 +34,13 @@ const $ReviewEntity = _$ReviewEntityTearOff();
 
 mixin _$ReviewEntity {
   UniqueId get id;
+
   ValueString get review;
+
   ValueString get type;
+
   ValueString get typeID;
+
   int get score;
 
   $ReviewEntityCopyWith<ReviewEntity> get copyWith;
@@ -46,6 +50,7 @@ abstract class $ReviewEntityCopyWith<$Res> {
   factory $ReviewEntityCopyWith(
           ReviewEntity value, $Res Function(ReviewEntity) then) =
       _$ReviewEntityCopyWithImpl<$Res>;
+
   $Res call(
       {UniqueId id,
       ValueString review,
@@ -58,6 +63,7 @@ class _$ReviewEntityCopyWithImpl<$Res> implements $ReviewEntityCopyWith<$Res> {
   _$ReviewEntityCopyWithImpl(this._value, this._then);
 
   final ReviewEntity _value;
+
   // ignore: unused_field
   final $Res Function(ReviewEntity) _then;
 
@@ -84,6 +90,7 @@ abstract class _$ReviewEntityCopyWith<$Res>
   factory _$ReviewEntityCopyWith(
           _ReviewEntity value, $Res Function(_ReviewEntity) then) =
       __$ReviewEntityCopyWithImpl<$Res>;
+
   @override
   $Res call(
       {UniqueId id,
@@ -182,6 +189,7 @@ class _$_ReviewEntity extends _ReviewEntity {
 
 abstract class _ReviewEntity extends ReviewEntity {
   const _ReviewEntity._() : super._();
+
   const factory _ReviewEntity(
       {@required UniqueId id,
       @required ValueString review,
@@ -191,14 +199,19 @@ abstract class _ReviewEntity extends ReviewEntity {
 
   @override
   UniqueId get id;
+
   @override
   ValueString get review;
+
   @override
   ValueString get type;
+
   @override
   ValueString get typeID;
+
   @override
   int get score;
+
   @override
   _$ReviewEntityCopyWith<_ReviewEntity> get copyWith;
 }

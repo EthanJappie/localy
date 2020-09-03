@@ -6,14 +6,14 @@ import 'package:kt_dart/kt.dart';
 import 'package:localy/domain/menu/i_menu_repository.dart';
 import 'package:localy/domain/menu/menu.dart';
 import 'package:localy/domain/menu/menu_failure.dart';
-import 'package:localy/infrastructure/menu/menu_dtos.dart';
 import 'package:localy/infrastructure/core/firestore_helpers.dart';
+import 'package:localy/infrastructure/menu/menu_dtos.dart';
 
 @LazySingleton(as: IMenuRepository)
 class MenuRepository implements IMenuRepository {
-  final FirebaseFirestore _firestore;
-
   MenuRepository(this._firestore);
+
+  final FirebaseFirestore _firestore;
 
   @override
   Future<Either<MenuFailure, Unit>> create(Menu menu, String storeID) async {
@@ -21,13 +21,11 @@ class MenuRepository implements IMenuRepository {
       var menuDTO = MenuDTO.fromDomain(menu);
       menuDTO = menuDTO.copyWith(storeID: storeID);
 
-      await _firestore.menuCollection
-          .doc(menuDTO.id)
-          .set(menuDTO.toJson());
+      await _firestore.menuCollection.doc(menuDTO.id).set(menuDTO.toJson());
 
       return right(unit);
     } on PlatformException catch (e) {
-      if (e.message.contains("PERMISSION_DENIED")) {
+      if (e.message.contains('PERMISSION_DENIED')) {
         return left(const MenuFailure.insufficientPermission());
       } else {
         return left(const MenuFailure.unexpected());
@@ -44,9 +42,9 @@ class MenuRepository implements IMenuRepository {
 
       return right(unit);
     } on PlatformException catch (e) {
-      if (e.message.contains("PERMISSION_DENIED")) {
+      if (e.message.contains('PERMISSION_DENIED')) {
         return left(const MenuFailure.insufficientPermission());
-      } else if (e.message.contains("NOT_FOUND")) {
+      } else if (e.message.contains('NOT_FOUND')) {
         return left(const MenuFailure.unableToUpdate());
       } else {
         return left(const MenuFailure.unexpected());
@@ -59,9 +57,7 @@ class MenuRepository implements IMenuRepository {
     try {
       final menuDTO = MenuDTO.fromDomain(menu);
 
-      await _firestore.menuCollection
-          .doc(menuDTO.id)
-          .update(menuDTO.toJson());
+      await _firestore.menuCollection.doc(menuDTO.id).update(menuDTO.toJson());
 
       return right(unit);
     } on PlatformException catch (e) {
@@ -78,8 +74,8 @@ class MenuRepository implements IMenuRepository {
   @override
   Stream<Either<MenuFailure, KtList<Menu>>> watchAll(String storeID) async* {
     yield* _firestore.menuCollection
-        .where("storeID", isEqualTo: storeID)
-        .orderBy("sequenceOfAppearance")
+        .where('storeID', isEqualTo: storeID)
+        .orderBy('sequenceOfAppearance')
         .snapshots()
         .map(
           (snapshots) => right<MenuFailure, KtList<Menu>>(
@@ -94,9 +90,9 @@ class MenuRepository implements IMenuRepository {
   Stream<Either<MenuFailure, KtList<Menu>>> watchAllUnhidden(
       String storeID) async* {
     yield* _firestore.menuCollection
-        .where("storeID", isEqualTo: storeID)
-        .where("hidden", isEqualTo: false)
-        .orderBy("sequenceOfAppearance")
+        .where('storeID', isEqualTo: storeID)
+        .where('hidden', isEqualTo: false)
+        .orderBy('sequenceOfAppearance')
         .snapshots()
         .map(
           (snapshots) => right<MenuFailure, KtList<Menu>>(

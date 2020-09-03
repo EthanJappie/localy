@@ -3,8 +3,10 @@ import 'package:kt_dart/kt.dart';
 import 'package:localy/domain/review/review_entity.dart';
 import 'package:localy/domain/review/review_entity_failure.dart';
 
-abstract class IReviewRepository{
-  Stream<Either<ReviewEntityFailure, KtList<ReviewEntity>>> watchAllByID(String id);
+abstract class IReviewRepository {
+  Stream<Either<ReviewEntityFailure, KtList<ReviewEntity>>> watchAllByID(
+    String id,
+  );
 
   Future<Either<ReviewEntityFailure, Unit>> create(ReviewEntity review);
 

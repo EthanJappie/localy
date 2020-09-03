@@ -18,7 +18,7 @@ class StoreNameField extends HookWidget {
       buildWhen: (p, c) => p.store.storeName != c.store.storeName,
       builder: (context, state) {
         return LocalyEntryField(
-          "Store name",
+          'Store name',
           hintText: "Joe's Gatsby's",
           controller: textEditingController,
           onChanged: (value) => context
@@ -27,7 +27,7 @@ class StoreNameField extends HookWidget {
           validator: (_) =>
               context.bloc<StoreFormBloc>().state.store.storeName.value.fold(
                     (f) => f.maybeMap(
-                      empty: (f) => "Cannot be empty",
+                      empty: (f) => 'Cannot be empty',
                       orElse: () => null,
                     ),
                     (_) => null,

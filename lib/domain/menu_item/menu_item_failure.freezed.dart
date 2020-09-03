@@ -38,6 +38,7 @@ mixin _$MenuItemFailure {
     @required Result insufficientPermission(),
     @required Result unableToUpdate(),
   });
+
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result unexpected(),
@@ -45,12 +46,14 @@ mixin _$MenuItemFailure {
     Result unableToUpdate(),
     @required Result orElse(),
   });
+
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result unexpected(UnexpectetMenuItemFailure value),
     @required Result insufficientPermission(InsufficientStorePermission value),
     @required Result unableToUpdate(UnableToUpdateMenuItem value),
   });
+
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result unexpected(UnexpectetMenuItemFailure value),
@@ -71,6 +74,7 @@ class _$MenuItemFailureCopyWithImpl<$Res>
   _$MenuItemFailureCopyWithImpl(this._value, this._then);
 
   final MenuItemFailure _value;
+
   // ignore: unused_field
   final $Res Function(MenuItemFailure) _then;
 }

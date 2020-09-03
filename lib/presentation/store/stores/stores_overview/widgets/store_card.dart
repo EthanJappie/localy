@@ -6,9 +6,9 @@ import 'package:localy/domain/store/restaurant.dart';
 import 'package:localy/presentation/core/routes/router.gr.dart';
 
 class StoreCard extends StatelessWidget {
-  final Restaurant store;
 
   const StoreCard({Key key, this.store}) : super(key: key);
+  final Restaurant store;
 
   @override
   Widget build(BuildContext context) {
@@ -81,7 +81,7 @@ class StoreCard extends StatelessWidget {
         color: Colors.white,
         size: iconSize,
       );
-    } else if (urlOrPath.contains("http")) {
+    } else if (urlOrPath.contains('http')) {
       return Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

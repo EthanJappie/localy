@@ -30,15 +30,18 @@ mixin _$StoreActorEvent {
   Result when<Result extends Object>({
     @required Result deleted(Restaurant store),
   });
+
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result deleted(Restaurant store),
     @required Result orElse(),
   });
+
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result deleted(_Deleted value),
   });
+
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result deleted(_Deleted value),
@@ -52,6 +55,7 @@ abstract class $StoreActorEventCopyWith<$Res> {
   factory $StoreActorEventCopyWith(
           StoreActorEvent value, $Res Function(StoreActorEvent) then) =
       _$StoreActorEventCopyWithImpl<$Res>;
+
   $Res call({Restaurant store});
 
   $RestaurantCopyWith<$Res> get store;
@@ -62,6 +66,7 @@ class _$StoreActorEventCopyWithImpl<$Res>
   _$StoreActorEventCopyWithImpl(this._value, this._then);
 
   final StoreActorEvent _value;
+
   // ignore: unused_field
   final $Res Function(StoreActorEvent) _then;
 
@@ -89,6 +94,7 @@ abstract class _$DeletedCopyWith<$Res>
     implements $StoreActorEventCopyWith<$Res> {
   factory _$DeletedCopyWith(_Deleted value, $Res Function(_Deleted) then) =
       __$DeletedCopyWithImpl<$Res>;
+
   @override
   $Res call({Restaurant store});
 
@@ -191,6 +197,7 @@ abstract class _Deleted implements StoreActorEvent {
 
   @override
   Restaurant get store;
+
   @override
   _$DeletedCopyWith<_Deleted> get copyWith;
 }
@@ -232,6 +239,7 @@ mixin _$StoreActorState {
     @required Result deleteFailure(StoreFailure storeFailure),
     @required Result deleteSuccess(),
   });
+
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result initial(),
@@ -240,6 +248,7 @@ mixin _$StoreActorState {
     Result deleteSuccess(),
     @required Result orElse(),
   });
+
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result initial(_Initial value),
@@ -247,6 +256,7 @@ mixin _$StoreActorState {
     @required Result deleteFailure(_DeleteFailure value),
     @required Result deleteSuccess(_DeleteSuccess value),
   });
+
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result initial(_Initial value),
@@ -268,6 +278,7 @@ class _$StoreActorStateCopyWithImpl<$Res>
   _$StoreActorStateCopyWithImpl(this._value, this._then);
 
   final StoreActorState _value;
+
   // ignore: unused_field
   final $Res Function(StoreActorState) _then;
 }
@@ -470,6 +481,7 @@ abstract class _$DeleteFailureCopyWith<$Res> {
   factory _$DeleteFailureCopyWith(
           _DeleteFailure value, $Res Function(_DeleteFailure) then) =
       __$DeleteFailureCopyWithImpl<$Res>;
+
   $Res call({StoreFailure storeFailure});
 
   $StoreFailureCopyWith<$Res> get storeFailure;
@@ -602,6 +614,7 @@ abstract class _DeleteFailure implements StoreActorState {
   const factory _DeleteFailure(StoreFailure storeFailure) = _$_DeleteFailure;
 
   StoreFailure get storeFailure;
+
   _$DeleteFailureCopyWith<_DeleteFailure> get copyWith;
 }
 

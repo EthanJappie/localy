@@ -13,7 +13,7 @@ class OtherField extends StatelessWidget {
         return ListTile(
           contentPadding: const EdgeInsets.all(0),
           title: Text(
-            "Pay by EFT",
+            'Pay by EFT',
             style: TextStyle(
               fontWeight: state.order.payingByOther
                   ? FontWeight.bold

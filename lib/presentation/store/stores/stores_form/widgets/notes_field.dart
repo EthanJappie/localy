@@ -18,8 +18,8 @@ class NotesField extends HookWidget {
       buildWhen: (p, c) => p.store.notes != c.store.notes,
       builder: (context, state) {
         return LocalyEntryField(
-          "Type",
-          hintText: "mexican, italian, etc..",
+          'Type',
+          hintText: 'mexican, italian, etc..',
           controller: textEditingController,
           onChanged: (value) => context
               .bloc<StoreFormBloc>()
@@ -27,7 +27,7 @@ class NotesField extends HookWidget {
           validator: (_) =>
               context.bloc<StoreFormBloc>().state.store.notes.value.fold(
                     (f) => f.maybeMap(
-                      empty: (f) => "Cannot be empty",
+                      empty: (f) => 'Cannot be empty',
                       orElse: () => null,
                     ),
                     (_) => null,

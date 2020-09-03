@@ -1,4 +1,5 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:clippy_flutter/diagonal.dart';
 import 'package:flushbar/flushbar_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -9,8 +10,6 @@ import 'package:localy/environment_config.dart';
 import 'package:localy/presentation/core/routes/router.gr.dart';
 import 'package:localy/presentation/core/widgets/localy_button.dart';
 import 'package:localy/presentation/core/widgets/localy_entry_field.dart';
-import 'package:clippy_flutter/diagonal.dart';
-
 
 class RegisterForm extends StatelessWidget {
   @override
@@ -32,12 +31,11 @@ class RegisterForm extends StatelessWidget {
               ).show(context);
             },
             (_) {
-              if (EnvironmentConfig.APP_NAME == EnvironmentConfig.APP_NAME_LOCALY_MANAGER) {
-                ExtendedNavigator.of(context)
-                    .replace(Routes.homePage);
+              if (EnvironmentConfig.APP_NAME ==
+                  EnvironmentConfig.APP_NAME_LOCALY_MANAGER) {
+                ExtendedNavigator.of(context).replace(Routes.homePage);
               } else {
-                ExtendedNavigator.of(context)
-                    .replace(Routes.customerHomePage);
+                ExtendedNavigator.of(context).replace(Routes.customerHomePage);
               }
               context
                   .bloc<AuthBloc>()
@@ -49,7 +47,7 @@ class RegisterForm extends StatelessWidget {
       builder: (context, state) {
         return Scaffold(
           appBar: AppBar(
-            title: const Text("Sign Up"),
+            title: const Text('Sign Up'),
             elevation: 0,
           ),
           body: Form(
@@ -73,14 +71,14 @@ class RegisterForm extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: <Widget>[
                             SvgPicture.asset(
-                              "assets/images/tray.svg",
+                              'assets/images/tray.svg',
                               height: 200,
                             ),
                           ],
                         ),
                         Container(
                           margin: const EdgeInsets.all(32),
-                          child: Text("Start your\nhome kitchen\nbusiness",
+                          child: Text('Start your\nhome kitchen\nbusiness',
                               style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.w800,
@@ -110,8 +108,8 @@ class RegisterForm extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             LocalyEntryField(
-                              "Email Address",
-                              hintText: "Enter your email address",
+                              'Email Address',
+                              hintText: 'Enter your email address',
                               icon: Icons.email,
                               onChanged: (value) => context
                                   .bloc<SignInFormBloc>()
@@ -130,8 +128,8 @@ class RegisterForm extends StatelessWidget {
                                   ),
                             ),
                             LocalyEntryField(
-                              "Password",
-                              hintText: "Enter password",
+                              'Password',
+                              hintText: 'Enter password',
                               icon: Icons.lock,
                               isPassword: true,
                               onChanged: (value) => context
@@ -151,8 +149,8 @@ class RegisterForm extends StatelessWidget {
                                   ),
                             ),
                             LocalyEntryField(
-                              "Confirm Password",
-                              hintText: "Enter password",
+                              'Confirm Password',
+                              hintText: 'Enter password',
                               icon: Icons.lock,
                               isPassword: true,
                               onChanged: (value) => context
@@ -175,7 +173,7 @@ class RegisterForm extends StatelessWidget {
                             ),
                             const SizedBox(height: 16),
                             LocalyButton(
-                              title: "Sign Up",
+                              title: 'Sign Up',
                               onPressed: () {
                                 context.bloc<SignInFormBloc>().add(
                                     const SignInFormEvent

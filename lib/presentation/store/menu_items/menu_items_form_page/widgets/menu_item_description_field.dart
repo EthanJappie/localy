@@ -18,8 +18,8 @@ class MenuItemDescriptionField extends HookWidget {
       buildWhen: (p, c) => p.menuItem.description != c.menuItem.description,
       builder: (context, state) {
         return LocalyEntryField(
-          "Menu item description",
-          hintText: "Succulent",
+          'Menu item description',
+          hintText: 'Succulent',
           controller: textEditingController,
           onChanged: (value) => context
               .bloc<MenuItemFormBloc>()
@@ -32,7 +32,7 @@ class MenuItemDescriptionField extends HookWidget {
               .value
               .fold(
                 (f) => f.maybeMap(
-                  empty: (f) => "Cannot be empty",
+                  empty: (f) => 'Cannot be empty',
                   orElse: () => null,
                 ),
                 (_) => null,

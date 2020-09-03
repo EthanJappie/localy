@@ -13,23 +13,23 @@ class MenuItemPriceField extends HookWidget {
     return BlocConsumer<MenuItemFormBloc, MenuItemFormState>(
       listenWhen: (p, c) => p.isEditing != c.isEditing,
       listener: (context, state) {
-        textEditingController.text = "${state.menuItem.price}";
+        textEditingController.text = '${state.menuItem.price}';
       },
       buildWhen: (p, c) => p.menuItem.price != c.menuItem.price,
       builder: (context, state) {
         return LocalyEntryField(
-          "Menu item price",
-          hintText: "R100",
+          'Menu item price',
+          hintText: 'R100',
           isNumber: true,
           controller: textEditingController,
           onChanged: (value) => context.bloc<MenuItemFormBloc>().add(
               MenuItemFormEvent.priceChanged(
-                  double.parse(value.replaceAll("R", "")))),
+                  double.parse(value.replaceAll('R', '')))),
           validator: (value) {
             if (value == null || value.isEmpty) {
-              return "Cannot be empty";
+              return 'Cannot be empty';
             } else if (double.parse(value) <= 0) {
-              return "Cannot be zero or negative";
+              return 'Cannot be zero or negative';
             } else {
               return null;
             }

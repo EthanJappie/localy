@@ -13,8 +13,8 @@ Future<RaveStatus> performTransaction({
     publicKey: 'FLWPUBK-c98365be1acbe3dc483e41c5ed3b0fba-X',
     encryptionKey: '483a5ee104d8acf8ecfeab51',
   )
-    ..country = "ZA"
-    ..currency = "ZAR"
+    ..country = 'ZA'
+    ..currency = 'ZAR'
     ..displayEmail = true
     ..displayAmount = true
     ..email = user.email
@@ -35,16 +35,16 @@ Future<RaveStatus> performTransaction({
     ..isPreAuth = true
     ..displayFee = true;
 
-  final RaveResult response = await RavePayManager()
+  final response = await RavePayManager()
       .prompt(
     context: context,
     initializer: initializer,
   )
       .catchError((error) {
-        print("error: $error");
+    print('error: $error');
     return error;
   });
 
-  print("status: ${response.status}");
+  print('status: ${response.status}');
   return response.status;
 }

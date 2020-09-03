@@ -38,6 +38,7 @@ mixin _$ReviewEntityFailure {
     @required Result insufficientPermission(),
     @required Result unableToUpdate(),
   });
+
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result unexpected(),
@@ -45,12 +46,14 @@ mixin _$ReviewEntityFailure {
     Result unableToUpdate(),
     @required Result orElse(),
   });
+
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result unexpected(UnexpectedFailure value),
     @required Result insufficientPermission(InsufficientPermission value),
     @required Result unableToUpdate(UnableToUpdate value),
   });
+
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result unexpected(UnexpectedFailure value),
@@ -71,6 +74,7 @@ class _$ReviewEntityFailureCopyWithImpl<$Res>
   _$ReviewEntityFailureCopyWithImpl(this._value, this._then);
 
   final ReviewEntityFailure _value;
+
   // ignore: unused_field
   final $Res Function(ReviewEntityFailure) _then;
 }

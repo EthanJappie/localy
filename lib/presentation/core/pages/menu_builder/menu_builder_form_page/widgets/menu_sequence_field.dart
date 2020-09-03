@@ -13,20 +13,20 @@ class MenuSequenceField extends HookWidget {
     return BlocConsumer<MenuFormBloc, MenuFormState>(
       listenWhen: (p, c) => p.isEditing != c.isEditing,
       listener: (context, state) {
-        textEditingController.text = "${state.menu.sequenceOfAppearance}";
+        textEditingController.text = '${state.menu.sequenceOfAppearance}';
       },
       buildWhen: (p, c) => p.menu.notes != c.menu.notes,
       builder: (context, state) {
         return LocalyEntryField(
-          "Sequence of appearance",
-          hintText: "1",
+          'Sequence of appearance',
+          hintText: '1',
           controller: textEditingController,
           onChanged: (value) => context
               .bloc<MenuFormBloc>()
               .add(MenuFormEvent.sequenceOfAppearanceChanged(int.parse(value))),
           validator: (_) =>
               context.bloc<MenuFormBloc>().state.menu.sequenceOfAppearance < 0
-                  ? "Cannot be negative"
+                  ? 'Cannot be negative'
                   : null,
         );
       },

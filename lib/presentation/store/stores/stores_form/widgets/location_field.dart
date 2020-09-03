@@ -12,7 +12,7 @@ class LocationField extends StatelessWidget {
       buildWhen: (p, c) => p.store.address != c.store.address,
       builder: (context, state) {
         return LocalyLocationPicker(
-          title: "Address",
+          title: 'Address',
           address: state.store.address.value.fold((l) => null, (r) => r),
           context: context,
           onLocationChanged: (value) => context
@@ -24,8 +24,8 @@ class LocationField extends StatelessWidget {
           validator: (_) =>
               context.bloc<StoreFormBloc>().state.store.address.value.fold(
                     (f) => f.maybeMap(
-                      empty: (f) => "Address has not been set",
-                      orElse: () => "or else",
+                      empty: (f) => 'Address has not been set',
+                      orElse: () => 'or else',
                     ),
                     (r) => null,
                   ),

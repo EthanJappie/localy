@@ -30,15 +30,18 @@ mixin _$MenuActorEvent {
   Result when<Result extends Object>({
     @required Result deleted(Menu menu),
   });
+
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result deleted(Menu menu),
     @required Result orElse(),
   });
+
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result deleted(_Deleted value),
   });
+
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result deleted(_Deleted value),
@@ -52,6 +55,7 @@ abstract class $MenuActorEventCopyWith<$Res> {
   factory $MenuActorEventCopyWith(
           MenuActorEvent value, $Res Function(MenuActorEvent) then) =
       _$MenuActorEventCopyWithImpl<$Res>;
+
   $Res call({Menu menu});
 
   $MenuCopyWith<$Res> get menu;
@@ -62,6 +66,7 @@ class _$MenuActorEventCopyWithImpl<$Res>
   _$MenuActorEventCopyWithImpl(this._value, this._then);
 
   final MenuActorEvent _value;
+
   // ignore: unused_field
   final $Res Function(MenuActorEvent) _then;
 
@@ -89,6 +94,7 @@ abstract class _$DeletedCopyWith<$Res>
     implements $MenuActorEventCopyWith<$Res> {
   factory _$DeletedCopyWith(_Deleted value, $Res Function(_Deleted) then) =
       __$DeletedCopyWithImpl<$Res>;
+
   @override
   $Res call({Menu menu});
 
@@ -191,6 +197,7 @@ abstract class _Deleted implements MenuActorEvent {
 
   @override
   Menu get menu;
+
   @override
   _$DeletedCopyWith<_Deleted> get copyWith;
 }
@@ -232,6 +239,7 @@ mixin _$MenuActorState {
     @required Result deleteFailure(MenuFailure menuFailure),
     @required Result deleteSuccess(),
   });
+
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result initial(),
@@ -240,6 +248,7 @@ mixin _$MenuActorState {
     Result deleteSuccess(),
     @required Result orElse(),
   });
+
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result initial(_Initial value),
@@ -247,6 +256,7 @@ mixin _$MenuActorState {
     @required Result deleteFailure(_DeleteFailure value),
     @required Result deleteSuccess(_DeleteSuccess value),
   });
+
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result initial(_Initial value),
@@ -268,6 +278,7 @@ class _$MenuActorStateCopyWithImpl<$Res>
   _$MenuActorStateCopyWithImpl(this._value, this._then);
 
   final MenuActorState _value;
+
   // ignore: unused_field
   final $Res Function(MenuActorState) _then;
 }
@@ -470,6 +481,7 @@ abstract class _$DeleteFailureCopyWith<$Res> {
   factory _$DeleteFailureCopyWith(
           _DeleteFailure value, $Res Function(_DeleteFailure) then) =
       __$DeleteFailureCopyWithImpl<$Res>;
+
   $Res call({MenuFailure menuFailure});
 
   $MenuFailureCopyWith<$Res> get menuFailure;
@@ -600,6 +612,7 @@ abstract class _DeleteFailure implements MenuActorState {
   const factory _DeleteFailure(MenuFailure menuFailure) = _$_DeleteFailure;
 
   MenuFailure get menuFailure;
+
   _$DeleteFailureCopyWith<_DeleteFailure> get copyWith;
 }
 

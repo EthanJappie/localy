@@ -8,6 +8,7 @@ part of 'bundle_entity_dtos.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
 BundleEntityDTO _$BundleEntityDTOFromJson(Map<String, dynamic> json) {
   return _BundleEntityDTO.fromJson(json);
 }
@@ -30,6 +31,7 @@ mixin _$BundleEntityDTO {
   int get numberOfCredits;
 
   Map<String, dynamic> toJson();
+
   $BundleEntityDTOCopyWith<BundleEntityDTO> get copyWith;
 }
 
@@ -37,6 +39,7 @@ abstract class $BundleEntityDTOCopyWith<$Res> {
   factory $BundleEntityDTOCopyWith(
           BundleEntityDTO value, $Res Function(BundleEntityDTO) then) =
       _$BundleEntityDTOCopyWithImpl<$Res>;
+
   $Res call({int numberOfCredits});
 }
 
@@ -45,6 +48,7 @@ class _$BundleEntityDTOCopyWithImpl<$Res>
   _$BundleEntityDTOCopyWithImpl(this._value, this._then);
 
   final BundleEntityDTO _value;
+
   // ignore: unused_field
   final $Res Function(BundleEntityDTO) _then;
 
@@ -65,6 +69,7 @@ abstract class _$BundleEntityDTOCopyWith<$Res>
   factory _$BundleEntityDTOCopyWith(
           _BundleEntityDTO value, $Res Function(_BundleEntityDTO) then) =
       __$BundleEntityDTOCopyWithImpl<$Res>;
+
   @override
   $Res call({int numberOfCredits});
 }
@@ -134,6 +139,7 @@ class _$_BundleEntityDTO extends _BundleEntityDTO {
 
 abstract class _BundleEntityDTO extends BundleEntityDTO {
   const _BundleEntityDTO._() : super._();
+
   const factory _BundleEntityDTO({@required int numberOfCredits}) =
       _$_BundleEntityDTO;
 
@@ -142,6 +148,7 @@ abstract class _BundleEntityDTO extends BundleEntityDTO {
 
   @override
   int get numberOfCredits;
+
   @override
   _$BundleEntityDTOCopyWith<_BundleEntityDTO> get copyWith;
 }

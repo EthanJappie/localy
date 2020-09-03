@@ -8,18 +8,19 @@ import 'package:localy/domain/auth/auth_failure.dart';
 import 'package:localy/domain/auth/i_auth_facade.dart';
 import 'package:localy/domain/auth/user.dart';
 import 'package:localy/domain/auth/value_objects.dart';
+
 import './firebase_user_mapper.dart';
 
 @prod
 @LazySingleton(as: IAuthFacade)
 class FirebaseAuthFacade implements IAuthFacade {
-  final FirebaseAuth _firebaseAuth;
-  final GoogleSignIn _googleSignIn;
-
   FirebaseAuthFacade(
     this._firebaseAuth,
     this._googleSignIn,
   );
+
+  final FirebaseAuth _firebaseAuth;
+  final GoogleSignIn _googleSignIn;
 
   @override
   Option<UserEntity> getSignedInUser() {

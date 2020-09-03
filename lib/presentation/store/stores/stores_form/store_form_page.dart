@@ -27,12 +27,12 @@ import 'package:localy/presentation/store/stores/stores_form/widgets/store_name_
 import 'package:localy/presentation/store/stores/stores_form/widgets/telephone_field.dart';
 
 class StoreFormPage extends StatelessWidget {
-  final Restaurant editedStore;
-
   const StoreFormPage({
     Key key,
     @required this.editedStore,
   }) : super(key: key);
+  final Restaurant editedStore;
+
 
   @override
   Widget build(BuildContext context) {
@@ -72,8 +72,6 @@ class StoreFormPage extends StatelessWidget {
                   ).show(context);
                 },
                 (_) {
-                  // Can't be just a simple pop. If another route (like a Flushbar) is on top of stack, we'll need to pop even that to get to
-                  // the overview page.
                   ExtendedNavigator.of(context).popUntil(
                       (route) => route.settings.name == Routes.homePage);
                 },
@@ -108,7 +106,7 @@ class StoreFormPageScaffold extends StatelessWidget {
         title: BlocBuilder<StoreFormBloc, StoreFormState>(
           buildWhen: (p, c) => p.isEditing != c.isEditing,
           builder: (BuildContext context, StoreFormState state) {
-            return Text(state.isEditing ? "Edit Store" : "Add Store");
+            return Text(state.isEditing ? 'Edit Store' : 'Add Store');
           },
         ),
       ),
@@ -176,7 +174,7 @@ class StoreFormPageScaffold extends StatelessWidget {
                     ),
                     SliverToBoxAdapter(
                       child: LocalyButton(
-                        title: "Save",
+                        title: 'Save',
                         onPressed: () {
                           context
                               .bloc<StoreFormBloc>()
@@ -188,7 +186,7 @@ class StoreFormPageScaffold extends StatelessWidget {
                       SliverToBoxAdapter(
                         child: LocalyButton(
                           empty: true,
-                          title: "Delete",
+                          title: 'Delete',
                           onPressed: () {
                             context
                                 .bloc<StoreActorBloc>()

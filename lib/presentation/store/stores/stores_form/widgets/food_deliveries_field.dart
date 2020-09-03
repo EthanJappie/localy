@@ -12,7 +12,7 @@ class FoodDeliveriesField extends StatelessWidget {
       buildWhen: (p, c) => p.store.foodDeliveries != c.store.foodDeliveries,
       builder: (context, state) {
         return LocalySwitch(
-          title: "Food Deliveries",
+          title: 'Food Deliveries',
           condition: state.store.foodDeliveries,
           onChanged: (value) => context
               .bloc<StoreFormBloc>()

@@ -4,12 +4,18 @@ import 'package:localy/domain/core/value_objects.dart';
 import 'package:localy/domain/menu/menu.dart';
 
 part 'menu_dtos.freezed.dart';
-
 part 'menu_dtos.g.dart';
 
 @freezed
 abstract class MenuDTO implements _$MenuDTO {
   const MenuDTO._();
+
+  factory MenuDTO.fromJson(Map<String, dynamic> json) =>
+      _$MenuDTOFromJson(json);
+
+  factory MenuDTO.fromFirestore(DocumentSnapshot doc) {
+    return MenuDTO.fromJson(doc.data()).copyWith(id: doc.id);
+  }
 
   const factory MenuDTO({
     @required String storeID,
@@ -25,7 +31,7 @@ abstract class MenuDTO implements _$MenuDTO {
       id: menu.id.getOrCrash(),
       storeID: menu.storeID.getOrCrash(),
       name: menu.name.getOrCrash(),
-      notes: menu.notes.value.fold((l) => "", (r) => r),
+      notes: menu.notes.value.fold((l) => '', (r) => r),
       sequenceOfAppearance: menu.sequenceOfAppearance,
       hidden: menu.hidden,
     );
@@ -41,12 +47,4 @@ abstract class MenuDTO implements _$MenuDTO {
       hidden: hidden,
     );
   }
-
-  factory MenuDTO.fromJson(Map<String, dynamic> json) =>
-      _$MenuDTOFromJson(json);
-
-  factory MenuDTO.fromFirestore(DocumentSnapshot doc) {
-    return MenuDTO.fromJson(doc.data()).copyWith(id: doc.id);
-  }
-
 }

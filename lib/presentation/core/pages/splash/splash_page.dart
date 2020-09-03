@@ -19,8 +19,7 @@ class SplashPage extends StatelessWidget {
                   EnvironmentConfig.APP_NAME_LOCALY_MANAGER) {
                 ExtendedNavigator.of(context).replace(Routes.homePage);
               } else {
-                ExtendedNavigator.of(context)
-                    .replace(Routes.customerHomePage);
+                ExtendedNavigator.of(context).replace(Routes.customerHomePage);
               }
             },
             unauthenticated: (_) {});
@@ -38,7 +37,7 @@ class SplashPage extends StatelessWidget {
               backgroundColor: Colors.white,
               appBar: AppBar(
                 title: SvgPicture.asset(
-                  "assets/images/logo.svg",
+                  'assets/images/logo.svg',
                   height: 24,
                 ),
                 elevation: 0,
@@ -53,14 +52,14 @@ class SplashPage extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        SvgPicture.asset("assets/images/splash.svg"),
+                        SvgPicture.asset('assets/images/splash.svg'),
                       ],
                     ),
                     const SizedBox(
                       height: 16,
                     ),
                     const Text(
-                      "Welcome to Localy",
+                      'Welcome to Localy',
                       style: TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
@@ -70,29 +69,26 @@ class SplashPage extends StatelessWidget {
                       height: 16,
                     ),
                     const Text(
-                      "Craving for your favorite food? Localy will help you get it, wherever you are!",
+                      'Craving for your favorite food? Localy will help you get it, wherever you are!',
                       textAlign: TextAlign.center,
                     ),
                     const SizedBox(
                       height: 64,
                     ),
                     LocalyButton(
-                      title: "Sign in",
+                      title: 'Sign in',
                       onPressed: () {
-                          ExtendedNavigator.of(context)
-                              .push(Routes.signInPage);
-
+                        ExtendedNavigator.of(context).push(Routes.signInPage);
                       },
                     ),
                     const SizedBox(
                       height: 8,
                     ),
                     LocalyButton(
-                      title: "Sign up",
+                      title: 'Sign up',
                       empty: true,
                       onPressed: () {
-                          ExtendedNavigator.of(context)
-                              .push(Routes.registerPage);
+                        ExtendedNavigator.of(context).push(Routes.registerPage);
                       },
                     ),
                   ],

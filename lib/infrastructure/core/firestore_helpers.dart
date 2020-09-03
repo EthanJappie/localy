@@ -7,7 +7,7 @@ import 'package:uuid/uuid.dart';
 
 extension FirestoreX on FirebaseFirestore {
   Future<DocumentReference> userDocument() async {
-    final userOption =  getIt<IAuthFacade>().getSignedInUser();
+    final userOption = getIt<IAuthFacade>().getSignedInUser();
     final user = userOption.getOrElse(() => throw NotAuthenticatedError());
     return FirebaseFirestore.instance
         .collection('users')
@@ -37,8 +37,8 @@ extension DocumentReferenceX on DocumentReference {}
 
 extension FirebaseStorageX on FirebaseStorage {
   StorageReference get storeStorageReference =>
-      FirebaseStorage.instance.ref().child("stores").child(Uuid().v1());
+      FirebaseStorage.instance.ref().child('stores').child(Uuid().v1());
 
   StorageReference get menuItemsStorageReference =>
-      FirebaseStorage.instance.ref().child("menuItems").child(Uuid().v1());
+      FirebaseStorage.instance.ref().child('menuItems').child(Uuid().v1());
 }

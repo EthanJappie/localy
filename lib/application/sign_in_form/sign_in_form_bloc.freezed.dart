@@ -62,6 +62,7 @@ mixin _$SignInFormEvent {
     @required Result signInWithEmailAndPasswordPressed(),
     @required Result signInWithGooglePressed(),
   });
+
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result emailChanged(String emailStr),
@@ -72,6 +73,7 @@ mixin _$SignInFormEvent {
     Result signInWithGooglePressed(),
     @required Result orElse(),
   });
+
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result emailChanged(EmailChanged value),
@@ -85,6 +87,7 @@ mixin _$SignInFormEvent {
             SignInWithEmailAndPasswordPressed value),
     @required Result signInWithGooglePressed(SignInWithGooglePressed value),
   });
+
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result emailChanged(EmailChanged value),
@@ -110,6 +113,7 @@ class _$SignInFormEventCopyWithImpl<$Res>
   _$SignInFormEventCopyWithImpl(this._value, this._then);
 
   final SignInFormEvent _value;
+
   // ignore: unused_field
   final $Res Function(SignInFormEvent) _then;
 }
@@ -118,6 +122,7 @@ abstract class $EmailChangedCopyWith<$Res> {
   factory $EmailChangedCopyWith(
           EmailChanged value, $Res Function(EmailChanged) then) =
       _$EmailChangedCopyWithImpl<$Res>;
+
   $Res call({String emailStr});
 }
 
@@ -254,6 +259,7 @@ abstract class EmailChanged implements SignInFormEvent {
   const factory EmailChanged(String emailStr) = _$EmailChanged;
 
   String get emailStr;
+
   $EmailChangedCopyWith<EmailChanged> get copyWith;
 }
 
@@ -261,6 +267,7 @@ abstract class $PasswordChangedCopyWith<$Res> {
   factory $PasswordChangedCopyWith(
           PasswordChanged value, $Res Function(PasswordChanged) then) =
       _$PasswordChangedCopyWithImpl<$Res>;
+
   $Res call({String passwordStr});
 }
 
@@ -397,6 +404,7 @@ abstract class PasswordChanged implements SignInFormEvent {
   const factory PasswordChanged(String passwordStr) = _$PasswordChanged;
 
   String get passwordStr;
+
   $PasswordChangedCopyWith<PasswordChanged> get copyWith;
 }
 
@@ -404,6 +412,7 @@ abstract class $ConfirmPasswordChangedCopyWith<$Res> {
   factory $ConfirmPasswordChangedCopyWith(ConfirmPasswordChanged value,
           $Res Function(ConfirmPasswordChanged) then) =
       _$ConfirmPasswordChangedCopyWithImpl<$Res>;
+
   $Res call({String confirmPasswordStr});
 }
 
@@ -546,6 +555,7 @@ abstract class ConfirmPasswordChanged implements SignInFormEvent {
       _$ConfirmPasswordChanged;
 
   String get confirmPasswordStr;
+
   $ConfirmPasswordChangedCopyWith<ConfirmPasswordChanged> get copyWith;
 }
 
@@ -942,10 +952,15 @@ const $SignInFormState = _$SignInFormStateTearOff();
 
 mixin _$SignInFormState {
   EmailAddress get emailAddress;
+
   Password get password;
+
   bool get showErrorMessages;
+
   bool get isSubmitting;
+
   Option<Either<AuthFailure, Unit>> get authFailureOrSuccessOption;
+
   Password get confirmPassword;
 
   $SignInFormStateCopyWith<SignInFormState> get copyWith;
@@ -955,6 +970,7 @@ abstract class $SignInFormStateCopyWith<$Res> {
   factory $SignInFormStateCopyWith(
           SignInFormState value, $Res Function(SignInFormState) then) =
       _$SignInFormStateCopyWithImpl<$Res>;
+
   $Res call(
       {EmailAddress emailAddress,
       Password password,
@@ -969,6 +985,7 @@ class _$SignInFormStateCopyWithImpl<$Res>
   _$SignInFormStateCopyWithImpl(this._value, this._then);
 
   final SignInFormState _value;
+
   // ignore: unused_field
   final $Res Function(SignInFormState) _then;
 
@@ -1006,6 +1023,7 @@ abstract class _$SignInFormStateCopyWith<$Res>
   factory _$SignInFormStateCopyWith(
           _SignInFormState value, $Res Function(_SignInFormState) then) =
       __$SignInFormStateCopyWithImpl<$Res>;
+
   @override
   $Res call(
       {EmailAddress emailAddress,
@@ -1139,16 +1157,22 @@ abstract class _SignInFormState implements SignInFormState {
 
   @override
   EmailAddress get emailAddress;
+
   @override
   Password get password;
+
   @override
   bool get showErrorMessages;
+
   @override
   bool get isSubmitting;
+
   @override
   Option<Either<AuthFailure, Unit>> get authFailureOrSuccessOption;
+
   @override
   Password get confirmPassword;
+
   @override
   _$SignInFormStateCopyWith<_SignInFormState> get copyWith;
 }

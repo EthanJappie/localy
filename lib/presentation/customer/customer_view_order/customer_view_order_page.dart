@@ -13,9 +13,9 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../../injection.dart';
 
 class CustomerViewOrderPage extends StatefulWidget {
-  final StoreOrder order;
 
   const CustomerViewOrderPage({Key key, this.order}) : super(key: key);
+  final StoreOrder order;
 
   @override
   _CustomerViewOrderPageState createState() => _CustomerViewOrderPageState();
@@ -41,7 +41,7 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: const Text("Order"),
+        title: const Text('Order'),
       ),
       body: Container(
         margin: const EdgeInsets.symmetric(horizontal: 16),
@@ -60,7 +60,7 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
               InkWell(
                 onTap: () async {
                   await launch(
-                      "tel:${widget.order.storePhoneNumber.value.fold((l) => "", (r) => r)}");
+                      'tel:${widget.order.storePhoneNumber.value.fold((l) => '', (r) => r)}');
                 },
                 child: Row(
                   children: <Widget>[
@@ -75,7 +75,7 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
                         children: <Widget>[
                           Text(
                             widget.order.storePhoneNumber.value
-                                .fold((l) => "", (r) => r),
+                                .fold((l) => '', (r) => r),
                             style: const TextStyle(
                               fontWeight: FontWeight.bold,
                               color: Colors.black,
@@ -90,19 +90,19 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
               const SizedBox(height: 16),
               InkWell(
                 onTap: () async {
-                  _directions.startNavigation(
+                  await _directions.startNavigation(
                     origin: WayPoint(
                         latitude: _location.latitude,
                         longitude: _location.longitude,
-                        name: "origin"),
+                        name: 'origin'),
                     destination: WayPoint(
                       latitude:
                           widget.order.storeCoordinates.getOrCrash().latitude,
                       longitude:
                           widget.order.storeCoordinates.getOrCrash().longitude,
-                      name: "destination",
+                      name: 'destination',
                     ),
-                    language: "English",
+                    language: 'English',
                     units: VoiceUnits.metric,
                   );
                 },
@@ -119,7 +119,7 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
                         children: <Widget>[
                           Text(
                             widget.order.storeAddress.value
-                                .fold((l) => "", (r) => r),
+                                .fold((l) => '', (r) => r),
                             style: const TextStyle(
                               fontWeight: FontWeight.bold,
                               color: Colors.black,
@@ -137,21 +137,21 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  const Text("Total"),
+                  const Text('Total'),
                   Text(
-                      "R${calculateCost(widget.order.menuItems).toStringAsFixed(2)}")
+                      'R${calculateCost(widget.order.menuItems).toStringAsFixed(2)}')
                 ],
               ),
               const SizedBox(height: 8),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children:  <Widget>[
-                  const Text("Delivery"),
+                children: <Widget>[
+                  const Text('Delivery'),
                   Text(
                     widget.order.deliveryCost == null ||
-                        widget.order.deliveryCost == 0.0
-                        ? "R0.00"
-                        : "R${widget.order.deliveryCost.toStringAsFixed(2)}",
+                            widget.order.deliveryCost == 0.0
+                        ? 'R0.00'
+                        : 'R${widget.order.deliveryCost.toStringAsFixed(2)}',
                   ),
                 ],
               ),
@@ -160,14 +160,14 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Text(
-                    "Total",
+                    'Total',
                     style: TextStyle(
                       color: Theme.of(context).primaryColor,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                   Text(
-                    "R${calculateCost(widget.order.menuItems, costOfDelivery: widget.order.deliveryCost).toStringAsFixed(2)}",
+                    'R${calculateCost(widget.order.menuItems, costOfDelivery: widget.order.deliveryCost).toStringAsFixed(2)}',
                     style: TextStyle(
                       color: Theme.of(context).primaryColor,
                       fontWeight: FontWeight.bold,
@@ -179,9 +179,9 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
               if (!widget.order.isCompleted)
                 LocalyButton(
                   empty: true,
-                  title: "Cancel",
+                  title: 'Cancel',
                   onPressed: () {
-                    _changeState("cancelled", completed: true);
+                    _changeState('cancelled', completed: true);
                     ExtendedNavigator.of(context).pop();
                   },
                 ),
@@ -211,7 +211,7 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              if (menuItem.imageUrl.value.fold((l) => "", (r) => r).isEmpty)
+              if (menuItem.imageUrl.value.fold((l) => '', (r) => r).isEmpty)
                 Container(
                   margin: const EdgeInsets.only(right: 16, left: 8),
                   height: 40,
@@ -233,7 +233,7 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
                       fit: BoxFit.cover,
                       image: NetworkImage(
                         menuItem.imageUrl.value.fold(
-                          (l) => "",
+                          (l) => '',
                           (r) => r,
                         ),
                       ),
@@ -277,8 +277,8 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
                               backgroundColor: Theme.of(context).primaryColor,
                               child: Text(
                                 menuItem.count == null
-                                    ? "x1"
-                                    : "x${menuItem.count.toString()}",
+                                    ? 'x1'
+                                    : 'x${menuItem.count.toString()}',
                                 style: const TextStyle(color: Colors.white),
                               ),
                             ),
@@ -289,7 +289,7 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
                         ),
                         const SizedBox(width: 16),
                         Text(
-                          "R${menuItem.price}",
+                          'R${menuItem.price}',
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: Theme.of(context).primaryColor,

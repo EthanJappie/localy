@@ -18,14 +18,14 @@ abstract class MenuOptionItemEntity implements _$MenuOptionItemEntity {
 
   factory MenuOptionItemEntity.empty() => MenuOptionItemEntity(
         id: UniqueId(),
-        variant: ValueString.fromString(""),
+        variant: ValueString.fromString(''),
         enabled: true,
         price: 12.0,
       );
 
   Option<ValueFailure<dynamic>> get failureOption {
     return variant.failureOrUnit.fold(
-      (f) => some(f),
+      some,
       (r) => none(),
     );
   }

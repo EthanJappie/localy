@@ -11,16 +11,13 @@ import 'package:localy/domain/review/review_entity_failure.dart';
 import 'package:meta/meta.dart';
 
 part 'review_form_bloc.freezed.dart';
-
 part 'review_form_event.dart';
-
 part 'review_form_state.dart';
 
 @injectable
 class ReviewFormBloc extends Bloc<ReviewFormEvent, ReviewFormState> {
-  final IReviewRepository _reviewRepository;
-
   ReviewFormBloc(this._reviewRepository) : super(ReviewFormState.initial());
+  final IReviewRepository _reviewRepository;
 
   @override
   Stream<ReviewFormState> mapEventToState(

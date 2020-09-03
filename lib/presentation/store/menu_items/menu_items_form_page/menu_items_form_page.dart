@@ -18,14 +18,14 @@ import 'package:localy/presentation/store/menu_items/menu_items_form_page/widget
 import 'package:localy/presentation/store/menu_items/menu_items_form_page/widgets/menu_item_sequence_field.dart';
 
 class MenuItemsFormPage extends StatelessWidget {
-  final MenuItem editedMenuItem;
-  final String menuID;
 
   const MenuItemsFormPage({
     Key key,
     this.editedMenuItem,
     @required this.menuID,
   }) : super(key: key);
+  final MenuItem editedMenuItem;
+  final String menuID;
 
   @override
   Widget build(BuildContext context) {
@@ -65,12 +65,9 @@ class MenuItemsFormPage extends StatelessWidget {
                   ).show(context);
                 },
                 (_) {
-                  // Can't be just a simple pop. If another route (like a Flushbar) is on top of stack, we'll need to pop even that to get to
-                  // the overview page.
                   ExtendedNavigator.of(context).popUntil(
                     (route) =>
-                        route.settings.name ==
-                            Routes.menuItemsOverviewPage,
+                        route.settings.name == Routes.menuItemsOverviewPage,
                   );
                 },
               );
@@ -97,14 +94,14 @@ class MenuItemsFormPage extends StatelessWidget {
 }
 
 class MenuItemFormPageScaffold extends StatelessWidget {
-  final String menuID;
-  final MenuItem editedMenuItem;
-
   const MenuItemFormPageScaffold({
     Key key,
     @required this.menuID,
     this.editedMenuItem,
   }) : super(key: key);
+  final String menuID;
+  final MenuItem editedMenuItem;
+
 
   @override
   Widget build(BuildContext context) {
@@ -116,7 +113,7 @@ class MenuItemFormPageScaffold extends StatelessWidget {
       appBar: AppBar(
         title: BlocBuilder<MenuItemFormBloc, MenuItemFormState>(
           builder: (context, state) {
-            return Text(state.isEditing ? "Edit Menu Item" : "Add Menu Item");
+            return Text(state.isEditing ? 'Edit Menu Item' : 'Add Menu Item');
           },
         ),
       ),
@@ -143,7 +140,7 @@ class MenuItemFormPageScaffold extends StatelessWidget {
                   ),
                   SliverToBoxAdapter(
                     child: LocalyButton(
-                      title: "Save",
+                      title: 'Save',
                       onPressed: () {
                         context
                             .bloc<MenuItemFormBloc>()
@@ -154,7 +151,7 @@ class MenuItemFormPageScaffold extends StatelessWidget {
                   if (editedMenuItem != null)
                     SliverToBoxAdapter(
                       child: LocalyButton(
-                        title: "Delete",
+                        title: 'Delete',
                         empty: true,
                         onPressed: () {
                           context

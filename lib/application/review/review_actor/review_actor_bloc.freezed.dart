@@ -38,17 +38,20 @@ mixin _$ReviewActorEvent {
     @required Result deleted(ReviewEntity review),
     @required Result updated(ReviewEntity review),
   });
+
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result deleted(ReviewEntity review),
     Result updated(ReviewEntity review),
     @required Result orElse(),
   });
+
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result deleted(_Deleted value),
     @required Result updated(_Updated value),
   });
+
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result deleted(_Deleted value),
@@ -63,6 +66,7 @@ abstract class $ReviewActorEventCopyWith<$Res> {
   factory $ReviewActorEventCopyWith(
           ReviewActorEvent value, $Res Function(ReviewActorEvent) then) =
       _$ReviewActorEventCopyWithImpl<$Res>;
+
   $Res call({ReviewEntity review});
 
   $ReviewEntityCopyWith<$Res> get review;
@@ -73,6 +77,7 @@ class _$ReviewActorEventCopyWithImpl<$Res>
   _$ReviewActorEventCopyWithImpl(this._value, this._then);
 
   final ReviewActorEvent _value;
+
   // ignore: unused_field
   final $Res Function(ReviewActorEvent) _then;
 
@@ -100,6 +105,7 @@ abstract class _$DeletedCopyWith<$Res>
     implements $ReviewActorEventCopyWith<$Res> {
   factory _$DeletedCopyWith(_Deleted value, $Res Function(_Deleted) then) =
       __$DeletedCopyWithImpl<$Res>;
+
   @override
   $Res call({ReviewEntity review});
 
@@ -208,6 +214,7 @@ abstract class _Deleted implements ReviewActorEvent {
 
   @override
   ReviewEntity get review;
+
   @override
   _$DeletedCopyWith<_Deleted> get copyWith;
 }
@@ -216,6 +223,7 @@ abstract class _$UpdatedCopyWith<$Res>
     implements $ReviewActorEventCopyWith<$Res> {
   factory _$UpdatedCopyWith(_Updated value, $Res Function(_Updated) then) =
       __$UpdatedCopyWithImpl<$Res>;
+
   @override
   $Res call({ReviewEntity review});
 
@@ -324,6 +332,7 @@ abstract class _Updated implements ReviewActorEvent {
 
   @override
   ReviewEntity get review;
+
   @override
   _$UpdatedCopyWith<_Updated> get copyWith;
 }
@@ -379,6 +388,7 @@ mixin _$ReviewActorState {
     @required Result deleteSuccess(),
     @required Result updateSuccess(),
   });
+
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result initial(),
@@ -389,6 +399,7 @@ mixin _$ReviewActorState {
     Result updateSuccess(),
     @required Result orElse(),
   });
+
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result initial(_Initial value),
@@ -398,6 +409,7 @@ mixin _$ReviewActorState {
     @required Result deleteSuccess(_DeleteSuccess value),
     @required Result updateSuccess(_UpdateSuccess value),
   });
+
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result initial(_Initial value),
@@ -421,6 +433,7 @@ class _$ReviewActorStateCopyWithImpl<$Res>
   _$ReviewActorStateCopyWithImpl(this._value, this._then);
 
   final ReviewActorState _value;
+
   // ignore: unused_field
   final $Res Function(ReviewActorState) _then;
 }
@@ -647,6 +660,7 @@ abstract class _$DeleteFailureCopyWith<$Res> {
   factory _$DeleteFailureCopyWith(
           _DeleteFailure value, $Res Function(_DeleteFailure) then) =
       __$DeleteFailureCopyWithImpl<$Res>;
+
   $Res call({ReviewEntityFailure reviewFailure});
 
   $ReviewEntityFailureCopyWith<$Res> get reviewFailure;
@@ -792,6 +806,7 @@ abstract class _DeleteFailure implements ReviewActorState {
       _$_DeleteFailure;
 
   ReviewEntityFailure get reviewFailure;
+
   _$DeleteFailureCopyWith<_DeleteFailure> get copyWith;
 }
 
@@ -799,6 +814,7 @@ abstract class _$UpdateFailureCopyWith<$Res> {
   factory _$UpdateFailureCopyWith(
           _UpdateFailure value, $Res Function(_UpdateFailure) then) =
       __$UpdateFailureCopyWithImpl<$Res>;
+
   $Res call({ReviewEntityFailure reviewFailure});
 
   $ReviewEntityFailureCopyWith<$Res> get reviewFailure;
@@ -944,6 +960,7 @@ abstract class _UpdateFailure implements ReviewActorState {
       _$_UpdateFailure;
 
   ReviewEntityFailure get reviewFailure;
+
   _$UpdateFailureCopyWith<_UpdateFailure> get copyWith;
 }
 

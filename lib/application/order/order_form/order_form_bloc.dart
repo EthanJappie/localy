@@ -15,16 +15,13 @@ import 'package:localy/domain/store/value_objects.dart';
 import 'package:meta/meta.dart';
 
 part 'order_form_bloc.freezed.dart';
-
 part 'order_form_event.dart';
-
 part 'order_form_state.dart';
 
 @injectable
 class OrderFormBloc extends Bloc<OrderFormEvent, OrderFormState> {
-  final IOrderRepository _orderRepository;
-
   OrderFormBloc(this._orderRepository) : super(OrderFormState.initial());
+  final IOrderRepository _orderRepository;
 
   @override
   Stream<OrderFormState> mapEventToState(
@@ -59,13 +56,12 @@ class OrderFormBloc extends Bloc<OrderFormEvent, OrderFormState> {
         );
       },
       addedItem: (e) async* {
-        final menuItems = state.order.menuItems;
-        menuItems.add(e.menuItem);
+        final menuItems = state.order.menuItems..add(e.menuItem);
         yield state.copyWith(order: state.order.copyWith(menuItems: menuItems));
       },
       deletedItem: (e) async* {
-        final menuItems = state.order.menuItems;
-        menuItems.remove(e.menuItem);
+        final menuItems = state.order.menuItems..remove(e.menuItem);
+
         yield state.copyWith(order: state.order.copyWith(menuItems: menuItems));
       },
       customerAddedPhoneNumber: (e) async* {
@@ -137,22 +133,20 @@ class OrderFormBloc extends Bloc<OrderFormEvent, OrderFormState> {
         ));
       },
       countChanged: (e) async* {
-        final menuItems = state.order.menuItems;
-
-        menuItems.remove(e.menuItem);
+        final menuItems = state.order.menuItems..remove(e.menuItem);
 
         final tempMenuItem = e.menuItem.copyWith(
             count: e.menuItem.count == null
                 ? 1 + e.count
                 : e.menuItem.count + e.count);
 
-        menuItems.add(tempMenuItem);
-
-        menuItems.sort((a, b) {
-          return a.name.value
-              .fold((l) => "", (r) => r)
-              .compareTo(b.name.value.fold((l) => "", (r) => r));
-        });
+        menuItems
+          ..add(tempMenuItem)
+          ..sort((a, b) {
+            return a.name.value
+                .fold((l) => '', (r) => r)
+                .compareTo(b.name.value.fold((l) => '', (r) => r));
+          });
 
         yield state.copyWith(order: state.order.copyWith(menuItems: menuItems));
       },

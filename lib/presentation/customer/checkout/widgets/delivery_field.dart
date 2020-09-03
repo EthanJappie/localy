@@ -13,7 +13,7 @@ class DeliveryField extends StatelessWidget {
           p.order.foodDeliveriesChosen != c.order.foodDeliveriesChosen,
       builder: (context, state) {
         return LocalySwitch(
-          title: state.order.foodDeliveriesChosen ? "Deliver" : "Collect",
+          title: state.order.foodDeliveriesChosen ? 'Deliver' : 'Collect',
           condition: state.order.foodDeliveriesChosen,
           onChanged: (value) => context.bloc<OrderFormBloc>().add(
               OrderFormEvent.foodDeliveryChosen(foodDeliveryChosen: value)),

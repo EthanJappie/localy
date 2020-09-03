@@ -1,6 +1,17 @@
 import 'package:flutter/material.dart';
 
 class EntryField extends StatelessWidget {
+  const EntryField(
+      this.title, {
+        @required this.onChanged,
+        Key key,
+        this.isPassword = false,
+        this.isNumber = false,
+        this.validator,
+        this.textColor = Colors.black,
+        this.icon,
+        this.controller,
+      }) : super(key: key);
   final String title;
   final bool isPassword;
   final bool isNumber;
@@ -10,16 +21,6 @@ class EntryField extends StatelessWidget {
   final IconData icon;
   final TextEditingController controller;
 
-  const EntryField(this.title, {
-    @required this.onChanged,
-    Key key,
-    this.isPassword = false,
-    this.isNumber = false,
-    this.validator,
-    this.textColor = Colors.black,
-    this.icon,
-    this.controller,
-  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

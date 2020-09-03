@@ -14,14 +14,14 @@ import 'package:localy/presentation/core/widgets/localy_button.dart';
 import 'package:localy/presentation/customer/view_reviews/reviews_form/widgets/review_notes_field.dart';
 
 class ReviewFormPage extends StatelessWidget {
-  final String type;
-  final String typeID;
-
   const ReviewFormPage({
     Key key,
     @required this.type,
     @required this.typeID,
   }) : super(key: key);
+  final String type;
+  final String typeID;
+
 
   @override
   Widget build(BuildContext context) {
@@ -57,8 +57,6 @@ class ReviewFormPage extends StatelessWidget {
                   ).show(context);
                 },
                 (_) {
-                  // Can't be just a simple pop. If another route (like a Flushbar) is on top of stack, we'll need to pop even that to get to
-                  // the overview page.
                   ExtendedNavigator.of(context).popUntil((route) =>
                       route.settings.name == Routes.customerHomePage);
                 },
@@ -93,7 +91,7 @@ class ReviewFormPageScaffold extends StatelessWidget {
           title: BlocBuilder<ReviewFormBloc, ReviewFormState>(
             buildWhen: (p, c) => p.isEditing != c.isEditing,
             builder: (context, state) {
-              return Text(state.isEditing ? "Edit Review" : "Add Review");
+              return Text(state.isEditing ? 'Edit Review' : 'Add Review');
             },
           ),
         ),
@@ -127,7 +125,7 @@ class ReviewFormPageScaffold extends StatelessWidget {
                   ),
                   SliverToBoxAdapter(
                     child: LocalyButton(
-                      title: "Save",
+                      title: 'Save',
                       onPressed: () {
                         context
                             .bloc<ReviewFormBloc>()

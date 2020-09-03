@@ -9,17 +9,14 @@ import 'package:localy/domain/order/order_failure.dart';
 import 'package:meta/meta.dart';
 
 part 'order_actor_bloc.freezed.dart';
-
 part 'order_actor_event.dart';
-
 part 'order_actor_state.dart';
 
 @injectable
 class OrderActorBloc extends Bloc<OrderActorEvent, OrderActorState> {
-  final IOrderRepository _orderRepository;
-
   OrderActorBloc(this._orderRepository)
       : super(const OrderActorState.initial());
+  final IOrderRepository _orderRepository;
 
   @override
   Stream<OrderActorState> mapEventToState(
@@ -30,19 +27,18 @@ class OrderActorBloc extends Bloc<OrderActorEvent, OrderActorState> {
         yield const OrderActorState.loading();
         final possibleFailure = await _orderRepository.delete(e.order);
         yield possibleFailure.fold(
-              (f) => OrderActorState.deleteFailure(f),
-              (_) => const OrderActorState.deleteSuccess(),
+          (f) => OrderActorState.deleteFailure(f),
+          (_) => const OrderActorState.deleteSuccess(),
         );
       },
       changedState: (e) async* {
         yield const OrderActorState.loading();
         final possibleFailure = await _orderRepository.update(e.order);
         yield possibleFailure.fold(
-              (f) => OrderActorState.updateFailure(f),
-              (_) => const OrderActorState.updateSuccess(),
+          (f) => OrderActorState.updateFailure(f),
+          (_) => const OrderActorState.updateSuccess(),
         );
       },
     );
-
   }
 }

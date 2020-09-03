@@ -2,12 +2,11 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:kt_dart/kt.dart';
 import 'package:localy/domain/core/value_objects.dart';
-import 'package:localy/domain/menu_item/menu_option_entity.dart';
-import 'package:localy/domain/menu_item/menu_option_item_entity.dart';
+import 'package:localy/domain/menu_option/menu_option_entity.dart';
+import 'package:localy/domain/menu_option/menu_option_item_entity.dart';
 import 'package:localy/infrastructure/menu_item/menu_option_item_entity_dtos.dart';
 
 part 'menu_option_entity_dtos.freezed.dart';
-
 part 'menu_option_entity_dtos.g.dart';
 
 @freezed

@@ -1,7 +1,7 @@
 part of 'menu_item_form_bloc.dart';
 
 @freezed
-abstract class MenuItemFormState with _$MenuItemFormState{
+abstract class MenuItemFormState with _$MenuItemFormState {
   const factory MenuItemFormState({
     @required MenuItem menuItem,
     @required bool showErrorMessages,
@@ -11,10 +11,10 @@ abstract class MenuItemFormState with _$MenuItemFormState{
   }) = _MenuItemFormState;
 
   factory MenuItemFormState.initial() => MenuItemFormState(
-      menuItem: MenuItem.empty(),
-      showErrorMessages: false,
-      isEditing: false,
-      isSaving: false,
-      saveFailureOrSuccessOption: none()
-  );
+        menuItem: MenuItem.empty(),
+        showErrorMessages: false,
+        isEditing: false,
+        isSaving: false,
+        saveFailureOrSuccessOption: none(),
+      );
 }

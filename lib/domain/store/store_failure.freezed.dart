@@ -38,6 +38,7 @@ mixin _$StoreFailure {
     @required Result insufficientPermission(),
     @required Result unableToUpdate(),
   });
+
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result unexpected(),
@@ -45,12 +46,14 @@ mixin _$StoreFailure {
     Result unableToUpdate(),
     @required Result orElse(),
   });
+
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result unexpected(UnexpectetStore value),
     @required Result insufficientPermission(InsufficientStorePermission value),
     @required Result unableToUpdate(UnableToUpdateStore value),
   });
+
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result unexpected(UnexpectetStore value),
@@ -70,6 +73,7 @@ class _$StoreFailureCopyWithImpl<$Res> implements $StoreFailureCopyWith<$Res> {
   _$StoreFailureCopyWithImpl(this._value, this._then);
 
   final StoreFailure _value;
+
   // ignore: unused_field
   final $Res Function(StoreFailure) _then;
 }

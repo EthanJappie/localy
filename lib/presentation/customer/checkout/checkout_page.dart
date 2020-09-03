@@ -16,9 +16,8 @@ import 'package:localy/presentation/customer/checkout/widgets/location_delivery_
 import 'package:localy/presentation/customer/checkout/widgets/other_field.dart';
 
 class CheckoutPage extends StatefulWidget {
-  final BuildContext blocContext;
-
   const CheckoutPage({Key key, this.blocContext}) : super(key: key);
+  final BuildContext blocContext;
 
   @override
   _CheckoutPageState createState() {
@@ -37,7 +36,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
             children: <Widget>[
               Scaffold(
                 appBar: AppBar(
-                  title: const Text("Checkout"),
+                  title: const Text('Checkout'),
                 ),
                 body: Container(
                   margin: const EdgeInsets.symmetric(horizontal: 16),
@@ -47,7 +46,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                       children: <Widget>[
                         const SizedBox(height: 16),
                         Text(
-                          "${state.order.menuItems.length} Items added",
+                          '${state.order.menuItems.length} Items added',
                           style: const TextStyle(fontWeight: FontWeight.bold),
                         ),
                         const SizedBox(
@@ -58,9 +57,9 @@ class _CheckoutPageState extends State<CheckoutPage> {
                             .toList(),
                         const Divider(),
                         LocalyEntryField(
-                          "Phone Number",
+                          'Phone Number',
                           isNumber: true,
-                          hintText: "081 234 5678",
+                          hintText: '081 234 5678',
                           onChanged: (String value) {
                             widget.blocContext.bloc<OrderFormBloc>().add(
                                   OrderFormEvent.customerAddedPhoneNumber(
@@ -70,8 +69,8 @@ class _CheckoutPageState extends State<CheckoutPage> {
                           },
                         ),
                         LocalyEntryField(
-                          "Additional Information",
-                          hintText: "No tomatoes, etc..",
+                          'Additional Information',
+                          hintText: 'No tomatoes, etc..',
                           onChanged: (String value) {
                             widget.blocContext.bloc<OrderFormBloc>().add(
                                   OrderFormEvent.addedNote(
@@ -90,21 +89,21 @@ class _CheckoutPageState extends State<CheckoutPage> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
-                            const Text("Total"),
+                            const Text('Total'),
                             Text(
-                                "R${calculateCost(state.order.menuItems).toStringAsFixed(2)}")
+                                'R${calculateCost(state.order.menuItems).toStringAsFixed(2)}')
                           ],
                         ),
                         const SizedBox(height: 8),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
-                            const Text("Delivery"),
+                            const Text('Delivery'),
                             Text(
                               state.order.deliveryCost == null ||
                                       state.order.deliveryCost == 0.0
-                                  ? "R0.00"
-                                  : "R${state.order.deliveryCost.toStringAsFixed(2)}",
+                                  ? 'R0.00'
+                                  : 'R${state.order.deliveryCost.toStringAsFixed(2)}',
                             ),
                           ],
                         ),
@@ -113,14 +112,14 @@ class _CheckoutPageState extends State<CheckoutPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
                             Text(
-                              "Total",
+                              'Total',
                               style: TextStyle(
                                 color: Theme.of(context).primaryColor,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
                             Text(
-                              "R${calculateCost(state.order.menuItems, costOfDelivery: state.order.deliveryCost).toStringAsFixed(2)}",
+                              'R${calculateCost(state.order.menuItems, costOfDelivery: state.order.deliveryCost).toStringAsFixed(2)}',
                               style: TextStyle(
                                 color: Theme.of(context).primaryColor,
                                 fontWeight: FontWeight.bold,
@@ -131,7 +130,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                         const SizedBox(height: 32),
                         LocalyButton(
                           strikeThrough: state.order.menuItems.isEmpty,
-                          title: "Proceed to checkout",
+                          title: 'Proceed to checkout',
                           onPressed: () {
                             if (state.order.menuItems.isNotEmpty) {
                               widget.blocContext
@@ -159,18 +158,17 @@ class _CheckoutPageState extends State<CheckoutPage> {
                   FlushbarHelper.createError(
                     duration: const Duration(seconds: 5),
                     message: failure.map(
-                        // Use localized strings here in your apps
-                        insufficientPermission: (_) =>
-                            'Insufficient permissions ❌',
-                        unableToUpdate: (_) =>
-                            "Couldn't update the note. Was it deleted from another device?",
-                        unexpected: (_) =>
-                            'Unexpected error occurred, please contact support.'),
+                      // Use localized strings here in your apps
+                      insufficientPermission: (_) =>
+                          'Insufficient permissions ❌',
+                      unableToUpdate: (_) =>
+                          "Couldn't update the note. Was it deleted from another device?",
+                      unexpected: (_) =>
+                          'Unexpected error occurred, please contact support.',
+                    ),
                   ).show(context);
                 },
                 (_) {
-                  // Can't be just a simple pop. If another route (like a Flushbar) is on top of stack, we'll need to pop even that to get to
-                  // the overview page.
                   ExtendedNavigator.of(context)
                       .replace(Routes.customerHomePage);
                 },
@@ -190,7 +188,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              if (menuItem.imageUrl.value.fold((l) => "", (r) => r).isEmpty)
+              if (menuItem.imageUrl.value.fold((l) => '', (r) => r).isEmpty)
                 Container(
                   margin: const EdgeInsets.only(right: 16, left: 8),
                   height: 40,
@@ -212,7 +210,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                       fit: BoxFit.cover,
                       image: NetworkImage(
                         menuItem.imageUrl.value.fold(
-                          (l) => "",
+                          (l) => '',
                           (r) => r,
                         ),
                       ),
@@ -279,7 +277,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                               backgroundColor: Colors.grey[300],
                               child: Text(
                                 menuItem.count == null
-                                    ? "1"
+                                    ? '1'
                                     : menuItem.count.toString(),
                                 style: const TextStyle(color: Colors.white),
                               ),
@@ -303,7 +301,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                           ],
                         ),
                         Text(
-                          "R${menuItem.price}",
+                          'R${menuItem.price}',
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: Theme.of(context).primaryColor,

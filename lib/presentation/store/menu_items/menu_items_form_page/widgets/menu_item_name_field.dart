@@ -18,9 +18,8 @@ class MenuItemNameField extends HookWidget {
       buildWhen: (p, c) => p.menuItem.name != c.menuItem.name,
       builder: (context, state) {
         return LocalyEntryField(
-          "Menu item name",
-
-          hintText: "Spaghetti",
+          'Menu item name',
+          hintText: 'Spaghetti',
           controller: textEditingController,
           onChanged: (value) => context
               .bloc<MenuItemFormBloc>()
@@ -28,7 +27,7 @@ class MenuItemNameField extends HookWidget {
           validator: (_) =>
               context.bloc<MenuItemFormBloc>().state.menuItem.name.value.fold(
                     (f) => f.maybeMap(
-                      empty: (f) => "Cannot be empty",
+                      empty: (f) => 'Cannot be empty',
                       orElse: () => null,
                     ),
                     (_) => null,

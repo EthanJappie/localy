@@ -11,19 +11,16 @@ import 'package:localy/domain/order/order_failure.dart';
 import 'package:meta/meta.dart';
 
 part 'order_watcher_bloc.freezed.dart';
-
 part 'order_watcher_event.dart';
-
 part 'order_watcher_state.dart';
 
 @injectable
 class OrderWatcherBloc extends Bloc<OrderWatcherEvent, OrderWatcherState> {
+  OrderWatcherBloc(this._orderRepository)
+      : super(const OrderWatcherState.initial());
   final IOrderRepository _orderRepository;
   StreamSubscription<Either<OrderFailure, KtList<StoreOrder>>>
       _orderStreamSubscription;
-
-  OrderWatcherBloc(this._orderRepository)
-      : super(const OrderWatcherState.initial());
 
   @override
   Stream<OrderWatcherState> mapEventToState(

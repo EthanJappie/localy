@@ -32,10 +32,10 @@ class PushNotificationsManager {
   }
 
   static Future<void> onMessage(Map<String, dynamic> message) async {
-    if (message.containsKey("notification")) {
+    if (message.containsKey('notification')) {
       final notification = message['notification'];
 
-      showNotification(
+      await showNotification(
         notification['title'] as String,
         notification['body'] as String,
       );
@@ -43,10 +43,10 @@ class PushNotificationsManager {
   }
 
   static Future<void> onBackgroundMessage(Map<String, dynamic> message) async {
-    if (message.containsKey("notification")) {
+    if (message.containsKey('notification')) {
       final notification = message['notification'];
 
-      showNotification(
+      await showNotification(
         notification['title'] as String,
         notification['body'] as String,
       );
@@ -54,10 +54,10 @@ class PushNotificationsManager {
   }
 
   static Future<void> onLaunch(Map<String, dynamic> message) async {
-    if (message.containsKey("notification")) {
+    if (message.containsKey('notification')) {
       final notification = message['notification'];
 
-      showNotification(
+      await showNotification(
         notification['title'] as String,
         notification['body'] as String,
       );
@@ -65,10 +65,10 @@ class PushNotificationsManager {
   }
 
   static Future<void> onResume(Map<String, dynamic> message) async {
-    if (message.containsKey("notification")) {
+    if (message.containsKey('notification')) {
       final notification = message['notification'];
 
-      showNotification(
+      await showNotification(
         notification['title'] as String,
         notification['body'] as String,
       );

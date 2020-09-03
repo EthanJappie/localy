@@ -8,6 +8,7 @@ part of 'menu_option_entity_dtos.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
 MenuOptionEntityDTO _$MenuOptionEntityDTOFromJson(Map<String, dynamic> json) {
   return _MenuOptionEntityDTO.fromJson(json);
 }
@@ -33,10 +34,13 @@ const $MenuOptionEntityDTO = _$MenuOptionEntityDTOTearOff();
 
 mixin _$MenuOptionEntityDTO {
   String get attributeName;
+
   List<MenuOptionItemEntityDTO> get menuOptionsItems;
+
   String get id;
 
   Map<String, dynamic> toJson();
+
   $MenuOptionEntityDTOCopyWith<MenuOptionEntityDTO> get copyWith;
 }
 
@@ -44,6 +48,7 @@ abstract class $MenuOptionEntityDTOCopyWith<$Res> {
   factory $MenuOptionEntityDTOCopyWith(
           MenuOptionEntityDTO value, $Res Function(MenuOptionEntityDTO) then) =
       _$MenuOptionEntityDTOCopyWithImpl<$Res>;
+
   $Res call(
       {String attributeName,
       List<MenuOptionItemEntityDTO> menuOptionsItems,
@@ -55,6 +60,7 @@ class _$MenuOptionEntityDTOCopyWithImpl<$Res>
   _$MenuOptionEntityDTOCopyWithImpl(this._value, this._then);
 
   final MenuOptionEntityDTO _value;
+
   // ignore: unused_field
   final $Res Function(MenuOptionEntityDTO) _then;
 
@@ -81,6 +87,7 @@ abstract class _$MenuOptionEntityDTOCopyWith<$Res>
   factory _$MenuOptionEntityDTOCopyWith(_MenuOptionEntityDTO value,
           $Res Function(_MenuOptionEntityDTO) then) =
       __$MenuOptionEntityDTOCopyWithImpl<$Res>;
+
   @override
   $Res call(
       {String attributeName,
@@ -173,6 +180,7 @@ class _$_MenuOptionEntityDTO extends _MenuOptionEntityDTO {
 
 abstract class _MenuOptionEntityDTO extends MenuOptionEntityDTO {
   const _MenuOptionEntityDTO._() : super._();
+
   const factory _MenuOptionEntityDTO(
       {@required String attributeName,
       @required List<MenuOptionItemEntityDTO> menuOptionsItems,
@@ -183,10 +191,13 @@ abstract class _MenuOptionEntityDTO extends MenuOptionEntityDTO {
 
   @override
   String get attributeName;
+
   @override
   List<MenuOptionItemEntityDTO> get menuOptionsItems;
+
   @override
   String get id;
+
   @override
   _$MenuOptionEntityDTOCopyWith<_MenuOptionEntityDTO> get copyWith;
 }

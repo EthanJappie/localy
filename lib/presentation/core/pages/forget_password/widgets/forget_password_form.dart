@@ -1,10 +1,10 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:clippy_flutter/diagonal.dart';
 import 'package:flushbar/flushbar_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:localy/application/forget_password_form/forget_password_form_bloc.dart';
-import 'package:clippy_flutter/diagonal.dart';
 import 'package:localy/presentation/core/widgets/localy_entry_field.dart';
 
 class ForgetPasswordForm extends StatelessWidget {
@@ -28,8 +28,8 @@ class ForgetPasswordForm extends StatelessWidget {
             },
             (_) {
               FlushbarHelper.createInformation(
-                title: "Password Reset",
-                message: "Password reset link has been sent to your email",
+                title: 'Password Reset',
+                message: 'Password reset link has been sent to your email',
               ).show(context);
             },
           ),
@@ -56,12 +56,12 @@ class ForgetPasswordForm extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: <Widget>[
-                          SvgPicture.asset("assets/images/ingredients.svg"),
+                          SvgPicture.asset('assets/images/ingredients.svg'),
                         ],
                       ),
                       Container(
                         margin: const EdgeInsets.all(32),
-                        child: Text("Hi 👋\nWelcome to\nLocaly",
+                        child: Text('Hi 👋\nWelcome to\nLocaly',
                             style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.w800,
@@ -98,18 +98,18 @@ class ForgetPasswordForm extends StatelessWidget {
                           ),
                           const SizedBox(height: 16),
                           const Text(
-                            "Forget Password",
+                            'Forget Password',
                             style: TextStyle(
                               fontWeight: FontWeight.w900,
                               fontSize: 32,
                             ),
                           ),
                           const Text(
-                              "Enter your email address and we will send you an email to reset your passsword."),
+                              'Enter your email address and we will send you an email to reset your passsword.'),
                           const SizedBox(height: 8),
                           LocalyEntryField(
-                            "Email Address",
-                            hintText: "Enter your email address",
+                            'Email Address',
+                            hintText: 'Enter your email address',
                             icon: Icons.email,
                             onChanged: (value) => context
                                 .bloc<ForgetPasswordFormBloc>()
@@ -150,7 +150,7 @@ class ForgetPasswordForm extends StatelessWidget {
                                         );
                                   },
                                   child: const Text(
-                                    "Reset Password",
+                                    'Reset Password',
                                     style:
                                         TextStyle(fontWeight: FontWeight.bold),
                                   ),

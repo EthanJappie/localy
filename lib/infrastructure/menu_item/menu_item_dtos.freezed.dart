@@ -8,6 +8,7 @@ part of 'menu_item_dtos.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
 MenuItemDTO _$MenuItemDTOFromJson(Map<String, dynamic> json) {
   return _MenuItemDTO.fromJson(json);
 }
@@ -47,17 +48,27 @@ const $MenuItemDTO = _$MenuItemDTOTearOff();
 
 mixin _$MenuItemDTO {
   String get name;
+
   String get description;
+
   double get price;
+
   int get sequenceOfAppearance;
+
   String get menuID;
+
   bool get hidden;
+
   String get imageUrl;
+
   int get count;
+
   String get id;
+
   List<MenuOptionEntityDTO> get menuOptions;
 
   Map<String, dynamic> toJson();
+
   $MenuItemDTOCopyWith<MenuItemDTO> get copyWith;
 }
 
@@ -65,6 +76,7 @@ abstract class $MenuItemDTOCopyWith<$Res> {
   factory $MenuItemDTOCopyWith(
           MenuItemDTO value, $Res Function(MenuItemDTO) then) =
       _$MenuItemDTOCopyWithImpl<$Res>;
+
   $Res call(
       {String name,
       String description,
@@ -82,6 +94,7 @@ class _$MenuItemDTOCopyWithImpl<$Res> implements $MenuItemDTOCopyWith<$Res> {
   _$MenuItemDTOCopyWithImpl(this._value, this._then);
 
   final MenuItemDTO _value;
+
   // ignore: unused_field
   final $Res Function(MenuItemDTO) _then;
 
@@ -123,6 +136,7 @@ abstract class _$MenuItemDTOCopyWith<$Res>
   factory _$MenuItemDTOCopyWith(
           _MenuItemDTO value, $Res Function(_MenuItemDTO) then) =
       __$MenuItemDTOCopyWithImpl<$Res>;
+
   @override
   $Res call(
       {String name,
@@ -284,6 +298,7 @@ class _$_MenuItemDTO extends _MenuItemDTO {
 
 abstract class _MenuItemDTO extends MenuItemDTO {
   const _MenuItemDTO._() : super._();
+
   const factory _MenuItemDTO(
       {@required String name,
       @required String description,
@@ -301,24 +316,34 @@ abstract class _MenuItemDTO extends MenuItemDTO {
 
   @override
   String get name;
+
   @override
   String get description;
+
   @override
   double get price;
+
   @override
   int get sequenceOfAppearance;
+
   @override
   String get menuID;
+
   @override
   bool get hidden;
+
   @override
   String get imageUrl;
+
   @override
   int get count;
+
   @override
   String get id;
+
   @override
   List<MenuOptionEntityDTO> get menuOptions;
+
   @override
   _$MenuItemDTOCopyWith<_MenuItemDTO> get copyWith;
 }

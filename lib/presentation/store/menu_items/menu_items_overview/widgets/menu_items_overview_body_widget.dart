@@ -5,12 +5,12 @@ import 'package:localy/application/menu_item/menu_item_watcher/menu_item_watcher
 import 'package:localy/presentation/core/routes/router.gr.dart';
 
 class MenuItemsOverviewBodyWidget extends StatelessWidget {
-  final String menuID;
 
   const MenuItemsOverviewBodyWidget({
     Key key,
     @required this.menuID,
   }) : super(key: key);
+  final String menuID;
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class MenuItemsOverviewBodyWidget extends StatelessWidget {
                 child: Container(
                   margin: const EdgeInsets.all(16),
                   child: const Text(
-                    "No menu items.",
+                    'No menu items.',
                     textAlign: TextAlign.center,
                   ),
                 ),
@@ -40,7 +40,7 @@ class MenuItemsOverviewBodyWidget extends StatelessWidget {
                   return ListTile(
                     onTap: () {
                       ExtendedNavigator.of(context).pushViewReviewsPage(
-                        type: "menuItem",
+                        type: 'menuItem',
                         typeID: menuItem.id.getOrCrash(),
                         isStore: true,
                         showAppBar: true,
@@ -54,7 +54,7 @@ class MenuItemsOverviewBodyWidget extends StatelessWidget {
                     trailing: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Text("R${menuItem.price}"),
+                        Text('R${menuItem.price}'),
                         const SizedBox(width: 16),
                         InkWell(
                           onTap: () {
@@ -75,7 +75,7 @@ class MenuItemsOverviewBodyWidget extends StatelessWidget {
             }
           },
           loadFailure: (state) {
-            return const Center(child: Text("Unable to load menu items"));
+            return const Center(child: Text('Unable to load menu items'));
           },
         );
       },

@@ -39,15 +39,15 @@ abstract class Restaurant implements _$Restaurant {
   factory Restaurant.empty() => Restaurant(
         id: UniqueId(),
         ownerID: ValueString(),
-        storeName: ValueString.fromString(""),
-        address: ValueString.fromString(""),
+        storeName: ValueString.fromString(''),
+        address: ValueString.fromString(''),
         token: ValueString(),
-        coverImageUrl: "",
+        coverImageUrl: '',
         coordinates: FireCoordinates.zero(),
         workingHoursFrom: WorkingHours(Timestamp.now()),
         workingHoursTo: WorkingHours(Timestamp.now()),
-        telephoneNumber: ValueString.fromString(""),
-        notes: ValueString.fromString(""),
+        telephoneNumber: ValueString.fromString(''),
+        notes: ValueString.fromString(''),
         active: true,
         open: true,
         acceptingStaffRequests: false,
@@ -69,7 +69,7 @@ abstract class Restaurant implements _$Restaurant {
         .andThen(notes.failureOrUnit)
         .andThen(address.failureOrUnit)
         .fold(
-          (f) => some(f),
+          some,
           (_) => none(),
         );
   }

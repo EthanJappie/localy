@@ -17,14 +17,13 @@ class LocationDeliveryField extends StatelessWidget {
             children: <Widget>[
               const SizedBox(height: 16),
               LocalyLocationPicker(
-                title: "Your address",
+                title: 'Your address',
                 context: context,
                 address:
-                    state.order.deliveryAddress.value.fold((l) => "", (r) => r),
+                    state.order.deliveryAddress.value.fold((l) => '', (r) => r),
                 onLocationChanged: (value) {
-                  context
-                      .bloc<OrderFormBloc>()
-                      .add(OrderFormEvent.customerAddedDeliveryCoordinates(value));
+                  context.bloc<OrderFormBloc>().add(
+                      OrderFormEvent.customerAddedDeliveryCoordinates(value));
                 },
                 onAddressChanged: (value) {
                   context

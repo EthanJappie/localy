@@ -36,10 +36,15 @@ const $Menu = _$MenuTearOff();
 
 mixin _$Menu {
   UniqueId get id;
+
   ValueString get storeID;
+
   ValueString get name;
+
   ValueString get notes;
+
   int get sequenceOfAppearance;
+
   bool get hidden;
 
   $MenuCopyWith<Menu> get copyWith;
@@ -48,6 +53,7 @@ mixin _$Menu {
 abstract class $MenuCopyWith<$Res> {
   factory $MenuCopyWith(Menu value, $Res Function(Menu) then) =
       _$MenuCopyWithImpl<$Res>;
+
   $Res call(
       {UniqueId id,
       ValueString storeID,
@@ -61,6 +67,7 @@ class _$MenuCopyWithImpl<$Res> implements $MenuCopyWith<$Res> {
   _$MenuCopyWithImpl(this._value, this._then);
 
   final Menu _value;
+
   // ignore: unused_field
   final $Res Function(Menu) _then;
 
@@ -89,6 +96,7 @@ class _$MenuCopyWithImpl<$Res> implements $MenuCopyWith<$Res> {
 abstract class _$MenuCopyWith<$Res> implements $MenuCopyWith<$Res> {
   factory _$MenuCopyWith(_Menu value, $Res Function(_Menu) then) =
       __$MenuCopyWithImpl<$Res>;
+
   @override
   $Res call(
       {UniqueId id,
@@ -197,6 +205,7 @@ class _$_Menu extends _Menu {
 
 abstract class _Menu extends Menu {
   const _Menu._() : super._();
+
   const factory _Menu(
       {@required UniqueId id,
       @required ValueString storeID,
@@ -207,16 +216,22 @@ abstract class _Menu extends Menu {
 
   @override
   UniqueId get id;
+
   @override
   ValueString get storeID;
+
   @override
   ValueString get name;
+
   @override
   ValueString get notes;
+
   @override
   int get sequenceOfAppearance;
+
   @override
   bool get hidden;
+
   @override
   _$MenuCopyWith<_Menu> get copyWith;
 }

@@ -9,14 +9,15 @@ class AcceptingStaffRequestsField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<StoreFormBloc, StoreFormState>(
-      buildWhen: (p, c) => p.store.acceptingStaffRequests != c.store.acceptingStaffRequests,
+      buildWhen: (p, c) =>
+          p.store.acceptingStaffRequests != c.store.acceptingStaffRequests,
       builder: (context, state) {
         return LocalySwitch(
-          title: "Accepting Staff Requests",
+          title: 'Accepting Staff Requests',
           condition: state.store.acceptingStaffRequests,
-          onChanged: (value) => context
-              .bloc<StoreFormBloc>()
-              .add(StoreFormEvent.acceptingStaffRequestsChanged(acceptingStaffRequests: value)),
+          onChanged: (value) => context.bloc<StoreFormBloc>().add(
+              StoreFormEvent.acceptingStaffRequestsChanged(
+                  acceptingStaffRequests: value)),
         );
       },
     );

@@ -10,7 +10,5 @@ abstract class BundleEntity implements _$BundleEntity {
     @required int numberOfCredits,
   }) = _BundleEntity;
 
-  factory BundleEntity.empty() => const BundleEntity(
-    numberOfCredits: 0
-  );
+  factory BundleEntity.empty() => const BundleEntity(numberOfCredits: 0);
 }

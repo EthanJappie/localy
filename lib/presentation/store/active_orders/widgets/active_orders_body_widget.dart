@@ -24,7 +24,7 @@ class _ActiveOrdersBodyWidgetState extends State<ActiveOrdersBodyWidget> {
 
             if (orders.isEmpty()) {
               return const Center(
-                child: Text("No Orders"),
+                child: Text('No Orders'),
               );
             }
             return ListView.separated(
@@ -37,9 +37,9 @@ class _ActiveOrdersBodyWidgetState extends State<ActiveOrdersBodyWidget> {
                         .pushViewOrderPage(order: order);
                   },
                   title: Text(
-                      "OrderID: ${orderID.substring(orderID.length - 5, orderID.length)}-${orderID.substring(0, 5)}"),
+                      'OrderID: ${orderID.substring(orderID.length - 5, orderID.length)}-${orderID.substring(0, 5)}'),
                   subtitle: Text(
-                    "Items: ${order.menuItems.length}",
+                    'Items: ${order.menuItems.length}',
                   ),
                 );
               },
@@ -48,7 +48,7 @@ class _ActiveOrdersBodyWidgetState extends State<ActiveOrdersBodyWidget> {
             );
           },
           loadFailure: (_) {
-            return const Center(child: Text("Unable to load menu items"));
+            return const Center(child: Text('Unable to load menu items'));
           },
         );
       },

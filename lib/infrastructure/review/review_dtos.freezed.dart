@@ -8,6 +8,7 @@ part of 'review_dtos.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
 ReviewDTO _$ReviewDTOFromJson(Map<String, dynamic> json) {
   return _ReviewDTO.fromJson(json);
 }
@@ -38,18 +39,24 @@ const $ReviewDTO = _$ReviewDTOTearOff();
 mixin _$ReviewDTO {
   @JsonKey(ignore: true)
   String get id;
+
   String get review;
+
   String get type;
+
   String get typeID;
+
   int get score;
 
   Map<String, dynamic> toJson();
+
   $ReviewDTOCopyWith<ReviewDTO> get copyWith;
 }
 
 abstract class $ReviewDTOCopyWith<$Res> {
   factory $ReviewDTOCopyWith(ReviewDTO value, $Res Function(ReviewDTO) then) =
       _$ReviewDTOCopyWithImpl<$Res>;
+
   $Res call(
       {@JsonKey(ignore: true) String id,
       String review,
@@ -62,6 +69,7 @@ class _$ReviewDTOCopyWithImpl<$Res> implements $ReviewDTOCopyWith<$Res> {
   _$ReviewDTOCopyWithImpl(this._value, this._then);
 
   final ReviewDTO _value;
+
   // ignore: unused_field
   final $Res Function(ReviewDTO) _then;
 
@@ -87,6 +95,7 @@ abstract class _$ReviewDTOCopyWith<$Res> implements $ReviewDTOCopyWith<$Res> {
   factory _$ReviewDTOCopyWith(
           _ReviewDTO value, $Res Function(_ReviewDTO) then) =
       __$ReviewDTOCopyWithImpl<$Res>;
+
   @override
   $Res call(
       {@JsonKey(ignore: true) String id,
@@ -193,6 +202,7 @@ class _$_ReviewDTO extends _ReviewDTO {
 
 abstract class _ReviewDTO extends ReviewDTO {
   const _ReviewDTO._() : super._();
+
   const factory _ReviewDTO(
       {@JsonKey(ignore: true) String id,
       @required String review,
@@ -206,14 +216,19 @@ abstract class _ReviewDTO extends ReviewDTO {
   @override
   @JsonKey(ignore: true)
   String get id;
+
   @override
   String get review;
+
   @override
   String get type;
+
   @override
   String get typeID;
+
   @override
   int get score;
+
   @override
   _$ReviewDTOCopyWith<_ReviewDTO> get copyWith;
 }

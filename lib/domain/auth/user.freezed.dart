@@ -33,6 +33,7 @@ abstract class $UserEntityCopyWith<$Res> {
   factory $UserEntityCopyWith(
           UserEntity value, $Res Function(UserEntity) then) =
       _$UserEntityCopyWithImpl<$Res>;
+
   $Res call({UniqueId id});
 }
 
@@ -40,6 +41,7 @@ class _$UserEntityCopyWithImpl<$Res> implements $UserEntityCopyWith<$Res> {
   _$UserEntityCopyWithImpl(this._value, this._then);
 
   final UserEntity _value;
+
   // ignore: unused_field
   final $Res Function(UserEntity) _then;
 
@@ -57,6 +59,7 @@ abstract class _$UserEntityCopyWith<$Res> implements $UserEntityCopyWith<$Res> {
   factory _$UserEntityCopyWith(
           _UserEntity value, $Res Function(_UserEntity) then) =
       __$UserEntityCopyWithImpl<$Res>;
+
   @override
   $Res call({UniqueId id});
 }
@@ -113,6 +116,7 @@ abstract class _UserEntity implements UserEntity {
 
   @override
   UniqueId get id;
+
   @override
   _$UserEntityCopyWith<_UserEntity> get copyWith;
 }

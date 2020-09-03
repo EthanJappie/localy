@@ -8,6 +8,7 @@ part of 'store_dtos.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
+
 StoreDTO _$StoreDTOFromJson(Map<String, dynamic> json) {
   return _StoreDTO.fromJson(json);
 }
@@ -73,41 +74,65 @@ const $StoreDTO = _$StoreDTOTearOff();
 
 mixin _$StoreDTO {
   String get ownerID;
+
   String get storeName;
+
   String get address;
+
   String get token;
+
   @GeoPointConverters()
   GeoFirePoint get coordinates;
+
   @TimestampConverter()
   Timestamp get workingHoursFrom;
+
   @TimestampConverter()
   Timestamp get workingHoursTo;
+
   String get telephoneNumber;
+
   bool get active;
+
   bool get open;
+
   bool get acceptingStaffRequests;
+
   bool get acceptCash;
+
   bool get acceptCard;
+
   bool get acceptOther;
+
   bool get foodDeliveries;
+
   bool get foodCollection;
+
   bool get isHalaal;
+
   @ServerTimestampConverter()
   FieldValue get serverTimeStamp;
+
   @JsonKey(ignore: true)
   String get id;
+
   String get coverImageUrl;
+
   String get logoImageUrl;
+
   String get notes;
+
   double get deliveryCosts;
 
   Map<String, dynamic> toJson();
+
   $StoreDTOCopyWith<StoreDTO> get copyWith;
 }
 
 abstract class $StoreDTOCopyWith<$Res> {
   factory $StoreDTOCopyWith(StoreDTO value, $Res Function(StoreDTO) then) =
       _$StoreDTOCopyWithImpl<$Res>;
+
   $Res call(
       {String ownerID,
       String storeName,
@@ -138,6 +163,7 @@ class _$StoreDTOCopyWithImpl<$Res> implements $StoreDTOCopyWith<$Res> {
   _$StoreDTOCopyWithImpl(this._value, this._then);
 
   final StoreDTO _value;
+
   // ignore: unused_field
   final $Res Function(StoreDTO) _then;
 
@@ -223,6 +249,7 @@ class _$StoreDTOCopyWithImpl<$Res> implements $StoreDTOCopyWith<$Res> {
 abstract class _$StoreDTOCopyWith<$Res> implements $StoreDTOCopyWith<$Res> {
   factory _$StoreDTOCopyWith(_StoreDTO value, $Res Function(_StoreDTO) then) =
       __$StoreDTOCopyWithImpl<$Res>;
+
   @override
   $Res call(
       {String ownerID,
@@ -551,6 +578,7 @@ class _$_StoreDTO extends _StoreDTO {
 
 abstract class _StoreDTO extends StoreDTO {
   const _StoreDTO._() : super._();
+
   const factory _StoreDTO(
       {@required String ownerID,
       @required String storeName,
@@ -580,55 +608,78 @@ abstract class _StoreDTO extends StoreDTO {
 
   @override
   String get ownerID;
+
   @override
   String get storeName;
+
   @override
   String get address;
+
   @override
   String get token;
+
   @override
   @GeoPointConverters()
   GeoFirePoint get coordinates;
+
   @override
   @TimestampConverter()
   Timestamp get workingHoursFrom;
+
   @override
   @TimestampConverter()
   Timestamp get workingHoursTo;
+
   @override
   String get telephoneNumber;
+
   @override
   bool get active;
+
   @override
   bool get open;
+
   @override
   bool get acceptingStaffRequests;
+
   @override
   bool get acceptCash;
+
   @override
   bool get acceptCard;
+
   @override
   bool get acceptOther;
+
   @override
   bool get foodDeliveries;
+
   @override
   bool get foodCollection;
+
   @override
   bool get isHalaal;
+
   @override
   @ServerTimestampConverter()
   FieldValue get serverTimeStamp;
+
   @override
   @JsonKey(ignore: true)
   String get id;
+
   @override
   String get coverImageUrl;
+
   @override
   String get logoImageUrl;
+
   @override
   String get notes;
+
   @override
   double get deliveryCosts;
+
   @override
   _$StoreDTOCopyWith<_StoreDTO> get copyWith;
 }

@@ -7,18 +7,15 @@ import 'package:localy/domain/menu_item/i_menu_item_repository.dart';
 import 'package:localy/domain/menu_item/menu_item.dart';
 import 'package:localy/domain/menu_item/menu_item_failure.dart';
 
-part 'menu_item_actor_event.dart';
-
-part 'menu_item_actor_state.dart';
-
 part 'menu_item_actor_bloc.freezed.dart';
+part 'menu_item_actor_event.dart';
+part 'menu_item_actor_state.dart';
 
 @injectable
 class MenuItemActorBloc extends Bloc<MenuItemActorEvent, MenuItemActorState> {
-  final IMenuItemRepository _menuItemRepository;
-
   MenuItemActorBloc(this._menuItemRepository)
       : super(const MenuItemActorState.initial());
+  final IMenuItemRepository _menuItemRepository;
 
   @override
   Stream<MenuItemActorState> mapEventToState(

@@ -13,9 +13,9 @@ import 'package:localy/presentation/store/completed_orders/completed_orders_page
 import 'package:localy/presentation/store/inactive_orders/inactive_orders_page.dart';
 
 class AdministrationPage extends StatefulWidget {
+  const AdministrationPage({Key key, @required this.store}) : super(key: key);
   final Restaurant store;
 
-  const AdministrationPage({Key key, @required this.store}) : super(key: key);
 
   @override
   _AdministrationPageState createState() => _AdministrationPageState();
@@ -42,18 +42,18 @@ class _AdministrationPageState extends State<AdministrationPage> {
         storeID: widget.store.id.getOrCrash(),
       ),
       ViewReviewsPage(
-        type: "store",
+        type: 'store',
         typeID: widget.store.id.getOrCrash(),
         isStore: true,
       ),
     ];
 
     _titles = [
-      "Menus",
-      "Active Orders",
-      "Inactive Orders",
-      "Completed Orders",
-      "Reviews",
+      'Menus',
+      'Active Orders',
+      'Inactive Orders',
+      'Completed Orders',
+      'Reviews',
     ];
 
     super.initState();
@@ -82,7 +82,7 @@ class _AdministrationPageState extends State<AdministrationPage> {
                     .pushStoreFormPage(editedStore: widget.store);
               },
               child: const Text(
-                "Edit",
+                'Edit',
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
@@ -105,23 +105,23 @@ class _AdministrationPageState extends State<AdministrationPage> {
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: Icon(Icons.menu),
-              title: Text("Menu"),
+              title: Text('Menu'),
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.receipt),
-              title: Text("Active"),
+              title: Text('Active'),
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.receipt),
-              title: Text("Inactive"),
+              title: Text('Inactive'),
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.receipt),
-              title: Text("Completed"),
+              title: Text('Completed'),
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.comment),
-              title: Text("Reviews"),
+              title: Text('Reviews'),
             ),
           ],
         ),

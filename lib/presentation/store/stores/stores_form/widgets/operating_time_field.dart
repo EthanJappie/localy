@@ -13,10 +13,6 @@ class OperatingTimeField extends StatelessWidget {
       buildWhen: (p, c) => p.store.workingHoursFrom != c.store.workingHoursFrom,
       builder: (context, state) {
         return TimeRange(
-//          initialRange: TimeRangeResult(
-//            TimeOfDay.fromDateTime(state.store.workingHoursFrom.getOrCrash().toDate()),
-//            TimeOfDay.fromDateTime(state.store.workingHoursTo.getOrCrash().toDate()),
-//          ),
           fromTitle: const Text(
             'From',
             style: TextStyle(

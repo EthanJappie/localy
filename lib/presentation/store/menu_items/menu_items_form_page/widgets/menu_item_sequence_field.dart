@@ -13,22 +13,22 @@ class MenuItemSequenceField extends HookWidget {
     return BlocConsumer<MenuItemFormBloc, MenuItemFormState>(
       listenWhen: (p, c) => p.isEditing != c.isEditing,
       listener: (context, state) {
-        textEditingController.text = "${state.menuItem.sequenceOfAppearance}";
+        textEditingController.text = '${state.menuItem.sequenceOfAppearance}';
       },
-      buildWhen: (p, c) => p.menuItem.sequenceOfAppearance != c.menuItem.sequenceOfAppearance,
+      buildWhen: (p, c) =>
+          p.menuItem.sequenceOfAppearance != c.menuItem.sequenceOfAppearance,
       builder: (context, state) {
         return LocalyEntryField(
-          "Sequence of appearance",
-          hintText: "0",
+          'Sequence of appearance',
+          hintText: '0',
           isNumber: true,
           controller: textEditingController,
-          onChanged: (value) => context
-              .bloc<MenuItemFormBloc>()
-              .add(MenuItemFormEvent.sequenceOfAppearanceChanged(int.parse(value))),
+          onChanged: (value) => context.bloc<MenuItemFormBloc>().add(
+              MenuItemFormEvent.sequenceOfAppearanceChanged(int.parse(value))),
           validator: (value) {
             if (value == null || value.isEmpty) {
-              return "Cannot be empty";
-            }else {
+              return 'Cannot be empty';
+            } else {
               return null;
             }
           },

@@ -5,12 +5,12 @@ import 'package:localy/application/menu_item/menu_item_watcher/menu_item_watcher
 import 'package:localy/presentation/core/routes/router.gr.dart';
 
 class CustomerMenuItemsBodyWidget extends StatelessWidget {
-  final String menuID;
-
   const CustomerMenuItemsBodyWidget({
     Key key,
     @required this.menuID,
   }) : super(key: key);
+  final String menuID;
+
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class CustomerMenuItemsBodyWidget extends StatelessWidget {
                 child: Container(
                   margin: const EdgeInsets.all(16),
                   child: const Text(
-                    "No menu items.",
+                    'No menu items.',
                     textAlign: TextAlign.center,
                   ),
                 ),
@@ -46,7 +46,7 @@ class CustomerMenuItemsBodyWidget extends StatelessWidget {
                     },
                     title: Text(menuItem.name.getOrCrash()),
                     subtitle: Text(menuItem.description.getOrCrash()),
-                    trailing: Text("R${menuItem.price}"),
+                    trailing: Text('R${menuItem.price}'),
                   );
                 },
                 separatorBuilder: (context, index) => const Divider(),
@@ -55,7 +55,7 @@ class CustomerMenuItemsBodyWidget extends StatelessWidget {
             }
           },
           loadFailure: (state) {
-            return const Center(child: Text("Unable to load menu items"));
+            return const Center(child: Text('Unable to load menu items'));
           },
         );
       },

@@ -12,7 +12,7 @@ class MenuItemHiddenField extends StatelessWidget {
       buildWhen: (p, c) => p.menuItem.hidden != c.menuItem.hidden,
       builder: (context, state) {
         return LocalySwitch(
-          title: "Hide this menu item",
+          title: 'Hide this menu item',
           condition: state.menuItem.hidden,
           onChanged: (value) => context
               .bloc<MenuItemFormBloc>()

@@ -1,11 +1,11 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:clippy_flutter/diagonal.dart';
 import 'package:flushbar/flushbar_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:localy/application/auth/auth_bloc.dart';
 import 'package:localy/application/sign_in_form/sign_in_form_bloc.dart';
-import 'package:clippy_flutter/diagonal.dart';
 import 'package:localy/environment_config.dart';
 import 'package:localy/presentation/core/routes/router.gr.dart';
 import 'package:localy/presentation/core/widgets/localy_button.dart';
@@ -31,11 +31,11 @@ class SignInForm extends StatelessWidget {
               ).show(context);
             },
             (_) {
-              if (EnvironmentConfig.APP_NAME == EnvironmentConfig.APP_NAME_LOCALY_MANAGER) {
+              if (EnvironmentConfig.APP_NAME ==
+                  EnvironmentConfig.APP_NAME_LOCALY_MANAGER) {
                 ExtendedNavigator.of(context).replace(Routes.homePage);
               } else {
-                ExtendedNavigator.of(context)
-                    .replace(Routes.customerHomePage);
+                ExtendedNavigator.of(context).replace(Routes.customerHomePage);
               }
               context
                   .bloc<AuthBloc>()
@@ -65,12 +65,12 @@ class SignInForm extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: <Widget>[
-                          SvgPicture.asset("assets/images/ingredients.svg"),
+                          SvgPicture.asset('assets/images/ingredients.svg'),
                         ],
                       ),
                       Container(
                         margin: const EdgeInsets.all(32),
-                        child: Text("Hi 👋\nWelcome to\nLocaly",
+                        child: Text('Hi 👋\nWelcome to\nLocaly',
                             style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.w800,
@@ -100,15 +100,15 @@ class SignInForm extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           const Text(
-                            "Login",
+                            'Login',
                             style: TextStyle(
                               fontWeight: FontWeight.w900,
                               fontSize: 32,
                             ),
                           ),
                           LocalyEntryField(
-                            "Email Address",
-                            hintText: "Enter your email address",
+                            'Email Address',
+                            hintText: 'Enter your email address',
                             icon: Icons.email,
                             onChanged: (value) => context
                                 .bloc<SignInFormBloc>()
@@ -127,8 +127,8 @@ class SignInForm extends StatelessWidget {
                                 ),
                           ),
                           LocalyEntryField(
-                            "Password",
-                            hintText: "Enter password",
+                            'Password',
+                            hintText: 'Enter password',
                             icon: Icons.lock,
                             isPassword: true,
                             onChanged: (value) => context
@@ -156,7 +156,7 @@ class SignInForm extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.end,
                               children: <Widget>[
                                 Text(
-                                  "Forget Password?",
+                                  'Forget Password?',
                                   textAlign: TextAlign.end,
                                   style: TextStyle(
                                     color: Theme.of(context).primaryColor,
@@ -168,7 +168,7 @@ class SignInForm extends StatelessWidget {
                           ),
                           const SizedBox(height: 32),
                           LocalyButton(
-                            title: "Sign In",
+                            title: 'Sign In',
                             onPressed: () {
                               context.bloc<SignInFormBloc>().add(
                                     const SignInFormEvent
@@ -199,7 +199,7 @@ class SignInForm extends StatelessWidget {
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: <Widget>[
                                       SvgPicture.asset(
-                                          "assets/images/ic_google.svg"),
+                                          'assets/images/ic_google.svg'),
                                       const SizedBox(width: 4),
                                       const Text(
                                         'Continue with Google',
@@ -225,15 +225,13 @@ class SignInForm extends StatelessWidget {
                                 },
                                 child: RichText(
                                   text: TextSpan(
-                                    // Note: Styles for TextSpans must be explicitly defined.
-                                    // Child text spans will inherit styles from parent
                                     style: const TextStyle(
                                       fontSize: 14.0,
                                       color: Colors.black,
                                     ),
                                     children: <TextSpan>[
                                       const TextSpan(
-                                        text: "Don't have an account? ",
+                                        text: "Don't have an account?",
                                         style: TextStyle(
                                           fontSize: 14,
                                         ),

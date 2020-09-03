@@ -14,15 +14,15 @@ class MenuNotesField extends HookWidget {
       listenWhen: (p, c) => p.isEditing != c.isEditing,
       listener: (context, state) {
         textEditingController.text = state.menu.notes.value.fold(
-          (l) => "",
+          (l) => '',
           (r) => r,
         );
       },
       buildWhen: (p, c) => p.menu.notes != c.menu.notes,
       builder: (context, state) {
         return LocalyEntryField(
-          "Notes (optional)",
-          hintText: "Only until 11am",
+          'Notes (optional)',
+          hintText: 'Only until 11am',
           controller: textEditingController,
           onChanged: (value) => context
               .bloc<MenuFormBloc>()
@@ -30,7 +30,7 @@ class MenuNotesField extends HookWidget {
           validator: (_) =>
               context.bloc<MenuFormBloc>().state.menu.notes.value.fold(
                     (f) => f.maybeMap(
-                      empty: (f) => "Cannot be empty",
+                      empty: (f) => 'Cannot be empty',
                       orElse: () => null,
                     ),
                     (_) => null,

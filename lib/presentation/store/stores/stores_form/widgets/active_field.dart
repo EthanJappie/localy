@@ -12,7 +12,7 @@ class ActiveField extends StatelessWidget {
       buildWhen: (p, c) => p.store.active != c.store.active,
       builder: (context, state) {
         return LocalySwitch(
-          title: "Active",
+          title: 'Active',
           condition: state.store.active,
           onChanged: (value) => context
               .bloc<StoreFormBloc>()

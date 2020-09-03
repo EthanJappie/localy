@@ -66,25 +66,45 @@ const $Restaurant = _$RestaurantTearOff();
 
 mixin _$Restaurant {
   UniqueId get id;
+
   ValueString get ownerID;
+
   ValueString get storeName;
+
   ValueString get address;
+
   ValueString get token;
+
   FireCoordinates get coordinates;
+
   WorkingHours get workingHoursFrom;
+
   WorkingHours get workingHoursTo;
+
   ValueString get telephoneNumber;
+
   ValueString get notes;
+
   bool get active;
+
   bool get open;
+
   bool get acceptingStaffRequests;
+
   bool get acceptCash;
+
   bool get acceptCard;
+
   bool get acceptOther;
+
   bool get foodDeliveries;
+
   bool get foodCollection;
+
   bool get isHalaal;
+
   String get coverImageUrl;
+
   double get deliveryCost;
 
   $RestaurantCopyWith<Restaurant> get copyWith;
@@ -94,6 +114,7 @@ abstract class $RestaurantCopyWith<$Res> {
   factory $RestaurantCopyWith(
           Restaurant value, $Res Function(Restaurant) then) =
       _$RestaurantCopyWithImpl<$Res>;
+
   $Res call(
       {UniqueId id,
       ValueString ownerID,
@@ -122,6 +143,7 @@ class _$RestaurantCopyWithImpl<$Res> implements $RestaurantCopyWith<$Res> {
   _$RestaurantCopyWithImpl(this._value, this._then);
 
   final Restaurant _value;
+
   // ignore: unused_field
   final $Res Function(Restaurant) _then;
 
@@ -201,6 +223,7 @@ abstract class _$RestaurantCopyWith<$Res> implements $RestaurantCopyWith<$Res> {
   factory _$RestaurantCopyWith(
           _Restaurant value, $Res Function(_Restaurant) then) =
       __$RestaurantCopyWithImpl<$Res>;
+
   @override
   $Res call(
       {UniqueId id,
@@ -494,6 +517,7 @@ class _$_Restaurant extends _Restaurant {
 
 abstract class _Restaurant extends Restaurant {
   const _Restaurant._() : super._();
+
   const factory _Restaurant(
       {@required UniqueId id,
       @required ValueString ownerID,
@@ -519,46 +543,67 @@ abstract class _Restaurant extends Restaurant {
 
   @override
   UniqueId get id;
+
   @override
   ValueString get ownerID;
+
   @override
   ValueString get storeName;
+
   @override
   ValueString get address;
+
   @override
   ValueString get token;
+
   @override
   FireCoordinates get coordinates;
+
   @override
   WorkingHours get workingHoursFrom;
+
   @override
   WorkingHours get workingHoursTo;
+
   @override
   ValueString get telephoneNumber;
+
   @override
   ValueString get notes;
+
   @override
   bool get active;
+
   @override
   bool get open;
+
   @override
   bool get acceptingStaffRequests;
+
   @override
   bool get acceptCash;
+
   @override
   bool get acceptCard;
+
   @override
   bool get acceptOther;
+
   @override
   bool get foodDeliveries;
+
   @override
   bool get foodCollection;
+
   @override
   bool get isHalaal;
+
   @override
   String get coverImageUrl;
+
   @override
   double get deliveryCost;
+
   @override
   _$RestaurantCopyWith<_Restaurant> get copyWith;
 }

@@ -116,6 +116,7 @@ class Router extends RouterBase {
     RouteDef(Routes.reviewFormPage, page: ReviewFormPage),
     RouteDef(Routes.storeFormPage, page: StoreFormPage),
   ];
+
   @override
   Map<Type, AutoRouteFactory> get pagesMap => _pagesMap;
   final _pagesMap = <Type, AutoRouteFactory>{
@@ -511,6 +512,7 @@ extension RouterExtendedNavigatorStateX on ExtendedNavigatorState {
 class ActiveOrdersPageArguments {
   final Key key;
   final String storeID;
+
   ActiveOrdersPageArguments({this.key, @required this.storeID});
 }
 
@@ -518,6 +520,7 @@ class ActiveOrdersPageArguments {
 class AdministrationPageArguments {
   final Key key;
   final Restaurant store;
+
   AdministrationPageArguments({this.key, @required this.store});
 }
 
@@ -525,6 +528,7 @@ class AdministrationPageArguments {
 class CheckoutPageArguments {
   final Key key;
   final BuildContext blocContext;
+
   CheckoutPageArguments({this.key, this.blocContext});
 }
 
@@ -532,6 +536,7 @@ class CheckoutPageArguments {
 class CustomerViewOrderPageArguments {
   final Key key;
   final StoreOrder order;
+
   CustomerViewOrderPageArguments({this.key, this.order});
 }
 
@@ -539,6 +544,7 @@ class CustomerViewOrderPageArguments {
 class InactiveOrdersPageArguments {
   final Key key;
   final String storeID;
+
   InactiveOrdersPageArguments({this.key, @required this.storeID});
 }
 
@@ -546,6 +552,7 @@ class InactiveOrdersPageArguments {
 class MenuBuilderOverviewPageArguments {
   final Key key;
   final String storeID;
+
   MenuBuilderOverviewPageArguments({this.key, @required this.storeID});
 }
 
@@ -553,6 +560,7 @@ class MenuBuilderOverviewPageArguments {
 class MenuItemsOverviewPageArguments {
   final Key key;
   final String menuID;
+
   MenuItemsOverviewPageArguments({this.key, @required this.menuID});
 }
 
@@ -563,6 +571,7 @@ class ViewReviewsPageArguments {
   final String type;
   final bool isStore;
   final bool showAppBar;
+
   ViewReviewsPageArguments(
       {this.key,
       @required this.typeID,
@@ -575,6 +584,7 @@ class ViewReviewsPageArguments {
 class StoreDetailPageArguments {
   final Key key;
   final Restaurant store;
+
   StoreDetailPageArguments({this.key, this.store});
 }
 
@@ -582,6 +592,7 @@ class StoreDetailPageArguments {
 class ViewOrderPageArguments {
   final Key key;
   final StoreOrder order;
+
   ViewOrderPageArguments({this.key, this.order});
 }
 
@@ -590,6 +601,7 @@ class MenuItemsFormPageArguments {
   final Key key;
   final MenuItem editedMenuItem;
   final String menuID;
+
   MenuItemsFormPageArguments(
       {this.key, this.editedMenuItem, @required this.menuID});
 }
@@ -599,6 +611,7 @@ class MenuBuilderFormPageArguments {
   final Key key;
   final Menu editedMenu;
   final String storeID;
+
   MenuBuilderFormPageArguments(
       {this.key, this.editedMenu, @required this.storeID});
 }
@@ -608,6 +621,7 @@ class ReviewFormPageArguments {
   final Key key;
   final String type;
   final String typeID;
+
   ReviewFormPageArguments(
       {this.key, @required this.type, @required this.typeID});
 }
@@ -616,5 +630,6 @@ class ReviewFormPageArguments {
 class StoreFormPageArguments {
   final Key key;
   final Restaurant editedStore;
+
   StoreFormPageArguments({this.key, @required this.editedStore});
 }

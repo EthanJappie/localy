@@ -6,8 +6,11 @@ abstract class MenuItemWatcherState with _$MenuItemWatcherState {
 
   const factory MenuItemWatcherState.loading() = _Loading;
 
-  const factory MenuItemWatcherState.loadSuccess(KtList<MenuItem> menuItems) = _LoadSuccess;
+  const factory MenuItemWatcherState.loadSuccess(
+    KtList<MenuItem> menuItems,
+  ) = _LoadSuccess;
 
-  const factory MenuItemWatcherState.loadFailure(MenuItemFailure menuItemFailure) =
-      _LoadFailure;
+  const factory MenuItemWatcherState.loadFailure(
+    MenuItemFailure menuItemFailure,
+  ) = _LoadFailure;
 }

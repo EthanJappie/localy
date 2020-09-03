@@ -6,7 +6,9 @@ part 'bundle_entity_failure.freezed.dart';
 abstract class BundleEntityFailure with _$BundleEntityFailure {
   const factory BundleEntityFailure.unexpected() = UnexpectedBundleEntity;
 
-  const factory BundleEntityFailure.insufficientPermission() = InsufficientBundleEntityPermision;
+  const factory BundleEntityFailure.insufficientPermission() =
+      InsufficientBundleEntityPermision;
 
-  const factory BundleEntityFailure.unableToUpdate() = UnableToUpdateBundleEntity;
+  const factory BundleEntityFailure.unableToUpdate() =
+      UnableToUpdateBundleEntity;
 }

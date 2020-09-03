@@ -46,6 +46,7 @@ mixin _$MenuWatcherEvent {
     @required
         Result menusReceived(Either<MenuFailure, KtList<Menu>> failureOrStore),
   });
+
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result watchAllStarted(String storeID),
@@ -53,12 +54,14 @@ mixin _$MenuWatcherEvent {
     Result menusReceived(Either<MenuFailure, KtList<Menu>> failureOrStore),
     @required Result orElse(),
   });
+
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result watchAllStarted(_WatchAllMenusStarted value),
     @required Result watchAllNotHidden(_WatchAllNotHidden value),
     @required Result menusReceived(_MenusReceived value),
   });
+
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result watchAllStarted(_WatchAllMenusStarted value),
@@ -79,6 +82,7 @@ class _$MenuWatcherEventCopyWithImpl<$Res>
   _$MenuWatcherEventCopyWithImpl(this._value, this._then);
 
   final MenuWatcherEvent _value;
+
   // ignore: unused_field
   final $Res Function(MenuWatcherEvent) _then;
 }
@@ -87,6 +91,7 @@ abstract class _$WatchAllMenusStartedCopyWith<$Res> {
   factory _$WatchAllMenusStartedCopyWith(_WatchAllMenusStarted value,
           $Res Function(_WatchAllMenusStarted) then) =
       __$WatchAllMenusStartedCopyWithImpl<$Res>;
+
   $Res call({String storeID});
 }
 
@@ -200,6 +205,7 @@ abstract class _WatchAllMenusStarted implements MenuWatcherEvent {
   const factory _WatchAllMenusStarted(String storeID) = _$_WatchAllMenusStarted;
 
   String get storeID;
+
   _$WatchAllMenusStartedCopyWith<_WatchAllMenusStarted> get copyWith;
 }
 
@@ -207,6 +213,7 @@ abstract class _$WatchAllNotHiddenCopyWith<$Res> {
   factory _$WatchAllNotHiddenCopyWith(
           _WatchAllNotHidden value, $Res Function(_WatchAllNotHidden) then) =
       __$WatchAllNotHiddenCopyWithImpl<$Res>;
+
   $Res call({String storeID});
 }
 
@@ -319,6 +326,7 @@ abstract class _WatchAllNotHidden implements MenuWatcherEvent {
   const factory _WatchAllNotHidden(String storeID) = _$_WatchAllNotHidden;
 
   String get storeID;
+
   _$WatchAllNotHiddenCopyWith<_WatchAllNotHidden> get copyWith;
 }
 
@@ -326,6 +334,7 @@ abstract class _$MenusReceivedCopyWith<$Res> {
   factory _$MenusReceivedCopyWith(
           _MenusReceived value, $Res Function(_MenusReceived) then) =
       __$MenusReceivedCopyWithImpl<$Res>;
+
   $Res call({Either<MenuFailure, KtList<Menu>> failureOrStore});
 }
 
@@ -443,6 +452,7 @@ abstract class _MenusReceived implements MenuWatcherEvent {
       Either<MenuFailure, KtList<Menu>> failureOrStore) = _$_MenusReceived;
 
   Either<MenuFailure, KtList<Menu>> get failureOrStore;
+
   _$MenusReceivedCopyWith<_MenusReceived> get copyWith;
 }
 
@@ -485,6 +495,7 @@ mixin _$MenuWatcherState {
     @required Result loadSuccess(KtList<Menu> menus),
     @required Result loadFailure(MenuFailure menuFailure),
   });
+
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result initial(),
@@ -493,6 +504,7 @@ mixin _$MenuWatcherState {
     Result loadFailure(MenuFailure menuFailure),
     @required Result orElse(),
   });
+
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result initial(_Initial value),
@@ -500,6 +512,7 @@ mixin _$MenuWatcherState {
     @required Result loadSuccess(_LoadSuccess value),
     @required Result loadFailure(_LoadFailure value),
   });
+
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result initial(_Initial value),
@@ -521,6 +534,7 @@ class _$MenuWatcherStateCopyWithImpl<$Res>
   _$MenuWatcherStateCopyWithImpl(this._value, this._then);
 
   final MenuWatcherState _value;
+
   // ignore: unused_field
   final $Res Function(MenuWatcherState) _then;
 }
@@ -723,6 +737,7 @@ abstract class _$LoadSuccessCopyWith<$Res> {
   factory _$LoadSuccessCopyWith(
           _LoadSuccess value, $Res Function(_LoadSuccess) then) =
       __$LoadSuccessCopyWithImpl<$Res>;
+
   $Res call({KtList<Menu> menus});
 }
 
@@ -840,6 +855,7 @@ abstract class _LoadSuccess implements MenuWatcherState {
   const factory _LoadSuccess(KtList<Menu> menus) = _$_LoadSuccess;
 
   KtList<Menu> get menus;
+
   _$LoadSuccessCopyWith<_LoadSuccess> get copyWith;
 }
 
@@ -847,6 +863,7 @@ abstract class _$LoadFailureCopyWith<$Res> {
   factory _$LoadFailureCopyWith(
           _LoadFailure value, $Res Function(_LoadFailure) then) =
       __$LoadFailureCopyWithImpl<$Res>;
+
   $Res call({MenuFailure menuFailure});
 
   $MenuFailureCopyWith<$Res> get menuFailure;
@@ -977,5 +994,6 @@ abstract class _LoadFailure implements MenuWatcherState {
   const factory _LoadFailure(MenuFailure menuFailure) = _$_LoadFailure;
 
   MenuFailure get menuFailure;
+
   _$LoadFailureCopyWith<_LoadFailure> get copyWith;
 }

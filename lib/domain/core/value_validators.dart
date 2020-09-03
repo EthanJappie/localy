@@ -48,7 +48,9 @@ Either<ValueFailure<String>, String> validatePassword(String input) {
   }
 }
 
-Either<ValueFailure<GeoFirePoint>, GeoFirePoint> validateGeoPoint(GeoFirePoint input) {
+Either<ValueFailure<GeoFirePoint>, GeoFirePoint> validateGeoPoint(
+  GeoFirePoint input,
+) {
   if (input.longitude != 0.0 && input.latitude != 0) {
     return right(input);
   } else {

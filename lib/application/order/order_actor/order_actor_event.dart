@@ -4,6 +4,5 @@ part of 'order_actor_bloc.dart';
 abstract class OrderActorEvent with _$OrderActorEvent {
   const factory OrderActorEvent.deleted(StoreOrder order) = _Deleted;
 
-  const factory OrderActorEvent.changedState(StoreOrder order) =
-      _ChangedStatus;
+  const factory OrderActorEvent.changedState(StoreOrder order) = _ChangedStatus;
 }

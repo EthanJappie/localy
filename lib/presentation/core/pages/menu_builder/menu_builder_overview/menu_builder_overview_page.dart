@@ -7,12 +7,12 @@ import 'package:localy/presentation/core/pages/menu_builder/menu_builder_overvie
 import 'package:localy/presentation/core/routes/router.gr.dart';
 
 class MenuBuilderOverviewPage extends StatelessWidget {
-  final String storeID;
-
   const MenuBuilderOverviewPage({
     Key key,
     @required this.storeID,
   }) : super(key: key);
+  final String storeID;
+
 
   @override
   Widget build(BuildContext context) {

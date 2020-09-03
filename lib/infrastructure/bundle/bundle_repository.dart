@@ -11,24 +11,22 @@ import 'package:localy/infrastructure/core/firestore_helpers.dart';
 @prod
 @LazySingleton(as: IBundleRepository)
 class BundleRepository implements IBundleRepository {
-  final FirebaseFirestore _firestore;
-
   BundleRepository(this._firestore);
+
+  final FirebaseFirestore _firestore;
 
   @override
   Future<Either<BundleEntityFailure, Unit>> create(BundleEntity bundle) async {
     try {
-      final userDoc =  await _firestore.userDocument();
+      final userDoc = await _firestore.userDocument();
 
       final bundleDTO = BundleEntityDTO.fromDomain(bundle);
 
-      await _firestore.bundleCollection
-          .doc(userDoc.id)
-          .set(bundleDTO.toJson());
+      await _firestore.bundleCollection.doc(userDoc.id).set(bundleDTO.toJson());
 
       return right(unit);
     } on PlatformException catch (e) {
-      if (e.message.contains("PERMISSION_DENIED")) {
+      if (e.message.contains('PERMISSION_DENIED')) {
         return left(const BundleEntityFailure.insufficientPermission());
       } else {
         return left(const BundleEntityFailure.unexpected());
@@ -40,17 +38,16 @@ class BundleRepository implements IBundleRepository {
   Future<Either<BundleEntityFailure, Unit>> update(int numberOfCredits) async {
     try {
       final userDoc = await _firestore.userDocument();
-      final bundleRef =
-          _firestore.bundleCollection.doc(userDoc.id);
+      final bundleRef = _firestore.bundleCollection.doc(userDoc.id);
 
       await _firestore.runTransaction((transaction) async {
         final postSnapshot = await transaction.get(bundleRef);
         if (postSnapshot.exists) {
-           transaction.update(
+          transaction.update(
             bundleRef,
             <String, dynamic>{
-              "numberOfCredits":
-                  postSnapshot.data()["numberOfCredits"] + numberOfCredits
+              'numberOfCredits':
+                  postSnapshot.data()['numberOfCredits'] + numberOfCredits
             },
           );
         }
@@ -72,10 +69,7 @@ class BundleRepository implements IBundleRepository {
   Stream<Either<BundleEntityFailure, BundleEntity>> watch() async* {
     final userDoc = await _firestore.userDocument();
 
-    yield* _firestore.bundleCollection
-        .doc(userDoc.id)
-        .snapshots()
-        .map(
+    yield* _firestore.bundleCollection.doc(userDoc.id).snapshots().map(
           (documentSnapshot) => right<BundleEntityFailure, BundleEntity>(
             BundleEntityDTO.fromFirestore(documentSnapshot).toDomain(),
           ),

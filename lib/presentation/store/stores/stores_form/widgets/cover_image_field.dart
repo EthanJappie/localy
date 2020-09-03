@@ -36,7 +36,7 @@ class CoverImageField extends StatelessWidget {
                 Container(
                   margin: const EdgeInsets.only(left: 4),
                   child: Text(
-                    "Cover Image",
+                    'Cover Image',
                     style: _titleStyle(),
                   ),
                 ),
@@ -61,7 +61,7 @@ class CoverImageField extends StatelessWidget {
         color: Colors.white,
         size: 60,
       );
-    } else if (urlOrPath.contains("http")) {
+    } else if (urlOrPath.contains('http')) {
       return Image.network(
         urlOrPath,
         height: 200,

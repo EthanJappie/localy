@@ -4,7 +4,6 @@ import 'package:localy/application/forget_password_form/forget_password_form_blo
 import 'package:localy/injection.dart';
 import 'package:localy/presentation/core/pages/forget_password/widgets/forget_password_form.dart';
 
-
 class ForgetPasswordPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

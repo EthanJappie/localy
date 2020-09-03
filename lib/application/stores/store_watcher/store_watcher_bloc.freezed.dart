@@ -43,6 +43,7 @@ mixin _$StoreWatcherEvent {
         Result storesReceived(
             Either<StoreFailure, KtList<Restaurant>> failureOrStore),
   });
+
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result watchAllStarted(),
@@ -51,12 +52,14 @@ mixin _$StoreWatcherEvent {
         Either<StoreFailure, KtList<Restaurant>> failureOrStore),
     @required Result orElse(),
   });
+
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result watchAllStarted(_WatchAllStoresStarted value),
     @required Result watchAllInRadiusStarted(_WatchAllInRadiusStarted value),
     @required Result storesReceived(_StoresReceived value),
   });
+
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result watchAllStarted(_WatchAllStoresStarted value),
@@ -77,6 +80,7 @@ class _$StoreWatcherEventCopyWithImpl<$Res>
   _$StoreWatcherEventCopyWithImpl(this._value, this._then);
 
   final StoreWatcherEvent _value;
+
   // ignore: unused_field
   final $Res Function(StoreWatcherEvent) _then;
 }
@@ -280,6 +284,7 @@ abstract class _$StoresReceivedCopyWith<$Res> {
   factory _$StoresReceivedCopyWith(
           _StoresReceived value, $Res Function(_StoresReceived) then) =
       __$StoresReceivedCopyWithImpl<$Res>;
+
   $Res call({Either<StoreFailure, KtList<Restaurant>> failureOrStore});
 }
 
@@ -400,6 +405,7 @@ abstract class _StoresReceived implements StoreWatcherEvent {
       _$_StoresReceived;
 
   Either<StoreFailure, KtList<Restaurant>> get failureOrStore;
+
   _$StoresReceivedCopyWith<_StoresReceived> get copyWith;
 }
 
@@ -442,6 +448,7 @@ mixin _$StoreWatcherState {
     @required Result loadSuccess(KtList<Restaurant> stores),
     @required Result loadFailure(StoreFailure storeFailure),
   });
+
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result initial(),
@@ -450,6 +457,7 @@ mixin _$StoreWatcherState {
     Result loadFailure(StoreFailure storeFailure),
     @required Result orElse(),
   });
+
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result initial(_IntialStoreWatcher value),
@@ -457,6 +465,7 @@ mixin _$StoreWatcherState {
     @required Result loadSuccess(_LoadSuccessStoreWatcher value),
     @required Result loadFailure(_LoadStoreFailure value),
   });
+
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result initial(_IntialStoreWatcher value),
@@ -478,6 +487,7 @@ class _$StoreWatcherStateCopyWithImpl<$Res>
   _$StoreWatcherStateCopyWithImpl(this._value, this._then);
 
   final StoreWatcherState _value;
+
   // ignore: unused_field
   final $Res Function(StoreWatcherState) _then;
 }
@@ -686,6 +696,7 @@ abstract class _$LoadSuccessStoreWatcherCopyWith<$Res> {
   factory _$LoadSuccessStoreWatcherCopyWith(_LoadSuccessStoreWatcher value,
           $Res Function(_LoadSuccessStoreWatcher) then) =
       __$LoadSuccessStoreWatcherCopyWithImpl<$Res>;
+
   $Res call({KtList<Restaurant> stores});
 }
 
@@ -806,6 +817,7 @@ abstract class _LoadSuccessStoreWatcher implements StoreWatcherState {
       _$_LoadSuccessStoreWatcher;
 
   KtList<Restaurant> get stores;
+
   _$LoadSuccessStoreWatcherCopyWith<_LoadSuccessStoreWatcher> get copyWith;
 }
 
@@ -813,6 +825,7 @@ abstract class _$LoadStoreFailureCopyWith<$Res> {
   factory _$LoadStoreFailureCopyWith(
           _LoadStoreFailure value, $Res Function(_LoadStoreFailure) then) =
       __$LoadStoreFailureCopyWithImpl<$Res>;
+
   $Res call({StoreFailure storeFailure});
 
   $StoreFailureCopyWith<$Res> get storeFailure;
@@ -946,5 +959,6 @@ abstract class _LoadStoreFailure implements StoreWatcherState {
       _$_LoadStoreFailure;
 
   StoreFailure get storeFailure;
+
   _$LoadStoreFailureCopyWith<_LoadStoreFailure> get copyWith;
 }

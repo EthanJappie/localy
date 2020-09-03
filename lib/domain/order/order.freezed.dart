@@ -70,27 +70,49 @@ const $StoreOrder = _$StoreOrderTearOff();
 
 mixin _$StoreOrder {
   UniqueId get id;
+
   ValueString get customerID;
+
   ValueString get storeID;
+
   ValueString get storeOwnerID;
+
   ValueString get storeName;
+
   ValueString get storeAddress;
+
   ValueString get storeToken;
+
   ValueString get phoneNumber;
+
   ValueString get customerToken;
+
   ValueString get status;
+
   ValueString get storePhoneNumber;
+
   bool get payingByCash;
+
   bool get payingByCard;
+
   bool get payingByOther;
+
   bool get foodDeliveriesChosen;
+
   bool get isCompleted;
+
   FireCoordinates get storeCoordinates;
+
   List<MenuItem> get menuItems;
+
   Timestamp get dateCreated;
+
   ValueString get deliveryAddress;
+
   ValueString get orderNotes;
+
   FireCoordinates get deliveryCoordinates;
+
   double get deliveryCost;
 
   $StoreOrderCopyWith<StoreOrder> get copyWith;
@@ -100,6 +122,7 @@ abstract class $StoreOrderCopyWith<$Res> {
   factory $StoreOrderCopyWith(
           StoreOrder value, $Res Function(StoreOrder) then) =
       _$StoreOrderCopyWithImpl<$Res>;
+
   $Res call(
       {UniqueId id,
       ValueString customerID,
@@ -130,6 +153,7 @@ class _$StoreOrderCopyWithImpl<$Res> implements $StoreOrderCopyWith<$Res> {
   _$StoreOrderCopyWithImpl(this._value, this._then);
 
   final StoreOrder _value;
+
   // ignore: unused_field
   final $Res Function(StoreOrder) _then;
 
@@ -222,6 +246,7 @@ class _$StoreOrderCopyWithImpl<$Res> implements $StoreOrderCopyWith<$Res> {
 abstract class _$OrderCopyWith<$Res> implements $StoreOrderCopyWith<$Res> {
   factory _$OrderCopyWith(_Order value, $Res Function(_Order) then) =
       __$OrderCopyWithImpl<$Res>;
+
   @override
   $Res call(
       {UniqueId id,
@@ -547,6 +572,7 @@ class _$_Order extends _Order {
 
 abstract class _Order extends StoreOrder {
   const _Order._() : super._();
+
   const factory _Order(
       {@required UniqueId id,
       @required ValueString customerID,
@@ -574,50 +600,73 @@ abstract class _Order extends StoreOrder {
 
   @override
   UniqueId get id;
+
   @override
   ValueString get customerID;
+
   @override
   ValueString get storeID;
+
   @override
   ValueString get storeOwnerID;
+
   @override
   ValueString get storeName;
+
   @override
   ValueString get storeAddress;
+
   @override
   ValueString get storeToken;
+
   @override
   ValueString get phoneNumber;
+
   @override
   ValueString get customerToken;
+
   @override
   ValueString get status;
+
   @override
   ValueString get storePhoneNumber;
+
   @override
   bool get payingByCash;
+
   @override
   bool get payingByCard;
+
   @override
   bool get payingByOther;
+
   @override
   bool get foodDeliveriesChosen;
+
   @override
   bool get isCompleted;
+
   @override
   FireCoordinates get storeCoordinates;
+
   @override
   List<MenuItem> get menuItems;
+
   @override
   Timestamp get dateCreated;
+
   @override
   ValueString get deliveryAddress;
+
   @override
   ValueString get orderNotes;
+
   @override
   FireCoordinates get deliveryCoordinates;
+
   @override
   double get deliveryCost;
+
   @override
   _$OrderCopyWith<_Order> get copyWith;
 }

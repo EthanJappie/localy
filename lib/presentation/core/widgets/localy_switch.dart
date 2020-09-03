@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 
 class LocalySwitch extends StatelessWidget {
-  final String title;
-  final bool condition;
-  final ValueChanged<bool> onChanged;
-
   const LocalySwitch({
     Key key,
     this.title,
     this.condition,
     this.onChanged,
   }) : super(key: key);
+
+  final String title;
+  final bool condition;
+  final ValueChanged<bool> onChanged;
+
 
   @override
   Widget build(BuildContext context) {

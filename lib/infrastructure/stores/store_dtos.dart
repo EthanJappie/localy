@@ -10,7 +10,6 @@ import 'package:localy/infrastructure/core/converters/server_time_converters.dar
 import 'package:localy/infrastructure/core/converters/timestamp_converters.dart';
 
 part 'store_dtos.freezed.dart';
-
 part 'store_dtos.g.dart';
 
 @freezed

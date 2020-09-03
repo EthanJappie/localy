@@ -12,9 +12,9 @@ import 'package:localy/infrastructure/review/review_dtos.dart';
 @prod
 @LazySingleton(as: IReviewRepository)
 class ReviewRepository implements IReviewRepository {
+  ReviewRepository(this._firestore);
   final FirebaseFirestore _firestore;
 
-  ReviewRepository(this._firestore);
 
   @override
   Future<Either<ReviewEntityFailure, Unit>> create(
@@ -28,7 +28,7 @@ class ReviewRepository implements IReviewRepository {
 
       return right(unit);
     } on PlatformException catch (e) {
-      if (e.message.contains("PERMISSION_DENIED")) {
+      if (e.message.contains('PERMISSION_DENIED')) {
         return left(const ReviewEntityFailure.insufficientPermission());
       } else {
         return left(const ReviewEntityFailure.unexpected());
@@ -46,9 +46,9 @@ class ReviewRepository implements IReviewRepository {
 
       return right(unit);
     } on PlatformException catch (e) {
-      if (e.message.contains("PERMISSION_DENIED")) {
+      if (e.message.contains('PERMISSION_DENIED')) {
         return left(const ReviewEntityFailure.insufficientPermission());
-      } else if (e.message.contains("NOT_FOUND")) {
+      } else if (e.message.contains('NOT_FOUND')) {
         return left(const ReviewEntityFailure.unableToUpdate());
       } else {
         return left(const ReviewEntityFailure.unexpected());
@@ -62,9 +62,7 @@ class ReviewRepository implements IReviewRepository {
     try {
       final review = ReviewDTO.fromDomain(reviewEntity);
 
-      await _firestore.reviewCollection
-          .doc(review.id)
-          .update(review.toJson());
+      await _firestore.reviewCollection.doc(review.id).update(review.toJson());
 
       return right(unit);
     } on PlatformException catch (e) {
@@ -83,7 +81,7 @@ class ReviewRepository implements IReviewRepository {
     String id,
   ) async* {
     yield* _firestore.reviewCollection
-        .where("typeID", isEqualTo: id)
+        .where('typeID', isEqualTo: id)
         .snapshots()
         .map(
           (snapshots) => right<ReviewEntityFailure, KtList<ReviewEntity>>(

@@ -34,17 +34,20 @@ mixin _$ForgetPasswordFormEvent {
     @required Result emailChanged(String emailStr),
     @required Result forgetPasswordPressed(),
   });
+
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result emailChanged(String emailStr),
     Result forgetPasswordPressed(),
     @required Result orElse(),
   });
+
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result emailChanged(EmailChanged value),
     @required Result forgetPasswordPressed(ForgetPasswordPressed value),
   });
+
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result emailChanged(EmailChanged value),
@@ -64,6 +67,7 @@ class _$ForgetPasswordFormEventCopyWithImpl<$Res>
   _$ForgetPasswordFormEventCopyWithImpl(this._value, this._then);
 
   final ForgetPasswordFormEvent _value;
+
   // ignore: unused_field
   final $Res Function(ForgetPasswordFormEvent) _then;
 }
@@ -72,6 +76,7 @@ abstract class $EmailChangedCopyWith<$Res> {
   factory $EmailChangedCopyWith(
           EmailChanged value, $Res Function(EmailChanged) then) =
       _$EmailChangedCopyWithImpl<$Res>;
+
   $Res call({String emailStr});
 }
 
@@ -178,6 +183,7 @@ abstract class EmailChanged implements ForgetPasswordFormEvent {
   const factory EmailChanged(String emailStr) = _$EmailChanged;
 
   String get emailStr;
+
   $EmailChangedCopyWith<EmailChanged> get copyWith;
 }
 
@@ -292,8 +298,11 @@ const $ForgetPasswordFormState = _$ForgetPasswordFormStateTearOff();
 
 mixin _$ForgetPasswordFormState {
   EmailAddress get emailAddress;
+
   bool get showErrorMessages;
+
   bool get isSubmitting;
+
   Option<Either<AuthFailure, Unit>> get authFailureOrSuccessOption;
 
   $ForgetPasswordFormStateCopyWith<ForgetPasswordFormState> get copyWith;
@@ -303,6 +312,7 @@ abstract class $ForgetPasswordFormStateCopyWith<$Res> {
   factory $ForgetPasswordFormStateCopyWith(ForgetPasswordFormState value,
           $Res Function(ForgetPasswordFormState) then) =
       _$ForgetPasswordFormStateCopyWithImpl<$Res>;
+
   $Res call(
       {EmailAddress emailAddress,
       bool showErrorMessages,
@@ -315,6 +325,7 @@ class _$ForgetPasswordFormStateCopyWithImpl<$Res>
   _$ForgetPasswordFormStateCopyWithImpl(this._value, this._then);
 
   final ForgetPasswordFormState _value;
+
   // ignore: unused_field
   final $Res Function(ForgetPasswordFormState) _then;
 
@@ -346,6 +357,7 @@ abstract class _$ForgetPasswordFormStateCopyWith<$Res>
   factory _$ForgetPasswordFormStateCopyWith(_ForgetPasswordFormState value,
           $Res Function(_ForgetPasswordFormState) then) =
       __$ForgetPasswordFormStateCopyWithImpl<$Res>;
+
   @override
   $Res call(
       {EmailAddress emailAddress,
@@ -461,12 +473,16 @@ abstract class _ForgetPasswordFormState implements ForgetPasswordFormState {
 
   @override
   EmailAddress get emailAddress;
+
   @override
   bool get showErrorMessages;
+
   @override
   bool get isSubmitting;
+
   @override
   Option<Either<AuthFailure, Unit>> get authFailureOrSuccessOption;
+
   @override
   _$ForgetPasswordFormStateCopyWith<_ForgetPasswordFormState> get copyWith;
 }

@@ -1,6 +1,18 @@
 import 'package:flutter/material.dart';
 
 class LocalyEntryField extends StatelessWidget {
+  const LocalyEntryField(
+      this.title, {
+        @required this.onChanged,
+        Key key,
+        this.hintText,
+        this.isPassword = false,
+        this.isNumber = false,
+        this.validator,
+        this.textColor = Colors.black,
+        this.icon,
+        this.controller,
+      }) : super(key: key);
   final String title;
   final String hintText;
   final bool isPassword;
@@ -11,18 +23,6 @@ class LocalyEntryField extends StatelessWidget {
   final IconData icon;
   final TextEditingController controller;
 
-  const LocalyEntryField(this.title, {
-
-    @required this.onChanged,
-    Key key,
-    this.hintText,
-    this.isPassword = false,
-    this.isNumber = false,
-    this.validator,
-    this.textColor = Colors.black,
-    this.icon,
-    this.controller,
-  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -49,9 +49,7 @@ class LocalyEntryField extends StatelessWidget {
                 prefixIcon: _getIcon(context),
                 border: OutlineInputBorder(
                     borderSide:
-                    BorderSide(color: Theme
-                        .of(context)
-                        .primaryColor))),
+                        BorderSide(color: Theme.of(context).primaryColor))),
             validator: validator,
             onChanged: onChanged,
           )
@@ -66,9 +64,7 @@ class LocalyEntryField extends StatelessWidget {
     } else {
       return Icon(
         icon,
-        color: Theme
-            .of(context)
-            .primaryColor,
+        color: Theme.of(context).primaryColor,
       );
     }
   }

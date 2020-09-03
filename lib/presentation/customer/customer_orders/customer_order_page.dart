@@ -77,9 +77,9 @@ class CustomerOrderPage extends StatelessWidget {
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: const <Widget>[
-                                    Text("Date:"),
+                                    Text('Date:'),
                                     SizedBox(height: 8),
-                                    Text("Order ID:"),
+                                    Text('Order ID:'),
                                   ],
                                 ),
                                 const SizedBox(
@@ -116,7 +116,7 @@ class CustomerOrderPage extends StatelessWidget {
               );
             },
             loadFailure: (_) {
-              return const Center(child: Text("Unable to load menu items"));
+              return const Center(child: Text('Unable to load menu items'));
             },
           );
         },
@@ -125,6 +125,6 @@ class CustomerOrderPage extends StatelessWidget {
   }
 
   String _toDate(DateTime time) {
-    return DateFormat("dd MMM yy", "en_US").format(time);
+    return DateFormat('dd MMM yy', 'en_US').format(time);
   }
 }

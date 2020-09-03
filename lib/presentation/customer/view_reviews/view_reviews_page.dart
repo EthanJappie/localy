@@ -8,10 +8,6 @@ import 'package:localy/injection.dart';
 import 'package:localy/presentation/core/routes/router.gr.dart';
 
 class ViewReviewsPage extends StatelessWidget {
-  final String type;
-  final String typeID;
-  final bool isStore;
-  final bool showAppBar;
 
   const ViewReviewsPage({
     Key key,
@@ -20,6 +16,10 @@ class ViewReviewsPage extends StatelessWidget {
     this.isStore = false,
     this.showAppBar = false,
   }) : super(key: key);
+  final String type;
+  final String typeID;
+  final bool isStore;
+  final bool showAppBar;
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +45,7 @@ class ViewReviewsPage extends StatelessWidget {
                     child: Container(
                       margin: const EdgeInsets.all(16),
                       child: const Text(
-                        "There are no reviews. Press the '+' button to add one.",
+                        'There are no reviews. Press the + button to add one.',
                       ),
                     ),
                   );
@@ -60,7 +60,7 @@ class ViewReviewsPage extends StatelessWidget {
                         final review = reviews[index];
 
                         return ListTile(
-                          title: Text(review.review.value.fold((l) => "", id)),
+                          title: Text(review.review.value.fold((l) => '', id)),
                           subtitle: RatingBar(
                             initialRating: review.score.toDouble(),
                             onRatingUpdate: (_) {},
@@ -77,7 +77,7 @@ class ViewReviewsPage extends StatelessWidget {
                 }
               },
               loadFailure: (state) {
-                return const Center(child: Text("Unable to load reviews"));
+                return const Center(child: Text('Unable to load reviews'));
               },
             );
           },
@@ -92,7 +92,7 @@ class ViewReviewsPage extends StatelessWidget {
       return Scaffold(
         body: child,
         appBar: AppBar(
-          title: const Text("Reviews"),
+          title: const Text('Reviews'),
         ),
       );
     } else if (isStore && !showAppBar) {
@@ -102,7 +102,7 @@ class ViewReviewsPage extends StatelessWidget {
     } else {
       return Scaffold(
         appBar: AppBar(
-          title: const Text("Reviews"),
+          title: const Text('Reviews'),
         ),
         body: child,
         floatingActionButton: FloatingActionButton.extended(
@@ -112,7 +112,7 @@ class ViewReviewsPage extends StatelessWidget {
               typeID: typeID,
             );
           },
-          label: const Text("Add Review"),
+          label: const Text('Add Review'),
           icon: const Icon(Icons.add),
         ),
       );

@@ -4,22 +4,6 @@ import 'package:google_map_location_picker/google_map_location_picker.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class LocalyLocationPicker extends FormField<String> {
-  final String title;
-  final String address;
-  final ValueChanged<GeoFirePoint> onLocationChanged;
-  final ValueChanged<String> onAddressChanged;
-  @override
-  // ignore: overridden_fields
-  final FormFieldSetter<String> onSaved;
-  @override
-  // ignore: overridden_fields
-  final FormFieldValidator<String> validator;
-  @override
-  // ignore: overridden_fields
-  final String initialValue;
-  final bool autoValidate;
-  final BuildContext context;
-
   LocalyLocationPicker({
     @required this.context,
     this.title,
@@ -37,12 +21,10 @@ class LocalyLocationPicker extends FormField<String> {
             builder: (FormFieldState<String> state) {
               return InkWell(
                 onTap: () async {
-                  const String apiKey =
-                      "AIzaSyDQipUrdmQsxCMwEyPl5ygjAWAUOpMjSYg";
+                  const  apiKey =
+                      'AIzaSyDQipUrdmQsxCMwEyPl5ygjAWAUOpMjSYg';
 
-
-
-                  final Map<String, LocationResult> map =
+                  final map =
                       Map<String, LocationResult>.from(
                           (await Navigator.of(context).push(
                                 MaterialPageRoute(
@@ -68,7 +50,6 @@ class LocalyLocationPicker extends FormField<String> {
                   onAddressChanged(locationResult.address);
                   onLocationChanged(GeoFirePoint(locationResult.latLng.latitude,
                       locationResult.latLng.longitude));
-
                 },
                 child: Row(
                   children: <Widget>[
@@ -84,7 +65,9 @@ class LocalyLocationPicker extends FormField<String> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
                           Text(
-                            address == null || address.isEmpty ? title : address,
+                            address == null || address.isEmpty
+                                ? title
+                                : address,
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               color: address == null || address.isEmpty
@@ -92,11 +75,12 @@ class LocalyLocationPicker extends FormField<String> {
                                   : Colors.black,
                             ),
                           ),
-                          if(!state.isValid && state.errorText != null)
-                            Text(state.errorText, style: const TextStyle(
-                              color: Colors.red,
-                              fontSize: 10
-                            ),)
+                          if (!state.isValid && state.errorText != null)
+                            Text(
+                              state.errorText,
+                              style: const TextStyle(
+                                  color: Colors.red, fontSize: 10),
+                            )
                         ],
                       ),
                     ),
@@ -104,4 +88,20 @@ class LocalyLocationPicker extends FormField<String> {
                 ),
               );
             });
+
+  final String title;
+  final String address;
+  final ValueChanged<GeoFirePoint> onLocationChanged;
+  final ValueChanged<String> onAddressChanged;
+  @override
+  // ignore: overridden_fields
+  final FormFieldSetter<String> onSaved;
+  @override
+  // ignore: overridden_fields
+  final FormFieldValidator<String> validator;
+  @override
+  // ignore: overridden_fields
+  final String initialValue;
+  final bool autoValidate;
+  final BuildContext context;
 }

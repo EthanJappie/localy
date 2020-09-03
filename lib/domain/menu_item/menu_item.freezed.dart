@@ -44,14 +44,23 @@ const $MenuItem = _$MenuItemTearOff();
 
 mixin _$MenuItem {
   UniqueId get id;
+
   ValueString get name;
+
   ValueString get description;
+
   double get price;
+
   int get sequenceOfAppearance;
+
   ValueString get menuID;
+
   ValueString get imageUrl;
+
   bool get hidden;
+
   int get count;
+
   KtList<MenuOptionEntity> get menuOptions;
 
   $MenuItemCopyWith<MenuItem> get copyWith;
@@ -60,6 +69,7 @@ mixin _$MenuItem {
 abstract class $MenuItemCopyWith<$Res> {
   factory $MenuItemCopyWith(MenuItem value, $Res Function(MenuItem) then) =
       _$MenuItemCopyWithImpl<$Res>;
+
   $Res call(
       {UniqueId id,
       ValueString name,
@@ -77,6 +87,7 @@ class _$MenuItemCopyWithImpl<$Res> implements $MenuItemCopyWith<$Res> {
   _$MenuItemCopyWithImpl(this._value, this._then);
 
   final MenuItem _value;
+
   // ignore: unused_field
   final $Res Function(MenuItem) _then;
 
@@ -117,6 +128,7 @@ class _$MenuItemCopyWithImpl<$Res> implements $MenuItemCopyWith<$Res> {
 abstract class _$MenuItemCopyWith<$Res> implements $MenuItemCopyWith<$Res> {
   factory _$MenuItemCopyWith(_MenuItem value, $Res Function(_MenuItem) then) =
       __$MenuItemCopyWithImpl<$Res>;
+
   @override
   $Res call(
       {UniqueId id,
@@ -270,6 +282,7 @@ class _$_MenuItem extends _MenuItem {
 
 abstract class _MenuItem extends MenuItem {
   const _MenuItem._() : super._();
+
   const factory _MenuItem(
       {@required UniqueId id,
       @required ValueString name,
@@ -284,24 +297,34 @@ abstract class _MenuItem extends MenuItem {
 
   @override
   UniqueId get id;
+
   @override
   ValueString get name;
+
   @override
   ValueString get description;
+
   @override
   double get price;
+
   @override
   int get sequenceOfAppearance;
+
   @override
   ValueString get menuID;
+
   @override
   ValueString get imageUrl;
+
   @override
   bool get hidden;
+
   @override
   int get count;
+
   @override
   KtList<MenuOptionEntity> get menuOptions;
+
   @override
   _$MenuItemCopyWith<_MenuItem> get copyWith;
 }

@@ -19,7 +19,7 @@ void showErrorDialog(BuildContext context, error) {
         ),
         children: <Widget>[
           SimpleDialogOption(
-            child: SizedBox(width: 400, child: Text("${error.message}")),
+            child: SizedBox(width: 400, child: Text('${error.message}')),
           ),
           SimpleDialogOption(
             child: FlatButton(

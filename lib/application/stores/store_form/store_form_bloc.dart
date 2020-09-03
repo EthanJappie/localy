@@ -14,16 +14,13 @@ import 'package:localy/domain/store/value_objects.dart';
 import 'package:meta/meta.dart';
 
 part 'store_form_bloc.freezed.dart';
-
 part 'store_form_event.dart';
-
 part 'store_form_state.dart';
 
 @injectable
 class StoreFormBloc extends Bloc<StoreFormEvent, StoreFormState> {
-  final IStoreRepository _storeRepository;
-
   StoreFormBloc(this._storeRepository) : super(StoreFormState.initial());
+  final IStoreRepository _storeRepository;
 
   @override
   Stream<StoreFormState> mapEventToState(

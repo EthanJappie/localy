@@ -55,6 +55,7 @@ mixin _$ReviewFormEvent {
     @required Result scoreAdded(int score),
     @required Result saved(),
   });
+
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result initialized(
@@ -64,6 +65,7 @@ mixin _$ReviewFormEvent {
     Result saved(),
     @required Result orElse(),
   });
+
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result initialized(_Initialized value),
@@ -71,6 +73,7 @@ mixin _$ReviewFormEvent {
     @required Result scoreAdded(_ScoreAdded value),
     @required Result saved(_Saved value),
   });
+
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result initialized(_Initialized value),
@@ -92,6 +95,7 @@ class _$ReviewFormEventCopyWithImpl<$Res>
   _$ReviewFormEventCopyWithImpl(this._value, this._then);
 
   final ReviewFormEvent _value;
+
   // ignore: unused_field
   final $Res Function(ReviewFormEvent) _then;
 }
@@ -100,6 +104,7 @@ abstract class _$InitializedCopyWith<$Res> {
   factory _$InitializedCopyWith(
           _Initialized value, $Res Function(_Initialized) then) =
       __$InitializedCopyWithImpl<$Res>;
+
   $Res call(
       {Option<ReviewEntity> initialReviewOption, String type, String typeID});
 }
@@ -243,8 +248,11 @@ abstract class _Initialized implements ReviewFormEvent {
       String type, String typeID) = _$_Initialized;
 
   Option<ReviewEntity> get initialReviewOption;
+
   String get type;
+
   String get typeID;
+
   _$InitializedCopyWith<_Initialized> get copyWith;
 }
 
@@ -252,6 +260,7 @@ abstract class _$ReviewAddedCopyWith<$Res> {
   factory _$ReviewAddedCopyWith(
           _ReviewAdded value, $Res Function(_ReviewAdded) then) =
       __$ReviewAddedCopyWithImpl<$Res>;
+
   $Res call({String review});
 }
 
@@ -372,6 +381,7 @@ abstract class _ReviewAdded implements ReviewFormEvent {
   const factory _ReviewAdded(String review) = _$_ReviewAdded;
 
   String get review;
+
   _$ReviewAddedCopyWith<_ReviewAdded> get copyWith;
 }
 
@@ -379,6 +389,7 @@ abstract class _$ScoreAddedCopyWith<$Res> {
   factory _$ScoreAddedCopyWith(
           _ScoreAdded value, $Res Function(_ScoreAdded) then) =
       __$ScoreAddedCopyWithImpl<$Res>;
+
   $Res call({int score});
 }
 
@@ -499,6 +510,7 @@ abstract class _ScoreAdded implements ReviewFormEvent {
   const factory _ScoreAdded(int score) = _$_ScoreAdded;
 
   int get score;
+
   _$ScoreAddedCopyWith<_ScoreAdded> get copyWith;
 }
 
@@ -633,9 +645,13 @@ const $ReviewFormState = _$ReviewFormStateTearOff();
 
 mixin _$ReviewFormState {
   ReviewEntity get review;
+
   bool get showErrorMessages;
+
   bool get isEditing;
+
   bool get isSaving;
+
   Option<Either<ReviewEntityFailure, Unit>> get saveFailureOrSuccessOption;
 
   $ReviewFormStateCopyWith<ReviewFormState> get copyWith;
@@ -645,6 +661,7 @@ abstract class $ReviewFormStateCopyWith<$Res> {
   factory $ReviewFormStateCopyWith(
           ReviewFormState value, $Res Function(ReviewFormState) then) =
       _$ReviewFormStateCopyWithImpl<$Res>;
+
   $Res call(
       {ReviewEntity review,
       bool showErrorMessages,
@@ -660,6 +677,7 @@ class _$ReviewFormStateCopyWithImpl<$Res>
   _$ReviewFormStateCopyWithImpl(this._value, this._then);
 
   final ReviewFormState _value;
+
   // ignore: unused_field
   final $Res Function(ReviewFormState) _then;
 
@@ -701,6 +719,7 @@ abstract class _$ReviewFormStateCopyWith<$Res>
   factory _$ReviewFormStateCopyWith(
           _ReviewFormState value, $Res Function(_ReviewFormState) then) =
       __$ReviewFormStateCopyWithImpl<$Res>;
+
   @override
   $Res call(
       {ReviewEntity review,
@@ -827,14 +846,19 @@ abstract class _ReviewFormState implements ReviewFormState {
 
   @override
   ReviewEntity get review;
+
   @override
   bool get showErrorMessages;
+
   @override
   bool get isEditing;
+
   @override
   bool get isSaving;
+
   @override
   Option<Either<ReviewEntityFailure, Unit>> get saveFailureOrSuccessOption;
+
   @override
   _$ReviewFormStateCopyWith<_ReviewFormState> get copyWith;
 }

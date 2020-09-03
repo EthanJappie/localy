@@ -12,7 +12,7 @@ class AcceptCardField extends StatelessWidget {
       buildWhen: (p, c) => p.store.acceptCard != c.store.acceptCard,
       builder: (context, state) {
         return LocalySwitch(
-          title: "Accept Card",
+          title: 'Accept Card',
           condition: state.store.acceptCard,
           onChanged: (value) => context
               .bloc<StoreFormBloc>()

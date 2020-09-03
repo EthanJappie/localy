@@ -10,13 +10,17 @@ import 'package:localy/infrastructure/menu_item/menu_item_dtos.dart';
 import 'package:localy/infrastructure/menu_item/menu_items_converters.dart';
 
 part 'order_dtos.freezed.dart';
-
 part 'order_dtos.g.dart';
 
 @freezed
 abstract class StoreOrderDTO implements _$StoreOrderDTO {
   const StoreOrderDTO._();
+  factory StoreOrderDTO.fromJson(Map<String, dynamic> json) =>
+      _$StoreOrderDTOFromJson(json);
 
+  factory StoreOrderDTO.fromFirestore(DocumentSnapshot doc) {
+    return StoreOrderDTO.fromJson(doc.data()).copyWith(id: doc.id);
+  }
   const factory StoreOrderDTO({
     @JsonKey(ignore: true) String id,
     @required String customerID,
@@ -62,8 +66,8 @@ abstract class StoreOrderDTO implements _$StoreOrderDTO {
       foodDeliveriesChosen: order.foodDeliveriesChosen,
       isCompleted: order.isCompleted,
       phoneNumber: order.phoneNumber.getOrCrash(),
-      deliveryAddress: order.deliveryAddress.value.fold((l) => "", (r) => r),
-      orderNotes: order.orderNotes.value.fold((l) => "", (r) => r),
+      deliveryAddress: order.deliveryAddress.value.fold((l) => '', (r) => r),
+      orderNotes: order.orderNotes.value.fold((l) => '', (r) => r),
       deliveryCoordinates: order.deliveryCoordinates.getOrCrash(),
       dateCreated: order.dateCreated,
       status: order.status.getOrCrash(),
@@ -100,10 +104,5 @@ abstract class StoreOrderDTO implements _$StoreOrderDTO {
     );
   }
 
-  factory StoreOrderDTO.fromJson(Map<String, dynamic> json) =>
-      _$StoreOrderDTOFromJson(json);
 
-  factory StoreOrderDTO.fromFirestore(DocumentSnapshot doc) {
-    return StoreOrderDTO.fromJson(doc.data()).copyWith(id: doc.id);
-  }
 }

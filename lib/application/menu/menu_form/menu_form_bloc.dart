@@ -10,17 +10,14 @@ import 'package:localy/domain/menu/menu.dart';
 import 'package:localy/domain/menu/menu_failure.dart';
 import 'package:meta/meta.dart';
 
-part 'menu_form_event.dart';
-
-part 'menu_form_state.dart';
-
 part 'menu_form_bloc.freezed.dart';
+part 'menu_form_event.dart';
+part 'menu_form_state.dart';
 
 @injectable
 class MenuFormBloc extends Bloc<MenuFormEvent, MenuFormState> {
-  final IMenuRepository _menuRepository;
-
   MenuFormBloc(this._menuRepository) : super(MenuFormState.initial());
+  final IMenuRepository _menuRepository;
 
   @override
   Stream<MenuFormState> mapEventToState(

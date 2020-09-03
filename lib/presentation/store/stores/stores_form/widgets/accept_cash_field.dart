@@ -12,7 +12,7 @@ class AcceptCashField extends StatelessWidget {
       buildWhen: (p, c) => p.store.acceptCash != c.store.acceptCash,
       builder: (context, state) {
         return LocalySwitch(
-          title: "Accept Cash",
+          title: 'Accept Cash',
           condition: state.store.acceptCash,
           onChanged: (value) => context
               .bloc<StoreFormBloc>()

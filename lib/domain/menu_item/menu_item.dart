@@ -3,7 +3,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:kt_dart/kt.dart';
 import 'package:localy/domain/core/failures.dart';
 import 'package:localy/domain/core/value_objects.dart';
-import 'package:localy/domain/menu_item/menu_option_entity.dart';
+import 'package:localy/domain/menu_option/menu_option_entity.dart';
 
 part 'menu_item.freezed.dart';
 
@@ -26,8 +26,8 @@ abstract class MenuItem implements _$MenuItem {
 
   factory MenuItem.empty() => MenuItem(
         id: UniqueId(),
-        name: ValueString.fromString(""),
-        description: ValueString.fromString(""),
+        name: ValueString.fromString(''),
+        description: ValueString.fromString(''),
         price: 0.0,
         sequenceOfAppearance: 0,
         menuID: ValueString(),
@@ -42,7 +42,7 @@ abstract class MenuItem implements _$MenuItem {
         .andThen(name.failureOrUnit)
         .andThen(description.failureOrUnit)
         .fold(
-          (f) => some(f),
+          some,
           (r) => none(),
         );
   }

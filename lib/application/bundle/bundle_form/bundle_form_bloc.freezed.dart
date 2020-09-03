@@ -42,6 +42,7 @@ mixin _$BundleFormEvent {
     @required Result saved(),
     @required Result numberOfCreditsChanged(int numberOfCredits),
   });
+
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result initialized(Option<BundleEntity> initialBundleOption),
@@ -49,12 +50,14 @@ mixin _$BundleFormEvent {
     Result numberOfCreditsChanged(int numberOfCredits),
     @required Result orElse(),
   });
+
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result initialized(_Initialized value),
     @required Result saved(_Saved value),
     @required Result numberOfCreditsChanged(_NumberOfCreditsChanged value),
   });
+
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result initialized(_Initialized value),
@@ -75,6 +78,7 @@ class _$BundleFormEventCopyWithImpl<$Res>
   _$BundleFormEventCopyWithImpl(this._value, this._then);
 
   final BundleFormEvent _value;
+
   // ignore: unused_field
   final $Res Function(BundleFormEvent) _then;
 }
@@ -83,6 +87,7 @@ abstract class _$InitializedCopyWith<$Res> {
   factory _$InitializedCopyWith(
           _Initialized value, $Res Function(_Initialized) then) =
       __$InitializedCopyWithImpl<$Res>;
+
   $Res call({Option<BundleEntity> initialBundleOption});
 }
 
@@ -200,6 +205,7 @@ abstract class _Initialized implements BundleFormEvent {
       _$_Initialized;
 
   Option<BundleEntity> get initialBundleOption;
+
   _$InitializedCopyWith<_Initialized> get copyWith;
 }
 
@@ -298,6 +304,7 @@ abstract class _$NumberOfCreditsChangedCopyWith<$Res> {
   factory _$NumberOfCreditsChangedCopyWith(_NumberOfCreditsChanged value,
           $Res Function(_NumberOfCreditsChanged) then) =
       __$NumberOfCreditsChangedCopyWithImpl<$Res>;
+
   $Res call({int numberOfCredits});
 }
 
@@ -416,6 +423,7 @@ abstract class _NumberOfCreditsChanged implements BundleFormEvent {
       _$_NumberOfCreditsChanged;
 
   int get numberOfCredits;
+
   _$NumberOfCreditsChangedCopyWith<_NumberOfCreditsChanged> get copyWith;
 }
 
@@ -447,8 +455,11 @@ const $BundleFormState = _$BundleFormStateTearOff();
 
 mixin _$BundleFormState {
   BundleEntity get bundle;
+
   bool get showErrorMessages;
+
   bool get isSaving;
+
   Option<Either<BundleEntityFailure, Unit>> get saveFailureOrSuccessOption;
 
   $BundleFormStateCopyWith<BundleFormState> get copyWith;
@@ -458,6 +469,7 @@ abstract class $BundleFormStateCopyWith<$Res> {
   factory $BundleFormStateCopyWith(
           BundleFormState value, $Res Function(BundleFormState) then) =
       _$BundleFormStateCopyWithImpl<$Res>;
+
   $Res call(
       {BundleEntity bundle,
       bool showErrorMessages,
@@ -472,6 +484,7 @@ class _$BundleFormStateCopyWithImpl<$Res>
   _$BundleFormStateCopyWithImpl(this._value, this._then);
 
   final BundleFormState _value;
+
   // ignore: unused_field
   final $Res Function(BundleFormState) _then;
 
@@ -511,6 +524,7 @@ abstract class _$BundleFormStateCopyWith<$Res>
   factory _$BundleFormStateCopyWith(
           _BundleFormState value, $Res Function(_BundleFormState) then) =
       __$BundleFormStateCopyWithImpl<$Res>;
+
   @override
   $Res call(
       {BundleEntity bundle,
@@ -624,12 +638,16 @@ abstract class _BundleFormState implements BundleFormState {
 
   @override
   BundleEntity get bundle;
+
   @override
   bool get showErrorMessages;
+
   @override
   bool get isSaving;
+
   @override
   Option<Either<BundleEntityFailure, Unit>> get saveFailureOrSuccessOption;
+
   @override
   _$BundleFormStateCopyWith<_BundleFormState> get copyWith;
 }

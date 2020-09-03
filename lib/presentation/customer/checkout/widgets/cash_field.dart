@@ -13,7 +13,7 @@ class CashField extends StatelessWidget {
         return ListTile(
           contentPadding: const EdgeInsets.all(0),
           title: Text(
-            "Pay by Cash",
+            'Pay by Cash',
             style: TextStyle(
               fontWeight: state.order.payingByCash
                   ? FontWeight.bold

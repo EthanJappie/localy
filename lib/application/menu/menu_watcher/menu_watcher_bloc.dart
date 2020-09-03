@@ -10,19 +10,16 @@ import 'package:localy/domain/menu/menu.dart';
 import 'package:localy/domain/menu/menu_failure.dart';
 import 'package:meta/meta.dart';
 
-part 'menu_watcher_event.dart';
-
-part 'menu_watcher_state.dart';
-
 part 'menu_watcher_bloc.freezed.dart';
+part 'menu_watcher_event.dart';
+part 'menu_watcher_state.dart';
 
 @injectable
 class MenuWatcherBloc extends Bloc<MenuWatcherEvent, MenuWatcherState> {
-  final IMenuRepository _menuRepository;
-  StreamSubscription<Either<MenuFailure, KtList<Menu>>> _menuStreamSubscription;
-
   MenuWatcherBloc(this._menuRepository)
       : super(const MenuWatcherState.initial());
+  final IMenuRepository _menuRepository;
+  StreamSubscription<Either<MenuFailure, KtList<Menu>>> _menuStreamSubscription;
 
   @override
   Stream<MenuWatcherState> mapEventToState(

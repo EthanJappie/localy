@@ -39,6 +39,7 @@ mixin _$ReviewWatcherEvent {
         Result reviewsReceived(
             Either<ReviewEntityFailure, KtList<ReviewEntity>> failureOrReview),
   });
+
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result watchAllByID(String id),
@@ -46,11 +47,13 @@ mixin _$ReviewWatcherEvent {
         Either<ReviewEntityFailure, KtList<ReviewEntity>> failureOrReview),
     @required Result orElse(),
   });
+
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result watchAllByID(_WatchAllByID value),
     @required Result reviewsReceived(_ReviewsReceived value),
   });
+
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result watchAllByID(_WatchAllByID value),
@@ -70,6 +73,7 @@ class _$ReviewWatcherEventCopyWithImpl<$Res>
   _$ReviewWatcherEventCopyWithImpl(this._value, this._then);
 
   final ReviewWatcherEvent _value;
+
   // ignore: unused_field
   final $Res Function(ReviewWatcherEvent) _then;
 }
@@ -78,6 +82,7 @@ abstract class _$WatchAllByIDCopyWith<$Res> {
   factory _$WatchAllByIDCopyWith(
           _WatchAllByID value, $Res Function(_WatchAllByID) then) =
       __$WatchAllByIDCopyWithImpl<$Res>;
+
   $Res call({String id});
 }
 
@@ -186,6 +191,7 @@ abstract class _WatchAllByID implements ReviewWatcherEvent {
   const factory _WatchAllByID(String id) = _$_WatchAllByID;
 
   String get id;
+
   _$WatchAllByIDCopyWith<_WatchAllByID> get copyWith;
 }
 
@@ -193,6 +199,7 @@ abstract class _$ReviewsReceivedCopyWith<$Res> {
   factory _$ReviewsReceivedCopyWith(
           _ReviewsReceived value, $Res Function(_ReviewsReceived) then) =
       __$ReviewsReceivedCopyWithImpl<$Res>;
+
   $Res call(
       {Either<ReviewEntityFailure, KtList<ReviewEntity>> failureOrReview});
 }
@@ -310,6 +317,7 @@ abstract class _ReviewsReceived implements ReviewWatcherEvent {
       _$_ReviewsReceived;
 
   Either<ReviewEntityFailure, KtList<ReviewEntity>> get failureOrReview;
+
   _$ReviewsReceivedCopyWith<_ReviewsReceived> get copyWith;
 }
 
@@ -352,6 +360,7 @@ mixin _$ReviewWatcherState {
     @required Result loadSucces(KtList<ReviewEntity> reviews),
     @required Result loadFailure(ReviewEntityFailure reviewFailure),
   });
+
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result initial(),
@@ -360,6 +369,7 @@ mixin _$ReviewWatcherState {
     Result loadFailure(ReviewEntityFailure reviewFailure),
     @required Result orElse(),
   });
+
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result initial(_Initial value),
@@ -367,6 +377,7 @@ mixin _$ReviewWatcherState {
     @required Result loadSucces(_LoadSuccess value),
     @required Result loadFailure(_LoadFailure value),
   });
+
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result initial(_Initial value),
@@ -388,6 +399,7 @@ class _$ReviewWatcherStateCopyWithImpl<$Res>
   _$ReviewWatcherStateCopyWithImpl(this._value, this._then);
 
   final ReviewWatcherState _value;
+
   // ignore: unused_field
   final $Res Function(ReviewWatcherState) _then;
 }
@@ -592,6 +604,7 @@ abstract class _$LoadSuccessCopyWith<$Res> {
   factory _$LoadSuccessCopyWith(
           _LoadSuccess value, $Res Function(_LoadSuccess) then) =
       __$LoadSuccessCopyWithImpl<$Res>;
+
   $Res call({KtList<ReviewEntity> reviews});
 }
 
@@ -709,6 +722,7 @@ abstract class _LoadSuccess implements ReviewWatcherState {
   const factory _LoadSuccess(KtList<ReviewEntity> reviews) = _$_LoadSuccess;
 
   KtList<ReviewEntity> get reviews;
+
   _$LoadSuccessCopyWith<_LoadSuccess> get copyWith;
 }
 
@@ -716,6 +730,7 @@ abstract class _$LoadFailureCopyWith<$Res> {
   factory _$LoadFailureCopyWith(
           _LoadFailure value, $Res Function(_LoadFailure) then) =
       __$LoadFailureCopyWithImpl<$Res>;
+
   $Res call({ReviewEntityFailure reviewFailure});
 
   $ReviewEntityFailureCopyWith<$Res> get reviewFailure;
@@ -849,5 +864,6 @@ abstract class _LoadFailure implements ReviewWatcherState {
       _$_LoadFailure;
 
   ReviewEntityFailure get reviewFailure;
+
   _$LoadFailureCopyWith<_LoadFailure> get copyWith;
 }

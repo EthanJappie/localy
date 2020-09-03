@@ -1,4 +1,4 @@
-include: package:lint/analysis_options.yaml
+include: package:very_good_analysis/analysis_options.yaml
 
 analyzer:
   errors:
@@ -14,3 +14,4 @@ analyzer:
 linter:
   rules:
     constant_identifier_names: false
+    public_member_api_docs: false

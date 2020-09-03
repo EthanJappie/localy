@@ -13,9 +13,9 @@ import 'package:localy/presentation/core/routes/router.gr.dart';
 import 'package:localy/presentation/customer/store_detail/store_detail_menu_items/store_detail_menu_items.dart';
 
 class StoreDetailPage extends StatefulWidget {
-  final Restaurant store;
 
   const StoreDetailPage({Key key, this.store}) : super(key: key);
+  final Restaurant store;
 
   @override
   _StoreDetailPageState createState() => _StoreDetailPageState();
@@ -75,17 +75,17 @@ class _StoreDetailPageState extends State<StoreDetailPage> {
                   child: Scaffold(
                     appBar: AppBar(
                       title: Text(widget.store.storeName.value
-                          .fold((l) => "", (r) => r)),
+                          .fold((l) => '', (r) => r)),
                       actions: [
                         FlatButton(
                           onPressed: () {
                             ExtendedNavigator.of(context).pushViewReviewsPage(
-                              type: "store",
+                              type: 'store',
                               typeID: widget.store.id.getOrCrash(),
                             );
                           },
                           child: const Text(
-                            "Reviews",
+                            'Reviews',
                             style: TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.bold,
@@ -135,7 +135,7 @@ class _StoreDetailPageState extends State<StoreDetailPage> {
                             }
                           },
                           label: const Text(
-                            "Checkout",
+                            'Checkout',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                             ),
@@ -148,7 +148,7 @@ class _StoreDetailPageState extends State<StoreDetailPage> {
                 );
               },
               loadFailure: (state) {
-                return const Center(child: Text("Unable to load menus"));
+                return const Center(child: Text('Unable to load menus'));
               },
             );
           },

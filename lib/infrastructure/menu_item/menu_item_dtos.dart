@@ -3,17 +3,21 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:kt_dart/kt.dart';
 import 'package:localy/domain/core/value_objects.dart';
 import 'package:localy/domain/menu_item/menu_item.dart';
-import 'package:localy/domain/menu_item/menu_option_entity.dart';
+import 'package:localy/domain/menu_option/menu_option_entity.dart';
 import 'package:localy/infrastructure/menu_item/menu_option_entity_dtos.dart';
 
 part 'menu_item_dtos.freezed.dart';
-
 part 'menu_item_dtos.g.dart';
 
 @freezed
 abstract class MenuItemDTO implements _$MenuItemDTO {
   const MenuItemDTO._();
+  factory MenuItemDTO.fromJson(Map<String, dynamic> json) =>
+      _$MenuItemDTOFromJson(json);
 
+  factory MenuItemDTO.fromFirestore(DocumentSnapshot doc) {
+    return MenuItemDTO.fromJson(doc.data()).copyWith(id: doc.id);
+  }
   const factory MenuItemDTO({
     @required String name,
     @required String description,
@@ -36,7 +40,7 @@ abstract class MenuItemDTO implements _$MenuItemDTO {
       price: menuItem.price,
       sequenceOfAppearance: menuItem.sequenceOfAppearance,
       hidden: menuItem.hidden,
-      imageUrl: menuItem.imageUrl.value.fold((l) => "", (r) => r),
+      imageUrl: menuItem.imageUrl.value.fold((l) => '', (r) => r),
       count: menuItem.count ?? 1,
       menuOptions: menuItem.menuOptions == null
           ? <MenuOptionEntityDTO>[].toList()
@@ -56,7 +60,7 @@ abstract class MenuItemDTO implements _$MenuItemDTO {
       price: price,
       sequenceOfAppearance: sequenceOfAppearance,
       hidden: hidden,
-      imageUrl: ValueString.fromString(imageUrl ?? ""),
+      imageUrl: ValueString.fromString(imageUrl ?? ''),
       count: count ?? 1,
       menuOptions: menuOptions == null
           ? <MenuOptionEntity>[].toImmutableList()
@@ -64,10 +68,5 @@ abstract class MenuItemDTO implements _$MenuItemDTO {
     );
   }
 
-  factory MenuItemDTO.fromJson(Map<String, dynamic> json) =>
-      _$MenuItemDTOFromJson(json);
 
-  factory MenuItemDTO.fromFirestore(DocumentSnapshot doc) {
-    return MenuItemDTO.fromJson(doc.data()).copyWith(id: doc.id);
-  }
 }

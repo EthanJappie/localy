@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 class SavingInProgressOverlay extends StatelessWidget {
-  final bool isSaving;
-
   const SavingInProgressOverlay({
     Key key,
     @required this.isSaving,
   }) : super(key: key);
+  final bool isSaving;
+
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,6 @@ class SavingInProgressOverlay extends StatelessWidget {
               const SizedBox(height: 8),
               Text(
                 'Saving',
-                // Not within a Scaffold. We have to get the TextStyle from a theme ourselves.
                 style: Theme.of(context).textTheme.bodyText2.copyWith(
                       color: Colors.white,
                       fontSize: 16,

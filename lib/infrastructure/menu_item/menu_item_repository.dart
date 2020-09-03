@@ -9,15 +9,15 @@ import 'package:kt_dart/kt.dart';
 import 'package:localy/domain/menu_item/i_menu_item_repository.dart';
 import 'package:localy/domain/menu_item/menu_item.dart';
 import 'package:localy/domain/menu_item/menu_item_failure.dart';
-import 'package:localy/infrastructure/menu_item/menu_item_dtos.dart';
 import 'package:localy/infrastructure/core/firestore_helpers.dart';
+import 'package:localy/infrastructure/menu_item/menu_item_dtos.dart';
 
 @LazySingleton(as: IMenuItemRepository)
 class MenuItemRepository implements IMenuItemRepository {
+  MenuItemRepository(this._firestore, this._firebaseStorage);
   final FirebaseFirestore _firestore;
   final FirebaseStorage _firebaseStorage;
 
-  MenuItemRepository(this._firestore, this._firebaseStorage);
 
   @override
   Future<Either<MenuItemFailure, Unit>> create(
@@ -30,7 +30,7 @@ class MenuItemRepository implements IMenuItemRepository {
 
       menuItemDTO = await _uploadImages(
           menuItem.imageUrl.value.fold(
-            (l) => "",
+            (l) => '',
             (r) => r,
           ),
           menuItemDTO);
@@ -41,7 +41,7 @@ class MenuItemRepository implements IMenuItemRepository {
 
       return right(unit);
     } on PlatformException catch (e) {
-      if (e.message.contains("PERMISSION_DENIED")) {
+      if (e.message.contains('PERMISSION_DENIED')) {
         return left(const MenuItemFailure.insufficientPermission());
       } else {
         return left(const MenuItemFailure.unexpected());
@@ -58,9 +58,9 @@ class MenuItemRepository implements IMenuItemRepository {
 
       return right(unit);
     } on PlatformException catch (e) {
-      if (e.message.contains("PERMISSION_DENIED")) {
+      if (e.message.contains('PERMISSION_DENIED')) {
         return left(const MenuItemFailure.insufficientPermission());
-      } else if (e.message.contains("NOT_FOUND")) {
+      } else if (e.message.contains('NOT_FOUND')) {
         return left(const MenuItemFailure.unableToUpdate());
       } else {
         return left(const MenuItemFailure.unexpected());
@@ -75,7 +75,7 @@ class MenuItemRepository implements IMenuItemRepository {
 
       menuItemDTO = await _uploadImages(
           menuItem.imageUrl.value.fold(
-            (l) => "",
+            (l) => '',
             (r) => r,
           ),
           menuItemDTO);
@@ -100,8 +100,8 @@ class MenuItemRepository implements IMenuItemRepository {
   Stream<Either<MenuItemFailure, KtList<MenuItem>>> watchAll(
       String menuID) async* {
     yield* _firestore.menuItemsCollection
-        .where("menuID", isEqualTo: menuID)
-        .orderBy("sequenceOfAppearance")
+        .where('menuID', isEqualTo: menuID)
+        .orderBy('sequenceOfAppearance')
         .snapshots()
         .map(
           (snapshots) => right<MenuItemFailure, KtList<MenuItem>>(
@@ -119,13 +119,13 @@ class MenuItemRepository implements IMenuItemRepository {
     var menuItem = menuItemDTO;
 
     if ((itemImageUrl != null && itemImageUrl.isNotEmpty) &&
-        !itemImageUrl.contains("http")) {
+        !itemImageUrl.contains('http')) {
       final uploadTask = _firebaseStorage.menuItemsStorageReference
           .putFile(File(itemImageUrl));
 
-      final StorageTaskSnapshot downloadUrl = await uploadTask.onComplete;
+      final  downloadUrl = await uploadTask.onComplete;
 
-      final String imageUrl = await downloadUrl.ref.getDownloadURL() as String;
+      final  imageUrl = await downloadUrl.ref.getDownloadURL() as String;
 
       menuItem = menuItem.copyWith(imageUrl: imageUrl);
     }
@@ -137,9 +137,9 @@ class MenuItemRepository implements IMenuItemRepository {
   Stream<Either<MenuItemFailure, KtList<MenuItem>>> watchAllUnhidden(
       String menuID) async* {
     yield* _firestore.menuItemsCollection
-        .where("menuID", isEqualTo: menuID)
-        .where("hidden", isEqualTo: false)
-        .orderBy("sequenceOfAppearance")
+        .where('menuID', isEqualTo: menuID)
+        .where('hidden', isEqualTo: false)
+        .orderBy('sequenceOfAppearance')
         .snapshots()
         .map(
           (snapshots) => right<MenuItemFailure, KtList<MenuItem>>(

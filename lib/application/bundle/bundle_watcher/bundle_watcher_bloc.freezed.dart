@@ -37,6 +37,7 @@ mixin _$BundleWatcherEvent {
         Result bundleReceived(
             Either<BundleEntityFailure, BundleEntity> failureOrBundle),
   });
+
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result watch(),
@@ -44,11 +45,13 @@ mixin _$BundleWatcherEvent {
         Either<BundleEntityFailure, BundleEntity> failureOrBundle),
     @required Result orElse(),
   });
+
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result watch(_BundleWatcherEvent value),
     @required Result bundleReceived(_BundleReceived value),
   });
+
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result watch(_BundleWatcherEvent value),
@@ -68,6 +71,7 @@ class _$BundleWatcherEventCopyWithImpl<$Res>
   _$BundleWatcherEventCopyWithImpl(this._value, this._then);
 
   final BundleWatcherEvent _value;
+
   // ignore: unused_field
   final $Res Function(BundleWatcherEvent) _then;
 }
@@ -167,6 +171,7 @@ abstract class _$BundleReceivedCopyWith<$Res> {
   factory _$BundleReceivedCopyWith(
           _BundleReceived value, $Res Function(_BundleReceived) then) =
       __$BundleReceivedCopyWithImpl<$Res>;
+
   $Res call({Either<BundleEntityFailure, BundleEntity> failureOrBundle});
 }
 
@@ -282,6 +287,7 @@ abstract class _BundleReceived implements BundleWatcherEvent {
       _$_BundleReceived;
 
   Either<BundleEntityFailure, BundleEntity> get failureOrBundle;
+
   _$BundleReceivedCopyWith<_BundleReceived> get copyWith;
 }
 
@@ -324,6 +330,7 @@ mixin _$BundleWatcherState {
     @required Result loadSuccess(BundleEntity bundle),
     @required Result loadFailure(BundleEntityFailure bundleFailure),
   });
+
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result initial(),
@@ -332,6 +339,7 @@ mixin _$BundleWatcherState {
     Result loadFailure(BundleEntityFailure bundleFailure),
     @required Result orElse(),
   });
+
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result initial(_Initial value),
@@ -339,6 +347,7 @@ mixin _$BundleWatcherState {
     @required Result loadSuccess(_LoadSuccess value),
     @required Result loadFailure(_LoadFailure value),
   });
+
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result initial(_Initial value),
@@ -360,6 +369,7 @@ class _$BundleWatcherStateCopyWithImpl<$Res>
   _$BundleWatcherStateCopyWithImpl(this._value, this._then);
 
   final BundleWatcherState _value;
+
   // ignore: unused_field
   final $Res Function(BundleWatcherState) _then;
 }
@@ -564,6 +574,7 @@ abstract class _$LoadSuccessCopyWith<$Res> {
   factory _$LoadSuccessCopyWith(
           _LoadSuccess value, $Res Function(_LoadSuccess) then) =
       __$LoadSuccessCopyWithImpl<$Res>;
+
   $Res call({BundleEntity bundle});
 
   $BundleEntityCopyWith<$Res> get bundle;
@@ -693,6 +704,7 @@ abstract class _LoadSuccess implements BundleWatcherState {
   const factory _LoadSuccess(BundleEntity bundle) = _$_LoadSuccess;
 
   BundleEntity get bundle;
+
   _$LoadSuccessCopyWith<_LoadSuccess> get copyWith;
 }
 
@@ -700,6 +712,7 @@ abstract class _$LoadFailureCopyWith<$Res> {
   factory _$LoadFailureCopyWith(
           _LoadFailure value, $Res Function(_LoadFailure) then) =
       __$LoadFailureCopyWithImpl<$Res>;
+
   $Res call({BundleEntityFailure bundleFailure});
 
   $BundleEntityFailureCopyWith<$Res> get bundleFailure;
@@ -833,5 +846,6 @@ abstract class _LoadFailure implements BundleWatcherState {
       _$_LoadFailure;
 
   BundleEntityFailure get bundleFailure;
+
   _$LoadFailureCopyWith<_LoadFailure> get copyWith;
 }

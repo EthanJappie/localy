@@ -7,14 +7,14 @@ import 'package:localy/injection.dart';
 import 'package:localy/presentation/core/routes/router.gr.dart';
 
 class StoreDetailMenuItems extends StatefulWidget {
-  final String menuID;
-  final BuildContext blocContext;
 
   const StoreDetailMenuItems({
     Key key,
     @required this.menuID,
     @required this.blocContext,
   }) : super(key: key);
+  final String menuID;
+  final BuildContext blocContext;
 
   @override
   _StoreDetailMenuItemsState createState() => _StoreDetailMenuItemsState();
@@ -42,7 +42,7 @@ class _StoreDetailMenuItemsState extends State<StoreDetailMenuItems> {
                   child: Container(
                     margin: const EdgeInsets.all(16),
                     child: const Text(
-                      "No menu items",
+                      'No menu items',
                       textAlign: TextAlign.center,
                     ),
                   ),
@@ -54,7 +54,7 @@ class _StoreDetailMenuItemsState extends State<StoreDetailMenuItems> {
                     return InkWell(
                       onTap: () {
                         ExtendedNavigator.of(context).pushViewReviewsPage(
-                          type: "menuItem",
+                          type: 'menuItem',
                           typeID: menuItem.id.getOrCrash(),
                         );
                       },
@@ -65,7 +65,7 @@ class _StoreDetailMenuItemsState extends State<StoreDetailMenuItems> {
                           children: <Widget>[
                             const SizedBox(width: 8),
                             if (menuItem.imageUrl.value
-                                .fold((l) => "", (r) => r)
+                                .fold((l) => '', (r) => r)
                                 .isEmpty)
                               Container(
                                 margin:
@@ -90,7 +90,7 @@ class _StoreDetailMenuItemsState extends State<StoreDetailMenuItems> {
                                     fit: BoxFit.cover,
                                     image: NetworkImage(
                                       menuItem.imageUrl.value.fold(
-                                        (l) => "",
+                                        (l) => '',
                                         (r) => r,
                                       ),
                                     ),
@@ -131,7 +131,7 @@ class _StoreDetailMenuItemsState extends State<StoreDetailMenuItems> {
                                 Container(
                                   height: 32,
                                   child: Text(
-                                    "R${menuItem.price}",
+                                    'R${menuItem.price}',
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       color: Theme.of(context).primaryColor,
@@ -183,7 +183,7 @@ class _StoreDetailMenuItemsState extends State<StoreDetailMenuItems> {
               }
             },
             loadFailure: (state) {
-              return const Center(child: Text("Unable to load menu items"));
+              return const Center(child: Text('Unable to load menu items'));
             },
           );
         },

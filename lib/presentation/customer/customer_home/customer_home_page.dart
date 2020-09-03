@@ -43,7 +43,7 @@ class CustomerHomePage extends StatefulWidget implements AutoRouteWrapper {
 class _CustomerHomePageState extends State<CustomerHomePage> {
   int _currentIndex = 0;
 
-  final _titles = ["Kitchens", "Orders"];
+  final _titles = ['Kitchens', 'Orders'];
   final _pages = [
     CustomerStorePage(),
     CustomerOrderPage(),
@@ -68,10 +68,10 @@ class _CustomerHomePageState extends State<CustomerHomePage> {
                 showAboutDialog(
                   context: context,
                   applicationName:
-                      EnvironmentConfig.APP_NAME.replaceAll("_", " "),
+                      EnvironmentConfig.APP_NAME.replaceAll('_', ' '),
                   applicationVersion: EnvironmentConfig.VERSION_NUMBER,
                   applicationIcon: Image.asset(
-                    "assets/launchericon.png",
+                    'assets/launchericon.png',
                     height: 40,
                   ),
                 );
@@ -90,9 +90,9 @@ class _CustomerHomePageState extends State<CustomerHomePage> {
           currentIndex: _currentIndex,
           items: const [
             BottomNavigationBarItem(
-                icon: Icon(Icons.store), title: Text("Kitchens")),
+                icon: Icon(Icons.store), title: Text('Kitchens')),
             BottomNavigationBarItem(
-                icon: Icon(Icons.person), title: Text("Orders")),
+                icon: Icon(Icons.person), title: Text('Orders')),
           ],
           onTap: (value) {
             setState(() {

@@ -18,8 +18,8 @@ class ReviewNotesField extends HookWidget {
       buildWhen: (p, c) => p.review.review != c.review.review,
       builder: (context, state) {
         return LocalyEntryField(
-          "Review",
-          hintText: "Great Service!, etc ...",
+          'Review',
+          hintText: 'Great Service!, etc ...',
           controller: textEditingController,
           onChanged: (value) => context
               .bloc<ReviewFormBloc>()
@@ -27,7 +27,7 @@ class ReviewNotesField extends HookWidget {
           validator: (_) =>
               context.bloc<ReviewFormBloc>().state.review.review.value.fold(
                     (f) => f.maybeMap(
-                      empty: (f) => "Cannot be empty",
+                      empty: (f) => 'Cannot be empty',
                       orElse: () => null,
                     ),
                     (_) => null,

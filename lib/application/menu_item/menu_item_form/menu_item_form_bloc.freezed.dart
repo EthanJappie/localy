@@ -85,6 +85,7 @@ mixin _$MenuItemFormEvent {
     @required Result hiddenChanged(bool hidden),
     @required Result imageUrlChanged(String imageUrl),
   });
+
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result initialized(Option<MenuItem> initialMenuItemOption),
@@ -97,6 +98,7 @@ mixin _$MenuItemFormEvent {
     Result imageUrlChanged(String imageUrl),
     @required Result orElse(),
   });
+
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result initialized(_Initialized value),
@@ -109,6 +111,7 @@ mixin _$MenuItemFormEvent {
     @required Result hiddenChanged(_Hidden value),
     @required Result imageUrlChanged(_ImageUrl value),
   });
+
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result initialized(_Initialized value),
@@ -134,6 +137,7 @@ class _$MenuItemFormEventCopyWithImpl<$Res>
   _$MenuItemFormEventCopyWithImpl(this._value, this._then);
 
   final MenuItemFormEvent _value;
+
   // ignore: unused_field
   final $Res Function(MenuItemFormEvent) _then;
 }
@@ -142,6 +146,7 @@ abstract class _$InitializedCopyWith<$Res> {
   factory _$InitializedCopyWith(
           _Initialized value, $Res Function(_Initialized) then) =
       __$InitializedCopyWithImpl<$Res>;
+
   $Res call({Option<MenuItem> initialMenuItemOption});
 }
 
@@ -290,12 +295,14 @@ abstract class _Initialized implements MenuItemFormEvent {
       _$_Initialized;
 
   Option<MenuItem> get initialMenuItemOption;
+
   _$InitializedCopyWith<_Initialized> get copyWith;
 }
 
 abstract class _$SavedCopyWith<$Res> {
   factory _$SavedCopyWith(_Saved value, $Res Function(_Saved) then) =
       __$SavedCopyWithImpl<$Res>;
+
   $Res call({String menuID});
 }
 
@@ -436,6 +443,7 @@ abstract class _Saved implements MenuItemFormEvent {
   const factory _Saved(String menuID) = _$_Saved;
 
   String get menuID;
+
   _$SavedCopyWith<_Saved> get copyWith;
 }
 
@@ -443,6 +451,7 @@ abstract class _$MenuItemNameChangedCopyWith<$Res> {
   factory _$MenuItemNameChangedCopyWith(_MenuItemNameChanged value,
           $Res Function(_MenuItemNameChanged) then) =
       __$MenuItemNameChangedCopyWithImpl<$Res>;
+
   $Res call({String name});
 }
 
@@ -586,6 +595,7 @@ abstract class _MenuItemNameChanged implements MenuItemFormEvent {
   const factory _MenuItemNameChanged(String name) = _$_MenuItemNameChanged;
 
   String get name;
+
   _$MenuItemNameChangedCopyWith<_MenuItemNameChanged> get copyWith;
 }
 
@@ -593,6 +603,7 @@ abstract class _$MenuItemNotesChangedCopyWith<$Res> {
   factory _$MenuItemNotesChangedCopyWith(_MenuItemNotesChanged value,
           $Res Function(_MenuItemNotesChanged) then) =
       __$MenuItemNotesChangedCopyWithImpl<$Res>;
+
   $Res call({String description});
 }
 
@@ -738,6 +749,7 @@ abstract class _MenuItemNotesChanged implements MenuItemFormEvent {
       _$_MenuItemNotesChanged;
 
   String get description;
+
   _$MenuItemNotesChangedCopyWith<_MenuItemNotesChanged> get copyWith;
 }
 
@@ -746,6 +758,7 @@ abstract class _$SequenceOfAppearanceChangedCopyWith<$Res> {
           _SequenceOfAppearanceChanged value,
           $Res Function(_SequenceOfAppearanceChanged) then) =
       __$SequenceOfAppearanceChangedCopyWithImpl<$Res>;
+
   $Res call({int sequenceOfAppearance});
 }
 
@@ -897,6 +910,7 @@ abstract class _SequenceOfAppearanceChanged implements MenuItemFormEvent {
       _$_SequenceOfAppearanceChanged;
 
   int get sequenceOfAppearance;
+
   _$SequenceOfAppearanceChangedCopyWith<_SequenceOfAppearanceChanged>
       get copyWith;
 }
@@ -905,6 +919,7 @@ abstract class _$PriceChangedCopyWith<$Res> {
   factory _$PriceChangedCopyWith(
           _PriceChanged value, $Res Function(_PriceChanged) then) =
       __$PriceChangedCopyWithImpl<$Res>;
+
   $Res call({double price});
 }
 
@@ -1047,12 +1062,14 @@ abstract class _PriceChanged implements MenuItemFormEvent {
   const factory _PriceChanged(double price) = _$_PriceChanged;
 
   double get price;
+
   _$PriceChangedCopyWith<_PriceChanged> get copyWith;
 }
 
 abstract class _$HiddenCopyWith<$Res> {
   factory _$HiddenCopyWith(_Hidden value, $Res Function(_Hidden) then) =
       __$HiddenCopyWithImpl<$Res>;
+
   $Res call({bool hidden});
 }
 
@@ -1193,12 +1210,14 @@ abstract class _Hidden implements MenuItemFormEvent {
   const factory _Hidden({bool hidden}) = _$_Hidden;
 
   bool get hidden;
+
   _$HiddenCopyWith<_Hidden> get copyWith;
 }
 
 abstract class _$ImageUrlCopyWith<$Res> {
   factory _$ImageUrlCopyWith(_ImageUrl value, $Res Function(_ImageUrl) then) =
       __$ImageUrlCopyWithImpl<$Res>;
+
   $Res call({String imageUrl});
 }
 
@@ -1341,6 +1360,7 @@ abstract class _ImageUrl implements MenuItemFormEvent {
   const factory _ImageUrl(String imageUrl) = _$_ImageUrl;
 
   String get imageUrl;
+
   _$ImageUrlCopyWith<_ImageUrl> get copyWith;
 }
 
@@ -1374,9 +1394,13 @@ const $MenuItemFormState = _$MenuItemFormStateTearOff();
 
 mixin _$MenuItemFormState {
   MenuItem get menuItem;
+
   bool get showErrorMessages;
+
   bool get isSaving;
+
   bool get isEditing;
+
   Option<Either<MenuItemFailure, Unit>> get saveFailureOrSuccessOption;
 
   $MenuItemFormStateCopyWith<MenuItemFormState> get copyWith;
@@ -1386,6 +1410,7 @@ abstract class $MenuItemFormStateCopyWith<$Res> {
   factory $MenuItemFormStateCopyWith(
           MenuItemFormState value, $Res Function(MenuItemFormState) then) =
       _$MenuItemFormStateCopyWithImpl<$Res>;
+
   $Res call(
       {MenuItem menuItem,
       bool showErrorMessages,
@@ -1401,6 +1426,7 @@ class _$MenuItemFormStateCopyWithImpl<$Res>
   _$MenuItemFormStateCopyWithImpl(this._value, this._then);
 
   final MenuItemFormState _value;
+
   // ignore: unused_field
   final $Res Function(MenuItemFormState) _then;
 
@@ -1441,6 +1467,7 @@ abstract class _$MenuItemFormStateCopyWith<$Res>
   factory _$MenuItemFormStateCopyWith(
           _MenuItemFormState value, $Res Function(_MenuItemFormState) then) =
       __$MenuItemFormStateCopyWithImpl<$Res>;
+
   @override
   $Res call(
       {MenuItem menuItem,
@@ -1567,14 +1594,19 @@ abstract class _MenuItemFormState implements MenuItemFormState {
 
   @override
   MenuItem get menuItem;
+
   @override
   bool get showErrorMessages;
+
   @override
   bool get isSaving;
+
   @override
   bool get isEditing;
+
   @override
   Option<Either<MenuItemFailure, Unit>> get saveFailureOrSuccessOption;
+
   @override
   _$MenuItemFormStateCopyWith<_MenuItemFormState> get copyWith;
 }

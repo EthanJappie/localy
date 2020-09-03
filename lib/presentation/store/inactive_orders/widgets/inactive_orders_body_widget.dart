@@ -4,7 +4,8 @@ import 'package:localy/application/order/order_watcher/order_watcher_bloc.dart';
 
 class InactiveOrdersBodyWidget extends StatefulWidget {
   @override
-  _InactiveOrdersBodyWidgetState createState() => _InactiveOrdersBodyWidgetState();
+  _InactiveOrdersBodyWidgetState createState() =>
+      _InactiveOrdersBodyWidgetState();
 }
 
 class _InactiveOrdersBodyWidgetState extends State<InactiveOrdersBodyWidget> {
@@ -20,8 +21,10 @@ class _InactiveOrdersBodyWidgetState extends State<InactiveOrdersBodyWidget> {
           loadSuccess: (state) {
             final orders = state.orders;
 
-            if(orders.isEmpty()){
-              return const Center(child: Text("No Orders"),);
+            if (orders.isEmpty()) {
+              return const Center(
+                child: Text('No Orders'),
+              );
             }
 
             return ListView.separated(
@@ -29,9 +32,9 @@ class _InactiveOrdersBodyWidgetState extends State<InactiveOrdersBodyWidget> {
                 final order = orders[index];
                 return ListTile(
                   title:
-                      Text("OrderID: ${order.id.getOrCrash().substring(0, 5)}"),
+                      Text('OrderID: ${order.id.getOrCrash().substring(0, 5)}'),
                   subtitle: Text(
-                    "Items: ${order.menuItems.length}",
+                    'Items: ${order.menuItems.length}',
                   ),
                 );
               },
@@ -40,7 +43,7 @@ class _InactiveOrdersBodyWidgetState extends State<InactiveOrdersBodyWidget> {
             );
           },
           loadFailure: (_) {
-            return const Center(child: Text("Unable to load menu items"));
+            return const Center(child: Text('Unable to load menu items'));
           },
         );
       },

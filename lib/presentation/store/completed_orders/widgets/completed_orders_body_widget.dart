@@ -24,7 +24,7 @@ class _CompletedOrdersBodyWidgetState extends State<CompletedOrdersBodyWidget> {
 
             if (orders.isEmpty()) {
               return const Center(
-                child: Text("No Orders"),
+                child: Text('No Orders'),
               );
             }
             return ListView.separated(
@@ -40,19 +40,19 @@ class _CompletedOrdersBodyWidgetState extends State<CompletedOrdersBodyWidget> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                          "OrderID: ${orderID.substring(orderID.length - 5, orderID.length)}-${orderID.substring(0, 5)}"),
+                          'OrderID: ${orderID.substring(orderID.length - 5, orderID.length)}-${orderID.substring(0, 5)}'),
                       CircleAvatar(
                         radius: 12,
                         backgroundColor: Theme.of(context).primaryColor,
                         child: Text(
-                          "${order.menuItems.length}",
+                          '${order.menuItems.length}',
                           style: const TextStyle(color: Colors.white),
                         ),
                       )
                     ],
                   ),
                   subtitle: Text(
-                      "${DateFormat.Hm().format(order.dateCreated.toDate())} - ${DateFormat.yMMMd().format(order.dateCreated.toDate())}"),
+                      '${DateFormat.Hm().format(order.dateCreated.toDate())} - ${DateFormat.yMMMd().format(order.dateCreated.toDate())}'),
                 );
               },
               separatorBuilder: (context, index) => const Divider(),
@@ -60,7 +60,7 @@ class _CompletedOrdersBodyWidgetState extends State<CompletedOrdersBodyWidget> {
             );
           },
           loadFailure: (_) {
-            return const Center(child: Text("Unable to load menu items"));
+            return const Center(child: Text('Unable to load menu items'));
           },
         );
       },

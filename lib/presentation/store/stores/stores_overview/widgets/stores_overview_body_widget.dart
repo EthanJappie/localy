@@ -20,21 +20,21 @@ class StoresOverviewBodyWidget extends StatelessWidget {
                 child: Container(
                   margin: const EdgeInsets.all(16),
                   child: const Text(
-                    "You have no stores. Press the '+' button to add one.",
+                    'You have no stores. Press the + button to add one.',
                   ),
                 ),
               );
             } else {
               return ListView.builder(
                 itemCount: state.stores.size,
-                itemBuilder: (builder, index){
+                itemBuilder: (builder, index) {
                   return StoreCard(store: stores[index]);
                 },
               );
             }
           },
           loadFailure: (state) {
-            return const Center(child: Text("Unable to load stores"));
+            return const Center(child: Text('Unable to load stores'));
           },
         );
       },

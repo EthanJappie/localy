@@ -81,6 +81,7 @@ mixin _$ValueFailure<T> {
     @required Result shortPassword(T failedValue),
     @required Result invalidGeoPoint(T failedValue),
   });
+
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result exceedingLength(T failedValue, int max),
@@ -92,6 +93,7 @@ mixin _$ValueFailure<T> {
     Result invalidGeoPoint(T failedValue),
     @required Result orElse(),
   });
+
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result exceedingLength(ExceedingLength<T> value),
@@ -102,6 +104,7 @@ mixin _$ValueFailure<T> {
     @required Result shortPassword(ShortPassword<T> value),
     @required Result invalidGeoPoint(InvalidGeoPoint<T> value),
   });
+
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result exceedingLength(ExceedingLength<T> value),
@@ -121,6 +124,7 @@ abstract class $ValueFailureCopyWith<T, $Res> {
   factory $ValueFailureCopyWith(
           ValueFailure<T> value, $Res Function(ValueFailure<T>) then) =
       _$ValueFailureCopyWithImpl<T, $Res>;
+
   $Res call({T failedValue});
 }
 
@@ -129,6 +133,7 @@ class _$ValueFailureCopyWithImpl<T, $Res>
   _$ValueFailureCopyWithImpl(this._value, this._then);
 
   final ValueFailure<T> _value;
+
   // ignore: unused_field
   final $Res Function(ValueFailure<T>) _then;
 
@@ -148,6 +153,7 @@ abstract class $ExceedingLengthCopyWith<T, $Res>
   factory $ExceedingLengthCopyWith(
           ExceedingLength<T> value, $Res Function(ExceedingLength<T>) then) =
       _$ExceedingLengthCopyWithImpl<T, $Res>;
+
   @override
   $Res call({T failedValue, int max});
 }
@@ -298,7 +304,9 @@ abstract class ExceedingLength<T> implements ValueFailure<T> {
 
   @override
   T get failedValue;
+
   int get max;
+
   @override
   $ExceedingLengthCopyWith<T, ExceedingLength<T>> get copyWith;
 }
@@ -307,6 +315,7 @@ abstract class $EmptyCopyWith<T, $Res>
     implements $ValueFailureCopyWith<T, $Res> {
   factory $EmptyCopyWith(Empty<T> value, $Res Function(Empty<T>) then) =
       _$EmptyCopyWithImpl<T, $Res>;
+
   @override
   $Res call({T failedValue});
 }
@@ -444,6 +453,7 @@ abstract class Empty<T> implements ValueFailure<T> {
 
   @override
   T get failedValue;
+
   @override
   $EmptyCopyWith<T, Empty<T>> get copyWith;
 }
@@ -453,6 +463,7 @@ abstract class $MultilineCopyWith<T, $Res>
   factory $MultilineCopyWith(
           Multiline<T> value, $Res Function(Multiline<T>) then) =
       _$MultilineCopyWithImpl<T, $Res>;
+
   @override
   $Res call({T failedValue});
 }
@@ -592,6 +603,7 @@ abstract class Multiline<T> implements ValueFailure<T> {
 
   @override
   T get failedValue;
+
   @override
   $MultilineCopyWith<T, Multiline<T>> get copyWith;
 }
@@ -601,6 +613,7 @@ abstract class $ListTooLongCopyWith<T, $Res>
   factory $ListTooLongCopyWith(
           ListTooLong<T> value, $Res Function(ListTooLong<T>) then) =
       _$ListTooLongCopyWithImpl<T, $Res>;
+
   @override
   $Res call({T failedValue, int max});
 }
@@ -751,7 +764,9 @@ abstract class ListTooLong<T> implements ValueFailure<T> {
 
   @override
   T get failedValue;
+
   int get max;
+
   @override
   $ListTooLongCopyWith<T, ListTooLong<T>> get copyWith;
 }
@@ -761,6 +776,7 @@ abstract class $InvalidEmailCopyWith<T, $Res>
   factory $InvalidEmailCopyWith(
           InvalidEmail<T> value, $Res Function(InvalidEmail<T>) then) =
       _$InvalidEmailCopyWithImpl<T, $Res>;
+
   @override
   $Res call({T failedValue});
 }
@@ -901,6 +917,7 @@ abstract class InvalidEmail<T> implements ValueFailure<T> {
 
   @override
   T get failedValue;
+
   @override
   $InvalidEmailCopyWith<T, InvalidEmail<T>> get copyWith;
 }
@@ -910,6 +927,7 @@ abstract class $ShortPasswordCopyWith<T, $Res>
   factory $ShortPasswordCopyWith(
           ShortPassword<T> value, $Res Function(ShortPassword<T>) then) =
       _$ShortPasswordCopyWithImpl<T, $Res>;
+
   @override
   $Res call({T failedValue});
 }
@@ -1050,6 +1068,7 @@ abstract class ShortPassword<T> implements ValueFailure<T> {
 
   @override
   T get failedValue;
+
   @override
   $ShortPasswordCopyWith<T, ShortPassword<T>> get copyWith;
 }
@@ -1059,6 +1078,7 @@ abstract class $InvalidGeoPointCopyWith<T, $Res>
   factory $InvalidGeoPointCopyWith(
           InvalidGeoPoint<T> value, $Res Function(InvalidGeoPoint<T>) then) =
       _$InvalidGeoPointCopyWithImpl<T, $Res>;
+
   @override
   $Res call({T failedValue});
 }
@@ -1200,6 +1220,7 @@ abstract class InvalidGeoPoint<T> implements ValueFailure<T> {
 
   @override
   T get failedValue;
+
   @override
   $InvalidGeoPointCopyWith<T, InvalidGeoPoint<T>> get copyWith;
 }

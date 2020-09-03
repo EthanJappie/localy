@@ -33,6 +33,7 @@ abstract class $BundleEntityCopyWith<$Res> {
   factory $BundleEntityCopyWith(
           BundleEntity value, $Res Function(BundleEntity) then) =
       _$BundleEntityCopyWithImpl<$Res>;
+
   $Res call({int numberOfCredits});
 }
 
@@ -40,6 +41,7 @@ class _$BundleEntityCopyWithImpl<$Res> implements $BundleEntityCopyWith<$Res> {
   _$BundleEntityCopyWithImpl(this._value, this._then);
 
   final BundleEntity _value;
+
   // ignore: unused_field
   final $Res Function(BundleEntity) _then;
 
@@ -60,6 +62,7 @@ abstract class _$BundleEntityCopyWith<$Res>
   factory _$BundleEntityCopyWith(
           _BundleEntity value, $Res Function(_BundleEntity) then) =
       __$BundleEntityCopyWithImpl<$Res>;
+
   @override
   $Res call({int numberOfCredits});
 }
@@ -119,11 +122,13 @@ class _$_BundleEntity extends _BundleEntity {
 
 abstract class _BundleEntity extends BundleEntity {
   const _BundleEntity._() : super._();
+
   const factory _BundleEntity({@required int numberOfCredits}) =
       _$_BundleEntity;
 
   @override
   int get numberOfCredits;
+
   @override
   _$BundleEntityCopyWith<_BundleEntity> get copyWith;
 }

@@ -18,8 +18,8 @@ class DeliveryCostField extends HookWidget {
       buildWhen: (p, c) => p.store.deliveryCost != c.store.deliveryCost,
       builder: (context, state) {
         return LocalyEntryField(
-          "Delivery Cost",
-          hintText: "R15",
+          'Delivery Cost',
+          hintText: 'R15',
           isNumber: true,
           controller: textEditingController,
           onChanged: (value) => context.bloc<StoreFormBloc>().add(

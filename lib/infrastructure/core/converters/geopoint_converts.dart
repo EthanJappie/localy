@@ -7,7 +7,7 @@ class GeoPointConverters implements JsonConverter<GeoFirePoint, dynamic> {
 
   @override
   GeoFirePoint fromJson(dynamic json) {
-    final geopoint = json["geopoint"] as GeoPoint;
+    final geopoint = json['geopoint'] as GeoPoint;
     return GeoFirePoint(geopoint.latitude, geopoint.longitude);
   }
 

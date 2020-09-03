@@ -12,18 +12,15 @@ import 'package:localy/domain/bundle/i_bundle_repository.dart';
 import 'package:meta/meta.dart';
 
 part 'sign_in_form_bloc.freezed.dart';
-
 part 'sign_in_form_event.dart';
-
 part 'sign_in_form_state.dart';
 
 @injectable
 class SignInFormBloc extends Bloc<SignInFormEvent, SignInFormState> {
-  final IAuthFacade _authFacade;
-  final IBundleRepository _bundleRepository;
-
   SignInFormBloc(this._authFacade, this._bundleRepository)
       : super(SignInFormState.initial());
+  final IAuthFacade _authFacade;
+  final IBundleRepository _bundleRepository;
 
   @override
   Stream<SignInFormState> mapEventToState(
@@ -131,7 +128,7 @@ class SignInFormBloc extends Bloc<SignInFormEvent, SignInFormState> {
       );
     }
 
-    _bundleRepository.create(
+    await _bundleRepository.create(
       const BundleEntity(numberOfCredits: 10),
     );
 

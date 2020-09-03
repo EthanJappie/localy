@@ -11,20 +11,17 @@ import 'package:localy/domain/review/review_entity_failure.dart';
 import 'package:meta/meta.dart';
 
 part 'review_watcher_bloc.freezed.dart';
-
 part 'review_watcher_event.dart';
-
 part 'review_watcher_state.dart';
 
 @injectable
 class ReviewWatcherBloc extends Bloc<ReviewWatcherEvent, ReviewWatcherState> {
+  ReviewWatcherBloc(this._reviewRepository)
+      : super(const ReviewWatcherState.initial());
   final IReviewRepository _reviewRepository;
 
   StreamSubscription<Either<ReviewEntityFailure, KtList<ReviewEntity>>>
       _reviewStreamSubscription;
-
-  ReviewWatcherBloc(this._reviewRepository)
-      : super(const ReviewWatcherState.initial());
 
   @override
   Stream<ReviewWatcherState> mapEventToState(

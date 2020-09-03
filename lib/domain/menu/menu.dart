@@ -21,7 +21,7 @@ abstract class Menu implements _$Menu {
   factory Menu.empty() => Menu(
         id: UniqueId(),
         storeID: ValueString(),
-        name: ValueString.fromString(""),
+        name: ValueString.fromString(''),
         notes: ValueString(),
         sequenceOfAppearance: 0,
         hidden: false,
@@ -29,7 +29,7 @@ abstract class Menu implements _$Menu {
 
   Option<ValueFailure<dynamic>> get failureOption {
     return storeID.failureOrUnit.andThen(name.failureOrUnit).fold(
-          (f) => some(f),
+          some,
           (_) => none(),
         );
   }

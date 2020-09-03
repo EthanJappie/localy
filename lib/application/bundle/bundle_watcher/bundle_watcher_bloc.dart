@@ -15,12 +15,11 @@ part 'bundle_watcher_state.dart';
 
 @injectable
 class BundleWatcherBloc extends Bloc<BundleWatcherEvent, BundleWatcherState> {
+  BundleWatcherBloc(this._bundleRepository)
+      : super(const BundleWatcherState.initial());
   final IBundleRepository _bundleRepository;
   StreamSubscription<Either<BundleEntityFailure, BundleEntity>>
       _bundleStreamSubscription;
-
-  BundleWatcherBloc(this._bundleRepository)
-      : super(const BundleWatcherState.initial());
 
   @override
   Stream<BundleWatcherState> mapEventToState(

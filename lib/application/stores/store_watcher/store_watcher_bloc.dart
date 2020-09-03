@@ -9,20 +9,18 @@ import 'package:localy/domain/store/i_store_repository.dart';
 import 'package:localy/domain/store/restaurant.dart';
 import 'package:localy/domain/store/store_failure.dart';
 
-part 'store_watcher_event.dart';
-
-part 'store_watcher_state.dart';
-
 part 'store_watcher_bloc.freezed.dart';
+part 'store_watcher_event.dart';
+part 'store_watcher_state.dart';
 
 @injectable
 class StoreWatcherBloc extends Bloc<StoreWatcherEvent, StoreWatcherState> {
+  StoreWatcherBloc(this._storeRepository)
+      : super(const StoreWatcherState.initial());
+
   final IStoreRepository _storeRepository;
   StreamSubscription<Either<StoreFailure, KtList<Restaurant>>>
       _storeStreamSubscription;
-
-  StoreWatcherBloc(this._storeRepository)
-      : super(const StoreWatcherState.initial());
 
   @override
   Stream<StoreWatcherState> mapEventToState(
@@ -47,12 +45,11 @@ class StoreWatcherBloc extends Bloc<StoreWatcherEvent, StoreWatcherState> {
       watchAllInRadiusStarted: (e) async* {
         yield const StoreWatcherState.loading();
         await _storeStreamSubscription?.cancel();
-        _storeStreamSubscription =
-            _storeRepository.watchAllInRadius().listen(
-                  (failureOrStores) => add(
-                    StoreWatcherEvent.storesReceived(failureOrStores),
-                  ),
-                );
+        _storeStreamSubscription = _storeRepository.watchAllInRadius().listen(
+              (failureOrStores) => add(
+                StoreWatcherEvent.storesReceived(failureOrStores),
+              ),
+            );
       },
     );
   }

@@ -38,17 +38,20 @@ mixin _$OrderActorEvent {
     @required Result deleted(StoreOrder order),
     @required Result changedState(StoreOrder order),
   });
+
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result deleted(StoreOrder order),
     Result changedState(StoreOrder order),
     @required Result orElse(),
   });
+
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result deleted(_Deleted value),
     @required Result changedState(_ChangedStatus value),
   });
+
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result deleted(_Deleted value),
@@ -63,6 +66,7 @@ abstract class $OrderActorEventCopyWith<$Res> {
   factory $OrderActorEventCopyWith(
           OrderActorEvent value, $Res Function(OrderActorEvent) then) =
       _$OrderActorEventCopyWithImpl<$Res>;
+
   $Res call({StoreOrder order});
 
   $StoreOrderCopyWith<$Res> get order;
@@ -73,6 +77,7 @@ class _$OrderActorEventCopyWithImpl<$Res>
   _$OrderActorEventCopyWithImpl(this._value, this._then);
 
   final OrderActorEvent _value;
+
   // ignore: unused_field
   final $Res Function(OrderActorEvent) _then;
 
@@ -100,6 +105,7 @@ abstract class _$DeletedCopyWith<$Res>
     implements $OrderActorEventCopyWith<$Res> {
   factory _$DeletedCopyWith(_Deleted value, $Res Function(_Deleted) then) =
       __$DeletedCopyWithImpl<$Res>;
+
   @override
   $Res call({StoreOrder order});
 
@@ -208,6 +214,7 @@ abstract class _Deleted implements OrderActorEvent {
 
   @override
   StoreOrder get order;
+
   @override
   _$DeletedCopyWith<_Deleted> get copyWith;
 }
@@ -217,6 +224,7 @@ abstract class _$ChangedStatusCopyWith<$Res>
   factory _$ChangedStatusCopyWith(
           _ChangedStatus value, $Res Function(_ChangedStatus) then) =
       __$ChangedStatusCopyWithImpl<$Res>;
+
   @override
   $Res call({StoreOrder order});
 
@@ -327,6 +335,7 @@ abstract class _ChangedStatus implements OrderActorEvent {
 
   @override
   StoreOrder get order;
+
   @override
   _$ChangedStatusCopyWith<_ChangedStatus> get copyWith;
 }
@@ -382,6 +391,7 @@ mixin _$OrderActorState {
     @required Result deleteSuccess(),
     @required Result updateSuccess(),
   });
+
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result initial(),
@@ -392,6 +402,7 @@ mixin _$OrderActorState {
     Result updateSuccess(),
     @required Result orElse(),
   });
+
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result initial(_Initial value),
@@ -401,6 +412,7 @@ mixin _$OrderActorState {
     @required Result deleteSuccess(_DeleteSuccess value),
     @required Result updateSuccess(_UpdateSuccess value),
   });
+
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result initial(_Initial value),
@@ -424,6 +436,7 @@ class _$OrderActorStateCopyWithImpl<$Res>
   _$OrderActorStateCopyWithImpl(this._value, this._then);
 
   final OrderActorState _value;
+
   // ignore: unused_field
   final $Res Function(OrderActorState) _then;
 }
@@ -650,6 +663,7 @@ abstract class _$DeleteFailureCopyWith<$Res> {
   factory _$DeleteFailureCopyWith(
           _DeleteFailure value, $Res Function(_DeleteFailure) then) =
       __$DeleteFailureCopyWithImpl<$Res>;
+
   $Res call({OrderFailure orderFailure});
 
   $OrderFailureCopyWith<$Res> get orderFailure;
@@ -794,6 +808,7 @@ abstract class _DeleteFailure implements OrderActorState {
   const factory _DeleteFailure(OrderFailure orderFailure) = _$_DeleteFailure;
 
   OrderFailure get orderFailure;
+
   _$DeleteFailureCopyWith<_DeleteFailure> get copyWith;
 }
 
@@ -801,6 +816,7 @@ abstract class _$UpdateFailureCopyWith<$Res> {
   factory _$UpdateFailureCopyWith(
           _UpdateFailure value, $Res Function(_UpdateFailure) then) =
       __$UpdateFailureCopyWithImpl<$Res>;
+
   $Res call({OrderFailure orderFailure});
 
   $OrderFailureCopyWith<$Res> get orderFailure;
@@ -945,6 +961,7 @@ abstract class _UpdateFailure implements OrderActorState {
   const factory _UpdateFailure(OrderFailure orderFailure) = _$_UpdateFailure;
 
   OrderFailure get orderFailure;
+
   _$UpdateFailureCopyWith<_UpdateFailure> get copyWith;
 }
 
