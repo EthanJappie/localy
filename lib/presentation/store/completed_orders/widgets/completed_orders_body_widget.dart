@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 import 'package:localy/application/order/order_watcher/order_watcher_bloc.dart';
+import 'package:localy/presentation/core/helpers/context_extentions.dart';
 
 class CompletedOrdersBodyWidget extends StatefulWidget {
   @override
@@ -33,7 +34,7 @@ class _CompletedOrdersBodyWidgetState extends State<CompletedOrdersBodyWidget> {
                 final orderID = order.id.getOrCrash();
                 return ListTile(
                   onTap: () {
-//                    ExtendedNavigator.of(context)
+//                    context.navigator
 //                        .pushViewOrderPage(order: order);
                   },
                   title: Row(
@@ -45,7 +46,7 @@ class _CompletedOrdersBodyWidgetState extends State<CompletedOrdersBodyWidget> {
                       )}-${orderID.substring(0, 5)}'),
                       CircleAvatar(
                         radius: 12,
-                        backgroundColor: Theme.of(context).primaryColor,
+                        backgroundColor: context.primaryColor,
                         child: Text(
                           '${order.menuItems.length}',
                           style: const TextStyle(color: Colors.white),

@@ -33,7 +33,7 @@ class _ActiveOrdersBodyWidgetState extends State<ActiveOrdersBodyWidget> {
                 final orderID = order.id.getOrCrash();
                 return ListTile(
                   onTap: () {
-                    ExtendedNavigator.of(context)
+                    context.navigator
                         .pushViewOrderPage(order: order);
                   },
                   title: Text('OrderID: ${orderID.substring(

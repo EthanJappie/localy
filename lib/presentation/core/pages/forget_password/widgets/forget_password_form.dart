@@ -7,6 +7,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:localy/application/forget_password_form/forget_password_form_bloc.dart';
 import 'package:localy/gen/assets.gen.dart';
 import 'package:localy/presentation/core/widgets/localy_entry_field.dart';
+import 'package:localy/presentation/core/helpers/context_extentions.dart';
 
 class ForgetPasswordForm extends StatelessWidget {
   @override
@@ -44,9 +45,9 @@ class ForgetPasswordForm extends StatelessWidget {
               Diagonal(
                 clipHeight: 75,
                 child: Container(
-                  height: MediaQuery.of(context).size.height / 2,
+                  height: context.height / 2,
                   decoration: BoxDecoration(
-                    color: Theme.of(context).primaryColor,
+                    color: context.primaryColor,
                   ),
                 ),
               ),
@@ -93,7 +94,7 @@ class ForgetPasswordForm extends StatelessWidget {
                         children: [
                           InkWell(
                             onTap: () {
-                              ExtendedNavigator.of(context).pop();
+                              context.navigator.pop();
                             },
                             child: const Icon(Icons.arrow_back),
                           ),
@@ -134,7 +135,7 @@ class ForgetPasswordForm extends StatelessWidget {
                             children: <Widget>[
                               Expanded(
                                 child: MaterialButton(
-                                  color: Theme.of(context).primaryColor,
+                                  color: context.primaryColor,
                                   textColor: Colors.white,
                                   elevation: 0,
                                   padding:

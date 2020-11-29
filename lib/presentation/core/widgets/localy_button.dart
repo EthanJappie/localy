@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:localy/presentation/core/helpers/context_extentions.dart';
 
 class LocalyButton extends StatelessWidget {
   const LocalyButton({
@@ -19,7 +20,7 @@ class LocalyButton extends StatelessWidget {
       children: <Widget>[
         Expanded(
           child: MaterialButton(
-            color: empty ? Colors.white : Theme.of(context).primaryColor,
+            color: empty ? Colors.white : context.primaryColor,
             textColor: Colors.white,
             elevation: 0,
             padding: const EdgeInsets.symmetric(vertical: 16),

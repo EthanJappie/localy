@@ -5,6 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_cropper/image_cropper.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:localy/application/stores/store_form/store_form_bloc.dart';
+import 'package:localy/presentation/core/helpers/context_extentions.dart';
 
 class CoverImageField extends StatelessWidget {
   const CoverImageField({Key key}) : super(key: key);
@@ -44,7 +45,7 @@ class CoverImageField extends StatelessWidget {
                   child: Container(
                     color: Colors.grey,
                     height: 200,
-                    width: MediaQuery.of(context).size.width,
+                    width: context.width,
                     child: _renderImage(state.store.coverImageUrl),
                   ),
                 ),

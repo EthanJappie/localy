@@ -37,7 +37,7 @@ class MenuBuilderOverviewBodyWidget extends StatelessWidget {
                   final menu = menus[index];
                   return ListTile(
                     onTap: () {
-                      ExtendedNavigator.of(context).pushMenuItemsOverviewPage(
+                      context.navigator.pushMenuItemsOverviewPage(
                         menuID: menu.id.getOrCrash(),
                       );
                     },
@@ -49,7 +49,7 @@ class MenuBuilderOverviewBodyWidget extends StatelessWidget {
                     trailing: IconButton(
                       icon: const Icon(Icons.arrow_forward_ios),
                       onPressed: () {
-                        ExtendedNavigator.of(context).pushMenuBuilderFormPage(
+                        context.navigator.pushMenuBuilderFormPage(
                           storeID: storeID,
                           editedMenu: menus[index],
                         );

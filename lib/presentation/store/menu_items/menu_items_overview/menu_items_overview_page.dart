@@ -53,7 +53,7 @@ class MenuItemsOverviewPage extends StatelessWidget {
             body: MenuItemsOverviewBodyWidget(menuID: menuID),
             floatingActionButton: FloatingActionButton(
               onPressed: () {
-                ExtendedNavigator.of(context).pushMenuItemsFormPage(
+                context.navigator.pushMenuItemsFormPage(
                   menuID: menuID,
                 );
               },

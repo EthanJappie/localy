@@ -61,7 +61,7 @@ class _HomePageState extends State<HomePage> {
       listener: (context, state) {
         state.maybeMap(
           unauthenticated: (_) =>
-              ExtendedNavigator.of(context).replace(Routes.signInPage),
+              context.navigator.replace(Routes.signInPage),
           orElse: () {},
         );
       },

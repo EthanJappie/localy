@@ -6,6 +6,7 @@ import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:localy/application/review/review_watcher/review_watcher_bloc.dart';
 import 'package:localy/injection.dart';
 import 'package:localy/presentation/core/routes/router.gr.dart';
+import 'package:localy/presentation/core/helpers/context_extentions.dart';
 
 class ViewReviewsPage extends StatelessWidget {
   const ViewReviewsPage({
@@ -66,15 +67,15 @@ class ViewReviewsPage extends StatelessWidget {
                             ratingWidget: RatingWidget(
                               full: Icon(
                                 Icons.star,
-                                color: Theme.of(context).primaryColor,
+                                color: context.primaryColor,
                               ),
                               half: Icon(
                                 Icons.star,
-                                color: Theme.of(context).primaryColor,
+                                color: context.primaryColor,
                               ),
                               empty: Icon(
                                 Icons.star,
-                                color: Theme.of(context).primaryColor,
+                                color: context.primaryColor,
                               ),
                             ),
                             itemSize: 16,
@@ -116,7 +117,7 @@ class ViewReviewsPage extends StatelessWidget {
         body: child,
         floatingActionButton: FloatingActionButton.extended(
           onPressed: () {
-            ExtendedNavigator.of(context).pushReviewFormPage(
+            context.navigator.pushReviewFormPage(
               type: type,
               typeID: typeID,
             );

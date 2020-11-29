@@ -30,7 +30,7 @@
 //     ..acceptAchPayments = false
 //     ..acceptGHMobileMoneyPayments = false
 //     ..acceptUgMobileMoneyPayments = false
-//     ..companyName = Text('Localy', style: Theme.of(context).textTheme.subtitle1)
+//     ..companyName = Text('Localy', style: context.textTheme.subtitle1)
 //     ..staging = false
 //     ..isPreAuth = true
 //     ..displayFee = true;

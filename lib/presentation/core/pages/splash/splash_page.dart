@@ -18,9 +18,9 @@ class SplashPage extends StatelessWidget {
             authenticated: (_) {
               if (EnvironmentConfig.APP_NAME ==
                   EnvironmentConfig.APP_NAME_LOCALY_MANAGER) {
-                ExtendedNavigator.of(context).replace(Routes.homePage);
+                context.navigator.replace(Routes.homePage);
               } else {
-                ExtendedNavigator.of(context).replace(Routes.customerHomePage);
+                context.navigator.replace(Routes.customerHomePage);
               }
             },
             unauthenticated: (_) {});
@@ -79,7 +79,7 @@ class SplashPage extends StatelessWidget {
                     LocalyButton(
                       title: 'Sign in',
                       onPressed: () {
-                        ExtendedNavigator.of(context).push(Routes.signInPage);
+                        context.navigator.push(Routes.signInPage);
                       },
                     ),
                     const SizedBox(
@@ -89,7 +89,7 @@ class SplashPage extends StatelessWidget {
                       title: 'Sign up',
                       empty: true,
                       onPressed: () {
-                        ExtendedNavigator.of(context).push(Routes.registerPage);
+                        context.navigator.push(Routes.registerPage);
                       },
                     ),
                   ],

@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:localy/presentation/core/helpers/context_extentions.dart';
 
 class LocalyTimePicker extends FormField<Timestamp> {
   LocalyTimePicker({
@@ -38,7 +39,7 @@ class LocalyTimePicker extends FormField<Timestamp> {
                       Icons.watch_later,
                       color: time == null
                           ? Colors.grey
-                          : Theme.of(context).primaryColor,
+                          : context.primaryColor,
                     ),
                     const SizedBox(width: 16),
                     Text(

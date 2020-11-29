@@ -38,7 +38,7 @@ class MenuItemsOverviewBodyWidget extends StatelessWidget {
                   final menuItem = menuItems[index];
                   return ListTile(
                     onTap: () {
-                      ExtendedNavigator.of(context).pushViewReviewsPage(
+                      context.navigator.pushViewReviewsPage(
                         type: 'menuItem',
                         typeID: menuItem.id.getOrCrash(),
                         isStore: true,
@@ -57,7 +57,7 @@ class MenuItemsOverviewBodyWidget extends StatelessWidget {
                         const SizedBox(width: 16),
                         InkWell(
                           onTap: () {
-                            ExtendedNavigator.of(context).pushMenuItemsFormPage(
+                            context.navigator.pushMenuItemsFormPage(
                               menuID: menuID,
                               editedMenuItem: menuItem,
                             );

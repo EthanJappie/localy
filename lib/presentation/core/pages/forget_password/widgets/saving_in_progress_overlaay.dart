@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:localy/presentation/core/helpers/context_extentions.dart';
 
 class SavingInProgressOverlay extends StatelessWidget {
   const SavingInProgressOverlay({
@@ -14,8 +15,8 @@ class SavingInProgressOverlay extends StatelessWidget {
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 150),
         color: isSaving ? Colors.black.withOpacity(0.8) : Colors.transparent,
-        width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height,
+        width: context.width,
+        height: context.height,
         child: Visibility(
           visible: isSaving,
           child: Column(
@@ -25,7 +26,7 @@ class SavingInProgressOverlay extends StatelessWidget {
               const SizedBox(height: 8),
               Text(
                 'Saving',
-                style: Theme.of(context).textTheme.bodyText2.copyWith(
+                style: context.textTheme.bodyText2.copyWith(
                       color: Colors.white,
                       fontSize: 16,
                     ),

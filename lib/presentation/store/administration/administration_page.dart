@@ -11,6 +11,7 @@ import 'package:localy/presentation/customer/view_reviews/view_reviews_page.dart
 import 'package:localy/presentation/store/active_orders/active_orders_page.dart';
 import 'package:localy/presentation/store/completed_orders/completed_orders_page.dart';
 import 'package:localy/presentation/store/inactive_orders/inactive_orders_page.dart';
+import 'package:localy/presentation/core/helpers/context_extentions.dart';
 
 class AdministrationPage extends StatefulWidget {
   const AdministrationPage({Key key, @required this.store}) : super(key: key);
@@ -77,7 +78,7 @@ class _AdministrationPageState extends State<AdministrationPage> {
           actions: [
             FlatButton(
               onPressed: () {
-                ExtendedNavigator.of(context)
+                context.navigator
                     .pushStoreFormPage(editedStore: widget.store);
               },
               child: const Text(
@@ -94,7 +95,7 @@ class _AdministrationPageState extends State<AdministrationPage> {
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
           currentIndex: _currentIndex,
-          selectedItemColor: Theme.of(context).primaryColor,
+          selectedItemColor: context.primaryColor,
           unselectedItemColor: Colors.grey,
           onTap: (index) {
             setState(() {

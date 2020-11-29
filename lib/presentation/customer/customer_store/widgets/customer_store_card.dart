@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:geoflutterfire/geoflutterfire.dart';
 import 'package:localy/domain/store/restaurant.dart';
 import 'package:localy/presentation/core/routes/router.gr.dart';
+import 'package:localy/presentation/core/helpers/context_extentions.dart';
 
 class CustomerStoreCard extends StatelessWidget {
   const CustomerStoreCard({Key key, this.store, this.currentPosition})
@@ -16,7 +17,7 @@ class CustomerStoreCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        ExtendedNavigator.of(context).pushStoreDetailPage(
+        context.navigator.pushStoreDetailPage(
           store: store,
         );
       },
@@ -30,14 +31,14 @@ class CustomerStoreCard extends StatelessWidget {
                   decoration: const BoxDecoration(
                       color: Color(0xFFEAEAEB),
                       borderRadius: BorderRadius.all(Radius.circular(8))),
-                  height: MediaQuery.of(context).size.width / 1.5,
+                  height: context.width / 1.5,
                   child: Center(
                     heightFactor: store.coverImageUrl == null ||
                             store.coverImageUrl.isEmpty
                         ? 3
                         : 1,
                     child: _renderImage(store.coverImageUrl,
-                        MediaQuery.of(context).size.width / 1.5),
+                        context.width / 1.5),
                   ),
                 ),
               ],
@@ -113,7 +114,7 @@ class CustomerStoreCard extends StatelessWidget {
                     children: <Widget>[
                       Icon(
                         Icons.star,
-                        color: Theme.of(context).primaryColor,
+                        color: context.primaryColor,
                         size: 16,
                       ),
                       const SizedBox(width: 4),
@@ -121,7 +122,7 @@ class CustomerStoreCard extends StatelessWidget {
                       const SizedBox(width: 16),
                       Icon(
                         Icons.directions_car,
-                        color: Theme.of(context).primaryColor,
+                        color: context.primaryColor,
                         size: 16,
                       ),
                       const SizedBox(width: 4),
@@ -133,7 +134,7 @@ class CustomerStoreCard extends StatelessWidget {
                       Icon(
                         Icons.monetization_on,
                         color: _hasDeliveryCost()
-                            ? Theme.of(context).primaryColor
+                            ? context.primaryColor
                             : Colors.grey,
                         size: 16,
                       ),

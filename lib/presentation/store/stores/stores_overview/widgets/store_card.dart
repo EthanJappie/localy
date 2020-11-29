@@ -13,7 +13,7 @@ class StoreCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        ExtendedNavigator.of(context).pushAdministrationPage(store: store);
+        context.navigator.pushAdministrationPage(store: store);
       },
       child: Card(
         margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),

@@ -5,6 +5,7 @@ import 'package:localy/application/order/order_actor/order_actor_bloc.dart';
 import 'package:localy/domain/core/value_objects.dart';
 import 'package:localy/domain/menu_item/menu_item.dart';
 import 'package:localy/domain/order/order.dart';
+import 'package:localy/presentation/core/helpers/context_extentions.dart';
 import 'package:localy/presentation/core/helpers/utils.dart';
 import 'package:localy/presentation/core/widgets/localy_button.dart';
 import 'package:location/location.dart';
@@ -68,7 +69,7 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
                   children: <Widget>[
                     Icon(
                       Icons.call,
-                      color: Theme.of(context).primaryColor,
+                      color: context.primaryColor,
                     ),
                     const SizedBox(width: 16),
                     Expanded(
@@ -115,7 +116,7 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
                   children: <Widget>[
                     Icon(
                       Icons.location_on,
-                      color: Theme.of(context).primaryColor,
+                      color: context.primaryColor,
                     ),
                     const SizedBox(width: 16),
                     Expanded(
@@ -168,7 +169,7 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
                   Text(
                     'Total',
                     style: TextStyle(
-                      color: Theme.of(context).primaryColor,
+                      color: context.primaryColor,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -178,7 +179,7 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
                       costOfDelivery: widget.order.deliveryCost,
                     ).toStringAsFixed(2)}',
                     style: TextStyle(
-                      color: Theme.of(context).primaryColor,
+                      color: context.primaryColor,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -191,7 +192,7 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
                   title: 'Cancel',
                   onPressed: () {
                     _changeState('cancelled', completed: true);
-                    ExtendedNavigator.of(context).pop();
+                    context.navigator.pop();
                   },
                 ),
             ],
@@ -258,24 +259,20 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
                 children: <Widget>[
                   Text(
                     menuItem.name.getOrCrash(),
-                    style: Theme.of(context)
-                        .textTheme
-                        .subtitle1
+                    style: context.textTheme.subtitle1
                         .copyWith(fontWeight: FontWeight.bold),
                   ),
                   Container(
-                    width: MediaQuery.of(context).size.width - 100,
+                    width: context.width - 100,
                     child: Text(
                       menuItem.description.getOrCrash(),
-                      style: Theme.of(context)
-                          .textTheme
-                          .bodyText2
+                      style: context.textTheme.bodyText2
                           .copyWith(color: Colors.grey[600]),
                     ),
                   ),
                   const SizedBox(height: 16),
                   Container(
-                    width: MediaQuery.of(context).size.width - 100,
+                    width: context.width - 100,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
@@ -283,7 +280,7 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
                           children: <Widget>[
                             CircleAvatar(
                               radius: 16,
-                              backgroundColor: Theme.of(context).primaryColor,
+                              backgroundColor: context.primaryColor,
                               child: Text(
                                 menuItem.count == null
                                     ? 'x1'
@@ -301,7 +298,7 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
                           'R${menuItem.price}',
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            color: Theme.of(context).primaryColor,
+                            color: context.primaryColor,
                           ),
                         ),
                       ],

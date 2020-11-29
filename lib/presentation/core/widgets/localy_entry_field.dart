@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:localy/presentation/core/helpers/context_extentions.dart';
 
 class LocalyEntryField extends StatelessWidget {
   const LocalyEntryField(
@@ -48,7 +49,7 @@ class LocalyEntryField extends StatelessWidget {
                 prefixIcon: _getIcon(context),
                 border: OutlineInputBorder(
                     borderSide:
-                        BorderSide(color: Theme.of(context).primaryColor))),
+                        BorderSide(color: context.primaryColor))),
             validator: validator,
             onChanged: onChanged,
           )
@@ -63,7 +64,7 @@ class LocalyEntryField extends StatelessWidget {
     } else {
       return Icon(
         icon,
-        color: Theme.of(context).primaryColor,
+        color: context.primaryColor,
       );
     }
   }

@@ -5,6 +5,7 @@ import 'package:localy/application/bundle/bundle_watcher/bundle_watcher_bloc.dar
 import 'package:localy/domain/bundle/bundle_entity.dart';
 import 'package:localy/presentation/core/widgets/localy_button.dart';
 import 'package:localy/presentation/core/widgets/localy_entry_field.dart';
+import 'package:localy/presentation/core/helpers/context_extentions.dart';
 
 class StoreProfilePage extends StatelessWidget {
   @override
@@ -103,7 +104,7 @@ class StoreProfilePage extends StatelessWidget {
             onPressed: () {
               _handlePayment(context, numberOfCredits);
             },
-            color: Theme.of(context).primaryColor,
+            color: context.primaryColor,
             textColor: Colors.white,
             child: Text(
               'Buy',
@@ -132,7 +133,7 @@ class StoreProfilePage extends StatelessWidget {
           ),
           MaterialButton(
             onPressed: () {},
-            color: Theme.of(context).primaryColor,
+            color: context.primaryColor,
             textColor: Colors.white,
             child: Text(
               'Buy',

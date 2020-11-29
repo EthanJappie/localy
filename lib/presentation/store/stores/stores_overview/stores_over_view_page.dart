@@ -35,7 +35,7 @@ class StoresOverviewPage extends HookWidget {
         body: StoresOverviewBodyWidget(),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
-            ExtendedNavigator.of(context).pushStoreFormPage(editedStore: null);
+            context.navigator.pushStoreFormPage(editedStore: null);
           },
           child: const Icon(Icons.add),
         ),

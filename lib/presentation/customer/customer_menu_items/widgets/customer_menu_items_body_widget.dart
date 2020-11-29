@@ -38,7 +38,7 @@ class CustomerMenuItemsBodyWidget extends StatelessWidget {
                   final menuItem = menuItems[index];
                   return ListTile(
                     onTap: () {
-                      ExtendedNavigator.of(context).pushMenuItemsFormPage(
+                      context.navigator.pushMenuItemsFormPage(
                         menuID: menuID,
                         editedMenuItem: menuItem,
                       );

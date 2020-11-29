@@ -14,6 +14,7 @@ import 'package:localy/presentation/customer/checkout/widgets/cash_field.dart';
 import 'package:localy/presentation/customer/checkout/widgets/delivery_field.dart';
 import 'package:localy/presentation/customer/checkout/widgets/location_delivery_field.dart';
 import 'package:localy/presentation/customer/checkout/widgets/other_field.dart';
+import 'package:localy/presentation/core/helpers/context_extentions.dart';
 
 class CheckoutPage extends StatefulWidget {
   const CheckoutPage({Key key, this.blocContext}) : super(key: key);
@@ -115,7 +116,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                             Text(
                               'Total',
                               style: TextStyle(
-                                color: Theme.of(context).primaryColor,
+                                color: context.primaryColor,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
@@ -125,7 +126,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                                 costOfDelivery: state.order.deliveryCost,
                               ).toStringAsFixed(2)}',
                               style: TextStyle(
-                                color: Theme.of(context).primaryColor,
+                                color: context.primaryColor,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
@@ -173,7 +174,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                   ).show(context);
                 },
                 (_) {
-                  ExtendedNavigator.of(context)
+                  context.navigator
                       .replace(Routes.customerHomePage);
                 },
               );
@@ -230,16 +231,16 @@ class _CheckoutPageState extends State<CheckoutPage> {
                 children: <Widget>[
                   Text(
                     menuItem.name.getOrCrash(),
-                    style: Theme.of(context)
+                    style: context
                         .textTheme
                         .subtitle1
                         .copyWith(fontWeight: FontWeight.bold),
                   ),
                   Container(
-                    width: MediaQuery.of(context).size.width - 100,
+                    width: context.width - 100,
                     child: Text(
                       menuItem.description.getOrCrash(),
-                      style: Theme.of(context)
+                      style: context
                           .textTheme
                           .bodyText2
                           .copyWith(color: Colors.grey[600]),
@@ -247,7 +248,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                   ),
                   const SizedBox(height: 16),
                   Container(
-                    width: MediaQuery.of(context).size.width - 100,
+                    width: context.width - 100,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
@@ -295,7 +296,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                               },
                               child: CircleAvatar(
                                 radius: 16,
-                                backgroundColor: Theme.of(context).primaryColor,
+                                backgroundColor: context.primaryColor,
                                 child: const Icon(
                                   Icons.add,
                                   color: Colors.white,
@@ -308,7 +309,7 @@ class _CheckoutPageState extends State<CheckoutPage> {
                           'R${menuItem.price}',
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            color: Theme.of(context).primaryColor,
+                            color: context.primaryColor,
                           ),
                         ),
                       ],

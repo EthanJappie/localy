@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:localy/presentation/core/helpers/context_extentions.dart';
 
 void showErrorDialog(BuildContext context, error) {
   showDialog(
@@ -13,7 +14,7 @@ void showErrorDialog(BuildContext context, error) {
             const SizedBox(width: 10),
             Text(
               'Oh snap!',
-              style: Theme.of(context).textTheme.headline5,
+              style: context.textTheme.headline5,
             )
           ],
         ),

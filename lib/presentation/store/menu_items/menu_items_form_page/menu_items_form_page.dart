@@ -65,7 +65,7 @@ class MenuItemsFormPage extends StatelessWidget {
                   ).show(context);
                 },
                 (_) {
-                  ExtendedNavigator.of(context).popUntil(
+                  context.navigator.popUntil(
                     (route) =>
                         route.settings.name == Routes.menuItemsOverviewPage,
                   );
@@ -156,7 +156,7 @@ class MenuItemFormPageScaffold extends StatelessWidget {
                           context
                               .bloc<MenuItemActorBloc>()
                               .add(MenuItemActorEvent.deleted(editedMenuItem));
-                          ExtendedNavigator.of(context).pop();
+                          context.navigator.pop();
                         },
                       ),
                     ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:localy/application/order/order_form/order_form_bloc.dart';
+import 'package:localy/presentation/core/helpers/context_extentions.dart';
 
 class OtherField extends StatelessWidget {
   const OtherField({Key key}) : super(key: key);
@@ -21,7 +22,7 @@ class OtherField extends StatelessWidget {
             ),
           ),
           trailing: Radio(
-            activeColor: Theme.of(context).primaryColor,
+            activeColor: context.primaryColor,
             value: true,
             groupValue: state.order.payingByOther,
             onChanged: (bool value) {

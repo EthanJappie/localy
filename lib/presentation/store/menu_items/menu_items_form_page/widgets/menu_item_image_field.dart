@@ -7,6 +7,7 @@ import 'package:image_cropper/image_cropper.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:localy/application/menu_item/menu_item_form/menu_item_form_bloc.dart';
 import 'package:localy/domain/menu_item/menu_item.dart';
+import 'package:localy/presentation/core/helpers/context_extentions.dart';
 
 class MenuItemImageField extends StatelessWidget {
   const MenuItemImageField({Key key}) : super(key: key);
@@ -44,7 +45,7 @@ class MenuItemImageField extends StatelessWidget {
                 ),
                 Card(
                   child: Container(
-                    height: MediaQuery.of(context).size.width - 32,
+                    height: context.width - 32,
                     color: Colors.grey,
                     child: Center(
                       child: _renderImage(state.menuItem),

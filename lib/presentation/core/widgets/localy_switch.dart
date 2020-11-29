@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:localy/presentation/core/helpers/context_extentions.dart';
 
 class LocalySwitch extends StatelessWidget {
   const LocalySwitch({
@@ -27,7 +28,7 @@ class LocalySwitch extends StatelessWidget {
         Switch(
           onChanged: onChanged,
           value: condition,
-          activeColor: Theme.of(context).primaryColor,
+          activeColor: context.primaryColor,
         )
       ],
     );

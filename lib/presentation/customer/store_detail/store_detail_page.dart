@@ -78,7 +78,7 @@ class _StoreDetailPageState extends State<StoreDetailPage> {
                       actions: [
                         FlatButton(
                           onPressed: () {
-                            ExtendedNavigator.of(context).pushViewReviewsPage(
+                            context.navigator.pushViewReviewsPage(
                               type: 'store',
                               typeID: widget.store.id.getOrCrash(),
                             );
@@ -125,7 +125,7 @@ class _StoreDetailPageState extends State<StoreDetailPage> {
                         return FloatingActionButton.extended(
                           onPressed: () async {
                             if (state.order.menuItems.isNotEmpty) {
-                              await ExtendedNavigator.of(context)
+                              await context.navigator
                                   .pushCheckoutPage(
                                 blocContext: context,
                               );

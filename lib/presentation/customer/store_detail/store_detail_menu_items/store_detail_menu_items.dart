@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:localy/application/menu_item/menu_item_watcher/menu_item_watcher_bloc.dart';
 import 'package:localy/application/order/order_form/order_form_bloc.dart';
 import 'package:localy/injection.dart';
+import 'package:localy/presentation/core/helpers/context_extentions.dart';
 import 'package:localy/presentation/core/routes/router.gr.dart';
 
 class StoreDetailMenuItems extends StatefulWidget {
@@ -52,7 +53,7 @@ class _StoreDetailMenuItemsState extends State<StoreDetailMenuItems> {
                     final menuItem = menuItems[index];
                     return InkWell(
                       onTap: () {
-                        ExtendedNavigator.of(context).pushViewReviewsPage(
+                        context.navigator.pushViewReviewsPage(
                           type: 'menuItem',
                           typeID: menuItem.id.getOrCrash(),
                         );
@@ -105,18 +106,14 @@ class _StoreDetailMenuItemsState extends State<StoreDetailMenuItems> {
                               children: <Widget>[
                                 Text(
                                   menuItem.name.getOrCrash(),
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .subtitle1
+                                  style: context.textTheme.subtitle1
                                       .copyWith(fontWeight: FontWeight.bold),
                                 ),
                                 Container(
                                   width: 200,
                                   child: Text(
                                     menuItem.description.getOrCrash(),
-                                    style: Theme.of(context)
-                                        .textTheme
-                                        .bodyText2
+                                    style: context.textTheme.bodyText2
                                         .copyWith(color: Colors.grey[600]),
                                   ),
                                 ),
@@ -133,7 +130,7 @@ class _StoreDetailMenuItemsState extends State<StoreDetailMenuItems> {
                                     'R${menuItem.price}',
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                      color: Theme.of(context).primaryColor,
+                                      color: context.primaryColor,
                                     ),
                                   ),
                                 ),

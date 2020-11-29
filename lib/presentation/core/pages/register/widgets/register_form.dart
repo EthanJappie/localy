@@ -11,6 +11,7 @@ import 'package:localy/gen/assets.gen.dart';
 import 'package:localy/presentation/core/routes/router.gr.dart';
 import 'package:localy/presentation/core/widgets/localy_button.dart';
 import 'package:localy/presentation/core/widgets/localy_entry_field.dart';
+import 'package:localy/presentation/core/helpers/context_extentions.dart';
 
 class RegisterForm extends StatelessWidget {
   @override
@@ -34,9 +35,9 @@ class RegisterForm extends StatelessWidget {
             (_) {
               if (EnvironmentConfig.APP_NAME ==
                   EnvironmentConfig.APP_NAME_LOCALY_MANAGER) {
-                ExtendedNavigator.of(context).replace(Routes.homePage);
+                context.navigator.replace(Routes.homePage);
               } else {
-                ExtendedNavigator.of(context).replace(Routes.customerHomePage);
+                context.navigator.replace(Routes.customerHomePage);
               }
               context
                   .bloc<AuthBloc>()
@@ -58,9 +59,9 @@ class RegisterForm extends StatelessWidget {
                 Diagonal(
                   clipHeight: 75,
                   child: Container(
-                    height: MediaQuery.of(context).size.height / 2,
+                    height: context.height / 2,
                     decoration: BoxDecoration(
-                      color: Theme.of(context).primaryColor,
+                      color: context.primaryColor,
                     ),
                   ),
                 ),

@@ -63,7 +63,7 @@ class MenuBuilderFormPage extends StatelessWidget {
                   ).show(context);
                 },
                 (_) {
-                  ExtendedNavigator.of(context).popUntil((route) =>
+                  context.navigator.popUntil((route) =>
                       route.settings.name == Routes.administrationPage);
                 },
               );
@@ -143,7 +143,7 @@ class MenuBuilderFormPageScaffold extends StatelessWidget {
                           context
                               .bloc<MenuActorBloc>()
                               .add(MenuActorEvent.deleted(editedMenu));
-                          ExtendedNavigator.of(context).pop();
+                          context.navigator.pop();
                         },
                       ),
                     ),

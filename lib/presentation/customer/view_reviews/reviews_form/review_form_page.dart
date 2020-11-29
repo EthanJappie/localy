@@ -12,6 +12,7 @@ import 'package:localy/presentation/core/pages/forget_password/widgets/saving_in
 import 'package:localy/presentation/core/routes/router.gr.dart';
 import 'package:localy/presentation/core/widgets/localy_button.dart';
 import 'package:localy/presentation/customer/view_reviews/reviews_form/widgets/review_notes_field.dart';
+import 'package:localy/presentation/core/helpers/context_extentions.dart';
 
 class ReviewFormPage extends StatelessWidget {
   const ReviewFormPage({
@@ -57,7 +58,7 @@ class ReviewFormPage extends StatelessWidget {
                   ).show(context);
                 },
                 (_) {
-                  ExtendedNavigator.of(context).popUntil((route) =>
+                  context.navigator.popUntil((route) =>
                       route.settings.name == Routes.customerHomePage);
                 },
               );
@@ -111,15 +112,15 @@ class ReviewFormPageScaffold extends StatelessWidget {
                         ratingWidget: RatingWidget(
                             full: Icon(
                               Icons.star,
-                              color: Theme.of(context).primaryColor,
+                              color: context.primaryColor,
                             ),
                             half: Icon(
                               Icons.star,
-                              color: Theme.of(context).primaryColor,
+                              color: context.primaryColor,
                             ),
                             empty: Icon(
                               Icons.star,
-                              color: Theme.of(context).primaryColor,
+                              color: context.primaryColor,
                             )),
                         onRatingUpdate: (rating) {
                           context

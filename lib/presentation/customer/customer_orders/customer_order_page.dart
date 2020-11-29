@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 import 'package:localy/application/order/order_watcher/order_watcher_bloc.dart';
 import 'package:localy/presentation/core/routes/router.gr.dart';
+import 'package:localy/presentation/core/helpers/context_extentions.dart';
 
 class CustomerOrderPage extends StatelessWidget {
   @override
@@ -25,7 +26,7 @@ class CustomerOrderPage extends StatelessWidget {
                   final order = orders[index];
                   return InkWell(
                     onTap: () {
-                      ExtendedNavigator.of(context)
+                      context.navigator
                           .pushCustomerViewOrderPage(order: order);
                     },
                     child: Card(
@@ -53,7 +54,7 @@ class CustomerOrderPage extends StatelessWidget {
                                     vertical: 4,
                                   ),
                                   decoration: BoxDecoration(
-                                    color: Theme.of(context).primaryColor,
+                                    color: context.primaryColor,
                                     borderRadius: const BorderRadius.all(
                                       Radius.circular(4),
                                     ),

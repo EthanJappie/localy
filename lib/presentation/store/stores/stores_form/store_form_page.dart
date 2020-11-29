@@ -72,7 +72,7 @@ class StoreFormPage extends StatelessWidget {
                   ).show(context);
                 },
                 (_) {
-                  ExtendedNavigator.of(context).popUntil(
+                  context.navigator.popUntil(
                       (route) => route.settings.name == Routes.homePage);
                 },
               );
@@ -192,7 +192,7 @@ class StoreFormPageScaffold extends StatelessWidget {
                                 .bloc<StoreActorBloc>()
                                 .add(StoreActorEvent.deleted(state.store));
 
-                            ExtendedNavigator.of(context).pop();
+                            context.navigator.pop();
                           },
                         ),
                       ),

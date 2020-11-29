@@ -6,6 +6,7 @@ import 'package:localy/domain/core/value_objects.dart';
 import 'package:localy/domain/menu_item/menu_item.dart';
 import 'package:localy/domain/order/order.dart';
 import 'package:localy/injection.dart';
+import 'package:localy/presentation/core/helpers/context_extentions.dart';
 import 'package:localy/presentation/core/helpers/utils.dart';
 import 'package:localy/presentation/core/widgets/localy_button.dart';
 import 'package:location/location.dart';
@@ -66,7 +67,7 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
                   children: <Widget>[
                     Icon(
                       Icons.call,
-                      color: Theme.of(context).primaryColor,
+                      color: context.primaryColor,
                     ),
                     const SizedBox(width: 16),
                     Expanded(
@@ -92,7 +93,7 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
                 children: <Widget>[
                   Icon(
                     Icons.speaker_notes,
-                    color: Theme.of(context).primaryColor,
+                    color: context.primaryColor,
                   ),
                   const SizedBox(width: 16),
                   Expanded(
@@ -142,7 +143,7 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
                     children: <Widget>[
                       Icon(
                         Icons.location_on,
-                        color: Theme.of(context).primaryColor,
+                        color: context.primaryColor,
                       ),
                       const SizedBox(width: 16),
                       Expanded(
@@ -198,7 +199,7 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
                   Text(
                     'Total',
                     style: TextStyle(
-                      color: Theme.of(context).primaryColor,
+                      color: context.primaryColor,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -208,7 +209,7 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
                       costOfDelivery: widget.order.deliveryCost,
                     ).toStringAsFixed(2)}',
                     style: TextStyle(
-                      color: Theme.of(context).primaryColor,
+                      color: context.primaryColor,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -220,7 +221,7 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
                   title: 'Accept',
                   onPressed: () {
                     _changeState('accepted');
-                    ExtendedNavigator.of(context).pop();
+                    context.navigator.pop();
                   },
                 ),
               if (widget.order.status.getOrCrash() == 'accepted')
@@ -229,7 +230,7 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
                   onPressed: () {
                     _changeState('ready');
 
-                    ExtendedNavigator.of(context).pop();
+                    context.navigator.pop();
                   },
                 ),
               if (widget.order.status.getOrCrash() == 'ready')
@@ -237,7 +238,7 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
                   title: 'Complete',
                   onPressed: () {
                     _changeState('completed', completed: true);
-                    ExtendedNavigator.of(context).pop();
+                    context.navigator.pop();
                   },
                 ),
               LocalyButton(
@@ -245,7 +246,7 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
                 title: 'Cancel',
                 onPressed: () {
                   _changeState('cancelled', completed: true);
-                  ExtendedNavigator.of(context).pop();
+                  context.navigator.pop();
                 },
               ),
               const SizedBox(height: 16),
@@ -313,24 +314,20 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
                 children: <Widget>[
                   Text(
                     menuItem.name.getOrCrash(),
-                    style: Theme.of(context)
-                        .textTheme
-                        .subtitle1
+                    style: context.textTheme.subtitle1
                         .copyWith(fontWeight: FontWeight.bold),
                   ),
                   Container(
-                    width: MediaQuery.of(context).size.width - 100,
+                    width: context.width - 100,
                     child: Text(
                       menuItem.description.getOrCrash(),
-                      style: Theme.of(context)
-                          .textTheme
-                          .bodyText2
+                      style: context.textTheme.bodyText2
                           .copyWith(color: Colors.grey[600]),
                     ),
                   ),
                   const SizedBox(height: 16),
                   Container(
-                    width: MediaQuery.of(context).size.width - 100,
+                    width: context.width - 100,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
@@ -338,7 +335,7 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
                           children: <Widget>[
                             CircleAvatar(
                               radius: 16,
-                              backgroundColor: Theme.of(context).primaryColor,
+                              backgroundColor: context.primaryColor,
                               child: Text(
                                 menuItem.count == null
                                     ? 'x1'
@@ -356,7 +353,7 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
                           'R${menuItem.price}',
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            color: Theme.of(context).primaryColor,
+                            color: context.primaryColor,
                           ),
                         ),
                       ],
