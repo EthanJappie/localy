@@ -9,6 +9,7 @@ part of 'order_failure.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$OrderFailureTearOff {
   const _$OrderFailureTearOff();
 
@@ -28,9 +29,11 @@ class _$OrderFailureTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $OrderFailure = _$OrderFailureTearOff();
 
+/// @nodoc
 mixin _$OrderFailure {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -38,7 +41,6 @@ mixin _$OrderFailure {
     @required Result insufficientPermission(),
     @required Result unableToUpdate(),
   });
-
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result unexpected(),
@@ -46,14 +48,12 @@ mixin _$OrderFailure {
     Result unableToUpdate(),
     @required Result orElse(),
   });
-
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result unexpected(UnexpectedFailure value),
     @required Result insufficientPermission(InsufficientOrderPermission value),
     @required Result unableToUpdate(UnableToUpdateOrder value),
   });
-
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result unexpected(UnexpectedFailure value),
@@ -63,27 +63,30 @@ mixin _$OrderFailure {
   });
 }
 
+/// @nodoc
 abstract class $OrderFailureCopyWith<$Res> {
   factory $OrderFailureCopyWith(
           OrderFailure value, $Res Function(OrderFailure) then) =
       _$OrderFailureCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$OrderFailureCopyWithImpl<$Res> implements $OrderFailureCopyWith<$Res> {
   _$OrderFailureCopyWithImpl(this._value, this._then);
 
   final OrderFailure _value;
-
   // ignore: unused_field
   final $Res Function(OrderFailure) _then;
 }
 
+/// @nodoc
 abstract class $UnexpectedFailureCopyWith<$Res> {
   factory $UnexpectedFailureCopyWith(
           UnexpectedFailure value, $Res Function(UnexpectedFailure) then) =
       _$UnexpectedFailureCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$UnexpectedFailureCopyWithImpl<$Res>
     extends _$OrderFailureCopyWithImpl<$Res>
     implements $UnexpectedFailureCopyWith<$Res> {
@@ -95,6 +98,7 @@ class _$UnexpectedFailureCopyWithImpl<$Res>
   UnexpectedFailure get _value => super._value as UnexpectedFailure;
 }
 
+/// @nodoc
 class _$UnexpectedFailure implements UnexpectedFailure {
   const _$UnexpectedFailure();
 
@@ -172,6 +176,7 @@ abstract class UnexpectedFailure implements OrderFailure {
   const factory UnexpectedFailure() = _$UnexpectedFailure;
 }
 
+/// @nodoc
 abstract class $InsufficientOrderPermissionCopyWith<$Res> {
   factory $InsufficientOrderPermissionCopyWith(
           InsufficientOrderPermission value,
@@ -179,6 +184,7 @@ abstract class $InsufficientOrderPermissionCopyWith<$Res> {
       _$InsufficientOrderPermissionCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$InsufficientOrderPermissionCopyWithImpl<$Res>
     extends _$OrderFailureCopyWithImpl<$Res>
     implements $InsufficientOrderPermissionCopyWith<$Res> {
@@ -191,6 +197,7 @@ class _$InsufficientOrderPermissionCopyWithImpl<$Res>
       super._value as InsufficientOrderPermission;
 }
 
+/// @nodoc
 class _$InsufficientOrderPermission implements InsufficientOrderPermission {
   const _$InsufficientOrderPermission();
 
@@ -268,12 +275,14 @@ abstract class InsufficientOrderPermission implements OrderFailure {
   const factory InsufficientOrderPermission() = _$InsufficientOrderPermission;
 }
 
+/// @nodoc
 abstract class $UnableToUpdateOrderCopyWith<$Res> {
   factory $UnableToUpdateOrderCopyWith(
           UnableToUpdateOrder value, $Res Function(UnableToUpdateOrder) then) =
       _$UnableToUpdateOrderCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$UnableToUpdateOrderCopyWithImpl<$Res>
     extends _$OrderFailureCopyWithImpl<$Res>
     implements $UnableToUpdateOrderCopyWith<$Res> {
@@ -285,6 +294,7 @@ class _$UnableToUpdateOrderCopyWithImpl<$Res>
   UnableToUpdateOrder get _value => super._value as UnableToUpdateOrder;
 }
 
+/// @nodoc
 class _$UnableToUpdateOrder implements UnableToUpdateOrder {
   const _$UnableToUpdateOrder();
 

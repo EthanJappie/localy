@@ -9,6 +9,7 @@ part of 'store_form_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$StoreFormEventTearOff {
   const _$StoreFormEventTearOff();
 
@@ -152,9 +153,11 @@ class _$StoreFormEventTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $StoreFormEvent = _$StoreFormEventTearOff();
 
+/// @nodoc
 mixin _$StoreFormEvent {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -179,7 +182,6 @@ mixin _$StoreFormEvent {
     @required Result coverImageChanged(String coverImage),
     @required Result deliveryCostChanged(double deliveryCosts),
   });
-
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result initialized(Option<Restaurant> initialStoreOption),
@@ -204,7 +206,6 @@ mixin _$StoreFormEvent {
     Result deliveryCostChanged(double deliveryCosts),
     @required Result orElse(),
   });
-
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result initialized(_Initialized value),
@@ -230,7 +231,6 @@ mixin _$StoreFormEvent {
     @required Result coverImageChanged(_CoverImageChanged value),
     @required Result deliveryCostChanged(_DeliveryCostChanged value),
   });
-
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result initialized(_Initialized value),
@@ -257,30 +257,32 @@ mixin _$StoreFormEvent {
   });
 }
 
+/// @nodoc
 abstract class $StoreFormEventCopyWith<$Res> {
   factory $StoreFormEventCopyWith(
           StoreFormEvent value, $Res Function(StoreFormEvent) then) =
       _$StoreFormEventCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$StoreFormEventCopyWithImpl<$Res>
     implements $StoreFormEventCopyWith<$Res> {
   _$StoreFormEventCopyWithImpl(this._value, this._then);
 
   final StoreFormEvent _value;
-
   // ignore: unused_field
   final $Res Function(StoreFormEvent) _then;
 }
 
+/// @nodoc
 abstract class _$InitializedCopyWith<$Res> {
   factory _$InitializedCopyWith(
           _Initialized value, $Res Function(_Initialized) then) =
       __$InitializedCopyWithImpl<$Res>;
-
   $Res call({Option<Restaurant> initialStoreOption});
 }
 
+/// @nodoc
 class __$InitializedCopyWithImpl<$Res>
     extends _$StoreFormEventCopyWithImpl<$Res>
     implements _$InitializedCopyWith<$Res> {
@@ -303,6 +305,7 @@ class __$InitializedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_Initialized implements _Initialized {
   const _$_Initialized(this.initialStoreOption)
       : assert(initialStoreOption != null);
@@ -499,18 +502,18 @@ abstract class _Initialized implements StoreFormEvent {
       _$_Initialized;
 
   Option<Restaurant> get initialStoreOption;
-
   _$InitializedCopyWith<_Initialized> get copyWith;
 }
 
+/// @nodoc
 abstract class _$StoreNameChangedCopyWith<$Res> {
   factory _$StoreNameChangedCopyWith(
           _StoreNameChanged value, $Res Function(_StoreNameChanged) then) =
       __$StoreNameChangedCopyWithImpl<$Res>;
-
   $Res call({String storeName});
 }
 
+/// @nodoc
 class __$StoreNameChangedCopyWithImpl<$Res>
     extends _$StoreFormEventCopyWithImpl<$Res>
     implements _$StoreNameChangedCopyWith<$Res> {
@@ -531,6 +534,7 @@ class __$StoreNameChangedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_StoreNameChanged implements _StoreNameChanged {
   const _$_StoreNameChanged(this.storeName) : assert(storeName != null);
 
@@ -724,18 +728,18 @@ abstract class _StoreNameChanged implements StoreFormEvent {
   const factory _StoreNameChanged(String storeName) = _$_StoreNameChanged;
 
   String get storeName;
-
   _$StoreNameChangedCopyWith<_StoreNameChanged> get copyWith;
 }
 
+/// @nodoc
 abstract class _$AddressChangedCopyWith<$Res> {
   factory _$AddressChangedCopyWith(
           _AddressChanged value, $Res Function(_AddressChanged) then) =
       __$AddressChangedCopyWithImpl<$Res>;
-
   $Res call({String address});
 }
 
+/// @nodoc
 class __$AddressChangedCopyWithImpl<$Res>
     extends _$StoreFormEventCopyWithImpl<$Res>
     implements _$AddressChangedCopyWith<$Res> {
@@ -756,6 +760,7 @@ class __$AddressChangedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_AddressChanged implements _AddressChanged {
   const _$_AddressChanged(this.address) : assert(address != null);
 
@@ -948,18 +953,18 @@ abstract class _AddressChanged implements StoreFormEvent {
   const factory _AddressChanged(String address) = _$_AddressChanged;
 
   String get address;
-
   _$AddressChangedCopyWith<_AddressChanged> get copyWith;
 }
 
+/// @nodoc
 abstract class _$CoordinatesChangedCopyWith<$Res> {
   factory _$CoordinatesChangedCopyWith(
           _CoordinatesChanged value, $Res Function(_CoordinatesChanged) then) =
       __$CoordinatesChangedCopyWithImpl<$Res>;
-
   $Res call({GeoFirePoint coordinates});
 }
 
+/// @nodoc
 class __$CoordinatesChangedCopyWithImpl<$Res>
     extends _$StoreFormEventCopyWithImpl<$Res>
     implements _$CoordinatesChangedCopyWith<$Res> {
@@ -980,6 +985,7 @@ class __$CoordinatesChangedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_CoordinatesChanged implements _CoordinatesChanged {
   const _$_CoordinatesChanged(this.coordinates) : assert(coordinates != null);
 
@@ -1174,18 +1180,18 @@ abstract class _CoordinatesChanged implements StoreFormEvent {
       _$_CoordinatesChanged;
 
   GeoFirePoint get coordinates;
-
   _$CoordinatesChangedCopyWith<_CoordinatesChanged> get copyWith;
 }
 
+/// @nodoc
 abstract class _$WorkHoursFromChangedCopyWith<$Res> {
   factory _$WorkHoursFromChangedCopyWith(_WorkHoursFromChanged value,
           $Res Function(_WorkHoursFromChanged) then) =
       __$WorkHoursFromChangedCopyWithImpl<$Res>;
-
   $Res call({Timestamp workHours});
 }
 
+/// @nodoc
 class __$WorkHoursFromChangedCopyWithImpl<$Res>
     extends _$StoreFormEventCopyWithImpl<$Res>
     implements _$WorkHoursFromChangedCopyWith<$Res> {
@@ -1206,6 +1212,7 @@ class __$WorkHoursFromChangedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_WorkHoursFromChanged implements _WorkHoursFromChanged {
   const _$_WorkHoursFromChanged(this.workHours) : assert(workHours != null);
 
@@ -1401,18 +1408,18 @@ abstract class _WorkHoursFromChanged implements StoreFormEvent {
       _$_WorkHoursFromChanged;
 
   Timestamp get workHours;
-
   _$WorkHoursFromChangedCopyWith<_WorkHoursFromChanged> get copyWith;
 }
 
+/// @nodoc
 abstract class _$WorkHoursToChangedCopyWith<$Res> {
   factory _$WorkHoursToChangedCopyWith(
           _WorkHoursToChanged value, $Res Function(_WorkHoursToChanged) then) =
       __$WorkHoursToChangedCopyWithImpl<$Res>;
-
   $Res call({Timestamp workHours});
 }
 
+/// @nodoc
 class __$WorkHoursToChangedCopyWithImpl<$Res>
     extends _$StoreFormEventCopyWithImpl<$Res>
     implements _$WorkHoursToChangedCopyWith<$Res> {
@@ -1433,6 +1440,7 @@ class __$WorkHoursToChangedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_WorkHoursToChanged implements _WorkHoursToChanged {
   const _$_WorkHoursToChanged(this.workHours) : assert(workHours != null);
 
@@ -1627,18 +1635,18 @@ abstract class _WorkHoursToChanged implements StoreFormEvent {
       _$_WorkHoursToChanged;
 
   Timestamp get workHours;
-
   _$WorkHoursToChangedCopyWith<_WorkHoursToChanged> get copyWith;
 }
 
+/// @nodoc
 abstract class _$TelephoneChangedCopyWith<$Res> {
   factory _$TelephoneChangedCopyWith(
           _TelephoneChanged value, $Res Function(_TelephoneChanged) then) =
       __$TelephoneChangedCopyWithImpl<$Res>;
-
   $Res call({String telephone});
 }
 
+/// @nodoc
 class __$TelephoneChangedCopyWithImpl<$Res>
     extends _$StoreFormEventCopyWithImpl<$Res>
     implements _$TelephoneChangedCopyWith<$Res> {
@@ -1659,6 +1667,7 @@ class __$TelephoneChangedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_TelephoneChanged implements _TelephoneChanged {
   const _$_TelephoneChanged(this.telephone) : assert(telephone != null);
 
@@ -1852,18 +1861,18 @@ abstract class _TelephoneChanged implements StoreFormEvent {
   const factory _TelephoneChanged(String telephone) = _$_TelephoneChanged;
 
   String get telephone;
-
   _$TelephoneChangedCopyWith<_TelephoneChanged> get copyWith;
 }
 
+/// @nodoc
 abstract class _$NotesChangedCopyWith<$Res> {
   factory _$NotesChangedCopyWith(
           _NotesChanged value, $Res Function(_NotesChanged) then) =
       __$NotesChangedCopyWithImpl<$Res>;
-
   $Res call({String notes});
 }
 
+/// @nodoc
 class __$NotesChangedCopyWithImpl<$Res>
     extends _$StoreFormEventCopyWithImpl<$Res>
     implements _$NotesChangedCopyWith<$Res> {
@@ -1884,6 +1893,7 @@ class __$NotesChangedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_NotesChanged implements _NotesChanged {
   const _$_NotesChanged(this.notes) : assert(notes != null);
 
@@ -2076,18 +2086,18 @@ abstract class _NotesChanged implements StoreFormEvent {
   const factory _NotesChanged(String notes) = _$_NotesChanged;
 
   String get notes;
-
   _$NotesChangedCopyWith<_NotesChanged> get copyWith;
 }
 
+/// @nodoc
 abstract class _$ActiveChangedCopyWith<$Res> {
   factory _$ActiveChangedCopyWith(
           _ActiveChanged value, $Res Function(_ActiveChanged) then) =
       __$ActiveChangedCopyWithImpl<$Res>;
-
   $Res call({bool active});
 }
 
+/// @nodoc
 class __$ActiveChangedCopyWithImpl<$Res>
     extends _$StoreFormEventCopyWithImpl<$Res>
     implements _$ActiveChangedCopyWith<$Res> {
@@ -2108,6 +2118,7 @@ class __$ActiveChangedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_ActiveChanged implements _ActiveChanged {
   const _$_ActiveChanged({this.active});
 
@@ -2300,18 +2311,18 @@ abstract class _ActiveChanged implements StoreFormEvent {
   const factory _ActiveChanged({bool active}) = _$_ActiveChanged;
 
   bool get active;
-
   _$ActiveChangedCopyWith<_ActiveChanged> get copyWith;
 }
 
+/// @nodoc
 abstract class _$OpenChangedCopyWith<$Res> {
   factory _$OpenChangedCopyWith(
           _OpenChanged value, $Res Function(_OpenChanged) then) =
       __$OpenChangedCopyWithImpl<$Res>;
-
   $Res call({bool open});
 }
 
+/// @nodoc
 class __$OpenChangedCopyWithImpl<$Res>
     extends _$StoreFormEventCopyWithImpl<$Res>
     implements _$OpenChangedCopyWith<$Res> {
@@ -2332,6 +2343,7 @@ class __$OpenChangedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_OpenChanged implements _OpenChanged {
   const _$_OpenChanged({this.open});
 
@@ -2524,19 +2536,19 @@ abstract class _OpenChanged implements StoreFormEvent {
   const factory _OpenChanged({bool open}) = _$_OpenChanged;
 
   bool get open;
-
   _$OpenChangedCopyWith<_OpenChanged> get copyWith;
 }
 
+/// @nodoc
 abstract class _$AcceptingStaffRequestsChangedCopyWith<$Res> {
   factory _$AcceptingStaffRequestsChangedCopyWith(
           _AcceptingStaffRequestsChanged value,
           $Res Function(_AcceptingStaffRequestsChanged) then) =
       __$AcceptingStaffRequestsChangedCopyWithImpl<$Res>;
-
   $Res call({bool acceptingStaffRequests});
 }
 
+/// @nodoc
 class __$AcceptingStaffRequestsChangedCopyWithImpl<$Res>
     extends _$StoreFormEventCopyWithImpl<$Res>
     implements _$AcceptingStaffRequestsChangedCopyWith<$Res> {
@@ -2561,6 +2573,7 @@ class __$AcceptingStaffRequestsChangedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_AcceptingStaffRequestsChanged
     implements _AcceptingStaffRequestsChanged {
   const _$_AcceptingStaffRequestsChanged({this.acceptingStaffRequests});
@@ -2758,19 +2771,19 @@ abstract class _AcceptingStaffRequestsChanged implements StoreFormEvent {
       _$_AcceptingStaffRequestsChanged;
 
   bool get acceptingStaffRequests;
-
   _$AcceptingStaffRequestsChangedCopyWith<_AcceptingStaffRequestsChanged>
       get copyWith;
 }
 
+/// @nodoc
 abstract class _$AcceptCashChangedCopyWith<$Res> {
   factory _$AcceptCashChangedCopyWith(
           _AcceptCashChanged value, $Res Function(_AcceptCashChanged) then) =
       __$AcceptCashChangedCopyWithImpl<$Res>;
-
   $Res call({bool acceptCash});
 }
 
+/// @nodoc
 class __$AcceptCashChangedCopyWithImpl<$Res>
     extends _$StoreFormEventCopyWithImpl<$Res>
     implements _$AcceptCashChangedCopyWith<$Res> {
@@ -2792,6 +2805,7 @@ class __$AcceptCashChangedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_AcceptCashChanged implements _AcceptCashChanged {
   const _$_AcceptCashChanged({this.acceptCash});
 
@@ -2985,18 +2999,18 @@ abstract class _AcceptCashChanged implements StoreFormEvent {
   const factory _AcceptCashChanged({bool acceptCash}) = _$_AcceptCashChanged;
 
   bool get acceptCash;
-
   _$AcceptCashChangedCopyWith<_AcceptCashChanged> get copyWith;
 }
 
+/// @nodoc
 abstract class _$AcceptCardChangedCopyWith<$Res> {
   factory _$AcceptCardChangedCopyWith(
           _AcceptCardChanged value, $Res Function(_AcceptCardChanged) then) =
       __$AcceptCardChangedCopyWithImpl<$Res>;
-
   $Res call({bool acceptCard});
 }
 
+/// @nodoc
 class __$AcceptCardChangedCopyWithImpl<$Res>
     extends _$StoreFormEventCopyWithImpl<$Res>
     implements _$AcceptCardChangedCopyWith<$Res> {
@@ -3018,6 +3032,7 @@ class __$AcceptCardChangedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_AcceptCardChanged implements _AcceptCardChanged {
   const _$_AcceptCardChanged({this.acceptCard});
 
@@ -3211,18 +3226,18 @@ abstract class _AcceptCardChanged implements StoreFormEvent {
   const factory _AcceptCardChanged({bool acceptCard}) = _$_AcceptCardChanged;
 
   bool get acceptCard;
-
   _$AcceptCardChangedCopyWith<_AcceptCardChanged> get copyWith;
 }
 
+/// @nodoc
 abstract class _$AcceptOtherChangedCopyWith<$Res> {
   factory _$AcceptOtherChangedCopyWith(
           _AcceptOtherChanged value, $Res Function(_AcceptOtherChanged) then) =
       __$AcceptOtherChangedCopyWithImpl<$Res>;
-
   $Res call({bool acceptOther});
 }
 
+/// @nodoc
 class __$AcceptOtherChangedCopyWithImpl<$Res>
     extends _$StoreFormEventCopyWithImpl<$Res>
     implements _$AcceptOtherChangedCopyWith<$Res> {
@@ -3244,6 +3259,7 @@ class __$AcceptOtherChangedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_AcceptOtherChanged implements _AcceptOtherChanged {
   const _$_AcceptOtherChanged({this.acceptOther});
 
@@ -3437,18 +3453,18 @@ abstract class _AcceptOtherChanged implements StoreFormEvent {
   const factory _AcceptOtherChanged({bool acceptOther}) = _$_AcceptOtherChanged;
 
   bool get acceptOther;
-
   _$AcceptOtherChangedCopyWith<_AcceptOtherChanged> get copyWith;
 }
 
+/// @nodoc
 abstract class _$FoodDeliveriesChangedCopyWith<$Res> {
   factory _$FoodDeliveriesChangedCopyWith(_FoodDeliveriesChanged value,
           $Res Function(_FoodDeliveriesChanged) then) =
       __$FoodDeliveriesChangedCopyWithImpl<$Res>;
-
   $Res call({bool foodDeliveries});
 }
 
+/// @nodoc
 class __$FoodDeliveriesChangedCopyWithImpl<$Res>
     extends _$StoreFormEventCopyWithImpl<$Res>
     implements _$FoodDeliveriesChangedCopyWith<$Res> {
@@ -3471,6 +3487,7 @@ class __$FoodDeliveriesChangedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_FoodDeliveriesChanged implements _FoodDeliveriesChanged {
   const _$_FoodDeliveriesChanged({this.foodDeliveries});
 
@@ -3667,18 +3684,18 @@ abstract class _FoodDeliveriesChanged implements StoreFormEvent {
       _$_FoodDeliveriesChanged;
 
   bool get foodDeliveries;
-
   _$FoodDeliveriesChangedCopyWith<_FoodDeliveriesChanged> get copyWith;
 }
 
+/// @nodoc
 abstract class _$FoodCollectionChangedCopyWith<$Res> {
   factory _$FoodCollectionChangedCopyWith(_FoodCollectionChanged value,
           $Res Function(_FoodCollectionChanged) then) =
       __$FoodCollectionChangedCopyWithImpl<$Res>;
-
   $Res call({bool foodCollection});
 }
 
+/// @nodoc
 class __$FoodCollectionChangedCopyWithImpl<$Res>
     extends _$StoreFormEventCopyWithImpl<$Res>
     implements _$FoodCollectionChangedCopyWith<$Res> {
@@ -3701,6 +3718,7 @@ class __$FoodCollectionChangedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_FoodCollectionChanged implements _FoodCollectionChanged {
   const _$_FoodCollectionChanged({this.foodCollection});
 
@@ -3897,18 +3915,18 @@ abstract class _FoodCollectionChanged implements StoreFormEvent {
       _$_FoodCollectionChanged;
 
   bool get foodCollection;
-
   _$FoodCollectionChangedCopyWith<_FoodCollectionChanged> get copyWith;
 }
 
+/// @nodoc
 abstract class _$HalaalChangedCopyWith<$Res> {
   factory _$HalaalChangedCopyWith(
           _HalaalChanged value, $Res Function(_HalaalChanged) then) =
       __$HalaalChangedCopyWithImpl<$Res>;
-
   $Res call({bool isHalaal});
 }
 
+/// @nodoc
 class __$HalaalChangedCopyWithImpl<$Res>
     extends _$StoreFormEventCopyWithImpl<$Res>
     implements _$HalaalChangedCopyWith<$Res> {
@@ -3929,6 +3947,7 @@ class __$HalaalChangedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_HalaalChanged implements _HalaalChanged {
   const _$_HalaalChanged({this.isHalaal});
 
@@ -4122,15 +4141,16 @@ abstract class _HalaalChanged implements StoreFormEvent {
   const factory _HalaalChanged({bool isHalaal}) = _$_HalaalChanged;
 
   bool get isHalaal;
-
   _$HalaalChangedCopyWith<_HalaalChanged> get copyWith;
 }
 
+/// @nodoc
 abstract class _$SavedCopyWith<$Res> {
   factory _$SavedCopyWith(_Saved value, $Res Function(_Saved) then) =
       __$SavedCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class __$SavedCopyWithImpl<$Res> extends _$StoreFormEventCopyWithImpl<$Res>
     implements _$SavedCopyWith<$Res> {
   __$SavedCopyWithImpl(_Saved _value, $Res Function(_Saved) _then)
@@ -4140,6 +4160,7 @@ class __$SavedCopyWithImpl<$Res> extends _$StoreFormEventCopyWithImpl<$Res>
   _Saved get _value => super._value as _Saved;
 }
 
+/// @nodoc
 class _$_Saved implements _Saved {
   const _$_Saved();
 
@@ -4321,14 +4342,15 @@ abstract class _Saved implements StoreFormEvent {
   const factory _Saved() = _$_Saved;
 }
 
+/// @nodoc
 abstract class _$CoverImageChangedCopyWith<$Res> {
   factory _$CoverImageChangedCopyWith(
           _CoverImageChanged value, $Res Function(_CoverImageChanged) then) =
       __$CoverImageChangedCopyWithImpl<$Res>;
-
   $Res call({String coverImage});
 }
 
+/// @nodoc
 class __$CoverImageChangedCopyWithImpl<$Res>
     extends _$StoreFormEventCopyWithImpl<$Res>
     implements _$CoverImageChangedCopyWith<$Res> {
@@ -4349,6 +4371,7 @@ class __$CoverImageChangedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_CoverImageChanged implements _CoverImageChanged {
   const _$_CoverImageChanged(this.coverImage) : assert(coverImage != null);
 
@@ -4542,18 +4565,18 @@ abstract class _CoverImageChanged implements StoreFormEvent {
   const factory _CoverImageChanged(String coverImage) = _$_CoverImageChanged;
 
   String get coverImage;
-
   _$CoverImageChangedCopyWith<_CoverImageChanged> get copyWith;
 }
 
+/// @nodoc
 abstract class _$DeliveryCostChangedCopyWith<$Res> {
   factory _$DeliveryCostChangedCopyWith(_DeliveryCostChanged value,
           $Res Function(_DeliveryCostChanged) then) =
       __$DeliveryCostChangedCopyWithImpl<$Res>;
-
   $Res call({double deliveryCosts});
 }
 
+/// @nodoc
 class __$DeliveryCostChangedCopyWithImpl<$Res>
     extends _$StoreFormEventCopyWithImpl<$Res>
     implements _$DeliveryCostChangedCopyWith<$Res> {
@@ -4574,6 +4597,7 @@ class __$DeliveryCostChangedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_DeliveryCostChanged implements _DeliveryCostChanged {
   const _$_DeliveryCostChanged(this.deliveryCosts)
       : assert(deliveryCosts != null);
@@ -4770,10 +4794,10 @@ abstract class _DeliveryCostChanged implements StoreFormEvent {
       _$_DeliveryCostChanged;
 
   double get deliveryCosts;
-
   _$DeliveryCostChangedCopyWith<_DeliveryCostChanged> get copyWith;
 }
 
+/// @nodoc
 class _$StoreFormStateTearOff {
   const _$StoreFormStateTearOff();
 
@@ -4799,28 +4823,26 @@ class _$StoreFormStateTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $StoreFormState = _$StoreFormStateTearOff();
 
+/// @nodoc
 mixin _$StoreFormState {
   Restaurant get store;
-
   bool get showErrorMessages;
-
   bool get isEditing;
-
   bool get isSaving;
-
   Option<Either<StoreFailure, Unit>> get saveFailureOrSuccessOption;
 
   $StoreFormStateCopyWith<StoreFormState> get copyWith;
 }
 
+/// @nodoc
 abstract class $StoreFormStateCopyWith<$Res> {
   factory $StoreFormStateCopyWith(
           StoreFormState value, $Res Function(StoreFormState) then) =
       _$StoreFormStateCopyWithImpl<$Res>;
-
   $Res call(
       {Restaurant store,
       bool showErrorMessages,
@@ -4831,12 +4853,12 @@ abstract class $StoreFormStateCopyWith<$Res> {
   $RestaurantCopyWith<$Res> get store;
 }
 
+/// @nodoc
 class _$StoreFormStateCopyWithImpl<$Res>
     implements $StoreFormStateCopyWith<$Res> {
   _$StoreFormStateCopyWithImpl(this._value, this._then);
 
   final StoreFormState _value;
-
   // ignore: unused_field
   final $Res Function(StoreFormState) _then;
 
@@ -4872,12 +4894,12 @@ class _$StoreFormStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class _$StoreFormStateCopyWith<$Res>
     implements $StoreFormStateCopyWith<$Res> {
   factory _$StoreFormStateCopyWith(
           _StoreFormState value, $Res Function(_StoreFormState) then) =
       __$StoreFormStateCopyWithImpl<$Res>;
-
   @override
   $Res call(
       {Restaurant store,
@@ -4890,6 +4912,7 @@ abstract class _$StoreFormStateCopyWith<$Res>
   $RestaurantCopyWith<$Res> get store;
 }
 
+/// @nodoc
 class __$StoreFormStateCopyWithImpl<$Res>
     extends _$StoreFormStateCopyWithImpl<$Res>
     implements _$StoreFormStateCopyWith<$Res> {
@@ -4922,6 +4945,7 @@ class __$StoreFormStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_StoreFormState implements _StoreFormState {
   const _$_StoreFormState(
       {@required this.store,
@@ -5003,19 +5027,14 @@ abstract class _StoreFormState implements StoreFormState {
 
   @override
   Restaurant get store;
-
   @override
   bool get showErrorMessages;
-
   @override
   bool get isEditing;
-
   @override
   bool get isSaving;
-
   @override
   Option<Either<StoreFailure, Unit>> get saveFailureOrSuccessOption;
-
   @override
   _$StoreFormStateCopyWith<_StoreFormState> get copyWith;
 }

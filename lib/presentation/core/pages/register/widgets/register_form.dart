@@ -7,6 +7,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:localy/application/auth/auth_bloc.dart';
 import 'package:localy/application/sign_in_form/sign_in_form_bloc.dart';
 import 'package:localy/environment_config.dart';
+import 'package:localy/gen/assets.gen.dart';
 import 'package:localy/presentation/core/routes/router.gr.dart';
 import 'package:localy/presentation/core/widgets/localy_button.dart';
 import 'package:localy/presentation/core/widgets/localy_entry_field.dart';
@@ -71,7 +72,7 @@ class RegisterForm extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: <Widget>[
                             SvgPicture.asset(
-                              'assets/images/tray.svg',
+                              Assets.images.tray,
                               height: 200,
                             ),
                           ],

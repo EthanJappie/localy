@@ -53,7 +53,10 @@ class _AppWidgetState extends State<AppWidget> {
         title: 'Localy',
         debugShowCheckedModeBanner: false,
 //        navigatorObservers: <NavigatorObserver>[observer],
-        builder: ExtendedNavigator(router: Router()),
+
+        builder: ExtendedNavigator.builder<LocalyRouter>(
+          router: LocalyRouter(),
+        ),
         theme: ThemeData.light().copyWith(
           primaryColor: _getAppColor(),
           textTheme: GoogleFonts.montserratTextTheme(),
@@ -91,7 +94,9 @@ class _AppWidgetState extends State<AppWidget> {
         AndroidInitializationSettings('app_icon');
     const initializationSettingsIOs = IOSInitializationSettings();
     const initSettings = InitializationSettings(
-        initializationSettingsAndroid, initializationSettingsIOs);
+      android: initializationSettingsAndroid,
+      iOS: initializationSettingsIOs,
+    );
 
     flutterLocalNotificationsPlugin.initialize(
       initSettings,

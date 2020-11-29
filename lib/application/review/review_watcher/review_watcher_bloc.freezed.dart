@@ -9,6 +9,7 @@ part of 'review_watcher_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$ReviewWatcherEventTearOff {
   const _$ReviewWatcherEventTearOff();
 
@@ -28,9 +29,11 @@ class _$ReviewWatcherEventTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $ReviewWatcherEvent = _$ReviewWatcherEventTearOff();
 
+/// @nodoc
 mixin _$ReviewWatcherEvent {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -39,7 +42,6 @@ mixin _$ReviewWatcherEvent {
         Result reviewsReceived(
             Either<ReviewEntityFailure, KtList<ReviewEntity>> failureOrReview),
   });
-
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result watchAllByID(String id),
@@ -47,13 +49,11 @@ mixin _$ReviewWatcherEvent {
         Either<ReviewEntityFailure, KtList<ReviewEntity>> failureOrReview),
     @required Result orElse(),
   });
-
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result watchAllByID(_WatchAllByID value),
     @required Result reviewsReceived(_ReviewsReceived value),
   });
-
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result watchAllByID(_WatchAllByID value),
@@ -62,30 +62,32 @@ mixin _$ReviewWatcherEvent {
   });
 }
 
+/// @nodoc
 abstract class $ReviewWatcherEventCopyWith<$Res> {
   factory $ReviewWatcherEventCopyWith(
           ReviewWatcherEvent value, $Res Function(ReviewWatcherEvent) then) =
       _$ReviewWatcherEventCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$ReviewWatcherEventCopyWithImpl<$Res>
     implements $ReviewWatcherEventCopyWith<$Res> {
   _$ReviewWatcherEventCopyWithImpl(this._value, this._then);
 
   final ReviewWatcherEvent _value;
-
   // ignore: unused_field
   final $Res Function(ReviewWatcherEvent) _then;
 }
 
+/// @nodoc
 abstract class _$WatchAllByIDCopyWith<$Res> {
   factory _$WatchAllByIDCopyWith(
           _WatchAllByID value, $Res Function(_WatchAllByID) then) =
       __$WatchAllByIDCopyWithImpl<$Res>;
-
   $Res call({String id});
 }
 
+/// @nodoc
 class __$WatchAllByIDCopyWithImpl<$Res>
     extends _$ReviewWatcherEventCopyWithImpl<$Res>
     implements _$WatchAllByIDCopyWith<$Res> {
@@ -106,6 +108,7 @@ class __$WatchAllByIDCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_WatchAllByID implements _WatchAllByID {
   const _$_WatchAllByID(this.id) : assert(id != null);
 
@@ -191,19 +194,19 @@ abstract class _WatchAllByID implements ReviewWatcherEvent {
   const factory _WatchAllByID(String id) = _$_WatchAllByID;
 
   String get id;
-
   _$WatchAllByIDCopyWith<_WatchAllByID> get copyWith;
 }
 
+/// @nodoc
 abstract class _$ReviewsReceivedCopyWith<$Res> {
   factory _$ReviewsReceivedCopyWith(
           _ReviewsReceived value, $Res Function(_ReviewsReceived) then) =
       __$ReviewsReceivedCopyWithImpl<$Res>;
-
   $Res call(
       {Either<ReviewEntityFailure, KtList<ReviewEntity>> failureOrReview});
 }
 
+/// @nodoc
 class __$ReviewsReceivedCopyWithImpl<$Res>
     extends _$ReviewWatcherEventCopyWithImpl<$Res>
     implements _$ReviewsReceivedCopyWith<$Res> {
@@ -227,6 +230,7 @@ class __$ReviewsReceivedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_ReviewsReceived implements _ReviewsReceived {
   const _$_ReviewsReceived(this.failureOrReview)
       : assert(failureOrReview != null);
@@ -317,10 +321,10 @@ abstract class _ReviewsReceived implements ReviewWatcherEvent {
       _$_ReviewsReceived;
 
   Either<ReviewEntityFailure, KtList<ReviewEntity>> get failureOrReview;
-
   _$ReviewsReceivedCopyWith<_ReviewsReceived> get copyWith;
 }
 
+/// @nodoc
 class _$ReviewWatcherStateTearOff {
   const _$ReviewWatcherStateTearOff();
 
@@ -349,9 +353,11 @@ class _$ReviewWatcherStateTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $ReviewWatcherState = _$ReviewWatcherStateTearOff();
 
+/// @nodoc
 mixin _$ReviewWatcherState {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -360,7 +366,6 @@ mixin _$ReviewWatcherState {
     @required Result loadSucces(KtList<ReviewEntity> reviews),
     @required Result loadFailure(ReviewEntityFailure reviewFailure),
   });
-
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result initial(),
@@ -369,7 +374,6 @@ mixin _$ReviewWatcherState {
     Result loadFailure(ReviewEntityFailure reviewFailure),
     @required Result orElse(),
   });
-
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result initial(_Initial value),
@@ -377,7 +381,6 @@ mixin _$ReviewWatcherState {
     @required Result loadSucces(_LoadSuccess value),
     @required Result loadFailure(_LoadFailure value),
   });
-
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result initial(_Initial value),
@@ -388,27 +391,30 @@ mixin _$ReviewWatcherState {
   });
 }
 
+/// @nodoc
 abstract class $ReviewWatcherStateCopyWith<$Res> {
   factory $ReviewWatcherStateCopyWith(
           ReviewWatcherState value, $Res Function(ReviewWatcherState) then) =
       _$ReviewWatcherStateCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$ReviewWatcherStateCopyWithImpl<$Res>
     implements $ReviewWatcherStateCopyWith<$Res> {
   _$ReviewWatcherStateCopyWithImpl(this._value, this._then);
 
   final ReviewWatcherState _value;
-
   // ignore: unused_field
   final $Res Function(ReviewWatcherState) _then;
 }
 
+/// @nodoc
 abstract class _$InitialCopyWith<$Res> {
   factory _$InitialCopyWith(_Initial value, $Res Function(_Initial) then) =
       __$InitialCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class __$InitialCopyWithImpl<$Res>
     extends _$ReviewWatcherStateCopyWithImpl<$Res>
     implements _$InitialCopyWith<$Res> {
@@ -419,6 +425,7 @@ class __$InitialCopyWithImpl<$Res>
   _Initial get _value => super._value as _Initial;
 }
 
+/// @nodoc
 class _$_Initial implements _Initial {
   const _$_Initial();
 
@@ -502,11 +509,13 @@ abstract class _Initial implements ReviewWatcherState {
   const factory _Initial() = _$_Initial;
 }
 
+/// @nodoc
 abstract class _$LoadingCopyWith<$Res> {
   factory _$LoadingCopyWith(_Loading value, $Res Function(_Loading) then) =
       __$LoadingCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class __$LoadingCopyWithImpl<$Res>
     extends _$ReviewWatcherStateCopyWithImpl<$Res>
     implements _$LoadingCopyWith<$Res> {
@@ -517,6 +526,7 @@ class __$LoadingCopyWithImpl<$Res>
   _Loading get _value => super._value as _Loading;
 }
 
+/// @nodoc
 class _$_Loading implements _Loading {
   const _$_Loading();
 
@@ -600,14 +610,15 @@ abstract class _Loading implements ReviewWatcherState {
   const factory _Loading() = _$_Loading;
 }
 
+/// @nodoc
 abstract class _$LoadSuccessCopyWith<$Res> {
   factory _$LoadSuccessCopyWith(
           _LoadSuccess value, $Res Function(_LoadSuccess) then) =
       __$LoadSuccessCopyWithImpl<$Res>;
-
   $Res call({KtList<ReviewEntity> reviews});
 }
 
+/// @nodoc
 class __$LoadSuccessCopyWithImpl<$Res>
     extends _$ReviewWatcherStateCopyWithImpl<$Res>
     implements _$LoadSuccessCopyWith<$Res> {
@@ -628,6 +639,7 @@ class __$LoadSuccessCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_LoadSuccess implements _LoadSuccess {
   const _$_LoadSuccess(this.reviews) : assert(reviews != null);
 
@@ -722,20 +734,20 @@ abstract class _LoadSuccess implements ReviewWatcherState {
   const factory _LoadSuccess(KtList<ReviewEntity> reviews) = _$_LoadSuccess;
 
   KtList<ReviewEntity> get reviews;
-
   _$LoadSuccessCopyWith<_LoadSuccess> get copyWith;
 }
 
+/// @nodoc
 abstract class _$LoadFailureCopyWith<$Res> {
   factory _$LoadFailureCopyWith(
           _LoadFailure value, $Res Function(_LoadFailure) then) =
       __$LoadFailureCopyWithImpl<$Res>;
-
   $Res call({ReviewEntityFailure reviewFailure});
 
   $ReviewEntityFailureCopyWith<$Res> get reviewFailure;
 }
 
+/// @nodoc
 class __$LoadFailureCopyWithImpl<$Res>
     extends _$ReviewWatcherStateCopyWithImpl<$Res>
     implements _$LoadFailureCopyWith<$Res> {
@@ -768,6 +780,7 @@ class __$LoadFailureCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_LoadFailure implements _LoadFailure {
   const _$_LoadFailure(this.reviewFailure) : assert(reviewFailure != null);
 
@@ -864,6 +877,5 @@ abstract class _LoadFailure implements ReviewWatcherState {
       _$_LoadFailure;
 
   ReviewEntityFailure get reviewFailure;
-
   _$LoadFailureCopyWith<_LoadFailure> get copyWith;
 }

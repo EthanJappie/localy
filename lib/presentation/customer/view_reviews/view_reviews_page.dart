@@ -63,9 +63,19 @@ class ViewReviewsPage extends StatelessWidget {
                           subtitle: RatingBar(
                             initialRating: review.score.toDouble(),
                             onRatingUpdate: (_) {},
-                            itemBuilder: (context, _) => Icon(
-                              Icons.star,
-                              color: Theme.of(context).primaryColor,
+                            ratingWidget: RatingWidget(
+                              full: Icon(
+                                Icons.star,
+                                color: Theme.of(context).primaryColor,
+                              ),
+                              half: Icon(
+                                Icons.star,
+                                color: Theme.of(context).primaryColor,
+                              ),
+                              empty: Icon(
+                                Icons.star,
+                                color: Theme.of(context).primaryColor,
+                              ),
                             ),
                             itemSize: 16,
                           ),

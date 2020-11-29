@@ -9,6 +9,7 @@ part of 'bundle_entity.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$BundleEntityTearOff {
   const _$BundleEntityTearOff();
 
@@ -20,28 +21,30 @@ class _$BundleEntityTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $BundleEntity = _$BundleEntityTearOff();
 
+/// @nodoc
 mixin _$BundleEntity {
   int get numberOfCredits;
 
   $BundleEntityCopyWith<BundleEntity> get copyWith;
 }
 
+/// @nodoc
 abstract class $BundleEntityCopyWith<$Res> {
   factory $BundleEntityCopyWith(
           BundleEntity value, $Res Function(BundleEntity) then) =
       _$BundleEntityCopyWithImpl<$Res>;
-
   $Res call({int numberOfCredits});
 }
 
+/// @nodoc
 class _$BundleEntityCopyWithImpl<$Res> implements $BundleEntityCopyWith<$Res> {
   _$BundleEntityCopyWithImpl(this._value, this._then);
 
   final BundleEntity _value;
-
   // ignore: unused_field
   final $Res Function(BundleEntity) _then;
 
@@ -57,16 +60,17 @@ class _$BundleEntityCopyWithImpl<$Res> implements $BundleEntityCopyWith<$Res> {
   }
 }
 
+/// @nodoc
 abstract class _$BundleEntityCopyWith<$Res>
     implements $BundleEntityCopyWith<$Res> {
   factory _$BundleEntityCopyWith(
           _BundleEntity value, $Res Function(_BundleEntity) then) =
       __$BundleEntityCopyWithImpl<$Res>;
-
   @override
   $Res call({int numberOfCredits});
 }
 
+/// @nodoc
 class __$BundleEntityCopyWithImpl<$Res> extends _$BundleEntityCopyWithImpl<$Res>
     implements _$BundleEntityCopyWith<$Res> {
   __$BundleEntityCopyWithImpl(
@@ -88,6 +92,7 @@ class __$BundleEntityCopyWithImpl<$Res> extends _$BundleEntityCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_BundleEntity extends _BundleEntity {
   const _$_BundleEntity({@required this.numberOfCredits})
       : assert(numberOfCredits != null),
@@ -122,13 +127,11 @@ class _$_BundleEntity extends _BundleEntity {
 
 abstract class _BundleEntity extends BundleEntity {
   const _BundleEntity._() : super._();
-
   const factory _BundleEntity({@required int numberOfCredits}) =
       _$_BundleEntity;
 
   @override
   int get numberOfCredits;
-
   @override
   _$BundleEntityCopyWith<_BundleEntity> get copyWith;
 }

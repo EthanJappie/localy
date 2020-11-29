@@ -8,11 +8,11 @@ part of 'menu_dtos.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
-
 MenuDTO _$MenuDTOFromJson(Map<String, dynamic> json) {
   return _MenuDTO.fromJson(json);
 }
 
+/// @nodoc
 class _$MenuDTOTearOff {
   const _$MenuDTOTearOff();
 
@@ -33,34 +33,35 @@ class _$MenuDTOTearOff {
       id: id,
     );
   }
+
+// ignore: unused_element
+  MenuDTO fromJson(Map<String, Object> json) {
+    return MenuDTO.fromJson(json);
+  }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $MenuDTO = _$MenuDTOTearOff();
 
+/// @nodoc
 mixin _$MenuDTO {
   String get storeID;
-
   String get name;
-
   String get notes;
-
   int get sequenceOfAppearance;
-
   bool get hidden;
-
   @JsonKey(ignore: true)
   String get id;
 
   Map<String, dynamic> toJson();
-
   $MenuDTOCopyWith<MenuDTO> get copyWith;
 }
 
+/// @nodoc
 abstract class $MenuDTOCopyWith<$Res> {
   factory $MenuDTOCopyWith(MenuDTO value, $Res Function(MenuDTO) then) =
       _$MenuDTOCopyWithImpl<$Res>;
-
   $Res call(
       {String storeID,
       String name,
@@ -70,11 +71,11 @@ abstract class $MenuDTOCopyWith<$Res> {
       @JsonKey(ignore: true) String id});
 }
 
+/// @nodoc
 class _$MenuDTOCopyWithImpl<$Res> implements $MenuDTOCopyWith<$Res> {
   _$MenuDTOCopyWithImpl(this._value, this._then);
 
   final MenuDTO _value;
-
   // ignore: unused_field
   final $Res Function(MenuDTO) _then;
 
@@ -100,10 +101,10 @@ class _$MenuDTOCopyWithImpl<$Res> implements $MenuDTOCopyWith<$Res> {
   }
 }
 
+/// @nodoc
 abstract class _$MenuDTOCopyWith<$Res> implements $MenuDTOCopyWith<$Res> {
   factory _$MenuDTOCopyWith(_MenuDTO value, $Res Function(_MenuDTO) then) =
       __$MenuDTOCopyWithImpl<$Res>;
-
   @override
   $Res call(
       {String storeID,
@@ -114,6 +115,7 @@ abstract class _$MenuDTOCopyWith<$Res> implements $MenuDTOCopyWith<$Res> {
       @JsonKey(ignore: true) String id});
 }
 
+/// @nodoc
 class __$MenuDTOCopyWithImpl<$Res> extends _$MenuDTOCopyWithImpl<$Res>
     implements _$MenuDTOCopyWith<$Res> {
   __$MenuDTOCopyWithImpl(_MenuDTO _value, $Res Function(_MenuDTO) _then)
@@ -145,6 +147,8 @@ class __$MenuDTOCopyWithImpl<$Res> extends _$MenuDTOCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$_MenuDTO extends _MenuDTO {
   const _$_MenuDTO(
       {@required this.storeID,
@@ -221,7 +225,6 @@ class _$_MenuDTO extends _MenuDTO {
 
 abstract class _MenuDTO extends MenuDTO {
   const _MenuDTO._() : super._();
-
   const factory _MenuDTO(
       {@required String storeID,
       @required String name,
@@ -234,23 +237,17 @@ abstract class _MenuDTO extends MenuDTO {
 
   @override
   String get storeID;
-
   @override
   String get name;
-
   @override
   String get notes;
-
   @override
   int get sequenceOfAppearance;
-
   @override
   bool get hidden;
-
   @override
   @JsonKey(ignore: true)
   String get id;
-
   @override
   _$MenuDTOCopyWith<_MenuDTO> get copyWith;
 }

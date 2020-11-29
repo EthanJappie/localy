@@ -7,6 +7,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:localy/application/auth/auth_bloc.dart';
 import 'package:localy/application/sign_in_form/sign_in_form_bloc.dart';
 import 'package:localy/environment_config.dart';
+import 'package:localy/gen/assets.gen.dart';
 import 'package:localy/presentation/core/routes/router.gr.dart';
 import 'package:localy/presentation/core/widgets/localy_button.dart';
 import 'package:localy/presentation/core/widgets/localy_entry_field.dart';
@@ -65,7 +66,7 @@ class SignInForm extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: <Widget>[
-                          SvgPicture.asset('assets/images/ingredients.svg'),
+                          SvgPicture.asset(Assets.images.ingredients),
                         ],
                       ),
                       Container(
@@ -198,8 +199,7 @@ class SignInForm extends StatelessWidget {
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: <Widget>[
-                                      SvgPicture.asset(
-                                          'assets/images/ic_google.svg'),
+                                      SvgPicture.asset(Assets.images.icGoogle),
                                       const SizedBox(width: 4),
                                       const Text(
                                         'Continue with Google',

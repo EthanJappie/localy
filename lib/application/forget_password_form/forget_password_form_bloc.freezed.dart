@@ -9,6 +9,7 @@ part of 'forget_password_form_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$ForgetPasswordFormEventTearOff {
   const _$ForgetPasswordFormEventTearOff();
 
@@ -25,29 +26,28 @@ class _$ForgetPasswordFormEventTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $ForgetPasswordFormEvent = _$ForgetPasswordFormEventTearOff();
 
+/// @nodoc
 mixin _$ForgetPasswordFormEvent {
   @optionalTypeArgs
   Result when<Result extends Object>({
     @required Result emailChanged(String emailStr),
     @required Result forgetPasswordPressed(),
   });
-
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result emailChanged(String emailStr),
     Result forgetPasswordPressed(),
     @required Result orElse(),
   });
-
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result emailChanged(EmailChanged value),
     @required Result forgetPasswordPressed(ForgetPasswordPressed value),
   });
-
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result emailChanged(EmailChanged value),
@@ -56,30 +56,32 @@ mixin _$ForgetPasswordFormEvent {
   });
 }
 
+/// @nodoc
 abstract class $ForgetPasswordFormEventCopyWith<$Res> {
   factory $ForgetPasswordFormEventCopyWith(ForgetPasswordFormEvent value,
           $Res Function(ForgetPasswordFormEvent) then) =
       _$ForgetPasswordFormEventCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$ForgetPasswordFormEventCopyWithImpl<$Res>
     implements $ForgetPasswordFormEventCopyWith<$Res> {
   _$ForgetPasswordFormEventCopyWithImpl(this._value, this._then);
 
   final ForgetPasswordFormEvent _value;
-
   // ignore: unused_field
   final $Res Function(ForgetPasswordFormEvent) _then;
 }
 
+/// @nodoc
 abstract class $EmailChangedCopyWith<$Res> {
   factory $EmailChangedCopyWith(
           EmailChanged value, $Res Function(EmailChanged) then) =
       _$EmailChangedCopyWithImpl<$Res>;
-
   $Res call({String emailStr});
 }
 
+/// @nodoc
 class _$EmailChangedCopyWithImpl<$Res>
     extends _$ForgetPasswordFormEventCopyWithImpl<$Res>
     implements $EmailChangedCopyWith<$Res> {
@@ -100,6 +102,7 @@ class _$EmailChangedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$EmailChanged implements EmailChanged {
   const _$EmailChanged(this.emailStr) : assert(emailStr != null);
 
@@ -183,16 +186,17 @@ abstract class EmailChanged implements ForgetPasswordFormEvent {
   const factory EmailChanged(String emailStr) = _$EmailChanged;
 
   String get emailStr;
-
   $EmailChangedCopyWith<EmailChanged> get copyWith;
 }
 
+/// @nodoc
 abstract class $ForgetPasswordPressedCopyWith<$Res> {
   factory $ForgetPasswordPressedCopyWith(ForgetPasswordPressed value,
           $Res Function(ForgetPasswordPressed) then) =
       _$ForgetPasswordPressedCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$ForgetPasswordPressedCopyWithImpl<$Res>
     extends _$ForgetPasswordFormEventCopyWithImpl<$Res>
     implements $ForgetPasswordPressedCopyWith<$Res> {
@@ -204,6 +208,7 @@ class _$ForgetPasswordPressedCopyWithImpl<$Res>
   ForgetPasswordPressed get _value => super._value as ForgetPasswordPressed;
 }
 
+/// @nodoc
 class _$ForgetPasswordPressed implements ForgetPasswordPressed {
   const _$ForgetPasswordPressed();
 
@@ -275,6 +280,7 @@ abstract class ForgetPasswordPressed implements ForgetPasswordFormEvent {
   const factory ForgetPasswordPressed() = _$ForgetPasswordPressed;
 }
 
+/// @nodoc
 class _$ForgetPasswordFormStateTearOff {
   const _$ForgetPasswordFormStateTearOff();
 
@@ -293,26 +299,25 @@ class _$ForgetPasswordFormStateTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $ForgetPasswordFormState = _$ForgetPasswordFormStateTearOff();
 
+/// @nodoc
 mixin _$ForgetPasswordFormState {
   EmailAddress get emailAddress;
-
   bool get showErrorMessages;
-
   bool get isSubmitting;
-
   Option<Either<AuthFailure, Unit>> get authFailureOrSuccessOption;
 
   $ForgetPasswordFormStateCopyWith<ForgetPasswordFormState> get copyWith;
 }
 
+/// @nodoc
 abstract class $ForgetPasswordFormStateCopyWith<$Res> {
   factory $ForgetPasswordFormStateCopyWith(ForgetPasswordFormState value,
           $Res Function(ForgetPasswordFormState) then) =
       _$ForgetPasswordFormStateCopyWithImpl<$Res>;
-
   $Res call(
       {EmailAddress emailAddress,
       bool showErrorMessages,
@@ -320,12 +325,12 @@ abstract class $ForgetPasswordFormStateCopyWith<$Res> {
       Option<Either<AuthFailure, Unit>> authFailureOrSuccessOption});
 }
 
+/// @nodoc
 class _$ForgetPasswordFormStateCopyWithImpl<$Res>
     implements $ForgetPasswordFormStateCopyWith<$Res> {
   _$ForgetPasswordFormStateCopyWithImpl(this._value, this._then);
 
   final ForgetPasswordFormState _value;
-
   // ignore: unused_field
   final $Res Function(ForgetPasswordFormState) _then;
 
@@ -352,12 +357,12 @@ class _$ForgetPasswordFormStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class _$ForgetPasswordFormStateCopyWith<$Res>
     implements $ForgetPasswordFormStateCopyWith<$Res> {
   factory _$ForgetPasswordFormStateCopyWith(_ForgetPasswordFormState value,
           $Res Function(_ForgetPasswordFormState) then) =
       __$ForgetPasswordFormStateCopyWithImpl<$Res>;
-
   @override
   $Res call(
       {EmailAddress emailAddress,
@@ -366,6 +371,7 @@ abstract class _$ForgetPasswordFormStateCopyWith<$Res>
       Option<Either<AuthFailure, Unit>> authFailureOrSuccessOption});
 }
 
+/// @nodoc
 class __$ForgetPasswordFormStateCopyWithImpl<$Res>
     extends _$ForgetPasswordFormStateCopyWithImpl<$Res>
     implements _$ForgetPasswordFormStateCopyWith<$Res> {
@@ -400,6 +406,7 @@ class __$ForgetPasswordFormStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_ForgetPasswordFormState implements _ForgetPasswordFormState {
   const _$_ForgetPasswordFormState(
       {@required this.emailAddress,
@@ -473,16 +480,12 @@ abstract class _ForgetPasswordFormState implements ForgetPasswordFormState {
 
   @override
   EmailAddress get emailAddress;
-
   @override
   bool get showErrorMessages;
-
   @override
   bool get isSubmitting;
-
   @override
   Option<Either<AuthFailure, Unit>> get authFailureOrSuccessOption;
-
   @override
   _$ForgetPasswordFormStateCopyWith<_ForgetPasswordFormState> get copyWith;
 }

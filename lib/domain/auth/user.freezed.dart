@@ -9,6 +9,7 @@ part of 'user.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$UserEntityTearOff {
   const _$UserEntityTearOff();
 
@@ -20,28 +21,30 @@ class _$UserEntityTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $UserEntity = _$UserEntityTearOff();
 
+/// @nodoc
 mixin _$UserEntity {
   UniqueId get id;
 
   $UserEntityCopyWith<UserEntity> get copyWith;
 }
 
+/// @nodoc
 abstract class $UserEntityCopyWith<$Res> {
   factory $UserEntityCopyWith(
           UserEntity value, $Res Function(UserEntity) then) =
       _$UserEntityCopyWithImpl<$Res>;
-
   $Res call({UniqueId id});
 }
 
+/// @nodoc
 class _$UserEntityCopyWithImpl<$Res> implements $UserEntityCopyWith<$Res> {
   _$UserEntityCopyWithImpl(this._value, this._then);
 
   final UserEntity _value;
-
   // ignore: unused_field
   final $Res Function(UserEntity) _then;
 
@@ -55,15 +58,16 @@ class _$UserEntityCopyWithImpl<$Res> implements $UserEntityCopyWith<$Res> {
   }
 }
 
+/// @nodoc
 abstract class _$UserEntityCopyWith<$Res> implements $UserEntityCopyWith<$Res> {
   factory _$UserEntityCopyWith(
           _UserEntity value, $Res Function(_UserEntity) then) =
       __$UserEntityCopyWithImpl<$Res>;
-
   @override
   $Res call({UniqueId id});
 }
 
+/// @nodoc
 class __$UserEntityCopyWithImpl<$Res> extends _$UserEntityCopyWithImpl<$Res>
     implements _$UserEntityCopyWith<$Res> {
   __$UserEntityCopyWithImpl(
@@ -83,6 +87,7 @@ class __$UserEntityCopyWithImpl<$Res> extends _$UserEntityCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_UserEntity implements _UserEntity {
   const _$_UserEntity({@required this.id}) : assert(id != null);
 
@@ -116,7 +121,6 @@ abstract class _UserEntity implements UserEntity {
 
   @override
   UniqueId get id;
-
   @override
   _$UserEntityCopyWith<_UserEntity> get copyWith;
 }

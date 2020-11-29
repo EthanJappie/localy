@@ -36,9 +36,9 @@ extension FirestoreX on FirebaseFirestore {
 extension DocumentReferenceX on DocumentReference {}
 
 extension FirebaseStorageX on FirebaseStorage {
-  StorageReference get storeStorageReference =>
+  Reference get storeStorageReference =>
       FirebaseStorage.instance.ref().child('stores').child(Uuid().v1());
 
-  StorageReference get menuItemsStorageReference =>
+  Reference get menuItemsStorageReference =>
       FirebaseStorage.instance.ref().child('menuItems').child(Uuid().v1());
 }

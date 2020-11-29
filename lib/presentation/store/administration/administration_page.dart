@@ -104,23 +104,23 @@ class _AdministrationPageState extends State<AdministrationPage> {
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: Icon(Icons.menu),
-              title: Text('Menu'),
+              label: 'Menu',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.receipt),
-              title: Text('Active'),
+              label: 'Active',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.receipt),
-              title: Text('Inactive'),
+              label: 'Inactive',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.receipt),
-              title: Text('Completed'),
+              label: 'Completed',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.comment),
-              title: Text('Reviews'),
+              label: 'Reviews',
             ),
           ],
         ),

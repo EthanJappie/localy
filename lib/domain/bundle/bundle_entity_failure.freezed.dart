@@ -9,6 +9,7 @@ part of 'bundle_entity_failure.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$BundleEntityFailureTearOff {
   const _$BundleEntityFailureTearOff();
 
@@ -28,9 +29,11 @@ class _$BundleEntityFailureTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $BundleEntityFailure = _$BundleEntityFailureTearOff();
 
+/// @nodoc
 mixin _$BundleEntityFailure {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -38,7 +41,6 @@ mixin _$BundleEntityFailure {
     @required Result insufficientPermission(),
     @required Result unableToUpdate(),
   });
-
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result unexpected(),
@@ -46,7 +48,6 @@ mixin _$BundleEntityFailure {
     Result unableToUpdate(),
     @required Result orElse(),
   });
-
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result unexpected(UnexpectedBundleEntity value),
@@ -54,7 +55,6 @@ mixin _$BundleEntityFailure {
         Result insufficientPermission(InsufficientBundleEntityPermision value),
     @required Result unableToUpdate(UnableToUpdateBundleEntity value),
   });
-
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result unexpected(UnexpectedBundleEntity value),
@@ -64,28 +64,31 @@ mixin _$BundleEntityFailure {
   });
 }
 
+/// @nodoc
 abstract class $BundleEntityFailureCopyWith<$Res> {
   factory $BundleEntityFailureCopyWith(
           BundleEntityFailure value, $Res Function(BundleEntityFailure) then) =
       _$BundleEntityFailureCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$BundleEntityFailureCopyWithImpl<$Res>
     implements $BundleEntityFailureCopyWith<$Res> {
   _$BundleEntityFailureCopyWithImpl(this._value, this._then);
 
   final BundleEntityFailure _value;
-
   // ignore: unused_field
   final $Res Function(BundleEntityFailure) _then;
 }
 
+/// @nodoc
 abstract class $UnexpectedBundleEntityCopyWith<$Res> {
   factory $UnexpectedBundleEntityCopyWith(UnexpectedBundleEntity value,
           $Res Function(UnexpectedBundleEntity) then) =
       _$UnexpectedBundleEntityCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$UnexpectedBundleEntityCopyWithImpl<$Res>
     extends _$BundleEntityFailureCopyWithImpl<$Res>
     implements $UnexpectedBundleEntityCopyWith<$Res> {
@@ -97,6 +100,7 @@ class _$UnexpectedBundleEntityCopyWithImpl<$Res>
   UnexpectedBundleEntity get _value => super._value as UnexpectedBundleEntity;
 }
 
+/// @nodoc
 class _$UnexpectedBundleEntity implements UnexpectedBundleEntity {
   const _$UnexpectedBundleEntity();
 
@@ -175,6 +179,7 @@ abstract class UnexpectedBundleEntity implements BundleEntityFailure {
   const factory UnexpectedBundleEntity() = _$UnexpectedBundleEntity;
 }
 
+/// @nodoc
 abstract class $InsufficientBundleEntityPermisionCopyWith<$Res> {
   factory $InsufficientBundleEntityPermisionCopyWith(
           InsufficientBundleEntityPermision value,
@@ -182,6 +187,7 @@ abstract class $InsufficientBundleEntityPermisionCopyWith<$Res> {
       _$InsufficientBundleEntityPermisionCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$InsufficientBundleEntityPermisionCopyWithImpl<$Res>
     extends _$BundleEntityFailureCopyWithImpl<$Res>
     implements $InsufficientBundleEntityPermisionCopyWith<$Res> {
@@ -195,6 +201,7 @@ class _$InsufficientBundleEntityPermisionCopyWithImpl<$Res>
       super._value as InsufficientBundleEntityPermision;
 }
 
+/// @nodoc
 class _$InsufficientBundleEntityPermision
     implements InsufficientBundleEntityPermision {
   const _$InsufficientBundleEntityPermision();
@@ -277,12 +284,14 @@ abstract class InsufficientBundleEntityPermision
       _$InsufficientBundleEntityPermision;
 }
 
+/// @nodoc
 abstract class $UnableToUpdateBundleEntityCopyWith<$Res> {
   factory $UnableToUpdateBundleEntityCopyWith(UnableToUpdateBundleEntity value,
           $Res Function(UnableToUpdateBundleEntity) then) =
       _$UnableToUpdateBundleEntityCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$UnableToUpdateBundleEntityCopyWithImpl<$Res>
     extends _$BundleEntityFailureCopyWithImpl<$Res>
     implements $UnableToUpdateBundleEntityCopyWith<$Res> {
@@ -295,6 +304,7 @@ class _$UnableToUpdateBundleEntityCopyWithImpl<$Res>
       super._value as UnableToUpdateBundleEntity;
 }
 
+/// @nodoc
 class _$UnableToUpdateBundleEntity implements UnableToUpdateBundleEntity {
   const _$UnableToUpdateBundleEntity();
 

@@ -9,6 +9,7 @@ part of 'order_watcher_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$OrderWatcherEventTearOff {
   const _$OrderWatcherEventTearOff();
 
@@ -54,9 +55,11 @@ class _$OrderWatcherEventTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $OrderWatcherEvent = _$OrderWatcherEventTearOff();
 
+/// @nodoc
 mixin _$OrderWatcherEvent {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -69,7 +72,6 @@ mixin _$OrderWatcherEvent {
         Result ordersReceived(
             Either<OrderFailure, KtList<StoreOrder>> failureOrOrder),
   });
-
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result watchAllStarted(),
@@ -81,7 +83,6 @@ mixin _$OrderWatcherEvent {
         Either<OrderFailure, KtList<StoreOrder>> failureOrOrder),
     @required Result orElse(),
   });
-
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result watchAllStarted(_WatchAllStarted value),
@@ -93,7 +94,6 @@ mixin _$OrderWatcherEvent {
     @required Result watchALlByCustomerID(_WatchAllByCustomerID value),
     @required Result ordersReceived(_OrdersReceived value),
   });
-
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result watchAllStarted(_WatchAllStarted value),
@@ -106,28 +106,31 @@ mixin _$OrderWatcherEvent {
   });
 }
 
+/// @nodoc
 abstract class $OrderWatcherEventCopyWith<$Res> {
   factory $OrderWatcherEventCopyWith(
           OrderWatcherEvent value, $Res Function(OrderWatcherEvent) then) =
       _$OrderWatcherEventCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$OrderWatcherEventCopyWithImpl<$Res>
     implements $OrderWatcherEventCopyWith<$Res> {
   _$OrderWatcherEventCopyWithImpl(this._value, this._then);
 
   final OrderWatcherEvent _value;
-
   // ignore: unused_field
   final $Res Function(OrderWatcherEvent) _then;
 }
 
+/// @nodoc
 abstract class _$WatchAllStartedCopyWith<$Res> {
   factory _$WatchAllStartedCopyWith(
           _WatchAllStarted value, $Res Function(_WatchAllStarted) then) =
       __$WatchAllStartedCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class __$WatchAllStartedCopyWithImpl<$Res>
     extends _$OrderWatcherEventCopyWithImpl<$Res>
     implements _$WatchAllStartedCopyWith<$Res> {
@@ -139,6 +142,7 @@ class __$WatchAllStartedCopyWithImpl<$Res>
   _WatchAllStarted get _value => super._value as _WatchAllStarted;
 }
 
+/// @nodoc
 class _$_WatchAllStarted implements _WatchAllStarted {
   const _$_WatchAllStarted();
 
@@ -239,14 +243,15 @@ abstract class _WatchAllStarted implements OrderWatcherEvent {
   const factory _WatchAllStarted() = _$_WatchAllStarted;
 }
 
+/// @nodoc
 abstract class _$WatchAllByStoreIDCopyWith<$Res> {
   factory _$WatchAllByStoreIDCopyWith(
           _WatchAllByStoreID value, $Res Function(_WatchAllByStoreID) then) =
       __$WatchAllByStoreIDCopyWithImpl<$Res>;
-
   $Res call({String storeID});
 }
 
+/// @nodoc
 class __$WatchAllByStoreIDCopyWithImpl<$Res>
     extends _$OrderWatcherEventCopyWithImpl<$Res>
     implements _$WatchAllByStoreIDCopyWith<$Res> {
@@ -267,6 +272,7 @@ class __$WatchAllByStoreIDCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_WatchAllByStoreID implements _WatchAllByStoreID {
   const _$_WatchAllByStoreID(this.storeID) : assert(storeID != null);
 
@@ -378,19 +384,19 @@ abstract class _WatchAllByStoreID implements OrderWatcherEvent {
   const factory _WatchAllByStoreID(String storeID) = _$_WatchAllByStoreID;
 
   String get storeID;
-
   _$WatchAllByStoreIDCopyWith<_WatchAllByStoreID> get copyWith;
 }
 
+/// @nodoc
 abstract class _$WatchAllByStoreIDCompletedCopyWith<$Res> {
   factory _$WatchAllByStoreIDCompletedCopyWith(
           _WatchAllByStoreIDCompleted value,
           $Res Function(_WatchAllByStoreIDCompleted) then) =
       __$WatchAllByStoreIDCompletedCopyWithImpl<$Res>;
-
   $Res call({String storeID, bool completed});
 }
 
+/// @nodoc
 class __$WatchAllByStoreIDCompletedCopyWithImpl<$Res>
     extends _$OrderWatcherEventCopyWithImpl<$Res>
     implements _$WatchAllByStoreIDCompletedCopyWith<$Res> {
@@ -414,6 +420,7 @@ class __$WatchAllByStoreIDCompletedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_WatchAllByStoreIDCompleted implements _WatchAllByStoreIDCompleted {
   const _$_WatchAllByStoreIDCompleted(
       {@required this.storeID, @required this.completed})
@@ -539,21 +546,20 @@ abstract class _WatchAllByStoreIDCompleted implements OrderWatcherEvent {
       @required bool completed}) = _$_WatchAllByStoreIDCompleted;
 
   String get storeID;
-
   bool get completed;
-
   _$WatchAllByStoreIDCompletedCopyWith<_WatchAllByStoreIDCompleted>
       get copyWith;
 }
 
+/// @nodoc
 abstract class _$WatchAllByStoreIDInactiveCopyWith<$Res> {
   factory _$WatchAllByStoreIDInactiveCopyWith(_WatchAllByStoreIDInactive value,
           $Res Function(_WatchAllByStoreIDInactive) then) =
       __$WatchAllByStoreIDInactiveCopyWithImpl<$Res>;
-
   $Res call({String storeID});
 }
 
+/// @nodoc
 class __$WatchAllByStoreIDInactiveCopyWithImpl<$Res>
     extends _$OrderWatcherEventCopyWithImpl<$Res>
     implements _$WatchAllByStoreIDInactiveCopyWith<$Res> {
@@ -575,6 +581,7 @@ class __$WatchAllByStoreIDInactiveCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_WatchAllByStoreIDInactive implements _WatchAllByStoreIDInactive {
   const _$_WatchAllByStoreIDInactive(this.storeID) : assert(storeID != null);
 
@@ -689,16 +696,17 @@ abstract class _WatchAllByStoreIDInactive implements OrderWatcherEvent {
       _$_WatchAllByStoreIDInactive;
 
   String get storeID;
-
   _$WatchAllByStoreIDInactiveCopyWith<_WatchAllByStoreIDInactive> get copyWith;
 }
 
+/// @nodoc
 abstract class _$WatchAllByCustomerIDCopyWith<$Res> {
   factory _$WatchAllByCustomerIDCopyWith(_WatchAllByCustomerID value,
           $Res Function(_WatchAllByCustomerID) then) =
       __$WatchAllByCustomerIDCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class __$WatchAllByCustomerIDCopyWithImpl<$Res>
     extends _$OrderWatcherEventCopyWithImpl<$Res>
     implements _$WatchAllByCustomerIDCopyWith<$Res> {
@@ -710,6 +718,7 @@ class __$WatchAllByCustomerIDCopyWithImpl<$Res>
   _WatchAllByCustomerID get _value => super._value as _WatchAllByCustomerID;
 }
 
+/// @nodoc
 class _$_WatchAllByCustomerID implements _WatchAllByCustomerID {
   const _$_WatchAllByCustomerID();
 
@@ -810,14 +819,15 @@ abstract class _WatchAllByCustomerID implements OrderWatcherEvent {
   const factory _WatchAllByCustomerID() = _$_WatchAllByCustomerID;
 }
 
+/// @nodoc
 abstract class _$OrdersReceivedCopyWith<$Res> {
   factory _$OrdersReceivedCopyWith(
           _OrdersReceived value, $Res Function(_OrdersReceived) then) =
       __$OrdersReceivedCopyWithImpl<$Res>;
-
   $Res call({Either<OrderFailure, KtList<StoreOrder>> failureOrOrder});
 }
 
+/// @nodoc
 class __$OrdersReceivedCopyWithImpl<$Res>
     extends _$OrderWatcherEventCopyWithImpl<$Res>
     implements _$OrdersReceivedCopyWith<$Res> {
@@ -840,6 +850,7 @@ class __$OrdersReceivedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_OrdersReceived implements _OrdersReceived {
   const _$_OrdersReceived(this.failureOrOrder) : assert(failureOrOrder != null);
 
@@ -955,10 +966,10 @@ abstract class _OrdersReceived implements OrderWatcherEvent {
       _$_OrdersReceived;
 
   Either<OrderFailure, KtList<StoreOrder>> get failureOrOrder;
-
   _$OrdersReceivedCopyWith<_OrdersReceived> get copyWith;
 }
 
+/// @nodoc
 class _$OrderWatcherStateTearOff {
   const _$OrderWatcherStateTearOff();
 
@@ -987,9 +998,11 @@ class _$OrderWatcherStateTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $OrderWatcherState = _$OrderWatcherStateTearOff();
 
+/// @nodoc
 mixin _$OrderWatcherState {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -998,7 +1011,6 @@ mixin _$OrderWatcherState {
     @required Result loadSuccess(KtList<StoreOrder> orders),
     @required Result loadFailure(OrderFailure orderFailure),
   });
-
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result initial(),
@@ -1007,7 +1019,6 @@ mixin _$OrderWatcherState {
     Result loadFailure(OrderFailure orderFailure),
     @required Result orElse(),
   });
-
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result initial(_Initial value),
@@ -1015,7 +1026,6 @@ mixin _$OrderWatcherState {
     @required Result loadSuccess(_LoadSuccess value),
     @required Result loadFailure(_LoadFailure value),
   });
-
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result initial(_Initial value),
@@ -1026,27 +1036,30 @@ mixin _$OrderWatcherState {
   });
 }
 
+/// @nodoc
 abstract class $OrderWatcherStateCopyWith<$Res> {
   factory $OrderWatcherStateCopyWith(
           OrderWatcherState value, $Res Function(OrderWatcherState) then) =
       _$OrderWatcherStateCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$OrderWatcherStateCopyWithImpl<$Res>
     implements $OrderWatcherStateCopyWith<$Res> {
   _$OrderWatcherStateCopyWithImpl(this._value, this._then);
 
   final OrderWatcherState _value;
-
   // ignore: unused_field
   final $Res Function(OrderWatcherState) _then;
 }
 
+/// @nodoc
 abstract class _$InitialCopyWith<$Res> {
   factory _$InitialCopyWith(_Initial value, $Res Function(_Initial) then) =
       __$InitialCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class __$InitialCopyWithImpl<$Res> extends _$OrderWatcherStateCopyWithImpl<$Res>
     implements _$InitialCopyWith<$Res> {
   __$InitialCopyWithImpl(_Initial _value, $Res Function(_Initial) _then)
@@ -1056,6 +1069,7 @@ class __$InitialCopyWithImpl<$Res> extends _$OrderWatcherStateCopyWithImpl<$Res>
   _Initial get _value => super._value as _Initial;
 }
 
+/// @nodoc
 class _$_Initial implements _Initial {
   const _$_Initial();
 
@@ -1139,11 +1153,13 @@ abstract class _Initial implements OrderWatcherState {
   const factory _Initial() = _$_Initial;
 }
 
+/// @nodoc
 abstract class _$LoadingCopyWith<$Res> {
   factory _$LoadingCopyWith(_Loading value, $Res Function(_Loading) then) =
       __$LoadingCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class __$LoadingCopyWithImpl<$Res> extends _$OrderWatcherStateCopyWithImpl<$Res>
     implements _$LoadingCopyWith<$Res> {
   __$LoadingCopyWithImpl(_Loading _value, $Res Function(_Loading) _then)
@@ -1153,6 +1169,7 @@ class __$LoadingCopyWithImpl<$Res> extends _$OrderWatcherStateCopyWithImpl<$Res>
   _Loading get _value => super._value as _Loading;
 }
 
+/// @nodoc
 class _$_Loading implements _Loading {
   const _$_Loading();
 
@@ -1236,14 +1253,15 @@ abstract class _Loading implements OrderWatcherState {
   const factory _Loading() = _$_Loading;
 }
 
+/// @nodoc
 abstract class _$LoadSuccessCopyWith<$Res> {
   factory _$LoadSuccessCopyWith(
           _LoadSuccess value, $Res Function(_LoadSuccess) then) =
       __$LoadSuccessCopyWithImpl<$Res>;
-
   $Res call({KtList<StoreOrder> orders});
 }
 
+/// @nodoc
 class __$LoadSuccessCopyWithImpl<$Res>
     extends _$OrderWatcherStateCopyWithImpl<$Res>
     implements _$LoadSuccessCopyWith<$Res> {
@@ -1264,6 +1282,7 @@ class __$LoadSuccessCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_LoadSuccess implements _LoadSuccess {
   const _$_LoadSuccess(this.orders) : assert(orders != null);
 
@@ -1358,20 +1377,20 @@ abstract class _LoadSuccess implements OrderWatcherState {
   const factory _LoadSuccess(KtList<StoreOrder> orders) = _$_LoadSuccess;
 
   KtList<StoreOrder> get orders;
-
   _$LoadSuccessCopyWith<_LoadSuccess> get copyWith;
 }
 
+/// @nodoc
 abstract class _$LoadFailureCopyWith<$Res> {
   factory _$LoadFailureCopyWith(
           _LoadFailure value, $Res Function(_LoadFailure) then) =
       __$LoadFailureCopyWithImpl<$Res>;
-
   $Res call({OrderFailure orderFailure});
 
   $OrderFailureCopyWith<$Res> get orderFailure;
 }
 
+/// @nodoc
 class __$LoadFailureCopyWithImpl<$Res>
     extends _$OrderWatcherStateCopyWithImpl<$Res>
     implements _$LoadFailureCopyWith<$Res> {
@@ -1404,6 +1423,7 @@ class __$LoadFailureCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_LoadFailure implements _LoadFailure {
   const _$_LoadFailure(this.orderFailure) : assert(orderFailure != null);
 
@@ -1499,6 +1519,5 @@ abstract class _LoadFailure implements OrderWatcherState {
   const factory _LoadFailure(OrderFailure orderFailure) = _$_LoadFailure;
 
   OrderFailure get orderFailure;
-
   _$LoadFailureCopyWith<_LoadFailure> get copyWith;
 }

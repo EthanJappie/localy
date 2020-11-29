@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:localy/application/forget_password_form/forget_password_form_bloc.dart';
+import 'package:localy/gen/assets.gen.dart';
 import 'package:localy/presentation/core/widgets/localy_entry_field.dart';
 
 class ForgetPasswordForm extends StatelessWidget {
@@ -56,7 +57,7 @@ class ForgetPasswordForm extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: <Widget>[
-                          SvgPicture.asset('assets/images/ingredients.svg'),
+                          SvgPicture.asset(Assets.images.ingredients),
                         ],
                       ),
                       Container(

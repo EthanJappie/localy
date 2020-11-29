@@ -8,11 +8,11 @@ part of 'bundle_entity_dtos.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
-
 BundleEntityDTO _$BundleEntityDTOFromJson(Map<String, dynamic> json) {
   return _BundleEntityDTO.fromJson(json);
 }
 
+/// @nodoc
 class _$BundleEntityDTOTearOff {
   const _$BundleEntityDTOTearOff();
 
@@ -22,33 +22,39 @@ class _$BundleEntityDTOTearOff {
       numberOfCredits: numberOfCredits,
     );
   }
+
+// ignore: unused_element
+  BundleEntityDTO fromJson(Map<String, Object> json) {
+    return BundleEntityDTO.fromJson(json);
+  }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $BundleEntityDTO = _$BundleEntityDTOTearOff();
 
+/// @nodoc
 mixin _$BundleEntityDTO {
   int get numberOfCredits;
 
   Map<String, dynamic> toJson();
-
   $BundleEntityDTOCopyWith<BundleEntityDTO> get copyWith;
 }
 
+/// @nodoc
 abstract class $BundleEntityDTOCopyWith<$Res> {
   factory $BundleEntityDTOCopyWith(
           BundleEntityDTO value, $Res Function(BundleEntityDTO) then) =
       _$BundleEntityDTOCopyWithImpl<$Res>;
-
   $Res call({int numberOfCredits});
 }
 
+/// @nodoc
 class _$BundleEntityDTOCopyWithImpl<$Res>
     implements $BundleEntityDTOCopyWith<$Res> {
   _$BundleEntityDTOCopyWithImpl(this._value, this._then);
 
   final BundleEntityDTO _value;
-
   // ignore: unused_field
   final $Res Function(BundleEntityDTO) _then;
 
@@ -64,16 +70,17 @@ class _$BundleEntityDTOCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class _$BundleEntityDTOCopyWith<$Res>
     implements $BundleEntityDTOCopyWith<$Res> {
   factory _$BundleEntityDTOCopyWith(
           _BundleEntityDTO value, $Res Function(_BundleEntityDTO) then) =
       __$BundleEntityDTOCopyWithImpl<$Res>;
-
   @override
   $Res call({int numberOfCredits});
 }
 
+/// @nodoc
 class __$BundleEntityDTOCopyWithImpl<$Res>
     extends _$BundleEntityDTOCopyWithImpl<$Res>
     implements _$BundleEntityDTOCopyWith<$Res> {
@@ -97,6 +104,8 @@ class __$BundleEntityDTOCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$_BundleEntityDTO extends _BundleEntityDTO {
   const _$_BundleEntityDTO({@required this.numberOfCredits})
       : assert(numberOfCredits != null),
@@ -139,7 +148,6 @@ class _$_BundleEntityDTO extends _BundleEntityDTO {
 
 abstract class _BundleEntityDTO extends BundleEntityDTO {
   const _BundleEntityDTO._() : super._();
-
   const factory _BundleEntityDTO({@required int numberOfCredits}) =
       _$_BundleEntityDTO;
 
@@ -148,7 +156,6 @@ abstract class _BundleEntityDTO extends BundleEntityDTO {
 
   @override
   int get numberOfCredits;
-
   @override
   _$BundleEntityDTOCopyWith<_BundleEntityDTO> get copyWith;
 }

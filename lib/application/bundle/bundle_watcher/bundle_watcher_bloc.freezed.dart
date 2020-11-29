@@ -9,6 +9,7 @@ part of 'bundle_watcher_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$BundleWatcherEventTearOff {
   const _$BundleWatcherEventTearOff();
 
@@ -26,9 +27,11 @@ class _$BundleWatcherEventTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $BundleWatcherEvent = _$BundleWatcherEventTearOff();
 
+/// @nodoc
 mixin _$BundleWatcherEvent {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -37,7 +40,6 @@ mixin _$BundleWatcherEvent {
         Result bundleReceived(
             Either<BundleEntityFailure, BundleEntity> failureOrBundle),
   });
-
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result watch(),
@@ -45,13 +47,11 @@ mixin _$BundleWatcherEvent {
         Either<BundleEntityFailure, BundleEntity> failureOrBundle),
     @required Result orElse(),
   });
-
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result watch(_BundleWatcherEvent value),
     @required Result bundleReceived(_BundleReceived value),
   });
-
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result watch(_BundleWatcherEvent value),
@@ -60,28 +60,31 @@ mixin _$BundleWatcherEvent {
   });
 }
 
+/// @nodoc
 abstract class $BundleWatcherEventCopyWith<$Res> {
   factory $BundleWatcherEventCopyWith(
           BundleWatcherEvent value, $Res Function(BundleWatcherEvent) then) =
       _$BundleWatcherEventCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$BundleWatcherEventCopyWithImpl<$Res>
     implements $BundleWatcherEventCopyWith<$Res> {
   _$BundleWatcherEventCopyWithImpl(this._value, this._then);
 
   final BundleWatcherEvent _value;
-
   // ignore: unused_field
   final $Res Function(BundleWatcherEvent) _then;
 }
 
+/// @nodoc
 abstract class _$BundleWatcherEventCopyWith<$Res> {
   factory _$BundleWatcherEventCopyWith(
           _BundleWatcherEvent value, $Res Function(_BundleWatcherEvent) then) =
       __$BundleWatcherEventCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class __$BundleWatcherEventCopyWithImpl<$Res>
     extends _$BundleWatcherEventCopyWithImpl<$Res>
     implements _$BundleWatcherEventCopyWith<$Res> {
@@ -93,6 +96,7 @@ class __$BundleWatcherEventCopyWithImpl<$Res>
   _BundleWatcherEvent get _value => super._value as _BundleWatcherEvent;
 }
 
+/// @nodoc
 class _$_BundleWatcherEvent implements _BundleWatcherEvent {
   const _$_BundleWatcherEvent();
 
@@ -167,14 +171,15 @@ abstract class _BundleWatcherEvent implements BundleWatcherEvent {
   const factory _BundleWatcherEvent() = _$_BundleWatcherEvent;
 }
 
+/// @nodoc
 abstract class _$BundleReceivedCopyWith<$Res> {
   factory _$BundleReceivedCopyWith(
           _BundleReceived value, $Res Function(_BundleReceived) then) =
       __$BundleReceivedCopyWithImpl<$Res>;
-
   $Res call({Either<BundleEntityFailure, BundleEntity> failureOrBundle});
 }
 
+/// @nodoc
 class __$BundleReceivedCopyWithImpl<$Res>
     extends _$BundleWatcherEventCopyWithImpl<$Res>
     implements _$BundleReceivedCopyWith<$Res> {
@@ -197,6 +202,7 @@ class __$BundleReceivedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_BundleReceived implements _BundleReceived {
   const _$_BundleReceived(this.failureOrBundle)
       : assert(failureOrBundle != null);
@@ -287,10 +293,10 @@ abstract class _BundleReceived implements BundleWatcherEvent {
       _$_BundleReceived;
 
   Either<BundleEntityFailure, BundleEntity> get failureOrBundle;
-
   _$BundleReceivedCopyWith<_BundleReceived> get copyWith;
 }
 
+/// @nodoc
 class _$BundleWatcherStateTearOff {
   const _$BundleWatcherStateTearOff();
 
@@ -319,9 +325,11 @@ class _$BundleWatcherStateTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $BundleWatcherState = _$BundleWatcherStateTearOff();
 
+/// @nodoc
 mixin _$BundleWatcherState {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -330,7 +338,6 @@ mixin _$BundleWatcherState {
     @required Result loadSuccess(BundleEntity bundle),
     @required Result loadFailure(BundleEntityFailure bundleFailure),
   });
-
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result initial(),
@@ -339,7 +346,6 @@ mixin _$BundleWatcherState {
     Result loadFailure(BundleEntityFailure bundleFailure),
     @required Result orElse(),
   });
-
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result initial(_Initial value),
@@ -347,7 +353,6 @@ mixin _$BundleWatcherState {
     @required Result loadSuccess(_LoadSuccess value),
     @required Result loadFailure(_LoadFailure value),
   });
-
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result initial(_Initial value),
@@ -358,27 +363,30 @@ mixin _$BundleWatcherState {
   });
 }
 
+/// @nodoc
 abstract class $BundleWatcherStateCopyWith<$Res> {
   factory $BundleWatcherStateCopyWith(
           BundleWatcherState value, $Res Function(BundleWatcherState) then) =
       _$BundleWatcherStateCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$BundleWatcherStateCopyWithImpl<$Res>
     implements $BundleWatcherStateCopyWith<$Res> {
   _$BundleWatcherStateCopyWithImpl(this._value, this._then);
 
   final BundleWatcherState _value;
-
   // ignore: unused_field
   final $Res Function(BundleWatcherState) _then;
 }
 
+/// @nodoc
 abstract class _$InitialCopyWith<$Res> {
   factory _$InitialCopyWith(_Initial value, $Res Function(_Initial) then) =
       __$InitialCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class __$InitialCopyWithImpl<$Res>
     extends _$BundleWatcherStateCopyWithImpl<$Res>
     implements _$InitialCopyWith<$Res> {
@@ -389,6 +397,7 @@ class __$InitialCopyWithImpl<$Res>
   _Initial get _value => super._value as _Initial;
 }
 
+/// @nodoc
 class _$_Initial implements _Initial {
   const _$_Initial();
 
@@ -472,11 +481,13 @@ abstract class _Initial implements BundleWatcherState {
   const factory _Initial() = _$_Initial;
 }
 
+/// @nodoc
 abstract class _$LoadingCopyWith<$Res> {
   factory _$LoadingCopyWith(_Loading value, $Res Function(_Loading) then) =
       __$LoadingCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class __$LoadingCopyWithImpl<$Res>
     extends _$BundleWatcherStateCopyWithImpl<$Res>
     implements _$LoadingCopyWith<$Res> {
@@ -487,6 +498,7 @@ class __$LoadingCopyWithImpl<$Res>
   _Loading get _value => super._value as _Loading;
 }
 
+/// @nodoc
 class _$_Loading implements _Loading {
   const _$_Loading();
 
@@ -570,16 +582,17 @@ abstract class _Loading implements BundleWatcherState {
   const factory _Loading() = _$_Loading;
 }
 
+/// @nodoc
 abstract class _$LoadSuccessCopyWith<$Res> {
   factory _$LoadSuccessCopyWith(
           _LoadSuccess value, $Res Function(_LoadSuccess) then) =
       __$LoadSuccessCopyWithImpl<$Res>;
-
   $Res call({BundleEntity bundle});
 
   $BundleEntityCopyWith<$Res> get bundle;
 }
 
+/// @nodoc
 class __$LoadSuccessCopyWithImpl<$Res>
     extends _$BundleWatcherStateCopyWithImpl<$Res>
     implements _$LoadSuccessCopyWith<$Res> {
@@ -610,6 +623,7 @@ class __$LoadSuccessCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_LoadSuccess implements _LoadSuccess {
   const _$_LoadSuccess(this.bundle) : assert(bundle != null);
 
@@ -704,20 +718,20 @@ abstract class _LoadSuccess implements BundleWatcherState {
   const factory _LoadSuccess(BundleEntity bundle) = _$_LoadSuccess;
 
   BundleEntity get bundle;
-
   _$LoadSuccessCopyWith<_LoadSuccess> get copyWith;
 }
 
+/// @nodoc
 abstract class _$LoadFailureCopyWith<$Res> {
   factory _$LoadFailureCopyWith(
           _LoadFailure value, $Res Function(_LoadFailure) then) =
       __$LoadFailureCopyWithImpl<$Res>;
-
   $Res call({BundleEntityFailure bundleFailure});
 
   $BundleEntityFailureCopyWith<$Res> get bundleFailure;
 }
 
+/// @nodoc
 class __$LoadFailureCopyWithImpl<$Res>
     extends _$BundleWatcherStateCopyWithImpl<$Res>
     implements _$LoadFailureCopyWith<$Res> {
@@ -750,6 +764,7 @@ class __$LoadFailureCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_LoadFailure implements _LoadFailure {
   const _$_LoadFailure(this.bundleFailure) : assert(bundleFailure != null);
 
@@ -846,6 +861,5 @@ abstract class _LoadFailure implements BundleWatcherState {
       _$_LoadFailure;
 
   BundleEntityFailure get bundleFailure;
-
   _$LoadFailureCopyWith<_LoadFailure> get copyWith;
 }

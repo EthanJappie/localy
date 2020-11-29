@@ -81,13 +81,13 @@ class PushNotificationsManager {
       '0',
       'channel ',
       'description',
-      priority: Priority.High,
-      importance: Importance.Max,
+      priority: Priority.high,
+      importance: Importance.max,
     );
     const iOS = IOSNotificationDetails();
     const platform = NotificationDetails(
-      android,
-      iOS,
+      android: android,
+      iOS: iOS,
     );
     await flutterLocalNotificationsPlugin.show(
       0,

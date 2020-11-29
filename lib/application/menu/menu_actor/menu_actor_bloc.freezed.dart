@@ -9,6 +9,7 @@ part of 'menu_actor_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$MenuActorEventTearOff {
   const _$MenuActorEventTearOff();
 
@@ -20,9 +21,11 @@ class _$MenuActorEventTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $MenuActorEvent = _$MenuActorEventTearOff();
 
+/// @nodoc
 mixin _$MenuActorEvent {
   Menu get menu;
 
@@ -30,18 +33,15 @@ mixin _$MenuActorEvent {
   Result when<Result extends Object>({
     @required Result deleted(Menu menu),
   });
-
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result deleted(Menu menu),
     @required Result orElse(),
   });
-
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result deleted(_Deleted value),
   });
-
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result deleted(_Deleted value),
@@ -51,22 +51,22 @@ mixin _$MenuActorEvent {
   $MenuActorEventCopyWith<MenuActorEvent> get copyWith;
 }
 
+/// @nodoc
 abstract class $MenuActorEventCopyWith<$Res> {
   factory $MenuActorEventCopyWith(
           MenuActorEvent value, $Res Function(MenuActorEvent) then) =
       _$MenuActorEventCopyWithImpl<$Res>;
-
   $Res call({Menu menu});
 
   $MenuCopyWith<$Res> get menu;
 }
 
+/// @nodoc
 class _$MenuActorEventCopyWithImpl<$Res>
     implements $MenuActorEventCopyWith<$Res> {
   _$MenuActorEventCopyWithImpl(this._value, this._then);
 
   final MenuActorEvent _value;
-
   // ignore: unused_field
   final $Res Function(MenuActorEvent) _then;
 
@@ -90,11 +90,11 @@ class _$MenuActorEventCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class _$DeletedCopyWith<$Res>
     implements $MenuActorEventCopyWith<$Res> {
   factory _$DeletedCopyWith(_Deleted value, $Res Function(_Deleted) then) =
       __$DeletedCopyWithImpl<$Res>;
-
   @override
   $Res call({Menu menu});
 
@@ -102,6 +102,7 @@ abstract class _$DeletedCopyWith<$Res>
   $MenuCopyWith<$Res> get menu;
 }
 
+/// @nodoc
 class __$DeletedCopyWithImpl<$Res> extends _$MenuActorEventCopyWithImpl<$Res>
     implements _$DeletedCopyWith<$Res> {
   __$DeletedCopyWithImpl(_Deleted _value, $Res Function(_Deleted) _then)
@@ -120,6 +121,7 @@ class __$DeletedCopyWithImpl<$Res> extends _$MenuActorEventCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_Deleted implements _Deleted {
   const _$_Deleted(this.menu) : assert(menu != null);
 
@@ -197,11 +199,11 @@ abstract class _Deleted implements MenuActorEvent {
 
   @override
   Menu get menu;
-
   @override
   _$DeletedCopyWith<_Deleted> get copyWith;
 }
 
+/// @nodoc
 class _$MenuActorStateTearOff {
   const _$MenuActorStateTearOff();
 
@@ -228,9 +230,11 @@ class _$MenuActorStateTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $MenuActorState = _$MenuActorStateTearOff();
 
+/// @nodoc
 mixin _$MenuActorState {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -239,7 +243,6 @@ mixin _$MenuActorState {
     @required Result deleteFailure(MenuFailure menuFailure),
     @required Result deleteSuccess(),
   });
-
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result initial(),
@@ -248,7 +251,6 @@ mixin _$MenuActorState {
     Result deleteSuccess(),
     @required Result orElse(),
   });
-
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result initial(_Initial value),
@@ -256,7 +258,6 @@ mixin _$MenuActorState {
     @required Result deleteFailure(_DeleteFailure value),
     @required Result deleteSuccess(_DeleteSuccess value),
   });
-
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result initial(_Initial value),
@@ -267,27 +268,30 @@ mixin _$MenuActorState {
   });
 }
 
+/// @nodoc
 abstract class $MenuActorStateCopyWith<$Res> {
   factory $MenuActorStateCopyWith(
           MenuActorState value, $Res Function(MenuActorState) then) =
       _$MenuActorStateCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$MenuActorStateCopyWithImpl<$Res>
     implements $MenuActorStateCopyWith<$Res> {
   _$MenuActorStateCopyWithImpl(this._value, this._then);
 
   final MenuActorState _value;
-
   // ignore: unused_field
   final $Res Function(MenuActorState) _then;
 }
 
+/// @nodoc
 abstract class _$InitialCopyWith<$Res> {
   factory _$InitialCopyWith(_Initial value, $Res Function(_Initial) then) =
       __$InitialCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class __$InitialCopyWithImpl<$Res> extends _$MenuActorStateCopyWithImpl<$Res>
     implements _$InitialCopyWith<$Res> {
   __$InitialCopyWithImpl(_Initial _value, $Res Function(_Initial) _then)
@@ -297,6 +301,7 @@ class __$InitialCopyWithImpl<$Res> extends _$MenuActorStateCopyWithImpl<$Res>
   _Initial get _value => super._value as _Initial;
 }
 
+/// @nodoc
 class _$_Initial implements _Initial {
   const _$_Initial();
 
@@ -380,11 +385,13 @@ abstract class _Initial implements MenuActorState {
   const factory _Initial() = _$_Initial;
 }
 
+/// @nodoc
 abstract class _$LoadingCopyWith<$Res> {
   factory _$LoadingCopyWith(_Loading value, $Res Function(_Loading) then) =
       __$LoadingCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class __$LoadingCopyWithImpl<$Res> extends _$MenuActorStateCopyWithImpl<$Res>
     implements _$LoadingCopyWith<$Res> {
   __$LoadingCopyWithImpl(_Loading _value, $Res Function(_Loading) _then)
@@ -394,6 +401,7 @@ class __$LoadingCopyWithImpl<$Res> extends _$MenuActorStateCopyWithImpl<$Res>
   _Loading get _value => super._value as _Loading;
 }
 
+/// @nodoc
 class _$_Loading implements _Loading {
   const _$_Loading();
 
@@ -477,16 +485,17 @@ abstract class _Loading implements MenuActorState {
   const factory _Loading() = _$_Loading;
 }
 
+/// @nodoc
 abstract class _$DeleteFailureCopyWith<$Res> {
   factory _$DeleteFailureCopyWith(
           _DeleteFailure value, $Res Function(_DeleteFailure) then) =
       __$DeleteFailureCopyWithImpl<$Res>;
-
   $Res call({MenuFailure menuFailure});
 
   $MenuFailureCopyWith<$Res> get menuFailure;
 }
 
+/// @nodoc
 class __$DeleteFailureCopyWithImpl<$Res>
     extends _$MenuActorStateCopyWithImpl<$Res>
     implements _$DeleteFailureCopyWith<$Res> {
@@ -517,6 +526,7 @@ class __$DeleteFailureCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_DeleteFailure implements _DeleteFailure {
   const _$_DeleteFailure(this.menuFailure) : assert(menuFailure != null);
 
@@ -612,16 +622,17 @@ abstract class _DeleteFailure implements MenuActorState {
   const factory _DeleteFailure(MenuFailure menuFailure) = _$_DeleteFailure;
 
   MenuFailure get menuFailure;
-
   _$DeleteFailureCopyWith<_DeleteFailure> get copyWith;
 }
 
+/// @nodoc
 abstract class _$DeleteSuccessCopyWith<$Res> {
   factory _$DeleteSuccessCopyWith(
           _DeleteSuccess value, $Res Function(_DeleteSuccess) then) =
       __$DeleteSuccessCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class __$DeleteSuccessCopyWithImpl<$Res>
     extends _$MenuActorStateCopyWithImpl<$Res>
     implements _$DeleteSuccessCopyWith<$Res> {
@@ -633,6 +644,7 @@ class __$DeleteSuccessCopyWithImpl<$Res>
   _DeleteSuccess get _value => super._value as _DeleteSuccess;
 }
 
+/// @nodoc
 class _$_DeleteSuccess implements _DeleteSuccess {
   const _$_DeleteSuccess();
 

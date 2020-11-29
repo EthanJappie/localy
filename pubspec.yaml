@@ -4,80 +4,81 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.9.1 <3.0.0"
+  sdk: ">=2.9.2 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  dartz: ^0.9.1
-  freezed_annotation: ^0.11.0+1
-  flutter_bloc: ^6.0.4
-  firebase_core: ^0.5.0
-  firebase_analytics: ^6.0.0
-  firebase_auth: ^0.18.0+1
-  cloud_firestore: ^0.14.0+2
-  google_sign_in: ^4.5.3
-  get_it: ^4.0.4
-  injectable: ^1.0.4
+  dartz: ^0.9.2
+  freezed_annotation: ^0.12.0
+  flutter_bloc: ^6.1.1
+  firebase_core: ^0.5.2+1
+  firebase_analytics: ^6.2.0
+  firebase_auth: ^0.18.3+1
+  cloud_firestore: ^0.14.3+1
+  google_sign_in: ^4.5.6
+  get_it: ^5.0.1
+  injectable: ^1.0.5
   flushbar: ^1.10.4
   uuid: ^2.2.2
-  auto_route: ^0.6.7
-  kt_dart: ^0.7.0+1
-  json_annotation: ^3.0.1
-  google_fonts: ^1.1.0
-  flutter_svg: ^0.18.1
-  flutter_hooks: ^0.13.2
-  google_map_location_picker: ^3.3.4
-  location: ^3.0.2
-  google_maps_flutter: ^0.5.31
+  auto_route: ^0.6.9
+  kt_dart: ^0.8.0
+  json_annotation: ^3.1.1
+  google_fonts: ^1.1.1
+  flutter_svg: ^0.19.1
+  flutter_hooks: ^0.15.0
+  google_map_location_picker: ^4.1.2+1
+  location: ^3.1.0
+  google_maps_flutter: ^1.0.6
   geocoder: ^0.2.1
   http: ^0.12.2
-  camera: ^0.5.8+5
-  image_picker: ^0.6.7+7
-  image: ^2.1.14
-  path_provider: ^1.6.14
+  camera: ^0.5.8+11
+  image_picker: ^0.6.7+14
+  image: ^2.1.19
+  path_provider: ^1.6.24
   flutter_image_compress: ^0.7.0
-  firebase_storage: ^4.0.0
+  firebase_storage: ^5.1.0
   image_cropper: ^1.3.1
-  email_validator: ^1.0.5
+  email_validator: ^1.0.6
   geoflutterfire:
     git:
       url: https://github.com/brad007/GeoFlutterFire
       ref: master
-  cached_network_image: ^2.3.1
-  firebase_messaging: ^7.0.0
-  firebase_crashlytics: ^0.1.4+1
-  url_launcher: ^5.5.2
-  flutter_mapbox_navigation: ^0.0.11
+  cached_network_image: ^2.3.3
+  firebase_messaging: ^7.0.3
+  firebase_crashlytics: ^0.2.3+1
+  url_launcher: ^5.7.10
+  flutter_mapbox_navigation: ^0.0.18
   intl: ^0.16.1
-  time_range: ^0.4.0
-  flutter_local_notifications: ^1.4.4+4
-  flutter_rating_bar: ^3.0.1+1
-  rave_flutter:
-    git:
-      url: https://github.com/brad007/rave_flutter
-      ref: master
+  time_range: ^0.5.0
+  flutter_local_notifications: ^3.0.1+6
+  flutter_rating_bar: ^3.2.0+1
+#  rave_flutter:
+#    git:
+#      url: https://github.com/brad007/rave_flutter
+#      ref: master
 
 dev_dependencies:
-  very_good_analysis: ^1.0.2
+  very_good_analysis: ^1.0.4
   test:
   flutter_test:
     sdk: flutter
   flutter_driver:
     sdk: flutter
-  mockito: 4.1.1
-  bloc_test: 7.0.3
-  build_runner: ^1.10.1
-  freezed: ^0.11.6
-  lint: ^1.2.0
-  injectable_generator: ^1.0.4
-  auto_route_generator: ^0.6.8
-  json_serializable: ^3.4.1
+  mockito: 4.1.3
+  bloc_test: 7.1.0
+  build_runner: ^1.10.2
+  flutter_gen: ^1.3.1
+  freezed: ^0.12.2
+  lint: ^1.3.0
+  injectable_generator: ^1.0.5
+  auto_route_generator: ^0.6.9
+  json_serializable: ^3.5.0
   clippy_flutter: ^1.1.1
   remove_from_coverage: any
   lcov: 6.0.0
-  bdd_widget_test: ^0.1.4
-  flutter_launcher_icons: ^0.7.5
+  bdd_widget_test: ^0.1.5
+  flutter_launcher_icons: ^0.8.1
 
 flutter_icons:
   android: "launcher_icon"

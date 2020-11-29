@@ -108,10 +108,19 @@ class ReviewFormPageScaffold extends StatelessWidget {
                   SliverToBoxAdapter(
                     child: Center(
                       child: RatingBar(
-                        itemBuilder: (context, _) => Icon(
-                          Icons.star,
-                          color: Theme.of(context).primaryColor,
-                        ),
+                        ratingWidget: RatingWidget(
+                            full: Icon(
+                              Icons.star,
+                              color: Theme.of(context).primaryColor,
+                            ),
+                            half: Icon(
+                              Icons.star,
+                              color: Theme.of(context).primaryColor,
+                            ),
+                            empty: Icon(
+                              Icons.star,
+                              color: Theme.of(context).primaryColor,
+                            )),
                         onRatingUpdate: (rating) {
                           context
                               .bloc<ReviewFormBloc>()

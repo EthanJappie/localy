@@ -21,7 +21,7 @@ class CustomerViewOrderPage extends StatefulWidget {
 }
 
 class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
-  MapboxNavigation _directions;
+  MapBoxNavigation _directions;
   LocationData _location;
 
   @override
@@ -31,7 +31,8 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
   }
 
   Future<void> _setup() async {
-    _directions = MapboxNavigation(onRouteProgress: (arrived) async {});
+    _directions =
+        MapBoxNavigation(onRouteEvent: (RouteEvent routeEvent) async {});
     _location = await Location().getLocation();
   }
 
@@ -92,19 +93,22 @@ class _CustomerViewOrderPageState extends State<CustomerViewOrderPage> {
               InkWell(
                 onTap: () async {
                   await _directions.startNavigation(
-                    origin: WayPoint(
-                        latitude: _location.latitude,
-                        longitude: _location.longitude,
-                        name: 'origin'),
-                    destination: WayPoint(
-                      latitude:
-                          widget.order.storeCoordinates.getOrCrash().latitude,
-                      longitude:
-                          widget.order.storeCoordinates.getOrCrash().longitude,
-                      name: 'destination',
+                    options: MapBoxOptions(
+                      initialLatitude: _location.latitude,
+                      initialLongitude: _location.longitude,
+                      language: 'English',
+                      units: VoiceUnits.metric,
                     ),
-                    language: 'English',
-                    units: VoiceUnits.metric,
+                    wayPoints: [
+                      WayPoint(
+                        latitude:
+                            widget.order.storeCoordinates.getOrCrash().latitude,
+                        longitude: widget.order.storeCoordinates
+                            .getOrCrash()
+                            .longitude,
+                        name: 'destination',
+                      )
+                    ],
                   );
                 },
                 child: Row(

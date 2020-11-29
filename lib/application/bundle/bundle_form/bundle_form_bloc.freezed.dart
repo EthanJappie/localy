@@ -9,6 +9,7 @@ part of 'bundle_form_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$BundleFormEventTearOff {
   const _$BundleFormEventTearOff();
 
@@ -32,9 +33,11 @@ class _$BundleFormEventTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $BundleFormEvent = _$BundleFormEventTearOff();
 
+/// @nodoc
 mixin _$BundleFormEvent {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -42,7 +45,6 @@ mixin _$BundleFormEvent {
     @required Result saved(),
     @required Result numberOfCreditsChanged(int numberOfCredits),
   });
-
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result initialized(Option<BundleEntity> initialBundleOption),
@@ -50,14 +52,12 @@ mixin _$BundleFormEvent {
     Result numberOfCreditsChanged(int numberOfCredits),
     @required Result orElse(),
   });
-
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result initialized(_Initialized value),
     @required Result saved(_Saved value),
     @required Result numberOfCreditsChanged(_NumberOfCreditsChanged value),
   });
-
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result initialized(_Initialized value),
@@ -67,30 +67,32 @@ mixin _$BundleFormEvent {
   });
 }
 
+/// @nodoc
 abstract class $BundleFormEventCopyWith<$Res> {
   factory $BundleFormEventCopyWith(
           BundleFormEvent value, $Res Function(BundleFormEvent) then) =
       _$BundleFormEventCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$BundleFormEventCopyWithImpl<$Res>
     implements $BundleFormEventCopyWith<$Res> {
   _$BundleFormEventCopyWithImpl(this._value, this._then);
 
   final BundleFormEvent _value;
-
   // ignore: unused_field
   final $Res Function(BundleFormEvent) _then;
 }
 
+/// @nodoc
 abstract class _$InitializedCopyWith<$Res> {
   factory _$InitializedCopyWith(
           _Initialized value, $Res Function(_Initialized) then) =
       __$InitializedCopyWithImpl<$Res>;
-
   $Res call({Option<BundleEntity> initialBundleOption});
 }
 
+/// @nodoc
 class __$InitializedCopyWithImpl<$Res>
     extends _$BundleFormEventCopyWithImpl<$Res>
     implements _$InitializedCopyWith<$Res> {
@@ -113,6 +115,7 @@ class __$InitializedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_Initialized implements _Initialized {
   const _$_Initialized(this.initialBundleOption)
       : assert(initialBundleOption != null);
@@ -205,15 +208,16 @@ abstract class _Initialized implements BundleFormEvent {
       _$_Initialized;
 
   Option<BundleEntity> get initialBundleOption;
-
   _$InitializedCopyWith<_Initialized> get copyWith;
 }
 
+/// @nodoc
 abstract class _$SavedCopyWith<$Res> {
   factory _$SavedCopyWith(_Saved value, $Res Function(_Saved) then) =
       __$SavedCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class __$SavedCopyWithImpl<$Res> extends _$BundleFormEventCopyWithImpl<$Res>
     implements _$SavedCopyWith<$Res> {
   __$SavedCopyWithImpl(_Saved _value, $Res Function(_Saved) _then)
@@ -223,6 +227,7 @@ class __$SavedCopyWithImpl<$Res> extends _$BundleFormEventCopyWithImpl<$Res>
   _Saved get _value => super._value as _Saved;
 }
 
+/// @nodoc
 class _$_Saved implements _Saved {
   const _$_Saved();
 
@@ -300,14 +305,15 @@ abstract class _Saved implements BundleFormEvent {
   const factory _Saved() = _$_Saved;
 }
 
+/// @nodoc
 abstract class _$NumberOfCreditsChangedCopyWith<$Res> {
   factory _$NumberOfCreditsChangedCopyWith(_NumberOfCreditsChanged value,
           $Res Function(_NumberOfCreditsChanged) then) =
       __$NumberOfCreditsChangedCopyWithImpl<$Res>;
-
   $Res call({int numberOfCredits});
 }
 
+/// @nodoc
 class __$NumberOfCreditsChangedCopyWithImpl<$Res>
     extends _$BundleFormEventCopyWithImpl<$Res>
     implements _$NumberOfCreditsChangedCopyWith<$Res> {
@@ -330,6 +336,7 @@ class __$NumberOfCreditsChangedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_NumberOfCreditsChanged implements _NumberOfCreditsChanged {
   const _$_NumberOfCreditsChanged(this.numberOfCredits)
       : assert(numberOfCredits != null);
@@ -423,10 +430,10 @@ abstract class _NumberOfCreditsChanged implements BundleFormEvent {
       _$_NumberOfCreditsChanged;
 
   int get numberOfCredits;
-
   _$NumberOfCreditsChangedCopyWith<_NumberOfCreditsChanged> get copyWith;
 }
 
+/// @nodoc
 class _$BundleFormStateTearOff {
   const _$BundleFormStateTearOff();
 
@@ -450,26 +457,25 @@ class _$BundleFormStateTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $BundleFormState = _$BundleFormStateTearOff();
 
+/// @nodoc
 mixin _$BundleFormState {
   BundleEntity get bundle;
-
   bool get showErrorMessages;
-
   bool get isSaving;
-
   Option<Either<BundleEntityFailure, Unit>> get saveFailureOrSuccessOption;
 
   $BundleFormStateCopyWith<BundleFormState> get copyWith;
 }
 
+/// @nodoc
 abstract class $BundleFormStateCopyWith<$Res> {
   factory $BundleFormStateCopyWith(
           BundleFormState value, $Res Function(BundleFormState) then) =
       _$BundleFormStateCopyWithImpl<$Res>;
-
   $Res call(
       {BundleEntity bundle,
       bool showErrorMessages,
@@ -479,12 +485,12 @@ abstract class $BundleFormStateCopyWith<$Res> {
   $BundleEntityCopyWith<$Res> get bundle;
 }
 
+/// @nodoc
 class _$BundleFormStateCopyWithImpl<$Res>
     implements $BundleFormStateCopyWith<$Res> {
   _$BundleFormStateCopyWithImpl(this._value, this._then);
 
   final BundleFormState _value;
-
   // ignore: unused_field
   final $Res Function(BundleFormState) _then;
 
@@ -519,12 +525,12 @@ class _$BundleFormStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class _$BundleFormStateCopyWith<$Res>
     implements $BundleFormStateCopyWith<$Res> {
   factory _$BundleFormStateCopyWith(
           _BundleFormState value, $Res Function(_BundleFormState) then) =
       __$BundleFormStateCopyWithImpl<$Res>;
-
   @override
   $Res call(
       {BundleEntity bundle,
@@ -536,6 +542,7 @@ abstract class _$BundleFormStateCopyWith<$Res>
   $BundleEntityCopyWith<$Res> get bundle;
 }
 
+/// @nodoc
 class __$BundleFormStateCopyWithImpl<$Res>
     extends _$BundleFormStateCopyWithImpl<$Res>
     implements _$BundleFormStateCopyWith<$Res> {
@@ -567,6 +574,7 @@ class __$BundleFormStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_BundleFormState implements _BundleFormState {
   const _$_BundleFormState(
       {@required this.bundle,
@@ -638,16 +646,12 @@ abstract class _BundleFormState implements BundleFormState {
 
   @override
   BundleEntity get bundle;
-
   @override
   bool get showErrorMessages;
-
   @override
   bool get isSaving;
-
   @override
   Option<Either<BundleEntityFailure, Unit>> get saveFailureOrSuccessOption;
-
   @override
   _$BundleFormStateCopyWith<_BundleFormState> get copyWith;
 }

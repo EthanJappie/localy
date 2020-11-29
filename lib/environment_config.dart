@@ -8,11 +8,15 @@ class EnvironmentConfig {
     defaultValue: 'Localy',
   );
 
-  static const VERSION_NUMBER =
-      String.fromEnvironment('VERSION_NUMBER', defaultValue: '1.0.10');
+  static const VERSION_NUMBER = String.fromEnvironment(
+    'VERSION_NUMBER',
+    defaultValue: '1.0.10',
+  );
 
-  static const VERSION_NAME =
-      int.fromEnvironment('VERSION_NAME', defaultValue: 1);
+  static const VERSION_NAME = int.fromEnvironment(
+    'VERSION_NAME',
+    defaultValue: 1,
+  );
 
   static const MAP_API_KEY = String.fromEnvironment('MAP_API_KEY');
 

@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:localy/application/auth/auth_bloc.dart';
 import 'package:localy/environment_config.dart';
+import 'package:localy/gen/assets.gen.dart';
 import 'package:localy/presentation/core/routes/router.gr.dart';
 import 'package:localy/presentation/core/widgets/localy_button.dart';
 
@@ -37,7 +38,7 @@ class SplashPage extends StatelessWidget {
               backgroundColor: Colors.white,
               appBar: AppBar(
                 title: SvgPicture.asset(
-                  'assets/images/logo.svg',
+                  Assets.images.logo,
                   height: 24,
                 ),
                 elevation: 0,
@@ -52,7 +53,7 @@ class SplashPage extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        SvgPicture.asset('assets/images/splash.svg'),
+                        SvgPicture.asset(Assets.images.splash),
                       ],
                     ),
                     const SizedBox(

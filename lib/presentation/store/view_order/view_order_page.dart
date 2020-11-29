@@ -20,7 +20,7 @@ class ViewOrderPage extends StatefulWidget {
 }
 
 class _ViewOrderPageState extends State<ViewOrderPage> {
-  MapboxNavigation _directions;
+  MapBoxNavigation _directions;
   LocationData _location;
 
   @override
@@ -30,7 +30,7 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
   }
 
   Future<void> _setup() async {
-    _directions = MapboxNavigation(onRouteProgress: (arrived) async {});
+    _directions = MapBoxNavigation(onRouteEvent: (routeEvent) async {});
     _location = await Location().getLocation();
   }
 
@@ -119,21 +119,23 @@ class _ViewOrderPageState extends State<ViewOrderPage> {
                 InkWell(
                   onTap: () async {
                     await _directions.startNavigation(
-                      origin: WayPoint(
-                          latitude: _location.latitude,
-                          longitude: _location.longitude,
-                          name: 'origin'),
-                      destination: WayPoint(
-                        latitude: widget.order.deliveryCoordinates
-                            .getOrCrash()
-                            .latitude,
-                        longitude: widget.order.deliveryCoordinates
-                            .getOrCrash()
-                            .longitude,
-                        name: 'destination',
+                      options: MapBoxOptions(
+                        initialLatitude: _location.latitude,
+                        initialLongitude: _location.longitude,
+                        language: 'English',
+                        units: VoiceUnits.metric,
                       ),
-                      language: 'English',
-                      units: VoiceUnits.metric,
+                      wayPoints: [
+                        WayPoint(
+                          latitude: widget.order.deliveryCoordinates
+                              .getOrCrash()
+                              .latitude,
+                          longitude: widget.order.deliveryCoordinates
+                              .getOrCrash()
+                              .longitude,
+                          name: 'destination',
+                        )
+                      ],
                     );
                   },
                   child: Row(

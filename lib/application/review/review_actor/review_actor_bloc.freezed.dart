@@ -9,6 +9,7 @@ part of 'review_actor_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$ReviewActorEventTearOff {
   const _$ReviewActorEventTearOff();
 
@@ -27,9 +28,11 @@ class _$ReviewActorEventTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $ReviewActorEvent = _$ReviewActorEventTearOff();
 
+/// @nodoc
 mixin _$ReviewActorEvent {
   ReviewEntity get review;
 
@@ -38,20 +41,17 @@ mixin _$ReviewActorEvent {
     @required Result deleted(ReviewEntity review),
     @required Result updated(ReviewEntity review),
   });
-
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result deleted(ReviewEntity review),
     Result updated(ReviewEntity review),
     @required Result orElse(),
   });
-
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result deleted(_Deleted value),
     @required Result updated(_Updated value),
   });
-
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result deleted(_Deleted value),
@@ -62,22 +62,22 @@ mixin _$ReviewActorEvent {
   $ReviewActorEventCopyWith<ReviewActorEvent> get copyWith;
 }
 
+/// @nodoc
 abstract class $ReviewActorEventCopyWith<$Res> {
   factory $ReviewActorEventCopyWith(
           ReviewActorEvent value, $Res Function(ReviewActorEvent) then) =
       _$ReviewActorEventCopyWithImpl<$Res>;
-
   $Res call({ReviewEntity review});
 
   $ReviewEntityCopyWith<$Res> get review;
 }
 
+/// @nodoc
 class _$ReviewActorEventCopyWithImpl<$Res>
     implements $ReviewActorEventCopyWith<$Res> {
   _$ReviewActorEventCopyWithImpl(this._value, this._then);
 
   final ReviewActorEvent _value;
-
   // ignore: unused_field
   final $Res Function(ReviewActorEvent) _then;
 
@@ -101,11 +101,11 @@ class _$ReviewActorEventCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class _$DeletedCopyWith<$Res>
     implements $ReviewActorEventCopyWith<$Res> {
   factory _$DeletedCopyWith(_Deleted value, $Res Function(_Deleted) then) =
       __$DeletedCopyWithImpl<$Res>;
-
   @override
   $Res call({ReviewEntity review});
 
@@ -113,6 +113,7 @@ abstract class _$DeletedCopyWith<$Res>
   $ReviewEntityCopyWith<$Res> get review;
 }
 
+/// @nodoc
 class __$DeletedCopyWithImpl<$Res> extends _$ReviewActorEventCopyWithImpl<$Res>
     implements _$DeletedCopyWith<$Res> {
   __$DeletedCopyWithImpl(_Deleted _value, $Res Function(_Deleted) _then)
@@ -131,6 +132,7 @@ class __$DeletedCopyWithImpl<$Res> extends _$ReviewActorEventCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_Deleted implements _Deleted {
   const _$_Deleted(this.review) : assert(review != null);
 
@@ -214,16 +216,15 @@ abstract class _Deleted implements ReviewActorEvent {
 
   @override
   ReviewEntity get review;
-
   @override
   _$DeletedCopyWith<_Deleted> get copyWith;
 }
 
+/// @nodoc
 abstract class _$UpdatedCopyWith<$Res>
     implements $ReviewActorEventCopyWith<$Res> {
   factory _$UpdatedCopyWith(_Updated value, $Res Function(_Updated) then) =
       __$UpdatedCopyWithImpl<$Res>;
-
   @override
   $Res call({ReviewEntity review});
 
@@ -231,6 +232,7 @@ abstract class _$UpdatedCopyWith<$Res>
   $ReviewEntityCopyWith<$Res> get review;
 }
 
+/// @nodoc
 class __$UpdatedCopyWithImpl<$Res> extends _$ReviewActorEventCopyWithImpl<$Res>
     implements _$UpdatedCopyWith<$Res> {
   __$UpdatedCopyWithImpl(_Updated _value, $Res Function(_Updated) _then)
@@ -249,6 +251,7 @@ class __$UpdatedCopyWithImpl<$Res> extends _$ReviewActorEventCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_Updated implements _Updated {
   const _$_Updated(this.review) : assert(review != null);
 
@@ -332,11 +335,11 @@ abstract class _Updated implements ReviewActorEvent {
 
   @override
   ReviewEntity get review;
-
   @override
   _$UpdatedCopyWith<_Updated> get copyWith;
 }
 
+/// @nodoc
 class _$ReviewActorStateTearOff {
   const _$ReviewActorStateTearOff();
 
@@ -375,9 +378,11 @@ class _$ReviewActorStateTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $ReviewActorState = _$ReviewActorStateTearOff();
 
+/// @nodoc
 mixin _$ReviewActorState {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -388,7 +393,6 @@ mixin _$ReviewActorState {
     @required Result deleteSuccess(),
     @required Result updateSuccess(),
   });
-
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result initial(),
@@ -399,7 +403,6 @@ mixin _$ReviewActorState {
     Result updateSuccess(),
     @required Result orElse(),
   });
-
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result initial(_Initial value),
@@ -409,7 +412,6 @@ mixin _$ReviewActorState {
     @required Result deleteSuccess(_DeleteSuccess value),
     @required Result updateSuccess(_UpdateSuccess value),
   });
-
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result initial(_Initial value),
@@ -422,27 +424,30 @@ mixin _$ReviewActorState {
   });
 }
 
+/// @nodoc
 abstract class $ReviewActorStateCopyWith<$Res> {
   factory $ReviewActorStateCopyWith(
           ReviewActorState value, $Res Function(ReviewActorState) then) =
       _$ReviewActorStateCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$ReviewActorStateCopyWithImpl<$Res>
     implements $ReviewActorStateCopyWith<$Res> {
   _$ReviewActorStateCopyWithImpl(this._value, this._then);
 
   final ReviewActorState _value;
-
   // ignore: unused_field
   final $Res Function(ReviewActorState) _then;
 }
 
+/// @nodoc
 abstract class _$InitialCopyWith<$Res> {
   factory _$InitialCopyWith(_Initial value, $Res Function(_Initial) then) =
       __$InitialCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class __$InitialCopyWithImpl<$Res> extends _$ReviewActorStateCopyWithImpl<$Res>
     implements _$InitialCopyWith<$Res> {
   __$InitialCopyWithImpl(_Initial _value, $Res Function(_Initial) _then)
@@ -452,6 +457,7 @@ class __$InitialCopyWithImpl<$Res> extends _$ReviewActorStateCopyWithImpl<$Res>
   _Initial get _value => super._value as _Initial;
 }
 
+/// @nodoc
 class _$_Initial implements _Initial {
   const _$_Initial();
 
@@ -547,11 +553,13 @@ abstract class _Initial implements ReviewActorState {
   const factory _Initial() = _$_Initial;
 }
 
+/// @nodoc
 abstract class _$LoadingCopyWith<$Res> {
   factory _$LoadingCopyWith(_Loading value, $Res Function(_Loading) then) =
       __$LoadingCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class __$LoadingCopyWithImpl<$Res> extends _$ReviewActorStateCopyWithImpl<$Res>
     implements _$LoadingCopyWith<$Res> {
   __$LoadingCopyWithImpl(_Loading _value, $Res Function(_Loading) _then)
@@ -561,6 +569,7 @@ class __$LoadingCopyWithImpl<$Res> extends _$ReviewActorStateCopyWithImpl<$Res>
   _Loading get _value => super._value as _Loading;
 }
 
+/// @nodoc
 class _$_Loading implements _Loading {
   const _$_Loading();
 
@@ -656,16 +665,17 @@ abstract class _Loading implements ReviewActorState {
   const factory _Loading() = _$_Loading;
 }
 
+/// @nodoc
 abstract class _$DeleteFailureCopyWith<$Res> {
   factory _$DeleteFailureCopyWith(
           _DeleteFailure value, $Res Function(_DeleteFailure) then) =
       __$DeleteFailureCopyWithImpl<$Res>;
-
   $Res call({ReviewEntityFailure reviewFailure});
 
   $ReviewEntityFailureCopyWith<$Res> get reviewFailure;
 }
 
+/// @nodoc
 class __$DeleteFailureCopyWithImpl<$Res>
     extends _$ReviewActorStateCopyWithImpl<$Res>
     implements _$DeleteFailureCopyWith<$Res> {
@@ -698,6 +708,7 @@ class __$DeleteFailureCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_DeleteFailure implements _DeleteFailure {
   const _$_DeleteFailure(this.reviewFailure) : assert(reviewFailure != null);
 
@@ -806,20 +817,20 @@ abstract class _DeleteFailure implements ReviewActorState {
       _$_DeleteFailure;
 
   ReviewEntityFailure get reviewFailure;
-
   _$DeleteFailureCopyWith<_DeleteFailure> get copyWith;
 }
 
+/// @nodoc
 abstract class _$UpdateFailureCopyWith<$Res> {
   factory _$UpdateFailureCopyWith(
           _UpdateFailure value, $Res Function(_UpdateFailure) then) =
       __$UpdateFailureCopyWithImpl<$Res>;
-
   $Res call({ReviewEntityFailure reviewFailure});
 
   $ReviewEntityFailureCopyWith<$Res> get reviewFailure;
 }
 
+/// @nodoc
 class __$UpdateFailureCopyWithImpl<$Res>
     extends _$ReviewActorStateCopyWithImpl<$Res>
     implements _$UpdateFailureCopyWith<$Res> {
@@ -852,6 +863,7 @@ class __$UpdateFailureCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_UpdateFailure implements _UpdateFailure {
   const _$_UpdateFailure(this.reviewFailure) : assert(reviewFailure != null);
 
@@ -960,16 +972,17 @@ abstract class _UpdateFailure implements ReviewActorState {
       _$_UpdateFailure;
 
   ReviewEntityFailure get reviewFailure;
-
   _$UpdateFailureCopyWith<_UpdateFailure> get copyWith;
 }
 
+/// @nodoc
 abstract class _$DeleteSuccessCopyWith<$Res> {
   factory _$DeleteSuccessCopyWith(
           _DeleteSuccess value, $Res Function(_DeleteSuccess) then) =
       __$DeleteSuccessCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class __$DeleteSuccessCopyWithImpl<$Res>
     extends _$ReviewActorStateCopyWithImpl<$Res>
     implements _$DeleteSuccessCopyWith<$Res> {
@@ -981,6 +994,7 @@ class __$DeleteSuccessCopyWithImpl<$Res>
   _DeleteSuccess get _value => super._value as _DeleteSuccess;
 }
 
+/// @nodoc
 class _$_DeleteSuccess implements _DeleteSuccess {
   const _$_DeleteSuccess();
 
@@ -1076,12 +1090,14 @@ abstract class _DeleteSuccess implements ReviewActorState {
   const factory _DeleteSuccess() = _$_DeleteSuccess;
 }
 
+/// @nodoc
 abstract class _$UpdateSuccessCopyWith<$Res> {
   factory _$UpdateSuccessCopyWith(
           _UpdateSuccess value, $Res Function(_UpdateSuccess) then) =
       __$UpdateSuccessCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class __$UpdateSuccessCopyWithImpl<$Res>
     extends _$ReviewActorStateCopyWithImpl<$Res>
     implements _$UpdateSuccessCopyWith<$Res> {
@@ -1093,6 +1109,7 @@ class __$UpdateSuccessCopyWithImpl<$Res>
   _UpdateSuccess get _value => super._value as _UpdateSuccess;
 }
 
+/// @nodoc
 class _$_UpdateSuccess implements _UpdateSuccess {
   const _$_UpdateSuccess();
 

@@ -50,4 +50,4 @@ import 'package:localy/presentation/store/view_order/view_order_page.dart';
       MaterialRoute(page: ReviewFormPage, fullscreenDialog: true),
       MaterialRoute(page: StoreFormPage, fullscreenDialog: true),
     ])
-class $Router {}
+class $LocalyRouter {}

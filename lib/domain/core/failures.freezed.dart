@@ -9,6 +9,7 @@ part of 'failures.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$ValueFailureTearOff {
   const _$ValueFailureTearOff();
 
@@ -65,9 +66,11 @@ class _$ValueFailureTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $ValueFailure = _$ValueFailureTearOff();
 
+/// @nodoc
 mixin _$ValueFailure<T> {
   T get failedValue;
 
@@ -81,7 +84,6 @@ mixin _$ValueFailure<T> {
     @required Result shortPassword(T failedValue),
     @required Result invalidGeoPoint(T failedValue),
   });
-
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result exceedingLength(T failedValue, int max),
@@ -93,7 +95,6 @@ mixin _$ValueFailure<T> {
     Result invalidGeoPoint(T failedValue),
     @required Result orElse(),
   });
-
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result exceedingLength(ExceedingLength<T> value),
@@ -104,7 +105,6 @@ mixin _$ValueFailure<T> {
     @required Result shortPassword(ShortPassword<T> value),
     @required Result invalidGeoPoint(InvalidGeoPoint<T> value),
   });
-
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result exceedingLength(ExceedingLength<T> value),
@@ -120,20 +120,20 @@ mixin _$ValueFailure<T> {
   $ValueFailureCopyWith<T, ValueFailure<T>> get copyWith;
 }
 
+/// @nodoc
 abstract class $ValueFailureCopyWith<T, $Res> {
   factory $ValueFailureCopyWith(
           ValueFailure<T> value, $Res Function(ValueFailure<T>) then) =
       _$ValueFailureCopyWithImpl<T, $Res>;
-
   $Res call({T failedValue});
 }
 
+/// @nodoc
 class _$ValueFailureCopyWithImpl<T, $Res>
     implements $ValueFailureCopyWith<T, $Res> {
   _$ValueFailureCopyWithImpl(this._value, this._then);
 
   final ValueFailure<T> _value;
-
   // ignore: unused_field
   final $Res Function(ValueFailure<T>) _then;
 
@@ -148,16 +148,17 @@ class _$ValueFailureCopyWithImpl<T, $Res>
   }
 }
 
+/// @nodoc
 abstract class $ExceedingLengthCopyWith<T, $Res>
     implements $ValueFailureCopyWith<T, $Res> {
   factory $ExceedingLengthCopyWith(
           ExceedingLength<T> value, $Res Function(ExceedingLength<T>) then) =
       _$ExceedingLengthCopyWithImpl<T, $Res>;
-
   @override
   $Res call({T failedValue, int max});
 }
 
+/// @nodoc
 class _$ExceedingLengthCopyWithImpl<T, $Res>
     extends _$ValueFailureCopyWithImpl<T, $Res>
     implements $ExceedingLengthCopyWith<T, $Res> {
@@ -181,6 +182,7 @@ class _$ExceedingLengthCopyWithImpl<T, $Res>
   }
 }
 
+/// @nodoc
 class _$ExceedingLength<T> implements ExceedingLength<T> {
   const _$ExceedingLength({@required this.failedValue, @required this.max})
       : assert(failedValue != null),
@@ -304,22 +306,21 @@ abstract class ExceedingLength<T> implements ValueFailure<T> {
 
   @override
   T get failedValue;
-
   int get max;
-
   @override
   $ExceedingLengthCopyWith<T, ExceedingLength<T>> get copyWith;
 }
 
+/// @nodoc
 abstract class $EmptyCopyWith<T, $Res>
     implements $ValueFailureCopyWith<T, $Res> {
   factory $EmptyCopyWith(Empty<T> value, $Res Function(Empty<T>) then) =
       _$EmptyCopyWithImpl<T, $Res>;
-
   @override
   $Res call({T failedValue});
 }
 
+/// @nodoc
 class _$EmptyCopyWithImpl<T, $Res> extends _$ValueFailureCopyWithImpl<T, $Res>
     implements $EmptyCopyWith<T, $Res> {
   _$EmptyCopyWithImpl(Empty<T> _value, $Res Function(Empty<T>) _then)
@@ -339,6 +340,7 @@ class _$EmptyCopyWithImpl<T, $Res> extends _$ValueFailureCopyWithImpl<T, $Res>
   }
 }
 
+/// @nodoc
 class _$Empty<T> implements Empty<T> {
   const _$Empty({@required this.failedValue}) : assert(failedValue != null);
 
@@ -453,21 +455,21 @@ abstract class Empty<T> implements ValueFailure<T> {
 
   @override
   T get failedValue;
-
   @override
   $EmptyCopyWith<T, Empty<T>> get copyWith;
 }
 
+/// @nodoc
 abstract class $MultilineCopyWith<T, $Res>
     implements $ValueFailureCopyWith<T, $Res> {
   factory $MultilineCopyWith(
           Multiline<T> value, $Res Function(Multiline<T>) then) =
       _$MultilineCopyWithImpl<T, $Res>;
-
   @override
   $Res call({T failedValue});
 }
 
+/// @nodoc
 class _$MultilineCopyWithImpl<T, $Res>
     extends _$ValueFailureCopyWithImpl<T, $Res>
     implements $MultilineCopyWith<T, $Res> {
@@ -489,6 +491,7 @@ class _$MultilineCopyWithImpl<T, $Res>
   }
 }
 
+/// @nodoc
 class _$Multiline<T> implements Multiline<T> {
   const _$Multiline({@required this.failedValue}) : assert(failedValue != null);
 
@@ -603,21 +606,21 @@ abstract class Multiline<T> implements ValueFailure<T> {
 
   @override
   T get failedValue;
-
   @override
   $MultilineCopyWith<T, Multiline<T>> get copyWith;
 }
 
+/// @nodoc
 abstract class $ListTooLongCopyWith<T, $Res>
     implements $ValueFailureCopyWith<T, $Res> {
   factory $ListTooLongCopyWith(
           ListTooLong<T> value, $Res Function(ListTooLong<T>) then) =
       _$ListTooLongCopyWithImpl<T, $Res>;
-
   @override
   $Res call({T failedValue, int max});
 }
 
+/// @nodoc
 class _$ListTooLongCopyWithImpl<T, $Res>
     extends _$ValueFailureCopyWithImpl<T, $Res>
     implements $ListTooLongCopyWith<T, $Res> {
@@ -641,6 +644,7 @@ class _$ListTooLongCopyWithImpl<T, $Res>
   }
 }
 
+/// @nodoc
 class _$ListTooLong<T> implements ListTooLong<T> {
   const _$ListTooLong({@required this.failedValue, @required this.max})
       : assert(failedValue != null),
@@ -764,23 +768,22 @@ abstract class ListTooLong<T> implements ValueFailure<T> {
 
   @override
   T get failedValue;
-
   int get max;
-
   @override
   $ListTooLongCopyWith<T, ListTooLong<T>> get copyWith;
 }
 
+/// @nodoc
 abstract class $InvalidEmailCopyWith<T, $Res>
     implements $ValueFailureCopyWith<T, $Res> {
   factory $InvalidEmailCopyWith(
           InvalidEmail<T> value, $Res Function(InvalidEmail<T>) then) =
       _$InvalidEmailCopyWithImpl<T, $Res>;
-
   @override
   $Res call({T failedValue});
 }
 
+/// @nodoc
 class _$InvalidEmailCopyWithImpl<T, $Res>
     extends _$ValueFailureCopyWithImpl<T, $Res>
     implements $InvalidEmailCopyWith<T, $Res> {
@@ -802,6 +805,7 @@ class _$InvalidEmailCopyWithImpl<T, $Res>
   }
 }
 
+/// @nodoc
 class _$InvalidEmail<T> implements InvalidEmail<T> {
   const _$InvalidEmail({@required this.failedValue})
       : assert(failedValue != null);
@@ -917,21 +921,21 @@ abstract class InvalidEmail<T> implements ValueFailure<T> {
 
   @override
   T get failedValue;
-
   @override
   $InvalidEmailCopyWith<T, InvalidEmail<T>> get copyWith;
 }
 
+/// @nodoc
 abstract class $ShortPasswordCopyWith<T, $Res>
     implements $ValueFailureCopyWith<T, $Res> {
   factory $ShortPasswordCopyWith(
           ShortPassword<T> value, $Res Function(ShortPassword<T>) then) =
       _$ShortPasswordCopyWithImpl<T, $Res>;
-
   @override
   $Res call({T failedValue});
 }
 
+/// @nodoc
 class _$ShortPasswordCopyWithImpl<T, $Res>
     extends _$ValueFailureCopyWithImpl<T, $Res>
     implements $ShortPasswordCopyWith<T, $Res> {
@@ -953,6 +957,7 @@ class _$ShortPasswordCopyWithImpl<T, $Res>
   }
 }
 
+/// @nodoc
 class _$ShortPassword<T> implements ShortPassword<T> {
   const _$ShortPassword({@required this.failedValue})
       : assert(failedValue != null);
@@ -1068,21 +1073,21 @@ abstract class ShortPassword<T> implements ValueFailure<T> {
 
   @override
   T get failedValue;
-
   @override
   $ShortPasswordCopyWith<T, ShortPassword<T>> get copyWith;
 }
 
+/// @nodoc
 abstract class $InvalidGeoPointCopyWith<T, $Res>
     implements $ValueFailureCopyWith<T, $Res> {
   factory $InvalidGeoPointCopyWith(
           InvalidGeoPoint<T> value, $Res Function(InvalidGeoPoint<T>) then) =
       _$InvalidGeoPointCopyWithImpl<T, $Res>;
-
   @override
   $Res call({T failedValue});
 }
 
+/// @nodoc
 class _$InvalidGeoPointCopyWithImpl<T, $Res>
     extends _$ValueFailureCopyWithImpl<T, $Res>
     implements $InvalidGeoPointCopyWith<T, $Res> {
@@ -1104,6 +1109,7 @@ class _$InvalidGeoPointCopyWithImpl<T, $Res>
   }
 }
 
+/// @nodoc
 class _$InvalidGeoPoint<T> implements InvalidGeoPoint<T> {
   const _$InvalidGeoPoint({@required this.failedValue})
       : assert(failedValue != null);
@@ -1220,7 +1226,6 @@ abstract class InvalidGeoPoint<T> implements ValueFailure<T> {
 
   @override
   T get failedValue;
-
   @override
   $InvalidGeoPointCopyWith<T, InvalidGeoPoint<T>> get copyWith;
 }

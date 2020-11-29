@@ -9,6 +9,7 @@ part of 'store_failure.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$StoreFailureTearOff {
   const _$StoreFailureTearOff();
 
@@ -28,9 +29,11 @@ class _$StoreFailureTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $StoreFailure = _$StoreFailureTearOff();
 
+/// @nodoc
 mixin _$StoreFailure {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -38,7 +41,6 @@ mixin _$StoreFailure {
     @required Result insufficientPermission(),
     @required Result unableToUpdate(),
   });
-
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result unexpected(),
@@ -46,14 +48,12 @@ mixin _$StoreFailure {
     Result unableToUpdate(),
     @required Result orElse(),
   });
-
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result unexpected(UnexpectetStore value),
     @required Result insufficientPermission(InsufficientStorePermission value),
     @required Result unableToUpdate(UnableToUpdateStore value),
   });
-
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result unexpected(UnexpectetStore value),
@@ -63,27 +63,30 @@ mixin _$StoreFailure {
   });
 }
 
+/// @nodoc
 abstract class $StoreFailureCopyWith<$Res> {
   factory $StoreFailureCopyWith(
           StoreFailure value, $Res Function(StoreFailure) then) =
       _$StoreFailureCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$StoreFailureCopyWithImpl<$Res> implements $StoreFailureCopyWith<$Res> {
   _$StoreFailureCopyWithImpl(this._value, this._then);
 
   final StoreFailure _value;
-
   // ignore: unused_field
   final $Res Function(StoreFailure) _then;
 }
 
+/// @nodoc
 abstract class $UnexpectetStoreCopyWith<$Res> {
   factory $UnexpectetStoreCopyWith(
           UnexpectetStore value, $Res Function(UnexpectetStore) then) =
       _$UnexpectetStoreCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$UnexpectetStoreCopyWithImpl<$Res>
     extends _$StoreFailureCopyWithImpl<$Res>
     implements $UnexpectetStoreCopyWith<$Res> {
@@ -95,6 +98,7 @@ class _$UnexpectetStoreCopyWithImpl<$Res>
   UnexpectetStore get _value => super._value as UnexpectetStore;
 }
 
+/// @nodoc
 class _$UnexpectetStore implements UnexpectetStore {
   const _$UnexpectetStore();
 
@@ -172,6 +176,7 @@ abstract class UnexpectetStore implements StoreFailure {
   const factory UnexpectetStore() = _$UnexpectetStore;
 }
 
+/// @nodoc
 abstract class $InsufficientStorePermissionCopyWith<$Res> {
   factory $InsufficientStorePermissionCopyWith(
           InsufficientStorePermission value,
@@ -179,6 +184,7 @@ abstract class $InsufficientStorePermissionCopyWith<$Res> {
       _$InsufficientStorePermissionCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$InsufficientStorePermissionCopyWithImpl<$Res>
     extends _$StoreFailureCopyWithImpl<$Res>
     implements $InsufficientStorePermissionCopyWith<$Res> {
@@ -191,6 +197,7 @@ class _$InsufficientStorePermissionCopyWithImpl<$Res>
       super._value as InsufficientStorePermission;
 }
 
+/// @nodoc
 class _$InsufficientStorePermission implements InsufficientStorePermission {
   const _$InsufficientStorePermission();
 
@@ -268,12 +275,14 @@ abstract class InsufficientStorePermission implements StoreFailure {
   const factory InsufficientStorePermission() = _$InsufficientStorePermission;
 }
 
+/// @nodoc
 abstract class $UnableToUpdateStoreCopyWith<$Res> {
   factory $UnableToUpdateStoreCopyWith(
           UnableToUpdateStore value, $Res Function(UnableToUpdateStore) then) =
       _$UnableToUpdateStoreCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$UnableToUpdateStoreCopyWithImpl<$Res>
     extends _$StoreFailureCopyWithImpl<$Res>
     implements $UnableToUpdateStoreCopyWith<$Res> {
@@ -285,6 +294,7 @@ class _$UnableToUpdateStoreCopyWithImpl<$Res>
   UnableToUpdateStore get _value => super._value as UnableToUpdateStore;
 }
 
+/// @nodoc
 class _$UnableToUpdateStore implements UnableToUpdateStore {
   const _$UnableToUpdateStore();
 

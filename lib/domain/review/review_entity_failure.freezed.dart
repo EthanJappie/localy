@@ -9,6 +9,7 @@ part of 'review_entity_failure.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$ReviewEntityFailureTearOff {
   const _$ReviewEntityFailureTearOff();
 
@@ -28,9 +29,11 @@ class _$ReviewEntityFailureTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $ReviewEntityFailure = _$ReviewEntityFailureTearOff();
 
+/// @nodoc
 mixin _$ReviewEntityFailure {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -38,7 +41,6 @@ mixin _$ReviewEntityFailure {
     @required Result insufficientPermission(),
     @required Result unableToUpdate(),
   });
-
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result unexpected(),
@@ -46,14 +48,12 @@ mixin _$ReviewEntityFailure {
     Result unableToUpdate(),
     @required Result orElse(),
   });
-
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result unexpected(UnexpectedFailure value),
     @required Result insufficientPermission(InsufficientPermission value),
     @required Result unableToUpdate(UnableToUpdate value),
   });
-
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result unexpected(UnexpectedFailure value),
@@ -63,28 +63,31 @@ mixin _$ReviewEntityFailure {
   });
 }
 
+/// @nodoc
 abstract class $ReviewEntityFailureCopyWith<$Res> {
   factory $ReviewEntityFailureCopyWith(
           ReviewEntityFailure value, $Res Function(ReviewEntityFailure) then) =
       _$ReviewEntityFailureCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$ReviewEntityFailureCopyWithImpl<$Res>
     implements $ReviewEntityFailureCopyWith<$Res> {
   _$ReviewEntityFailureCopyWithImpl(this._value, this._then);
 
   final ReviewEntityFailure _value;
-
   // ignore: unused_field
   final $Res Function(ReviewEntityFailure) _then;
 }
 
+/// @nodoc
 abstract class $UnexpectedFailureCopyWith<$Res> {
   factory $UnexpectedFailureCopyWith(
           UnexpectedFailure value, $Res Function(UnexpectedFailure) then) =
       _$UnexpectedFailureCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$UnexpectedFailureCopyWithImpl<$Res>
     extends _$ReviewEntityFailureCopyWithImpl<$Res>
     implements $UnexpectedFailureCopyWith<$Res> {
@@ -96,6 +99,7 @@ class _$UnexpectedFailureCopyWithImpl<$Res>
   UnexpectedFailure get _value => super._value as UnexpectedFailure;
 }
 
+/// @nodoc
 class _$UnexpectedFailure implements UnexpectedFailure {
   const _$UnexpectedFailure();
 
@@ -173,12 +177,14 @@ abstract class UnexpectedFailure implements ReviewEntityFailure {
   const factory UnexpectedFailure() = _$UnexpectedFailure;
 }
 
+/// @nodoc
 abstract class $InsufficientPermissionCopyWith<$Res> {
   factory $InsufficientPermissionCopyWith(InsufficientPermission value,
           $Res Function(InsufficientPermission) then) =
       _$InsufficientPermissionCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$InsufficientPermissionCopyWithImpl<$Res>
     extends _$ReviewEntityFailureCopyWithImpl<$Res>
     implements $InsufficientPermissionCopyWith<$Res> {
@@ -190,6 +196,7 @@ class _$InsufficientPermissionCopyWithImpl<$Res>
   InsufficientPermission get _value => super._value as InsufficientPermission;
 }
 
+/// @nodoc
 class _$InsufficientPermission implements InsufficientPermission {
   const _$InsufficientPermission();
 
@@ -267,12 +274,14 @@ abstract class InsufficientPermission implements ReviewEntityFailure {
   const factory InsufficientPermission() = _$InsufficientPermission;
 }
 
+/// @nodoc
 abstract class $UnableToUpdateCopyWith<$Res> {
   factory $UnableToUpdateCopyWith(
           UnableToUpdate value, $Res Function(UnableToUpdate) then) =
       _$UnableToUpdateCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$UnableToUpdateCopyWithImpl<$Res>
     extends _$ReviewEntityFailureCopyWithImpl<$Res>
     implements $UnableToUpdateCopyWith<$Res> {
@@ -284,6 +293,7 @@ class _$UnableToUpdateCopyWithImpl<$Res>
   UnableToUpdate get _value => super._value as UnableToUpdate;
 }
 
+/// @nodoc
 class _$UnableToUpdate implements UnableToUpdate {
   const _$UnableToUpdate();
 

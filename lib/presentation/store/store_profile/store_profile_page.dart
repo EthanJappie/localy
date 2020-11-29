@@ -1,14 +1,10 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:localy/application/auth/auth_bloc.dart';
-import 'package:localy/application/bundle/bundle_form/bundle_form_bloc.dart';
 import 'package:localy/application/bundle/bundle_watcher/bundle_watcher_bloc.dart';
 import 'package:localy/domain/bundle/bundle_entity.dart';
-import 'package:localy/infrastructure/bundle/payment.dart';
 import 'package:localy/presentation/core/widgets/localy_button.dart';
 import 'package:localy/presentation/core/widgets/localy_entry_field.dart';
-import 'package:rave_flutter/rave_flutter.dart';
 
 class StoreProfilePage extends StatelessWidget {
   @override
@@ -153,21 +149,21 @@ class StoreProfilePage extends StatelessWidget {
   }
 
   Future<void> _handlePayment(BuildContext context, int numberOfCredits) async {
-    final user = FirebaseAuth.instance.currentUser;
-    final result = await performTransaction(
-      context: context,
-      amount: numberOfCredits * 5.toDouble(),
-      user: user,
-    );
-
-    if (result == RaveStatus.cancelled) {
-    } else if (result == RaveStatus.error) {
-    } else {
-      context.bloc<BundleFormBloc>().add(
-            BundleFormEvent.numberOfCreditsChanged(
-              numberOfCredits,
-            ),
-          );
-    }
+    // final user = FirebaseAuth.instance.currentUser;
+    // final result = await performTransaction(
+    //   context: context,
+    //   amount: numberOfCredits * 5.toDouble(),
+    //   user: user,
+    // );
+    //
+    // if (result == RaveStatus.cancelled) {
+    // } else if (result == RaveStatus.error) {
+    // } else {
+    //   context.bloc<BundleFormBloc>().add(
+    //         BundleFormEvent.numberOfCreditsChanged(
+    //           numberOfCredits,
+    //         ),
+    //       );
+    // }
   }
 }

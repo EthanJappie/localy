@@ -146,9 +146,9 @@ class StoreRepository implements IStoreRepository {
       final uploadTask =
           _firebaseStorage.storeStorageReference.putFile(File(coverImageUrl));
 
-      final downloadUrl = await uploadTask.onComplete;
+      final downloadUrl =  uploadTask.snapshot;
 
-      final imageUrl = await downloadUrl.ref.getDownloadURL() as String;
+      final imageUrl = await downloadUrl.ref.getDownloadURL();
 
       store = store.copyWith(coverImageUrl: imageUrl);
     }

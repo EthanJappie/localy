@@ -8,11 +8,11 @@ part of 'order_dtos.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
-
 StoreOrderDTO _$StoreOrderDTOFromJson(Map<String, dynamic> json) {
   return _StoreOrderDTO.fromJson(json);
 }
 
+/// @nodoc
 class _$StoreOrderDTOTearOff {
   const _$StoreOrderDTOTearOff();
 
@@ -67,73 +67,57 @@ class _$StoreOrderDTOTearOff {
       deliveryCost: deliveryCost,
     );
   }
+
+// ignore: unused_element
+  StoreOrderDTO fromJson(Map<String, Object> json) {
+    return StoreOrderDTO.fromJson(json);
+  }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $StoreOrderDTO = _$StoreOrderDTOTearOff();
 
+/// @nodoc
 mixin _$StoreOrderDTO {
   @JsonKey(ignore: true)
   String get id;
-
   String get customerID;
-
   String get storeID;
-
   String get storeOwnerID;
-
   String get storeName;
-
   String get storeAddress;
-
   String get storeToken;
-
   @GeoPointConverters()
   GeoFirePoint get storeCoordinates;
-
   String get storePhoneNumber;
-
   String get customerToken;
-
   @MenuItemConverters()
   List<MenuItemDTO> get menuItems;
-
   bool get payingByCash;
-
   bool get payingByCard;
-
   bool get payingByOther;
-
   bool get foodDeliveriesChosen;
-
   bool get isCompleted;
-
   String get phoneNumber;
-
   @TimestampConverter()
   Timestamp get dateCreated;
-
   String get status;
-
   String get deliveryAddress;
-
   String get orderNotes;
-
   @GeoPointConverters()
   GeoFirePoint get deliveryCoordinates;
-
   double get deliveryCost;
 
   Map<String, dynamic> toJson();
-
   $StoreOrderDTOCopyWith<StoreOrderDTO> get copyWith;
 }
 
+/// @nodoc
 abstract class $StoreOrderDTOCopyWith<$Res> {
   factory $StoreOrderDTOCopyWith(
           StoreOrderDTO value, $Res Function(StoreOrderDTO) then) =
       _$StoreOrderDTOCopyWithImpl<$Res>;
-
   $Res call(
       {@JsonKey(ignore: true) String id,
       String customerID,
@@ -160,12 +144,12 @@ abstract class $StoreOrderDTOCopyWith<$Res> {
       double deliveryCost});
 }
 
+/// @nodoc
 class _$StoreOrderDTOCopyWithImpl<$Res>
     implements $StoreOrderDTOCopyWith<$Res> {
   _$StoreOrderDTOCopyWithImpl(this._value, this._then);
 
   final StoreOrderDTO _value;
-
   // ignore: unused_field
   final $Res Function(StoreOrderDTO) _then;
 
@@ -254,12 +238,12 @@ class _$StoreOrderDTOCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class _$StoreOrderDTOCopyWith<$Res>
     implements $StoreOrderDTOCopyWith<$Res> {
   factory _$StoreOrderDTOCopyWith(
           _StoreOrderDTO value, $Res Function(_StoreOrderDTO) then) =
       __$StoreOrderDTOCopyWithImpl<$Res>;
-
   @override
   $Res call(
       {@JsonKey(ignore: true) String id,
@@ -287,6 +271,7 @@ abstract class _$StoreOrderDTOCopyWith<$Res>
       double deliveryCost});
 }
 
+/// @nodoc
 class __$StoreOrderDTOCopyWithImpl<$Res>
     extends _$StoreOrderDTOCopyWithImpl<$Res>
     implements _$StoreOrderDTOCopyWith<$Res> {
@@ -383,6 +368,8 @@ class __$StoreOrderDTOCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$_StoreOrderDTO extends _StoreOrderDTO {
   const _$_StoreOrderDTO(
       {@JsonKey(ignore: true) this.id,
@@ -599,7 +586,6 @@ class _$_StoreOrderDTO extends _StoreOrderDTO {
 
 abstract class _StoreOrderDTO extends StoreOrderDTO {
   const _StoreOrderDTO._() : super._();
-
   const factory _StoreOrderDTO(
       {@JsonKey(ignore: true) String id,
       @required String customerID,
@@ -631,77 +617,54 @@ abstract class _StoreOrderDTO extends StoreOrderDTO {
   @override
   @JsonKey(ignore: true)
   String get id;
-
   @override
   String get customerID;
-
   @override
   String get storeID;
-
   @override
   String get storeOwnerID;
-
   @override
   String get storeName;
-
   @override
   String get storeAddress;
-
   @override
   String get storeToken;
-
   @override
   @GeoPointConverters()
   GeoFirePoint get storeCoordinates;
-
   @override
   String get storePhoneNumber;
-
   @override
   String get customerToken;
-
   @override
   @MenuItemConverters()
   List<MenuItemDTO> get menuItems;
-
   @override
   bool get payingByCash;
-
   @override
   bool get payingByCard;
-
   @override
   bool get payingByOther;
-
   @override
   bool get foodDeliveriesChosen;
-
   @override
   bool get isCompleted;
-
   @override
   String get phoneNumber;
-
   @override
   @TimestampConverter()
   Timestamp get dateCreated;
-
   @override
   String get status;
-
   @override
   String get deliveryAddress;
-
   @override
   String get orderNotes;
-
   @override
   @GeoPointConverters()
   GeoFirePoint get deliveryCoordinates;
-
   @override
   double get deliveryCost;
-
   @override
   _$StoreOrderDTOCopyWith<_StoreOrderDTO> get copyWith;
 }

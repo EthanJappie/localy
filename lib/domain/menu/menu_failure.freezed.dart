@@ -9,6 +9,7 @@ part of 'menu_failure.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$MenuFailureTearOff {
   const _$MenuFailureTearOff();
 
@@ -28,9 +29,11 @@ class _$MenuFailureTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $MenuFailure = _$MenuFailureTearOff();
 
+/// @nodoc
 mixin _$MenuFailure {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -38,7 +41,6 @@ mixin _$MenuFailure {
     @required Result insufficientPermission(),
     @required Result unableToUpdate(),
   });
-
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result unexpected(),
@@ -46,14 +48,12 @@ mixin _$MenuFailure {
     Result unableToUpdate(),
     @required Result orElse(),
   });
-
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result unexpected(UnexpectetMenu value),
     @required Result insufficientPermission(InsufficientStorePermission value),
     @required Result unableToUpdate(UnableToUpdateMenu value),
   });
-
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result unexpected(UnexpectetMenu value),
@@ -63,27 +63,30 @@ mixin _$MenuFailure {
   });
 }
 
+/// @nodoc
 abstract class $MenuFailureCopyWith<$Res> {
   factory $MenuFailureCopyWith(
           MenuFailure value, $Res Function(MenuFailure) then) =
       _$MenuFailureCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$MenuFailureCopyWithImpl<$Res> implements $MenuFailureCopyWith<$Res> {
   _$MenuFailureCopyWithImpl(this._value, this._then);
 
   final MenuFailure _value;
-
   // ignore: unused_field
   final $Res Function(MenuFailure) _then;
 }
 
+/// @nodoc
 abstract class $UnexpectetMenuCopyWith<$Res> {
   factory $UnexpectetMenuCopyWith(
           UnexpectetMenu value, $Res Function(UnexpectetMenu) then) =
       _$UnexpectetMenuCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$UnexpectetMenuCopyWithImpl<$Res> extends _$MenuFailureCopyWithImpl<$Res>
     implements $UnexpectetMenuCopyWith<$Res> {
   _$UnexpectetMenuCopyWithImpl(
@@ -94,6 +97,7 @@ class _$UnexpectetMenuCopyWithImpl<$Res> extends _$MenuFailureCopyWithImpl<$Res>
   UnexpectetMenu get _value => super._value as UnexpectetMenu;
 }
 
+/// @nodoc
 class _$UnexpectetMenu implements UnexpectetMenu {
   const _$UnexpectetMenu();
 
@@ -171,6 +175,7 @@ abstract class UnexpectetMenu implements MenuFailure {
   const factory UnexpectetMenu() = _$UnexpectetMenu;
 }
 
+/// @nodoc
 abstract class $InsufficientStorePermissionCopyWith<$Res> {
   factory $InsufficientStorePermissionCopyWith(
           InsufficientStorePermission value,
@@ -178,6 +183,7 @@ abstract class $InsufficientStorePermissionCopyWith<$Res> {
       _$InsufficientStorePermissionCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$InsufficientStorePermissionCopyWithImpl<$Res>
     extends _$MenuFailureCopyWithImpl<$Res>
     implements $InsufficientStorePermissionCopyWith<$Res> {
@@ -190,6 +196,7 @@ class _$InsufficientStorePermissionCopyWithImpl<$Res>
       super._value as InsufficientStorePermission;
 }
 
+/// @nodoc
 class _$InsufficientStorePermission implements InsufficientStorePermission {
   const _$InsufficientStorePermission();
 
@@ -267,12 +274,14 @@ abstract class InsufficientStorePermission implements MenuFailure {
   const factory InsufficientStorePermission() = _$InsufficientStorePermission;
 }
 
+/// @nodoc
 abstract class $UnableToUpdateMenuCopyWith<$Res> {
   factory $UnableToUpdateMenuCopyWith(
           UnableToUpdateMenu value, $Res Function(UnableToUpdateMenu) then) =
       _$UnableToUpdateMenuCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$UnableToUpdateMenuCopyWithImpl<$Res>
     extends _$MenuFailureCopyWithImpl<$Res>
     implements $UnableToUpdateMenuCopyWith<$Res> {
@@ -284,6 +293,7 @@ class _$UnableToUpdateMenuCopyWithImpl<$Res>
   UnableToUpdateMenu get _value => super._value as UnableToUpdateMenu;
 }
 
+/// @nodoc
 class _$UnableToUpdateMenu implements UnableToUpdateMenu {
   const _$UnableToUpdateMenu();
 

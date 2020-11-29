@@ -9,6 +9,7 @@ part of 'review_form_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$ReviewFormEventTearOff {
   const _$ReviewFormEventTearOff();
 
@@ -42,9 +43,11 @@ class _$ReviewFormEventTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $ReviewFormEvent = _$ReviewFormEventTearOff();
 
+/// @nodoc
 mixin _$ReviewFormEvent {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -55,7 +58,6 @@ mixin _$ReviewFormEvent {
     @required Result scoreAdded(int score),
     @required Result saved(),
   });
-
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result initialized(
@@ -65,7 +67,6 @@ mixin _$ReviewFormEvent {
     Result saved(),
     @required Result orElse(),
   });
-
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result initialized(_Initialized value),
@@ -73,7 +74,6 @@ mixin _$ReviewFormEvent {
     @required Result scoreAdded(_ScoreAdded value),
     @required Result saved(_Saved value),
   });
-
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result initialized(_Initialized value),
@@ -84,31 +84,33 @@ mixin _$ReviewFormEvent {
   });
 }
 
+/// @nodoc
 abstract class $ReviewFormEventCopyWith<$Res> {
   factory $ReviewFormEventCopyWith(
           ReviewFormEvent value, $Res Function(ReviewFormEvent) then) =
       _$ReviewFormEventCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$ReviewFormEventCopyWithImpl<$Res>
     implements $ReviewFormEventCopyWith<$Res> {
   _$ReviewFormEventCopyWithImpl(this._value, this._then);
 
   final ReviewFormEvent _value;
-
   // ignore: unused_field
   final $Res Function(ReviewFormEvent) _then;
 }
 
+/// @nodoc
 abstract class _$InitializedCopyWith<$Res> {
   factory _$InitializedCopyWith(
           _Initialized value, $Res Function(_Initialized) then) =
       __$InitializedCopyWithImpl<$Res>;
-
   $Res call(
       {Option<ReviewEntity> initialReviewOption, String type, String typeID});
 }
 
+/// @nodoc
 class __$InitializedCopyWithImpl<$Res>
     extends _$ReviewFormEventCopyWithImpl<$Res>
     implements _$InitializedCopyWith<$Res> {
@@ -135,6 +137,7 @@ class __$InitializedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_Initialized implements _Initialized {
   const _$_Initialized(this.initialReviewOption, this.type, this.typeID)
       : assert(initialReviewOption != null),
@@ -248,22 +251,20 @@ abstract class _Initialized implements ReviewFormEvent {
       String type, String typeID) = _$_Initialized;
 
   Option<ReviewEntity> get initialReviewOption;
-
   String get type;
-
   String get typeID;
-
   _$InitializedCopyWith<_Initialized> get copyWith;
 }
 
+/// @nodoc
 abstract class _$ReviewAddedCopyWith<$Res> {
   factory _$ReviewAddedCopyWith(
           _ReviewAdded value, $Res Function(_ReviewAdded) then) =
       __$ReviewAddedCopyWithImpl<$Res>;
-
   $Res call({String review});
 }
 
+/// @nodoc
 class __$ReviewAddedCopyWithImpl<$Res>
     extends _$ReviewFormEventCopyWithImpl<$Res>
     implements _$ReviewAddedCopyWith<$Res> {
@@ -284,6 +285,7 @@ class __$ReviewAddedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_ReviewAdded implements _ReviewAdded {
   const _$_ReviewAdded(this.review) : assert(review != null);
 
@@ -381,18 +383,18 @@ abstract class _ReviewAdded implements ReviewFormEvent {
   const factory _ReviewAdded(String review) = _$_ReviewAdded;
 
   String get review;
-
   _$ReviewAddedCopyWith<_ReviewAdded> get copyWith;
 }
 
+/// @nodoc
 abstract class _$ScoreAddedCopyWith<$Res> {
   factory _$ScoreAddedCopyWith(
           _ScoreAdded value, $Res Function(_ScoreAdded) then) =
       __$ScoreAddedCopyWithImpl<$Res>;
-
   $Res call({int score});
 }
 
+/// @nodoc
 class __$ScoreAddedCopyWithImpl<$Res>
     extends _$ReviewFormEventCopyWithImpl<$Res>
     implements _$ScoreAddedCopyWith<$Res> {
@@ -413,6 +415,7 @@ class __$ScoreAddedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_ScoreAdded implements _ScoreAdded {
   const _$_ScoreAdded(this.score) : assert(score != null);
 
@@ -510,15 +513,16 @@ abstract class _ScoreAdded implements ReviewFormEvent {
   const factory _ScoreAdded(int score) = _$_ScoreAdded;
 
   int get score;
-
   _$ScoreAddedCopyWith<_ScoreAdded> get copyWith;
 }
 
+/// @nodoc
 abstract class _$SavedCopyWith<$Res> {
   factory _$SavedCopyWith(_Saved value, $Res Function(_Saved) then) =
       __$SavedCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class __$SavedCopyWithImpl<$Res> extends _$ReviewFormEventCopyWithImpl<$Res>
     implements _$SavedCopyWith<$Res> {
   __$SavedCopyWithImpl(_Saved _value, $Res Function(_Saved) _then)
@@ -528,6 +532,7 @@ class __$SavedCopyWithImpl<$Res> extends _$ReviewFormEventCopyWithImpl<$Res>
   _Saved get _value => super._value as _Saved;
 }
 
+/// @nodoc
 class _$_Saved implements _Saved {
   const _$_Saved();
 
@@ -614,6 +619,7 @@ abstract class _Saved implements ReviewFormEvent {
   const factory _Saved() = _$_Saved;
 }
 
+/// @nodoc
 class _$ReviewFormStateTearOff {
   const _$ReviewFormStateTearOff();
 
@@ -640,28 +646,26 @@ class _$ReviewFormStateTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $ReviewFormState = _$ReviewFormStateTearOff();
 
+/// @nodoc
 mixin _$ReviewFormState {
   ReviewEntity get review;
-
   bool get showErrorMessages;
-
   bool get isEditing;
-
   bool get isSaving;
-
   Option<Either<ReviewEntityFailure, Unit>> get saveFailureOrSuccessOption;
 
   $ReviewFormStateCopyWith<ReviewFormState> get copyWith;
 }
 
+/// @nodoc
 abstract class $ReviewFormStateCopyWith<$Res> {
   factory $ReviewFormStateCopyWith(
           ReviewFormState value, $Res Function(ReviewFormState) then) =
       _$ReviewFormStateCopyWithImpl<$Res>;
-
   $Res call(
       {ReviewEntity review,
       bool showErrorMessages,
@@ -672,12 +676,12 @@ abstract class $ReviewFormStateCopyWith<$Res> {
   $ReviewEntityCopyWith<$Res> get review;
 }
 
+/// @nodoc
 class _$ReviewFormStateCopyWithImpl<$Res>
     implements $ReviewFormStateCopyWith<$Res> {
   _$ReviewFormStateCopyWithImpl(this._value, this._then);
 
   final ReviewFormState _value;
-
   // ignore: unused_field
   final $Res Function(ReviewFormState) _then;
 
@@ -714,12 +718,12 @@ class _$ReviewFormStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class _$ReviewFormStateCopyWith<$Res>
     implements $ReviewFormStateCopyWith<$Res> {
   factory _$ReviewFormStateCopyWith(
           _ReviewFormState value, $Res Function(_ReviewFormState) then) =
       __$ReviewFormStateCopyWithImpl<$Res>;
-
   @override
   $Res call(
       {ReviewEntity review,
@@ -732,6 +736,7 @@ abstract class _$ReviewFormStateCopyWith<$Res>
   $ReviewEntityCopyWith<$Res> get review;
 }
 
+/// @nodoc
 class __$ReviewFormStateCopyWithImpl<$Res>
     extends _$ReviewFormStateCopyWithImpl<$Res>
     implements _$ReviewFormStateCopyWith<$Res> {
@@ -765,6 +770,7 @@ class __$ReviewFormStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_ReviewFormState implements _ReviewFormState {
   const _$_ReviewFormState(
       {@required this.review,
@@ -846,19 +852,14 @@ abstract class _ReviewFormState implements ReviewFormState {
 
   @override
   ReviewEntity get review;
-
   @override
   bool get showErrorMessages;
-
   @override
   bool get isEditing;
-
   @override
   bool get isSaving;
-
   @override
   Option<Either<ReviewEntityFailure, Unit>> get saveFailureOrSuccessOption;
-
   @override
   _$ReviewFormStateCopyWith<_ReviewFormState> get copyWith;
 }

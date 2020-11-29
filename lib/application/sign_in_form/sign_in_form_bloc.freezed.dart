@@ -9,6 +9,7 @@ part of 'sign_in_form_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$SignInFormEventTearOff {
   const _$SignInFormEventTearOff();
 
@@ -49,9 +50,11 @@ class _$SignInFormEventTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $SignInFormEvent = _$SignInFormEventTearOff();
 
+/// @nodoc
 mixin _$SignInFormEvent {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -62,7 +65,6 @@ mixin _$SignInFormEvent {
     @required Result signInWithEmailAndPasswordPressed(),
     @required Result signInWithGooglePressed(),
   });
-
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result emailChanged(String emailStr),
@@ -73,7 +75,6 @@ mixin _$SignInFormEvent {
     Result signInWithGooglePressed(),
     @required Result orElse(),
   });
-
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result emailChanged(EmailChanged value),
@@ -87,7 +88,6 @@ mixin _$SignInFormEvent {
             SignInWithEmailAndPasswordPressed value),
     @required Result signInWithGooglePressed(SignInWithGooglePressed value),
   });
-
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result emailChanged(EmailChanged value),
@@ -102,30 +102,32 @@ mixin _$SignInFormEvent {
   });
 }
 
+/// @nodoc
 abstract class $SignInFormEventCopyWith<$Res> {
   factory $SignInFormEventCopyWith(
           SignInFormEvent value, $Res Function(SignInFormEvent) then) =
       _$SignInFormEventCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$SignInFormEventCopyWithImpl<$Res>
     implements $SignInFormEventCopyWith<$Res> {
   _$SignInFormEventCopyWithImpl(this._value, this._then);
 
   final SignInFormEvent _value;
-
   // ignore: unused_field
   final $Res Function(SignInFormEvent) _then;
 }
 
+/// @nodoc
 abstract class $EmailChangedCopyWith<$Res> {
   factory $EmailChangedCopyWith(
           EmailChanged value, $Res Function(EmailChanged) then) =
       _$EmailChangedCopyWithImpl<$Res>;
-
   $Res call({String emailStr});
 }
 
+/// @nodoc
 class _$EmailChangedCopyWithImpl<$Res>
     extends _$SignInFormEventCopyWithImpl<$Res>
     implements $EmailChangedCopyWith<$Res> {
@@ -146,6 +148,7 @@ class _$EmailChangedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$EmailChanged implements EmailChanged {
   const _$EmailChanged(this.emailStr) : assert(emailStr != null);
 
@@ -259,18 +262,18 @@ abstract class EmailChanged implements SignInFormEvent {
   const factory EmailChanged(String emailStr) = _$EmailChanged;
 
   String get emailStr;
-
   $EmailChangedCopyWith<EmailChanged> get copyWith;
 }
 
+/// @nodoc
 abstract class $PasswordChangedCopyWith<$Res> {
   factory $PasswordChangedCopyWith(
           PasswordChanged value, $Res Function(PasswordChanged) then) =
       _$PasswordChangedCopyWithImpl<$Res>;
-
   $Res call({String passwordStr});
 }
 
+/// @nodoc
 class _$PasswordChangedCopyWithImpl<$Res>
     extends _$SignInFormEventCopyWithImpl<$Res>
     implements $PasswordChangedCopyWith<$Res> {
@@ -291,6 +294,7 @@ class _$PasswordChangedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$PasswordChanged implements PasswordChanged {
   const _$PasswordChanged(this.passwordStr) : assert(passwordStr != null);
 
@@ -404,18 +408,18 @@ abstract class PasswordChanged implements SignInFormEvent {
   const factory PasswordChanged(String passwordStr) = _$PasswordChanged;
 
   String get passwordStr;
-
   $PasswordChangedCopyWith<PasswordChanged> get copyWith;
 }
 
+/// @nodoc
 abstract class $ConfirmPasswordChangedCopyWith<$Res> {
   factory $ConfirmPasswordChangedCopyWith(ConfirmPasswordChanged value,
           $Res Function(ConfirmPasswordChanged) then) =
       _$ConfirmPasswordChangedCopyWithImpl<$Res>;
-
   $Res call({String confirmPasswordStr});
 }
 
+/// @nodoc
 class _$ConfirmPasswordChangedCopyWithImpl<$Res>
     extends _$SignInFormEventCopyWithImpl<$Res>
     implements $ConfirmPasswordChangedCopyWith<$Res> {
@@ -438,6 +442,7 @@ class _$ConfirmPasswordChangedCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$ConfirmPasswordChanged implements ConfirmPasswordChanged {
   const _$ConfirmPasswordChanged(this.confirmPasswordStr)
       : assert(confirmPasswordStr != null);
@@ -555,10 +560,10 @@ abstract class ConfirmPasswordChanged implements SignInFormEvent {
       _$ConfirmPasswordChanged;
 
   String get confirmPasswordStr;
-
   $ConfirmPasswordChangedCopyWith<ConfirmPasswordChanged> get copyWith;
 }
 
+/// @nodoc
 abstract class $RegisterWithEmailAndPasswordPressedCopyWith<$Res> {
   factory $RegisterWithEmailAndPasswordPressedCopyWith(
           RegisterWithEmailAndPasswordPressed value,
@@ -566,6 +571,7 @@ abstract class $RegisterWithEmailAndPasswordPressedCopyWith<$Res> {
       _$RegisterWithEmailAndPasswordPressedCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$RegisterWithEmailAndPasswordPressedCopyWithImpl<$Res>
     extends _$SignInFormEventCopyWithImpl<$Res>
     implements $RegisterWithEmailAndPasswordPressedCopyWith<$Res> {
@@ -579,6 +585,7 @@ class _$RegisterWithEmailAndPasswordPressedCopyWithImpl<$Res>
       super._value as RegisterWithEmailAndPasswordPressed;
 }
 
+/// @nodoc
 class _$RegisterWithEmailAndPasswordPressed
     implements RegisterWithEmailAndPasswordPressed {
   const _$RegisterWithEmailAndPasswordPressed();
@@ -683,6 +690,7 @@ abstract class RegisterWithEmailAndPasswordPressed implements SignInFormEvent {
       _$RegisterWithEmailAndPasswordPressed;
 }
 
+/// @nodoc
 abstract class $SignInWithEmailAndPasswordPressedCopyWith<$Res> {
   factory $SignInWithEmailAndPasswordPressedCopyWith(
           SignInWithEmailAndPasswordPressed value,
@@ -690,6 +698,7 @@ abstract class $SignInWithEmailAndPasswordPressedCopyWith<$Res> {
       _$SignInWithEmailAndPasswordPressedCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$SignInWithEmailAndPasswordPressedCopyWithImpl<$Res>
     extends _$SignInFormEventCopyWithImpl<$Res>
     implements $SignInWithEmailAndPasswordPressedCopyWith<$Res> {
@@ -703,6 +712,7 @@ class _$SignInWithEmailAndPasswordPressedCopyWithImpl<$Res>
       super._value as SignInWithEmailAndPasswordPressed;
 }
 
+/// @nodoc
 class _$SignInWithEmailAndPasswordPressed
     implements SignInWithEmailAndPasswordPressed {
   const _$SignInWithEmailAndPasswordPressed();
@@ -807,12 +817,14 @@ abstract class SignInWithEmailAndPasswordPressed implements SignInFormEvent {
       _$SignInWithEmailAndPasswordPressed;
 }
 
+/// @nodoc
 abstract class $SignInWithGooglePressedCopyWith<$Res> {
   factory $SignInWithGooglePressedCopyWith(SignInWithGooglePressed value,
           $Res Function(SignInWithGooglePressed) then) =
       _$SignInWithGooglePressedCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$SignInWithGooglePressedCopyWithImpl<$Res>
     extends _$SignInFormEventCopyWithImpl<$Res>
     implements $SignInWithGooglePressedCopyWith<$Res> {
@@ -824,6 +836,7 @@ class _$SignInWithGooglePressedCopyWithImpl<$Res>
   SignInWithGooglePressed get _value => super._value as SignInWithGooglePressed;
 }
 
+/// @nodoc
 class _$SignInWithGooglePressed implements SignInWithGooglePressed {
   const _$SignInWithGooglePressed();
 
@@ -925,6 +938,7 @@ abstract class SignInWithGooglePressed implements SignInFormEvent {
   const factory SignInWithGooglePressed() = _$SignInWithGooglePressed;
 }
 
+/// @nodoc
 class _$SignInFormStateTearOff {
   const _$SignInFormStateTearOff();
 
@@ -947,30 +961,27 @@ class _$SignInFormStateTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $SignInFormState = _$SignInFormStateTearOff();
 
+/// @nodoc
 mixin _$SignInFormState {
   EmailAddress get emailAddress;
-
   Password get password;
-
   bool get showErrorMessages;
-
   bool get isSubmitting;
-
   Option<Either<AuthFailure, Unit>> get authFailureOrSuccessOption;
-
   Password get confirmPassword;
 
   $SignInFormStateCopyWith<SignInFormState> get copyWith;
 }
 
+/// @nodoc
 abstract class $SignInFormStateCopyWith<$Res> {
   factory $SignInFormStateCopyWith(
           SignInFormState value, $Res Function(SignInFormState) then) =
       _$SignInFormStateCopyWithImpl<$Res>;
-
   $Res call(
       {EmailAddress emailAddress,
       Password password,
@@ -980,12 +991,12 @@ abstract class $SignInFormStateCopyWith<$Res> {
       Password confirmPassword});
 }
 
+/// @nodoc
 class _$SignInFormStateCopyWithImpl<$Res>
     implements $SignInFormStateCopyWith<$Res> {
   _$SignInFormStateCopyWithImpl(this._value, this._then);
 
   final SignInFormState _value;
-
   // ignore: unused_field
   final $Res Function(SignInFormState) _then;
 
@@ -1018,12 +1029,12 @@ class _$SignInFormStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class _$SignInFormStateCopyWith<$Res>
     implements $SignInFormStateCopyWith<$Res> {
   factory _$SignInFormStateCopyWith(
           _SignInFormState value, $Res Function(_SignInFormState) then) =
       __$SignInFormStateCopyWithImpl<$Res>;
-
   @override
   $Res call(
       {EmailAddress emailAddress,
@@ -1034,6 +1045,7 @@ abstract class _$SignInFormStateCopyWith<$Res>
       Password confirmPassword});
 }
 
+/// @nodoc
 class __$SignInFormStateCopyWithImpl<$Res>
     extends _$SignInFormStateCopyWithImpl<$Res>
     implements _$SignInFormStateCopyWith<$Res> {
@@ -1073,6 +1085,7 @@ class __$SignInFormStateCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_SignInFormState implements _SignInFormState {
   const _$_SignInFormState(
       {@required this.emailAddress,
@@ -1157,22 +1170,16 @@ abstract class _SignInFormState implements SignInFormState {
 
   @override
   EmailAddress get emailAddress;
-
   @override
   Password get password;
-
   @override
   bool get showErrorMessages;
-
   @override
   bool get isSubmitting;
-
   @override
   Option<Either<AuthFailure, Unit>> get authFailureOrSuccessOption;
-
   @override
   Password get confirmPassword;
-
   @override
   _$SignInFormStateCopyWith<_SignInFormState> get copyWith;
 }

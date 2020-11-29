@@ -9,6 +9,7 @@ part of 'menu.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$MenuTearOff {
   const _$MenuTearOff();
 
@@ -31,29 +32,26 @@ class _$MenuTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $Menu = _$MenuTearOff();
 
+/// @nodoc
 mixin _$Menu {
   UniqueId get id;
-
   ValueString get storeID;
-
   ValueString get name;
-
   ValueString get notes;
-
   int get sequenceOfAppearance;
-
   bool get hidden;
 
   $MenuCopyWith<Menu> get copyWith;
 }
 
+/// @nodoc
 abstract class $MenuCopyWith<$Res> {
   factory $MenuCopyWith(Menu value, $Res Function(Menu) then) =
       _$MenuCopyWithImpl<$Res>;
-
   $Res call(
       {UniqueId id,
       ValueString storeID,
@@ -63,11 +61,11 @@ abstract class $MenuCopyWith<$Res> {
       bool hidden});
 }
 
+/// @nodoc
 class _$MenuCopyWithImpl<$Res> implements $MenuCopyWith<$Res> {
   _$MenuCopyWithImpl(this._value, this._then);
 
   final Menu _value;
-
   // ignore: unused_field
   final $Res Function(Menu) _then;
 
@@ -93,10 +91,10 @@ class _$MenuCopyWithImpl<$Res> implements $MenuCopyWith<$Res> {
   }
 }
 
+/// @nodoc
 abstract class _$MenuCopyWith<$Res> implements $MenuCopyWith<$Res> {
   factory _$MenuCopyWith(_Menu value, $Res Function(_Menu) then) =
       __$MenuCopyWithImpl<$Res>;
-
   @override
   $Res call(
       {UniqueId id,
@@ -107,6 +105,7 @@ abstract class _$MenuCopyWith<$Res> implements $MenuCopyWith<$Res> {
       bool hidden});
 }
 
+/// @nodoc
 class __$MenuCopyWithImpl<$Res> extends _$MenuCopyWithImpl<$Res>
     implements _$MenuCopyWith<$Res> {
   __$MenuCopyWithImpl(_Menu _value, $Res Function(_Menu) _then)
@@ -137,6 +136,7 @@ class __$MenuCopyWithImpl<$Res> extends _$MenuCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_Menu extends _Menu {
   const _$_Menu(
       {@required this.id,
@@ -205,7 +205,6 @@ class _$_Menu extends _Menu {
 
 abstract class _Menu extends Menu {
   const _Menu._() : super._();
-
   const factory _Menu(
       {@required UniqueId id,
       @required ValueString storeID,
@@ -216,22 +215,16 @@ abstract class _Menu extends Menu {
 
   @override
   UniqueId get id;
-
   @override
   ValueString get storeID;
-
   @override
   ValueString get name;
-
   @override
   ValueString get notes;
-
   @override
   int get sequenceOfAppearance;
-
   @override
   bool get hidden;
-
   @override
   _$MenuCopyWith<_Menu> get copyWith;
 }

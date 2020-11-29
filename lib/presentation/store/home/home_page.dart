@@ -92,7 +92,7 @@ class _HomePageState extends State<HomePage> {
           items: const [
             BottomNavigationBarItem(
               icon: Icon(Icons.store),
-              title: Text('Store'),
+              label:'Store',
             ),
 //            BottomNavigationBarItem(
 //              icon: Icon(Icons.group_add),
@@ -100,7 +100,7 @@ class _HomePageState extends State<HomePage> {
 //            ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person),
-              title: Text('Profile'),
+              label:'Profile',
             ),
           ],
           onTap: (value) {

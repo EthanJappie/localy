@@ -123,9 +123,9 @@ class MenuItemRepository implements IMenuItemRepository {
       final uploadTask = _firebaseStorage.menuItemsStorageReference
           .putFile(File(itemImageUrl));
 
-      final downloadUrl = await uploadTask.onComplete;
+      final downloadUrl =  uploadTask.snapshot;
 
-      final imageUrl = await downloadUrl.ref.getDownloadURL() as String;
+      final imageUrl = await downloadUrl.ref.getDownloadURL();
 
       menuItem = menuItem.copyWith(imageUrl: imageUrl);
     }

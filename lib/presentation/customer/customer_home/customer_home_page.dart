@@ -90,9 +90,9 @@ class _CustomerHomePageState extends State<CustomerHomePage> {
           currentIndex: _currentIndex,
           items: const [
             BottomNavigationBarItem(
-                icon: Icon(Icons.store), title: Text('Kitchens')),
+                icon: Icon(Icons.store), label: 'Kitchens'),
             BottomNavigationBarItem(
-                icon: Icon(Icons.person), title: Text('Orders')),
+                icon: Icon(Icons.person), label: 'Orders'),
           ],
           onTap: (value) {
             setState(() {

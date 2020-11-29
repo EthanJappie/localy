@@ -8,12 +8,12 @@ part of 'menu_option_item_entity_dtos.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
-
 MenuOptionItemEntityDTO _$MenuOptionItemEntityDTOFromJson(
     Map<String, dynamic> json) {
   return _MenuOptionItemEntityDTO.fromJson(json);
 }
 
+/// @nodoc
 class _$MenuOptionItemEntityDTOTearOff {
   const _$MenuOptionItemEntityDTOTearOff();
 
@@ -30,39 +30,42 @@ class _$MenuOptionItemEntityDTOTearOff {
       id: id,
     );
   }
+
+// ignore: unused_element
+  MenuOptionItemEntityDTO fromJson(Map<String, Object> json) {
+    return MenuOptionItemEntityDTO.fromJson(json);
+  }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $MenuOptionItemEntityDTO = _$MenuOptionItemEntityDTOTearOff();
 
+/// @nodoc
 mixin _$MenuOptionItemEntityDTO {
   String get variant;
-
   bool get enabled;
-
   double get price;
-
   String get id;
 
   Map<String, dynamic> toJson();
-
   $MenuOptionItemEntityDTOCopyWith<MenuOptionItemEntityDTO> get copyWith;
 }
 
+/// @nodoc
 abstract class $MenuOptionItemEntityDTOCopyWith<$Res> {
   factory $MenuOptionItemEntityDTOCopyWith(MenuOptionItemEntityDTO value,
           $Res Function(MenuOptionItemEntityDTO) then) =
       _$MenuOptionItemEntityDTOCopyWithImpl<$Res>;
-
   $Res call({String variant, bool enabled, double price, String id});
 }
 
+/// @nodoc
 class _$MenuOptionItemEntityDTOCopyWithImpl<$Res>
     implements $MenuOptionItemEntityDTOCopyWith<$Res> {
   _$MenuOptionItemEntityDTOCopyWithImpl(this._value, this._then);
 
   final MenuOptionItemEntityDTO _value;
-
   // ignore: unused_field
   final $Res Function(MenuOptionItemEntityDTO) _then;
 
@@ -82,16 +85,17 @@ class _$MenuOptionItemEntityDTOCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class _$MenuOptionItemEntityDTOCopyWith<$Res>
     implements $MenuOptionItemEntityDTOCopyWith<$Res> {
   factory _$MenuOptionItemEntityDTOCopyWith(_MenuOptionItemEntityDTO value,
           $Res Function(_MenuOptionItemEntityDTO) then) =
       __$MenuOptionItemEntityDTOCopyWithImpl<$Res>;
-
   @override
   $Res call({String variant, bool enabled, double price, String id});
 }
 
+/// @nodoc
 class __$MenuOptionItemEntityDTOCopyWithImpl<$Res>
     extends _$MenuOptionItemEntityDTOCopyWithImpl<$Res>
     implements _$MenuOptionItemEntityDTOCopyWith<$Res> {
@@ -120,6 +124,8 @@ class __$MenuOptionItemEntityDTOCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$_MenuOptionItemEntityDTO extends _MenuOptionItemEntityDTO {
   const _$_MenuOptionItemEntityDTO(
       {@required this.variant,
@@ -185,7 +191,6 @@ class _$_MenuOptionItemEntityDTO extends _MenuOptionItemEntityDTO {
 
 abstract class _MenuOptionItemEntityDTO extends MenuOptionItemEntityDTO {
   const _MenuOptionItemEntityDTO._() : super._();
-
   const factory _MenuOptionItemEntityDTO(
       {@required String variant,
       @required bool enabled,
@@ -197,16 +202,12 @@ abstract class _MenuOptionItemEntityDTO extends MenuOptionItemEntityDTO {
 
   @override
   String get variant;
-
   @override
   bool get enabled;
-
   @override
   double get price;
-
   @override
   String get id;
-
   @override
   _$MenuOptionItemEntityDTOCopyWith<_MenuOptionItemEntityDTO> get copyWith;
 }

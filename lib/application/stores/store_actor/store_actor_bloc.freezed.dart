@@ -9,6 +9,7 @@ part of 'store_actor_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$StoreActorEventTearOff {
   const _$StoreActorEventTearOff();
 
@@ -20,9 +21,11 @@ class _$StoreActorEventTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $StoreActorEvent = _$StoreActorEventTearOff();
 
+/// @nodoc
 mixin _$StoreActorEvent {
   Restaurant get store;
 
@@ -30,18 +33,15 @@ mixin _$StoreActorEvent {
   Result when<Result extends Object>({
     @required Result deleted(Restaurant store),
   });
-
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result deleted(Restaurant store),
     @required Result orElse(),
   });
-
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result deleted(_Deleted value),
   });
-
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result deleted(_Deleted value),
@@ -51,22 +51,22 @@ mixin _$StoreActorEvent {
   $StoreActorEventCopyWith<StoreActorEvent> get copyWith;
 }
 
+/// @nodoc
 abstract class $StoreActorEventCopyWith<$Res> {
   factory $StoreActorEventCopyWith(
           StoreActorEvent value, $Res Function(StoreActorEvent) then) =
       _$StoreActorEventCopyWithImpl<$Res>;
-
   $Res call({Restaurant store});
 
   $RestaurantCopyWith<$Res> get store;
 }
 
+/// @nodoc
 class _$StoreActorEventCopyWithImpl<$Res>
     implements $StoreActorEventCopyWith<$Res> {
   _$StoreActorEventCopyWithImpl(this._value, this._then);
 
   final StoreActorEvent _value;
-
   // ignore: unused_field
   final $Res Function(StoreActorEvent) _then;
 
@@ -90,11 +90,11 @@ class _$StoreActorEventCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class _$DeletedCopyWith<$Res>
     implements $StoreActorEventCopyWith<$Res> {
   factory _$DeletedCopyWith(_Deleted value, $Res Function(_Deleted) then) =
       __$DeletedCopyWithImpl<$Res>;
-
   @override
   $Res call({Restaurant store});
 
@@ -102,6 +102,7 @@ abstract class _$DeletedCopyWith<$Res>
   $RestaurantCopyWith<$Res> get store;
 }
 
+/// @nodoc
 class __$DeletedCopyWithImpl<$Res> extends _$StoreActorEventCopyWithImpl<$Res>
     implements _$DeletedCopyWith<$Res> {
   __$DeletedCopyWithImpl(_Deleted _value, $Res Function(_Deleted) _then)
@@ -120,6 +121,7 @@ class __$DeletedCopyWithImpl<$Res> extends _$StoreActorEventCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_Deleted implements _Deleted {
   const _$_Deleted(this.store) : assert(store != null);
 
@@ -197,11 +199,11 @@ abstract class _Deleted implements StoreActorEvent {
 
   @override
   Restaurant get store;
-
   @override
   _$DeletedCopyWith<_Deleted> get copyWith;
 }
 
+/// @nodoc
 class _$StoreActorStateTearOff {
   const _$StoreActorStateTearOff();
 
@@ -228,9 +230,11 @@ class _$StoreActorStateTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $StoreActorState = _$StoreActorStateTearOff();
 
+/// @nodoc
 mixin _$StoreActorState {
   @optionalTypeArgs
   Result when<Result extends Object>({
@@ -239,7 +243,6 @@ mixin _$StoreActorState {
     @required Result deleteFailure(StoreFailure storeFailure),
     @required Result deleteSuccess(),
   });
-
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
     Result initial(),
@@ -248,7 +251,6 @@ mixin _$StoreActorState {
     Result deleteSuccess(),
     @required Result orElse(),
   });
-
   @optionalTypeArgs
   Result map<Result extends Object>({
     @required Result initial(_Initial value),
@@ -256,7 +258,6 @@ mixin _$StoreActorState {
     @required Result deleteFailure(_DeleteFailure value),
     @required Result deleteSuccess(_DeleteSuccess value),
   });
-
   @optionalTypeArgs
   Result maybeMap<Result extends Object>({
     Result initial(_Initial value),
@@ -267,27 +268,30 @@ mixin _$StoreActorState {
   });
 }
 
+/// @nodoc
 abstract class $StoreActorStateCopyWith<$Res> {
   factory $StoreActorStateCopyWith(
           StoreActorState value, $Res Function(StoreActorState) then) =
       _$StoreActorStateCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class _$StoreActorStateCopyWithImpl<$Res>
     implements $StoreActorStateCopyWith<$Res> {
   _$StoreActorStateCopyWithImpl(this._value, this._then);
 
   final StoreActorState _value;
-
   // ignore: unused_field
   final $Res Function(StoreActorState) _then;
 }
 
+/// @nodoc
 abstract class _$InitialCopyWith<$Res> {
   factory _$InitialCopyWith(_Initial value, $Res Function(_Initial) then) =
       __$InitialCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class __$InitialCopyWithImpl<$Res> extends _$StoreActorStateCopyWithImpl<$Res>
     implements _$InitialCopyWith<$Res> {
   __$InitialCopyWithImpl(_Initial _value, $Res Function(_Initial) _then)
@@ -297,6 +301,7 @@ class __$InitialCopyWithImpl<$Res> extends _$StoreActorStateCopyWithImpl<$Res>
   _Initial get _value => super._value as _Initial;
 }
 
+/// @nodoc
 class _$_Initial implements _Initial {
   const _$_Initial();
 
@@ -380,11 +385,13 @@ abstract class _Initial implements StoreActorState {
   const factory _Initial() = _$_Initial;
 }
 
+/// @nodoc
 abstract class _$LoadingCopyWith<$Res> {
   factory _$LoadingCopyWith(_Loading value, $Res Function(_Loading) then) =
       __$LoadingCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class __$LoadingCopyWithImpl<$Res> extends _$StoreActorStateCopyWithImpl<$Res>
     implements _$LoadingCopyWith<$Res> {
   __$LoadingCopyWithImpl(_Loading _value, $Res Function(_Loading) _then)
@@ -394,6 +401,7 @@ class __$LoadingCopyWithImpl<$Res> extends _$StoreActorStateCopyWithImpl<$Res>
   _Loading get _value => super._value as _Loading;
 }
 
+/// @nodoc
 class _$_Loading implements _Loading {
   const _$_Loading();
 
@@ -477,16 +485,17 @@ abstract class _Loading implements StoreActorState {
   const factory _Loading() = _$_Loading;
 }
 
+/// @nodoc
 abstract class _$DeleteFailureCopyWith<$Res> {
   factory _$DeleteFailureCopyWith(
           _DeleteFailure value, $Res Function(_DeleteFailure) then) =
       __$DeleteFailureCopyWithImpl<$Res>;
-
   $Res call({StoreFailure storeFailure});
 
   $StoreFailureCopyWith<$Res> get storeFailure;
 }
 
+/// @nodoc
 class __$DeleteFailureCopyWithImpl<$Res>
     extends _$StoreActorStateCopyWithImpl<$Res>
     implements _$DeleteFailureCopyWith<$Res> {
@@ -519,6 +528,7 @@ class __$DeleteFailureCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_DeleteFailure implements _DeleteFailure {
   const _$_DeleteFailure(this.storeFailure) : assert(storeFailure != null);
 
@@ -614,16 +624,17 @@ abstract class _DeleteFailure implements StoreActorState {
   const factory _DeleteFailure(StoreFailure storeFailure) = _$_DeleteFailure;
 
   StoreFailure get storeFailure;
-
   _$DeleteFailureCopyWith<_DeleteFailure> get copyWith;
 }
 
+/// @nodoc
 abstract class _$DeleteSuccessCopyWith<$Res> {
   factory _$DeleteSuccessCopyWith(
           _DeleteSuccess value, $Res Function(_DeleteSuccess) then) =
       __$DeleteSuccessCopyWithImpl<$Res>;
 }
 
+/// @nodoc
 class __$DeleteSuccessCopyWithImpl<$Res>
     extends _$StoreActorStateCopyWithImpl<$Res>
     implements _$DeleteSuccessCopyWith<$Res> {
@@ -635,6 +646,7 @@ class __$DeleteSuccessCopyWithImpl<$Res>
   _DeleteSuccess get _value => super._value as _DeleteSuccess;
 }
 
+/// @nodoc
 class _$_DeleteSuccess implements _DeleteSuccess {
   const _$_DeleteSuccess();
 

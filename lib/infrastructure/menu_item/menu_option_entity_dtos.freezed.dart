@@ -8,11 +8,11 @@ part of 'menu_option_entity_dtos.dart';
 // **************************************************************************
 
 T _$identity<T>(T value) => value;
-
 MenuOptionEntityDTO _$MenuOptionEntityDTOFromJson(Map<String, dynamic> json) {
   return _MenuOptionEntityDTO.fromJson(json);
 }
 
+/// @nodoc
 class _$MenuOptionEntityDTOTearOff {
   const _$MenuOptionEntityDTOTearOff();
 
@@ -27,40 +27,44 @@ class _$MenuOptionEntityDTOTearOff {
       id: id,
     );
   }
+
+// ignore: unused_element
+  MenuOptionEntityDTO fromJson(Map<String, Object> json) {
+    return MenuOptionEntityDTO.fromJson(json);
+  }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $MenuOptionEntityDTO = _$MenuOptionEntityDTOTearOff();
 
+/// @nodoc
 mixin _$MenuOptionEntityDTO {
   String get attributeName;
-
   List<MenuOptionItemEntityDTO> get menuOptionsItems;
-
   String get id;
 
   Map<String, dynamic> toJson();
-
   $MenuOptionEntityDTOCopyWith<MenuOptionEntityDTO> get copyWith;
 }
 
+/// @nodoc
 abstract class $MenuOptionEntityDTOCopyWith<$Res> {
   factory $MenuOptionEntityDTOCopyWith(
           MenuOptionEntityDTO value, $Res Function(MenuOptionEntityDTO) then) =
       _$MenuOptionEntityDTOCopyWithImpl<$Res>;
-
   $Res call(
       {String attributeName,
       List<MenuOptionItemEntityDTO> menuOptionsItems,
       String id});
 }
 
+/// @nodoc
 class _$MenuOptionEntityDTOCopyWithImpl<$Res>
     implements $MenuOptionEntityDTOCopyWith<$Res> {
   _$MenuOptionEntityDTOCopyWithImpl(this._value, this._then);
 
   final MenuOptionEntityDTO _value;
-
   // ignore: unused_field
   final $Res Function(MenuOptionEntityDTO) _then;
 
@@ -82,12 +86,12 @@ class _$MenuOptionEntityDTOCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 abstract class _$MenuOptionEntityDTOCopyWith<$Res>
     implements $MenuOptionEntityDTOCopyWith<$Res> {
   factory _$MenuOptionEntityDTOCopyWith(_MenuOptionEntityDTO value,
           $Res Function(_MenuOptionEntityDTO) then) =
       __$MenuOptionEntityDTOCopyWithImpl<$Res>;
-
   @override
   $Res call(
       {String attributeName,
@@ -95,6 +99,7 @@ abstract class _$MenuOptionEntityDTOCopyWith<$Res>
       String id});
 }
 
+/// @nodoc
 class __$MenuOptionEntityDTOCopyWithImpl<$Res>
     extends _$MenuOptionEntityDTOCopyWithImpl<$Res>
     implements _$MenuOptionEntityDTOCopyWith<$Res> {
@@ -124,6 +129,8 @@ class __$MenuOptionEntityDTOCopyWithImpl<$Res>
 }
 
 @JsonSerializable()
+
+/// @nodoc
 class _$_MenuOptionEntityDTO extends _MenuOptionEntityDTO {
   const _$_MenuOptionEntityDTO(
       {@required this.attributeName, @required this.menuOptionsItems, this.id})
@@ -180,7 +187,6 @@ class _$_MenuOptionEntityDTO extends _MenuOptionEntityDTO {
 
 abstract class _MenuOptionEntityDTO extends MenuOptionEntityDTO {
   const _MenuOptionEntityDTO._() : super._();
-
   const factory _MenuOptionEntityDTO(
       {@required String attributeName,
       @required List<MenuOptionItemEntityDTO> menuOptionsItems,
@@ -191,13 +197,10 @@ abstract class _MenuOptionEntityDTO extends MenuOptionEntityDTO {
 
   @override
   String get attributeName;
-
   @override
   List<MenuOptionItemEntityDTO> get menuOptionsItems;
-
   @override
   String get id;
-
   @override
   _$MenuOptionEntityDTOCopyWith<_MenuOptionEntityDTO> get copyWith;
 }
